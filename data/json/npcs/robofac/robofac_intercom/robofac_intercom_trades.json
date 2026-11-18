@@ -122,10 +122,7 @@
       }
     },
     "speaker_effect": {
-      "effect": [
-        { "npc_add_var": "dialogue_intercom_accepted_nre_recording", "value": "yes" },
-        { "finish_mission": "MISSION_ROBOFAC_INTERCOM_PORTAL_SM_1", "success": true }
-      ],
+      "effect": [ { "npc_add_var": "accepted_nre_recording", "type": "dialogue", "context": "intercom", "value": "yes" } ],
       "sentinel": "nre_trade"
     }
   },
@@ -142,10 +139,7 @@
       }
     },
     "speaker_effect": {
-      "effect": [
-        { "npc_add_var": "dialogue_intercom_accepted_nre_recording", "value": "yes" },
-        { "finish_mission": "MISSION_ROBOFAC_INTERCOM_PORTAL_SM_1", "success": true }
-      ],
+      "effect": [ { "npc_add_var": "accepted_nre_recording", "type": "dialogue", "context": "intercom", "value": "yes" } ],
       "sentinel": "nre_trade"
     }
   },
@@ -158,10 +152,7 @@
       "yes": "Fantastic.\"  The recording changes hands.  \"At this rate, we'll have some real results soon."
     },
     "speaker_effect": {
-      "effect": [
-        { "npc_add_var": "dialogue_intercom_accepted_nre_recording", "value": "yes" },
-        { "finish_mission": "MISSION_ROBOFAC_INTERCOM_PORTAL_SM_1", "success": true }
-      ],
+      "effect": [ { "npc_add_var": "accepted_nre_recording", "type": "dialogue", "context": "intercom", "value": "yes" } ],
       "sentinel": "nre_trade"
     }
   },
