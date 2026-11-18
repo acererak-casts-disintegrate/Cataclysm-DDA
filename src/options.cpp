@@ -197,9 +197,8 @@ static const std::map<std::string, std::pair<std::string, std::map<std::string, 
 &get_migrated_options()
 {
     static const std::map<std::string, std::pair<std::string, std::map<std::string, std::string>>> opt
-    = {
-        {"DELETE_WORLD", { "WORLD_END", { {"no", "keep" }, {"yes", "delete"} } } },
-        {"MONSTER_UPGRADE_FACTOR", { "EVOLUTION_INVERSE_MULTIPLIER", {} }} //TODO: Remove after stable after world option reserialising is added, value migration done in migrateOptionValue instead
+    = { {"DELETE_WORLD", { "WORLD_END", { {"no", "keep" }, {"yes", "delete"} } } },
+        {"SKILL_RUST", { "SKILL_RUST", { {"int", "vanilla" }, {"intcap", "capped"} } } }
     };
     return opt;
 }
@@ -2851,7 +2850,48 @@ void options_manager::add_options_debug()
 
     add_empty_line();
 
-    add_option_group( "debug", Group( "occlusion_opts", to_translation( "Occlusion options" ),
+    add( "SKILL_TRAINING_SPEED", "debug", to_translation( "Skill training speed" ),
+         to_translation( "Scales experience gained from practicing skills and reading books.  0.5 is half as fast as default, 2.0 is twice as fast, 0.0 disables skill training except for NPC training." ),
+         0.0, 100.0, 1.0, 0.1
+       );
+
+    add_empty_line();
+
+    add( "SKILL_RUST", "debug", to_translation( "Skill rust" ),
+         to_translation( "Set the type of skill rust.  Vanilla: Skill rust can decrease levels.  - Capped: Skill rust cannot decrease levels.  - Off: None at all." ),
+         //~ plain, default, normal
+    {   { "vanilla", to_translation( "Vanilla" ) },
+        //~ capped at a value
+        { "capped", to_translation( "Capped" ) },
+        { "off", to_translation( "Off" ) }
+    },
+    "off" );
+
+    add_empty_line();
+
+    add( "PROFICIENCY_TRAINING_SPEED", "debug", to_translation( "Proficiency training speed" ),
+         to_translation( "Scales experience gained from practicing proficiencies.  0.5 is half as fast as default, 2.0 is twice as fast, 0.0 disables proficiency training except for NPC training." ),
+         0.0, 100.0, 1.0, 0.1
+       );
+
+    add_empty_line();
+    add_option_group( "debug", Group( "3dfov_opts", to_translation( "3D Field Of Vision Options" ),
+                                      to_translation( "Options regarding 3D field of vision." ) ),
+    [&]( const std::string & page_id ) {
+        add( "FOV_3D", page_id, to_translation( "Experimental 3D field of vision" ),
+             to_translation( "If true and the world is in Z-level mode, the vision will extend beyond current Z-level.  If false, vision is limited to current Z-level." ),
+             false
+           );
+
+        add( "FOV_3D_Z_RANGE", page_id, to_translation( "Vertical range of 3D field of vision" ),
+             to_translation( "How many levels up and down the experimental 3D field of vision reaches and is drawn on screen.  (This many levels up, this many levels down.)  3D vision of the full height of the world can slow the game down a lot.  Seeing fewer Z-levels is faster." ),
+             0, OVERMAP_LAYERS, 4
+           );
+    } );
+
+    add_empty_line();
+
+    add_option_group( "debug", Group( "occlusion_opts", to_translation( "Occlusion Options" ),
                                       to_translation( "Options regarding occlusion." ) ),
     [&]( const std::string & page_id ) {
         add( "PREVENT_OCCLUSION", page_id, to_translation( "Handle occlusion by high sprites" ),
