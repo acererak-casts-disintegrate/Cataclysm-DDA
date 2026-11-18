@@ -50,7 +50,7 @@
         "group": "robofac_robots",
         "rigid": true,
         "strict": true,
-        "condition": { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_portal_sm_1" } ] }
+        "condition": { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_3" } ] }
       },
       {
         "group": "robofac_gun_mags",
