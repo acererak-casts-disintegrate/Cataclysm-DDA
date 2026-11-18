@@ -17,6 +17,7 @@
           { "group": "cloning_vat", "prob": 1 },
           { "group": "dissection", "prob": 50 },
           { "group": "electronics", "prob": 40 },
+          { "group": "bionics", "prob": 10 },
           { "group": "radio", "prob": 15 },
           { "item": "balthazar_radio", "prob": 10 },
           { "group": "textbooks", "prob": 25 },

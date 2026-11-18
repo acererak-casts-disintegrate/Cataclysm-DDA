@@ -10,7 +10,11 @@
     "categories": [ "CLASSIC" ],
     "color": "white_cyan",
     "death_drops": "mon_zombie_scientist_death_drops",
-    "delete": { "flags": [ "GROUP_BASH" ] }
+    "burn_into": "mon_zombie_scorched",
+    "upgrades": { "half_life": 32, "into_group": "GROUP_ZOMBIE_UPGRADE" },
+    "flags": [ "SEES", "HEARS", "STUMBLES", "WARM", "GRABS", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ],
+    "armor": { "electric": 1 },
+    "dissect": "dissect_CBM_SCI"
   },
   {
     "id": "mon_zombie_labsecurity",
