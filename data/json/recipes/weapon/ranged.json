@@ -1492,5 +1492,71 @@
       [ [ "gasket_plastic", 1 ] ],
       [ [ "plastic_chunk", 2 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "tihar",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ "gun", 2 ],
+    "difficulty": 6,
+    "time": "2 h 40 m",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_gunsmithing_basic" }, { "proficiency": "prof_gunsmithing_improv" } ],
+    "using": [ [ "welding_standard", 15 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "pipe", 4 ] ],
+      [ [ "duct_tape", 100 ], [ "superglue", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 1 ] ],
+      [ [ "steel_chunk", 3 ], [ "scrap", 9 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "helsing",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ "gun", 3 ],
+    "difficulty": 8,
+    "time": "3 h",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_gunsmithing_basic" }, { "proficiency": "prof_gunsmithing_improv" } ],
+    "using": [ [ "welding_standard", 30 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "pipe", 8 ] ],
+      [ [ "duct_tape", 100 ], [ "superglue", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 1 ] ],
+      [ [ "steel_chunk", 3 ], [ "scrap", 9 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "pneumatic_shotgun",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ "gun", 3 ],
+    "difficulty": 7,
+    "time": "3 h",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_gunsmithing_basic" }, { "proficiency": "prof_gunsmithing_improv" } ],
+    "using": [ [ "welding_standard", 30 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "pipe", 3 ] ],
+      [ [ "duct_tape", 100 ], [ "superglue", 1 ] ],
+      [ [ "2x4", 1 ], [ "stick", 1 ] ],
+      [ [ "metal_tank_little", 1 ] ],
+      [ [ "steel_chunk", 4 ], [ "scrap", 12 ] ]
+    ]
   }
 ]

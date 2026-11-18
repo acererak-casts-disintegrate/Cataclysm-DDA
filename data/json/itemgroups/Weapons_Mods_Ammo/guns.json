@@ -825,7 +825,13 @@
     "type": "item_group",
     "id": "guns_rifle_improvised",
     "//": "Makeshift or otherwise poor quality rifles.",
-    "items": [ { "item": "rifle_22", "prob": 60 }, { "item": "remington_700", "prob": 30 }, { "item": "rifle_9mm", "prob": 60 } ]
+    "items": [
+      { "item": "rifle_22", "prob": 60 },
+      { "item": "remington_700", "prob": 30 },
+      { "item": "rifle_9mm", "prob": 60 },
+      { "item": "tihar", "prob": 15 },
+      { "item": "helsing", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
@@ -991,7 +997,8 @@
       { "item": "pipe_double_shotgun", "prob": 70, "charges-min": 0, "charges-max": 2 },
       { "item": "pipe_shotgun", "prob": 100 },
       { "item": "revolver_shotgun", "prob": 30, "charges-min": 0, "charges-max": 6 },
-      { "item": "lever_shotgun", "prob": 10, "charges-min": 0, "charges-max": 6 }
+      { "item": "lever_shotgun", "prob": 10, "charges-min": 0, "charges-max": 6 },
+      { "item": "pneumatic_shotgun", "prob": 15 }
     ]
   },
   {

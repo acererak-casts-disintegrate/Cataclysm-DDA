@@ -237,6 +237,8 @@
       [ "rifle_scope", 20 ],
       [ "pistol_scope", 10 ],
       [ "improve_sights", 20 ],
+      [ "helsing", 5 ],
+      [ "tihar", 5 ],
       [ "ashot", 5 ]
     ]
   },
