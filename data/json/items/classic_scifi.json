@@ -233,7 +233,7 @@
     "price": 5000000,
     "material": [ "steel", "plastic" ],
     "weight": "5000 g",
-    "volume": "750 ml",
+    "volume": "1250 ml",
     "category": "spare_parts"
   },
   {
@@ -363,7 +363,7 @@
     "skill": "launcher",
     "ammo": [ "mininuke_mod" ],
     "weight": "11260 g",
-    "volume": "2750 ml",
+    "volume": "6500 ml",
     "to_hit": -1,
     "range": 40,
     "dispersion": 600,
@@ -638,6 +638,8 @@
     "modes": [ [ "DEFAULT", "single shot", 1 ], [ "burst", "triple shot", 3 ] ],
     "reload": 500,
     "ammo_effects": [ "PLASMA" ],
-    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "ZERO_WEIGHT" ]
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "ZERO_WEIGHT", "BIONIC_WEAPON", "USES_BIONIC_POWER" ],
+    "energy_drain": "50 kJ",
+    "looks_like": "plasma_rifle"
   }
 ]
