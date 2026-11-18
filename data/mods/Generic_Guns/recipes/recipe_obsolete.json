@@ -886,6 +886,11 @@
   },
   {
     "type": "recipe",
+    "result": "reloaded_5x50dart",
+    "obsolete": true
+  },
+  {
+    "type": "recipe",
     "result": "reloaded_50bmg",
     "obsolete": true
   },
@@ -1577,6 +1582,11 @@
   {
     "type": "recipe",
     "result": "reloaded_4570_bp",
+    "obsolete": true
+  },
+  {
+    "type": "recipe",
+    "result": "reloaded_5x50dart",
     "obsolete": true
   },
   {
