@@ -64,11 +64,5 @@
     "id": "metal_rail",
     "name": "ferrous rail projectile",
     "default": "steel_rail"
-  },
-  {
-    "type": "ammunition_type",
-    "id": "afs_5x50",
-    "name": "5x50mm flechette",
-    "default": "afs_5x50dart"
   }
 ]
