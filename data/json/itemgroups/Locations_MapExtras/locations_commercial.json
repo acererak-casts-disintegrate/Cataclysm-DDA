@@ -49,7 +49,8 @@
       { "item": "survnote", "prob": 2 },
       { "item": "eclipse_glasses", "prob": 1 },
       { "item": "thermos", "prob": 10 },
-      { "group": "writing_utensils", "prob": 10 }
+      { "group": "writing_utensils", "prob": 10 },
+      { "item": "rm99_pistol", "prob": 1 }
     ]
   },
   {

@@ -124,7 +124,9 @@
       { "item": "bio_soporific", "prob": 5 },
       { "item": "bio_surgical_razor", "prob": 5 },
       { "item": "bio_syringe", "prob": 8 },
-      { "item": "bio_meteorologist", "prob": 10 }
+      { "item": "bio_meteorologist", "prob": 10 },
+      { "item": "adv_UPS_off", "prob": 3 },
+      { "item": "recipe_mininuke_launch", "prob": 4 }
     ]
   },
   {
@@ -476,7 +478,9 @@
       { "group": "new_usb_drives", "prob": 5 },
       [ "recipe_lab_cvd", 8 ],
       [ "teleporter", 10 ],
-      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_1_10" }
+      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_1_10" },
+      [ "usb_drive", 5 ],
+      [ "recipe_mininuke_launch", 5 ]
     ]
   },
   {

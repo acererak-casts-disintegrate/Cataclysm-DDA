@@ -453,12 +453,10 @@
       [ "bottle_folding", 10 ],
       { "distribution": [ { "group": "full_survival_kit" }, { "group": "used_survival_kit" } ], "prob": 30 },
       { "group": "premium_contents", "prob": 3 },
-      { "item": "ar_glasses_basic", "prob": 1, "charges": [ 0, -1 ] },
-      { "item": "ar_glasses_advanced", "prob": 1, "charges": [ 0, -1 ] },
+      { "item": "ar_glasses_basic", "prob": 1, "charges-min": 0 },
+      { "item": "ar_glasses_advanced", "prob": 1, "charges-min": 0 },
       [ "light_snare_kit", 5 ],
-      [ "camping_multitool", 5 ],
-      [ "utility_knife_folding", 5 ],
-      { "group": "pillbox_any_used", "prob": 5 }
+      [ "adv_UPS_off", 3 ]
     ]
   },
   {
