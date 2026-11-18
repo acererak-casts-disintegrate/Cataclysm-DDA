@@ -530,7 +530,8 @@
       "REVIVES",
       "FILTHY"
     ],
-    "armor": { "bash": 10, "cut": 18, "bullet": 14, "electric": 3 }
+    "armor": { "bash": 10, "cut": 18, "bullet": 14, "electric": 3 },
+    "dissect": "dissect_CBM_OP"
   },
   {
     "id": "mon_zombie_bio_op2",
@@ -545,6 +546,7 @@
     "dodge": 4,
     "harvest": "zombie_humanoid",
     "special_attacks": [ [ "BIO_OP_BIOJUTSU", 15 ] ],
-    "armor": { "bullet": 14, "electric": 3, "bash": 15, "cut": 27 }
+    "armor": { "bullet": 14, "electric": 3, "bash": 15, "cut": 27 },
+    "dissect": "dissect_CBM_OP2"
   }
 ]

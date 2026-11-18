@@ -45,7 +45,8 @@
       "FILTHY",
       "RANGED_ATTACKER"
     ],
-    "armor": { "bash": 3, "cut": 8, "bullet": 6 }
+    "armor": { "bash": 3, "cut": 8, "bullet": 6 },
+    "dissect": "dissect_CBM_SUBS"
   },
   {
     "id": "mon_zombie_electric",
@@ -94,7 +95,8 @@
       "PUSH_MON",
       "FILTHY",
       "RANGED_ATTACKER"
-    ]
+    ],
+    "dissect": "dissect_CBM_CIV"
   },
   {
     "id": "mon_zombie_nullfield",
@@ -130,7 +132,8 @@
     "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "default_zombie_death_drops",
-    "flags": [ "SEES", "HEARS", "WARM", "POISON", "ELECTRIC", "NO_BREATHE", "REVIVES", "ELECTRIC_FIELD", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "WARM", "POISON", "ELECTRIC", "NO_BREATHE", "REVIVES", "ELECTRIC_FIELD", "FILTHY" ],
+    "dissect": "dissect_CBM_SUBS"
   },
   {
     "id": "mon_zombie_static",

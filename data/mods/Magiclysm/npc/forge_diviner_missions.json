@@ -353,25 +353,6 @@
     }
   },
   {
-    "id": "MISSION_FORGE_DIVINER_EXODII",
-    "type": "mission_definition",
-    "name": { "str": "Visit the exodii" },
-    "goal": "MGOAL_GO_TO_TYPE",
-    "difficulty": 0,
-    "value": 0,
-    "description": "The diviner told you that there would be exodii here.",
-    "destination": "exodii_base_x0y0z0",
-    "start": {
-      "assign_mission_target": {
-        "om_terrain": "exodii_base_x0y3z0",
-        "om_special": "exodii_base",
-        "reveal_radius": 3,
-        "cant_see": true,
-        "search_range": 400
-      }
-    }
-  },
-  {
     "id": "MISSION_FORGE_DIVINER_TEMPLE",
     "type": "mission_definition",
     "name": { "str": "Visit the strange temple" },

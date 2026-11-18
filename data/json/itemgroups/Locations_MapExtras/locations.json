@@ -123,6 +123,7 @@
       { "group": "surgery", "prob": 80 },
       { "group": "drugs_emergency", "prob": 40 },
       { "group": "softdrugs", "prob": 20 },
+      { "group": "bionics_common", "prob": 5 },
       { "group": "harddrugs", "prob": 5 }
     ]
   },
@@ -1255,7 +1256,16 @@
       [ "apron_leather", 2 ],
       [ "chem_aluminium_sulphate", 20 ],
       [ "plunger_toilet", 10 ],
-      [ "plunger_futuristic", 5 ]
+      [ "plunger_futuristic", 5 ],
+      { "item": "bio_tools", "prob": 10 },
+      { "item": "bio_flashlight", "prob": 10 },
+      { "item": "bio_lighter", "prob": 10 },
+      { "item": "bio_magnet", "prob": 10 },
+      { "item": "bio_purifier", "prob": 10 },
+      { "item": "bio_climate", "prob": 10 },
+      { "item": "bio_heatsink", "prob": 10 },
+      { "item": "bio_blood_filter", "prob": 10 },
+      { "item": "bio_meteorologist", "prob": 10 }
     ]
   },
   {
@@ -1329,7 +1339,14 @@
       { "group": "tools_toolbox", "prob": 1 },
       [ "apron_leather", 5 ],
       [ "apron_cut_resistant", 10 ],
-      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] }
+      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] },
+      [ "bio_tools", 10 ],
+      [ "bio_flashlight", 10 ],
+      [ "bio_lighter", 10 ],
+      [ "bio_magnet", 10 ],
+      [ "bio_resonator", 10 ],
+      [ "bio_hydraulics", 10 ],
+      [ "bio_weight", 12 ]
     ]
   },
   {
@@ -1852,7 +1869,12 @@
       [ "thermometer", 3 ],
       [ "hygrometer", 3 ],
       [ "barometer", 3 ],
-      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] }
+      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] },
+      { "item": "bio_purifier", "prob": 10 },
+      { "item": "bio_climate", "prob": 10 },
+      { "item": "bio_heatsink", "prob": 10 },
+      { "item": "bio_blood_filter", "prob": 10 },
+      { "item": "bio_meteorologist", "prob": 3 }
     ]
   },
   {
@@ -2398,7 +2420,10 @@
       [ "straw_doll", 2 ],
       [ "petrified_eye", 1 ],
       [ "spiral_stone", 1 ],
-      [ "etched_skull", 1 ]
+      [ "etched_skull", 1 ],
+      { "item": "bio_time_freeze", "prob": 4 },
+      { "item": "bio_teleport", "prob": 4 },
+      { "item": "bio_probability_travel", "prob": 4 }
     ]
   },
   {
