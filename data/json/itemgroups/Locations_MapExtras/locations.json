@@ -69,7 +69,8 @@
       { "group": "gunmod_energy", "prob": 40 },
       { "item": "plut_cell", "prob": 30, "charges": [ 1, 5 ] },
       [ "plasma", 30 ],
-      [ "UPS_OFF", 20 ]
+      [ "UPS_OFF", 20 ],
+      { "item": "adv_UPS_off", "prob": 20 }
     ]
   },
   {
@@ -821,7 +822,8 @@
       [ "pan", 90 ],
       [ "cow_bell", 20 ],
       [ "flask_hip", 25 ],
-      [ "iron_pot", 20 ]
+      [ "iron_pot", 20 ],
+      { "item": "rebar_rail", "prob": 45, "charges-min": 1, "charges-max": 50 }
     ]
   },
   {
@@ -1346,7 +1348,8 @@
       [ "bio_magnet", 10 ],
       [ "bio_resonator", 10 ],
       [ "bio_hydraulics", 10 ],
-      [ "bio_weight", 12 ]
+      [ "bio_weight", 12 ],
+      [ "bio_shock_absorber", 10 ]
     ]
   },
   {

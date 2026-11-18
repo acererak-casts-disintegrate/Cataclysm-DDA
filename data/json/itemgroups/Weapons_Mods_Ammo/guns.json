@@ -299,7 +299,8 @@
       { "group": "nested_raging_judge", "prob": 20 },
       { "group": "nested_tokarev", "prob": 100 },
       { "group": "nested_walther_ppk", "prob": 100 },
-      { "group": "guns_pistol_collectible", "prob": 1 }
+      { "group": "guns_pistol_collectible", "prob": 1 },
+      { "item": "rm99_pistol", "prob": 150, "charges-min": 0, "charges-max": 5 }
     ]
   },
   {

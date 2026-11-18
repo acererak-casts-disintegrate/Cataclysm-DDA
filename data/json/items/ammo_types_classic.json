@@ -1,0 +1,14 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "metal_rail",
+    "name": "ferrous rail projectile",
+    "default": "rebar_rail"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "mininuke_mod",
+    "name": "modified mininuke",
+    "default": "mininuke_mod"
+  }
+]
