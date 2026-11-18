@@ -727,7 +727,7 @@
     "description": "An imaginifer variant of unorthodox design, the Hashashiyyin dispenses with most of its armor in favor of active-camo systems and a lightweight, more agile frame.  Commonly employed in scouting and counter-sniping roles.  This unit is equipped for close range ambush, and weilds a 35x50mm dart gun.",
     "diff": 15,
     "melee_damage": [ { "damage_type": "electric", "amount": 6 } ],
-    "starting_ammo": { "3x35dart": 1000 },
+    "starting_ammo": { "5x50dart": 1000 },
     "special_attacks": [
       {
         "type": "gun",
@@ -735,9 +735,8 @@
         "targeting_cost": 200,
         "targeting_timeout": 2,
         "cooldown": 2,
-        "condition": { "not": { "u_has_any_effect": [ "afs_weapon_disabled", "blind" ] } },
-        "gun_type": "wasp_gun",
-        "ammo_type": "3x35dart",
+        "gun_type": "needlegun",
+        "ammo_type": "5x50dart",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
         "no_ammo_sound": "click!",
