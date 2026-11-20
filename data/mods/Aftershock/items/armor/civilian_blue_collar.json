@@ -57,7 +57,7 @@
     "copy-from": "jacket_windbreaker",
     "looks_like": "jacket_windbreaker",
     "name": { "str": "company jacket" },
-    "description": "A synthetic jacket adorned with the logos and colors of some interstellar corporation.  Impermeable, but not very warm.",
+    "description": "A synthetic jacket adorned with the logos and colors of some defunct corporation.  Impermeable, but not very warm.",
     "color": "blue"
   },
   {
@@ -94,7 +94,7 @@
     "looks_like": "powered_earmuffs",
     "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "PARTIAL_DEAF" ],
     "name": { "str": "communications cap" },
-    "description": "A padded cotton cap built around an augmented reality headset.  During normal operation it would provide visual information about a ship subsystems and a communications link with the rest of the crew, but severed from a spaceship, only their hearing protection function retains any utility.",
+    "description": "A padded cotton cap built around an augmented reality headset.  Space Time Inc issued these to launch crews; during normal operation it would provide telemetry and a communications link with the rest of the crew, but with the network gone, only its hearing protection retains any utility.",
     "armor": [
       { "covers": [ "eyes" ], "rigid_layer_only": true, "coverage": 33, "encumbrance": 0 },
       { "covers": [ "head" ], "coverage": 100, "encumbrance": 2 }

@@ -77,7 +77,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "translocator" },
     "copy-from": "afs_wrist_computer",
-    "description": "An arcane device from the late Hyperspace Era, vaguely resembling a wrist computer made from malleable glass.  It can be activated to quickly deploy a translocator buoy or to teleport to previously activated buoys.",
+    "description": "An arcane device recovered by XEDRA from a dimensional anomaly, vaguely resembling a wrist computer made from malleable glass.  Nobody on Earth knows how to build one.  It can be activated to quickly deploy a translocator buoy or to teleport to previously activated buoys.",
     "price": "100 kUSD",
     "charges_per_use": 1000,
     "material": [ "diamond" ],

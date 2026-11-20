@@ -46,7 +46,7 @@
     "type": "TOOL_ARMOR",
     "category": "exosuit",
     "name": { "str": "exosuit microwave cannon" },
-    "description": "A 'less-lethal' weapon mounted on the shoulder of an exosuit.  Causes a painful burning sensation as water molecules are turned to high temperature vapor.  Infamous for it's use by UICA forces used it to break up protests, the effectiveness can be hard to predict due to variables like the moisture in the air and protective layers on the target.",
+    "description": "A 'less-lethal' weapon mounted on the shoulder of an exosuit.  Causes a painful burning sensation as water molecules are turned to high temperature vapor.  Infamous for its use by federal forces to break up protests, its effectiveness can be hard to predict due to variables like the moisture in the air and protective layers on the target.",
     "weight": "7500 g",
     "volume": "10 L",
     "longest_side": "100 cm",

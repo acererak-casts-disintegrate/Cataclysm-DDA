@@ -52,7 +52,7 @@
     "copy-from": "pistol_base",
     "looks_like": "glock_17",
     "type": "GUN",
-    "name": { "str": "MarSec. 4" },
+    "name": { "str": "Rivtech. 4" },
     "description": "Dependable, reliable, classic.  The Marsec.4 is the combat pistol made for those who can differentiate real quality from glued-on tech.",
     "weight": "780 g",
     "volume": "480 ml",
@@ -88,7 +88,7 @@
     "looks_like": "glock_17",
     "type": "GUN",
     "name": { "str": "W1011 Silvergram" },
-    "description": "A finely sculpted white and silver pistol entrusted to Wraitheon's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks.",
+    "description": "A finely sculpted white and silver pistol entrusted to Northrop's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks.",
     "weight": "780 g",
     "volume": "480 ml",
     "longest_side": "205 mm",
@@ -112,7 +112,7 @@
       {
         "id": "lx",
         "name": { "str": "W1011 Silvergram" },
-        "description": "A finely sculpted white and silver pistol entrusted to Wraitheon's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks."
+        "description": "A finely sculpted white and silver pistol entrusted to Northrop's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks."
       }
     ],
     "min_cycle_recoil": 570,

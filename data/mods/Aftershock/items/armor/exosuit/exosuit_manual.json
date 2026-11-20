@@ -5,7 +5,7 @@
     "text": [
       {
         "id": "exosuit_guide_introduction",
-        "text": "\"Welcome to your Exosuit Piloting and Maintenance Manual.  This manual will walk you through the basic operations of an exosuit.  Before proceeding, please ensure you have completed the UICA Exosuit Piloting course.  Any operation without a valid UICA Exosuit Pilot Licence is considered a violation of safety standards.  <this is followed by twenty pages of disclaimers>\""
+        "text": "\"Welcome to your Exosuit Piloting and Maintenance Manual.  This manual will walk you through the basic operations of an exosuit.  Before proceeding, please ensure you have completed the Rivtech Exosuit Piloting course.  Any operation without a valid Exosuit Pilot Licence is considered a violation of safety standards.  <this is followed by twenty pages of disclaimers>\""
       },
       {
         "id": "exosuit_guide_underlayer",
@@ -13,7 +13,7 @@
       },
       {
         "id": "exosuit_guide_frame",
-        "text": "\"Part Two: The Frame.  The exosuit frame meets UICA Interoperability Standard AV-98, allowing it to interface with UICA and legacy TSKBEM modules.  Third-party modules should not be used unless also UISAV-98 compliant.  Designed to be worn over an underlayer or conventional clothes, the frame is adjustable to fit a range of pilots, and will adjust automatically when powered on.\""
+        "text": "\"Part Two: The Frame.  The exosuit frame meets Interoperability Standard AV-98, allowing it to interface with current and legacy Rivtech modules.  Third-party modules should not be used unless also AV-98 compliant.  Designed to be worn over an underlayer or conventional clothes, the frame is adjustable to fit a range of pilots, and will adjust automatically when powered on.\""
       },
       {
         "id": "exosuit_guide_management",

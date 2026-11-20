@@ -3,7 +3,7 @@
     "id": "afs_mon_rabbit",
     "type": "MONSTER",
     "name": { "str": "labbit" },
-    "description": "A rabbit from earth, genetically modified to eat the lichen of Salus IV.  Its fur is rust colored and its ears are shortened to preserve warmth.",
+    "description": "A rabbit genetically modified by Shady Hills Corporation to thrive on lichen.  Its fur is rust colored and its ears are shortened to preserve warmth.",
     "default_faction": "small_animal",
     "bodytype": "pig",
     "categories": [ "WILDLIFE" ],
