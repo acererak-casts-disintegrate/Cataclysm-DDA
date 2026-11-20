@@ -99,7 +99,7 @@
     "description": "An undead Uplifted Elephant of ginormous size.  It still wears its assault grade armor.",
     "default_faction": "zombie",
     "bodytype": "human",
-    "species": [ "ZOMBIE", "UPLIFT" ],
+    "species": [ "ZOMBIE" ],
     "diff": 7,
     "volume": "875000 ml",
     "weight": "200 kg",
@@ -204,7 +204,7 @@
     "dodge": 4,
     "vision_day": 25,
     "regenerates": 10,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
@@ -251,7 +251,7 @@
     "dodge": 4,
     "vision_day": 40,
     "regenerates": 15,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "grab_strength": 20,
     "special_attacks": [
@@ -311,7 +311,7 @@
     "dodge": 2,
     "vision_day": 40,
     "regenerates": 20,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
@@ -359,7 +359,7 @@
     "dodge": 2,
     "vision_day": 25,
     "regenerates": 5,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [ { "id": "bite_humanoid", "cooldown": 5 }, { "id": "grab" } ],
     "flags": [
@@ -403,7 +403,7 @@
     "dodge": 2,
     "vision_day": 25,
     "regenerates": 5,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "death_function": { "effect": { "id": "death_guilt", "min_level": 2 } },
     "special_attacks": [ [ "PARROT", 0 ] ],
@@ -507,7 +507,7 @@
     "dodge": 2,
     "vision_day": 2,
     "regenerates": 7,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 6 } ] }

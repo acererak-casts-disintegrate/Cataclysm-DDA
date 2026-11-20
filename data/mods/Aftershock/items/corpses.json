@@ -84,13 +84,6 @@
   },
   {
     "type": "GENERIC",
-    "id": "broken_migoturret_whately",
-    "name": "broken Whately turret",
-    "copy-from": "broken_afs_mon_migoturret",
-    "color": "green"
-  },
-  {
-    "type": "GENERIC",
     "id": "broken_utilibot_butler",
     "copy-from": "broken_utilibot",
     "color": "dark_gray",
