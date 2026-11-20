@@ -209,8 +209,7 @@
     "description": "EM field generators in the user's arms increase the range and damage of thrown magnetic objects at a cost of 1 bionic power per throw.  They will create a trail of electricity that can cause additional damage.",
     "price": 220000,
     "weight": "1000 g",
-    "difficulty": 3,
-    "installation_data": "AID_bio_railgun"
+    "difficulty": 3
   },
   {
     "id": "bio_shock_absorber",
