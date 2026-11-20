@@ -2,8 +2,8 @@
   {
     "type": "terrain",
     "id": "t_afs_industrial_card_reader",
-    "name": "Old TSKBEM Card Reader",
-    "description": "A smartcard based lock system once fitted to TSKBEM prefab industrial facilities.  While an original key would be impossible to find, the machine is ancient and obsolete, and it can be hacked or masterkeys can be obtained to bypass it.",
+    "name": "Old Rivtech Card Reader",
+    "description": "A smartcard based lock system once fitted to Rivtech prefab industrial facilities.  While an original key would be impossible to find, the machine is ancient and obsolete, and it can be hacked or masterkeys can be obtained to bypass it.",
     "symbol": "6",
     "color": "yellow",
     "copy-from": "t_card_science_maintenance_yellow",

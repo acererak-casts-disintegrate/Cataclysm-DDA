@@ -31,23 +31,7 @@
     "melee_damage": { "bash": 6 }
   },
   {
-    "type": "ITEM",
-    "id": "afs_tattered_garment",
-    "name": { "str_sp": "tattered garments" },
-    "category": "other",
-    "description": "Time and the elements have reduced them to a mound of filthy ribbons.",
-    "weight": "1175 g",
-    "volume": "3 L",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
-    "to_hit": -1,
-    "material": [ "cotton" ],
-    "symbol": "[",
-    "looks_like": "cotton_patchwork",
-    "color": "brown"
-  },
-  {
-    "type": "ITEM",
+    "type": "GENERIC",
     "id": "afs_scrap_titanium",
     "symbol": ",",
     "color": "light_gray",
@@ -245,7 +229,7 @@
     "id": "afs_glass_device",
     "type": "ITEM",
     "name": { "str": "glass device" },
-    "description": "This transparent slate of computation glass was once an incredibly versatile hypercloud access point.  It continues to display \"No Connection\" in ancient English script.",
+    "description": "This transparent slate of computation glass was once an incredibly versatile network access point.  With all its functions dependent on a satellite network that went dark with the Cataclysm, it's not really useful for anything.",
     "weight": "80 g",
     "volume": "80 ml",
     "price": "7 USD",
@@ -256,20 +240,19 @@
     "flags": [ "STURDY" ]
   },
   {
-    "id": "afs_glass_AR_device",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "glass headset" },
-    "description": "This transparent lune of computation glass was once an incredibly versatile hypercloud access point.  It continues to display \"No Connection\" in ancient English script.  Although completely useless these sometimes gain popularity as a fashion accessory.",
-    "weight": "170 g",
-    "volume": "750 ml",
-    "price": "7 USD",
-    "price_postapoc": "5 USD",
-    "material": [ "glass" ],
+    "type": "GENERIC",
+    "id": "afs_tattered_garment",
+    "name": { "str_sp": "tattered garments" },
+    "category": "other",
+    "description": "Time and the elements have reduced them to a mound of filthy ribbons.",
+    "weight": "1175 g",
+    "volume": "3 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": -1,
+    "material": [ "cotton" ],
     "symbol": "[",
-    "color": "light_gray",
-    "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "eyes" ] } ],
-    "material_thickness": 1,
-    "flags": [ "STURDY", "OUTER" ]
+    "looks_like": "cotton_patchwork",
+    "color": "brown"
   }
 ]

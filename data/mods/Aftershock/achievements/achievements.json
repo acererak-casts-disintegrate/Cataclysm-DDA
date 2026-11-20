@@ -8,7 +8,7 @@
   {
     "id": "achievement_kill_10_moxies",
     "type": "achievement",
-    "name": "Salus IV Antivirus",
+    "name": "Antivirus Program",
     "requirements": [ { "event_statistic": "num_avatar_moxie_kills", "is": ">=", "target": 10 } ]
   },
   {

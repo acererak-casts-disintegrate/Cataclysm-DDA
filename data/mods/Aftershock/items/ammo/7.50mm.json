@@ -4,7 +4,7 @@
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
     "name": { "str_sp": "7.50mm caseless" },
-    "description": "An intermediate bullet with an acceptable all-round performance.  Due to their role as UICA's standard issue rifle cartridge, these are ubiquitous wherever Earth makes its presence be known.",
+    "description": "An intermediate bullet with an acceptable all-round performance.  As the US Army's standard issue rifle cartridge in the years before the Cataclysm, these turn up wherever soldiers made their last stands.",
     "weight": "12 g",
     "volume": "194 ml",
     "price": "2 USD 80 cent",

@@ -3,7 +3,7 @@
     "type": "terrain",
     "id": "t_wall_prefab_metal",
     "name": "habitat wall",
-    "description": "An industrially fabricated assembly of lightweight metallic framing and insulated cover sheets, used to quickly assemble standardized colonial infrastructure.  Capable of resisting the merciless cold and not much else.",
+    "description": "An industrially fabricated assembly of lightweight metallic framing and insulated cover sheets, used to quickly assemble FEMA relief shelters and work camps.  Capable of resisting the merciless cold and not much else.",
     "roof": "t_metal_flat_roof",
     "symbol": "#",
     "looks_like": "t_wall_metal",

@@ -4,7 +4,7 @@
     "id": "afs_heat_1",
     "copy-from": "afs_scrap_1",
     "name": { "str": "conductive thermoplastic" },
-    "description": "An excellent heat conductor and electrical insulator.  Conductive thermoplastics were introduced to the civilian market nearly two centuries ago, and have tightly integrated themselves into the modern society since then.",
+    "description": "An excellent heat conductor and electrical insulator.  Conductive thermoplastics reached the civilian market decades before the Cataclysm, and became part of nearly every appliance since.",
     "looks_like": "scrap"
   },
   {

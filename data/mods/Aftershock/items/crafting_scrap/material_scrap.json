@@ -12,7 +12,7 @@
     "id": "afs_material_2",
     "copy-from": "afs_scrap_2",
     "name": { "str": "vacuum cast carbide" },
-    "description": "Malleable carbide cast by forges on high earth orbit.",
+    "description": "Malleable carbide cast in Rivtech vacuum foundries.",
     "looks_like": "scrap"
   },
   {
@@ -28,7 +28,7 @@
     "id": "afs_material_4",
     "copy-from": "afs_scrap_4",
     "name": { "str": "crystal forged neutrite" },
-    "description": "Great forges within the Earth's core wrought hydrogen into flaming metal and poured it within lattices of super conductive lanthanum.  Locked in magnetic equilibrium, it was left to cool into a dark unbreakable metal.",
+    "description": "Rivtech forges fused hydrogen into metal and poured it within lattices of superconductive lanthanum.  Locked in magnetic equilibrium, it was left to cool into a dark unbreakable metal.",
     "looks_like": "scrap"
   },
   {

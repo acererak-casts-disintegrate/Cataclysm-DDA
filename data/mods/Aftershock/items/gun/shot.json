@@ -5,24 +5,24 @@
     "type": "ITEM",
     "subtypes": [ "GUN" ],
     "name": { "str": "Benelli 315" },
-    "description": "A widely popular combat shotgun featuring minor iterative refinements to a base design nearly three centuries old.  Whether the design is outdated or unsurpassable remains a matter of personal opinion.",
+    "description": "A widely popular combat shotgun featuring minor iterative refinements to a base design nearly a century old.  Whether the design is outdated or unsurpassable remains a matter of personal opinion.",
     "variants": [
       {
         "id": "vatforged",
         "name": { "str": "vatforged shotgun" },
-        "description": "A crude but otherwise serviceable pump-action shotgun built from a hacked or scavenged template.  Frequently seen in the hands of frontier pirates, settlers or salvors.  Not that such groups are much different from one another.",
+        "description": "A crude but otherwise serviceable pump-action shotgun built from a hacked or scavenged template.  Frequently seen in the hands of raiders, homesteaders or scavengers.  Not that such groups are much different from one another.",
         "weight": 3
       },
       {
         "id": "military",
-        "name": { "str": "m2101-UASTA shotgun" },
-        "description": "The standard issue combat shotgun of UICA marine and colonial forces.  Shot shells have poor performance against modern combat armor, so the M2101 is more often used during policing and peacekeeping operations.",
+        "name": { "str": "m2101-Boeing shotgun" },
+        "description": "The standard issue combat shotgun of Marine Corps and military police units.  Shot shells have poor performance against modern combat armor, so the M2101 is more often used during policing and peacekeeping operations.",
         "weight": 2
       },
       {
         "id": "branded",
         "name": { "str": "Benelli 315" },
-        "description": "A widely popular combat shotgun featuring minor iterative refinements to a base design nearly three centuries old.  Whether the design is outdated or unsurpassable remains a matter of personal opinion.",
+        "description": "A widely popular combat shotgun featuring minor iterative refinements to a base design nearly a century old.  Whether the design is outdated or unsurpassable remains a matter of personal opinion.",
         "weight": 2
       }
     ]
@@ -43,7 +43,7 @@
     "type": "ITEM",
     "subtypes": [ "GUN" ],
     "name": { "str": "Raketa" },
-    "description": "A massive TSKBEM-design shotgun intended for exosuit forces, the Raketa aka 'Rocket' is a magazine-fed bullpup shotgun featuring twin barrels.  This design remains popular for extra-atmospheric operations as the 12ga rounds are less likely to pierce a ship or station's delicate hull.",
+    "description": "A massive Rivtech-design shotgun intended for exosuit forces, the Raketa aka 'Rocket' is a magazine-fed bullpup shotgun featuring twin barrels.  This design remains popular for extra-atmospheric operations as the 12ga rounds are less likely to pierce a ship or station's delicate hull.",
     "weight": "8 kg",
     "volume": "3064 ml",
     "longest_side": "1250 mm",
@@ -77,7 +77,7 @@
     "type": "ITEM",
     "subtypes": [ "GUN" ],
     "name": { "str": "Drotik Shotpistol" },
-    "description": "A massive TSKBEM-designed 'sidearm' intended for exosuits and uplifts, the Drotik aka 'Dart' is a large revolver firing 12ga shells.",
+    "description": "A massive Rivtech-designed 'sidearm' intended for exosuits and oversized mutants, the Drotik aka 'Dart' is a large revolver firing 12ga shells.",
     "weight": "2250 g",
     "volume": "1450 ml",
     "longest_side": "475 mm",

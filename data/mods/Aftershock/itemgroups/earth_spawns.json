@@ -1,0 +1,96 @@
+[
+  {
+    "//": "Earth spawn points for Aftershock items whose only sources were removed with the exoplanet, Whately and UPLIFT content.",
+    "type": "item_group",
+    "id": "guns_shotgun_milspec",
+    "copy-from": "guns_shotgun_milspec",
+    "extend": {
+      "items": [
+        { "item": "afs_shotgun", "prob": 10 },
+        { "item": "afs_shotgun_magnastorm", "prob": 5 },
+        { "item": "afs_raketa_shotgun", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_pistol_milspec",
+    "copy-from": "guns_pistol_milspec",
+    "extend": { "items": [ { "item": "afs_marsec_4", "prob": 10 }, { "item": "afs_drotik_shotpistol", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_launcher_milspec",
+    "copy-from": "guns_launcher_milspec",
+    "extend": { "items": [ { "item": "afs_25mm_goa", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_milspec",
+    "copy-from": "ammo_milspec",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "afs_25mm_frag", "prob": 10 }, { "item": "afs_25mm_apfsds", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": { "items": [ { "item": "afs_military_vest", "prob": 10 }, { "item": "afs_military_cloak", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "energy_weapon_armory",
+    "copy-from": "energy_weapon_armory",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "item": "afs_explosive_pumped_laser", "prob": 5 },
+        { "item": "afs_heavy_tactical_laser", "prob": 5 },
+        { "item": "afs_magnadrive_230k", "prob": 3 },
+        { "item": "afs_pam-41", "prob": 3 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "xedra_gun",
+    "copy-from": "xedra_gun",
+    "extend": {
+      "items": [
+        { "item": "afs_archeotech_laspistol", "prob": 1 },
+        { "item": "afs_electro_anomaly_rifle", "prob": 1 },
+        { "item": "afs_voltaic_pistol", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "cop_armory",
+    "copy-from": "cop_armory",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "xlpolice_belt", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_evac_shelter_supply_closet",
+    "copy-from": "SUS_evac_shelter_supply_closet",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "item": "afs_landfall_kit_2", "prob": 15 },
+        { "item": "afs_landfall_kit_2_instructions", "prob": 10 },
+        { "item": "afs_escapepod_ration", "prob": 20 },
+        { "item": "afs_foamgun", "prob": 3 },
+        { "item": "afs_foam_tank", "prob": 3 },
+        { "item": "afs_foamcrete", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_evac_shelter_locker",
+    "copy-from": "SUS_evac_shelter_locker",
+    "subtype": "collection",
+    "extend": { "entries": [ { "item": "afs_landfall_gun", "prob": 2 } ] }
+  }
+]

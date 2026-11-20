@@ -467,7 +467,7 @@
   {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_MASTODON",
-    "name": "Mastodon Uplift",
+    "name": "Killophant Mutant",
     "job_description": "Humans created me.  Let's see what I can be on my own.",
     "skills": [
       { "skill": "survival", "bonus": { "rng": [ 2, 4 ] } },
