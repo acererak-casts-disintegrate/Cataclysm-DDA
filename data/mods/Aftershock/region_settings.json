@@ -14,7 +14,7 @@
         "office_tower_large": 300,
         "office_tower_hiddenlab": 200,
         "afs_astrobiology_lab": 200,
-        "afs_city_urban_farm_small": 400,
+        "afs_city_arcology1": 100,
         "mall": 100
       },
       "houses": { "afs_house_1": 100, "house_09": 20, "house_09b": 50 }
