@@ -217,7 +217,8 @@
         "encumbrance": 30
       }
     ],
-    "melee_damage": { "bash": 10, "cut": 5 }
+    "melee_damage": { "bash": 10, "cut": 5 },
+    "longest_side": "90 cm"
   },
   {
     "id": "exosuit_power_cutter_on",

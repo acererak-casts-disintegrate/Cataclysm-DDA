@@ -74,7 +74,8 @@
     ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
-    "melee_damage": { "bash": 4 }
+    "melee_damage": { "bash": 4 },
+    "longest_side": "80 cm"
   },
   {
     "id": "laser_cannon_xray_mon",
@@ -120,7 +121,8 @@
         "item_restriction": [ "afs_cartridge", "afs_bootleg_cartridge", "afs_archeotech_cartridge" ]
       }
     ],
-    "melee_damage": { "bash": 8 }
+    "melee_damage": { "bash": 8 },
+    "longest_side": "90 cm"
   },
   {
     "id": "afs_av22",

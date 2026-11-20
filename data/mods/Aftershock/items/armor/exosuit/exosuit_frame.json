@@ -334,7 +334,8 @@
         "type": "transform"
       },
       "MANAGE_EXOSUIT"
-    ]
+    ],
+    "longest_side": "190 cm"
   },
   {
     "id": "modular_exosuit_on",
