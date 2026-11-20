@@ -87,7 +87,7 @@
     "fun": 2,
     "freezing_point": -9999,
     "vitamins": [ [ "calcium", 30 ], [ "iron", 30 ], [ "vitC", 30 ], [ "bad_food", 1 ] ],
-    "volume": "111 ml"
+    "volume": "140 ml"
   },
   {
     "id": "afs_food_to_go",
@@ -102,7 +102,7 @@
     "description": "Foodplace™ easy-storage Food-to-go™ the choice Food™ for the contemporary Foodman™.",
     "fun": 2,
     "freezing_point": -9999,
-    "volume": "111 ml"
+    "volume": "140 ml"
   },
   {
     "id": "afs_loop_fruit",
@@ -132,7 +132,7 @@
     "fun": 2,
     "freezing_point": -9999,
     "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
-    "volume": "74 ml"
+    "volume": "150 ml"
   },
   {
     "id": "afs_beefsim",
@@ -148,7 +148,8 @@
     "fun": 0,
     "freezing_point": -9999,
     "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
-    "volume": "111 ml"
+    "volume": "111 ml",
+    "weight": "120 g"
   },
   {
     "id": "afs_soup_27",
@@ -179,7 +180,7 @@
     "fun": -2,
     "freezing_point": -9999,
     "vitamins": [ [ "vitC", 2 ], [ "bad_food", 1 ] ],
-    "volume": "55 ml"
+    "volume": "140 ml"
   },
   {
     "id": "afs_caffex",

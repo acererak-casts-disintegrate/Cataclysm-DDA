@@ -8,7 +8,7 @@
     "weight": "152 g",
     "price": "20 cent",
     "seed_data": { "plant_name": "pineapple", "fruit": "pineapple", "byproducts": [ "straw_pile" ], "grow": "280 days" },
-    "volume": "31 ml"
+    "volume": "150 ml"
   },
   {
     "id": "seed_bananas",

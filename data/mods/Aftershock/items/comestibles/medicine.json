@@ -71,7 +71,8 @@
       "move_cost": 3000,
       "infect": 0.1,
       "effects": [ { "id": "afs_medigel_eff_trigger", "duration": "2 seconds" } ]
-    }
+    },
+    "weight": "800 mg"
   },
   {
     "id": "afs_stimpack",

@@ -107,7 +107,7 @@
     "name": { "str_sp": "exosuit claws" },
     "description": "A pair of oversized and articulated hydraulic gauntlets with fingertips ending in cruel talons.",
     "weight": "3 kg",
-    "volume": "300 ml",
+    "volume": "1500 ml",
     "longest_side": "50 cm",
     "price": 1100,
     "price_postapoc": 250,

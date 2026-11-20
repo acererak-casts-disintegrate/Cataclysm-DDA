@@ -5,7 +5,8 @@
     "copy-from": "radiocontrol",
     "name": { "str": "radio detonator" },
     "price": "15 USD",
-    "description": "A standard pattern detonator fabricated for military and industrial use.  This is an advanced model capable of controlling explosive drones alongside simpler devices."
+    "description": "A standard pattern detonator fabricated for military and industrial use.  This is an advanced model capable of controlling explosive drones alongside simpler devices.",
+    "material": [ "plastic", "aluminum" ]
   },
   {
     "id": "afs_cam_spy",

@@ -23,7 +23,7 @@
     "price": "8 kUSD",
     "flags": [ "OLD_TSKBEM_CARD" ],
     "price_postapoc": "8 kUSD",
-    "material": [ "plastic" ],
+    "material": [ { "type": "plastic", "portion": 9 }, { "type": "copper", "portion": 1 } ],
     "weight": "6 g",
     "volume": "5 ml",
     "category": "keys",

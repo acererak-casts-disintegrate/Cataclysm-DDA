@@ -137,7 +137,7 @@
     "name": { "str_sp": "psychrophile handling gloves" },
     "description": "These gloves are designed for handling organisms that live in extremely cold temperatures.  They can also be used to freeze your foes to death.",
     "weight": "3778 g",
-    "volume": "2 L",
+    "volume": "2100 ml",
     "price": 10000000,
     "price_postapoc": 20000,
     "material": [ "superalloy" ],

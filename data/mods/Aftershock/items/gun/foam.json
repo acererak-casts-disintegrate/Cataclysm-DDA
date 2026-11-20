@@ -11,7 +11,7 @@
     "price": 13000,
     "price_postapoc": 5000,
     "to_hit": -2,
-    "material": [ "plastic", "steel" ],
+    "material": [ { "type": "plastic", "portion": 1 }, { "type": "steel", "portion": 2 } ],
     "symbol": "(",
     "color": "yellow",
     "ammo": [ "afs_foam" ],
