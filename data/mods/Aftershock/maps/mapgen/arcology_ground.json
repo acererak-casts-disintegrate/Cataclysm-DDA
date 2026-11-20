@@ -169,7 +169,7 @@
       "palettes": [ "arcology_exterior" ],
       "nested": {
         "1": { "chunks": [ [ "arcology_8x8_electronic", 20 ], [ "arcology_8x8_foodplace", 20 ] ] },
-        "2": { "chunks": [ [ "lab_spawn_7x7", 20 ], [ "lab_spawn_7x7_crossdoors", 20 ] ] }
+        "2": { "chunks": [ [ "arcology_7x7_lab_room", 20 ], [ "arcology_7x7_lab_room_crossdoors", 20 ] ] }
       },
       "place_loot": [ { "group": "office_mess", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 50, "repeat": [ 1, 4 ] } ],
       "place_monsters": [ { "monster": "AFS_GROUP_ROBOT_LOW_RISK", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 10, "density": 0.1 } ]
@@ -183,7 +183,7 @@
     "object": {
       "fill_ter": "t_thconc_floor",
       "rows": [
-        "1_______________________",
+        "________________________",
         "________________________",
         "________________________",
         "________________________",
@@ -209,7 +209,6 @@
         ",,,,,,,,,,,,,,,,,,,,,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "1": { "chunks": [ [ "arcology_24x24_s", 20 ], [ "arcology_24x24_s", 20 ] ] } },
       "place_loot": [ { "group": "office_mess", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 50, "repeat": [ 1, 4 ] } ],
       "place_monsters": [ { "monster": "AFS_GROUP_ROBOT_LOW_RISK", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 10, "density": 0.1 } ]
     }
@@ -303,9 +302,15 @@
       "nested": {
         "1": { "chunks": [ [ "arcology_8x8_electronic", 20 ], [ "arcology_8x8_foodplace", 20 ] ] },
         "2": {
-          "chunks": [ [ "arcology_9x9_candy_shop", 20 ], [ "arcology_9x9_beauty_shop", 20 ], [ "arcology_9x9_vitamin_shop", 20 ] ]
+          "chunks": [
+            [ "arcology_9x9_candy_shop", 20 ],
+            [ "arcology_9x9_beauty_shop", 20 ],
+            [ "arcology_9x9_vitamin_shop", 20 ],
+            [ "arcology_9x9_cellphone_shop", 20 ],
+            [ "arcology_9x9_music_shop", 20 ]
+          ]
         },
-        "3": { "chunks": [ [ "lab_spawn_7x7", 20 ], [ "lab_spawn_7x7_crossdoors", 20 ] ] }
+        "3": { "chunks": [ [ "arcology_7x7_lab_room", 20 ], [ "arcology_7x7_lab_room_crossdoors", 20 ] ] }
       },
       "place_loot": [ { "group": "office_mess", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 50, "repeat": [ 1, 4 ] } ],
       "place_monsters": [ { "monster": "AFS_GROUP_ROBOT_LOW_RISK", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 10, "density": 0.1 } ]
@@ -384,7 +389,7 @@
         "________________óó,,,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "1": { "chunks": [ [ "lab_spawn_7x7", 20 ], [ "lab_spawn_7x7_crossdoors", 20 ] ] } },
+      "nested": { "1": { "chunks": [ [ "arcology_7x7_lab_room", 20 ], [ "arcology_7x7_lab_room_crossdoors", 20 ] ] } },
       "place_loot": [ { "group": "office_mess", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 50, "repeat": [ 1, 4 ] } ],
       "place_monsters": [ { "monster": "AFS_GROUP_ROBOT_LOW_RISK", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 10, "density": 0.1 } ]
     }
@@ -517,7 +522,6 @@
         "________________________"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "1": { "chunks": [ [ "arcology_24x24_s", 20 ], [ "arcology_24x24_s", 20 ] ] } },
       "place_loot": [ { "group": "office_mess", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 50, "repeat": [ 1, 4 ] } ],
       "place_monsters": [ { "monster": "AFS_GROUP_ROBOT_LOW_RISK", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 10, "density": 0.1 } ]
     }
