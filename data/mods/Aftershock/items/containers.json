@@ -49,5 +49,13 @@
         "sealed_data": { "spoil_multiplier": 0.0 }
       }
     ]
+  },
+  {
+    "//": "MAG_BULKY lets the HERC rig's bulky-magazine pocket hold pressure tanks (Rocket Jumper's liquid ammonia).",
+    "id": "pressure_tank",
+    "type": "TOOL",
+    "copy-from": "pressure_tank",
+    "name": { "str": "pressurized tank" },
+    "flags": [ "NO_UNLOAD", "MAG_BULKY" ]
   }
 ]
