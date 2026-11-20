@@ -338,20 +338,7 @@
     "required_level": 5,
     "max_level": 8,
     "intelligence": 9,
-    "time": "50 m",
-    "read_skill": "fabrication",
-    "read_fun": -3
-  },
-  {
-    "id": "recipe_augs",
-    "type": "ITEM",
-    "subtypes": [ "BOOK" ],
-    "copy-from": "recipe_augs",
-    "name": { "str": "Augmentative Tech Review", "str_pl": "issues of Augmentative Tech Review" },
-    "description": "This annual publication covers the various ways in which people use technology to improve their bodies.  There are a few in-depth and thoroughly illustrated articles on prosthetics, though they tend to use too much jargon.",
-    "weight": "400 g",
-    "volume": "500 ml",
-    "symbol": "?",
-    "color": "pink"
+    "fun": -3,
+    "time": "50 m"
   }
 ]

@@ -15,18 +15,6 @@
     "grow": "280 days"
   },
   {
-    "id": "seed_melon",
-    "copy-from": "seed_fruit",
-    "type": "ITEM",
-    "subtypes": [ "SEED", "COMESTIBLE" ],
-    "name": { "str_sp": "melon seeds" },
-    "description": "Some melon seeds.",
-    "plant_name": "melon",
-    "fruit": "melon",
-    "byproducts": [ "withered" ],
-    "grow": "91 days"
-  },
-  {
     "id": "seed_bananas",
     "copy-from": "seed_fruit",
     "type": "ITEM",

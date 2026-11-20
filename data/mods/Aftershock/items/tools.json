@@ -272,26 +272,6 @@
     "flags": [ "ALLOWS_REMOTE_USE" ]
   },
   {
-    "id": "atomic_coffeepot",
-    "type": "ITEM",
-    "category": "tools",
-    "name": { "str": "atomic coffeemaker" },
-    "looks_like": "coffeemaker",
-    "description": "A Curie-G coffeemaker, made by CuppaTech.  It famously uses a radioactive generator to heat water for coffee.  Normally the water is heated using energy stored in a capacitor, and makes ordinary coffee.  However, as a special feature, water from the RTG containment area can be used, giving the coffee a very special kick.  The Curie-G is illegal in most countries.",
-    "weight": "6000 g",
-    "volume": "1500 ml",
-    "longest_side": "20 cm",
-    "price": "1 kUSD",
-    "price_postapoc": "30 USD",
-    "material": [ "plastic", "aluminum" ],
-    "qualities": [ [ "BOIL", 1 ] ],
-    "symbol": ",",
-    "color": "light_green",
-    "use_action": [ "HOTPLATE_ATOMIC" ],
-    "flags": [ "LEAK_DAM", "RADIOACTIVE", "DURABLE_MELEE" ],
-    "melee_damage": { "bash": 5 }
-  },
-  {
     "id": "afs_power_cutter",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
@@ -387,50 +367,6 @@
     "volume": "500 ml",
     "to_hit": -1,
     "melee_damage": { "bash": 5 }
-  },
-  {
-    "id": "UPS_OFF",
-    "type": "ITEM",
-    "subtypes": [ "TOOL", "ARMOR" ],
-    "copy-from": "UPS_OFF",
-    "name": { "str": "UPS", "str_pl": "UPSes" },
-    "description": "This is a unified power supply, or UPS.  It is a device developed jointly by military and scientific interests for use in combat and the field.  The UPS is designed to power armor and some guns, but drains batteries quickly.  It can be worn strapped to either leg for ease of access, and it's been waterproofed to protect the delicate electronics.  Has its own custom battery, rechargeable and with higher capacity, but not removable",
-    "sided": true,
-    "price": "1300 USD",
-    "price_postapoc": "1300 USD",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1500 } } ],
-    "flags": [ "RECHARGE", "BELTED", "NO_UNLOAD", "NO_RELOAD", "FRAGILE", "OVERSIZE", "WATERPROOF", "IS_UPS" ],
-    "material": [ "aluminum", "plastic" ],
-    "armor": [
-      {
-        "encumbrance": 2,
-        "coverage": 13,
-        "covers": [ "leg_l", "leg_r" ],
-        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ]
-      }
-    ],
-    "tool_ammo": [ "battery" ]
-  },
-  {
-    "id": "UPS_ON",
-    "type": "ITEM",
-    "subtypes": [ "TOOL", "ARMOR" ],
-    "copy-from": "UPS_ON",
-    "name": { "str": "UPS", "str_pl": "UPSes" },
-    "description": "This is a unified power supply, or UPS.  It is a device developed jointly by military and scientific interests for use in combat and the field.  The UPS is designed to power armor and some guns, but drains batteries quickly.  It can be worn strapped to either leg for ease of access, and it's been waterproofed to protect the delicate electronics.  Has its own custom battery, rechargeable and with higher capacity, but not removable",
-    "sided": true,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1500 } } ],
-    "flags": [ "RECHARGE", "BELTED", "NO_UNLOAD", "NO_RELOAD", "FRAGILE", "OVERSIZE", "WATERPROOF", "IS_UPS" ],
-    "material": [ "aluminum", "plastic" ],
-    "armor": [
-      {
-        "encumbrance": 2,
-        "coverage": 13,
-        "covers": [ "leg_l", "leg_r" ],
-        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ]
-      }
-    ],
-    "tool_ammo": [ "battery" ]
   },
   {
     "id": "bionic_maintenance_toolkit",
@@ -662,104 +598,6 @@
     "color": "light_gray",
     "flags": [ "ALLOWS_REMOTE_USE" ],
     "melee_damage": { "bash": 9 }
-  },
-  {
-    "type": "ITEM",
-    "subtypes": [ "ARTIFACT" ],
-    "copy-from": "folding_solar_panel",
-    "id": "afs_cRTG",
-    "name": { "str": "U-344 RTG" },
-    "description": "A compact power source that employs the decay of transuranic elements to generate a small but constant amount of electricity and is commonly used in remote locations to power up equipment.  Must be integrated into a power grid before use.",
-    "weight": "17500 g",
-    "volume": "2 L",
-    "longest_side": "30 cm",
-    "color": "light_green",
-    "symbol": "]",
-    "material": [ "lead", "steel" ],
-    "use_action": { "type": "deploy_appliance", "base": "afs_cRTG" },
-    "extend": { "flags": [ "RECHARGE", "NO_UNLOAD", "NO_RELOAD", "WATERPROOF", "LEAK_DAM", "RADIOACTIVE" ] },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } } ],
-    "price": "5600 USD",
-    "price_postapoc": "5600 USD",
-    "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "5 m" }
-  },
-  {
-    "id": "syringe",
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
-    "name": { "str": "jet injector" },
-    "description": "A compact jet injector from a first aid kit.  A light based assistive injection system allows use without any medical training.",
-    "weight": "4240 mg",
-    "volume": "10ml",
-    "longest_side": "10 cm",
-    "to_hit": { "grip": "none", "length": "hand", "surface": "point", "balance": "neutral" },
-    "price": "2 USD",
-    "price_postapoc": "2 USD",
-    "material": [ "plastic" ],
-    "symbol": ",",
-    "color": "white",
-    "flags": [ "FRAGILE_MELEE" ],
-    "melee_damage": { "stab": 1 }
-  },
-  {
-    "id": "afs_bio_deck_jack",
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
-    "category": "tools",
-    "name": { "str": "infolink jack" },
-    "description": "The interface jack of an implanted infolink, coiled within your forearm and accessible through a small port in your wrist.  It can be used to interface and hack into electronic devices.",
-    "weight": "20 g",
-    "volume": "2 ml",
-    "price": "1 USD",
-    "symbol": ",",
-    "color": "green",
-    "flags": [
-      "INTEGRATED",
-      "UNBREAKABLE",
-      "PERSONAL",
-      "WATER_FRIENDLY",
-      "SOFT",
-      "NO_REPAIR",
-      "ALLOWS_NATURAL_ATTACKS",
-      "TRADER_AVOID",
-      "USES_BIONIC_POWER"
-    ],
-    "charges_per_use": 1,
-    "qualities": [ [ "HACK", 4 ] ],
-    "tool_ammo": [ "battery" ]
-  },
-  {
-    "id": "afs_internal_battery_compartment",
-    "type": "ITEM",
-    "subtypes": [ "TOOL", "ARMOR" ],
-    "name": { "str": "high-voltage battery compartment" },
-    "description": "A battery slot installed in your upper torso, designed to power bionic implants.  Compatible with the power cartridges used by laser weaponry.",
-    "volume": "750 ml",
-    "weight": "1 g",
-    "price": "0 cent",
-    "material": [ "plastic" ],
-    "symbol": "(",
-    "color": "magenta",
-    "flags": [
-      "INTEGRATED",
-      "UNBREAKABLE",
-      "PERSONAL",
-      "NO_REPAIR",
-      "ALLOWS_NATURAL_ATTACKS",
-      "BIONIC_FUEL_SOURCE",
-      "SOFT",
-      "TRADER_AVOID"
-    ],
-    "pocket_data": [
-      {
-        "pocket_type": "MAGAZINE_WELL",
-        "rigid": true,
-        "max_contains_volume": "20 L",
-        "max_contains_weight": "20 kg",
-        "item_restriction": [ "afs_cartridge", "afs_bootleg_cartridge", "afs_archeotech_cartridge" ]
-      }
-    ],
-    "tool_ammo": [ "battery" ]
   },
   {
     "id": "diamond_press",
