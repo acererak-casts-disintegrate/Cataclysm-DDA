@@ -91,6 +91,7 @@
     "reload": 0,
     "valid_mod_locations": [ [ "sling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "water": 100 }, "watertight": true } ],
-    "melee_damage": { "bash": 10 }
+    "melee_damage": { "bash": 10 },
+    "longest_side": "150 cm"
   }
 ]

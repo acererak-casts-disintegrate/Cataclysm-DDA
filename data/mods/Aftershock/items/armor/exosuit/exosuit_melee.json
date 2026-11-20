@@ -221,7 +221,7 @@
       }
     ],
     "melee_damage": { "bash": 10, "cut": 5 },
-    "tool_ammo": [ "gasoline", "diesel", "jp8", "avgas", "lamp_oil", "motor_oil", "propane", "conc_alcohol", "ammonia_liquid" ]
+    "longest_side": "90 cm"
   },
   {
     "id": "exosuit_power_cutter_on",

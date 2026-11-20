@@ -24,7 +24,8 @@
     "environmental_protection": 1,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "VARSIZE", "STURDY", "PADDED" ],
-    "melee_damage": { "bash": 10 }
+    "melee_damage": { "bash": 10 },
+    "longest_side": "33 cm"
   },
   {
     "id": "tac_fullhelmet_uicas",
@@ -58,7 +59,7 @@
     "use_action": [ "GASMASK_ACTIVATE" ],
     "tick_action": [ "GASMASK" ],
     "melee_damage": { "bash": 10 },
-    "tool_ammo": "gasfilter_m"
+    "longest_side": "30 cm"
   },
   {
     "id": "tac_helmet_uicas",
@@ -82,6 +83,7 @@
     "material_thickness": 4,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "WATER_FRIENDLY", "STURDY", "PADDED" ],
-    "melee_damage": { "bash": 10 }
+    "melee_damage": { "bash": 10 },
+    "longest_side": "30 cm"
   }
 ]

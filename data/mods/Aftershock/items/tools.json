@@ -287,7 +287,7 @@
     "use_action": { "target": "afs_power_cutter_on", "msg": "You rev up the power cutter!", "active": true, "type": "transform" },
     "flags": [ "ALWAYS_TWOHAND", "NONCONDUCTIVE" ],
     "melee_damage": { "bash": 7, "cut": 3 },
-    "tool_ammo": [ "gasoline" ]
+    "longest_side": "75 cm"
   },
   {
     "id": "afs_power_cutter_on",
@@ -329,7 +329,7 @@
     "use_action": { "target": "afs_murdersaw_on", "msg": "You rev up the murdersaw!", "active": true, "type": "transform" },
     "flags": [ "ALWAYS_TWOHAND", "NONCONDUCTIVE" ],
     "melee_damage": { "bash": 6, "cut": 3 },
-    "tool_ammo": [ "gasoline" ]
+    "longest_side": "70 cm"
   },
   {
     "id": "afs_murdersaw_on",

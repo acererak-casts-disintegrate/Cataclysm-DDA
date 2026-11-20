@@ -120,7 +120,8 @@
     "flags": [ "NO_REPAIR", "NONCONDUCTIVE", "SLOW_WIELD", "DURABLE_MELEE", "LEAK_DAM" ],
     "techniques": [ "BRUTAL", "AFS_PRESSURE_CRUNCH" ],
     "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "hand_r" ] } ],
-    "melee_damage": { "bash": 50 }
+    "melee_damage": { "bash": 50 },
+    "longest_side": "45 cm"
   },
   {
     "id": "afs_freeze_gauntlet",
@@ -231,7 +232,8 @@
     "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 5 ] ],
     "flags": [ "SHEATH_KNIFE", "DURABLE_MELEE" ],
     "melee_damage": { "bash": 2, "stab": 15 },
-    "weapon_category": [ "KNIVES" ]
+    "weapon_category": [ "KNIVES" ],
+    "longest_side": "20 cm"
   },
   {
     "id": "afs_toxic_knife",

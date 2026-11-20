@@ -269,7 +269,8 @@
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
     "melee_damage": { "bash": 4 },
-    "energy_drain": "25 kJ"
+    "energy_drain": "25 kJ",
+    "longest_side": "80 cm"
   },
   {
     "id": "heavy_rail_rifle",
@@ -306,7 +307,8 @@
     "flags": [ "RELOAD_ONE", "USE_UPS" ],
     "melee_damage": { "bash": 12 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "metal_rail": 10 } } ],
-    "energy_drain": "100 kJ"
+    "energy_drain": "100 kJ",
+    "longest_side": "110 cm"
   },
   {
     "id": "steel_rail",
@@ -371,7 +373,8 @@
     "reload": 800,
     "valid_mod_locations": [ [ "sling", 1 ], [ "grip mount", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ],
     "melee_damage": { "bash": 12 },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "mininuke_mod": 1 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "mininuke_mod": 1 } } ],
+    "longest_side": "110 cm"
   },
   {
     "type": "AMMO",
@@ -440,7 +443,8 @@
     ],
     "flags": [ "WATERPROOF_GUN", "RELOAD_ONE", "NEVER_JAMS" ],
     "melee_damage": { "bash": 12 },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "8x40mm": 5 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "8x40mm": 5 } } ],
+    "longest_side": "20 cm"
   },
   {
     "id": "adv_UPS_off",
