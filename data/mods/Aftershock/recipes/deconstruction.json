@@ -195,6 +195,26 @@
     ]
   },
   {
+    "result": "broken_light_hack",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "10 m",
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "RAM", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "e_scrap", 1 ] ],
+      [ [ "quad_rotors", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "light_bulb", 2 ] ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },
+  {
     "result": "broken_bloodhound_drone",
     "type": "uncraft",
     "activity_level": "BRISK_EXERCISE",

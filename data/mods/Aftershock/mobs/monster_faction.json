@@ -11,7 +11,6 @@
   {
     "type": "MONSTER_FACTION",
     "name": "alien_predator",
-    "neutral": [ "bot" ],
     "by_mood": [ "WraitheonRobotics", "alien_predator", "cop_bot", "defense_bot" ]
   },
   {
@@ -37,8 +36,7 @@
   {
     "type": "MONSTER_FACTION",
     "name": "reavers",
-    "base_faction": "human",
-    "neutral": [ "herbivore", "robofac" ],
+    "neutral": [ "herbivore" ],
     "by_mood": [ "insect", "small_animal", "human", "bee" ],
     "hate": [ "zombie" ]
   },
@@ -46,8 +44,7 @@
     "type": "MONSTER_FACTION",
     "name": "zombie",
     "copy-from": "zombie",
-    "neutral": [ "moxie" ],
-    "hate": [ "reavers" ]
+    "extend": { "neutral": [ "moxie" ], "hate": [ "reavers" ] }
   },
   {
     "type": "MONSTER_FACTION",
@@ -87,18 +84,18 @@
     "type": "MONSTER_FACTION",
     "name": "herbivore",
     "copy-from": "herbivore",
-    "neutral": [ "PrepNet", "bio_machine", "hevel" ]
+    "extend": { "neutral": [ "PrepNet", "bio_machine", "hevel", "reavers" ] }
   },
   {
     "type": "MONSTER_FACTION",
     "name": "human",
     "copy-from": "human",
-    "neutral": [ "bio_machine" ]
+    "extend": { "neutral": [ "bio_machine" ] }
   },
   {
     "type": "MONSTER_FACTION",
     "name": "wolf",
     "copy-from": "wolf",
-    "by_mood": [ "venandi" ]
+    "extend": { "by_mood": [ "venandi" ] }
   }
 ]
