@@ -42,7 +42,7 @@
     "description": "Kibble made for humans.  A heavy dressing of spices makes it impossible to discern the original flavors it might have had.",
     "weight": "223 g",
     "spoils_in": "1 day",
-    "volume": "125 ml",
+    "volume": "250 ml",
     "price": "250 cent",
     "to_hit": -5,
     "material": [ "veggy" ],

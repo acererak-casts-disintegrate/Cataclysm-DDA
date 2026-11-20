@@ -100,7 +100,7 @@
     "volume": "250 ml",
     "price": "50 USD",
     "to_hit": -3,
-    "material": [ "aluminum", "plastic" ],
+    "material": [ { "type": "aluminum", "portion": 3 }, { "type": "plastic", "portion": 1 } ],
     "symbol": ";",
     "color": "green",
     "use_action": {
@@ -121,7 +121,7 @@
     "subtypes": [ "TOOL" ],
     "name": { "str": "inactive bloodhound drone" },
     "description": "This is an inactive bloodhound drone.  If successfully deployed, it will fly towards enemy targets and highlight them with a powerful spotlight.",
-    "weight": "5400 g",
+    "weight": "1 kg",
     "volume": "750 ml",
     "price": "600 USD",
     "to_hit": -3,
@@ -278,7 +278,9 @@
       "moves": 60,
       "place_randomly": true,
       "skills": [ "electronics", "computer" ]
-    }
+    },
+    "weight": "1500 g",
+    "material": [ { "type": "aluminum", "portion": 2 }, { "type": "plastic", "portion": 1 } ]
   },
   {
     "abstract": "bot_milbot_base",
