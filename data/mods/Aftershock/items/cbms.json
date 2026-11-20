@@ -37,17 +37,6 @@
     "difficulty": 5
   },
   {
-    "id": "bio_shock_absorber",
-    "copy-from": "bionic_general",
-    "type": "BIONIC_ITEM",
-    "name": { "str": "Archeotech Grav Chute CBM" },
-    "looks_like": "bio_int_enhancer",
-    "description": "Pre-Discontinuity bionic module that was implanted into elite drop troops who could jump from their insertion vehicle during the radar disruption of reentry.  While active, the field will prevent damage to your body from severe impacts, at the cost of impaired movement.",
-    "price": 10000,
-    "weight": "3000 g",
-    "difficulty": 8
-  },
-  {
     "id": "bio_power_storage_salvaged",
     "copy-from": "bionic_general_npc_usable",
     "type": "BIONIC_ITEM",
@@ -56,8 +45,7 @@
     "description": "A battered and used Compact Bionics Module that upgrades the user's power capacity by 50 units.  Having at least one of these is a prerequisite to using powered bionics.  The user will also need a power supply, found in various CBMs.",
     "price": 380000,
     "weight": "70 g",
-    "difficulty": 1,
-    "installation_data": "AID_bio_power_storage"
+    "difficulty": 1
   },
   {
     "id": "afs_bio_dopamine_stimulators",

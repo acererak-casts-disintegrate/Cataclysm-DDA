@@ -163,13 +163,6 @@
     "melee_damage": { "bash": 3 }
   },
   {
-    "type": "GENERIC",
-    "id": "golf_club",
-    "name": { "str": "golf club" },
-    "copy-from": "golf_club",
-    "material": [ "aluminum", "titanium" ]
-  },
-  {
     "id": "afs_bionic_rocket",
     "type": "GUN",
     "name": { "str": "deployed grenade launcher" },
