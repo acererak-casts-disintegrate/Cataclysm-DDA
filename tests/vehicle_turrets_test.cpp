@@ -62,8 +62,10 @@ TEST_CASE( "vehicle_turret", "[vehicle][gun][magazine]" )
             const itype *base_itype = vp.get_base().type;
             REQUIRE( base_itype );
             REQUIRE( base_itype->gun );
-            if( base_itype->gun->energy_drain > 0_kJ || turret_vpi->has_flag( "USE_BATTERIES" ) ) {
-                const auto& [bat_current, bat_capacity] = veh->battery_power_level( );
+            // item-level drain includes energy_drain_modifier from built-in gunmods
+            const units::energy energy_drain = vp.get_base().get_gun_energy_drain();
+            if( energy_drain > 0_kJ || turret_vpi->has_flag( "USE_BATTERIES" ) ) {
+                const auto& [bat_current, bat_capacity] = veh->battery_power_level();
                 CHECK( bat_capacity > 0 );
                 veh->charge_battery( here, bat_capacity, /* apply_loss = */ false );
                 REQUIRE( veh->battery_left( here, /* apply_loss = */ false ) == bat_capacity );
@@ -72,7 +74,7 @@ TEST_CASE( "vehicle_turret", "[vehicle][gun][magazine]" )
             const itype_id ammo_itype = vp.get_base().ammo_default();
             if( ammo_itype.is_null() ) {
                 // probably a pure energy weapon
-                CHECK( base_itype->gun->energy_drain > 0_kJ );
+                CHECK( energy_drain > 0_kJ );
             } else if( turret_vpi->has_flag( "USE_TANKS" ) ) {
                 CAPTURE( ammo_itype.str() );
                 CAPTURE( veh->type.str() );
