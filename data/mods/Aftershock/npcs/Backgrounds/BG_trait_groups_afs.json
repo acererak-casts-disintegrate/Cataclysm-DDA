@@ -6,11 +6,6 @@
     "subtype": "distribution",
     "traits": [
       { "trait": "BGSS_RECENT_MUTATION_1" },
-      { "trait": "BGSS_UPLIFTED_ANIMAL_1" },
-      { "trait": "BGSS_UPLIFTED_ANIMAL_2" },
-      { "trait": "BGSS_UPLIFTED_ANIMAL_3" },
-      { "trait": "BGSS_UPLIFTED_ANIMAL_4" },
-      { "trait": "BGSS_UPLIFTED_ANIMAL_5" },
       { "trait": "BGSS_RADIATION_1" },
       { "trait": "BGSS_RADIATION_2" },
       { "trait": "BGSS_SELFTEST" },

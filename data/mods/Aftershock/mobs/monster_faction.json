@@ -30,39 +30,9 @@
     "type": "MONSTER_FACTION",
     "name": "WraitheonRobotics",
     "base_faction": "robofac",
-    "neutral": [ "cop_bot", "defense_bot", "utility_bot", "animal", "UPLIFT", "robofac" ],
-    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine", "reavers" ],
+    "neutral": [ "cop_bot", "defense_bot", "utility_bot", "animal", "robofac" ],
+    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine" ],
     "by_mood": [ "human" ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "rampant_machine",
-    "base_faction": "robofac",
-    "neutral": [ "utility_bot" ],
-    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine", "reavers" ],
-    "by_mood": [ "human" ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "UICA_mil",
-    "base_faction": "WraitheonRobotics"
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "whately",
-    "base_faction": "human",
-    "friendly": [ "human", "whately", "whately_family" ],
-    "by_mood": [ "insect", "small_animal" ],
-    "neutral": [ "herbivore" ],
-    "hate": [ "zombie" ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "UPLIFT",
-    "base_faction": "bear",
-    "neutral": [ "herbivore", "robofac" ],
-    "by_mood": [ "insect", "small_animal", "human", "bee" ],
-    "hate": [ "zombie" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -117,7 +87,7 @@
     "type": "MONSTER_FACTION",
     "name": "herbivore",
     "copy-from": "herbivore",
-    "neutral": [ "PrepNet", "whately", "UPLIFT", "bio_machine", "hevel" ]
+    "neutral": [ "PrepNet", "bio_machine", "hevel" ]
   },
   {
     "type": "MONSTER_FACTION",

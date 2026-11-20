@@ -74,9 +74,7 @@
     "id": "newspaper",
     "type": "item_group",
     "copy-from": "newspaper",
-    "extend": {
-      "items": [ [ "afs_personal_card", 8 ], [ "afs_welcome1_book", 4 ], [ "afs_welcome2_book", 4 ], [ "afs_welcome3_book", 4 ] ]
-    }
+    "extend": { "items": [ [ "afs_personal_card", 8 ] ] }
   },
   {
     "id": "livingroom",
@@ -368,19 +366,13 @@
     "//": "This group is for an area storing diving equipment.  SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
     "subtype": "collection",
     "copy-from": "SUS_scuba_gear",
-    "extend": {
-      "entries": [
-        { "item": "combat_wetsuit_cecalia", "prob": 20 },
-        { "item": "wetsuit_cecalia", "prob": 70 },
-        { "item": "trident", "prob": 70 }
-      ]
-    }
+    "extend": { "entries": [ { "item": "trident", "prob": 70 } ] }
   },
   {
     "id": "seabased_death_drop",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ [ "combat_wetsuit_cecalia", 20 ], [ "wetsuit_cecalia", 70 ], [ "trident", 70 ], [ "dive_bag", 100 ] ]
+    "items": [ [ "trident", 70 ], [ "dive_bag", 100 ] ]
   },
   {
     "id": "gear_afs_sidearm",
