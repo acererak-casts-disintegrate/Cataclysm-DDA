@@ -74,6 +74,9 @@
       { "item": "xl_technician_pants_gray", "prob": 50, "damage-min": 0, "damage-max": 5 },
       { "item": "xl_technician_shirt_gray", "prob": 100, "damage-min": 0, "damage-max": 5 },
       { "item": "xl_jeans", "prob": 50, "damage-min": 0, "damage-max": 5 },
+      { "item": "xlleather_belt", "prob": 30 },
+      { "item": "xllegpouch_large", "prob": 10 },
+      { "item": "xltac_fullhelmet", "prob": 5 },
       { "group": "military", "prob": 50, "damage-min": 0, "damage-max": 5 },
       { "group": "mil_food", "prob": 100, "damage-min": 0, "damage-max": 5 }
     ]
@@ -87,6 +90,9 @@
       { "item": "xl_technician_pants_gray", "prob": 50, "damage-min": 1, "damage-max": 5 },
       { "item": "xl_technician_shirt_gray", "prob": 100, "damage-min": 1, "damage-max": 5 },
       { "item": "xl_jeans", "prob": 50, "damage-min": 1, "damage-max": 5 },
+      { "item": "xlleather_belt", "prob": 30 },
+      { "item": "xllegpouch_large", "prob": 10 },
+      { "item": "xltac_fullhelmet", "prob": 5 },
       { "item": "mp5mag", "prob": 10 },
       { "group": "military", "prob": 50, "damage-min": 0, "damage-max": 5 },
       { "group": "mil_food", "prob": 100, "damage-min": 0, "damage-max": 5 }

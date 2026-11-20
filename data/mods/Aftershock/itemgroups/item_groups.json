@@ -492,7 +492,11 @@
       { "group": "afs_exo_basic_power", "prob": 75 },
       { "group": "afs_exo_basic_accessories", "prob": 75 },
       { "group": "afs_exo_basic_accessories", "prob": 75 },
-      { "group": "afs_power_tools", "prob": 75 }
+      { "group": "afs_power_tools", "prob": 75 },
+      { "item": "afs_exo_eva_underlayer", "prob": 10 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_mining", "prob": 15 },
+      { "group": "afs_exo_service", "prob": 40 }
     ]
   },
   {
@@ -510,7 +514,10 @@
       { "item": "exo_sonic_unit", "prob": 60 },
       { "item": "exo_microwave_cannon", "prob": 60 },
       { "item": "afs_cartridge", "count": [ 0, 4 ], "prob": 95, "charges": [ 50, 100 ] },
-      { "group": "afs_exo_basic_power", "prob": 25 }
+      { "group": "afs_exo_basic_power", "prob": 25 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_advanced_modules", "prob": 30 },
+      { "group": "afs_exo_melee", "prob": 20 }
     ]
   },
   {
@@ -528,7 +535,66 @@
       { "item": "exo_electrolaser", "prob": 15 },
       { "item": "exo_flame_thrower", "prob": 50, "charges-min": 100, "charges-max": 1500 },
       { "item": "afs_cartridge", "count": [ 2, 6 ], "prob": 95, "charges": [ 50, 100 ] },
-      { "group": "afs_exo_advanced_power", "prob": 25 }
+      { "group": "afs_exo_advanced_power", "prob": 25 },
+      { "group": "afs_exo_advanced_modules", "prob": 50 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_melee", "prob": 30 },
+      { "group": "afs_exo_service", "prob": 30 }
+    ]
+  },
+  {
+    "id": "afs_exo_advanced_modules",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "exo_AR_module", "prob": 20 },
+      { "item": "exo_bio_oxygen", "prob": 20 },
+      { "item": "exo_cartridge_charger", "prob": 20 },
+      { "item": "exo_climb", "prob": 20 },
+      { "item": "exo_forcefield", "prob": 5 },
+      { "item": "exo_jetpack", "prob": 10 },
+      { "item": "exo_lense_module", "prob": 20 },
+      { "item": "exo_recoil", "prob": 20 },
+      { "item": "exo_trickle_charger", "prob": 5 },
+      { "item": "exosuit_med_injector", "prob": 15 }
+    ]
+  },
+  {
+    "id": "afs_exo_storage",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "exo_small_storage", "prob": 30 },
+      { "item": "exo_medium_storage", "prob": 25 },
+      { "item": "exo_large_storage", "prob": 15 },
+      { "item": "exo_small_ammo_pouch", "prob": 20 },
+      { "item": "exo_large_ammo_pouch", "prob": 10 },
+      { "item": "exo_large_holster", "prob": 10 },
+      { "item": "exo_rifle_storage", "prob": 10 },
+      { "item": "exo_melee_storage", "prob": 10 },
+      { "item": "exo_sheath", "prob": 10 }
+    ]
+  },
+  {
+    "id": "afs_exo_melee",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "exosuit_claw", "prob": 50 }, { "item": "boarding_axe", "prob": 50 } ]
+  },
+  {
+    "id": "afs_exo_mining",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "exo_rod_launcher" }, { "item": "mining_rod", "count": [ 4, 10 ] } ]
+  },
+  {
+    "id": "afs_exo_service",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "exo_repair_kit", "prob": 60 },
+      { "item": "exosuit_maintenance", "prob": 40 },
+      { "item": "exo_connector", "prob": 70, "count": [ 2, 8 ] }
     ]
   }
 ]

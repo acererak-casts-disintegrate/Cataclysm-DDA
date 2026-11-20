@@ -2,7 +2,7 @@
   {
     "id": "afs_escape_pod_suppliesII",
     "type": "item_group",
-    "//": "Survival kit for survival in terrestrial planets.  List based on the gear found on lifeboats.",
+    "//": "Stocked Type II FEMA survival kit.  Contents based on lifeboat survival gear.",
     "subtype": "collection",
     "container-item": "afs_landfall_kit_2",
     "on_overflow": "spill",
@@ -18,7 +18,6 @@
       { "item": "medium_plus_battery_cell", "ammo-item": "battery", "charges": 600, "container-item": "mil_mess_kit" },
       { "item": "rope_6" },
       { "item": "emer_blanket", "count": 2 },
-      { "item": "afs_radiobeacon" },
       { "item": "afs_landfall_gun", "container-item": "back_holster" },
       { "item": "afs_7.50mm_rp", "charges": 18 },
       { "item": "afs_landfall_kit_2_instructions" }
