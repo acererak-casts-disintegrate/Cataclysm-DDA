@@ -417,6 +417,10 @@ bool SkillLevel::rust( int rust_resist, float rust_multiplier )
 
     _rustAccumulator += rust_amount;
     _exercise -= rust_amount;
+    if( _exercise < 0 && get_option<std::string>( "SKILL_RUST" ) == "capped" ) {
+        // Capped rust never costs a level.
+        _exercise = 0;
+    }
     on_exercise_change();
 
     return false;

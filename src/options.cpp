@@ -199,6 +199,7 @@ static const std::map<std::string, std::pair<std::string, std::map<std::string, 
     static const std::map<std::string, std::pair<std::string, std::map<std::string, std::string>>> opt
     = {
         {"DELETE_WORLD", { "WORLD_END", { {"no", "keep" }, {"yes", "delete"} } } },
+        {"SKILL_RUST", { "SKILL_RUST", { {"int", "vanilla" }, {"intcap", "capped"} } } },
         {"MONSTER_UPGRADE_FACTOR", { "EVOLUTION_INVERSE_MULTIPLIER", {} }} //TODO: Remove after stable after world option reserialising is added, value migration done in migrateOptionValue instead
     };
     return opt;
@@ -2759,48 +2760,83 @@ void options_manager::add_options_world_default()
 
     add_empty_line();
 
-    // These optiosn are purposefully and permanently hidden. It can only be modified through the sliders when creating a new world.
-    // As such there is no name or description to show, those are blanked.
-    add( "CITY_SIZE", "world_default", translation(), translation(), 0, 16, 8, COPT_ALWAYS_HIDE
+    // The worldgen sliders (data/core/world_option_sliders.json) set these as presets.  Changing any
+    // of them under the world's advanced settings switches the sliders to "Custom" until reset.
+    add( "CITY_SIZE", "world_default", to_translation( "Size of cities" ),
+         to_translation( "A number determining how large cities are.  A higher number means larger cities.  0 disables cities, roads and any scenario requiring a city start." ),
+         0, 16, 8
        );
 
-    add( "CITY_SPACING", "world_default", translation(), translation(), 0, 8, 4, COPT_ALWAYS_HIDE
+    add( "CITY_SPACING", "world_default", to_translation( "City spacing" ),
+         to_translation( "A number determining how far apart cities are.  A higher number means cities are further apart.  Warning, small numbers lead to very slow mapgen." ),
+         0, 8, 4
        );
 
-    add( "SPAWN_DENSITY", "world_default", translation(), translation(), 0.0, 50.0, 1.0, 0.1,
-         COPT_ALWAYS_HIDE
+    add( "SPAWN_DENSITY", "world_default", to_translation( "Spawn rate scaling factor" ),
+         to_translation( "A scaling factor that determines density of monster spawns.  A higher number means more monsters." ),
+         0.0, 50.0, 1.0, 0.1
        );
 
-    add( "ITEM_SPAWNRATE", "world_default", translation(), translation(), 0.01, 10.0, 1.0, 0.01,
-         COPT_ALWAYS_HIDE
+    add( "ITEM_SPAWNRATE", "world_default", to_translation( "Item spawn scaling factor" ),
+         to_translation( "A scaling factor that determines density of item spawns.  A higher number means more items." ),
+         0.01, 10.0, 1.0, 0.01
        );
 
-    add( "NPC_SPAWNTIME", "world_default", translation(), translation(), 0.0, 100.0, 4.0, 0.01,
-         COPT_ALWAYS_HIDE
+    add( "NPC_SPAWNTIME", "world_default", to_translation( "Random NPC spawn time" ),
+         to_translation( "Baseline average number of days between random NPC spawns.  Average duration goes up with the number of NPCs already spawned.  A higher number means fewer NPCs.  Set to 0 days to disable random NPCs." ),
+         0.0, 100.0, 4.0, 0.01
        );
 
-    add( "MONSTER_SPEED", "world_default", translation(), translation(), 1, 1000, 100, COPT_ALWAYS_HIDE,
-         "%i%%"
+    add( "MONSTER_SPEED", "world_default", to_translation( "Monster speed" ),
+         to_translation( "Determines the movement rate of monsters.  A higher value increases monster speed and a lower reduces it.  Requires world reset." ),
+         1, 1000, 100, COPT_NO_HIDE, "%i%%"
        );
 
-    add( "MONSTER_RESILIENCE", "world_default", translation(), translation(), 1, 1000, 100,
-         COPT_ALWAYS_HIDE, "%i%%"
+    add( "MONSTER_RESILIENCE", "world_default", to_translation( "Monster resilience" ),
+         to_translation( "Determines how much damage monsters can take.  A higher value makes monsters more resilient and a lower makes them more flimsy.  Requires world reset." ),
+         1, 1000, 100, COPT_NO_HIDE, "%i%%"
        );
 
-    add( "EVOLUTION_INVERSE_MULTIPLIER", "world_default", translation(), translation(),
-         0.0, 100, 1.0, 0.01, COPT_ALWAYS_HIDE
+    add( "EVOLUTION_INVERSE_MULTIPLIER", "world_default",
+         to_translation( "Monster evolution time multiplier" ),
+         to_translation( "Multiplies the time monsters take to evolve.  1.00 is the default, a higher number means slower evolution, and 0.00 turns monster evolution off." ),
+         0.0, 100, 1.0, 0.01
        );
 
-    add( "SEASON_LENGTH", "world_default", translation(), translation(), 14, 127, 91,
-         COPT_ALWAYS_HIDE );
+    add( "SEASON_LENGTH", "world_default", to_translation( "Season length" ),
+         to_translation( "Season length, in days.  Warning: Very little other than the duration of seasons scales with this value, so adjusting it may cause nonsensical results." ),
+         14, 127, 91
+       );
 
-    add( "CONSTRUCTION_SCALING", "world_default", translation(), translation(), 0, 1000, 100,
-         COPT_ALWAYS_HIDE );
+    add( "CONSTRUCTION_SCALING", "world_default", to_translation( "Construction scaling" ),
+         to_translation( "Sets the time of construction in percents.  '50' is two times faster than default, '200' is two times longer.  '0' automatically scales construction time to match the world's season length." ),
+         0, 1000, 100
+       );
 
-    add( "ETERNAL_SEASON", "world_default", translation(), translation(), false, COPT_ALWAYS_HIDE );
+    add( "ETERNAL_SEASON", "world_default", to_translation( "Eternal season" ),
+         to_translation( "If true, keep the initial season for ever." ),
+         false
+       );
 
-    add( "ETERNAL_TIME_OF_DAY", "world_default", translation(), translation(), "normal", 8,
-         COPT_ALWAYS_HIDE );
+    add( "ETERNAL_TIME_OF_DAY", "world_default", to_translation( "Day/night cycle" ),
+    to_translation( "Day/night cycle settings.  'Normal' sets a normal cycle.  'Eternal Day' sets eternal day.  'Eternal Night' sets eternal night." ), {
+        { "normal", to_translation( "Normal" ) },
+        { "day", to_translation( "Eternal Day" ) },
+        { "night", to_translation( "Eternal Night" ) },
+    }, "normal"
+       );
+
+    add( "SKILL_RUST", "world_default", to_translation( "Skill rust" ),
+         to_translation( "Set the type of skill rust.  Vanilla: Skill rust can decrease levels.  - Capped: Skill rust cannot decrease levels.  - Off: None at all." ),
+         //~ plain, default, normal
+    {   { "vanilla", to_translation( "Vanilla" ) },
+        //~ capped at a value
+        { "capped", to_translation( "Capped" ) },
+        { "off", to_translation( "Off" ) }
+    },
+    "off" );
+
+    add_empty_line();
 
     add_option_group( "world_default", Group( "misc_worlddef_opts", to_translation( "Misc options" ),
                       to_translation( "Miscellaneous options." ) ),
