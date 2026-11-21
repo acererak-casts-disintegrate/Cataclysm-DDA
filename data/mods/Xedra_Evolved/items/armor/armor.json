@@ -471,7 +471,7 @@
     "looks_like": "gambeson",
     "name": { "str": "gossamer gambeson" },
     "description": "A padded greatcoat assembled by quilting gossamer and stuffing the layers with more scraps of gossamer.  It shimmers in a soft rainbow of colors.",
-    "proportional": { "weight": 0.6666, "price": 2 },
+    "proportional": { "weight": 0.66, "price": 2 },
     "color": "white",
     "material": [ "fae_cotton" ],
     "armor": [

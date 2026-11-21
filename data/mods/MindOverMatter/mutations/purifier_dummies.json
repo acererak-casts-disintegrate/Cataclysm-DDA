@@ -1,0 +1,8 @@
+[
+  {
+    "id": "HUMAN_MIND",
+    "type": "mutation",
+    "copy-from": "HUMAN_MIND",
+    "extend": { "cancels": [ "CONCENTRATION_GOOD", "CONCENTRATION_BAD" ] }
+  }
+]

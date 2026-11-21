@@ -1,8 +1,77 @@
 [
   {
     "type": "mutation",
+    "id": "HOMULLUS_SKIN_1",
+    "purifiable": false,
+    "name": { "str": "mannequin skin" },
+    "points": 0,
+    "visibility": 2,
+    "ugliness": 0,
+    "description": "Your skin has turned the color of antique dolls.  Your skin is now a pearlescent white.  This has no gameplay effects.",
+    "types": [ "skin_tone" ],
+    "leads_to": [ "HOMULLUS_SKIN_2" ],
+    "category": [ "HOMULLUS" ]
+  },
+  {
+    "type": "mutation",
+    "id": "HOMULLUS_SKIN_2",
+    "name": { "str": "porcelain skin" },
+    "points": 2,
+    "visibility": 10,
+    "ugliness": -3,
+    "description": "Your skin has smoothed and all blemishes fade quickly away.  Somewhat reduces wet effects and is tougher but heals a little slower.",
+    "types": [ "SKIN" ],
+    "category": [ "HOMULLUS" ],
+    "prereqs": [ "HOMULLUS_SKIN_1" ],
+    "changes_to": [ "HOMULLUS_SKIN_3" ],
+    "healing_multiplier": 0.9,
+    "wet_protection": [
+      { "part": "head", "ignored": 2 },
+      { "part": "leg_l", "ignored": 5 },
+      { "part": "leg_r", "ignored": 5 },
+      { "part": "foot_l", "ignored": 2 },
+      { "part": "foot_r", "ignored": 2 },
+      { "part": "arm_l", "ignored": 4 },
+      { "part": "arm_r", "ignored": 4 },
+      { "part": "hand_l", "ignored": 1 },
+      { "part": "hand_r", "ignored": 1 },
+      { "part": "torso", "ignored": 10 }
+    ],
+    "integrated_armor": [ "integrated_porcelain_skin" ]
+  },
+  {
+    "type": "mutation",
+    "id": "HOMULLUS_SKIN_3",
+    "name": { "str": "latex skin" },
+    "points": 3,
+    "visibility": 10,
+    "ugliness": -6,
+    "mixed_effect": true,
+    "description": "Your skin has become latex like.  It provides some additional protection and attractiveness but heals at a much slower rate.",
+    "types": [ "SKIN" ],
+    "prereqs": [ "HOMULLUS_SKIN_2" ],
+    "threshreq": [ "THRESH_HOMULLUS" ],
+    "category": [ "HOMULLUS" ],
+    "healing_multiplier": 0.7,
+    "wet_protection": [
+      { "part": "head", "ignored": 5 },
+      { "part": "leg_l", "ignored": 16 },
+      { "part": "leg_r", "ignored": 16 },
+      { "part": "foot_l", "ignored": 5 },
+      { "part": "foot_r", "ignored": 5 },
+      { "part": "arm_l", "ignored": 14 },
+      { "part": "arm_r", "ignored": 14 },
+      { "part": "hand_l", "ignored": 4 },
+      { "part": "hand_r", "ignored": 4 },
+      { "part": "torso", "ignored": 30 }
+    ],
+    "integrated_armor": [ "integrated_latex_skin" ]
+  },
+  {
+    "type": "mutation",
     "id": "SYLPH_SKIN_1",
-    "name": { "str": "Sylph Skin" },
+    "purifiable": false,
+    "name": { "str": "sylph skin" },
     "points": 0,
     "visibility": 2,
     "ugliness": 0,
@@ -69,6 +138,7 @@
   {
     "type": "mutation",
     "id": "BREATHE_WO_AIR",
+    "purifiable": false,
     "name": { "str": "Breathe Without Air" },
     "points": 1,
     "visibility": 0,
@@ -80,6 +150,7 @@
   {
     "type": "mutation",
     "id": "SYLPH_EYES",
+    "purifiable": false,
     "name": { "str": "Sylph Eyes" },
     "points": 1,
     "visibility": 2,
@@ -118,6 +189,7 @@
   {
     "type": "mutation",
     "id": "CLAP_OF_THUNDER",
+    "purifiable": false,
     "name": { "str": "Clap of Thunder" },
     "points": 1,
     "visibility": 0,
@@ -129,6 +201,7 @@
   {
     "type": "mutation",
     "id": "OMINOUS_WIND",
+    "purifiable": false,
     "name": { "str": "Ominous Wind" },
     "points": 3,
     "visibility": 0,
@@ -188,6 +261,7 @@
   {
     "type": "mutation",
     "id": "SLOWFALL",
+    "purifiable": false,
     "name": { "str": "Slow Fall" },
     "points": 3,
     "visibility": 0,
@@ -229,6 +303,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD",
+    "purifiable": false,
     "name": { "str": "Resist Cold" },
     "points": 3,
     "visibility": 0,
@@ -247,6 +322,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD2",
+    "purifiable": false,
     "name": { "str": "Born of a Gale" },
     "points": 6,
     "visibility": 0,
@@ -265,6 +341,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD3",
+    "purifiable": false,
     "name": { "str": "Dancing On Winter Winds" },
     "points": 9,
     "visibility": 0,
@@ -338,6 +415,7 @@
   {
     "type": "mutation",
     "id": "SYLPH_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -350,6 +428,7 @@
   {
     "type": "mutation",
     "id": "PUSHING_WIND",
+    "purifiable": false,
     "name": { "str": "Pushing Wind" },
     "points": 3,
     "visibility": 0,
@@ -386,6 +465,7 @@
   {
     "type": "mutation",
     "id": "ELECTRICAL_EMISSIONS",
+    "purifiable": false,
     "name": { "str": "Electrical Emissions" },
     "points": 3,
     "visibility": 0,
@@ -397,6 +477,7 @@
   {
     "type": "mutation",
     "id": "ELECTRICAL_FIELD",
+    "purifiable": false,
     "name": { "str": "Electrical Field" },
     "points": 3,
     "visibility": 0,
@@ -421,7 +502,8 @@
   {
     "type": "mutation",
     "id": "air_sprite",
-    "name": { "str": "Call the Children of the Winds" },
+    "purifiable": false,
+    "name": { "str": "Summon Air Sprite" },
     "points": 3,
     "visibility": 0,
     "ugliness": 0,

@@ -2,6 +2,8 @@
   {
     "type": "mutation_category",
     "id": "IERDE",
+    "//": "Unfinished in this Xedra snapshot: too few pre-threshold traits to reach the breach minimum.",
+    "wip": true,
     "name": "Ierde",
     "threshold_mut": "THRESH_IERDE",
     "mutagen_message": "Soil and stone.",
@@ -11,6 +13,8 @@
   {
     "type": "mutation_category",
     "id": "SYLPH",
+    "//": "Unfinished in this Xedra snapshot: too few pre-threshold traits to reach the breach minimum.",
+    "wip": true,
     "name": "Sylph",
     "threshold_mut": "THRESH_SYLPH",
     "mutagen_message": "Wind and weather.",
@@ -56,6 +60,8 @@
   {
     "type": "mutation_category",
     "id": "HOMULLUS",
+    "//": "Unfinished in this Xedra snapshot: too few pre-threshold traits to reach the breach minimum.",
+    "wip": true,
     "name": "Homullus",
     "threshold_mut": "THRESH_HOMULLUS",
     "mutagen_message": "Wish upon a star.",

@@ -588,6 +588,7 @@
   {
     "type": "mutation",
     "id": "CLOUD_OF_STEAM_SYLPH",
+    "purifiable": false,
     "name": { "str": "Cloud of Steam" },
     "points": 3,
     "visibility": 0,
@@ -599,6 +600,7 @@
   {
     "type": "mutation",
     "id": "CLOUD_OF_STEAM_UNDINE",
+    "purifiable": false,
     "name": { "str": "Cloud of Steam" },
     "points": 3,
     "visibility": 0,
@@ -610,6 +612,7 @@
   {
     "type": "mutation",
     "id": "CREATE_LIGHT_SYLPH",
+    "purifiable": false,
     "name": { "str": "Create Light" },
     "points": 3,
     "visibility": 0,
@@ -621,6 +624,7 @@
   {
     "type": "mutation",
     "id": "CREATE_LIGHT",
+    "purifiable": false,
     "name": { "str": "Create Light" },
     "points": 3,
     "visibility": 0,
@@ -668,7 +672,8 @@
   },
   {
     "type": "mutation",
-    "id": "WIND_BLOWS_WILLOW_BENDS_ARVORE",
+    "id": "WIND_BLOWS_WILLOW_BENDS",
+    "purifiable": false,
     "name": { "str": "The Wind Blows, the Willow Bends" },
     "points": 4,
     "visibility": 0,
@@ -692,6 +697,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_LEARN_GOSSAMER_RECIPES",
+    "purifiable": false,
     "name": { "str": "Gossamer Artisan" },
     "points": 4,
     "visibility": 0,
@@ -714,6 +720,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_MAKE_GOSSAMER",
+    "purifiable": false,
     "name": { "str": "Gossamerwright" },
     "points": 6,
     "visibility": 0,
