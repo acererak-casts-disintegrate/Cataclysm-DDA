@@ -22,6 +22,35 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
     <img src="./data/screenshots/ultica-showcase-sep-2021.png" alt="Tileset: Ultica">
 </p>
 
+## Changes from 0.H
+
+This fork is based on the 0.H stable branch. As of now, it differs from 0.H as follows.
+
+**Core game**
+
+* **Classic CBM acquisition.** Bionics turn up in loot again and can be harvested from bionic zombies, as in 0.F, instead of coming from the Exodii.
+* **Exodii as a baseless scavenger faction.** Their castle, safehouse, warehouse, NPCs, trade and missions are gone. They appear only at rare crashed-pod sites in the wild.
+* **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu.
+* **Skill rust off by default.** The world option removed after 0.G (vanilla, capped or off) is back, defaulting to off.
+* **Rivtech content restored.** Reverts upstream's removal of the RM216 SPIW, RM232 IDW, 5x50mm flechette ammunition, RM298 HMG and 8mm ammunition variants, and its Rivtech gun nerfs.
+* **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
+* **Classic sci-fi content restored.** Robots (chicken walker, tank drone, copbot, riotbot, eyebot, laser turret, mininuke hack), the railgun, shock absorber and fusion blaster CBMs, the laser cannon, heavy rail rifle, mininuke launcher, RM99 revolver, advanced UPS, solar gear, matching vehicle turrets and the atomic sports car.
+* **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
+* **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are now core professions, and the obsolete mod is removed.
+* **Selected upstream bug fixes** from later 0.H-branch releases: battery chargers work outside the reality bubble, Godco construction updates place correctly, and a start-up crash and a GCC 15 build failure are fixed.
+
+**Aftershock**
+
+* **Earth setting.** The Salus IV colony, exoplanet locations, Whately family and UPLIFT content are removed. Remaining items and lore are reassigned to organisations already in the game, such as Northrop, Rivtech, Shady Hills Corporation, Hub 01, FEMA and XEDRA.
+* **Fewer overrides of core content.** Aftershock no longer replaces core items, vehicles or mechanics, except the pressure tank, which its Rocket Jumper profession needs. It also drops its duplicates of restored core items.
+* **New and re-homed spawns.** Its arcology now spawns as a Shady Hills corporate arcology, and items stranded by the removals spawn in Earth locations.
+* **Data fixes.** Item weights, volumes and lengths, faction relations and mutation purification are corrected.
+
+**Other in-repo mods**
+
+* **Xedra Evolved.** Its Exodii Jotunn content is kept, in line with the scavenger Exodii, and its roadside Jotunn encounter now spawns.
+* **Mind Over Matter and Xedra Evolved** lose their Exodii (Rubik) dialogue. Mind Over Matter's awakening during portal storms can no longer trigger; matrix crystals still awaken psionic powers.
+
 ## Getting the source
 
 This fork has no prebuilt releases. Clone this repository and check out the `0.H-custom` branch, then build it as described below.
