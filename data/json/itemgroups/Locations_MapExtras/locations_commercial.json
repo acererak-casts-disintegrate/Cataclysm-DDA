@@ -49,7 +49,8 @@
       { "item": "survnote", "prob": 2 },
       { "item": "eclipse_glasses", "prob": 1 },
       { "item": "thermos", "prob": 10 },
-      { "group": "writing_utensils", "prob": 10 }
+      { "group": "writing_utensils", "prob": 10 },
+      { "item": "rm228", "prob": 2 }
     ]
   },
   {
@@ -619,7 +620,8 @@
       [ "flower_anklet", 1 ],
       [ "woven_anklet", 1 ],
       { "group": "tinware", "prob": 10 },
-      { "group": "costume_all_clothing", "prob": 10 }
+      { "group": "costume_all_clothing", "prob": 10 },
+      [ "rm120c", 2 ]
     ]
   },
   {

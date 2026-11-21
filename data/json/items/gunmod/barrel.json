@@ -24,7 +24,8 @@
       "suppressor",
       "mp5sd_suppressor",
       "suppressor_compact",
-      "suppressor"
+      "suppressor",
+      "riv_suppressor"
     ],
     "dispersion_modifier": 15,
     "handling_modifier": 4,

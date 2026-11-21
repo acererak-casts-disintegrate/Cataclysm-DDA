@@ -377,7 +377,20 @@
       "ruger_mk4",
       "ruger_mk4_mag",
       "sl8",
-      "sl8mag"
+      "sl8mag",
+      "5x50_100_mag",
+      "5x50_50_mag",
+      "5x50_hull",
+      "5x50dart",
+      "5x50heavy",
+      "needlegun",
+      "needlepistol",
+      "reloaded_5x50dart",
+      "8mm_bootleg",
+      "8mm_civilian",
+      "8mm_fmj",
+      "8mm_inc",
+      "rm298"
     ]
   }
 ]

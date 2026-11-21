@@ -363,7 +363,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 2
@@ -438,7 +440,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 2
@@ -493,7 +497,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 2
@@ -1824,7 +1830,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 3
@@ -3175,7 +3183,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 3
@@ -3221,7 +3231,9 @@
       "m26_mass_mod",
       "masterkey",
       "masterkey_mod",
-      "u_shotgun"
+      "u_shotgun",
+      "rm121aux",
+      "rm121aux_mod"
     ],
     "install_time": "5 s",
     "to_hit_mod": 3

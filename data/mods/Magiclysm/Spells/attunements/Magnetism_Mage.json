@@ -157,7 +157,10 @@
         [ "reloaded_4570_pen", 1 ],
         [ "reloaded_4570_low", 1 ],
         [ "reloaded_4570_bp", 1 ],
-        [ "reloaded_762_jhp", 1 ]
+        [ "reloaded_762_jhp", 1 ],
+        [ "5x50dart", 1 ],
+        [ "5x50heavy", 1 ],
+        [ "reloaded_5x50dart", 1 ]
       ]
     ]
   },

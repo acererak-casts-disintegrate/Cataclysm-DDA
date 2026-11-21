@@ -355,46 +355,6 @@
     "replace": "survivor_mess_kit"
   },
   {
-    "id": "5x50dart",
-    "type": "MIGRATION",
-    "replace": "50match"
-  },
-  {
-    "id": "5x50heavy",
-    "type": "MIGRATION",
-    "replace": "50match"
-  },
-  {
-    "id": "reloaded_5x50dart",
-    "type": "MIGRATION",
-    "replace": "reloaded_50bmg"
-  },
-  {
-    "id": "5x50_100_mag",
-    "type": "MIGRATION",
-    "replace": "stanag100"
-  },
-  {
-    "id": "5x50_50_mag",
-    "type": "MIGRATION",
-    "replace": "stanag50"
-  },
-  {
-    "id": "needlegun",
-    "type": "MIGRATION",
-    "replace": "nailgun"
-  },
-  {
-    "id": "needlepistol",
-    "type": "MIGRATION",
-    "replace": "nailgun"
-  },
-  {
-    "id": "5x50_hull",
-    "type": "MIGRATION",
-    "replace": "shot_hull"
-  },
-  {
     "id": "AID_bio_alarm",
     "type": "MIGRATION",
     "replace": "letter"
@@ -595,11 +555,6 @@
     "replace": "broken_science_bot"
   },
   {
-    "id": "rm802",
-    "type": "MIGRATION",
-    "replace": "m203"
-  },
-  {
     "id": "aux_pressurized_tank",
     "type": "MIGRATION",
     "replace": "pressurized_tank"
@@ -623,31 +578,6 @@
     "id": "skorpion82mag",
     "type": "MIGRATION",
     "replace": "mp5mag"
-  },
-  {
-    "id": "8mm_civilian",
-    "type": "MIGRATION",
-    "replace": "8mm_caseless"
-  },
-  {
-    "id": "8mm_fmj",
-    "type": "MIGRATION",
-    "replace": "8mm_caseless"
-  },
-  {
-    "id": "8mm_hvp",
-    "type": "MIGRATION",
-    "replace": "8mm_caseless"
-  },
-  {
-    "id": "8mm_inc",
-    "type": "MIGRATION",
-    "replace": "8mm_caseless"
-  },
-  {
-    "id": "rm298",
-    "type": "MIGRATION",
-    "replace": "m240"
   },
   {
     "id": "mask_wsurvivor_nofur",
@@ -1684,11 +1614,6 @@
     "replace": "filter_suppressor"
   },
   {
-    "id": "riv_suppressor",
-    "type": "MIGRATION",
-    "replace": "suppressor"
-  },
-  {
     "id": "surv_six_shooter",
     "type": "MIGRATION",
     "replace": "hptjcpmag"
@@ -2696,5 +2621,10 @@
     "type": "MIGRATION",
     "id": "robofac_yrax_deactivation_manual",
     "replace": "robofac_yrax_trifacet_deactivation_manual"
+  },
+  {
+    "id": "rm802",
+    "type": "MIGRATION",
+    "replace": "m203"
   }
 ]

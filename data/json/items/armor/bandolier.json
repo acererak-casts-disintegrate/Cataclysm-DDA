@@ -80,7 +80,8 @@
           "450": 16,
           "338lapua": 16,
           "50": 16,
-          "458wm": 16
+          "458wm": 16,
+          "5x50": 16
         },
         "moves": 20,
         "volume_encumber_modifier": 0.3
@@ -105,7 +106,11 @@
     "color": "dark_gray",
     "material_thickness": 1,
     "pocket_data": [
-      { "ammo_restriction": { "410shot": 25, "shot": 25, "signal_flare": 25 }, "moves": 25, "volume_encumber_modifier": 0.3 }
+      {
+        "ammo_restriction": { "410shot": 25, "shot": 25, "signal_flare": 25, "20x66mm": 25 },
+        "moves": 25,
+        "volume_encumber_modifier": 0.3
+      }
     ],
     "flags": [ "WATER_FRIENDLY", "BELTED", "OVERSIZE" ],
     "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
@@ -138,7 +143,11 @@
     "color": "dark_gray",
     "material_thickness": 1,
     "pocket_data": [
-      { "ammo_restriction": { "410shot": 50, "shot": 50, "signal_flare": 50 }, "moves": 35, "volume_encumber_modifier": 0.3 }
+      {
+        "ammo_restriction": { "410shot": 50, "shot": 50, "signal_flare": 50, "20x66mm": 50 },
+        "moves": 35,
+        "volume_encumber_modifier": 0.3
+      }
     ],
     "flags": [ "WATER_FRIENDLY", "OVERSIZE", "BELTED" ],
     "armor": [ { "encumbrance": 3, "coverage": 20, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
@@ -205,7 +214,8 @@
           "450": 4,
           "338lapua": 4,
           "50": 4,
-          "458wm": 4
+          "458wm": 4,
+          "5x50": 4
         },
         "moves": 20,
         "volume_encumber_modifier": 0.3

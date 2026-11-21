@@ -71,7 +71,8 @@
       [ "m320_mod", 10 ],
       [ "masterkey", 30 ],
       [ "m26_mass", 35 ],
-      [ "sword_bayonet", 10 ]
+      [ "sword_bayonet", 10 ],
+      [ "rm121aux", 10 ]
     ]
   },
   {

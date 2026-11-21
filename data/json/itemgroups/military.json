@@ -778,7 +778,9 @@
       { "item": "survnote", "prob": 2 },
       { "item": "solarpack", "prob": 1 },
       { "item": "flight_helmet", "prob": 20, "ammo-item": "light_battery_cell", "charges": [ 0, 150 ] },
-      { "item": "mil_flight_suit", "prob": 20 }
+      { "item": "mil_flight_suit", "prob": 20 },
+      { "item": "rm614_lmg", "prob": 1, "charges": [ 0, 250 ] },
+      { "item": "rm298", "prob": 1, "charges": [ 0, 250 ] }
     ]
   },
   {

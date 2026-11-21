@@ -100,7 +100,8 @@
       { "group": "nested_m17", "prob": 100 },
       { "group": "nested_m18", "prob": 100 },
       { "group": "nested_usp_45_mk23", "prob": 5 },
-      { "group": "nested_m1911_MEU", "prob": 5 }
+      { "group": "nested_m1911_MEU", "prob": 5 },
+      { "group": "nested_needlepistol", "prob": 30 }
     ]
   },
   {
@@ -162,7 +163,8 @@
       { "group": "nested_hk_mp7", "prob": 5 },
       { "group": "nested_hk_mp5", "prob": 100 },
       { "group": "nested_hk_mp5k", "prob": 10 },
-      { "group": "nested_hk_mp5sd", "prob": 5 }
+      { "group": "nested_hk_mp5sd", "prob": 5 },
+      { "group": "nested_needlegun", "prob": 30 }
     ]
   },
   {
@@ -320,7 +322,10 @@
       { "group": "nested_scar_l", "prob": 50 },
       { "group": "nested_scar_h", "prob": 50 },
       { "group": "nested_m110a1", "prob": 50 },
-      { "group": "nested_M24", "prob": 15 }
+      { "group": "nested_M24", "prob": 15 },
+      { "group": "nested_rm298", "prob": 10 },
+      { "group": "nested_rm614_lmg", "prob": 10 },
+      { "group": "nested_rm88_battle_rifle", "prob": 25 }
     ]
   },
   {
@@ -384,7 +389,8 @@
       { "group": "nested_remington_870_express", "prob": 50 },
       { "group": "nested_remington_870_breacher", "prob": 20 },
       { "group": "nested_mossberg_590", "prob": 50 },
-      { "group": "nested_m1014", "prob": 100 }
+      { "group": "nested_m1014", "prob": 100 },
+      { "group": "nested_rm20", "prob": 20 }
     ]
   },
   {
