@@ -569,7 +569,9 @@
           "mx_mass_grave": 5,
           "mx_portal": 3,
           "mx_portal_in": 3,
-          "mx_helicopter": 1
+          "mx_helicopter": 1,
+          "mx_exocrash_1": 1,
+          "mx_exocrash_2": 1
         }
       },
       "forest_thick": {
@@ -604,7 +606,9 @@
           "mx_portal": 3,
           "mx_portal_in": 3,
           "mx_jabberwock": 1,
-          "mx_helicopter": 1
+          "mx_exocrash_1": 1,
+          "mx_helicopter": 1,
+          "mx_exocrash_2": 1
         }
       },
       "forest_water": {
@@ -628,7 +632,9 @@
           "mx_toxic_waste": 10,
           "mx_portal": 8,
           "mx_portal_in": 7,
-          "mx_helicopter": 5
+          "mx_helicopter": 5,
+          "mx_exocrash_1": 1,
+          "mx_exocrash_2": 1
         }
       },
       "field": {
@@ -656,7 +662,9 @@
           "mx_portal": 10,
           "mx_portal_in": 10,
           "mx_science": 10,
-          "mx_military": 4
+          "mx_military": 4,
+          "mx_exocrash_1": 5,
+          "mx_exocrash_2": 5
         }
       },
       "road": {
@@ -678,7 +686,9 @@
           "mx_casings": 1000,
           "mx_corpses": 300,
           "mx_prison_bus": 150,
-          "mx_prison_van": 10
+          "mx_prison_van": 10,
+          "mx_exocrash_1": 5,
+          "mx_exocrash_2": 5
         }
       },
       "road_nesw_manhole": { "chance": 20, "extras": { "mx_city_trap": 100 } },
@@ -712,7 +722,9 @@
           "mx_crater": 180,
           "mx_portal_in": 30,
           "mx_point_burned_ground": 100,
-          "mx_casings": 30
+          "mx_casings": 30,
+          "mx_exocrash_1": 1,
+          "mx_exocrash_2": 1
         }
       },
       "research_facility_interior": {
