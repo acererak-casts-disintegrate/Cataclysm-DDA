@@ -1,0 +1,38 @@
+commit	sha	result	files	both_changed(hunks)	both_added	fork_edit_on_file_gone_in_0.I	fork_delete_on_file_0.I_changed	other	subject
+01	e59644ba3d	APPLIED	files=10	UU=6(hunks=7)	AA=0	DU(lost)=0	UD=0	other=0	Restore classic pneumatic weapons
+02	5623c39153	APPLIED	files=25	UU=9(hunks=18)	AA=0	DU(lost)=4	UD=0	other=0	Revert 0.H-era Rivtech removals and nerfs
+03	3ae24ef48f	APPLIED	files=67	UU=29(hunks=45)	AA=0	DU(lost)=1	UD=18	other=0	Remove the Exodii; restore classic CBM acquisition
+04	93979814d8	APPLIED	files=13	UU=8(hunks=12)	AA=0	DU(lost)=0	UD=0	other=0	Remove natural portal storms
+05	3790846389	APPLIED	files=4	UU=2(hunks=3)	AA=0	DU(lost)=0	UD=0	other=0	Disable skill rust by default
+06	0900654e8f	APPLIED	files=27	UU=4(hunks=4)	AA=0	DU(lost)=3	UD=0	other=0	Restore removed classic sci-fi content
+07	ee2bc0d66d	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Fix restored sci-fi items failing 0.H item tests
+08	03e8d2bbc9	APPLIED	files=11	UU=5(hunks=9)	AA=0	DU(lost)=0	UD=3	other=0	Aftershock: drop 5x50 migrations and duplicate afs_ 5x50 items
+09	bd0dfb7600	APPLIED	files=18	UU=14(hunks=19)	AA=0	DU(lost)=0	UD=3	other=0	Aftershock: drop core overrides and M6 duplicates
+10	7e8ffc4285	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Drop dangling installation_data from restored railgun CBM
+11	c2d74a78da	APPLIED	files=82	UU=19(hunks=54)	AA=0	DU(lost)=0	UD=34	other=0	Aftershock: remove Whately, UPLIFT and exoplanet content
+12	9ca4d0e2d3	APPLIED	files=59	UU=22(hunks=42)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: re-theme text for an Earth setting
+13	228f7876ef	APPLIED	files=2	UU=1(hunks=1)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: autodocs require anaesthetic again
+14	84516c8fb6	APPLIED	files=2	UU=1(hunks=1)	AA=0	DU(lost)=0	UD=0	other=0	Restore the unlimited atomic coffeemaker
+15	7480083570	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: keep the pressure_tank override
+16	e0b11f80cf	APPLIED	files=5	UU=2(hunks=3)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: fix faction, purifier, broken-item and mealgrub test failures
+17	8a3c3746c6	APPLIED	files=2	UU=1(hunks=1)	AA=0	DU(lost)=0	UD=0	other=0	Turret test reads item-level energy drain; drop Aftershock APC override
+18	72a6a6c25f	APPLIED	files=27	UU=17(hunks=28)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: fix item material densities
+19	b3321ce6ce	APPLIED	files=16	UU=5(hunks=7)	AA=0	DU(lost)=1	UD=0	other=0	Give long items explicit lengths
+20	820bf07a2f	APPLIED	files=6	UU=3(hunks=6)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: make the arcology spawn as a Shady Hills corporate arcology
+21	7f2e2d6d02	APPLIED	files=4	UU=1(hunks=1)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: lifeboat rations, stray setting text, 25 mm rifle weights
+22	708a0ccffe	APPLIED	files=6	UU=2(hunks=5)	AA=0	DU(lost)=0	UD=0	other=0	Aftershock: fix earth spawns and re-home stranded items
+23	155cf190ca	SKIPPED (already in 0.I)	Backport: battery chargers work outside the reality bubble
+24	341ab719e2	SKIPPED (already in 0.I)	Backport: fix Godco mapgen_updates searches
+25	da5d05a663	SKIPPED (already in 0.I)	Backport: flatbuffers span::count_ is no longer const (GCC 15)
+26	34b077e8f6	SKIPPED (already in 0.I)	Backport: initialise EMPTY_GROUP before generic_factory<field_type>
+27	dcc99a1c72	APPLIED	files=9	UU=0(hunks=0)	AA=0	DU(lost)=1	UD=0	other=0	Restore Exodii as a baseless scavenger presence
+28	f173b723ca	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Xedra Evolved: make the roadside Jotunn encounter spawn
+29	723686ab58	APPLIED	files=11	UU=0(hunks=0)	AA=0	DU(lost)=1	UD=0	other=0	Mainline the last Military Professions and remove the mod
+30	9dc8ee365c	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Code of Conduct: drop the upstream project-lead contact
+31	20d730b58a	APPLIED	files=1	UU=1(hunks=2)	AA=0	DU(lost)=0	UD=0	other=0	README: mark the fork as unofficial and drop upstream channels
+32	cb1750aa3a	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	README: summarise this fork's changes from 0.H
+33	abc39dc7c7	APPLIED	files=2	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	Mark Personal Portal Storms obsolete
+34	78eda82680	SKIPPED (already in 0.I)	Load mod_interactions folders only for active mods
+35	68e8f93aab	APPLIED	files=30	UU=17(hunks=37)	AA=0	DU(lost)=1	UD=0	other=0	Fix Xedra Evolved, Mind Over Matter and Blaze data test failures
+36	39be136d55	APPLIED	files=1	UU=0(hunks=0)	AA=0	DU(lost)=0	UD=0	other=0	README: note mod-interaction loading and mod data fixes
+37	9d67cf3e71	APPLIED	files=2	UU=1(hunks=1)	AA=0	DU(lost)=0	UD=0	other=0	Mind Over Matter: flag the core lab terrains it disables
