@@ -25,8 +25,7 @@
     "volume": "480 ml",
     "longest_side": "205 mm",
     "price": "450 USD",
-    "to_hit": -2,
-    "material": [ { "type": "plastic", "portion": 1 }, { "type": "superalloy", "portion": 5 } ],
+    "material": [ "plastic", "superalloy" ],
     "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "afs_10mm" ],
@@ -67,8 +66,11 @@
     "looks_like": "glock_17",
     "type": "ITEM",
     "subtypes": [ "GUN" ],
-    "name": { "str": "Rivtech. 4" },
-    "description": "Dependable, reliable, classic.  The Marsec.4 is the combat pistol made for those who can differentiate real quality from glued-on tech.",
+    "name": { "str": "MarSec. 4" },
+    "description": {
+      "//NOLINT(cata-text-style)": "not a period after 'MarSec'",
+      "str": "Dependable, reliable, classic.  The MarSec. 4 is the combat pistol made for those who can differentiate real quality from glued-on tech."
+    },
     "weight": "780 g",
     "volume": "480 ml",
     "longest_side": "205 mm",
@@ -116,13 +118,12 @@
     "type": "ITEM",
     "subtypes": [ "ARTIFACT", "GUN" ],
     "name": { "str": "W1011 Silvergram" },
-    "description": "A finely sculpted white and silver pistol entrusted to Northrop's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks.",
+    "description": "A finely sculpted white and silver pistol entrusted to Wraitheon's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks.",
     "weight": "780 g",
     "volume": "480 ml",
     "longest_side": "205 mm",
     "price": "750 kUSD",
-    "to_hit": -2,
-    "material": [ { "type": "plastic", "portion": 1 }, { "type": "superalloy", "portion": 5 } ],
+    "material": [ "plastic", "superalloy" ],
     "built_in_mods": [ "afs_smart_scope" ],
     "skill": "smartgun",
     "symbol": "(",
@@ -140,7 +141,7 @@
       {
         "id": "lx",
         "name": { "str": "W1011 Silvergram" },
-        "description": "A finely sculpted white and silver pistol entrusted to Northrop's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks."
+        "description": "A finely sculpted white and silver pistol entrusted to Wraitheon's corporate elite.  It employs advanced targeting and precision guiding capabilities to deliver devastating bursts of guided 10mm microjet darts.  Firing is as expensive as it looks."
       }
     ],
     "min_cycle_recoil": 570,

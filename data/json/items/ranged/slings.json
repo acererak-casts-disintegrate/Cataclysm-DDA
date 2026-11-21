@@ -51,8 +51,7 @@
     "clip_size": 1,
     "valid_mod_locations": [ [ "underbarrel mount", 1 ], [ "stock mount", 1 ] ],
     "reload": 50,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "pebble": 1 } } ],
-    "longest_side": "20 cm"
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "pebble": 1 }, "open_container": true } ]
   },
   {
     "id": "staff_sling",
@@ -121,7 +120,6 @@
     "clip_size": 1,
     "valid_mod_locations": [ [ "underbarrel mount", 1 ] ],
     "reload": 50,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "pebble": 1 } } ],
-    "longest_side": "25 cm"
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "pebble": 1 }, "open_container": true } ]
   }
 ]

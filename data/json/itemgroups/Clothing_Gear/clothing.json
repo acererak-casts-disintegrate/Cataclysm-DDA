@@ -2958,8 +2958,7 @@
       [ "beret_wool", 40 ],
       [ "elbow_pads", 50 ],
       [ "knee_pads", 50 ],
-      [ "solarpack", 5 ],
-      [ "adv_UPS_off", 3 ]
+      [ "solarpack", 5 ]
     ]
   },
   {
@@ -3001,8 +3000,7 @@
       [ "solarpack", 5 ],
       [ "chem_hexamine", 3 ],
       { "item": "esbit_stove", "prob": 6, "charges": [ 0, 50 ] },
-      { "group": "full_survival_kit", "prob": 4 },
-      { "item": "adv_UPS_off", "prob": 3 }
+      { "group": "full_survival_kit", "prob": 4 }
     ]
   },
   {
@@ -3401,9 +3399,6 @@
       { "item": "balclava", "variant": "black", "prob": 12 },
       [ "mask_survivorxl", 2 ],
       [ "combatsaw_off", 1 ],
-      [ "bigun", 2 ],
-      [ "helsing", 1 ],
-      [ "tihar", 2 ],
       [ "ashot", 4 ],
       [ "pickaxe", 1 ],
       [ "makeshift_machete", 4 ],

@@ -74,7 +74,9 @@
     "id": "newspaper",
     "type": "item_group",
     "copy-from": "newspaper",
-    "extend": { "items": [ [ "afs_personal_card", 8 ] ] }
+    "extend": {
+      "items": [ [ "afs_personal_card", 8 ], [ "afs_welcome1_book", 4 ], [ "afs_welcome2_book", 4 ], [ "afs_welcome3_book", 4 ] ]
+    }
   },
   {
     "id": "livingroom",
@@ -366,13 +368,19 @@
     "//": "This group is for an area storing diving equipment.  SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
     "subtype": "collection",
     "copy-from": "SUS_scuba_gear",
-    "extend": { "entries": [ { "item": "trident", "prob": 70 } ] }
+    "extend": {
+      "entries": [
+        { "item": "combat_wetsuit_cecalia", "prob": 20 },
+        { "item": "wetsuit_cecalia", "prob": 70 },
+        { "item": "trident", "prob": 70 }
+      ]
+    }
   },
   {
     "id": "seabased_death_drop",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ [ "trident", 70 ], [ "dive_bag", 100 ] ]
+    "items": [ [ "combat_wetsuit_cecalia", 20 ], [ "wetsuit_cecalia", 70 ], [ "trident", 70 ], [ "dive_bag", 100 ] ]
   },
   {
     "id": "gear_afs_sidearm",
@@ -459,120 +467,20 @@
   {
     "id": "afs_consumer_vr",
     "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "item": "modular_exosuit", "prob": 100 },
-      { "item": "afs_exo_standard_underlayer", "prob": 90 },
-      { "item": "exo_helmet_plastic", "prob": 90 },
-      { "item": "exo_torso_plastic", "prob": 90 },
-      { "item": "exo_arm_plastic", "prob": 90 },
-      { "item": "exo_leg_plastic", "prob": 90 },
-      { "group": "afs_exo_basic_power", "prob": 75 },
-      { "group": "afs_exo_basic_accessories", "prob": 75 },
-      { "group": "afs_exo_basic_accessories", "prob": 75 },
-      { "group": "afs_power_tools", "prob": 75 },
-      { "item": "afs_exo_eva_underlayer", "prob": 10 },
-      { "group": "afs_exo_storage", "prob": 50 },
-      { "group": "afs_exo_mining", "prob": 15 },
-      { "group": "afs_exo_service", "prob": 40 }
-    ]
+    "subtype": "distribution",
+    "entries": [ { "item": "afs_glass_device" }, { "item": "afs_glass_AR_device" } ]
   },
   {
     "id": "afs_police_evidence_locker",
     "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "item": "afs_exo_combat_underlayer", "prob": 75 },
-      { "item": "afs_exo_standard_underlayer", "prob": 25 },
-      { "item": "afs_exo_hazard_underlayer", "prob": 10 },
-      { "item": "exo_helmet_steel", "prob": 90 },
-      { "item": "exo_torso_steel", "prob": 90 },
-      { "item": "exo_arm_steel", "prob": 90 },
-      { "item": "exo_leg_steel", "prob": 90 },
-      { "item": "exo_sonic_unit", "prob": 60 },
-      { "item": "exo_microwave_cannon", "prob": 60 },
-      { "item": "afs_cartridge", "count": [ 0, 4 ], "prob": 95, "charges": [ 50, 100 ] },
-      { "group": "afs_exo_basic_power", "prob": 25 },
-      { "group": "afs_exo_storage", "prob": 50 },
-      { "group": "afs_exo_advanced_modules", "prob": 30 },
-      { "group": "afs_exo_melee", "prob": 20 }
-    ]
+    "subtype": "distribution",
+    "//": "Refers directly to the existing evidence group but we can add whatever we want to layer on top of that.",
+    "entries": [ { "group": "cop_evidence" } ]
   },
   {
     "id": "afs_coffee_containers",
     "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "item": "modular_exosuit", "prob": 5 },
-      { "item": "afs_exo_combat_underlayer", "prob": 75 },
-      { "item": "afs_exo_hazard_underlayer", "prob": 25 },
-      { "item": "exo_helmet_vcc", "prob": 90 },
-      { "item": "exo_torso_vcc", "prob": 90 },
-      { "item": "exo_arm_vcc", "prob": 90 },
-      { "item": "exo_leg_vcc", "prob": 90 },
-      { "item": "exo_electrolaser", "prob": 15 },
-      { "item": "exo_flame_thrower", "prob": 50, "charges-min": 100, "charges-max": 1500 },
-      { "item": "afs_cartridge", "count": [ 2, 6 ], "prob": 95, "charges": [ 50, 100 ] },
-      { "group": "afs_exo_advanced_power", "prob": 25 },
-      { "group": "afs_exo_advanced_modules", "prob": 50 },
-      { "group": "afs_exo_storage", "prob": 50 },
-      { "group": "afs_exo_melee", "prob": 30 },
-      { "group": "afs_exo_service", "prob": 30 }
-    ]
-  },
-  {
-    "id": "afs_exo_advanced_modules",
-    "type": "item_group",
     "subtype": "distribution",
-    "entries": [
-      { "item": "exo_AR_module", "prob": 20 },
-      { "item": "exo_bio_oxygen", "prob": 20 },
-      { "item": "exo_cartridge_charger", "prob": 20 },
-      { "item": "exo_climb", "prob": 20 },
-      { "item": "exo_forcefield", "prob": 5 },
-      { "item": "exo_jetpack", "prob": 10 },
-      { "item": "exo_lense_module", "prob": 20 },
-      { "item": "exo_recoil", "prob": 20 },
-      { "item": "exo_trickle_charger", "prob": 5 },
-      { "item": "exosuit_med_injector", "prob": 15 }
-    ]
-  },
-  {
-    "id": "afs_exo_storage",
-    "type": "item_group",
-    "subtype": "distribution",
-    "entries": [
-      { "item": "exo_small_storage", "prob": 30 },
-      { "item": "exo_medium_storage", "prob": 25 },
-      { "item": "exo_large_storage", "prob": 15 },
-      { "item": "exo_small_ammo_pouch", "prob": 20 },
-      { "item": "exo_large_ammo_pouch", "prob": 10 },
-      { "item": "exo_large_holster", "prob": 10 },
-      { "item": "exo_rifle_storage", "prob": 10 },
-      { "item": "exo_melee_storage", "prob": 10 },
-      { "item": "exo_sheath", "prob": 10 }
-    ]
-  },
-  {
-    "id": "afs_exo_melee",
-    "type": "item_group",
-    "subtype": "distribution",
-    "entries": [ { "item": "exosuit_claw", "prob": 50 }, { "item": "boarding_axe", "prob": 50 } ]
-  },
-  {
-    "id": "afs_exo_mining",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [ { "item": "exo_rod_launcher" }, { "item": "mining_rod", "count": [ 4, 10 ] } ]
-  },
-  {
-    "id": "afs_exo_service",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "item": "exo_repair_kit", "prob": 60 },
-      { "item": "exosuit_maintenance", "prob": 40 },
-      { "item": "exo_connector", "prob": 70, "count": [ 2, 8 ] }
-    ]
+    "items": [ [ "ceramic_mug", 50 ], [ "thermos", 50 ] ]
   }
 ]

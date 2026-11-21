@@ -24,8 +24,7 @@
     "environmental_protection": 1,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "VARSIZE", "STURDY", "PADDED" ],
-    "melee_damage": { "bash": 10 },
-    "longest_side": "33 cm"
+    "melee_damage": { "bash": 10 }
   },
   {
     "id": "tac_fullhelmet_uicas",
@@ -33,8 +32,8 @@
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR" ],
     "category": "armor",
-    "name": { "str": "Marine Corps Tip of the Spear helmet" },
-    "description": "An all-environment combat helmet issued to Marine Corps boarding teams.  Commonly known as 'the jar' due to its unusual clear polymer canopy that leaves its wearer's face visible.",
+    "name": { "str": "UICAS Tip of the Spear helmet" },
+    "description": "An all-environment combat helmet issued to UICA espatiers.  Commonly known as 'the jar' due to its unusual clear polymer canopy that leaves its wearer's face visible.",
     "weight": "1324 g",
     "volume": "2 L",
     "price": "500 USD",
@@ -59,7 +58,7 @@
     "use_action": [ "GASMASK_ACTIVATE" ],
     "tick_action": [ "GASMASK" ],
     "melee_damage": { "bash": 10 },
-    "longest_side": "30 cm"
+    "tool_ammo": "gasfilter_m"
   },
   {
     "id": "tac_helmet_uicas",
@@ -67,8 +66,8 @@
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "category": "armor",
-    "name": { "str": "Marine Corps Point of Impact helmet" },
-    "description": "A lightweight black helmet that provides excellent protection from all sorts of damage, unless it's airborne.  Marine Corps procurement insisted on clear faceplates wherever possible, to keep a human face on peacekeeping work.",
+    "name": { "str": "UICAS Point of Impact helmet" },
+    "description": "A lightweight black helmet that provides excellent protection from all sorts of damage, unless it's airborne.  UICAS makes the point of designing all headgear whenever possible with clear faceplates, in order to provide a human touch to all interactions.",
     "weight": "980 g",
     "volume": "2 L",
     "price": "370 USD",
@@ -83,7 +82,6 @@
     "material_thickness": 4,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "WATER_FRIENDLY", "STURDY", "PADDED" ],
-    "melee_damage": { "bash": 10 },
-    "longest_side": "30 cm"
+    "melee_damage": { "bash": 10 }
   }
 ]

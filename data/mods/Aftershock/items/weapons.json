@@ -4,7 +4,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "name": { "str": "CE-4 \"The Claw\" (Non-Lethal)", "str_pl": "CE-4 \"The Claws\" (Non-Lethal)" },
-    "description": "The CE-4, commonly known as \"The Claw\", is a popular self-defense weapon used by corporate security everywhere.  Made from a cylinder of heat activated memory-alloy, the flick of a switch allows it to morph between a less-lethal bludgeon form and a sharpened, super heated blade.  Currently, it is in its less-lethal configuration, and looks like a sleek side-handle metal baton.",
+    "description": "The CE-4, commonly known as \"The Claw\", is a popular self-defense weapon used by corporate enforcers everywhere, especially on dangerous frontier worlds.  Made from a cylinder of heat activated memory-alloy, the flick of a switch allows it to morph between a less-lethal bludgeon form and a sharpened, super heated blade.  Currently, it is in its less-lethal configuration, and looks like a sleek side-handle metal baton.",
     "weight": "760 g",
     "volume": "2 L",
     "longest_side": "90 cm",
@@ -45,7 +45,7 @@
     "subtypes": [ "TOOL" ],
     "copy-from": "afs_energy_saber_off",
     "name": { "str": "CE-4 \"The Claw\" (Lethal)", "str_pl": "CE-4 \"The Claws\" (Lethal)" },
-    "description": "The CE-4, commonly known as \"The Claw\", is a popular self-defense weapon used by corporate security everywhere.  Made from a cylinder of heat activated memory-alloy, the flick of a switch allows it to morph between a less-lethal bludgeon form and a sharpened, super heated blade.  Currently, it is in its lethal configuration, and looks like a sleek sword, humming softly as its blade glows from heat.",
+    "description": "The CE-4, commonly known as \"The Claw\", is a popular self-defense weapon used by corporate enforcers everywhere, especially on dangerous frontier planets.  Made from a cylinder of heat activated memory-alloy, the flick of a switch allows it to morph between a less-lethal bludgeon form and a sharpened, super heated blade.  Currently, it is in its lethal configuration, and looks like a sleek sword, humming softly as its blade glows from heat.",
     "weight": "760 g",
     "volume": "2 L",
     "longest_side": "90 cm",
@@ -120,8 +120,7 @@
     "flags": [ "NO_REPAIR", "NONCONDUCTIVE", "SLOW_WIELD", "DURABLE_MELEE", "LEAK_DAM" ],
     "techniques": [ "BRUTAL", "AFS_PRESSURE_CRUNCH" ],
     "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "hand_r" ] } ],
-    "melee_damage": { "bash": 50 },
-    "longest_side": "45 cm"
+    "melee_damage": { "bash": 50 }
   },
   {
     "id": "afs_freeze_gauntlet",
@@ -130,9 +129,9 @@
     "name": { "str_sp": "psychrophile handling gloves" },
     "description": "These gloves are designed for handling organisms that live in extremely cold temperatures.  They can also be used to freeze your foes to death.",
     "weight": "3778 g",
-    "volume": "2100 ml",
-    "price": "10000000 cent",
-    "price_postapoc": "20000 cent",
+    "volume": "2 L",
+    "price": "100 kUSD",
+    "price_postapoc": "200 USD",
     "material": [ "superalloy" ],
     "symbol": "[",
     "looks_like": "gauntlets_chitin",
@@ -152,6 +151,13 @@
         "description": "Strikes from this weapon can freeze targets solid."
       }
     ]
+  },
+  {
+    "type": "ITEM",
+    "id": "golf_club",
+    "name": { "str": "golf club" },
+    "copy-from": "golf_club",
+    "material": [ "aluminum", "titanium" ]
   },
   {
     "id": "afs_bionic_rocket",
@@ -232,8 +238,7 @@
     "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 5 ] ],
     "flags": [ "SHEATH_KNIFE", "DURABLE_MELEE" ],
     "melee_damage": { "bash": 2, "stab": 15 },
-    "weapon_category": [ "KNIVES" ],
-    "longest_side": "20 cm"
+    "weapon_category": [ "KNIVES" ]
   },
   {
     "id": "afs_toxic_knife",

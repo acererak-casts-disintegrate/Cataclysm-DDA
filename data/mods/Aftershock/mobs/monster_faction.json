@@ -11,6 +11,7 @@
   {
     "type": "MONSTER_FACTION",
     "name": "alien_predator",
+    "neutral": [ "bot" ],
     "by_mood": [ "WraitheonRobotics", "alien_predator", "cop_bot", "defense_bot" ]
   },
   {
@@ -29,14 +30,45 @@
     "type": "MONSTER_FACTION",
     "name": "WraitheonRobotics",
     "base_faction": "robofac",
-    "neutral": [ "cop_bot", "defense_bot", "utility_bot", "animal", "robofac" ],
-    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine" ],
+    "neutral": [ "cop_bot", "defense_bot", "utility_bot", "animal", "UPLIFT", "robofac" ],
+    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine", "reavers" ],
     "by_mood": [ "human" ]
   },
   {
     "type": "MONSTER_FACTION",
-    "name": "reavers",
+    "name": "rampant_machine",
+    "base_faction": "robofac",
+    "neutral": [ "utility_bot" ],
+    "hate": [ "zombie", "fungus", "cult", "alien_predator", "triffid", "nether", "PrepNet", "moxie", "bio_machine", "reavers" ],
+    "by_mood": [ "human" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "UICA_mil",
+    "base_faction": "WraitheonRobotics"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "whately",
+    "base_faction": "human",
+    "friendly": [ "human", "whately", "whately_family" ],
+    "by_mood": [ "insect", "small_animal" ],
     "neutral": [ "herbivore" ],
+    "hate": [ "zombie" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "UPLIFT",
+    "base_faction": "bear",
+    "neutral": [ "herbivore", "robofac" ],
+    "by_mood": [ "insect", "small_animal", "human", "bee" ],
+    "hate": [ "zombie" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "reavers",
+    "base_faction": "human",
+    "neutral": [ "herbivore", "robofac" ],
     "by_mood": [ "insect", "small_animal", "human", "bee" ],
     "hate": [ "zombie", "player", "UICA_mil", "moxie" ]
   },
@@ -44,7 +76,8 @@
     "type": "MONSTER_FACTION",
     "name": "zombie",
     "copy-from": "zombie",
-    "extend": { "neutral": [ "moxie" ], "hate": [ "reavers" ] }
+    "neutral": [ "moxie" ],
+    "hate": [ "reavers" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -84,18 +117,18 @@
     "type": "MONSTER_FACTION",
     "name": "herbivore",
     "copy-from": "herbivore",
-    "extend": { "neutral": [ "PrepNet", "bio_machine", "hevel", "reavers" ] }
+    "neutral": [ "PrepNet", "whately", "UPLIFT", "bio_machine", "hevel" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "human",
     "copy-from": "human",
-    "extend": { "neutral": [ "bio_machine" ] }
+    "neutral": [ "bio_machine" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "wolf",
     "copy-from": "wolf",
-    "extend": { "by_mood": [ "venandi" ] }
+    "by_mood": [ "venandi" ]
   }
 ]

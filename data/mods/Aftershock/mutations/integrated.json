@@ -45,7 +45,7 @@
     "name": { "str_sp": "sparse scales" },
     "description": "Your dermis has toughened and thickened to provide additional protection.",
     "weight": "1 kg",
-    "volume": "950 ml",
+    "volume": "900 ml",
     "price": "0 cent",
     "price_postapoc": "0 cent",
     "material": [ "hflesh" ],

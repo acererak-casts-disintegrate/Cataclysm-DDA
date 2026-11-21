@@ -187,7 +187,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_NURTURING_THE_GREEN",
-    "purifiable": false,
     "name": { "str": "Nurturing the Green" },
     "points": 2,
     "visibility": 0,
@@ -216,8 +215,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_WOOD_WALL",
-    "purifiable": false,
-    "name": { "str": "Forest Shelter" },
+    "name": { "str": "The Forest Offers Shelter" },
     "points": 4,
     "visibility": 0,
     "ugliness": 0,
@@ -229,7 +227,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_COMMUNE_WITH_NATURE",
-    "purifiable": false,
     "name": { "str": "Commune with Nature" },
     "points": 3,
     "visibility": 0,
@@ -241,7 +238,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_BRIARS",
-    "purifiable": false,
     "name": { "str": "Briarwall" },
     "points": 5,
     "visibility": 0,
@@ -253,7 +249,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_TELEPORT",
-    "purifiable": false,
     "name": { "str": "Traverse the Wilds" },
     "points": 6,
     "visibility": 0,
@@ -267,7 +262,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_CAUSE_DECAY",
-    "purifiable": false,
     "name": { "str": "Fallen Trees Decay to Soil" },
     "points": 8,
     "visibility": 0,
@@ -282,8 +276,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_WOOD_SPIRIT",
-    "purifiable": false,
-    "name": { "str": "Summon Wood Spirit" },
+    "name": { "str": "Call the Children of the Roots" },
     "points": 3,
     "visibility": 0,
     "ugliness": 0,
@@ -294,7 +287,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_TERRAIN_BASH_SPELL",
-    "purifiable": false,
     "name": { "str": "Roots Crack the Foundation" },
     "points": 3,
     "visibility": 0,
@@ -335,7 +327,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_PERENNIAL_REBIRTH",
-    "purifiable": false,
     "name": { "str": "Perennial Rebirth" },
     "points": 3,
     "visibility": 0,
@@ -361,7 +352,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_VERDANT_INFUSION",
-    "purifiable": false,
     "name": { "str": "Verdant Infusion" },
     "points": 3,
     "visibility": 0,
@@ -374,9 +364,8 @@
   },
   {
     "type": "mutation",
-    "id": "ARVORE_ROOTS_SPELL",
-    "purifiable": false,
-    "name": { "str": "Command the Roots" },
+    "id": "ARVORE_SUMMON_GRASS_FIELD",
+    "name": { "str": "Commanding the Grasses" },
     "points": 3,
     "visibility": 0,
     "ugliness": 0,
@@ -401,7 +390,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_ANTI_PLANT_SPELL",
-    "purifiable": false,
     "name": { "str": "Tending the Garden" },
     "points": 3,
     "visibility": 0,
@@ -414,7 +402,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_CULTIVATE_GOBLIN_FRUIT",
-    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -427,7 +414,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_MAPPING",
-    "purifiable": false,
     "name": { "str": "Commune with the Ancient Oaks" },
     "points": 3,
     "visibility": 0,
@@ -459,7 +445,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_TOXIC_FLESH",
-    "purifiable": false,
     "name": { "str": "Essence of Hemlock" },
     "points": 8,
     "description": "With a brief effort of will, the Arvore may infuse their blood with a poison that harms any who bite them.",
@@ -495,7 +480,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUN_NUTRIENTS",
-    "purifiable": false,
     "name": { "str": "Solar Rejuvenation" },
     "points": 3,
     "visibility": 0,
@@ -520,7 +504,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUN_NUTRIENTS_AND_MANA",
-    "purifiable": false,
     "name": { "str": "Solar Revitalization" },
     "points": 3,
     "visibility": 0,
@@ -577,7 +560,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUN_FOODS",
-    "purifiable": false,
     "name": { "str": "Solar Repast" },
     "points": 3,
     "visibility": 0,
@@ -650,7 +632,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_RESIST_CHILL",
-    "purifiable": false,
     "name": { "str": "Resist Winter's Chill" },
     "points": 2,
     "visibility": 0,
@@ -664,7 +645,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_IGNORE_WINTER_CHILL",
-    "purifiable": false,
     "name": { "str": "Ignore Winter's Chill" },
     "points": 6,
     "visibility": 0,
@@ -703,7 +683,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_DEX_BONUS",
-    "purifiable": false,
     "name": { "str": "Supple As a Reed" },
     "points": 2,
     "visibility": 3,
@@ -718,7 +697,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_STR_BONUS_1",
-    "purifiable": false,
     "name": { "str": "Might of the Seedling" },
     "points": 1,
     "visibility": 0,
@@ -732,7 +710,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_STR_BONUS_2",
-    "purifiable": false,
     "name": { "str": "Might of the Sapling" },
     "points": 3,
     "visibility": 0,
@@ -748,7 +725,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_STR_BONUS_3",
-    "purifiable": false,
     "name": { "str": "Might of the Ancient Tree" },
     "points": 5,
     "visibility": 0,
@@ -763,7 +739,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_PER_BONUS",
-    "purifiable": false,
     "name": { "str": "Insight of the Grove" },
     "points": 3,
     "visibility": 0,
@@ -778,7 +753,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_STEALTH",
-    "purifiable": false,
     "name": { "str": "Shadow of the Trees" },
     "points": 3,
     "visibility": 0,
@@ -791,7 +765,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_EYES",
-    "purifiable": false,
     "name": { "str": "Arvore Eyes" },
     "points": 1,
     "visibility": 2,
@@ -804,7 +777,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_EARS",
-    "purifiable": false,
     "name": { "str": "Arvore Ears" },
     "points": 1,
     "visibility": 2,
@@ -817,7 +789,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_BLOOD",
-    "purifiable": false,
     "name": { "str": "Vegetal Blood" },
     "//": "Visibility here because the Arvore's skin flushes a different color when the blood isn't red.",
     "points": 1,
@@ -830,7 +801,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_BLOOD_2",
-    "purifiable": false,
     "name": { "str": "Sap Seals the Wound" },
     "points": 7,
     "visibility": 2,
@@ -846,7 +816,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_BLOOD_3",
-    "purifiable": false,
     "name": { "str": "Sap Defends the Trunk" },
     "points": 10,
     "visibility": 2,
@@ -862,7 +831,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_BLOOD_4",
-    "purifiable": false,
     "name": { "str": "Sap Maintains the Heartwood" },
     "points": 13,
     "visibility": 2,
@@ -898,7 +866,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_DETECT",
-    "purifiable": false,
     "name": { "str": "The Forests' Warning" },
     "points": 2,
     "visibility": 0,
@@ -926,7 +893,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_VERDANT_HAIR",
-    "purifiable": false,
     "name": { "str": "Verdant Hair" },
     "points": 2,
     "visibility": 6,
@@ -952,7 +918,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_THORN_SKIN",
-    "purifiable": false,
     "name": { "str": "Hidden Thorns" },
     "points": 7,
     "visibility": 0,
@@ -1026,7 +991,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_HEAL_LIMB_REGEN",
-    "purifiable": false,
     "name": { "str": "Leaves Return When Winter Ends" },
     "points": 3,
     "visibility": 0,
@@ -1043,7 +1007,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_TREE_FORM",
-    "purifiable": false,
     "name": { "str": "One with the Forest" },
     "points": 8,
     "description": "You may transform into a tree, extending roots and spreading leaves out to the sun.  You will heal faster, gain more benefit from sleep, and almost all monsters will ignore you, but you will only be dimly aware of the outside world and will be nearly unable to move.",
@@ -1130,7 +1093,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUN_MANA_BONUS",
-    "purifiable": false,
     "name": { "str": "Solar Empowerment" },
     "points": 10,
     "visibility": 0,
@@ -1159,7 +1121,6 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUN_POWER_MANA_STATS",
-    "purifiable": false,
     "name": { "str": "Solar Ascendancy" },
     "points": 10,
     "visibility": 0,

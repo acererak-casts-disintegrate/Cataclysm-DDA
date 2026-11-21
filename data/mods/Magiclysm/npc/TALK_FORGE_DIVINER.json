@@ -106,6 +106,7 @@
     "dynamic_line": "Seeking to pick around your civilization's corpse?  You're not the first and you won't be the last.",
     "responses": [
       { "text": "A lab.", "topic": "TALK_FORGE_LORD_DIVINER_LAB" },
+      { "text": "An Exodii location.", "topic": "TALK_FORGE_LORD_DIVINER_EXODII" },
       { "text": "A strange temple.", "topic": "TALK_FORGE_LORD_DIVINER_TEMPLE" },
       { "text": "An attunement altar.", "topic": "TALK_FORGE_LORD_DIVINER_ATTUNEMENT" },
       { "text": "A magic academy.", "topic": "TALK_FORGE_LORD_DIVINER_ACADEMY" },
@@ -657,6 +658,26 @@
         "topic": "TALK_DONE",
         "condition": { "u_has_item": "denarius" },
         "effect": [ { "assign_mission": "MISSION_FORGE_DIVINER_LAB_NETHER" }, { "u_consume_item": "denarius" } ]
+      },
+      {
+        "text": "I can't afford that right now.",
+        "topic": "TALK_FORGE_LORD_DIVINER_GET_MONEY",
+        "condition": { "not": { "u_has_item": "denarius" } }
+      },
+      { "text": "About something else…", "topic": "TALK_NONE" },
+      { "text": "Nevermind.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_FORGE_LORD_DIVINER_EXODII",
+    "type": "talk_topic",
+    "dynamic_line": "Fellow travelers between realities, those ones.  At first I thought they would be competition, but they seem to have little interest in the things we at the forge value.  Nowadays we barely interact with them, except in the rare occasions when we find a group of them marooned in between the worlds.  Poor things are almost always driven completely insane by the time we can mount a rescue.  Nevertheless, it's the law of the sea out there, as far as Valzain is concerned.  They seem to have set up shop not too far from here.  I'll mark it on your map for one denarius.  You might wanna check the magic item store for an Amulet of Comprehend Languages before you go.  Then again, we might be out of that right now.",
+    "responses": [
+      {
+        "text": "It's a deal.",
+        "topic": "TALK_DONE",
+        "condition": { "u_has_item": "denarius" },
+        "effect": [ { "assign_mission": "MISSION_FORGE_DIVINER_EXODII" }, { "u_consume_item": "denarius" } ]
       },
       {
         "text": "I can't afford that right now.",

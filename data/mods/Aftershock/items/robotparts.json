@@ -1,6 +1,19 @@
 [
   {
     "type": "ITEM",
+    "id": "spidery_legs_big",
+    "name": { "str": "set of spidery legs", "str_pl": "sets of spidery legs" },
+    "description": "A set of big pointy legs, like the ones found under a tripod.",
+    "symbol": "W",
+    "color": "light_gray",
+    "weight": "40000 g",
+    "volume": "20 L",
+    "price": "2 kUSD",
+    "material": [ "steel" ],
+    "category": "spare_parts"
+  },
+  {
+    "type": "ITEM",
     "id": "tripod_chassis",
     "name": { "str_sp": "tripod chassis" },
     "description": "What's left when you remove all moving parts and electronics.  It's the skeleton and armor of the tripod.",

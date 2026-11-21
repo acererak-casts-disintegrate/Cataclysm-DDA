@@ -2,8 +2,8 @@
   {
     "id": "isohypsa_buff",
     "type": "SPELL",
-    "name": { "str": "Isohypsa Coordination" },
-    "description": "Increases the speed of simpler Northrop drones.",
+    "name": { "str": "Isohypsa Coordination", "//~": "NO_I18N" },
+    "description": { "str": "Increases the speed of simpler Wraitheon drones.", "//~": "NO_I18N" },
     "valid_targets": [ "self", "ally" ],
     "targeted_monster_ids": [
       "mon_chickenbot",

@@ -2,8 +2,7 @@
   {
     "type": "mutation",
     "id": "IERDE_SKIN_1",
-    "purifiable": false,
-    "name": { "str": "Clay of the earth" },
+    "name": { "str": "Clay of the Earth" },
     "points": 0,
     "visibility": 2,
     "ugliness": 0,
@@ -43,8 +42,7 @@
   {
     "type": "mutation",
     "id": "IERDE_SKIN_3",
-    "purifiable": false,
-    "name": { "str": "stone skin" },
+    "name": { "str": "Stone Skin" },
     "points": 3,
     "visibility": 10,
     "ugliness": 4,
@@ -564,7 +562,6 @@
   {
     "type": "mutation",
     "id": "IERDE_CULTIVATE_GOBLIN_FRUIT",
-    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,

@@ -75,7 +75,7 @@
     "comestible_type": "DRINK",
     "id": "fae_blood",
     "name": { "str_sp": "fae blood" },
-    "weight": "1 g",
+    "weight": "260 g",
     "color": "cyan",
     "container": "flask_glass",
     "symbol": "~",

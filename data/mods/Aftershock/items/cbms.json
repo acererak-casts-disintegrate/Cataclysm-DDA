@@ -93,6 +93,18 @@
     "difficulty": 5
   },
   {
+    "id": "bio_shock_absorber",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Archeotech Grav Chute CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "Pre-Discontinuity bionic module that was implanted into elite drop troops who could jump from their insertion vehicle during the radar disruption of reentry.  While active, the field will prevent damage to your body from severe impacts, at the cost of impaired movement.",
+    "price": "100 USD",
+    "weight": "3000 g",
+    "difficulty": 8
+  },
+  {
     "id": "bio_power_storage_salvaged",
     "copy-from": "bionic_general_npc_usable",
     "type": "ITEM",
@@ -102,7 +114,8 @@
     "description": "A battered and used Compact Bionics Module that upgrades the user's power capacity by 50 units.  Having at least one of these is a prerequisite to using powered bionics.  The user will also need a power supply, found in various CBMs.",
     "price": "3 kUSD 800 USD",
     "weight": "70 g",
-    "difficulty": 1
+    "difficulty": 1,
+    "installation_data": "AID_bio_power_storage"
   },
   {
     "id": "afs_bio_dopamine_stimulators",
@@ -266,10 +279,10 @@
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": [ "BIONIC_ITEM" ],
-    "name": { "str": "Shady Hills Corporation Hub 01 Mark I CBM" },
-    "description": "Imagine a computer inside your body playing pong against the universe.  The paddles are made of energy fields and how it causes this to happen are trade secrets.  -From the owners manual of Shady Hills Corporation Hub 01 Mark I.  Activating the field will reduce incoming bashing and cut damage by 5 points.",
-    "price": "100000 cent",
-    "price_postapoc": "2500 cent",
+    "name": { "str": "HawkingCorps Mark I Shield CBM" },
+    "description": "Imagine a computer inside your body playing pong against the universe.  The paddles are made of energy fields and how it causes this to happen are trade secrets.  -From the owners manual of HawkingCorps GravyField Mark I.  Activating the field will reduce incoming bashing and cut damage by 5 points.",
+    "price": "80 kUSD",
+    "price_postapoc": "80 kUSD",
     "difficulty": 6
   },
   {
@@ -277,21 +290,10 @@
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": [ "BIONIC_ITEM" ],
-    "name": { "str": "Shady Hills Corporation Hub 01 Mark II CBM" },
-    "description": "The Shady Hills Corporation Hub 01 Mark II was designed for police actions during food riots and other civilian uprisings.  It has proven capable of protecting against most improvised weapons.  Activating the field will reduce incoming and cut damage by 15 points.",
-    "price": "100000 cent",
-    "price_postapoc": "3500 cent",
-    "difficulty": 8
-  },
-  {
-    "id": "bio_forcefield_bash_cut_heavy",
-    "copy-from": "bionic_general",
-    "type": "ITEM",
-    "subtypes": [ "BIONIC_ITEM" ],
-    "name": { "str": "Debt Collection Agent Hub 01 CBM" },
-    "description": "This class of personal energy field often sees action on both sides of the vicious ship-to-ship boarding fights that are common with both repossession and piracy.  It remains practically impenetrable to melee weapons that lack sharp piercing points.  Activating the field will reduce incoming bashing and cut damage by 25 points.",
-    "price": "100000 cent",
-    "price_postapoc": "6500 cent",
+    "name": { "str": "HawkingCorps Mark V Shield CBM" },
+    "description": "Powerful and covert, the Mark V Shield is a military-grade shielding system developed for use within UICA's special service branches.  Although much more effective than anything that could be conceived with current technology, it remains a pale imitation of the Hyperspace Age systems it was reverse-engineered from.  A.\n\nActivating the shield will create an energy barrier capable of withstanding a modest amount of melee and ranged damage.",
+    "price": "220 kUSD",
+    "price_postapoc": "220 kUSD",
     "difficulty": 10
   },
   {
@@ -299,32 +301,10 @@
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": [ "BIONIC_ITEM" ],
-    "name": { "str": "Point Energy Conversion Field CBM" },
-    "description": "A personal kinetic attenuation field that slows incoming projectiles by converting their kinetic energy into bursts of visible light.  Although this version is not powerful enough to defeat most pistol or rifle cartridges by itself, it greatly increases survival odds when combined with traditional ballistic armor.  Activating the field will reduce incoming ballistic and piercing damage by 10 points.",
-    "price": "100000 cent",
-    "price_postapoc": "2500 cent",
-    "difficulty": 6
-  },
-  {
-    "id": "bio_forcefield_ballistic_medium",
-    "copy-from": "bionic_general",
-    "type": "ITEM",
-    "subtypes": [ "BIONIC_ITEM" ],
-    "name": { "str": "Holtzman Personal Shield Generator CBM" },
-    "description": "A military grade kinetic attenuation system developed for the Army's special operations units.  Although far beyond anything on the open market, it remains a pale imitation of the anomalous artifact XEDRA reverse engineered it from.  A side effect its engineers never solved is the tendency for this unit to release electrical fields when hit.  Activating the field will reduce incoming ballistic and piercing damage by 20 points.",
-    "price": "100000 cent",
-    "price_postapoc": "6500 cent",
-    "difficulty": 10
-  },
-  {
-    "id": "bio_forcefield_ballistic_heavy",
-    "copy-from": "bionic_general",
-    "type": "ITEM",
-    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Kinetic Annulment System CBM" },
-    "description": "A kinetic attenuation system salvaged from a Northrop combat robot, crudely adapted for compatibility with biological hosts.  Powerful enough to completely stop most rifle cartridges.  Activating the field will reduce incoming ballistic and piercing damage by 40 points.",
-    "price": "100000 cent",
-    "price_postapoc": "12500 cent",
+    "description": "A powerful shielding system salvaged from a pre-Discontinuity robotic warframe, crudely adapted for compatibility with biological hosts.  Powerful enough to completely stop most rifle cartridges.  Activating the field will reduce incoming ballistic and piercing damage by 40 points.",
+    "price": "1320 kUSD",
+    "price_postapoc": "1320 kUSD",
     "difficulty": 16
   }
 ]

@@ -110,7 +110,7 @@
     "name": { "str_sp": "exosuit claws" },
     "description": "A pair of oversized and articulated hydraulic gauntlets with fingertips ending in cruel talons.",
     "weight": "3 kg",
-    "volume": "1500 ml",
+    "volume": "300 ml",
     "longest_side": "50 cm",
     "price": "11 USD",
     "price_postapoc": "2 USD 50 cent",
@@ -137,8 +137,8 @@
     "id": "exosuit_plasma_torch",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR" ],
-    "name": { "str": "392-Boeing plasma torch", "str_pl": "392-Boeing plasma torches" },
-    "description": "One of the many versions of Boeing certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  This is a larger, more powerful model meant to be used by an exosuit for heavy engineering tasks.  Heavy cables run from the module to a handheld trigger mechanism.",
+    "name": { "str": "392-UASTA plasma torch", "str_pl": "392-UASTA plasma torches" },
+    "description": "One of the many versions of UASTA certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  This is a larger, more powerful model meant to be used by an exosuit for heavy engineering tasks.  Heavy cables run from the module to a handheld trigger mechanism.",
     "weight": "8 kg",
     "volume": "6500 ml",
     "longest_side": "80 cm",
@@ -222,7 +222,7 @@
       }
     ],
     "melee_damage": { "bash": 10, "cut": 5 },
-    "longest_side": "90 cm"
+    "tool_ammo": [ "gasoline", "diesel", "jp8", "avgas", "lamp_oil", "motor_oil", "propane", "conc_alcohol", "ammonia_liquid" ]
   },
   {
     "id": "exosuit_power_cutter_on",

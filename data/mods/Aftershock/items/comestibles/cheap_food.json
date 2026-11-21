@@ -55,8 +55,8 @@
     "quench": 6,
     "healthy": -6,
     "addiction_potential": 6,
-    "description": "Spite Soda, a sharp citrus soda from a small New England bottler.  'Stay Frosty, Drink Spite'.  People who have drank Spite Soda have described it as the taste of a long winter and a short temper.",
-    "price": "1000 cent",
+    "description": "Spite Soda, the only soda native to the Salus system.  'Stay Frosty, Drink Spite'.  Visitors to the Salus system who have drank Spite Soda have described it as the taste of transhumanist dialectical materialism.",
+    "price": "10 USD",
     "looks_like": "diesel",
     "container": "can_drink",
     "material": [ "alcohol" ],
@@ -92,7 +92,7 @@
     "fun": 2,
     "freezing_point": -9999,
     "vitamins": [ [ "calcium", 30 ], [ "iron", 30 ], [ "vitC", 30 ], [ "bad_food", 1 ] ],
-    "volume": "140 ml"
+    "volume": "111 ml"
   },
   {
     "id": "afs_food_to_go",
@@ -108,7 +108,7 @@
     "description": "Foodplace™ easy-storage Food-to-go™ the choice Food™ for the contemporary Foodman™.",
     "fun": 2,
     "freezing_point": -9999,
-    "volume": "140 ml"
+    "volume": "111 ml"
   },
   {
     "id": "afs_loop_fruit",
@@ -139,8 +139,8 @@
     "description": "Smooth crackers colored grayish-green.  Used to be perfectly edible seaweed, or so the wrapper claims.",
     "fun": 2,
     "freezing_point": -9999,
-    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
-    "volume": "150 ml"
+    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ], [ "veggy_allergen", 1 ] ],
+    "volume": "74 ml"
   },
   {
     "id": "afs_beefsim",
@@ -156,9 +156,8 @@
     "description": "Soy or pureed rat?  Better not to know.\n(But its probably both.)",
     "fun": 0,
     "freezing_point": -9999,
-    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
-    "volume": "111 ml",
-    "weight": "120 g"
+    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ], [ "meat_allergen", 1 ], [ "veggy_allergen", 1 ] ],
+    "volume": "111 ml"
   },
   {
     "id": "afs_soup_27",
@@ -180,18 +179,18 @@
     "id": "afs_escapepod_ration",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str_sp": "lifeboat rations" },
+    "name": { "str_sp": "landfall survival rations" },
     "symbol": "o",
     "container": "bag_plastic_small",
     "copy-from": "protein_bar_evac",
     "color": "white",
     "calories": 500,
     "healthy": 3,
-    "description": "A foil-sealed pack of compressed emergency food bars, the kind Coast Guard regulations require in every lifeboat and life raft on a commercial vessel.  This particular pack should provide around a day's worth of nutrition.  Required by regulation but rarely ever used, the design of these \"meals\" prioritizes a long shelf life and a very low bulk-cost.  Which lends them their disgusting taste of greased sawdust.",
+    "description": "Sealed emergency rations invariably found within an escape pod's inventory.  This particular pack should provide around a day's worth of nutrition.  Required by regulation but rarely ever used, the design of these \"meals\" prioritizes a long shelf life and a very low bulk-cost.  Which lends them their disgusting taste of greased sawdust.",
     "fun": -2,
     "freezing_point": -9999,
     "vitamins": [ [ "vitC", 2 ], [ "bad_food", 1 ] ],
-    "volume": "140 ml"
+    "volume": "55 ml"
   },
   {
     "id": "afs_caffex",

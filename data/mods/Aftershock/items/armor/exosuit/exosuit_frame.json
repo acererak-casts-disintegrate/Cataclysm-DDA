@@ -312,7 +312,10 @@
       },
       "MANAGE_EXOSUIT"
     ],
-    "longest_side": "190 cm"
+    "tool_ammo": "battery",
+    "passive_effects": [
+      { "condition": "ACTIVE", "values": [ { "value": "STRENGTH", "add": 10 }, { "value": "CARRY_WEIGHT", "add": 20000 } ] }
+    ]
   },
   {
     "id": "modular_exosuit_on",

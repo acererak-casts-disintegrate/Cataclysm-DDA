@@ -900,10 +900,8 @@
     "vision_day": 15,
     "vision_night": 2,
     "death_drops": "mon_zombie_technician_death_drops",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_ZOMBIE_UPGRADE" },
-    "flags": [ "SEES", "HEARS", "WARM", "GRABS", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ],
     "armor": { "bash": 2, "cut": 2, "bullet": 2, "electric": 3 },
-    "dissect": "dissect_CBM_TECH"
+    "extend": { "weakpoint_sets": [ "wps_humanoid_open_helmet" ] }
   },
   {
     "id": "mon_zombie_miner",
