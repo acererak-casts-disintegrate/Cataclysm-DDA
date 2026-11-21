@@ -2,7 +2,8 @@
   {
     "id": "bot_copbot",
     "looks_like": "broken_copbot",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive police bot" },
     "description": "This is an inactive police robot.  Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the police bot will then identify you as law enforcement, roam around or follow you, and attempt to detain lawbreakers.",
     "weight": "81500 g",
@@ -28,7 +29,8 @@
   {
     "id": "bot_riotbot",
     "looks_like": "broken_riotbot",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive riot control bot" },
     "description": "This is an inactive riot control bot.  Using this item involves placing it on the ground and turning it on.  If reprogrammed and rewired successfully the robot will bring order and peace to the horde.",
     "weight": "81500 g",
@@ -54,7 +56,8 @@
   {
     "id": "bot_eyebot",
     "looks_like": "broken_eyebot",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive eyebot" },
     "description": "This is an inactive eyebot.  Using this item involves turning it on and launching the UAV.  If reprogrammed and rewired successfully the eyebot will then keep watch for intruders.",
     "weight": "40750 g",
@@ -79,7 +82,8 @@
   },
   {
     "id": "bot_laserturret",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive laser turret" },
     "description": "This is an inactive laser turret.  Using this item involves turning it on and placing it on the ground, where it will attach itself.  If reprogrammed and rewired successfully the turret will identify you as a friendly, and attack all enemies with its revolving laser cannons.  It requires sunlight in order to fire.",
     "weight": "40750 g",
@@ -100,7 +104,8 @@
   },
   {
     "id": "bot_mininuke_hack",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive mininuke hack" },
     "description": "This is an inactive mininuke hack.  Many times as large as a normal manhack, a mininuke hack contains a mininuke and attack by flying at their target and detonating.  Use this item to reprogram and activate the mininuke hack.  Electronics and computer skill determines if the targeting matrix is reprogrammed successfully.",
     "weight": "25000 g",
@@ -124,7 +129,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_copbot",
     "symbol": ",",
     "color": "green",
@@ -141,7 +146,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_riotbot",
     "symbol": ",",
     "color": "green",
@@ -158,7 +163,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_eyebot",
     "symbol": ",",
     "color": "green",
@@ -175,7 +180,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_laserturret",
     "symbol": ",",
     "color": "green",
@@ -184,7 +189,7 @@
     "copy-from": "broken_turret"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_mininuke_hack",
     "symbol": ",",
     "color": "magenta",
@@ -203,7 +208,8 @@
   {
     "id": "bio_railgun",
     "copy-from": "bionic_general",
-    "type": "BIONIC_ITEM",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Railgun CBM" },
     "looks_like": "bio_int_enhancer",
     "description": "EM field generators in the user's arms increase the range and damage of thrown magnetic objects at a cost of 1 bionic power per throw.  They will create a trail of electricity that can cause additional damage.",
@@ -214,7 +220,8 @@
   {
     "id": "bio_shock_absorber",
     "copy-from": "bionic_general",
-    "type": "BIONIC_ITEM",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Kinetic Shock Absorbers CBM" },
     "looks_like": "bio_int_enhancer",
     "description": "A set of hydraulic springs and foldable padding that replaces most of the flesh in the limbs and upper torso.  While active, these absorbers will negate damage from severe impacts such as falling, at the cost of reducing the user's ability to move effectively.",
@@ -224,7 +231,7 @@
   },
   {
     "id": "cerberus_laser",
-    "type": "GENERIC",
+    "type": "ITEM",
     "symbol": "(",
     "color": "magenta",
     "name": { "str": "TX-5LR Laser Cannon" },
@@ -238,7 +245,8 @@
   {
     "id": "laser_cannon",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "name": { "str": "handheld laser cannon" },
     "description": "This is a laser cannon stripped from the barrel of a TX-5LR Cerberus laser turret that has been modified to use UPS power for firing.",
@@ -275,7 +283,8 @@
   {
     "id": "heavy_rail_rifle",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "name": { "str": "heavy rail rifle" },
     "description": "This overpowered and overengineered variant of the ferromagnetic rail rifle was designed to deliver electromagnetically-driven obliteration right through whatever obstacles that lies in front of it, be it buildings, vehicles or hordes of walking dead.  However, the hefty bulk and weight of this weapon compared to most contemporary rifles makes it somewhat cumbersome to wield; not to mention that it consumes UPS charges at a tremendous rate, making it impractical for use in prolonged engagements.",
@@ -313,7 +322,8 @@
   {
     "id": "steel_rail",
     "copy-from": "rebar_rail",
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "name": { "str": "steel rail" },
     "description": "A short piece of steel which has been forged true and sharpened on one end.  Could be used as a projectile by a sufficiently powerful electromagnetic weapon.",
     "weight": "212 g",
@@ -329,7 +339,8 @@
   },
   {
     "id": "rebar_rail",
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "name": { "str": "rebar rail" },
     "description": "A short piece of ferromagnetic rebar which has been straightened and sharpened on one end.  Could be used as a projectile by a sufficiently powerful electromagnetic weapon.",
     "weight": "236 g",
@@ -352,7 +363,8 @@
   {
     "id": "mininuke_launcher",
     "looks_like": "m79",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "symbol": "(",
     "color": "dark_gray",
@@ -377,7 +389,8 @@
     "longest_side": "110 cm"
   },
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "mininuke_mod",
     "price": 180000,
     "//": "Never marketed pre-Cataclysm.",
@@ -396,7 +409,8 @@
   },
   {
     "id": "recipe_mininuke_launch",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "238-NK: Practicality Enhancement", "str_pl": "copies of 238-NK: Practicality Enhancement" },
     "description": "The authors of this thoroughly researched and documented proposal make a very persuasive case for the adoption of spring-driven nuclear shells.  It's stamped \"DENIED\".",
     "weight": "854 g",
@@ -414,7 +428,8 @@
   },
   {
     "id": "rm99_pistol",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "name": { "str": "RM99 revolver" },
     "//": "Bear in mind that most revolvers don't reach $1K.  Expensive.",
@@ -448,7 +463,8 @@
   },
   {
     "id": "adv_UPS_off",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
     "description": "This is an advanced version of the unified power supply, or UPS.  This device has been significantly redesigned to provide better efficiency as well as to consume plutonium fuel batteries rather than regular batteries.  Sadly, its plutonium reactor can't be charged in UPS charging station.",
     "weight": "453 g",
@@ -474,7 +490,8 @@
   },
   {
     "id": "q_solarpack",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "name": { "str": "quantum solar backpack (folded)", "str_pl": "quantum solar backpacks (folded)" },
     "description": "Personal portable charging system consisting of an array of quantum solar panels neatly folded in a form of a large backpack.  It can be worn as one, and has an integrated cable to plug it into a cable charger system.  Cutting edge technology.",
     "weight": "7500 g",
@@ -492,7 +509,8 @@
   },
   {
     "id": "q_solarpack_on",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "repairs_like": "q_solarpack",
     "name": { "str": "quantum solar backpack (unfolded)", "str_pl": "quantum solar backpacks (unfolded)" },
     "description": "Unfolded array of portable quantum solar panels ready to push some power into an active cable charger system.",
@@ -511,7 +529,7 @@
     "armor": [ { "covers": [ "torso" ], "coverage": 40, "encumbrance": 20 } ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "solar_panel_v3",
     "name": { "str": "quantum solar panel" },
     "description": "This solar panel is obviously cutting-edge technology and given where you found it, should probably provide a LOT of power.  It's covered in strange-looking material, but the covering looks rather fragile; it doesn't look like it could support a reinforcing sheet, either.",
@@ -523,7 +541,8 @@
   },
   {
     "id": "bot_chickenbot",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive chicken walker" },
     "description": "This is an inactive chicken walker.  Using this item involves placing it on the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm cartridge grenades in your inventory (if you wish to divide your ammunition, set aside whatever ammunition you do NOT want to give the robot) and turning it on.  If reprogrammed and rewired successfully the chicken walker will then identify you as a friendly, roam around or follow you, and attack all enemies with a built-in firearm and grenade launcher.",
     "weight": "120000 g",
@@ -548,7 +567,8 @@
   {
     "id": "bot_tankbot",
     "looks_like": "broken_tankbot",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive tank drone" },
     "description": "This is an inactive Beagle Mini-Tank UGV.  Using this item involves placing it on the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm cartridge grenades in your inventory (if you wish to divide your ammunition, set aside whatever ammunition you do NOT want to give the robot) and turning it on.  If reprogrammed and rewired successfully the tank drone will then identify you as a friendly, roam around or follow you, and attack all enemies with a built-in firearm and grenade launcher.",
     "weight": "200000 g",
@@ -572,7 +592,7 @@
     "melee_damage": { "bash": 8 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_chickenbot",
     "looks_like": "broken_tripod",
     "symbol": ",",
@@ -598,7 +618,7 @@
     "melee_damage": { "bash": 20, "cut": 15 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_tankbot",
     "symbol": ",",
     "color": "green",
@@ -616,7 +636,8 @@
   {
     "id": "bio_blaster",
     "copy-from": "bionic_general",
-    "type": "BIONIC_ITEM",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Fusion Blaster Arm CBM" },
     "description": "Your left arm has been replaced by a heavy-duty fusion blaster!  You may use your energy banks to fire a damaging heat ray.  However, you are unable to use or carry two-handed items, and your strength limits what you can use with your one hand.",
     "price": 220000,
@@ -624,7 +645,8 @@
   },
   {
     "id": "bio_blaster_gun",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "name": { "str": "fusion blaster" },
     "description": "this a pseudo item",
     "volume": "3 L",

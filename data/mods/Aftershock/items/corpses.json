@@ -1,6 +1,6 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_afs_mon_sentinel_lx",
     "symbol": ",",
     "color": "green",
@@ -33,7 +33,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_light_hack",
     "copy-from": "broken_manhack",
     "color": "yellow",
@@ -44,7 +44,7 @@
     "material": [ { "type": "aluminum", "portion": 2 }, { "type": "plastic", "portion": 1 } ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_utilibot",
     "symbol": ",",
     "color": "light_gray",
@@ -93,7 +93,7 @@
     "color": "green"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_utilibot_butler",
     "copy-from": "broken_utilibot",
     "color": "dark_gray",
@@ -290,7 +290,7 @@
     "melee_damage": { "bash": 6, "cut": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "afs_corpse_old",
     "copy-from": "corpse",
     "name": { "str": "mummified corpse" },

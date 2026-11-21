@@ -1,6 +1,7 @@
 [
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "shotcanister_scrap",
     "price": 1000,
     "price_postapoc": 250,
@@ -22,7 +23,8 @@
     "melee_damage": { "bash": 2, "cut": 1 }
   },
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "shotcanister_pebble",
     "price": 1000,
     "price_postapoc": 50,
@@ -44,7 +46,8 @@
     "melee_damage": { "bash": 2, "cut": 1 }
   },
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "shotcanister_flechette",
     "price": 1000,
     "price_postapoc": 250,
@@ -66,7 +69,8 @@
     "melee_damage": { "bash": 2, "cut": 1 }
   },
   {
-    "type": "AMMO",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
     "id": "shotcanister_bearing",
     "price": 1000,
     "price_postapoc": 250,

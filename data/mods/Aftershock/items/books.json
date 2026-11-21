@@ -148,7 +148,8 @@
   },
   {
     "id": "recipe_uplift",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "Dr Moreau and You", "str_pl": "copies of Dr Moreau and You" },
     "description": "A Shady Hills Corporation research binder covering mutagen design: the Killophant shock-troop program, mi-go derived strains and a chapter on reanimating the dead.  Someone gave it its title in a fit of dark humor.  Otherwise a dry text about genetic modification.",
     "copy-from": "textbook_atomic",
@@ -245,7 +246,8 @@
   },
   {
     "id": "exosuit_maintenance",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "Rivtech Exoskeleton user manual", "str_pl": "copies of Rivtech Exoskeleton user manuals" },
     "description": "A somewhat hefty manual in Russian with accompanying English text which goes in-depth into the proper usage and maintenance of Rivtech brand Exoskeletons.\n\nWhile it mainly pertains to the old Rivtech exoskeletons, the knowledge within could still help out with modular exoskeletons in general.",
     "weight": "50 g",

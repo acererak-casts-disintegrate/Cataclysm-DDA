@@ -390,7 +390,8 @@
     "fun": 4
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "id": "raw_alien_leather",
     "category": "spare_parts",
     "name": { "str_sp": "raw alien hide" },

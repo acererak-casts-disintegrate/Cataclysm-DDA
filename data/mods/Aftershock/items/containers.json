@@ -1,7 +1,8 @@
 [
   {
     "id": "afs_landfall_kit_2",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Type II FEMA survival kit" },
     "description": "This is a metal box containing survival supplies, stockpiled by FEMA in shelters and evacuation centers.  Its cyan highlights indicate that it's a simpler Type II kit, meant for a few days of sheltering in place.",
     "weight": "1022 g",
@@ -52,7 +53,8 @@
   {
     "//": "MAG_BULKY lets the HERC rig's bulky-magazine pocket hold pressure tanks (Rocket Jumper's liquid ammonia).",
     "id": "pressure_tank",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "pressure_tank",
     "name": { "str": "pressurized tank" },
     "flags": [ "NO_UNLOAD", "MAG_BULKY" ]

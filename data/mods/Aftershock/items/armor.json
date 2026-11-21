@@ -121,7 +121,8 @@
   },
   {
     "id": "xlswat_armor",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "name": { "str": "oversized SWAT armor" },
     "description": "An extra large suit of black bulletproof armor with lots of pockets.  The word SWAT is emblazoned across the back.  Specifically designed for officers from Shady Hills Corporation's Killophant program.",
@@ -148,7 +149,8 @@
   },
   {
     "id": "xlballistic_vest_empty",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "//": "Based on US Army SPCS",
     "name": { "str": "empty XL ballistic vest" },
@@ -166,7 +168,8 @@
   },
   {
     "id": "xlballistic_vest_esapi",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "name": { "str": "XL ESAPI ballistic vest" },
     "description": "Oversized ballistic armor with ESAPI ceramic armor plates.",
@@ -256,7 +259,8 @@
   },
   {
     "id": "xlpolice_belt",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "XL police duty belt" },
     "description": "An XL black leather belt used by extremely large mutant police officers.  It has several pouches and a holder for a baton.",
     "weight": "450 g",

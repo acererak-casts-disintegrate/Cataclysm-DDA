@@ -31,7 +31,7 @@
     "melee_damage": { "bash": 6 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "afs_scrap_titanium",
     "symbol": ",",
     "color": "light_gray",
@@ -240,7 +240,7 @@
     "flags": [ "STURDY" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "afs_tattered_garment",
     "name": { "str_sp": "tattered garments" },
     "category": "other",

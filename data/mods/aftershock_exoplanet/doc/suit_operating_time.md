@@ -38,7 +38,8 @@ Consider the Magellan exosuit, which has the following definition:
 ```
   {
     "id": "afs_magellan_suit",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "category": "armor",
     "name": { "str": "Magellan exosuit" },
     "description": "A high-quality, civilian grade EVA suit often employed by well-established frontier research and exploration associations.  Designed to support the exploration of challenging terrain, it offers respectable protection against common environmental hazards like extreme temperatures, inhospitable atmospheres, and light radiation.  It leaves arms and hands relatively unencumbered to aid the manipulation of scientific instruments.\n\nAn integral battery allows the suit to operate for up to 34 hours, but complicates field recharging.",

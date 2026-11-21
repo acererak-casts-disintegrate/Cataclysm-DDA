@@ -135,7 +135,8 @@
   },
   {
     "id": "exosuit_plasma_torch",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
     "name": { "str": "392-Boeing plasma torch", "str_pl": "392-Boeing plasma torches" },
     "description": "One of the many versions of Boeing certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  This is a larger, more powerful model meant to be used by an exosuit for heavy engineering tasks.  Heavy cables run from the module to a handheld trigger mechanism.",
     "weight": "8 kg",

@@ -20,7 +20,8 @@
   {
     "id": "afs_marsec_14mag",
     "looks_like": "glock17_17",
-    "type": "MAGAZINE",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
     "name": { "str": "Rivtech 14-round magazine" },
     "description": "A magazine for the Rivtech handguns.  It holds 14 rounds.",
     "weight": "70 g",

@@ -127,7 +127,8 @@
   },
   {
     "id": "afs_plasma_torch",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "377-Boeing plasma torch", "str_pl": "377-Boeing plasma torches" },
     "description": "One of the many versions of Boeing certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  It is an indispensable tool for construction or demolition work, and is sometimes transformed into a weapon by mining & salvage outfits of questionable repute.",
     "weight": "4200 g",
@@ -188,7 +189,8 @@
   },
   {
     "id": "afs_wraitheon_smartphone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Northrop executive's smartphone" },
     "copy-from": "afs_atomic_smartphone",
     "description": "Your custom crafted atomic smartphone.  Most notably a confidential executive-level override program allows you to remotely control most robots.",
@@ -224,7 +226,8 @@
   {
     "id": "afs_atomic_wraitheon_music",
     "copy-from": "afs_wraitheon_smartphone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Northrop executive's smartphone - music", "str_pl": "Northrop executive's smartphones - music" },
     "description": "This phone is playing music, steadily raising your morale.  You can't hear anything else while you're listening.",
     "revert_to": "afs_atomic_smartphone",

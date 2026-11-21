@@ -178,7 +178,8 @@
   },
   {
     "id": "afs_escapepod_ration",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "lifeboat rations" },
     "symbol": "o",
     "container": "bag_plastic_small",

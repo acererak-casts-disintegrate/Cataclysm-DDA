@@ -499,7 +499,8 @@
   },
   {
     "id": "exo_forcefield",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "exosuit forcefield generator" },
     "description": "A set of powerful field generators Hub 01 developed for Marine Corps breaching teams.  The first setting provides excellent protection against melee attacks, while the second protects against ballistic projectiles.  Due to power draw and heat dissipation issues the unit cannot operate both fields simultaneously, forcing users to make rapid decisions as combat unfolds.",
     "weight": "5 kg",
@@ -523,7 +524,8 @@
   },
   {
     "id": "exo_forcefield_bash_cut",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "exosuit forcefield generator (bash & cut)", "str_pl": "exosuit forcefield generators (bash & cut)" },
     "description": "A set of powerful field generators Hub 01 developed for Marine Corps breaching teams.  It is currently active, drawing power, and protecting against 25 points of bash and cut damage.",
     "weight": "5 kg",
@@ -548,7 +550,8 @@
   },
   {
     "id": "exo_forcefield_ballistic_pierce",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": {
       "str": "exosuit forcefield generator (ballistic & pierce)",
       "str_pl": "exosuit forcefield generators (ballistic & pierce)"

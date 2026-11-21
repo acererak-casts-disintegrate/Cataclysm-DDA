@@ -1,7 +1,8 @@
 [
   {
     "id": "test_item_info_repair_tool",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": "TEST item info repair tool",
     "description": "This tests item info repair details.",
     "weight": "100 g",
@@ -20,7 +21,7 @@
     ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "test_item_info_repair_item",
     "symbol": ",",
     "color": "light_gray",

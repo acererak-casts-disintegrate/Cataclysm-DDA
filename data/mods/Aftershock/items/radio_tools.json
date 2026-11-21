@@ -12,7 +12,8 @@
   {
     "id": "afs_cam_spy",
     "copy-from": "bot_bloodhound_drone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "cam-spy rover" },
     "description": "A small wheeled drone, nimble and almost undetectable it mounts a robotic eye for espionage work.  Once turned on, a remote controller will let you use it as a mobile camera.",
     "symbol": "e",
@@ -41,7 +42,8 @@
   {
     "id": "afs_cam_spy_on",
     "copy-from": "afs_cam_spy",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "cam-spy rover (on)", "str_pl": "cam-spy rovers (on)" },
     "description": "This cam-spy rover is on, and continuously transmitting a video-feed of its immediate surroundings.  Use a remote control to drive it around.",
     "turns_per_charge": 5,

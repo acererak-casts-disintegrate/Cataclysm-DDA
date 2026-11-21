@@ -77,7 +77,8 @@
   {
     "id": "tihar",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "symbol": "(",
     "color": "light_gray",
@@ -117,7 +118,8 @@
   {
     "id": "helsing",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "symbol": "(",
     "color": "dark_gray",
@@ -156,7 +158,8 @@
   {
     "id": "pneumatic_shotgun",
     "looks_like": "pipe_double_shotgun",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "reload_noise_volume": 10,
     "symbol": "(",
     "color": "dark_gray",
