@@ -56,7 +56,7 @@
     "healthy": -6,
     "addiction_potential": 6,
     "description": "Spite Soda, a sharp citrus soda from a small New England bottler.  'Stay Frosty, Drink Spite'.  People who have drank Spite Soda have described it as the taste of a long winter and a short temper.",
-    "price": 1000,
+    "price": "1000 cent",
     "looks_like": "diesel",
     "container": "can_drink",
     "material": [ "alcohol" ],

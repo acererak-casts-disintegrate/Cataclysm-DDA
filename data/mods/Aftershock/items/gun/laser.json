@@ -6,7 +6,7 @@
     "copy-from": "v29",
     "name": { "str": "wrist-stunner" },
     "description": "A severed robotic hand from a Northrop Sentinel.  The powerful electro-laser stun gun embed on its wrist is still functional, and can be used when connected to an UPS.",
-    "price": 720000,
+    "price": "720000 cent",
     "to_hit": -2,
     "material": [ "superalloy", "plastic" ],
     "color": "cyan",

@@ -53,7 +53,7 @@
     "//": "tiny guided rockets.",
     "weight": "7 g",
     "volume": "115 ml",
-    "price": 150,
+    "price": "150 cent",
     "material": [ "superalloy", "powder", "plastic", "steel" ],
     "symbol": "=",
     "color": "pink",

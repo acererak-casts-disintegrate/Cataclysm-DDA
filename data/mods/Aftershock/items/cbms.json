@@ -268,8 +268,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Shady Hills Corporation Hub 01 Mark I CBM" },
     "description": "Imagine a computer inside your body playing pong against the universe.  The paddles are made of energy fields and how it causes this to happen are trade secrets.  -From the owners manual of Shady Hills Corporation Hub 01 Mark I.  Activating the field will reduce incoming bashing and cut damage by 5 points.",
-    "price": 100000,
-    "price_postapoc": 2500,
+    "price": "100000 cent",
+    "price_postapoc": "2500 cent",
     "difficulty": 6
   },
   {
@@ -279,8 +279,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Shady Hills Corporation Hub 01 Mark II CBM" },
     "description": "The Shady Hills Corporation Hub 01 Mark II was designed for police actions during food riots and other civilian uprisings.  It has proven capable of protecting against most improvised weapons.  Activating the field will reduce incoming and cut damage by 15 points.",
-    "price": 100000,
-    "price_postapoc": 3500,
+    "price": "100000 cent",
+    "price_postapoc": "3500 cent",
     "difficulty": 8
   },
   {
@@ -290,8 +290,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Debt Collection Agent Hub 01 CBM" },
     "description": "This class of personal energy field often sees action on both sides of the vicious ship-to-ship boarding fights that are common with both repossession and piracy.  It remains practically impenetrable to melee weapons that lack sharp piercing points.  Activating the field will reduce incoming bashing and cut damage by 25 points.",
-    "price": 100000,
-    "price_postapoc": 6500,
+    "price": "100000 cent",
+    "price_postapoc": "6500 cent",
     "difficulty": 10
   },
   {
@@ -301,8 +301,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Point Energy Conversion Field CBM" },
     "description": "A personal kinetic attenuation field that slows incoming projectiles by converting their kinetic energy into bursts of visible light.  Although this version is not powerful enough to defeat most pistol or rifle cartridges by itself, it greatly increases survival odds when combined with traditional ballistic armor.  Activating the field will reduce incoming ballistic and piercing damage by 10 points.",
-    "price": 100000,
-    "price_postapoc": 2500,
+    "price": "100000 cent",
+    "price_postapoc": "2500 cent",
     "difficulty": 6
   },
   {
@@ -312,8 +312,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Holtzman Personal Shield Generator CBM" },
     "description": "A military grade kinetic attenuation system developed for the Army's special operations units.  Although far beyond anything on the open market, it remains a pale imitation of the anomalous artifact XEDRA reverse engineered it from.  A side effect its engineers never solved is the tendency for this unit to release electrical fields when hit.  Activating the field will reduce incoming ballistic and piercing damage by 20 points.",
-    "price": 100000,
-    "price_postapoc": 6500,
+    "price": "100000 cent",
+    "price_postapoc": "6500 cent",
     "difficulty": 10
   },
   {
@@ -323,8 +323,8 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Kinetic Annulment System CBM" },
     "description": "A kinetic attenuation system salvaged from a Northrop combat robot, crudely adapted for compatibility with biological hosts.  Powerful enough to completely stop most rifle cartridges.  Activating the field will reduce incoming ballistic and piercing damage by 40 points.",
-    "price": 100000,
-    "price_postapoc": 12500,
+    "price": "100000 cent",
+    "price_postapoc": "12500 cent",
     "difficulty": 16
   }
 ]
