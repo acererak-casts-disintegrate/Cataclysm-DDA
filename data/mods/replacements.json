@@ -117,8 +117,7 @@
     "sees_player_less_attitude"
   ],
   [
-    "fuji_mpp",
-    "military_professions"
+    "fuji_mpp"
   ],
   [
     "FujiStruct",
@@ -130,5 +129,8 @@
   ],
   [
     "No_Rail_Stations"
+  ],
+  [
+    "military_professions"
   ]
 ]
