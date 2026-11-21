@@ -1,3 +1,19 @@
+> [!IMPORTANT]
+> **This is an unofficial fork.** This repository is an independent fork of
+> [Cataclysm: Dark Days Ahead](https://github.com/CleverRaven/Cataclysm-DDA), based on the
+> 0.H "Herbert" stable release. It is not affiliated with, endorsed by or supported by
+> CleverRaven or the Cataclysm: Dark Days Ahead development team.
+>
+> This fork changes content and gameplay in ways the official project has not adopted and may
+> never adopt. It currently offers no support channels beyond this repository, so please do not
+> direct bug reports or feedback about it to the official issue tracker, forums or Discord.
+> Problems introduced by these changes are this fork's responsibility alone.
+>
+> For the official game, releases and support, visit [cataclysmdda.org](https://cataclysmdda.org)
+> or the [official repository](https://github.com/CleverRaven/Cataclysm-DDA). Cataclysm: Dark
+> Days Ahead is licensed under [CC BY-SA 3.0](LICENSE.txt), and this fork is distributed under
+> the same licence.
+
 # Cataclysm: Dark Days Ahead
 
 Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalyptic world. While some have described it as a "zombie game", there is far more to Cataclysm than that. Struggle to survive in a harsh, persistent, procedurally generated world. Scavenge the remnants of a dead civilization for food, equipment, or, if you are lucky, a vehicle with a full tank of gas to get you the hell out of Dodge. Fight to defeat or escape from a wide variety of powerful monstrosities, from zombies to giant insects to killer robots and things far stranger and deadlier, and against the others like yourself, who want what you have...
@@ -6,86 +22,25 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
     <img src="./data/screenshots/ultica-showcase-sep-2021.png" alt="Tileset: Ultica">
 </p>
 
-## Downloads
+## Getting the source
 
-**Releases** - [Stable](https://cataclysmdda.org/releases/) | [Experimental](https://cataclysmdda.org/experimental/)
-
-**Source** - The source can be downloaded as a [.zip archive](https://github.com/CleverRaven/Cataclysm-DDA/archive/master.zip), or cloned from our [GitHub repo](https://github.com/CleverRaven/Cataclysm-DDA/).
-
-[![General build matrix](https://github.com/CleverRaven/Cataclysm-DDA/actions/workflows/matrix.yml/badge.svg)](https://github.com/CleverRaven/Cataclysm-DDA/actions/workflows/matrix.yml)
-[![Coverage Status](https://coveralls.io/repos/github/CleverRaven/Cataclysm-DDA/badge.svg?branch=master)](https://coveralls.io/github/CleverRaven/Cataclysm-DDA?branch=master)
-[![Open Source Helpers](https://www.codetriage.com/cleverraven/cataclysm-dda/badges/users.svg)](https://www.codetriage.com/cleverraven/cataclysm-dda)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/CleverRaven/Cataclysm-DDA)](https://github.com/CleverRaven/Cataclysm-DDA/graphs/contributors)
-[![Lines of Code](https://tokei.rs/b1/github/CleverRaven/Cataclysm-DDA?category=code)](https://github.com/XAMPPRocky/tokei)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/CleverRaven/Cataclysm-DDA)](https://www.tickgit.com/browse?repo=github.com/CleverRaven/Cataclysm-DDA)
-
-### Packaging status
-
-#### Arch Linux
-
-Ncurses and tiles versions are available in the [community repos](https://www.archlinux.org/packages/?q=cataclysm-dda).
-
-```sh
-sudo pacman -S cataclysm-dda
-sudo pacman -S cataclysm-dda-tiles
-```
-
-#### Fedora
-
-Ncurses and tiles versions are available in the [official repos](https://src.fedoraproject.org/rpms/cataclysm-dda).
-
-```sh
-sudo dnf install cataclysm-dda
-```
-
-#### Debian / Ubuntu
-
-Ncurses and tiles versions are available in the [official repos](https://tracker.debian.org/pkg/cataclysm-dda).
-
-```sh
-sudo apt install cataclysm-dda-curses cataclysm-dda-sdl
-```
-
-#### Flatpak
-
-Download from [Flathub](https://flathub.org/apps/org.cataclysmdda.CataclysmDDA).
+This fork has no prebuilt releases. Clone this repository and check out the `0.H-custom` branch, then build it as described below.
 
 ## Compile
 
-Please read [COMPILING.md](doc/c++/COMPILING.md) - it covers general information and more specific recipes for Linux, OS X, Windows and BSD. See [COMPILER_SUPPORT.md](doc/c++/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](https://github.com/CleverRaven/Cataclysm-DDA/tree/master/doc).
+Please read [COMPILING.md](doc/COMPILING/COMPILING.md) - it covers general information and more specific recipes for Linux, OS X, Windows and BSD. See [COMPILER_SUPPORT.md](doc/COMPILING/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](doc/).
 
 We also have the following build guides:
 * Building on Windows with `MSYS2` at [COMPILING-MSYS.md](doc/c++/COMPILING-MSYS.md)
 * Building on Windows with `vcpkg` at [COMPILING-VS-VCPKG.md](doc/c++/COMPILING-VS-VCPKG.md)
 * Building with `cmake` at [COMPILING-CMAKE.md](doc/c++/COMPILING-CMAKE.md)  (*unofficial guide*)
 
-## Contribute
+## Licence and credits
 
 Cataclysm: Dark Days Ahead is the result of contributions from over 1000 volunteers under the Creative Commons Attribution ShareAlike 3.0 license. The code and content of the game is free to use, modify, and redistribute for any purpose whatsoever. See https://creativecommons.org/licenses/by-sa/3.0/ for details.
 Some code distributed with the project is not part of the project and is released under different software licenses; the files covered by different software licenses have their own license notices.
 
-Please see [CONTRIBUTING.md](doc/CONTRIBUTING.md) for details.
-
-Special thanks to the contributors, including but not limited to, people below:
-<a href="https://github.com/cleverraven/cataclysm-dda/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=cleverraven/cataclysm-dda" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-## Community
-
-Forums:
-https://discourse.cataclysmdda.org
-
-GitHub repo:
-https://github.com/CleverRaven/Cataclysm-DDA
-
-IRC:
-`#CataclysmDDA` on [Libera Chat](https://libera.chat), https://web.libera.chat/#CataclysmDDA
-
-Official Discord:
-https://discord.gg/jFEc7Yp
+This fork exists only because of the work of those volunteers. Any changes made here are this fork's own and are not theirs.
 
 ## Frequently Asked Questions
 
@@ -101,10 +56,12 @@ Press the `?` key, followed by the `1` key to see the full list of key commands.
 
 **World** on the main menu will generate a fresh world for you. Select **Create World**.
 
-#### I've found a bug. What should I do?
+#### I've found a bug or have a suggestion. What should I do?
 
-Please submit an issue on [our GitHub page](https://github.com/CleverRaven/Cataclysm-DDA/issues/) using [bug report template](https://github.com/CleverRaven/Cataclysm-DDA/issues/new?template=bug_report.md). If you're not able to, send an email to `kevin.granade@gmail.com`.
+This fork currently offers no support channels beyond this repository. Please do not report problems with this fork to the official Cataclysm: Dark Days Ahead project: its developers have no involvement with it.
 
-#### I would like to make a suggestion. What should I do?
+#### Does this fork use AI-assisted development?
 
-Please submit an issue on [our GitHub page](https://github.com/CleverRaven/Cataclysm-DDA/issues/) using [feature request template](https://github.com/CleverRaven/Cataclysm-DDA/issues/new?template=feature_request.md).
+Yes. This fork is developed with extensive AI assistance, and that will continue. Some players object to AI-assisted development, and that is a reasonable position; if it is yours, this fork may not be for you.
+
+The official Cataclysm: Dark Days Ahead project takes the opposite approach: since March 2025 its contributing guidelines have stated that LLM-generated contributions are not acceptable for inclusion. Nothing in this fork reflects on the official project's work or policies.
