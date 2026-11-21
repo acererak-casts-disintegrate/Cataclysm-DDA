@@ -463,6 +463,20 @@ void game::load_static_data()
     get_safemode().load_global();
 }
 
+// Loads a mod's own data, skipping its top-level mod_interactions folder.  May throw.
+static void load_mod_data_from_dir( const cata_path &path, const std::string &src,
+                                    loading_ui &ui )
+{
+    DynamicDataLoader::get_instance().load_mod_data_from_path( path, src, ui );
+}
+
+// Loads each sub-folder of path named after an active mod's id.  May throw.
+static void load_mod_interaction_data_from_dir( const cata_path &path, const std::string &src,
+        loading_ui &ui )
+{
+    DynamicDataLoader::get_instance().load_mod_interaction_files_from_path( path, src, ui );
+}
+
 bool game::check_mod_data( const std::vector<mod_id> &opts, loading_ui &ui )
 {
     dependency_tree &tree = world_generator->get_mod_manager().get_tree();
@@ -530,11 +544,11 @@ bool game::check_mod_data( const std::vector<mod_id> &opts, loading_ui &ui )
             std::vector<mod_id> dep_vector = tree.get_dependencies_of_X_as_strings( mod.ident );
             std::set<mod_id> dep_set( dep_vector.begin(), dep_vector.end() );
             for( const auto &dep : dep_set ) {
-                load_data_from_dir( dep->path, dep->ident.str(), ui );
+                load_mod_data_from_dir( dep->path, dep->ident.str(), ui );
             }
 
             // Load mod itself
-            load_data_from_dir( mod.path, mod.ident.str(), ui );
+            load_mod_data_from_dir( mod.path, mod.ident.str(), ui );
             DynamicDataLoader::get_instance().finalize_loaded_data( ui );
         } catch( const std::exception &err ) {
             std::cerr << "Error loading data: " << err.what() << std::endl;
@@ -3232,7 +3246,9 @@ void game::load_world_modfiles( loading_ui &ui )
     load_packs( _( "Loading files" ), mods, ui );
 
     // Load additional mods from that world-specific folder
-    load_data_from_dir( PATH_INFO::world_base_save_path_path() / "mods", "custom", ui );
+    load_mod_data_from_dir( PATH_INFO::world_base_save_path_path() / "mods", "custom", ui );
+    load_mod_interaction_data_from_dir( PATH_INFO::world_base_save_path_path() / "mods" /
+                                        "mod_interactions", "custom", ui );
 
     DynamicDataLoader::get_instance().finalize_loaded_data( ui );
 }
@@ -3259,9 +3275,15 @@ bool game::load_packs( const std::string &msg, const std::vector<mod_id> &packs,
         if( mod.ident.str() == "test_data" ) {
             check_plural = check_plural_t::none;
         }
-        load_data_from_dir( mod.path, mod.ident.str(), ui );
+        load_mod_data_from_dir( mod.path, mod.ident.str(), ui );
 
         ui.proceed();
+    }
+
+    // Cross-mod content loads after every mod's own data, and only for active mods
+    for( const auto &e : available ) {
+        const MOD_INFORMATION &mod = *e;
+        load_mod_interaction_data_from_dir( mod.path / "mod_interactions", mod.ident.str(), ui );
     }
 
     for( const auto &e : missing ) {

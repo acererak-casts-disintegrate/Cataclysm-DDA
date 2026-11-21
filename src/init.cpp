@@ -1,5 +1,6 @@
 #include "init.h"
 
+#include <algorithm>
 #include <cstddef>
 #include <memory>
 #include <sstream>
@@ -517,6 +518,77 @@ void DynamicDataLoader::load_data_from_path( const cata_path &path, const std::s
     for( const cata_path &file : files ) {
         try {
             // parse it
+            JsonValue jsin = json_loader::from_path( file );
+            load_all_from_json( jsin, src, ui, path, file );
+        } catch( const JsonError &err ) {
+            throw std::runtime_error( err.what() );
+        }
+    }
+}
+
+// Backported from upstream #76632: files under <mod>/mod_interactions/<mod_id>/ only load
+// when <mod_id> is active, so cross-mod content no longer leaks into worlds without that mod.
+void DynamicDataLoader::load_mod_data_from_path( const cata_path &path, const std::string &src,
+        loading_ui &ui )
+{
+    cata_assert( !finalized &&
+                 "Can't load additional data after finalization.  Must be unloaded first." );
+
+    std::vector<cata_path> files;
+    if( dir_exist( path.get_unrelative_path() ) ) {
+        const fs::path root = path.get_unrelative_path();
+        for( const cata_path &file : get_files_from_path( ".json", path, true, true ) ) {
+            const fs::path rel = file.get_unrelative_path().lexically_relative( root );
+            if( rel.empty() || *rel.begin() != fs::u8path( "mod_interactions" ) ) {
+                files.push_back( file );
+            }
+        }
+    } else if( file_exist( path.get_unrelative_path() ) ) {
+        files.emplace_back( path );
+    }
+
+    for( const cata_path &file : files ) {
+        try {
+            JsonValue jsin = json_loader::from_path( file );
+            load_all_from_json( jsin, src, ui, path, file );
+        } catch( const JsonError &err ) {
+            throw std::runtime_error( err.what() );
+        }
+    }
+}
+
+void DynamicDataLoader::load_mod_interaction_files_from_path( const cata_path &path,
+        const std::string &src, loading_ui &ui )
+{
+    cata_assert( !finalized &&
+                 "Can't load additional data after finalization.  Must be unloaded first." );
+
+    if( !dir_exist( path.get_unrelative_path() ) || world_generator->active_world == nullptr ) {
+        return;
+    }
+    const std::vector<mod_id> &loaded_mods = world_generator->active_world->active_mod_order;
+
+    // Sub-directories in lexical order, matching get_files_from_path
+    std::vector<std::string> folder_names;
+    for( const fs::directory_entry &entry : fs::directory_iterator( path.get_unrelative_path() ) ) {
+        if( entry.is_directory() ) {
+            folder_names.push_back( entry.path().filename().u8string() );
+        }
+    }
+    std::sort( folder_names.begin(), folder_names.end() );
+
+    std::vector<cata_path> files;
+    for( const std::string &folder_name : folder_names ) {
+        const mod_id associated_mod( folder_name );
+        if( std::find( loaded_mods.begin(), loaded_mods.end(), associated_mod ) != loaded_mods.end() ) {
+            const std::vector<cata_path> folder_files = get_files_from_path( ".json", path / folder_name,
+                    true, true );
+            files.insert( files.end(), folder_files.begin(), folder_files.end() );
+        }
+    }
+
+    for( const cata_path &file : files ) {
+        try {
             JsonValue jsin = json_loader::from_path( file );
             load_all_from_json( jsin, src, ui, path, file );
         } catch( const JsonError &err ) {

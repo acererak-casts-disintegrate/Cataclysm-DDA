@@ -142,6 +142,25 @@ class DynamicDataLoader
          */
         /*@{*/
         void load_data_from_path( const cata_path &path, const std::string &src, loading_ui &ui );
+        /**
+         * Load all data from json files located in the path (recursive) except for those
+         * within its top-level mod_interactions folder.
+         * @param path Either a folder or a single file, as for load_data_from_path.
+         * @param src String identifier for mod this data comes from.
+         * @param ui Finalization status display.
+         * @throws std::exception on all kind of errors.
+         */
+        void load_mod_data_from_path( const cata_path &path, const std::string &src, loading_ui &ui );
+        /**
+         * Load the json files in each sub-directory of path that is named after the id of a
+         * mod in the active world's mod list.
+         * @param path A mod's mod_interactions folder.
+         * @param src String identifier for mod this data comes from.
+         * @param ui Finalization status display.
+         * @throws std::exception on all kind of errors.
+         */
+        void load_mod_interaction_files_from_path( const cata_path &path, const std::string &src,
+                loading_ui &ui );
         /*@}*/
         /**
          * Deletes and unloads all the data previously loaded with
