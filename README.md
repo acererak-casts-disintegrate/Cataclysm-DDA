@@ -38,6 +38,7 @@ This fork is based on the 0.H stable branch. As of now, it differs from 0.H as f
 * **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
 * **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are now core professions, and the obsolete mod is removed.
 * **Selected upstream bug fixes** from later 0.H-branch releases: battery chargers work outside the reality bubble, Godco construction updates place correctly, and a start-up crash and a GCC 15 build failure are fixed.
+* **Conditional mod-interaction loading.** Backported from later upstream: a mod's `mod_interactions/<mod_id>/` files load only when that mod is active, so Defense Mode content from other mods no longer appears in normal games. See [MOD_COMPATIBILITY.md](doc/MOD_COMPATIBILITY.md).
 
 **Aftershock**
 
@@ -50,6 +51,7 @@ This fork is based on the 0.H stable branch. As of now, it differs from 0.H as f
 
 * **Xedra Evolved.** Its Exodii Jotunn content is kept, in line with the scavenger Exodii, and its roadside Jotunn encounter now spawns.
 * **Mind Over Matter and Xedra Evolved** lose their Exodii (Rubik) dialogue. Mind Over Matter's awakening during portal storms can no longer trigger; matrix crystals still awaken psionic powers.
+* **Data fixes for Xedra Evolved, Mind Over Matter and Blaze Industries.** Faction relations are made mutual, paraclesian lineage traits can no longer be purified (as in later upstream), Mind Over Matter's concentration traits can be, and impossible item weights and volumes are corrected, mostly using upstream's later values. Xedra's Ierde, Sylph and Homullus lineages are flagged as unfinished, since this snapshot gives them too few traits to cross their thresholds.
 * **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
 
 ## Getting the source
