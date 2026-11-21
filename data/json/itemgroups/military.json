@@ -780,7 +780,8 @@
       { "item": "flight_helmet", "prob": 20, "ammo-item": "light_battery_cell", "charges": [ 0, 150 ] },
       { "item": "mil_flight_suit", "prob": 20 },
       { "item": "rm614_lmg", "prob": 1, "charges": [ 0, 250 ] },
-      { "item": "rm298", "prob": 1, "charges": [ 0, 250 ] }
+      { "item": "rm298", "prob": 1, "charges": [ 0, 250 ] },
+      { "item": "adv_UPS_off", "prob": 3 }
     ]
   },
   {
@@ -798,7 +799,8 @@
       [ "bot_crows_m240", 10 ],
       [ "bot_talon_m202a1", 10 ],
       [ "bot_dispatch_military", 15 ],
-      [ "bot_turret_searchlight", 75 ]
+      [ "bot_turret_searchlight", 75 ],
+      { "item": "bot_laserturret", "prob": 1 }
     ]
   },
   {

@@ -60,16 +60,6 @@
     "replace": "qt_steel_chunk"
   },
   {
-    "id": "plasma_gun",
-    "type": "MIGRATION",
-    "replace": "exodii_plasma_projectile"
-  },
-  {
-    "id": "plasma_rifle",
-    "type": "MIGRATION",
-    "replace": "exodii_plasma_projectile"
-  },
-  {
     "id": "power_armor_helmet_basic",
     "type": "MIGRATION",
     "replace": "combat_exoskeleton_armor_head_medium"
@@ -490,36 +480,6 @@
     "replace": "novel_scifi"
   },
   {
-    "id": "bot_copbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "bot_eyebot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "bot_riotbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_eyebot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_copbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_riotbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
     "id": "RPG",
     "type": "MIGRATION",
     "replace": "m3_carlgustav"
@@ -543,11 +503,6 @@
     "id": "RPG-7_og7v",
     "type": "MIGRATION",
     "replace": "84x246mm_he"
-  },
-  {
-    "id": "broken_mininuke_hack",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
   },
   {
     "id": "mininuke_payload",

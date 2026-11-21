@@ -7,7 +7,12 @@
       { "monster": "mon_skitterbot", "weight": 220, "cost_multiplier": 0 },
       { "monster": "mon_secubot", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_talon_m202a1", "weight": 75, "cost_multiplier": 0 },
-      { "monster": "mon_molebot", "weight": 40, "cost_multiplier": 0 }
+      { "monster": "mon_molebot", "weight": 40, "cost_multiplier": 0 },
+      { "monster": "mon_copbot", "weight": 20, "cost_multiplier": 1 },
+      { "monster": "mon_riotbot", "weight": 20, "cost_multiplier": 1 },
+      { "monster": "mon_eyebot", "weight": 30, "cost_multiplier": 1 },
+      { "monster": "mon_chickenbot", "weight": 5, "cost_multiplier": 1 },
+      { "monster": "mon_tankbot", "weight": 2, "cost_multiplier": 1 }
     ]
   },
   {
@@ -24,7 +29,8 @@
         "weight": 50,
         "cost_multiplier": 2,
         "spawn_data": { "ammo": [ { "ammo_id": "50bmg", "qty": [ 50, 400 ] } ] }
-      }
+      },
+      { "monster": "mon_laserturret", "weight": 40 }
     ]
   },
   {

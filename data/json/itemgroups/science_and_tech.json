@@ -109,7 +109,9 @@
       { "item": "gasket_plastic", "prob": 10 },
       { "item": "butane_tank", "prob": 15, "charges": [ 15000, -1 ] },
       { "item": "butane_can", "prob": 2, "charges": [ 300, -1 ] },
-      { "prob": 16, "group": "chem_citric_acid_bottle_glass_50" }
+      { "prob": 16, "group": "chem_citric_acid_bottle_glass_50" },
+      { "item": "adv_UPS_off", "prob": 3 },
+      { "item": "recipe_mininuke_launch", "prob": 4 }
     ]
   },
   {
@@ -461,7 +463,8 @@
       { "group": "new_usb_drives", "prob": 5 },
       [ "recipe_lab_cvd", 8 ],
       [ "teleporter", 10 ],
-      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_1_10" }
+      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_1_10" },
+      [ "recipe_mininuke_launch", 5 ]
     ]
   },
   {

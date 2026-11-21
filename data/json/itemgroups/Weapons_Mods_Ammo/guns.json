@@ -101,7 +101,8 @@
       { "group": "nested_m18", "prob": 100 },
       { "group": "nested_usp_45_mk23", "prob": 5 },
       { "group": "nested_m1911_MEU", "prob": 5 },
-      { "group": "nested_needlepistol", "prob": 30 }
+      { "group": "nested_needlepistol", "prob": 30 },
+      { "item": "rm99_pistol", "prob": 1 }
     ]
   },
   {
@@ -325,14 +326,20 @@
       { "group": "nested_M24", "prob": 15 },
       { "group": "nested_rm298", "prob": 10 },
       { "group": "nested_rm614_lmg", "prob": 10 },
-      { "group": "nested_rm88_battle_rifle", "prob": 25 }
+      { "group": "nested_rm88_battle_rifle", "prob": 25 },
+      { "item": "plasma_gun", "prob": 1 }
     ]
   },
   {
     "type": "item_group",
     "id": "guns_energy",
     "//": "Assorted factory crafted energy weapons.",
-    "items": [ { "item": "laser_rifle", "prob": 30 }, { "item": "emp_gun", "prob": 10 }, { "item": "v29", "prob": 70 } ]
+    "items": [
+      { "item": "laser_rifle", "prob": 30 },
+      { "item": "emp_gun", "prob": 10 },
+      { "item": "v29", "prob": 70 },
+      { "item": "plasma_gun", "prob": 10, "charges": [ 0, 25 ] }
+    ]
   },
   {
     "type": "item_group",

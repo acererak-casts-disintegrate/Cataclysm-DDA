@@ -1852,7 +1852,8 @@
       [ "car_anmlcmpt", 150 ],
       [ "electric_car", 750 ],
       [ "hippie_van", 250 ],
-      [ "car_sports", 30 ]
+      [ "car_sports", 30 ],
+      [ "car_sports_atomic", 3 ]
     ]
   },
   {
@@ -1885,7 +1886,8 @@
       [ "scompact_tandem_3wheel_stow", 150 ],
       [ "scompact_tandem_3wheel_hboard", 150 ],
       [ "scompact_tandem_electric_3wheel_stow", 150 ],
-      [ "scompact_tandem_electric_3wheel_hboard", 150 ]
+      [ "scompact_tandem_electric_3wheel_hboard", 150 ],
+      [ "car_sports_atomic", 5 ]
     ]
   }
 ]

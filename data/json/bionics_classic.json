@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bio_railgun",
+    "type": "bionic",
+    "name": { "str": "Railgun" },
+    "description": "EM field generators in your arms double the range and damage of thrown iron and steel objects at a cost of 1 power per throw, causing them to leave a trail of electricity that can cause additional damage.",
+    "occupied_bodyparts": [ [ "arm_l", 5 ], [ "arm_r", 5 ], [ "hand_l", 1 ], [ "hand_r", 1 ] ],
+    "flags": [ "BIONIC_TOGGLED" ],
+    "act_cost": 1,
+    "react_cost": 1,
+    "time": 1
+  },
+  {
+    "id": "bio_shock_absorber",
+    "type": "bionic",
+    "name": { "str": "Kinetic Shock Absorbers" },
+    "description": "Most of the flesh in your arms, legs, and upper torso has been replaced with industrial-strength springs and protective padding.  Clenching your fist allows you to fold and unfold this padding; while active, the hydraulic absorbers will prevent damage to your body from severe impacts, at the cost of impaired movement.",
+    "occupied_bodyparts": [ [ "torso", 1 ], [ "arm_l", 1 ], [ "arm_r", 1 ], [ "leg_l", 1 ], [ "leg_r", 1 ] ],
+    "flags": [ "BIONIC_TOGGLED" ]
+  },
+  {
+    "id": "bio_blaster",
+    "type": "bionic",
+    "name": { "str": "Fusion Blaster Arm" },
+    "description": "Your left arm has been surgically replaced by a heavy-duty fusion blaster!  You may use your energy banks to fire a damaging heat ray.  However, you are unable to use or carry two-handed items, and your strength limits what you can use with your one hand.",
+    "occupied_bodyparts": [ [ "arm_l", 20 ], [ "hand_l", 5 ] ],
+    "flags": [ "BIONIC_GUN" ],
+    "fake_weapon": "bio_blaster_gun"
+  }
+]

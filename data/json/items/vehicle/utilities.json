@@ -247,5 +247,23 @@
     "price": "1 kUSD",
     "price_postapoc": "10 USD",
     "tool_ammo": "battery"
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "minireactor",
+    "name": { "str": "minireactor" },
+    "description": "A small, portable plutonium reactor.  Handle with great care!",
+    "weight": "27215 g",
+    "to_hit": -4,
+    "color": "light_cyan",
+    "symbol": ":",
+    "material": [ "superalloy", "ceramic" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "plutonium": 10000 }, "rigid": true } ],
+    "volume": "100 L",
+    "category": "veh_parts",
+    "price": "90000 cent",
+    "price_postapoc": "5000 cent",
+    "melee_damage": { "bash": 7 }
   }
 ]

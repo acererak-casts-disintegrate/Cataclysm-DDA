@@ -158,7 +158,8 @@
       { "item": "saline", "prob": 10 },
       { "item": "con_milk", "prob": 10 },
       { "item": "sports_drink", "prob": 40 },
-      { "item": "water_clean", "prob": 90 }
+      { "item": "water_clean", "prob": 90 },
+      { "item": "adv_UPS_off", "prob": 3 }
     ]
   }
 ]

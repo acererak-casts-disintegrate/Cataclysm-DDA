@@ -298,7 +298,8 @@
       { "item": "smoxygen_tank", "prob": 35, "charges": [ 4, -1 ] },
       { "item": "watercannon", "prob": 10, "charges": [ 0, -1 ] },
       [ "solarpack", 2 ],
-      [ "bag_body_bag", 5 ]
+      [ "bag_body_bag", 5 ],
+      { "item": "adv_UPS_off", "prob": 2 }
     ]
   },
   {
@@ -312,7 +313,8 @@
       { "item": "smoxygen_tank", "prob": 15, "charges": [ 2, -1 ] },
       [ "UPS_OFF", 2 ],
       { "prob": 25, "group": "prussian_blue_bottle_plastic_pill_supplement_1_10" },
-      { "prob": 50, "group": "iodine_bottle_plastic_pill_supplement_1_10" }
+      { "prob": 50, "group": "iodine_bottle_plastic_pill_supplement_1_10" },
+      [ "adv_UPS_off", 2 ]
     ]
   },
   {

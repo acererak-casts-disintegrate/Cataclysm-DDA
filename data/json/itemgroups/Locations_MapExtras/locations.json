@@ -69,7 +69,8 @@
       { "group": "gunmod_energy", "prob": 40 },
       { "item": "plut_cell", "prob": 30, "charges": [ 1, 5 ] },
       [ "plasma", 30 ],
-      [ "UPS_OFF", 20 ]
+      [ "UPS_OFF", 20 ],
+      { "item": "adv_UPS_off", "prob": 20 }
     ]
   },
   {
@@ -810,7 +811,8 @@
       [ "pan", 90 ],
       [ "cow_bell", 20 ],
       [ "flask_hip", 25 ],
-      [ "iron_pot", 20 ]
+      [ "iron_pot", 20 ],
+      { "item": "rebar_rail", "prob": 45, "charges-min": 1, "charges-max": 50 }
     ]
   },
   {
@@ -1331,7 +1333,8 @@
       { "group": "tools_toolbox", "prob": 1 },
       [ "apron_leather", 5 ],
       [ "apron_cut_resistant", 10 ],
-      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] }
+      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] },
+      [ "bio_shock_absorber", 10 ]
     ]
   },
   {
