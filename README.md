@@ -50,6 +50,7 @@ This fork is based on the 0.H stable branch. As of now, it differs from 0.H as f
 
 * **Xedra Evolved.** Its Exodii Jotunn content is kept, in line with the scavenger Exodii, and its roadside Jotunn encounter now spawns.
 * **Mind Over Matter and Xedra Evolved** lose their Exodii (Rubik) dialogue. Mind Over Matter's awakening during portal storms can no longer trigger; matrix crystals still awaken psionic powers.
+* **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
 
 ## Getting the source
 
