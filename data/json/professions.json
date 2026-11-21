@@ -6875,6 +6875,125 @@
   },
   {
     "type": "profession",
+    "id": "mil_rifleman",
+    "name": "Military Rifleman",
+    "description": "Frontline infantry, frontline infantry, frontline infantry, frontline infantry.",
+    "points": 2,
+    "skills": [ { "level": 1, "name": "survival" }, { "level": 1, "name": "gun" }, { "level": 1, "name": "rifle" } ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "tac_helmet" },
+          { "item": "jacket_army" },
+          { "item": "pants_army" },
+          { "item": "longshirt" },
+          { "item": "rucksack" },
+          { "item": "glasses_bal" },
+          { "item": "dump_pouch" },
+          { "item": "knee_pads" },
+          { "item": "elbow_pads" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "gloves_tactical" },
+          { "item": "ballistic_vest_esapi" },
+          {
+            "item": "modular_m4_carbine",
+            "variant": "modular_m4a1",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "acog_scope", "grip" ]
+          },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "tacvest", "contents-group": "army_mags_m4" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "m17", "ammo-item": "9mm", "charges": 17, "container-item": "holster" }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts" } ] },
+      "female": { "entries": [ { "item": "boy_shorts" }, { "item": "sports_bra" } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "mil_operator",
+    "name": "Operator Recon",
+    "description": "The only easy day was yesterday.",
+    "points": 4,
+    "skills": [
+      { "level": 2, "name": "survival" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" },
+      { "level": 1, "name": "melee" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "tac_helmet" },
+          { "item": "keffiyeh" },
+          { "item": "sweatshirt" },
+          { "item": "pants_cargo" },
+          { "item": "longshirt" },
+          { "item": "rucksack" },
+          { "item": "glasses_bal" },
+          { "item": "dump_pouch" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "gloves_tactical" },
+          { "item": "diving_watch" },
+          { "item": "ballistic_vest_esapi" },
+          {
+            "item": "acr_300blk",
+            "ammo-item": "300blk_ss",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "acog_scope", "grip", "suppressor" ]
+          },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "tacvest", "contents-group": "army_mags_300blk" },
+          { "group": "knife_rambo_full", "container-item": "scabbard" },
+          { "item": "XL_holster", "contents-group": "holster_supp_MEU" },
+          { "item": "legpouch_large", "contents-group": "army_mags_1911" }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts" } ] },
+      "female": { "entries": [ { "item": "boy_shorts" }, { "item": "sports_bra" } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "mil_cbrn",
+    "name": "Operator CBRN",
+    "description": "Chemical weapons?  Check.  Biological outbreak?  Check.  Nuclear war?  Check.  Sounds like the perfect job for you!",
+    "points": 5,
+    "skills": [
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 4, "name": "chemistry" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "hazmat_suit" },
+          { "item": "pants_cargo" },
+          { "item": "longshirt" },
+          { "item": "dump_pouch" },
+          { "item": "socks" },
+          { "item": "gloves_rubber" },
+          { "item": "diving_watch" },
+          { "item": "ballistic_vest_esapi" },
+          { "item": "hk_mp5", "ammo-item": "9mm", "charges": 30, "contents-item": [ "shoulder_strap", "suppressor" ] },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "tacvest", "contents-group": "army_mags_mp5" },
+          { "item": "XL_holster", "contents-group": "holster_supp_MEU" },
+          { "item": "legpouch_large", "contents-group": "army_mags_1911" }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts" } ] },
+      "female": { "entries": [ { "item": "boy_shorts" }, { "item": "sports_bra" } ] }
+    }
+  },
+  {
+    "type": "profession",
     "id": "mili_pilot",
     "name": "Military Pilot",
     "requirement": "achievement_reach_military_bunker",
