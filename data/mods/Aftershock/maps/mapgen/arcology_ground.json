@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_nw_corner_robots" ],
     "weight": 100,
     "//": "Arcology general principles.  Ground floor will be mostly shops and the like.  Living quarters and administration/white collar goes up.  Manufacturing and secure locations go down. Mostly filled with nested chunks respecting hallways. Stairs and elevators are in center generally.  Make separate specials that have unique locations inside of them.",
@@ -43,7 +42,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_w_side_robots" ],
     "weight": 100,
     "object": {
@@ -82,7 +80,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_w_entrance_robots" ],
     "weight": 100,
     "//": "Turn gate into a 8x8 nested chunk that can be a closed gate working console, closed gate broken console, broken gate working console, broken gate broken console, open gate working console, open gate broken console.",
@@ -135,7 +132,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_sw_corner_robots" ],
     "weight": 100,
     "object": {
@@ -177,7 +173,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_s_side_robots" ],
     "weight": 100,
     "object": {
@@ -215,7 +210,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_s_entrance_robots" ],
     "weight": 100,
     "object": {
@@ -267,7 +261,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_se_corner_robots" ],
     "weight": 100,
     "object": {
@@ -318,7 +311,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_e_side_robots" ],
     "weight": 100,
     "object": {
@@ -357,7 +349,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_e_entrance_robots" ],
     "weight": 100,
     "object": {
@@ -396,7 +387,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_ne_corner_robots" ],
     "weight": 100,
     "object": {
@@ -438,7 +428,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_n_entrance_robots" ],
     "weight": 100,
     "object": {
@@ -490,7 +479,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_exterior_n_side_robots" ],
     "weight": 100,
     "object": {
@@ -528,7 +516,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_ne_corner_robots" ],
     "weight": 100,
     "object": {
@@ -566,7 +553,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_n_side_robots" ],
     "weight": 100,
     "object": {
@@ -604,7 +590,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_nw_corner_robots" ],
     "weight": 100,
     "object": {
@@ -642,7 +627,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_w_side_robots" ],
     "weight": 100,
     "object": {
@@ -680,7 +664,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_sw_corner_robots" ],
     "weight": 100,
     "object": {
@@ -718,7 +701,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_s_side_robots" ],
     "weight": 100,
     "object": {
@@ -756,7 +738,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_se_corner_robots" ],
     "weight": 100,
     "object": {
@@ -794,7 +775,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_e_side_robots" ],
     "weight": 100,
     "object": {
@@ -832,7 +812,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "arcology_interior_center_robots" ],
     "weight": 100,
     "object": {
