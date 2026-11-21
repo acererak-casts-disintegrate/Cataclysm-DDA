@@ -99,9 +99,9 @@
         "text": "Do you have any more work for me right now?",
         "condition": {
           "and": [
-            { "u_has_var": "completed_robofac_intercom_2", "type": "dialogue", "context": "intercom", "value": "yes" },
-            { "u_has_var": "completed_robofac_intercom_2", "type": "dialogue", "context": "intercom", "value": "yes" },
-            { "u_has_var": "completed_robofac_intercom_3", "type": "dialogue", "context": "intercom", "value": "yes" },
+            { "u_has_var": "completed_robofac_intercom_2", "value": "yes" },
+            { "u_has_var": "completed_robofac_intercom_2", "value": "yes" },
+            { "u_has_var": "completed_robofac_intercom_3", "value": "yes" },
             {
               "or": [
                 { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_robot_sm_1" } ] },
