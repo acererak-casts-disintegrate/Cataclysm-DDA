@@ -11,7 +11,7 @@
     "price_postapoc": 1000,
     "to_hit": -4,
     "flags": [ "NO_REPAIR" ],
-    "material": [ "glass" ],
+    "material": [ { "type": "glass", "portion": 1 }, { "type": "steel", "portion": 1 } ],
     "symbol": "]",
     "color": "yellow",
     "melee_damage": { "bash": 1 }

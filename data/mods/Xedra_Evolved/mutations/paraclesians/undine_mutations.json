@@ -2,6 +2,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_SKIN_1",
+    "purifiable": false,
     "name": { "str": "Undine Skin" },
     "points": 0,
     "visibility": 2,
@@ -68,6 +69,7 @@
   {
     "type": "mutation",
     "id": "CREATE_FOG",
+    "purifiable": false,
     "name": { "str": "Create Fog" },
     "points": 0,
     "visibility": 0,
@@ -79,6 +81,7 @@
   {
     "type": "mutation",
     "id": "GRANT_BUOYANCY",
+    "purifiable": false,
     "name": { "str": "Grant Buoyancy" },
     "points": 0,
     "visibility": 0,
@@ -90,6 +93,7 @@
   {
     "type": "mutation",
     "id": "ACIDIC_MIST",
+    "purifiable": false,
     "name": { "str": "Acidic Mist" },
     "points": 0,
     "visibility": 0,
@@ -101,6 +105,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -113,6 +118,7 @@
   {
     "type": "mutation",
     "id": "SALTWATER_TO_FRESHWATER",
+    "purifiable": false,
     "name": { "str": "Saltwater to Freshwater" },
     "points": 0,
     "visibility": 0,
@@ -125,6 +131,7 @@
   {
     "type": "mutation",
     "id": "BREATH_UNDERWATER",
+    "purifiable": false,
     "name": { "str": "Breathe Underwater" },
     "points": 2,
     "visibility": 0,
@@ -136,6 +143,7 @@
   {
     "type": "mutation",
     "id": "FOUL_WATER",
+    "purifiable": false,
     "name": { "str": "Foul Water" },
     "points": 0,
     "visibility": 0,
@@ -148,6 +156,7 @@
   {
     "type": "mutation",
     "id": "LIQUID_TO_WATER",
+    "purifiable": false,
     "name": { "str": "Various liquids to Freshwater" },
     "points": 0,
     "visibility": 0,
@@ -160,6 +169,7 @@
   {
     "type": "mutation",
     "id": "RESIST_FIRE",
+    "purifiable": false,
     "name": { "str": "Resist Fire" },
     "points": 2,
     "visibility": 0,
@@ -171,6 +181,7 @@
   {
     "type": "mutation",
     "id": "RESIST_ACID",
+    "purifiable": false,
     "name": { "str": "Resist Acid" },
     "points": 2,
     "visibility": 0,
@@ -182,6 +193,7 @@
   {
     "type": "mutation",
     "id": "WAVE_RIDER",
+    "purifiable": false,
     "name": { "str": "Wave Rider" },
     "points": 0,
     "visibility": 0,
@@ -193,6 +205,7 @@
   {
     "type": "mutation",
     "id": "WATER_SEALED",
+    "purifiable": false,
     "name": { "str": "Water Sealed" },
     "points": 0,
     "visibility": 0,
@@ -216,6 +229,7 @@
   {
     "type": "mutation",
     "id": "SUMMON_FISH",
+    "purifiable": false,
     "name": { "str": "Summon Fish" },
     "points": 0,
     "visibility": 0,
@@ -227,6 +241,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_EYES",
+    "purifiable": false,
     "name": { "str": "Undine Eyes" },
     "points": 1,
     "visibility": 2,
@@ -238,6 +253,7 @@
   {
     "type": "mutation",
     "id": "SUMMON_WATER_ELEMENTAL",
+    "purifiable": false,
     "name": { "str": "Summon Water Elemental" },
     "points": 0,
     "visibility": 0,

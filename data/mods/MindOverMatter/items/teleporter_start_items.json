@@ -32,7 +32,7 @@
     "description": "A power pack for the Ch47.",
     "weight": "40 g",
     "volume": "20 ml",
-    "material": [ "superalloy" ],
+    "material": [ { "type": "superalloy", "portion": 3 }, { "type": "steel", "portion": 1 } ],
     "price": 10000,
     "price_postapoc": 1,
     "symbol": "#",

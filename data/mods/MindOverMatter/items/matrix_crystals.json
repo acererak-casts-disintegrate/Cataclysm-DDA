@@ -27,7 +27,7 @@
     "symbol": "=",
     "volume": "1 ml",
     "weight": "15 g",
-    "material": [ "powder_nonflam" ],
+    "material": [ "nether_crystal" ],
     "looks_like": "material_quicklime"
   },
   {
@@ -39,7 +39,7 @@
     "symbol": "=",
     "volume": "1 ml",
     "weight": "5 g",
-    "material": [ "powder_nonflam" ],
+    "material": [ "nether_crystal" ],
     "looks_like": "material_quicklime"
   },
   {

@@ -27,7 +27,7 @@
     "price_postapoc": 0,
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "1 ml"
   },
   {
@@ -42,7 +42,7 @@
     "price_postapoc": 0,
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
-    "weight": "3 g",
+    "weight": "1 g",
     "volume": "1 ml",
     "skill": "cooking",
     "required_level": 1,

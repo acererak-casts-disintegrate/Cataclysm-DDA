@@ -2,6 +2,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_SKIN_1",
+    "purifiable": false,
     "name": { "str": "mannequin skin" },
     "points": 0,
     "visibility": 2,
@@ -69,6 +70,7 @@
   {
     "type": "mutation",
     "id": "SYLPH_SKIN_1",
+    "purifiable": false,
     "name": { "str": "sylph skin" },
     "points": 0,
     "visibility": 2,
@@ -134,6 +136,7 @@
   {
     "type": "mutation",
     "id": "BREATHE_WO_AIR",
+    "purifiable": false,
     "name": { "str": "Breathe Without Air" },
     "points": 1,
     "visibility": 0,
@@ -145,6 +148,7 @@
   {
     "type": "mutation",
     "id": "SYLPH_EYES",
+    "purifiable": false,
     "name": { "str": "Sylph Eyes" },
     "points": 1,
     "visibility": 2,
@@ -156,6 +160,7 @@
   {
     "type": "mutation",
     "id": "CLAP_OF_THUNDER",
+    "purifiable": false,
     "name": { "str": "Clap of Thunder" },
     "points": 1,
     "visibility": 0,
@@ -167,6 +172,7 @@
   {
     "type": "mutation",
     "id": "OMINOUS_WIND",
+    "purifiable": false,
     "name": { "str": "Ominous Wind" },
     "points": 3,
     "visibility": 0,
@@ -178,6 +184,7 @@
   {
     "type": "mutation",
     "id": "SLOWFALL",
+    "purifiable": false,
     "name": { "str": "Slow Fall" },
     "points": 3,
     "visibility": 0,
@@ -189,6 +196,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD",
+    "purifiable": false,
     "name": { "str": "Resist Cold" },
     "points": 3,
     "visibility": 0,
@@ -206,6 +214,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD2",
+    "purifiable": false,
     "name": { "str": "Born of a Gale" },
     "points": 6,
     "visibility": 0,
@@ -223,6 +232,7 @@
   {
     "type": "mutation",
     "id": "SLYPH_RESIST_COLD3",
+    "purifiable": false,
     "name": { "str": "Dancing On Winter Winds" },
     "points": 9,
     "visibility": 0,
@@ -241,6 +251,7 @@
   {
     "type": "mutation",
     "id": "SYLPH_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -253,6 +264,7 @@
   {
     "type": "mutation",
     "id": "PUSHING_WIND",
+    "purifiable": false,
     "name": { "str": "Pushing Wind" },
     "points": 3,
     "visibility": 0,
@@ -264,6 +276,7 @@
   {
     "type": "mutation",
     "id": "ELECTRICAL_EMISSIONS",
+    "purifiable": false,
     "name": { "str": "Electrical Emissions" },
     "points": 3,
     "visibility": 0,
@@ -275,6 +288,7 @@
   {
     "type": "mutation",
     "id": "ELECTRICAL_FIELD",
+    "purifiable": false,
     "name": { "str": "Electrical Field" },
     "points": 3,
     "visibility": 0,
@@ -286,6 +300,7 @@
   {
     "type": "mutation",
     "id": "air_sprite",
+    "purifiable": false,
     "name": { "str": "Summon Air Sprite" },
     "points": 3,
     "visibility": 0,

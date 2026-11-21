@@ -6,7 +6,7 @@
     "name": { "str": "cold iron ingot" },
     "description": "A five-liter ingot of solid cold iron.",
     "weight": "39365 g",
-    "volume": "5 L",
+    "volume": "5400 ml",
     "price": 10000,
     "price_postapoc": 200,
     "material": [ "iron" ],

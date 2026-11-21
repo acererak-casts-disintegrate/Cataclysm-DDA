@@ -69,7 +69,7 @@
     "type": "AMMO",
     "id": "fae_blood",
     "name": { "str_sp": "fae blood" },
-    "weight": "2 g",
+    "weight": "1 g",
     "color": "cyan",
     "container": "flask_glass",
     "symbol": "~",

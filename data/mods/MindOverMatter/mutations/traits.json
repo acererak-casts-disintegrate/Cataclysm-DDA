@@ -134,6 +134,7 @@
     "starting_trait": true,
     "valid": true,
     "category": [ "PLANT", "TROGLOBITE", "ALPHA", "ELFA" ],
+    "flags": [ "NON_THRESH" ],
     "cancels": [ "CONCENTRATION_BAD" ]
   },
   {
