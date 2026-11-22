@@ -503,7 +503,11 @@
       "broth_bone",
       "syrup_corn",
       "syrup_simple",
-      "afs_corpse_old"
+      "afs_corpse_old",
+      "corpse_fae",
+      "body_astral_projection",
+      "dreamforged_q_staff",
+      "dreamforged_q_staff_exp"
     ]
   }
 ]

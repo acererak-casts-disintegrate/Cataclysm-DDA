@@ -98,6 +98,7 @@
   {
     "type": "mutation",
     "id": "LILIN_GAIN_EXTRA_RUACH_FROM_SLEEPY_PEOPLE",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Psalm 132:4", "str": "Given Sleep to Their Eyes" },
     "points": 2,
     "description": "In sleep, a person's defenses are down and it is easier for the things in the night to prey upon them.  You gain additional ruach from sleeping targets.",
@@ -108,6 +109,7 @@
   {
     "type": "mutation",
     "id": "LILIN_CHANGE_WEATHER_FOG",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Job 22:14", "str": "Thick Clouds A Covering" },
     "points": 2,
     "description": "Call up thick clouds of fog, allowing you to hide from your enemies.  This power <color_green>lasts longer</color> when closer to the new moon.",
@@ -117,6 +119,7 @@
   {
     "type": "mutation",
     "id": "LILIN_THE_EVIL_EYE",
+    "purifiable": false,
     "name": { "str": "The Evil Eye" },
     "points": 2,
     "description": "With a baleful gaze and a heart full of malice, curse a single target with misfortune.",
@@ -127,6 +130,7 @@
   {
     "type": "mutation",
     "id": "LILIN_AOE_DAZE",
+    "purifiable": false,
     "name": { "str": "Cry of the Night-Bird" },
     "points": 3,
     "description": "Let out a piercing cry, disorienting both enemies and allies nearby.",
@@ -171,6 +175,7 @@
   {
     "type": "mutation",
     "id": "LILIN_SLEEP_EASY_DURING_DAY",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Genesis 1:5", "str": "And There Was Evening" },
     "points": 2,
     "description": "You were born to walk the night, and have a much easier time sleeping during the day.",
@@ -180,6 +185,7 @@
   {
     "type": "mutation",
     "id": "LILIN_AVOID_SLEEP",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Psalms 121:4", "str": "Neither Sleep Nor Slumber" },
     "points": 4,
     "description": "While sleep is restful, the ruach you gain fills you with more energy than even a good night's rest.  You may spend ruach to alleviate your sleepiness.",
@@ -190,6 +196,7 @@
   {
     "type": "mutation",
     "id": "LILIN_BONUS_PERSUASION",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Proverbs 5:3", "str": "Smoother than Oil" },
     "points": 2,
     "description": "Your presence is intoxicating, and humans have a hard time resisting your charms.  You gain a bonus to your persuasion chance as long as you aren't empty of ruach.",
@@ -205,6 +212,7 @@
   {
     "type": "mutation",
     "id": "LILIN_BONUS_LYING",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Exodus 20:16", "str": "The False Witness" },
     "points": 2,
     "description": "You have a much easier time spinning lies and making people believe them.  You gain a bonus to your lying chance as long as you aren't empty of ruach.",
@@ -220,6 +228,7 @@
   {
     "type": "mutation",
     "id": "LILIN_MESMERIZE_TARGET",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Jeremiah 10:14", "str": "Senseless and Without Knowledge" },
     "points": 5,
     "description": "You can temporarily beguile a single human, fey, or avian target, causing them to stand senseless or wander in a daze.  Any damage will bring the target out of their trance.",
@@ -231,6 +240,7 @@
   {
     "type": "mutation",
     "id": "LILIN_ETERNAL_YOUTH",
+    "purifiable": false,
     "//": "For now life extenders such as this one grant MEND_ALL.  When the new wound system will be implemented, their function will be to always allow you to fully heal from your wounds (no scars, etc).",
     "name": { "//~": "This is a reference to Romans 6:23", "str": "The Gift of Eternal Life" },
     "points": 2,
@@ -242,6 +252,7 @@
   {
     "type": "mutation",
     "id": "LILIN_STEADY_SPEED",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Psalms 72:5", "str": "Enduring Through All Generations" },
     "points": 2,
     "description": "With eternal youth comes the strength to endure past anything one could face.  Your speed won't be lower than its default as long as you have some ruach in you.",
@@ -257,6 +268,7 @@
   {
     "type": "mutation",
     "id": "LILIN_AOE_LINE_DISEASE",
+    "purifiable": false,
     "name": { "str": "Unleash the Night-Wind" },
     "points": 4,
     "description": "You may unleash a foul miasma on your enemies, sickening them.",
@@ -268,6 +280,7 @@
   {
     "type": "mutation",
     "id": "LILIN_DISEASE_ENHANCEMENT_DAMAGE",
+    "purifiable": false,
     "name": { "str": "Devoured by Pestilence" },
     "points": 6,
     "description": "You may greatly enhance the power of the miasma from Unleash the Night-Wind, doing serious damage and crippling your target.",
@@ -279,6 +292,7 @@
   {
     "type": "mutation",
     "id": "LILIN_BLINDING_TARGET",
+    "purifiable": false,
     "name": { "str": "Dwelling in Deep Darkness" },
     "points": 4,
     "description": "You may cut a single target off from light, completely blinding them.  You may only do this at night, and only indoors or out in the wilderness.",
@@ -899,6 +913,7 @@
   {
     "type": "mutation",
     "id": "LILIN_INSTANT_HEAL",
+    "purifiable": false,
     "name": { "str": "The Moon to Rule the Night" },
     "points": 9,
     "description": "At night, under the moonlight, you can knit grievous wounds together in seconds with a great expenditure of ruach.",
@@ -911,6 +926,7 @@
   {
     "type": "mutation",
     "id": "LILIN_PREVENT_DEATH_TRIGGER",
+    "purifiable": false,
     "name": { "//~": "This is a reference to Isaiah 66:24", "str": "Their Worm Shall Not Die" },
     "points": 15,
     "description": "When taking fatal damage, instead of dying you assume the form of an owl, allowing you to fly away from danger and recover.  This does not function during the day, if you are out of ruach, or if you are killed by fire.",

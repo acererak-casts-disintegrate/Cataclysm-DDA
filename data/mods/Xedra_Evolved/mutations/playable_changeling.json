@@ -388,6 +388,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_CURE_BAD_CONDITIONS",
+    "purifiable": false,
     "name": { "str": "Lights of Imbolc" },
     "points": 2,
     "description": "The end of winter brings hope for the coming of spring, and in the light of the candles lit at Imbolc the dust and gloom of the long nights end.",
@@ -398,6 +399,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_BURNING_WEAPON",
+    "purifiable": false,
     "name": { "str": "Fires of Bealtaine" },
     "points": 3,
     "description": "The bonfires of Bealtaine drive away evil and purify both man and beast.",
@@ -408,6 +410,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_MOVEMENT_BUFFS",
+    "purifiable": false,
     "name": { "str": "Deeds of Lughnasadh" },
     "points": 4,
     "description": "Lughnasadh is a time for bringing in the harvest and for contests of skill and stamina.",
@@ -418,6 +421,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_SUMMON_GHOSTS",
+    "purifiable": false,
     "name": { "str": "Hosts of Samhain" },
     "points": 8,
     "description": "As the year dies and winter's winds begin to blow, the dead return for a short time to visit the living.",
@@ -428,6 +432,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_RIGHT_OF_PASSAGE",
+    "purifiable": false,
     "name": { "str": "Right of Passage" },
     "points": 8,
     "description": "The Fair Folk have dealt with many mortal civilizations over the aeons, and have come to mutually beneficial arrangements with some of them.  Activate this trait to make your fae nature obvious, invoking those ancient agreements.  This <color_yellow>may anger</color> some who have especially bad relationships with the fae.",
@@ -453,6 +458,7 @@
   {
     "type": "mutation",
     "id": "STR_UP_NOBLE",
+    "purifiable": false,
     "name": { "str": "Murmurs the Mighty One", "//~": "A reference to the A.E. poem 'A Call of the Sidhe' " },
     "points": 3,
     "description": "You are strong enough to defend a crossroads at twilight against all comers.  +3 Strength.",
@@ -462,6 +468,7 @@
   {
     "type": "mutation",
     "id": "DEX_UP_NOBLE",
+    "purifiable": false,
     "name": { "str": "All Dancing with Delight", "//~": "A reference to the Rose Fyleman poem 'Alms in Autumn' " },
     "points": 3,
     "description": "You are graceful enough to dance the night away beneath a crystal dome on a floor of mirror-bright silver.  +3 Dexterity.",
@@ -471,6 +478,7 @@
   {
     "type": "mutation",
     "id": "SPEED_UP_NOBLE",
+    "purifiable": false,
     "name": { "str": "At Speed Unthought Of", "//~": "A reference to the Lord Dunsany poem 'The Fairy Child' " },
     "points": 3,
     "description": "Your reactions are inhumanly quick.  +15 Speed.",
@@ -482,6 +490,7 @@
   {
     "type": "mutation",
     "id": "INT_UP_NOBLE",
+    "purifiable": false,
     "name": { "str": "Wisdom from the Well" },
     "points": 3,
     "description": "Like the legendary salmon who ate the nine acorns, you have gained a plethora of wisdom.  +3 Intelligence.",
@@ -491,6 +500,7 @@
   {
     "type": "mutation",
     "id": "PER_UP_NOBLE",
+    "purifiable": false,
     "name": { "str": "Hear the Whole World Whispering", "//~": "A reference to the Charlotte Mew poem 'The Changeling' " },
     "points": 3,
     "description": "You senses are far more attuned to your surroundings than previously.  +3 Perception.",
@@ -500,6 +510,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_DREAMWALKER",
+    "purifiable": false,
     "name": { "str": "Dreamwalker" },
     "points": 2,
     "description": "From the dreams of mortals, you can spin remnants of fantasy into material substance.  When you sleep near mortals, you have a chance to awaken with some dreamdross nearby.",
@@ -511,6 +522,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_COMMAND_COMMMONERS",
+    "purifiable": false,
     "name": { "str": "Sovereign's Command" },
     "points": 3,
     "description": "Invoke your rights as one of noble birth and exert your authority over the commoner fae, forcing them to obey your commands.  The glamour will only last a short time, and the target is under no obligation to look on your favorably afterwards.",
@@ -520,6 +532,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_CHARM_HUMANS",
+    "purifiable": false,
     "name": { "str": "Come Away, O Human Child", "//~": "A reference to the Yeats poem 'The Stolen Child' " },
     "points": 3,
     "description": "Glamour a human into defending you for a short period of time.  When the glamour ends, all effects end and the human will not be well-disposed toward you afterwards.",
@@ -531,6 +544,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_NOBLE_INHUMAN_MINDSET",
+    "purifiable": false,
     "name": { "str": "Empty Your Heart of its Mortal Dream", "//~": "A reference to the Yeats poem 'The Hosting of the Sidhe' " },
     "points": 8,
     "description": "Your mindset is shifting to the alien morality of those from Under the Hill.  You can control this to some extent, though it may also overtake you in times of pain or stress.",
@@ -554,6 +568,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_CRAFTING_BONUS",
+    "purifiable": false,
     "name": { "str": "Household Artistry" },
     "//": "This and the upgrades below should ideally require you to be unobserved, but having no one nearby will have to suffice for now.",
     "description": "The brownies are the unassuming crafters of the Fair Folk, and it's easy for you to build and repair things, as long as no one is nearby to watch you do it.",
@@ -576,6 +591,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_CRAFTING_BONUS2",
+    "purifiable": false,
     "name": { "str": "Adept Household Artistry" },
     "description": "The brownies are the unassuming crafters of the Fair Folk, and it's very easy for you to build and repair things, as long as no one is nearby to watch you do it.",
     "points": 1,
@@ -598,6 +614,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_CRAFTING_BONUS3",
+    "purifiable": false,
     "name": { "str": "Incomparable Household Artistry" },
     "description": "The brownies are the unassuming crafters of the Fair Folk, and it's almost effortless for you to build and repair things, as long as no one is nearby to watch you do it.",
     "points": 1,
@@ -620,6 +637,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_EASY_OVERLOOK",
+    "purifiable": false,
     "name": { "str": "Unobtrusive" },
     "description": "Your appearance hasn't changed, but people don't seem to notice you as much as they used to.  As long as you don't engage in combat, you're easy to overlook.",
     "points": 3,
@@ -636,6 +654,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_EASY_OVERLOOK2",
+    "purifiable": false,
     "name": { "str": "Inconspicuous" },
     "description": "Your appearance hasn't changed, but people really don't seem to notice you as much as they used to.  As long as you don't engage in combat, you're very easy to overlook.",
     "points": 6,
@@ -652,6 +671,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_COLD_TOLERANCE",
+    "purifiable": false,
     "name": { "str": "Cold Tolerance" },
     "description": "The cold doesn't seem to bother you quite as much anymore.",
     "points": 2,
@@ -662,6 +682,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_COLD_TOLERANCE2",
+    "purifiable": false,
     "name": { "str": "Cold Endurance" },
     "description": "Even on a winter day, you need only a light jacket now.",
     "points": 4,
@@ -674,6 +695,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_COLD_TOLERANCE3",
+    "purifiable": false,
     "name": { "str": "Inured to Cold" },
     "description": "Legends say that brownies went about naked clad only in their almost-furry coat, and while you wouldn't go that far, you could wear a swimsuit in a blizzard without much trouble.",
     "points": 8,
@@ -686,6 +708,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_MAKE_CHEESE_AND_BUTTER",
+    "purifiable": false,
     "name": { "str": "Churning As Quick as a Wink" },
     "points": 1,
     "description": "Brownies are famous for their ability to do household chores, and you now have an instinctive understanding of making milk and cheese.",
@@ -701,6 +724,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_FUR",
+    "purifiable": false,
     "name": { "str": "Coat of Fur" },
     "description": "Your hair has thickened to almost the level of fur covering your entire body.  It's very warm and provides some level of protection against attacks.",
     "points": 2,
@@ -713,6 +737,7 @@
   {
     "type": "mutation",
     "id": "PER_UP_BROWNIE",
+    "purifiable": false,
     "name": { "str": "Seneschal's Gaze" },
     "points": 3,
     "description": "With a few quick glances you can take in the contents of an entire room.  +3 Perception.",
@@ -723,6 +748,7 @@
   {
     "type": "mutation",
     "id": "INT_UP_BROWNIE",
+    "purifiable": false,
     "name": { "str": "Chatelain's Mind" },
     "points": 2,
     "description": "It takes a keen mind to keep a household running smoothly.  +2 Intelligence.",
@@ -733,6 +759,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_HOMEBODY",
+    "purifiable": false,
     "name": { "str": "Homebody" },
     "description": "Brownies know every corner of their homes, all the well-worn grooves in the floor and the quick paths from place to place.  Your speed is increased the longer you spend in the same area.",
     "points": 6,
@@ -744,6 +771,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_SENSE_INTRUDERS",
+    "purifiable": false,
     "name": { "str": "Sense Intruders" },
     "description": "With the knowledge of one's home comes the knowledge that something is off about it.  You can sense any intruders nearby, as long as you are indoors and have been in the same location for some time.",
     "points": 8,
@@ -773,6 +801,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_BLINK_INDOORS",
+    "purifiable": false,
     "name": { "str": "Slip Through the Cracks" },
     "points": 4,
     "description": "You can tell every nook and cranny of indoor spaces, and know how to quickly get from one place to another.",
@@ -783,6 +812,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_TELEPORT_HOME",
+    "purifiable": false,
     "name": { "str": "Hurry Home" },
     "points": 8,
     "description": "You can return home from anywhere, as quick as a wink.",
@@ -794,6 +824,7 @@
   {
     "type": "mutation",
     "id": "POOKA_CHARM_ANIMALS",
+    "purifiable": false,
     "name": { "str": "Friend to Birds and Beasts" },
     "points": 3,
     "description": "You are close enough to the birds and beasts that you can speak their language and ask them for aid.",
@@ -804,6 +835,7 @@
   {
     "type": "mutation",
     "id": "POOKA_ANTLERS",
+    "purifiable": false,
     "name": { "str": "Antlers (Shapeshift)" },
     "points": 2,
     "description": "Grow an impressive rack of antlers, allowing you to make a headbutt attack but preventing you from wearing a helmet.",
@@ -817,6 +849,7 @@
   {
     "type": "mutation",
     "id": "POOKA_HORNS",
+    "purifiable": false,
     "name": { "str": "Curled Horns (Shapeshift)" },
     "points": 2,
     "description": "Grow a set of spiraling curled horns, allowing you to make a headbutt attack but preventing you from wearing a helmet.",
@@ -830,6 +863,7 @@
   {
     "type": "mutation",
     "id": "POOKA_FANGS",
+    "purifiable": false,
     "name": { "str": "Fangs (Shapeshift)" },
     "points": 2,
     "description": "Grow a set of sharp fangs, allowing you to make a bite attack.",
@@ -844,6 +878,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SABER_TEETH",
+    "purifiable": false,
     "name": { "str": "Vicious Fangs (Shapeshift)" },
     "points": 2,
     "description": "Grow a set of long, saber-like fangs, preventing you from wearing mouth gear but allowing you to make rending bite attacks.",
@@ -858,6 +893,7 @@
   {
     "type": "mutation",
     "id": "POOKA_WOLF_EARS",
+    "purifiable": false,
     "name": { "str": "Wolf Ears (Shapeshift)" },
     "points": 2,
     "description": "Change your ears into the ears of a wolf, granting you increased hearing.",
@@ -871,6 +907,7 @@
   {
     "type": "mutation",
     "id": "POOKA_FELINE_EARS",
+    "purifiable": false,
     "name": { "str": "Feline Ears (Shapeshift)" },
     "points": 2,
     "description": "Change your ears into the ears of a great cat, granting you increased hearing.",
@@ -884,6 +921,7 @@
   {
     "type": "mutation",
     "id": "POOKA_CLAWS",
+    "purifiable": false,
     "name": { "str": "Claws (Shapeshift)" },
     "points": 2,
     "description": "Grow a set of claws, improving your unarmed damage if you aren't wearing gloves.",
@@ -898,6 +936,7 @@
   {
     "type": "mutation",
     "id": "POOKA_STAINLESS_CLAWS",
+    "purifiable": false,
     "name": { "str": "Vicious Claws (Shapeshift)" },
     "points": 4,
     "description": "Grow a powerful set of claws, nearly as hard as steel, greatly improving your unarmed damage if you aren't wearing gloves.",
@@ -912,6 +951,7 @@
   {
     "type": "mutation",
     "id": "POOKA_BIRD_WINGS",
+    "purifiable": false,
     "name": { "str": "Bird Wings (Shapeshift)" },
     "points": 2,
     "description": "Transform your arms into bird wings, allow you to slow your fall when jumping from a high place and glide short distances.",
@@ -925,6 +965,7 @@
   {
     "type": "mutation",
     "id": "POOKA_URSINE_FUR",
+    "purifiable": false,
     "name": { "str": "Thick Fur (Shapeshift)" },
     "points": 2,
     "description": "Grow a coat of thick fur, keeping you warm in the winter and protecting you from attacks.",
@@ -938,6 +979,7 @@
   {
     "type": "mutation",
     "id": "POOKA_CHITIN",
+    "purifiable": false,
     "name": { "str": "Chitin Carapace (Shapeshift)" },
     "points": 2,
     "description": "Grow an armored suit of chitin, protecting you and making your punches hit harder.",
@@ -951,6 +993,7 @@
   {
     "type": "mutation",
     "id": "POOKA_QUADRUPED",
+    "purifiable": false,
     "name": { "str": "Quadruped (Shapeshift)" },
     "points": 2,
     "description": "Grow paws and animal-like legs, allowing you to run much faster on all fours, but preventing you from wearing shoes or gloves.",
@@ -965,6 +1008,7 @@
     "//": "The existing quadruped mutations check for thresholds so we need this custom one.",
     "type": "mutation",
     "id": "POOKA_QUADRUPED_TRAITS",
+    "purifiable": false,
     "name": { "str": "Quadruped" },
     "points": 2,
     "visibility": 8,
@@ -994,6 +1038,7 @@
   {
     "type": "mutation",
     "id": "POOKA_LEAPING_LEGS",
+    "purifiable": false,
     "name": { "str": "Leaping Legs (Shapeshift)" },
     "points": 2,
     "description": "Grow strong frog- or cat-like legs, allowing you to leap great distances.",
@@ -1007,6 +1052,7 @@
   {
     "type": "mutation",
     "id": "POOKA_WOLF_TAIL",
+    "purifiable": false,
     "name": { "str": "Wolf Tail (Shapeshift)" },
     "points": 2,
     "description": "Grow the tail of a wolf, making it harder to wear pants but improving your balance.",
@@ -1020,6 +1066,7 @@
   {
     "type": "mutation",
     "id": "POOKA_TAIL_LONG",
+    "purifiable": false,
     "name": { "str": "Cat Tail (Shapeshift)" },
     "points": 2,
     "description": "Grow the tail of a cat, making it harder to wear pants but improving your balance.",
@@ -1033,6 +1080,7 @@
   {
     "type": "mutation",
     "id": "POOKA_TAIL_STING",
+    "purifiable": false,
     "name": { "str": "Spiked Tail (Shapeshift)" },
     "points": 2,
     "description": "Grow the tail of a scorpion, making it harder to wear pants but allowing you to attack with the stinger.",
@@ -1046,6 +1094,7 @@
   {
     "type": "mutation",
     "id": "STR_UP_POOKA",
+    "purifiable": false,
     "name": { "str": "Bestial Strength" },
     "points": 2,
     "description": "Even when not shapeshifted you can bring part of a wild animal's strength to bear.  +2 Strength.",
@@ -1056,6 +1105,7 @@
   {
     "type": "mutation",
     "id": "DEX_UP_POOKA",
+    "purifiable": false,
     "name": { "str": "Untamed Agility" },
     "points": 3,
     "description": "You have the quick reactions of a wild animal.  +3 Dexterity.",
@@ -1066,6 +1116,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SHAPESHIFT_GOOD",
+    "purifiable": false,
     "name": { "str": "Initiate of Forms" },
     "points": 2,
     "description": "You are getting better at shapeshifting and are able to maintain one more simultaneous shapeshift without drawing on your mana.",
@@ -1075,6 +1126,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SHAPESHIFT_GOOD2",
+    "purifiable": false,
     "name": { "str": "Adept of Forms" },
     "points": 4,
     "description": "You are getting much better at shapeshifting and are able to maintain two more simultaneous shapeshifts without drawing on your mana.",
@@ -1085,6 +1137,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SHAPESHIFT_GOOD3",
+    "purifiable": false,
     "name": { "str": "Master of Forms" },
     "points": 6,
     "description": "You are a master of shapeshifting and are able to maintain four more simultaneous shapeshifts without drawing on your mana.",
@@ -1095,6 +1148,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SHAPESHIFT_FULL_SELECTOR",
+    "purifiable": false,
     "name": { "str": "Pinnacle of Forms", "//~": "NO_I18N" },
     "points": 6,
     "description": { "str": "This gives you access to the full shapeshift traits.  You should never seen it.", "//~": "NO_I18N" },
@@ -1190,6 +1244,7 @@
   {
     "type": "mutation",
     "id": "POOKA_UNARMED_ATTACK_BONUSES",
+    "purifiable": false,
     "name": { "str": "Instinctive Attacks" },
     "points": 3,
     "description": "You're getting used to moving and reacting like an animal.  When without weapons or armor and using your gifts of shapeshifting, your natural attacks do more damage.",
@@ -1231,6 +1286,7 @@
   {
     "type": "mutation",
     "id": "POOKA_UNARMED_DODGE_BONUSES",
+    "purifiable": false,
     "name": { "str": "Animalistic Defense" },
     "points": 5,
     "description": "The best defense is not getting hit, especially if you're a wild animal.  When using your shapeshifting and not wearing armor or using a weapon, you gain a bonus to your dodging.",
@@ -1288,6 +1344,7 @@
   {
     "type": "mutation",
     "id": "POOKA_SPEED_BONUSES",
+    "purifiable": false,
     "name": { "str": "Primal Alacrity" },
     "points": 3,
     "description": "Like the animals you mimic, you're quicker than you seem.  You gain a speed bonus while shapeshifted as long as you're unarmed and unarmored.",
@@ -1345,6 +1402,7 @@
   {
     "type": "mutation",
     "id": "DEX_UP_SELKIE",
+    "purifiable": false,
     "name": { "str": "Bending Like the River" },
     "points": 3,
     "description": "Your movements are graceful whether on land or in the water.  +3 Dexterity.",
@@ -1356,6 +1414,7 @@
   {
     "type": "mutation",
     "id": "PER_UP_SELKIE",
+    "purifiable": false,
     "name": { "str": "Eyes On the Waterline" },
     "points": 3,
     "description": "Your sight is keen whether in or out of the water.  +2 Perception.",
@@ -1366,6 +1425,7 @@
   {
     "type": "mutation",
     "id": "INT_UP_SELKIE",
+    "purifiable": false,
     "name": { "str": "Thoughts like Clear Water" },
     "points": 2,
     "description": "Your mind flows easily from topic to topic while remembering the important details.  +2 Intelligence.",
@@ -1376,6 +1436,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_BEGUILMENT",
+    "purifiable": false,
     "name": { "str": "Beguilement" },
     "points": 3,
     "description": "Glamour a human into defending you for a short period of time.  When the glamour ends, all effects end and the human will not be well-disposed toward you afterwards.",
@@ -1386,6 +1447,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_FOG_CLOAK",
+    "purifiable": false,
     "name": { "str": "Cloak of Fog" },
     "points": 2,
     "description": "Surround yourself with a thick fog, obscuring your position.",
@@ -1395,6 +1457,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CHANGE_WEATHER_DENSE_FOG",
+    "purifiable": false,
     "name": { "str": "Chant of Concealing Mists" },
     "points": 3,
     "description": "Call up a thick mist, shrouding the nearby landscape.",
@@ -1406,6 +1469,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CHANGE_WEATHER_RAIN",
+    "purifiable": false,
     "name": { "str": "Aria of the Droplets" },
     "points": 3,
     "description": "Call a rain shower, letting the rains water the earth.",
@@ -1417,6 +1481,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CHANGE_WEATHER_RAINSTORM",
+    "purifiable": false,
     "name": { "str": "Canticle of Rainstorms" },
     "points": 3,
     "description": "Call a heavy rainstorm, soaking everything.",
@@ -1427,6 +1492,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CHANGE_WEATHER_LIGHTNINGSTORM",
+    "purifiable": false,
     "name": { "str": "Symphony of Levin" },
     "points": 3,
     "description": "Call a lightning storm, .",
@@ -1473,6 +1539,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_WATERSLEEP",
+    "purifiable": false,
     "name": { "str": "The Waves my Bed" },
     "points": 1,
     "description": "Falling asleep underwater is easy for you, and you spend less time asleep when you rest there.",
@@ -1500,6 +1567,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_WATERMOVE",
+    "purifiable": false,
     "name": { "str": "Cutting Through the Waves" },
     "points": 1,
     "description": "Your hands and feet haven't changed at all, but they seem to be much better at swimming than before.  You gain a speed bonus when in water, increased when not wearing shoes.",
@@ -1510,6 +1578,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CHANGE_WEATHER_MASTER",
+    "purifiable": false,
     "name": { "str": "Conductor of Storms" },
     "points": 6,
     "description": "You are a master of meteorological enchantments, and your weather manipulations will last much longer.",
@@ -1521,6 +1590,7 @@
   {
     "type": "mutation",
     "id": "TROW_MAKE_NOISE",
+    "purifiable": false,
     "name": { "str": "The One Who Knocks" },
     "points": 3,
     "description": "Create a loud knocking sound within the glamour's range, to distract or lure your enemies away.",
@@ -1565,6 +1635,7 @@
   {
     "type": "mutation",
     "id": "TROW_WHILE_MINING_NO_EATING_OR_SLEEP",
+    "purifiable": false,
     "name": { "str": "Deep-Delver" },
     "points": 4,
     "visibility": 0,
@@ -1576,6 +1647,7 @@
   {
     "type": "mutation",
     "id": "TROW_STEALTH_UNDERGROUND_ON_ROCK",
+    "purifiable": false,
     "name": { "str": "Amongst the Stones" },
     "points": 4,
     "visibility": 0,
@@ -1631,6 +1703,7 @@
   {
     "type": "mutation",
     "id": "TROW_MOONS_TEARS_FORGING",
+    "purifiable": false,
     "name": { "str": "Shaping the Tears" },
     "points": 4,
     "description": "You have learned the secrets of forging moon's tears.  Sometimes in your dreams, a new recipe might be revealed to you.",
@@ -1640,6 +1713,7 @@
   {
     "type": "mutation",
     "id": "PAINRESIST_TROW2",
+    "purifiable": false,
     "name": { "str": "Unwavering Resilience of the Stones" },
     "points": 6,
     "description": "You are as hardy as the rock.  When underground you suffer much less pain, and your strength is not reduced by the pain you suffer.",
@@ -1658,6 +1732,7 @@
   {
     "type": "mutation",
     "id": "FAE_NIGHTVISION",
+    "purifiable": false,
     "name": { "str": "Unveiling the Night" },
     "points": 2,
     "description": "Your sharp eyes can pierce the darkness.",
@@ -1674,6 +1749,7 @@
   {
     "type": "mutation",
     "id": "FAE_NIGHTVISION2",
+    "purifiable": false,
     "name": { "str": "Pierce the Shadows" },
     "points": 2,
     "description": "Whether woods under trees or the cavern depths, you can see through the murk.",
@@ -1685,6 +1761,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_DISGUISE_AS_NATURE",
+    "purifiable": false,
     "name": { "str": "None Here but the Stones" },
     "points": 2,
     "description": "The Fair Folk can remain hidden among rocks or trees or whispers of wind, and now you can too.",
@@ -1700,6 +1777,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_INVISIBILITY",
+    "purifiable": false,
     "name": { "str": "Hidden from Mortal Eyes" },
     "points": 6,
     "description": "Like the Fair Folk of legend, you can remain unseen when you wish.",
@@ -1723,6 +1801,7 @@
   {
     "type": "mutation",
     "id": "CHANGELING_SUMMON_WILL_O_THE_WISPS",
+    "purifiable": false,
     "name": { "str": "Call Will o' the Wisp" },
     "points": 2,
     "description": "You can conjure up bobbing lights in the distance that will lead your enemies astray.",
@@ -1738,6 +1817,7 @@
   {
     "type": "mutation",
     "id": "FAE_IMMORTALITY",
+    "purifiable": false,
     "//": "For now life extenders such as this one grant MEND_ALL.  When the new wound system will be implemented, their function will be to always allow you to fully heal from your wounds (no scars, etc).",
     "name": { "str": "Faerie Eternity" },
     "points": 8,
@@ -1763,6 +1843,7 @@
   {
     "type": "mutation",
     "id": "SELKIE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -1774,6 +1855,7 @@
   {
     "type": "mutation",
     "id": "BROWNIE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -1785,6 +1867,7 @@
   {
     "type": "mutation",
     "id": "POOKA_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -1796,6 +1879,7 @@
   {
     "type": "mutation",
     "id": "TROW_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -1807,6 +1891,7 @@
   {
     "type": "mutation",
     "id": "NOBLE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,

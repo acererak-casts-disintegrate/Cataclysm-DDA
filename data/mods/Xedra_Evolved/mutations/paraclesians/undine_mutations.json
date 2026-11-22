@@ -2,6 +2,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_SKIN_1",
+    "purifiable": false,
     "name": { "str": "Undine Skin" },
     "points": 0,
     "visibility": 2,
@@ -68,6 +69,7 @@
   {
     "type": "mutation",
     "id": "CREATE_FOG",
+    "purifiable": false,
     "name": { "str": "Create Fog" },
     "points": 0,
     "visibility": 0,
@@ -79,6 +81,7 @@
   {
     "type": "mutation",
     "id": "GRANT_BUOYANCY",
+    "purifiable": false,
     "name": { "str": "Grant Buoyancy" },
     "points": 0,
     "visibility": 0,
@@ -90,6 +93,7 @@
   {
     "type": "mutation",
     "id": "ACIDIC_MIST",
+    "purifiable": false,
     "name": { "str": "Acidic Mist" },
     "points": 0,
     "visibility": 0,
@@ -101,6 +105,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_ACID_RESIST_ALLY",
+    "purifiable": false,
     "name": { "str": "Caustic Cloak" },
     "points": 0,
     "visibility": 0,
@@ -114,6 +119,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -126,6 +132,7 @@
   {
     "type": "mutation",
     "id": "SALTWATER_TO_FRESHWATER",
+    "purifiable": false,
     "name": { "str": "One Foot in the River and One in the Sea" },
     "points": 0,
     "visibility": 0,
@@ -136,6 +143,7 @@
   {
     "type": "mutation",
     "id": "BREATH_UNDERWATER",
+    "purifiable": false,
     "name": { "str": "Breathe Underwater" },
     "points": 2,
     "visibility": 0,
@@ -147,6 +155,7 @@
   {
     "type": "mutation",
     "id": "FOUL_WATER",
+    "purifiable": false,
     "name": { "str": "Cleansing the Poison Well" },
     "points": 0,
     "visibility": 0,
@@ -157,6 +166,7 @@
   {
     "type": "mutation",
     "id": "LIQUID_TO_WATER",
+    "purifiable": false,
     "name": { "str": "Return to Primordial Waters" },
     "points": 0,
     "visibility": 0,
@@ -167,6 +177,7 @@
   {
     "type": "mutation",
     "id": "RESIST_FIRE",
+    "purifiable": false,
     "name": { "str": "Resist Fire" },
     "points": 2,
     "visibility": 0,
@@ -178,6 +189,7 @@
   {
     "type": "mutation",
     "id": "RESIST_ACID",
+    "purifiable": false,
     "name": { "str": "Resist Acid" },
     "points": 2,
     "visibility": 0,
@@ -189,6 +201,7 @@
   {
     "type": "mutation",
     "id": "WAVE_RIDER",
+    "purifiable": false,
     "name": { "str": "The Sea Bears Me Up" },
     "points": 0,
     "visibility": 0,
@@ -204,6 +217,7 @@
   {
     "type": "mutation",
     "id": "WATER_SEALED",
+    "purifiable": false,
     "name": { "str": "Let the Waves Wash Over Me" },
     "points": 0,
     "visibility": 0,
@@ -227,6 +241,7 @@
   {
     "type": "mutation",
     "id": "SUMMON_FISH",
+    "purifiable": false,
     "name": { "str": "Summon Fish" },
     "points": 0,
     "visibility": 0,
@@ -238,6 +253,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_BASH_AND_SLOW",
+    "purifiable": false,
     "name": { "str": "Crushing Pressure" },
     "points": 2,
     "visibility": 0,
@@ -250,6 +266,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_DRAG_INWARD",
+    "purifiable": false,
     "name": { "str": "Whirlpool Catches the Shoal" },
     "points": 2,
     "visibility": 0,
@@ -262,6 +279,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_TIDAL_WAVE",
+    "purifiable": false,
     "name": { "str": "Tidal Wave" },
     "points": 2,
     "visibility": 0,
@@ -275,6 +293,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_EYES",
+    "purifiable": false,
     "name": { "str": "Undine Eyes" },
     "points": 1,
     "visibility": 2,
@@ -287,6 +306,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_EARS",
+    "purifiable": false,
     "name": { "str": "Undine Ears" },
     "points": 1,
     "visibility": 2,
@@ -297,6 +317,7 @@
   {
     "type": "mutation",
     "id": "SUMMON_WATER_ELEMENTAL",
+    "purifiable": false,
     "name": { "str": "Calling the Children of the Waves" },
     "points": 0,
     "visibility": 0,
@@ -309,6 +330,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_SLEEP_WATER",
+    "purifiable": false,
     "name": { "str": "Embrace of the Waters" },
     "points": 1,
     "description": "Surrounded by the waters, Undines find it easy to rest.  Falling asleep underwater is easy for you, and you spend less time asleep when you rest there.  You can also eat underwater, though you can't drink.",
@@ -332,6 +354,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_ABSORB_WATER",
+    "purifiable": false,
     "name": { "str": "The Sea Sustains Me" },
     "points": 4,
     "description": "Undines are born of the flowing waters and the waters provide for their children.  While submerged in fresh water, any thirst you have will be slaked.",
@@ -341,6 +364,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_ESCAPE_GRABS",
+    "purifiable": false,
     "name": { "str": "Flow Like Water" },
     "points": 2,
     "visibility": 0,
@@ -357,6 +381,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_FAST_SWIM_SPEED",
+    "purifiable": false,
     "name": { "str": "Like a Fish in the River" },
     "points": 2,
     "visibility": 0,
@@ -370,6 +395,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_WATER_PUSH_AWAY",
+    "purifiable": false,
     "name": { "str": "Crashing Waves" },
     "points": 2,
     "visibility": 0,
@@ -381,6 +407,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_DO_MORE_MELEE_DAMAGE",
+    "purifiable": false,
     "name": { "str": "Pounding Surf Strikes" },
     "points": 2,
     "visibility": 0,
@@ -398,6 +425,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_RIVER_MAPPING",
+    "purifiable": false,
     "name": { "str": "All Rivers Flow to the Sea" },
     "description": "Water falls as rain, flows into streams, and then into rivers to the sea, and rises as clouds to fall as rain once again.  While submerged in a river, lake, or the ocean, the Undine can exploit this connection to locate other sources of water.",
     "points": 3,
@@ -412,6 +440,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_STR_UP_1",
+    "purifiable": false,
     "name": { "str": "Waves Erode the Stones" },
     "points": 1,
     "visibility": 0,
@@ -425,6 +454,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_STR_UP_2",
+    "purifiable": false,
     "name": { "str": "Waves Erode the Shore" },
     "points": 3,
     "visibility": 0,
@@ -437,6 +467,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_DEX_UP_1",
+    "purifiable": false,
     "name": { "str": "Grace of the Creek" },
     "points": 2,
     "visibility": 0,
@@ -450,6 +481,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_DEX_UP_2",
+    "purifiable": false,
     "name": { "str": "Grace of the Stream" },
     "points": 4,
     "visibility": 0,
@@ -463,6 +495,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_DEX_UP_3",
+    "purifiable": false,
     "name": { "str": "Grace of the River" },
     "points": 6,
     "visibility": 0,
@@ -476,6 +509,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_PER_UP_1",
+    "purifiable": false,
     "name": { "str": "Seeing the Depths" },
     "points": 2,
     "visibility": 0,
@@ -488,6 +522,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_NO_COLD_UNDERWATER",
+    "purifiable": false,
     "name": { "str": "The Pond's Depths Do Not Freeze" },
     "points": 4,
     "visibility": 0,
@@ -500,6 +535,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_WATER_BODY",
+    "purifiable": false,
     "name": { "str": "Fluid Body" },
     "points": 4,
     "visibility": 0,
@@ -512,6 +548,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_MORE_MANA_REGEN",
+    "purifiable": false,
     "name": { "str": "Like the Flowing Fountain" },
     "points": 4,
     "visibility": 0,
@@ -530,6 +567,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_MORE_MANA_REGEN_AND_MANA",
+    "purifiable": false,
     "name": { "str": "Like the Rushing Fountain" },
     "points": 7,
     "visibility": 0,
@@ -549,6 +587,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_MORE_MANA_REGEN_AND_MANA_AND_STAMINA",
+    "purifiable": false,
     "name": { "str": "Like the Overflowing Fountain" },
     "points": 10,
     "visibility": 0,
@@ -571,6 +610,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_WATER_FORM",
+    "purifiable": false,
     "name": { "str": "Form of the Flowing Waters" },
     "points": 8,
     "description": "You may transform your body into pure water, becoming much more difficult to hurt (except by fire), able to flow easily over all terrain, and capable of moving much faster and more stealthily when in water.  However, you will be unable to attack, cold will do triple damage to you, and cold weather will affect you more.",
@@ -616,6 +656,7 @@
   {
     "type": "mutation",
     "id": "UNDINE_LIQUID_WATER_POCKET",
+    "purifiable": false,
     "name": { "str": "The Sea Is Always With Me" },
     "points": 5,
     "visibility": 0,

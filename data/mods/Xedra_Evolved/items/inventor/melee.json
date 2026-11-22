@@ -89,7 +89,7 @@
     "category": "weapons",
     "name": { "str": "megachette (folded)", "str_pl": "megachettes (folded)" },
     "description": "Probably a great weapon, it is folded now.",
-    "volume": "160 ml",
+    "volume": "170 ml",
     "longest_side": "14 cm",
     "symbol": "/",
     "use_action": {

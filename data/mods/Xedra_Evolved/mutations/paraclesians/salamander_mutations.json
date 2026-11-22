@@ -2,6 +2,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SKIN_1",
+    "purifiable": false,
     "name": { "str": "Salamander Skin" },
     "points": 0,
     "visibility": 2,
@@ -50,6 +51,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_MAKE_FIRE",
+    "purifiable": false,
     "name": { "str": "Enkindle" },
     "points": 2,
     "visibility": 0,
@@ -61,6 +63,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_DASH_BOOM",
+    "purifiable": false,
     "name": { "str": "Fiery Charge" },
     "points": 3,
     "visibility": 0,
@@ -73,6 +76,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_EXPLOSION_TRAP",
+    "purifiable": false,
     "name": { "str": "Sigil of Detonation" },
     "points": 4,
     "visibility": 0,
@@ -85,6 +89,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SMOKE_TELEPORT",
+    "purifiable": false,
     "name": { "str": "In a Puff of Smoke" },
     "points": 6,
     "visibility": 0,
@@ -97,6 +102,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FLAME_PUNCH",
+    "purifiable": false,
     "name": { "str": "Blazing Blow" },
     "points": 3,
     "visibility": 0,
@@ -109,6 +115,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SUMMON_FIRE_SPIRIT",
+    "purifiable": false,
     "name": { "str": "Summon Fire Spirit" },
     "points": 3,
     "visibility": 0,
@@ -120,6 +127,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_ASH_BREATH",
+    "purifiable": false,
     "name": { "str": "Exhalation of Ashes" },
     "points": 3,
     "visibility": 0,
@@ -132,6 +140,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FLAME_BREATH",
+    "purifiable": false,
     "name": { "str": "Breath of the Firedragon" },
     "points": 3,
     "visibility": 0,
@@ -144,6 +153,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SUMMON_FIREBIRD",
+    "purifiable": false,
     "name": { "str": "Flame of the Firebird" },
     "points": 3,
     "visibility": 0,
@@ -157,6 +167,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_INCREASE_SPEED",
+    "purifiable": false,
     "name": { "str": "Fanning the Spark" },
     "points": 3,
     "visibility": 0,
@@ -170,6 +181,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SUMMON_WHIP",
+    "purifiable": false,
     "name": { "str": "A Hundred Tongues of Flame" },
     "points": 5,
     "visibility": 0,
@@ -182,6 +194,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_EMIT_HEAT",
+    "purifiable": false,
     "name": { "str": "Stoking the Inner Fire" },
     "points": 6,
     "visibility": 0,
@@ -195,6 +208,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_CURE_CONDITIONS",
+    "purifiable": false,
     "name": { "str": "Burning Away Your Impurities" },
     "points": 6,
     "visibility": 0,
@@ -207,6 +221,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -219,6 +234,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_WATER_TO_BOOZE",
+    "purifiable": false,
     "name": { "str": "Burning Water" },
     "points": 0,
     "visibility": 0,
@@ -230,6 +246,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_WATER_TO_FUEL",
+    "purifiable": false,
     "name": { "str": "Fire From Water" },
     "points": 6,
     "visibility": 0,
@@ -241,6 +258,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_EYES",
+    "purifiable": false,
     "name": { "str": "Salamander Eyes" },
     "points": 1,
     "visibility": 2,
@@ -254,6 +272,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_HEAT_EYES",
+    "purifiable": false,
     "name": { "str": "Heat Sight" },
     "points": 3,
     "description": "With their new eyes, the Salamander can see heat and pick out others in darkness.",
@@ -265,6 +284,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_HEAT_EYES2",
+    "purifiable": false,
     "name": { "str": "Reading the Heartfires" },
     "points": 5,
     "description": "The Salamander's ability to see heat has sharpened greatly, and they can pick out subtle change in a person's skin caused by blood flow.  This makes persuasion and lying easier.",
@@ -276,6 +296,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_EARS",
+    "purifiable": false,
     "name": { "str": "Salamander Ears" },
     "points": 1,
     "visibility": 2,
@@ -300,6 +321,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_HEAT_HEAL",
+    "purifiable": false,
     "name": { "str": "Heat Fuels the Flames" },
     "points": 8,
     "visibility": 0,
@@ -315,6 +337,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FAST_CRAFT",
+    "purifiable": false,
     "name": { "str": "Incandescent Artisan's Alacrity" },
     "points": 8,
     "visibility": 0,
@@ -327,6 +350,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_DROP_FIRE",
+    "purifiable": false,
     "name": { "str": "Searing Footsteps" },
     "points": 6,
     "description": "The Salamander can enhance their inner fire to the point where they leave fiery footprints everywhere they travel.  Activate this trait to leave a trail of fire in your wake at the cost of mana for every footstep.",
@@ -343,6 +367,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_MONCAMS",
+    "purifiable": false,
     "name": { "str": "Within the Firelight" },
     "points": 2,
     "description": "As a distant fire reveals that which is nearby, the Salamander can see what surrounds their kin.  The Salamander may see through the eyes of any creatures they summon.",
@@ -354,6 +379,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_BIGGER_STOMACH",
+    "purifiable": false,
     "name": { "str": "Adding Wood to the Campfire" },
     "points": 2,
     "description": "Fires require fuel, and so does the Salamander.  This trait allows them to eat twice as much at once.",
@@ -365,6 +391,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_BIGGER_STOMACH2",
+    "purifiable": false,
     "name": { "str": "Fueling the Hungry Oven" },
     "points": 5,
     "description": "Like a coal furnace, the Salamander devours food to keep functioning.  They may eat three times as much at once and eat food 50% faster.",
@@ -379,6 +406,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_HEALTH_FOR_MANA",
+    "purifiable": false,
     "name": { "str": "Burning New Wood" },
     "points": 6,
     "description": "In times of extreme need, the Salamander can fuel their powers with their own body.  Activate this to restore mana at the cost of health.",
@@ -472,6 +500,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_NO_SMOKE_DAMAGE",
+    "purifiable": false,
     "name": { "str": "Breathing in Cinders" },
     "points": 6,
     "description": "Smoke is the breath of fire and a Salamander is born of flames.  You suffer no negative effects from smoke inhalation.",
@@ -482,6 +511,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_STR_BONUS_1",
+    "purifiable": false,
     "name": { "str": "Strength of the Crackling Fire" },
     "points": 1,
     "visibility": 0,
@@ -494,6 +524,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_STR_BONUS_2",
+    "purifiable": false,
     "name": { "str": "Strength of the Blazing Bonfire" },
     "points": 3,
     "visibility": 0,
@@ -507,6 +538,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_DEX_BONUS_1",
+    "purifiable": false,
     "name": { "str": "Fiery Speed" },
     "points": 2,
     "visibility": 0,
@@ -519,6 +551,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_DEX_BONUS_2",
+    "purifiable": false,
     "name": { "str": "Blazing Speed" },
     "points": 5,
     "visibility": 0,
@@ -532,6 +565,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_REDUCED_MOVE_COST",
+    "purifiable": false,
     "name": { "str": "Outracing the Prairie Fire" },
     "points": 7,
     "visibility": 0,
@@ -544,6 +578,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_INT_BONUS",
+    "purifiable": false,
     "name": { "str": "Sparking Thoughts" },
     "points": 3,
     "visibility": 0,
@@ -556,6 +591,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_REMOVE_STUN",
+    "purifiable": false,
     "name": { "str": "Effortlessly-Rising Smoke" },
     "points": 5,
     "description": "Like smoke rising to the sky, the Salamander cannot be kept down.  This trait may be activated to immediately clear the Stunned, Dazed, or Downed effects.",
@@ -569,6 +605,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_COOKING_HEAT",
+    "purifiable": false,
     "name": { "str": "Stove's Caress" },
     "points": 4,
     "description": "Instead of simply causing a burst of heat, the Salamander can emit heat from their hands at will, allowing them to use it to cook.",
@@ -585,6 +622,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FIRE_IMMUNE",
+    "purifiable": false,
     "name": { "str": "Inured to Flame" },
     "points": 9,
     "visibility": 0,
@@ -606,6 +644,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FLY_IN_FIRE_SPELL",
+    "purifiable": false,
     "name": { "str": "Burning Ascension" },
     "points": 6,
     "description": "Upon gaining this ability the Salamander gains the ability to hurl themselves skyward while standing in a fire.",
@@ -617,6 +656,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_MANA_BONUS",
+    "purifiable": false,
     "name": { "str": "Mana Bonfire" },
     "points": 8,
     "description": "The Salamander is a font of mana, like a well-fueled bonfire.  25% extra mana.",
@@ -629,6 +669,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FAST_CAST",
+    "purifiable": false,
     "name": { "str": "Crackling Mana Bonfire" },
     "points": 10,
     "description": "The Salamander's mana surges within them, ready to burst out at the slightly opportunity.  25% extra mana and -15% spell casting speed.",
@@ -642,6 +683,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SUMMON_WINGS",
+    "purifiable": false,
     "name": { "str": "On Wings of Flame" },
     "points": 7,
     "visibility": 0,
@@ -688,6 +730,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_PREVENT_DEATH",
+    "purifiable": false,
     "name": { "str": "In Flames, Reborn Like the Phoenix" },
     "points": 12,
     "description": "Like the bird of legend, the Salamander can recreate themselves from the heat and smoke of a fire.  If their body takes fatal damage while standing in a fire, their fae spirit will use those flames to renew themselves.  This can generally occur no more often than once every 14 days, though there is a small chance it can occur more often.",
@@ -699,6 +742,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_FLAME_IMMUNITY_ALLY",
+    "purifiable": false,
     "name": { "str": "Anointed with Incandescence" },
     "points": 6,
     "visibility": 0,
@@ -712,6 +756,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_EXPLOSION_AND_HEAL",
+    "purifiable": false,
     "name": { "str": "The Phoenix's Last Cry" },
     "points": 9,
     "visibility": 0,
@@ -726,6 +771,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_SMOKE_FORM",
+    "purifiable": false,
     "name": { "str": "Form of Billowing Smoke" },
     "points": 8,
     "description": "The Salamander may transform into smoke.  They will have only a dim awareness of their surroundings, but can freely move including through the air and will be nearly immune to attack.  They will be unable to attack anyone else themselves, however.",
@@ -767,6 +813,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_RADIATION_IMMUNE",
+    "purifiable": false,
     "name": { "str": "In No Other Fire Shall I Burn" },
     "points": 6,
     "description": "The Salamander is completely immune to radiation.",
@@ -779,6 +826,7 @@
   {
     "type": "mutation",
     "id": "SALAMANDER_BERSERK_STANCE",
+    "purifiable": false,
     "name": { "str": "Wildfire Soul" },
     "points": 5,
     "description": "As a banked fire can suddenly spring up with a gust of wind, the Salamander can surge into raging activity.  Activating this trait will make the Salamander immune to pain and add +3 Strength and Dexterity for as long as it is active.  However, when it ends, all the previously put-off pain and more returns.",

@@ -332,6 +332,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_STR_DEX_1",
+    "purifiable": false,
     "name": { "str": "Fae Prowess" },
     "points": 1,
     "visibility": 0,
@@ -369,6 +370,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_STR_DEX_2",
+    "purifiable": false,
     "name": { "str": "Fae Puissance" },
     "points": 1,
     "visibility": 0,
@@ -419,6 +421,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_INT_PER_1",
+    "purifiable": false,
     "name": { "str": "Fae Discernment" },
     "points": 1,
     "visibility": 0,
@@ -456,6 +459,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_INT_PER_2",
+    "purifiable": false,
     "name": { "str": "Fae Acumen" },
     "points": 1,
     "visibility": 0,
@@ -506,6 +510,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_FAE_SIGHT_1",
+    "purifiable": false,
     "name": { "str": "Fae Sight" },
     "points": 1,
     "visibility": 0,
@@ -548,6 +553,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_FAE_SIGHT_2",
+    "purifiable": false,
     "name": { "str": "Wyrd Sight" },
     "points": 1,
     "visibility": 0,
@@ -588,6 +594,7 @@
   {
     "type": "mutation",
     "id": "CLOUD_OF_STEAM_SYLPH",
+    "purifiable": false,
     "name": { "str": "Cloud of Steam" },
     "points": 3,
     "visibility": 0,
@@ -599,6 +606,7 @@
   {
     "type": "mutation",
     "id": "CLOUD_OF_STEAM_UNDINE",
+    "purifiable": false,
     "name": { "str": "Cloud of Steam" },
     "points": 3,
     "visibility": 0,
@@ -610,6 +618,7 @@
   {
     "type": "mutation",
     "id": "CREATE_LIGHT_SYLPH",
+    "purifiable": false,
     "name": { "str": "Create Light" },
     "points": 3,
     "visibility": 0,
@@ -621,6 +630,7 @@
   {
     "type": "mutation",
     "id": "CREATE_LIGHT",
+    "purifiable": false,
     "name": { "str": "Create Light" },
     "points": 3,
     "visibility": 0,
@@ -632,6 +642,7 @@
   {
     "type": "mutation",
     "id": "ELEMENTAL_MANA1",
+    "purifiable": false,
     "name": "Born of the Elements",
     "points": 1,
     "description": "Your connection to this world is deep and rewards you with additional mana.",
@@ -644,6 +655,7 @@
   {
     "type": "mutation",
     "id": "ELEMENTAL_MANA2",
+    "purifiable": false,
     "name": "Change with the Seasons",
     "points": 3,
     "description": "You are able to store more mana in your body than usual.",
@@ -657,6 +669,7 @@
   {
     "type": "mutation",
     "id": "ELEMENTAL_MANA3",
+    "purifiable": false,
     "name": "Walking Ley Line",
     "points": 8,
     "description": "You are able to store a lot more mana in your body than usual.",
@@ -669,6 +682,7 @@
   {
     "type": "mutation",
     "id": "WIND_BLOWS_WILLOW_BENDS_ARVORE",
+    "purifiable": false,
     "name": { "str": "The Wind Blows, the Willow Bends" },
     "points": 4,
     "visibility": 0,
@@ -681,6 +695,7 @@
   {
     "type": "mutation",
     "id": "WIND_BLOWS_WILLOW_BENDS_SYLPH",
+    "purifiable": false,
     "name": { "str": "The Wind Blows, the Willow Bends" },
     "points": 4,
     "visibility": 0,
@@ -692,6 +707,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_LEARN_GOSSAMER_RECIPES",
+    "purifiable": false,
     "name": { "str": "Gossamer Artisan" },
     "points": 4,
     "visibility": 0,
@@ -714,6 +730,7 @@
   {
     "type": "mutation",
     "id": "PARACLESIAN_MAKE_GOSSAMER",
+    "purifiable": false,
     "name": { "str": "Gossamerwright" },
     "points": 6,
     "visibility": 0,
@@ -785,6 +802,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_WISHES_TO_CONVERSE",
+    "purifiable": false,
     "name": { "str": "Desire for Conversation" },
     "points": 0,
     "visibility": 0,

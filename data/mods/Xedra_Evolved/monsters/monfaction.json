@@ -5,7 +5,7 @@
     "base_faction": "nether",
     "neutral": [ "fish", "small_animal", "slime" ],
     "by_mood": [ "nether", "nightmares" ],
-    "hate": [ "zombie", "triffid", "fungus", "exodii", "isolated_artisans" ]
+    "hate": [ "zombie", "triffid", "fungus", "exodii", "isolated_artisans", "cult" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -20,7 +20,7 @@
     "name": "vampire_anathema",
     "copy-from": "vampire",
     "//": "Like the mentors, they are human enough to be attacked by zombies.  Luring them into other hostiles is a valid strategy.",
-    "extend": { "hate": [ "changeling", "nether", "nightmares", "vampire", "zombie" ] }
+    "extend": { "hate": [ "changeling", "nether", "nightmares", "vampire", "zombie", "cult" ] }
   },
   {
     "type": "MONSTER_FACTION",
@@ -60,7 +60,7 @@
     "name": "homullus",
     "base_faction": "changeling",
     "neutral": [ "small_animal", "fish" ],
-    "by_mood": [ "nether", "nightmares", "ierde", "arvore", "sylph", "salamander" ],
+    "by_mood": [ "nether", "nightmares", "ierde", "arvore", "sylph", "salamander", "undine" ],
     "hate": [ "zombie", "arvore" ]
   },
   {
@@ -130,6 +130,13 @@
     "name": "nightmares",
     "base_faction": "nether_hate_humans",
     "neutral": [ "fish", "small_animal", "slime" ],
-    "by_mood": [ "nether", "changeling", "vampire" ]
+    "by_mood": [ "nether", "changeling", "vampire", "nether_hate_humans" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "nether",
+    "copy-from": "nether",
+    "//": "Changelings and nightmares descend from nether, which would otherwise make every nether faction friendly to them while they are only wary in return.",
+    "extend": { "by_mood": [ "changeling", "nightmares" ] }
   }
 ]

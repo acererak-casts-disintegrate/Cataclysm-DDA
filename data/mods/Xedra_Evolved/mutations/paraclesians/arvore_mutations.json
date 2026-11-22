@@ -70,6 +70,7 @@
   },
   {
     "id": "ARVORE_MOSS",
+    "purifiable": false,
     "type": "mutation",
     "name": { "str": "Patches of Moss" },
     "points": 1,
@@ -187,6 +188,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_NURTURING_THE_GREEN",
+    "purifiable": false,
     "name": { "str": "Nurturing the Green" },
     "points": 2,
     "visibility": 0,
@@ -199,6 +201,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SEED_BEARER",
+    "purifiable": false,
     "name": { "str": "Seed Bearer" },
     "points": 2,
     "visibility": 0,
@@ -215,6 +218,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_WOOD_WALL",
+    "purifiable": false,
     "name": { "str": "The Forest Offers Shelter" },
     "points": 4,
     "visibility": 0,
@@ -227,6 +231,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_COMMUNE_WITH_NATURE",
+    "purifiable": false,
     "name": { "str": "Commune with Nature" },
     "points": 3,
     "visibility": 0,
@@ -238,6 +243,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_BRIARS",
+    "purifiable": false,
     "name": { "str": "Briarwall" },
     "points": 5,
     "visibility": 0,
@@ -249,6 +255,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_TELEPORT",
+    "purifiable": false,
     "name": { "str": "Traverse the Wilds" },
     "points": 6,
     "visibility": 0,
@@ -262,6 +269,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_CAUSE_DECAY",
+    "purifiable": false,
     "name": { "str": "Fallen Trees Decay to Soil" },
     "points": 8,
     "visibility": 0,
@@ -276,6 +284,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_WOOD_SPIRIT",
+    "purifiable": false,
     "name": { "str": "Call the Children of the Roots" },
     "points": 3,
     "visibility": 0,
@@ -287,6 +296,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_TERRAIN_BASH_SPELL",
+    "purifiable": false,
     "name": { "str": "Roots Crack the Foundation" },
     "points": 3,
     "visibility": 0,
@@ -300,6 +310,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_TRANSLOCATION",
+    "purifiable": false,
     "name": { "str": "From Root to Root the Forest Is Joined" },
     "points": 9,
     "visibility": 0,
@@ -313,6 +324,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_TURN_INTO_TREE",
+    "purifiable": false,
     "name": { "str": "Overgrowth" },
     "points": 9,
     "visibility": 0,
@@ -327,6 +339,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_PERENNIAL_REBIRTH",
+    "purifiable": false,
     "name": { "str": "Perennial Rebirth" },
     "points": 3,
     "visibility": 0,
@@ -352,6 +365,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_VERDANT_INFUSION",
+    "purifiable": false,
     "name": { "str": "Verdant Infusion" },
     "points": 3,
     "visibility": 0,
@@ -365,6 +379,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SUMMON_GRASS_FIELD",
+    "purifiable": false,
     "name": { "str": "Commanding the Grasses" },
     "points": 3,
     "visibility": 0,
@@ -377,6 +392,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_CLIMBING_VINE_SPELL",
+    "purifiable": false,
     "name": { "str": "Creeper Ascends the Wall" },
     "points": 3,
     "visibility": 0,
@@ -390,6 +406,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_ANTI_PLANT_SPELL",
+    "purifiable": false,
     "name": { "str": "Tending the Garden" },
     "points": 3,
     "visibility": 0,
@@ -402,6 +419,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -414,6 +432,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_MAPPING",
+    "purifiable": false,
     "name": { "str": "Commune with the Ancient Oaks" },
     "points": 3,
     "visibility": 0,
@@ -427,6 +446,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_WOOD_WEAPON_DAMAGE",
+    "purifiable": false,
     "name": { "str": "Bramble's Bite" },
     "points": 3,
     "visibility": 0,
@@ -445,6 +465,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_TOXIC_FLESH",
+    "purifiable": false,
     "name": { "str": "Essence of Hemlock" },
     "points": 8,
     "description": "With a brief effort of will, the Arvore may infuse their blood with a poison that harms any who bite them.",
@@ -462,6 +483,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_POISON_POLLEN",
+    "purifiable": false,
     "name": { "str": "Scent of Night-Blooming Flowers" },
     "points": 5,
     "description": "The Arvore may release clouds of pollen that ruin the coordination of their enemies when breathed in.",
@@ -530,6 +552,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_MOOD_CHANGES_WITH_SEASONS",
+    "purifiable": false,
     "name": { "str": "The Eternal Cycle" },
     "points": 3,
     "visibility": 0,
@@ -587,6 +610,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_VINE_DRAG",
+    "purifiable": false,
     "name": { "str": "Entangling Vines" },
     "points": 6,
     "description": "At will, you can extend a cluster of grasping vines to grab one target and drag them in.  They have a range equal to 1/2 your Dexterity.",
@@ -632,6 +656,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_RESIST_CHILL",
+    "purifiable": false,
     "name": { "str": "Resist Winter's Chill" },
     "points": 2,
     "visibility": 0,
@@ -645,6 +670,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_IGNORE_WINTER_CHILL",
+    "purifiable": false,
     "name": { "str": "Ignore Winter's Chill" },
     "points": 6,
     "visibility": 0,
@@ -659,6 +685,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_KNOW_TIME",
+    "purifiable": false,
     "name": { "str": "Sensing the Sun" },
     "points": 1,
     "visibility": 0,
@@ -670,6 +697,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_SURVIVAL_BONUS",
+    "purifiable": false,
     "name": { "str": "Among the Wilds" },
     "points": 4,
     "visibility": 0,
@@ -753,6 +781,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_STEALTH",
+    "purifiable": false,
     "name": { "str": "Shadow of the Trees" },
     "points": 3,
     "visibility": 0,
@@ -789,6 +818,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_BLOOD",
+    "purifiable": false,
     "name": { "str": "Vegetal Blood" },
     "//": "Visibility here because the Arvore's skin flushes a different color when the blood isn't red.",
     "points": 1,
@@ -846,6 +876,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_VINES",
+    "purifiable": false,
     "name": { "str": "Writhing Vines" },
     "points": 2,
     "visibility": 0,
@@ -866,6 +897,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_DETECT",
+    "purifiable": false,
     "name": { "str": "The Forests' Warning" },
     "points": 2,
     "visibility": 0,
@@ -880,6 +912,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_FOREST_DETECT_AND_OVERMAP",
+    "purifiable": false,
     "name": { "str": "The Whispers of the Leaves" },
     "points": 4,
     "visibility": 0,
@@ -893,6 +926,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_VERDANT_HAIR",
+    "purifiable": false,
     "name": { "str": "Verdant Hair" },
     "points": 2,
     "visibility": 6,
@@ -1007,6 +1041,7 @@
   {
     "type": "mutation",
     "id": "ARVORE_TREE_FORM",
+    "purifiable": false,
     "name": { "str": "One with the Forest" },
     "points": 8,
     "description": "You may transform into a tree, extending roots and spreading leaves out to the sun.  You will heal faster, gain more benefit from sleep, and almost all monsters will ignore you, but you will only be dimly aware of the outside world and will be nearly unable to move.",

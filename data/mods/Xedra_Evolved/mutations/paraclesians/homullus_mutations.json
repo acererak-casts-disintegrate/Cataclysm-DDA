@@ -2,6 +2,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_SKIN_1",
+    "purifiable": false,
     "name": { "str": "Mannequin Skin" },
     "points": 0,
     "visibility": 2,
@@ -81,6 +82,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_BETTER_AT_LYING",
+    "purifiable": false,
     "name": { "str": "Trust Me" },
     "points": 1,
     "visibility": 0,
@@ -92,6 +94,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_DREAMWALKER",
+    "purifiable": false,
     "name": { "str": "Dreamwalker" },
     "points": 1,
     "visibility": 0,
@@ -104,6 +107,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CHARM_FERALS",
+    "purifiable": false,
     "name": { "str": "One of Us" },
     "points": 4,
     "visibility": 0,
@@ -116,6 +120,7 @@
   {
     "type": "mutation",
     "id": "FREE_WILL",
+    "purifiable": false,
     "name": { "str": "Free Will" },
     "points": 1,
     "visibility": 0,
@@ -162,6 +167,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_SUMMON_FERALS",
+    "purifiable": false,
     "name": { "str": "The Lost and the Damned" },
     "points": 4,
     "visibility": 0,
@@ -174,6 +180,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_SELF_DECEPTION",
+    "purifiable": false,
     "name": { "str": "Everything Will Be Fine" },
     "points": 4,
     "visibility": 0,
@@ -186,6 +193,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_INVISIBLE_TO_HUMANS",
+    "purifiable": false,
     "name": { "str": "A Face in the Crowd" },
     "points": 3,
     "visibility": 0,
@@ -199,6 +207,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_REDUCED_VISIBILITY_ALLY",
+    "purifiable": false,
     "name": { "str": "The Average Joe" },
     "points": 3,
     "visibility": 0,
@@ -211,6 +220,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_RESTORE_POWER",
+    "purifiable": false,
     "name": { "str": "Dynamo" },
     "points": 3,
     "visibility": 0,
@@ -223,6 +233,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_ADD_LEARNING_FOCUS",
+    "purifiable": false,
     "name": { "str": "The Scholar's Regard" },
     "points": 3,
     "visibility": 0,
@@ -235,6 +246,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_ROAD_TRANSLOCATION",
+    "purifiable": false,
     "name": { "str": "All Roads Lead to Rome" },
     "points": 3,
     "visibility": 0,
@@ -249,6 +261,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CULTIVATE_GOBLIN_FRUIT",
+    "purifiable": false,
     "name": { "str": "Cultivate Goblin Fruit" },
     "points": 3,
     "visibility": 0,
@@ -286,6 +299,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_BACKSTAGE",
+    "purifiable": false,
     "name": { "str": "Backstage" },
     "points": 0,
     "visibility": -1,
@@ -321,6 +335,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CBM_INSTALL",
+    "purifiable": false,
     "name": "Cybernetic Integration",
     "points": 2,
     "visibility": 0,
@@ -332,6 +347,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CBM_MANA_1",
+    "purifiable": false,
     "name": "Cybernetic Adaptation",
     "points": 4,
     "visibility": 0,
@@ -345,6 +361,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CBM_MANA_2",
+    "purifiable": false,
     "name": "Complete Cybernetic Adaptation",
     "points": 8,
     "visibility": 0,
@@ -358,6 +375,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_PASSIVE_BIONIC_POWER",
+    "purifiable": false,
     "name": "Internalized Charge",
     "points": 2,
     "visibility": 0,
@@ -374,6 +392,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_ARMOR_MULT_1",
+    "purifiable": false,
     "name": "Reinforced Armor",
     "points": 4,
     "visibility": 0,
@@ -386,6 +405,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_ARMOR_MULT_2",
+    "purifiable": false,
     "name": "Fortified Armor",
     "points": 8,
     "visibility": 0,
@@ -399,6 +419,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_DURABILITY_MULT_1",
+    "purifiable": false,
     "name": "Equipment Hardening",
     "points": 4,
     "visibility": 0,
@@ -411,6 +432,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_DURABILITY_MULT_2",
+    "purifiable": false,
     "name": "Extreme Equipment Hardening",
     "points": 8,
     "visibility": 0,
@@ -424,6 +446,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_GAIN_BIONIC_POWER",
+    "purifiable": false,
     "name": "Echoes of the Streets",
     "points": 5,
     "visibility": 0,
@@ -437,6 +460,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_GAIN_BIONIC_POWER_AND_MANA",
+    "purifiable": false,
     "name": "The Pulse of the Invisible",
     "points": 8,
     "visibility": 0,
@@ -455,6 +479,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CITY_STRIDER",
+    "purifiable": false,
     "name": { "str": "City Strider" },
     "points": 3,
     "visibility": 0,
@@ -497,6 +522,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_REGEN_STAMINA",
+    "purifiable": false,
     "name": { "str": "Take the Line" },
     "points": 2,
     "description": "By standing together, humanity was able to overcome all threats, and it was only when they turned on each other that the Cataclysm grew out of control.  The Homullus regains Stamina 5% faster per ally within 30 meters (10% faster per ally if they have the Homullus trait).",
@@ -531,6 +557,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_TEMPERATURE_TOLERANCE",
+    "purifiable": false,
     "name": { "str": "At Home in any Clime" },
     "points": 6,
     "description": "Before the Cataclysm there were cities all across the world.  From above the Arctic Circle to directly on the equator, humanity built their dwellings.  You are more comfortable with temperature extremes.",
@@ -546,6 +573,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CRAFTING_BONUS_1",
+    "purifiable": false,
     "name": { "str": "The Tool-Maker" },
     "points": 3,
     "visibility": 0,
@@ -563,6 +591,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CRAFTING_BONUS_2",
+    "purifiable": false,
     "name": { "str": "The Innovator" },
     "points": 3,
     "visibility": 0,
@@ -587,6 +616,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_CRAFTING_BONUS_3",
+    "purifiable": false,
     "name": { "str": "The Builder of Cities" },
     "points": 3,
     "visibility": 0,
@@ -612,6 +642,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_GAIN_INTEGRATED_TOOLS",
+    "purifiable": false,
     "name": { "str": "Essence of the Makers" },
     "points": 4,
     "visibility": 0,
@@ -625,6 +656,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_GAIN_INTEGRATED_HACKER",
+    "purifiable": false,
     "name": { "str": "Net Spider's Touch" },
     "points": 4,
     "visibility": 0,
@@ -720,6 +752,7 @@
   {
     "type": "mutation",
     "id": "DEATH_IS_BUT_A_DOOR",
+    "purifiable": false,
     "name": { "str": "Death Is But A Door" },
     "points": 7,
     "visibility": 0,
@@ -732,6 +765,7 @@
   {
     "type": "mutation",
     "id": "HOMULLUS_DOLL_FORM",
+    "purifiable": false,
     "name": { "str": "Mien of the Mannequin" },
     "points": 8,
     "description": "You may transform yourself into a doll in truth, ignoring the needs of the flesh and making most monsters less likely to attack you.  However, your stiff limbs will inhibit your movement.",

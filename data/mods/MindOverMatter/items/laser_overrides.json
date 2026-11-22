@@ -4,6 +4,8 @@
     "subtypes": [ "GUN" ],
     "id": "laser_rifle",
     "copy-from": "laser_rifle",
+    "//": "Restates core's legacy to_hit: a copy-from child is never flagged legacy, which would drop it from TEST_DATA/legacy_to_hit.json.",
+    "to_hit": -1,
     "name": { "str": "A7 laser rifle" },
     "ranged_damage": { "damage_type": "psi_photokinetic_damage", "amount": 25, "armor_penetration": 4 }
   },
@@ -60,6 +62,8 @@
     "subtypes": [ "GUN" ],
     "id": "gatling_mech_laser",
     "copy-from": "gatling_mech_laser",
+    "//": "Restates core's legacy to_hit: a copy-from child is never flagged legacy, which would drop it from TEST_DATA/legacy_to_hit.json.",
+    "to_hit": -4,
     "name": { "str": "CMES laser cannon" },
     "ranged_damage": { "damage_type": "psi_photokinetic_damage", "amount": 20, "armor_penetration": 4 }
   }

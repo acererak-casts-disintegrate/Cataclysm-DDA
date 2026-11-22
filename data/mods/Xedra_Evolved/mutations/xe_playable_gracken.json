@@ -352,6 +352,7 @@
   {
     "type": "mutation",
     "id": "RADIOTROPHIC",
+    "purifiable": false,
     "name": { "str": "Radiotrophic" },
     "points": 3,
     "vitamin_cost": 160,

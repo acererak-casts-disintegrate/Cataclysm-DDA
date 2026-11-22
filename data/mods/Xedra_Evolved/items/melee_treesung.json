@@ -31,7 +31,8 @@
     "color": "green",
     "material": [ { "type": "wood", "portion": 1 } ],
     "proportional": { "melee_damage": { "bash": 0.9 } },
-    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] }
+    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] },
+    "volume": "1800 ml"
   },
   {
     "type": "ITEM",
@@ -55,7 +56,8 @@
     "color": "green",
     "material": [ { "type": "wood", "portion": 1 } ],
     "proportional": { "melee_damage": { "bash": 1.1, "stab": 0.9 } },
-    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] }
+    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] },
+    "volume": "1450 ml"
   },
   {
     "type": "ITEM",
@@ -80,6 +82,7 @@
     "color": "green",
     "material": [ { "type": "wood", "portion": 1 } ],
     "proportional": { "melee_damage": { "stab": 0.9 } },
-    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] }
+    "extend": { "flags": [ "WOODEN_WEAPON", "NO_REPAIR" ] },
+    "volume": "450 ml"
   }
 ]

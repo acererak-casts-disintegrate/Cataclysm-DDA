@@ -81,8 +81,8 @@
     "category": "spare_parts",
     "name": { "str": "scrap shadowstuff", "str_pl": "scraps of shadowstuff" },
     "description": "A bulky assortment of small bits of scrap shadowstuff, possibly useful in ephemeral crafting.",
-    "weight": "5 g",
-    "volume": "25 ml",
+    "weight": "500 mg",
+    "volume": "10 ml",
     "price": "5 USD",
     "price_postapoc": "10 cent",
     "count": 2,
@@ -100,8 +100,8 @@
     "category": "spare_parts",
     "name": { "str": "chunk shadowstuff", "str_pl": "scraps of shadowstuff" },
     "description": "A bulky assortment of larger bits of scrap shadowstuff, possibly useful in ephemeral crafting.",
-    "weight": "5 g",
-    "volume": "25 ml",
+    "weight": "500 mg",
+    "volume": "10 ml",
     "price": "5 USD",
     "price_postapoc": "10 cent",
     "count": 2,
@@ -375,7 +375,7 @@
     "ammo_type": "rock",
     "flags": [ "TRADER_AVOID", "NPC_THROWN" ],
     "weight": "657 g",
-    "volume": "250 ml",
+    "volume": "260 ml",
     "longest_side": "8 cm",
     "damage": { "damage_type": "stab", "amount": 5 },
     "range": 10,
@@ -409,7 +409,8 @@
     "color": "red",
     "material": [ "hblood" ],
     "looks_like": "blood",
-    "description": "A ball of almost-solid blood, needing to bath in the energies of a portal storm before being useful."
+    "description": "A ball of almost-solid blood, needing to bath in the energies of a portal storm before being useful.",
+    "volume": "620 ml"
   },
   {
     "type": "ITEM",
@@ -419,7 +420,8 @@
     "color": "red",
     "material": [ "hblood" ],
     "looks_like": "blood",
-    "description": "A ball of almost-solid blood with ripples across its surface.  It has been exposed to the energies of the portal storms enough to be used in the ritual."
+    "description": "A ball of almost-solid blood with ripples across its surface.  It has been exposed to the energies of the portal storms enough to be used in the ritual.",
+    "volume": "620 ml"
   },
   {
     "id": "concentrated_underhill_essence",

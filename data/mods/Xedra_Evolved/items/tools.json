@@ -180,7 +180,8 @@
       "practice": 4,
       "done_message": "You set the time trap on the ground."
     },
-    "flags": [ "SINGLE_USE" ]
+    "flags": [ "SINGLE_USE" ],
+    "volume": "2150 ml"
   },
   {
     "id": "xedra_dreamsmith_time_watch",

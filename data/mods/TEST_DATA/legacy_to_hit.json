@@ -159,7 +159,24 @@
       "exo_forcefield_bash_cut",
       "exo_forcefield_ballistic_pierce",
       "afs_vahagn_smartgun",
-      "afs_mine_shocker"
+      "afs_mine_shocker",
+      "mana_recharge_sphere",
+      "broken_dreamforged_automaton",
+      "vampire_blood_ball",
+      "item_hedge_turn_into_bear_off",
+      "obsidian_rock",
+      "item_gracken_shadowstuff_pocket",
+      "inventor_warp_grenade",
+      "inventor_warp_grenade_act",
+      "portable_dark_age",
+      "portable_dark_age_apct",
+      "lab_file_electrokinesis_item",
+      "lab_file_photokinesis_item",
+      "lab_file_QD944_P_item",
+      "lab_file_IG882_P_item",
+      "grenade_inferno_makeshift",
+      "grenade_inferno_makeshift_act",
+      "grenade_anti_psi_act"
     ]
   },
   {
@@ -369,7 +386,6 @@
     "type": "test_data",
     "//": "Mind Over Matter",
     "legacy_to_hit": [
-      "feral_clair_thrown_rock",
       "grenade_inferno",
       "grenade_inferno_act",
       "id_science_visitor_phavian",

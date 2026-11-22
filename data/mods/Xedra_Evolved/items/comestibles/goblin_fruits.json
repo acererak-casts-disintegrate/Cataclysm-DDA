@@ -736,7 +736,7 @@
     "comestible_type": "FOOD",
     "color": "green_white",
     "weight": "255 g",
-    "volume": "231 ml",
+    "volume": "235 ml",
     "consumption_effect_on_conditions": [ "EOC_GOLBIN_FRUIT_FOCUS_BOOST" ]
   },
   {
@@ -968,7 +968,7 @@
     "color": "yellow",
     "calories": 5,
     "weight": "25 g",
-    "volume": "227 ml",
+    "volume": "230 ml",
     "material": [ "fruit_light" ],
     "consumption_effect_on_conditions": [ "EOC_GOBLIN_FRUIT_CARRY_BOOST" ]
   },

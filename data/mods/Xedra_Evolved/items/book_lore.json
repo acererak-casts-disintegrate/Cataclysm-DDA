@@ -28,7 +28,7 @@
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
     "weight": "3 g",
-    "volume": "1 ml"
+    "volume": "3 ml"
   },
   {
     "type": "ITEM",
@@ -44,7 +44,7 @@
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
     "weight": "3 g",
-    "volume": "1 ml",
+    "volume": "3 ml",
     "required_level": 1,
     "intelligence": 6,
     "time": "5 m",
@@ -219,7 +219,7 @@
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
     "weight": "30 g",
-    "volume": "10 ml"
+    "volume": "25 ml"
   },
   {
     "id": "sevenoclock_map",
@@ -269,7 +269,7 @@
     "material": [ "paper" ],
     "flags": [ "TRADER_AVOID" ],
     "weight": "30 g",
-    "volume": "10 ml"
+    "volume": "25 ml"
   },
   {
     "id": "vampire_anathema_book",
