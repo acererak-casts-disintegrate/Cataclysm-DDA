@@ -94,7 +94,7 @@
         [ "propane_cooker", 16 ],
         [ "acetylene_cooker", 8 ],
         [ "popcan_stove", 20 ],
-        [ "atomic_coffeepot", 115 ],
+        [ "atomic_coffeepot", -1 ],
         [ "fire", -1 ]
       ]
     ]
