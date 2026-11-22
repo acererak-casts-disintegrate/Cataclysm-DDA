@@ -1,0 +1,87 @@
+[
+  {
+    "id": "bio_microgen",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Microfusion Generator CBM" },
+    "description": "A miniaturized fusion reactor.  It has modest output, but will run continuously for over two hundred years thanks to its internal nuclear fuel reservoir.",
+    "weight": "500 g",
+    "price": "1 kUSD 200 USD",
+    "price_postapoc": "15 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "afs_bio_blood_plus",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Synthblood Biofactory CBM" },
+    "description": "A Mercurial Genomics brand biofactory that replaces the user's blood with a synthetic substitute.  Primarily designed to boost combat performance, its common among the corporation's own security forces.  The biofactory can't be removed once integrated with a host.",
+    "price_postapoc": "15 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "afs_bio_deck",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Military Infolink CBM" },
+    "description": "An implanted miniaturized computer isolated from the rest of your systems by military-grade firewalls.  An accompanying jack allows you to interface with external computer systems with minimal risk.  Skill in computers is important, and a failed use may damage your circuits.",
+    "price_postapoc": "10 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "afs_bio_beavy_batteries",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "High-Voltage Battery System CBM" },
+    "description": "A high voltage battery port compatible with the power cartridges normally used in military weaponry.  Intended to supplement internally installed power generation and storage.",
+    "price_postapoc": "7 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "afs_bio_blood_brain",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Blood Neurology CBM" },
+    "description": "A radical nanite treatment that allows its host's circulatory system to function as a secondary nervous system, greatly increasing their mental acuity and allowing them to survive trauma that would otherwise be fatal.  A cybernetic enhancement of this category is a rare find and could be easily traded for significant favors and resources.",
+    "price_postapoc": "475 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "bio_shield_weak",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "HawkingCorps Mark I Shield CBM" },
+    "description": "Imagine a computer inside your body playing pong against the universe.  The paddles are made of energy fields and how it causes this to happen are trade secrets.  -From the owners manual of HawkingCorps GravyField Mark I.  Activating the field will reduce incoming bashing and cut damage by 5 points.",
+    "price": "80 kUSD",
+    "price_postapoc": "80 kUSD",
+    "difficulty": 6
+  },
+  {
+    "id": "bio_shield_medium",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "HawkingCorps Mark V Shield CBM" },
+    "description": "Powerful and covert, the Mark V Shield is a military-grade shielding system developed for the US military's special operations units.  Its operating principles remain classified; the few engineers who worked on it insisted it was reverse-engineered from something recovered rather than invented.\n\nActivating the shield will create an energy barrier capable of withstanding a modest amount of melee and ranged damage.",
+    "price": "220 kUSD",
+    "price_postapoc": "220 kUSD",
+    "difficulty": 10
+  },
+  {
+    "id": "bio_shield_heavy",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": [ "BIONIC_ITEM" ],
+    "name": { "str": "Kinetic Annulment System CBM" },
+    "description": "A powerful shielding system salvaged from an experimental military robot, crudely adapted for compatibility with biological hosts.  Powerful enough to completely stop most rifle cartridges.  Activating the field will reduce incoming ballistic and piercing damage by 40 points.",
+    "price": "1320 kUSD",
+    "price_postapoc": "1320 kUSD",
+    "difficulty": 16
+  }
+]

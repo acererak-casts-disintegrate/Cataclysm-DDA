@@ -1,0 +1,248 @@
+[
+  {
+    "type": "item_group",
+    "id": "afs_any_ballistic_h_ammo",
+    "copy-from": "afs_any_ballistic_h_ammo",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "afs_25mm_ball", 15 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_any_ballistic_m_gun",
+    "copy-from": "afs_any_ballistic_m_gun",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "afs_sr77", 10 ], [ "afs_marsec_t72", 2 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_any_hand_grenade",
+    "copy-from": "afs_any_hand_grenade",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "afs_HE_grenade", "count": [ 1, 3 ] }, { "item": "afs_toxic_grenade", "count": [ 1, 3 ] } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_any_voltaic_gun",
+    "copy-from": "afs_any_voltaic_gun",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "afs_archangel_enr", 9 ], { "item": "afs_mine_shocker", "prob": 20 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_armor_military_infantry_g",
+    "copy-from": "afs_armor_military_infantry_g",
+    "subtype": "collection",
+    "extend": { "items": [ { "item": "afs_backpack_shieldgen", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_bionics_power",
+    "copy-from": "afs_bionics_power",
+    "extend": { "items": [ [ "bio_microgen", 5 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_colonist_coats",
+    "copy-from": "afs_colonist_coats",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "item": "afs_leather_jacket", "prob": 5 },
+        { "item": "afs_bolero", "prob": 2 },
+        { "item": "afs_cyberpunk_bomber", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_dead_survivor",
+    "copy-from": "afs_dead_survivor",
+    "subtype": "collection",
+    "extend": { "items": [ { "item": "afs_heavy_suit_battery_cell", "count": [ 1, 2 ], "prob": 80, "charges": [ 100, 1000 ] } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_frontier_cryo_g",
+    "copy-from": "afs_frontier_cryo_g",
+    "subtype": "collection",
+    "extend": { "items": [ { "item": "afs_heavy_suit_battery_cell", "count": [ 1, 2 ], "prob": 25, "charges": [ 0, 1000 ] } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_milspec",
+    "copy-from": "ammo_milspec",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "afs_25mm_ball", 10 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_milspec",
+    "copy-from": "ammo_rifle_milspec",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        [ "afs_7.50mm_ap_caseless", 5 ],
+        [ "afs_7.50mm_smart", 1 ],
+        [ "3x35dart", 4 ],
+        [ "3x35frangible", 3 ],
+        [ "3x35toxic", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "army_personal_locker",
+    "copy-from": "army_personal_locker",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "item": "afs_toxic_knife", "prob": 1 },
+        { "item": "afs_tripod_light", "prob": 5 },
+        { "item": "afs_survival_heater", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op",
+    "copy-from": "bionics_op",
+    "extend": { "items": [ [ "bio_microgen", 3 ], [ "bio_shield_heavy", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_reaver",
+    "copy-from": "bionics_reaver",
+    "extend": { "items": [ [ "bio_microgen", 3 ], [ "afs_bio_deck", 10 ], [ "bio_shield_weak", 10 ], [ "bio_shield_weak", 10 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_sci",
+    "copy-from": "bionics_sci",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "bio_microgen", 2 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "clothing_fancy",
+    "copy-from": "clothing_fancy",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "afs_lx_shirt", "prob": 5 }, { "item": "afs_lx_dress", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "consumer_electronics",
+    "copy-from": "consumer_electronics",
+    "extend": { "items": [ [ "afs_glass_AR_device", 2 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "dishes_utility",
+    "copy-from": "dishes_utility",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "afs_thermos", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "energy_weapon_armory",
+    "copy-from": "energy_weapon_armory",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "afs_graf337", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_milspec",
+    "copy-from": "gunmod_milspec",
+    "extend": { "items": [ [ "firmware_overpressure", 3 ], [ "firmware_subsonic", 3 ], [ "firmware_incendiary", 2 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_pistol_milspec",
+    "copy-from": "guns_pistol_milspec",
+    "extend": { "items": [ [ "afs_marsec_t72", 2 ], [ "3x35_pistol", 2 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_milspec",
+    "copy-from": "guns_rifle_milspec",
+    "extend": { "items": [ [ "afs_sr77", 4 ], [ "wasp_gun", 2 ], { "group": "afs_wraitheon_vahagn_cache", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "hazmat_suits",
+    "copy-from": "hazmat_suits",
+    "extend": { "items": [ [ "afs_hazard_suit", 20 ], [ "afs_hazard_suit_casual", 10 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "mags_milspec",
+    "copy-from": "mags_milspec",
+    "extend": {
+      "items": [ [ "afs_sr77_45mag", 3 ], [ "afs_marsect72_speedloader9", 2 ], [ "3x35_75_mag", 2 ], [ "3x35_150_mag", 1 ] ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": {
+      "items": [
+        [ "afs_ilbe", 5 ],
+        [ "afs_triple_stacker_pouch", 5 ],
+        [ "afs_grenade_pouch", 3 ],
+        [ "afs_ammo_satchel", 3 ],
+        [ "afs_backpack_rockets", 1 ],
+        [ "afs_combat_cryo_xl", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mine_equipment",
+    "copy-from": "mine_equipment",
+    "extend": { "items": [ { "group": "afs_exosuit_light_worker", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "supplies_mechanics",
+    "copy-from": "supplies_mechanics",
+    "extend": { "items": [ [ "afs_battery_charger", 3 ], { "group": "afs_welding_paste_tube", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "supplies_mechanics_milspec",
+    "copy-from": "supplies_mechanics_milspec",
+    "extend": { "items": [ [ "afs_cRTG", 2 ] ] }
+  },
+  {
+    "id": "afs_wraitheon_vahagn_cache",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "afs_vahagn_smartgun" },
+      { "item": "afs_vahagn_smartgun_mag", "count": 2 },
+      { "item": "afs_7.50mm_smart", "count": [ 750, 1500 ] }
+    ]
+  },
+  {
+    "id": "afs_exosuit_light_worker",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "modular_exosuit_light", "prob": 100 },
+      { "item": "afs_exo_standard_underlayer", "prob": 90 },
+      { "item": "exo_helmet_plastic", "prob": 90 },
+      { "item": "exo_torso_plastic", "prob": 90 },
+      { "item": "exo_arm_plastic", "prob": 90 },
+      { "item": "exo_leg_plastic", "prob": 90 },
+      { "group": "afs_exo_basic_power", "prob": 75 },
+      { "group": "afs_exo_basic_accessories", "prob": 50 },
+      { "group": "afs_exo_basic_accessories", "prob": 50 },
+      { "group": "afs_power_tools", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "afs_welding_paste_tube",
+    "items": [ { "item": "afs_welding_paste", "count": 280 } ]
+  }
+]

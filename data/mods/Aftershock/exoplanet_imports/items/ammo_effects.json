@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ELECTRIC_CHAIN",
+    "type": "ammo_effect",
+    "always_cast_spell": true,
+    "spell_data": { "id": "spell_electric_chain" }
+  },
+  {
+    "id": "VAHAGN",
+    "type": "ammo_effect",
+    "always_cast_spell": true,
+    "spell_data": { "id": "spell_vahagn" }
+  }
+]

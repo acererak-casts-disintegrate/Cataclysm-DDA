@@ -1,0 +1,31 @@
+[
+  {
+    "id": "afs_graf337",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "name": { "str": "Graf 335L" },
+    "copy-from": "afs_av22",
+    "description": "A laser pistol of tremendous power, equally as likely to melt its targets as it is to melt itself.  Powerful enough to punch through heavy military armor, it'll win most shootouts so long as you can end them in three shots or less.",
+    "dispersion": 480,
+    "price": "1250 USD",
+    "price_postapoc": "1250 USD",
+    "ranged_damage": { "damage_type": "afs_laser", "amount": 50 },
+    "overheat_threshold": 100,
+    "cooling_value": 15,
+    "heat_per_shot": 50,
+    "range": 15,
+    "modes": [ [ "DEFAULT", "pulse", 1 ] ],
+    "energy_drain": "75 kJ",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "magazine_well": "75 ml",
+        "item_restriction": [ "afs_cartridge", "afs_compact_cartridge", "afs_bootleg_cartridge", "afs_archeotech_cartridge" ]
+      }
+    ],
+    "weapon_category": [ "AUTOMATIC_PISTOLS" ]
+  }
+]

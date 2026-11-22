@@ -1,0 +1,20 @@
+[
+  {
+    "id": "afs_25mm_ball",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "copy-from": "afs_25mm_shot",
+    "name": { "str_sp": "25mm Ball" },
+    "description": "Standard issue US Army 25mm rounds, loading a single lead-core steel-jacketed projectile.  Suitable for general purpose and anti-personnel use, these are the most common 25mm rounds in circulation.",
+    "//": "expensive illegal ammo",
+    "price": "1350 USD",
+    "material": [ "superalloy", "powder", "plastic" ],
+    "symbol": "=",
+    "color": "pink",
+    "count": 5,
+    "ammo_type": "afs_25mm",
+    "range": 110,
+    "damage": { "damage_type": "bullet", "amount": 80, "armor_penetration": 30 },
+    "dispersion": 15
+  }
+]

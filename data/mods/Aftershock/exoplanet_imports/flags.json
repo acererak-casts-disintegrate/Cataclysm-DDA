@@ -1,0 +1,11 @@
+[
+  {
+    "id": "SHIELD_GENERATOR",
+    "type": "json_flag",
+    "info": "This item is capable of projecting a Riemann protective shield."
+  },
+  {
+    "id": "ACTIVE_CRYOSUIT",
+    "type": "json_flag"
+  }
+]

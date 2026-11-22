@@ -157,7 +157,9 @@
       "exo_jetpack",
       "exo_forcefield",
       "exo_forcefield_bash_cut",
-      "exo_forcefield_ballistic_pierce"
+      "exo_forcefield_ballistic_pierce",
+      "afs_vahagn_smartgun",
+      "afs_mine_shocker"
     ]
   },
   {
