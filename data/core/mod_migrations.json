@@ -46,5 +46,17 @@
     "//": "Removed in 0.I",
     "id": "speedydex",
     "removal_reason": "Does not meet repo requirements of offering a different, curated gameplay experience.  Mod can trivially be reproduced in JSON with enchantments."
+  },
+  {
+    "type": "mod_migration",
+    "//": "Removed in 0.H-custom",
+    "id": "military_professions",
+    "removal_reason": "Its last three professions (Military Rifleman, Operator Recon and Operator CBRN) are now in the base game."
+  },
+  {
+    "type": "mod_migration",
+    "//": "Removed in 0.H-custom",
+    "id": "fuji_mpp",
+    "removal_reason": "Merged into Military Professions, whose professions are now in the base game."
   }
 ]

@@ -864,7 +864,10 @@
       "major-general",
       "nco",
       "combat-mechanic",
-      "combat-engineer"
+      "combat-engineer",
+      "mil_rifleman",
+      "mil_operator",
+      "mil_cbrn"
     ],
     "map_extra": "mx_helicopter",
     "distance_initial_visibility": 0,
@@ -911,7 +914,10 @@
       "major-general",
       "nco",
       "combat-mechanic",
-      "combat-engineer"
+      "combat-engineer",
+      "mil_rifleman",
+      "mil_operator",
+      "mil_cbrn"
     ],
     "requirement": "achievement_reach_military_base",
     "distance_initial_visibility": 25,
