@@ -336,7 +336,8 @@
           { "item": "jewelry_front", "chance": 50, "repeat": [ 2, 3 ] },
           { "item": "stash_drugs", "chance": 50, "repeat": [ 2, 3 ] },
           { "item": "harddrugs", "chance": 50, "repeat": [ 1, 2 ] },
-          { "item": "jewelry_safe", "chance": 20 }
+          { "item": "jewelry_safe", "chance": 20 },
+          { "item": "bionics_common", "chance": 10 }
         ],
         "F": [ { "item": "SUS_office_desk", "chance": 50 }, { "item": "consumer_electronics", "chance": 30, "repeat": [ 1, 2 ] } ],
         "t": { "item": "SUS_trash_floor_light", "chance": 30, "repeat": [ 1, 2 ] },

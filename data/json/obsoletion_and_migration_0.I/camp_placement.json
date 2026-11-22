@@ -5,10 +5,6 @@
   },
   {
     "type": "camp_migration",
-    "camp_migrations": { "name": "Exodii", "overmap_terrain": "exodii_base_x1y2z1", "faction": "exodii" }
-  },
-  {
-    "type": "camp_migration",
     "camp_migrations": { "name": "???", "overmap_terrain": "hive", "faction": "apis_hive" }
   },
   {

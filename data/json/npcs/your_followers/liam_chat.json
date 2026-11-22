@@ -1,7 +1,7 @@
 [
   {
     "type": "talk_topic",
-    "id": [ "TALK_Liam_SOCIAL" ],
+    "id": "TALK_Liam_SOCIAL",
     "dynamic_line": "Any time, what's on your mind?",
     "responses": [
       { "text": "I'd like your opinion on a job we're doing.", "topic": "TALK_Liam_Opinions" },
@@ -266,11 +266,6 @@
         "condition": { "u_has_mission": "directions_hub01" }
       },
       {
-        "text": "This 'scrap metal castle' sounds far fetched to me.",
-        "topic": "TALK_Liam_Opinions_directions_exodii",
-        "condition": { "u_has_mission": "directions_exodii" }
-      },
-      {
         "text": "What sounds better to you, a 'bullet bank' or a woman who feeds visitors?",
         "topic": "TALK_Liam_Opinions_directions_artisans",
         "condition": { "u_has_mission": "directions_artisans" }
@@ -466,26 +461,6 @@
         "condition": { "u_has_mission": "MISSION_OLD_GUARD_REP_2" }
       },
       {
-        "text": "What do you think about these robots?  Crazy stuff, hey?",
-        "topic": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-NotMet",
-        "condition": {
-          "and": [
-            { "u_has_mission": "MISSION_OLD_GUARD_REP_3" },
-            { "not": { "compare_string": [ "yes", { "u_val": "general_meeting_u_met_Rubik" } ] } }
-          ]
-        }
-      },
-      {
-        "text": "What do you think about these robots?  Crazy stuff, hey?",
-        "topic": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-HasMet",
-        "condition": {
-          "and": [
-            { "u_has_mission": "MISSION_OLD_GUARD_REP_3" },
-            { "compare_string": [ "yes", { "u_val": "general_meeting_u_met_Rubik" } ] }
-          ]
-        }
-      },
-      {
         "text": "Do you think it's really a monster hitting those trade caravans?  Any ideas how we should deal with it?",
         "topic": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_4",
         "condition": { "u_has_mission": "MISSION_OLD_GUARD_REP_4" }
@@ -499,26 +474,6 @@
         "text": "Well, now we're radio technicians.  Sounds fun, don't you think?",
         "topic": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REPEATER_BEGIN",
         "condition": { "u_has_mission": "MISSION_OLD_GUARD_REPEATER_BEGIN" }
-      },
-      {
-        "text": "What do you make of these weird pictographs?  I think they're directions somewhere.",
-        "topic": "TALK_Liam_Opinions_directions_exodii_signpost",
-        "condition": { "u_has_mission": "directions_exodii_signpost" }
-      },
-      {
-        "text": "Where do you think we can get some anesthetic for that robot guy?",
-        "topic": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK",
-        "condition": { "u_has_mission": "RUBIK_ANUS_FETICK" }
-      },
-      {
-        "text": "Any thoughts on this scouting mission, checking out this bunker thing?",
-        "topic": "TALK_Liam_Opinions_EXODII_MISSION_CONTACT_HUB",
-        "condition": { "u_has_mission": "EXODII_MISSION_CONTACT_HUB" }
-      },
-      {
-        "text": "How do you think we should start looking for this lost interdimensional building?",
-        "topic": "TALK_Liam_Opinions_EXODII_MISSION_WAREHOUSE",
-        "condition": { "u_has_mission": "EXODII_MISSION_WAREHOUSE" }
       },
       {
         "text": "You ready to go burn some shit down?",
@@ -832,16 +787,6 @@
       "no": "Hell yeah, this sounds so badass!  Let's be careful though, 'secret lab' sounds like a place that's gonna have some defenses."
     },
     "responses": [ { "text": "You bet.  I'd like your opinion on something else.", "topic": "TALK_Liam_Opinions" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_directions_exodii",
-    "dynamic_line": {
-      "compare_string": [ "yes", { "u_val": "general_meeting_u_met_Rubik" } ],
-      "yes": "We've been there, remember?  It's got those cyborg guys, the cockney ones.",
-      "no": "Far-fetched and awesome!  Let's go see.  Maybe it's an abandoned theme park or something."
-    },
-    "responses": [ { "text": "I'd like your opinion on something else.", "topic": "TALK_Liam_Opinions" } ]
   },
   {
     "type": "talk_topic",
@@ -1242,23 +1187,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-NotMet",
-    "dynamic_line": "I dunno, but compared to the last two missions for that guy, I gotta admit I'm kinda stoked.  Robots?  This sounds *wicked*.  Do you think we're talking more Terminator, or Wall-E?  Doesn't matter.  Robots!",
-    "responses": [ { "text": "Thanks man.  I'd like your opinion on something else, actually.", "topic": "TALK_Liam_Opinions" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-HasMet",
-    "dynamic_line": "Uh, well, we *did* meet that weird cyborg guy in the castle full of giant robot dogs matching this exact description, right?  Tell me you remember that.  Damn, it's worse saying it out loud.  I still can't really believe all this stuff has really happened.",
-    "responses": [
-      {
-        "text": "Oh, right, I remember that.  I'd like your opinion on something else, though.",
-        "topic": "TALK_Liam_Opinions"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_4",
     "dynamic_line": "You know me my friend,\" he shrugs and grins at you.  \"I'd have said it was some kinda cryptid or something *before* the world got flooded with monsters and mutants.  Nowadays, I think I'd be more surprised if it was bandits again.  As for how to deal with it, well, I guess we're getting pretty good at dealing with this kind of thing now.  Let's handle it how we usually do: with style.",
     "responses": [ { "text": "Damn straight.  I'd like your opinion on something else, though.", "topic": "TALK_Liam_Opinions" } ]
@@ -1281,40 +1209,6 @@
     "responses": [
       { "text": "Sounds like a great idea.  I'd like your opinion on something else, though.", "topic": "TALK_Liam_Opinions" }
     ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_directions_exodii_signpost",
-    "dynamic_line": "Yeah, I'm with you there, it's some kind of weird map.  The smart thing to do is probably avoid it, this is some really weird shit.  I've never been one to do the smart thing though, myself.  Probably gonna have troubles sleeping until I know what that thing is trying to lead us to.",
-    "responses": [ { "text": "I know what you mean.  I'd like your opinion on something else.", "topic": "TALK_Liam_Opinions" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK",
-    "dynamic_line": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
-    "responses": [
-      { "text": "…Yes.", "topic": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK-1" },
-      { "text": "Yes?", "topic": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK-1" },
-      { "text": "Yes!", "topic": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK-1" }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_RUBIK_ANUS_FETICK-1",
-    "dynamic_line": "*grins.  \"Okay, just wanted to clear that up.  I thought maybe I was having some kind of psychotic break, glad it's at least mutual.  Anyway, first place that comes to mind for that kinda stuff would be a hospital, but that's suicide.  Maybe a pharmacy?  Would they have the right stuff?  Seems like a stretch.  Maybe like, a vet clinic or a private surgery clinic might be safer?  I'll level with you, I never got into anything harder than Mary Jane, this is past my pay grade.\"",
-    "responses": [ { "text": "Thanks man.  I'd like your opinion on something else, actually.", "topic": "TALK_Liam_Opinions" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_EXODII_MISSION_CONTACT_HUB",
-    "dynamic_line": "Something about this kinda rubs me the wrong way, my friend.  I don't know what it is.  That Rubik guy seems nice enough but I feel like we're not getting the whole story.  Just tread carefully, okay?",
-    "responses": [ { "text": "Thanks man.  I'd like your opinion on something else, actually.", "topic": "TALK_Liam_Opinions" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_Liam_Opinions_EXODII_MISSION_WAREHOUSE",
-    "dynamic_line": "Seems to me we could be wandering the area forever just looking for this thing, to be honest.  I guess we could go up somewhere high like a radio tower, maybe with some binoculars, and see if we can spot it?  Our best bet might be to ask a few folks that have been around though, pool our resources.",
-    "responses": [ { "text": "Thanks man.  I'd like your opinion on something else, actually.", "topic": "TALK_Liam_Opinions" } ]
   },
   {
     "type": "talk_topic",
@@ -1698,7 +1592,6 @@
       "TALK_Liam_Opinions_MISSION_EVAC_SMOKER_GET_CIGARETTES",
       "TALK_Liam_Opinions_directions_isherwood",
       "TALK_Liam_Opinions_directions_hub01",
-      "TALK_Liam_Opinions_directions_exodii",
       "TALK_Liam_Opinions_directions_artisans",
       "TALK_Liam_Opinions_MISSION_BEGGAR_2_BOX_SMALL",
       "TALK_Liam_Opinions_MISSION_BEGGAR_2_DUCT_TAPE",
@@ -1721,8 +1614,6 @@
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_1-Fortunecookie",
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_1-Psycho",
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_2",
-      "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-NotMet",
-      "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_3-HasMet",
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_4",
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REP_5",
       "TALK_Liam_Opinions_MISSION_OLD_GUARD_REPEATER_BEGIN",
@@ -1745,10 +1636,6 @@
       "TALK_Liam_Opinions_MISSION_REFUGEE_Uyen_3",
       "TALK_Liam_Opinions_MISSION_REFUGEE_Vanessa_1",
       "TALK_Liam_Opinions_MISSION_TACOMA_Nunez",
-      "TALK_Liam_Opinions_directions_exodii_signpost",
-      "TALK_Liam_Opinions_RUBIK_ANUS_FETICK-1",
-      "TALK_Liam_Opinions_EXODII_MISSION_CONTACT_HUB",
-      "TALK_Liam_Opinions_EXODII_MISSION_WAREHOUSE",
       "TALK_Liam_Opinions_MISSION_pizzaiolo_1-chill",
       "TALK_Liam_Opinions_MISSION_pizzaiolo_1-yeah",
       "TALK_Liam_Opinions_MISSION_pizzaiolo_2",

@@ -64,7 +64,8 @@
       "weakpoint_sets": [ "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
       "families": [ "prof_wp_syn_armored" ]
     },
-    "delete": { "flags": [ "STUMBLES" ] }
+    "delete": { "flags": [ "STUMBLES" ] },
+    "dissect": "dissect_CBM_OP"
   },
   {
     "id": "mon_zombie_soldier_blackops_2",
@@ -76,7 +77,8 @@
     "bleed_rate": 0,
     "relative": { "hp": 20, "speed": 10, "melee_skill": 1, "dodge": 1, "vision_night": 15 },
     "upgrades": false,
-    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 3 } ], "flags": [ "KEENNOSE" ] }
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 3 } ], "flags": [ "KEENNOSE" ] },
+    "dissect": "dissect_CBM_OP2"
   },
   {
     "id": "mon_zombie_soldier_acid_1",

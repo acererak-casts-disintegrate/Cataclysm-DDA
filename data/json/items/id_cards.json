@@ -337,20 +337,5 @@
     "weight": "3 g",
     "volume": "5 ml",
     "category": "keys"
-  },
-  {
-    "type": "ITEM",
-    "id": "warehouse_rebooter",
-    "color": "blue",
-    "symbol": "%",
-    "name": { "str": "Exodii comm rebooter" },
-    "description": "A small rectangular device that Rubik gave you.  It is meant to be plugged in a locator antenna to reactivate it.",
-    "price": "0 cent",
-    "volume": "250 ml",
-    "weight": "500 g",
-    "material": [ "plastic", "qt_steel" ],
-    "flags": [ "TRADER_AVOID" ],
-    "price_postapoc": "0 cent",
-    "category": "keys"
   }
 ]

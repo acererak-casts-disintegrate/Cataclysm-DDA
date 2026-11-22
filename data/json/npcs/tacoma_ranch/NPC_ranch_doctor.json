@@ -54,11 +54,7 @@
           "clear_mission"
         ]
       },
-      {
-        "text": "Could you help me with some bionics?",
-        "topic": "TALK_RANCH_DOCTOR_BIONICS",
-        "condition": { "compare_string": [ "yes", { "u_val": "knowledge_exodization_u_knows_exodiilore" } ] }
-      },
+      { "text": "Could you help me with some bionics?", "topic": "TALK_RANCH_DOCTOR_BIONICS" },
       { "text": "I could use your medical assistance.", "topic": "TALK_RANCH_DOCTOR_AID" },
       { "text": "…", "topic": "TALK_DONE" }
     ]

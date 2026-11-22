@@ -53,18 +53,6 @@
         }
       },
       {
-        "text": "I'm looking for a specific, strange building.  I wonder if you've heard anything about it?",
-        "topic": "TALK_NPC_CAMPER_VAN_TRAVELER_EXODII_MISSION_WAREHOUSE",
-        "condition": {
-          "and": [
-            { "compare_string": [ "yes", { "npc_val": "dialogue_first_meeting_knows_u" } ] },
-            { "u_has_mission": "EXODII_MISSION_WAREHOUSE" },
-            { "not": { "compare_string": [ "yes", { "npc_val": "asked_about_exodii_warehouse_mission" } ] } }
-          ]
-        },
-        "effect": { "run_eocs": [ "EOC_exodii_mission_wh_directions_chance" ] }
-      },
-      {
         "text": "Where did you say you were going again?",
         "topic": "TALK_NPC_CAMPER_VAN_TRAVELER_DESTINATION",
         "condition": { "compare_string": [ "yes", { "npc_val": "dialogue_first_meeting_knows_u" } ] }
@@ -139,36 +127,6 @@
         "condition": { "not": { "compare_string": [ "yes", { "npc_val": "dialogue_first_meeting_knows_u" } ] } }
       },
       { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_NPC_CAMPER_VAN_TRAVELER_EXODII_MISSION_WAREHOUSE",
-    "dynamic_line": {
-      "concatenate": [
-        "&You describe the warehouse to the best of your ability.  <npc_name> considers for a moment",
-        {
-          "compare_string": [ "no", { "npc_val": "exodii_mission_wh_correct" } ],
-          "yes": {
-            "gendered_line": ", then frowns.  \"I don't believe I've heard about anything like that, no.  Sorry.\"",
-            "relevant_genders": [ "npc" ]
-          },
-          "no": ", nodding along.  \"Yeah, I remember something like that a while back.  Pretty memorable building, I think it's what you're looking for.\""
-        }
-      ]
-    },
-    "speaker_effect": { "effect": { "npc_add_var": "asked_about_exodii_warehouse_mission", "value": "yes" } },
-    "responses": [
-      {
-        "//": "The other responses are stored in common_talk.json in the exodii folder, to avoid repetition.",
-        "text": "Oh well.  Thanks anyway.  I'll go ask around.",
-        "topic": "TALK_DONE",
-        "condition": { "compare_string": [ "no", { "npc_val": "exodii_mission_wh_correct" } ] },
-        "effect": [
-          { "math": [ "exodii_mission_wh_chance", "-=", "1" ] },
-          { "math": [ "exodii_mission_wh_chance = max( exodii_mission_wh_chance, 1 )" ] }
-        ]
-      }
     ]
   },
   {

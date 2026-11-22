@@ -68,7 +68,8 @@
       { "item": "survivormap", "prob": 1 },
       { "group": "hat_hard_flashlight", "prob": 10 },
       { "item": "honey_ant", "prob": 30, "count": 2 },
-      { "item": "homemade_bomb_act", "prob": 1 }
+      { "item": "homemade_bomb_act", "prob": 1 },
+      { "item": "bio_metabolics", "prob": 10 }
     ]
   },
   {

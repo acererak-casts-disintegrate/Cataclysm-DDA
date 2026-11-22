@@ -110,22 +110,12 @@
       { "power_min": 0, "power_max": 149, "id": "epilogue_faction_robofac_0" },
       {
         "power_min": 150,
-        "dynamic": [ { "faction": "exodii", "power_max": 150 }, { "faction": "the_great_library", "power_max": 150 } ],
+        "dynamic": [ { "faction": "the_great_library", "power_max": 150 } ],
         "id": "epilogue_faction_robofac_150"
       },
       {
         "power_min": 150,
-        "dynamic": [ { "faction": "exodii", "power_min": 150 }, { "faction": "the_great_library", "power_max": 150 } ],
-        "id": "epilogue_faction_robofac_150"
-      },
-      {
-        "power_min": 150,
-        "dynamic": [ { "faction": "exodii", "power_max": 150 }, { "faction": "the_great_library", "power_min": 150 } ],
-        "id": "epilogue_faction_robofac_150"
-      },
-      {
-        "power_min": 150,
-        "dynamic": [ { "faction": "exodii", "power_min": 150 }, { "faction": "the_great_library", "power_min": 150 } ],
+        "dynamic": [ { "faction": "the_great_library", "power_min": 150 } ],
         "id": "epilogue_faction_robofac_thrive"
       },
       {
@@ -133,7 +123,6 @@
           { "faction": "old_guard", "power_min": 150 },
           { "faction": "tacoma_commune", "power_min": 150 },
           { "faction": "robofac", "power_min": 150 },
-          { "faction": "exodii", "power_min": 150 },
           { "faction": "the_great_library", "power_min": 150 }
         ],
         "id": "epilogue_faction_robofac_thrive_OG"
@@ -694,7 +683,6 @@
           { "faction": "old_guard", "power_min": 150 },
           { "faction": "tacoma_commune", "power_min": 150 },
           { "faction": "robofac", "power_min": 150 },
-          { "faction": "exodii", "power_min": 150 },
           { "faction": "the_great_library", "power_min": 150 }
         ],
         "id": "epilogue_faction_hells_raiders_collapse"
@@ -1089,90 +1077,6 @@
       { "power_min": 150, "id": "epilogue_faction_prisoners_150" }
     ],
     "description": "Former prisoners who got their freedom during the apocalypse."
-  },
-  {
-    "type": "faction",
-    "id": "exodii",
-    "name": "The Exodii",
-    "likes_u": 30,
-    "respects_u": 30,
-    "known_by_u": false,
-    "mon_faction": "exodii",
-    "size": 100,
-    "power": 100,
-    "fac_food_supply": [ [ 0, { "calories": 2700000000, "vitamins": { "iron": 86400, "calcium": 86400, "vitC": 86400 } } ] ],
-    "wealth": 75000000,
-    "price_rules": [ { "group": "games_board_all", "premium": 2.5 } ],
-    "relations": {
-      "free_merchants": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "old_guard": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "tacoma_commune": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "lobby_beggars": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "wasteland_scavengers": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "no_faction": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      },
-      "hells_raiders": {
-        "kill on sight": false,
-        "watch your back": true,
-        "share my stuff": false,
-        "guard your stuff": true,
-        "lets you in": false,
-        "defends your space": false,
-        "knows your voice": true
-      }
-    },
-    "epilogues": [
-      { "power_min": 0, "power_max": 149, "id": "epilogue_faction_exodii_0" },
-      { "power_min": 150, "id": "epilogue_faction_exodii_150" }
-    ],
-    "description": "A tribe of scavengers and survivors that have been through this before, and sacrificed what they must to make it through."
   },
   {
     "type": "faction",

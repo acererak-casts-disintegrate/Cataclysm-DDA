@@ -2,7 +2,7 @@
   {
     "id": "achievement_kill_zombie",
     "type": "achievement",
-    "name": "One down, billions to go\u2026",
+    "name": "One down, billions to go…",
     "requirements": [ { "event_statistic": "num_avatar_zombie_kills", "is": ">=", "target": 1 } ]
   },
   {
@@ -1960,20 +1960,6 @@
     "//": "this is the achievement that lets you forever have meta progression disabled",
     "description": "STOP HAND-HOLDING ME!!!",
     "requirements": [  ]
-  },
-  {
-    "id": "achievement_reach_exodii_base",
-    "type": "achievement",
-    "name": "Strange Neighbors",
-    "requirements": [
-      {
-        "event_statistic": "last_overmap_special_avatar_entered",
-        "is": "==",
-        "target": [ "overmap_special_id", "exodii_base" ],
-        "visible": "when_achievement_completed",
-        "description": "Reach the strange fortress"
-      }
-    ]
   },
   {
     "id": "achievement_reach_balthazar",

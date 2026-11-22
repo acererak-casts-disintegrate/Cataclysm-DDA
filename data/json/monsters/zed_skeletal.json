@@ -88,7 +88,8 @@
       "families": [ "prof_wp_skeleton", "prof_electromagnetics" ],
       "flags": [ "ELECTRIC", "PULP_PRYING" ]
     },
-    "delete": { "flags": [ "STUMBLES" ] }
+    "delete": { "flags": [ "STUMBLES" ] },
+    "dissect": "dissect_CBM_CIV"
   },
   {
     "id": "mon_skeleton_hulk",
