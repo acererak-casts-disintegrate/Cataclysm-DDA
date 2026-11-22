@@ -62,3 +62,16 @@ Left alone: the order-dependent `monsters_spawn_*` / `limit_mod_size_bonus` fail
 Reruns on e93240b09d: magiclysm, package_bionic_professions and core each 1142 / 1147, failing only the five order-dependent tests shared with pure 0.I. Targeted reruns: Xedra purifier and beltable tests pass; overmap coverage passes with Aftershock and with the package; 143 NPC, EOC, mission and character test cases pass.
 
 Still left alone: the five order-dependent failures and Xedra's `nutrients_in_food`, all present on pure 0.I.
+
+## Baseline on e93240b09d
+
+| Mod set | Result | Failures |
+|---|---|---|
+| core | 1142 / 1147 | the five order-dependent tests |
+| magiclysm | 1142 / 1147 | the five order-dependent tests |
+| package_bionic_professions | 1142 / 1147 | the five order-dependent tests |
+| aftershock | 1142 / 1147 | the five order-dependent tests |
+| mindovermatter | 1142 / 1147 | the five order-dependent tests |
+| xedra_evolved | 1141 / 1147 | the five order-dependent tests and `nutrients_in_food` |
+
+The five are `monsters_spawn_eggs`, `monsters_spawn_egg_itemgroups`, `monsters_spawn_babies`, `monsters_spawn_baby_groups` and `limit_mod_size_bonus`. Every failure here also occurs on pure 0.I.
