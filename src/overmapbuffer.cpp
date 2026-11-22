@@ -1417,6 +1417,11 @@ tripoint_abs_omt overmapbuffer::find_random(
 
 shared_ptr_fast<npc> overmapbuffer::find_npc( character_id id )
 {
+    // An invalid id belongs to no NPC; matching it would return any NPC never given an id,
+    // such as a test dummy left in the buffer.
+    if( !id.is_valid() ) {
+        return nullptr;
+    }
     for( auto &it : overmaps ) {
         if( auto p = it.second->find_npc( id ) ) {
             return p;
