@@ -100,3 +100,20 @@ REPO=$PWD WT=../rebase OUT=/tmp/replay SKIP="23 24 25 26 34" rebase-notes/script
 ```
 
 0.I's `cata_test` uses a newer Catch2, so pass `--user-dir DIR` with a space and `--drop-world`. Do not use `-D`: it now takes a value and swallows the test filter.
+
+## Port tools
+
+Scripts used for the real port onto `0.I-custom`, kept here because they lived in a temporary directory. Scripts that need a scratch area read it from `S`.
+
+| Script | Purpose |
+|---|---|
+| `convert_mod_0I.py` | Converts a 0.H-format mod tree to 0.I: item types and subtypes, flattened nested slots, `tool_ammo`, prices, faults, vitamins, milling, e-file devices, monster and monstergroup fields, dialogue variables and math, mutation modifiers to enchantments, enchantment value renames, map `see_cost` and symbols. |
+| `restore_items.py` | Restores items from a 0.H tree into a 0.I tree with their copy-from parents, recipes and item-group entries, removing 0.I's migrations and obsolete stubs for them. |
+| `af_fixes.py`, `af_pipeline.sh` | Aftershock-specific fixes and the pipeline that rebuilt Aftershock from `0.H-custom`. **Do not rerun `af_pipeline.sh` on `0.I-custom`:** it regenerates the mod folder and would wipe the exoplanet imports and the `itemgroups/zz_late` spawns added after it. |
+| `merge_members.py`, `groupedit.py` | Copy monster, vehicle and item group members or whole groups between trees. |
+| `dlg_strip.py` | Removes dialogue responses, effects or dynamic lines by id or regex. |
+| `rm_objs.py`, `removed_ids.py` | Drop top-level objects by id; list ids a commit removed from a file. |
+| `resolve.py` | Resolves conflict hunks in order (`ours`, `theirs`, `both`, `bothc`, `file:PATH`). |
+| `pload.sh` | Load check and filtered `cata_test` run on the port worktree; `MODS` and `N` optional. |
+
+Item groups cannot forward-reference a group defined by `copy-from` in a file loaded later, and files load in lexicographic path order; that is why late spawn edits sit under `itemgroups/zz_late/`.
