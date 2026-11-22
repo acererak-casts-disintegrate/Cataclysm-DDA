@@ -58,9 +58,18 @@ This fork is based on the 0.I stable branch (0.I-1). It carries forward the chan
 * **Data fixes for Xedra Evolved and Mind Over Matter.** Faction relations are made mutual, Xedra's lineage traits are non-purifiable as upstream later made them, Mind Over Matter's concentration and noetic traits can be purified, the core lab terrains Mind Over Matter disables are flagged as such, and impossible item weights and volumes are corrected.
 * **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
 
+## Downloads
+
+Prebuilt packages are on the [Releases page](https://github.com/acererak-casts-disintegrate/Cataclysm-DDA/releases):
+
+* **Windows x64**: `windows-with-graphics-and-sounds` includes the CC-Sounds soundpack; `windows-with-graphics` does not. Unzip anywhere and run `cataclysm-tiles.exe`.
+* **Linux x64**: `linux-with-graphics-and-sounds`, a tarball of the tiles build with CC-Sounds.
+
+There are no macOS or Android builds. Each release is built from a commit on the `0.I-custom` branch by `.github/workflows/release.yml`; its notes link the exact commit.
+
 ## Getting the source
 
-This fork has no prebuilt releases. Clone this repository and check out the `0.I-custom` branch, then build it as described below. The previous, 0.H-based version of this fork is on the `0.H-custom` branch.
+Clone this repository and check out the `0.I-custom` branch, then build it as described below. The previous, 0.H-based version of this fork is on the `0.H-custom` branch.
 
 ## Compile
 
