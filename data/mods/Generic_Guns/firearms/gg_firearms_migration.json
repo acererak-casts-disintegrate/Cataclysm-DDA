@@ -193,7 +193,17 @@
     "replace": "pistol_pipe_smg"
   },
   {
-    "id": [ "model_10_revolver", "ruger_lcr_38", "sw_610", "bond_410", "colt_saa", "m47a1", "taurus_judge", "sw642" ],
+    "id": [
+      "model_10_revolver",
+      "ruger_lcr_38",
+      "sw_610",
+      "bond_410",
+      "colt_saa",
+      "m47a1",
+      "taurus_judge",
+      "sw642",
+      "rm99_pistol"
+    ],
     "type": "MIGRATION",
     "replace": "pistol_revolver"
   },
@@ -297,7 +307,7 @@
     "replace": "rifle_huge_hmg"
   },
   {
-    "id": [ "m134", "m249", "m240", "m60", "rm614_lmg" ],
+    "id": [ "m134", "m249", "m240", "m60", "rm614_lmg", "rm298" ],
     "type": "MIGRATION",
     "replace": "rifle_lmg"
   },

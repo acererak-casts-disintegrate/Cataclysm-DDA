@@ -276,6 +276,8 @@
       "762_m87",
       "762_jhp",
       "8mm_jhp",
+      "8mm_civilian",
+      "8mm_bootleg",
       "30carbine",
       "30carbine_jsp"
     ],
@@ -375,6 +377,8 @@
       "762_51_incendiary",
       "762_51_m993",
       "8mm_caseless",
+      "8mm_inc",
+      "8mm_fmj",
       "8mm_hvp"
     ],
     "type": "MIGRATION",

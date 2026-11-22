@@ -38,6 +38,8 @@ AMMO_TYPE_WHITELIST = {
     'rock',
     'signal_flare',
     'methanol_fuelcell',
+    'mininuke_mod',  # Mininuke launcher, restored by this fork
+    'shotcanister',  # Pneumatic shotgun (whitelisted below), restored by this fork
     'weldgas'
 }
 SKILL_WHITELIST = {
