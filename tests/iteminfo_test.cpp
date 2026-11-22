@@ -83,6 +83,7 @@ static const itype_id itype_test_gum( "test_gum" );
 static const itype_id itype_test_halligan( "test_halligan" );
 static const itype_id itype_test_hallu_nutmeg( "test_hallu_nutmeg" );
 static const itype_id itype_test_hazmat_suit( "test_hazmat_suit" );
+static const itype_id itype_test_item_info_repair_tool( "test_item_info_repair_tool" );
 static const itype_id itype_test_jack_small( "test_jack_small" );
 static const itype_id itype_test_jug_plastic( "test_jug_plastic" );
 static const itype_id itype_test_longshirt( "test_longshirt" );
@@ -2712,16 +2713,17 @@ TEST_CASE( "repairable_and_with_what_tools", "[iteminfo][repair]" )
 {
     clear_avatar();
 
-    item halligan( itype_test_halligan );
+    // Test-only tool and material, so mods that add repair tools for real materials don't change the text
+    item test_repair_item( itype_test_item_info_repair_tool );
     item hazmat( itype_test_hazmat_suit );
     item rock( itype_test_rock );
 
     std::vector<iteminfo_parts> repaired = { iteminfo_parts::DESCRIPTION_REPAIREDWITH };
 
-    CHECK( item_info_str( halligan, repaired ) ==
+    CHECK( item_info_str( test_repair_item, repaired ) ==
            "--\n"
-           "<color_c_white>Repair</color> using integrated welder, arc welder, makeshift arc welder, or high-temperature welding kit.\n"
-           "<color_c_white>With</color> <color_c_cyan>Steel</color>.\n"
+           "<color_c_white>Repair</color> using TEST item info repair tool.\n"
+           "<color_c_white>With</color> <color_c_cyan>TEST repair material</color>.\n"
          );
 
     // FIXME: Use an item that can only be repaired by test tools

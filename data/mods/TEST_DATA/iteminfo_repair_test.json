@@ -1,0 +1,42 @@
+[
+  {
+    "id": "test_item_info_repair_tool",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": "TEST item info repair tool",
+    "description": "This tests item info repair details.",
+    "weight": "100 g",
+    "volume": "100 ml",
+    "material": [ "test_item_info_repair_material" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [ "test_item_info_repair_material" ],
+        "skill": "fabrication",
+        "cost_scaling": 1
+      }
+    ]
+  },
+  {
+    "type": "ITEM",
+    "id": "test_item_info_repair_item",
+    "symbol": ",",
+    "color": "light_gray",
+    "name": "TEST repair item",
+    "category": "spare_parts",
+    "description": "This is the repair material for the item info repair test.",
+    "material": [ "test_item_info_repair_material" ],
+    "weight": "100 g",
+    "volume": "100 ml"
+  },
+  {
+    "type": "material",
+    "id": "test_item_info_repair_material",
+    "name": "TEST repair material",
+    "copy-from": "iron",
+    "repaired_with": "test_item_info_repair_item"
+  }
+]

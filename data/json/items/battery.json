@@ -194,11 +194,11 @@
     "symbol": "=",
     "color": "green",
     "ammo_type": [ "battery" ],
-    "count": 1000,
-    "capacity": 1000,
+    "count": 200,
+    "capacity": 200,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "LEAK_DAM", "RADIOACTIVE", "BATTERY_LIGHT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 200 } } ]
   },
   {
     "id": "light_minus_atomic_battery_cell",
@@ -208,19 +208,19 @@
     "name": { "str": "ultra-light plutonium fuel battery", "str_pl": "ultra-light plutonium fuel batteries" },
     "description": "A battery that uses a thin plutonium-244 rod to stabilize an exotic nanocompound, designed for small size over everything else.",
     "ascii_picture": "light_minus_atomic_battery_cell",
-    "weight": "4 g",
-    "volume": "1 ml",
+    "weight": "8 g",
+    "volume": "2 ml",
     "price": "15000 cent",
     "price_postapoc": "200 cent",
     "material": [ "iron", "plastic" ],
     "symbol": "=",
     "color": "green",
     "ammo_type": [ "battery" ],
-    "count": 500,
-    "capacity": 500,
+    "count": 10,
+    "capacity": 10,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "LEAK_DAM", "RADIOACTIVE", "BATTERY_ULTRA_LIGHT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 10 } } ]
   },
   {
     "id": "medium_atomic_battery_cell",
@@ -238,10 +238,10 @@
     "symbol": "=",
     "color": "green",
     "ammo_type": [ "battery" ],
-    "count": 5000,
-    "capacity": 5000,
+    "count": 2625,
+    "capacity": 2625,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "LEAK_DAM", "RADIOACTIVE", "BATTERY_MEDIUM" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 5000 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 2625 } } ]
   }
 ]

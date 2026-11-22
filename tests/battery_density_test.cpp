@@ -35,6 +35,9 @@ static const std::map<itype_id, std::string> battery_to_chemistry = {
 
     {itype_id( "light_battery_cell" ), "Lithium/Iron Disulfide"},
 
+    {itype_id( "light_minus_atomic_battery_cell" ), "atomic"},
+    {itype_id( "light_atomic_battery_cell" ), "atomic"},
+    {itype_id( "medium_atomic_battery_cell" ), "atomic"},
     {itype_id( "heavy_atomic_battery_cell" ), "atomic"},
     {itype_id( "huge_atomic_battery_cell" ), "atomic"},
 
