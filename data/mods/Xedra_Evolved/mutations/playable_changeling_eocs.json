@@ -1257,7 +1257,7 @@
     "id": "EOC_POOKIE_GAIN_PINNACLE_OF_FORMS_TRAIT",
     "required_event": "gains_mutation",
     "eoc_type": "EVENT",
-    "condition": { "compare_string": [ "POOKA_SHAPESHIFT_FULL_SELECTOR", { "context_val": "trait" } ] },
+    "condition": { "and": [ { "compare_string": [ "POOKA_SHAPESHIFT_FULL_SELECTOR", { "context_val": "trait" } ] }, "u_is_avatar" ] },
     "effect": [
       {
         "run_eoc_selector": [

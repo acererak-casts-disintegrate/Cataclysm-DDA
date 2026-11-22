@@ -211,7 +211,7 @@
     "id": "EOC_LILIN_GAINS_STRENGTH_TO_STRENGTH_CHOOSE_INITIAL",
     "required_event": "gains_mutation",
     "eoc_type": "EVENT",
-    "condition": { "compare_string": [ "LILIN_ATTRIBUTE_BONUSES", { "context_val": "trait" } ] },
+    "condition": { "and": [ { "compare_string": [ "LILIN_ATTRIBUTE_BONUSES", { "context_val": "trait" } ] }, "u_is_avatar" ] },
     "effect": [
       {
         "run_eoc_selector": [
