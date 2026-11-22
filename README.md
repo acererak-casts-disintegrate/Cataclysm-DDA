@@ -1,3 +1,19 @@
+> [!IMPORTANT]
+> **This is an unofficial fork.** This repository is an independent fork of
+> [Cataclysm: Dark Days Ahead](https://github.com/CleverRaven/Cataclysm-DDA), based on the
+> 0.I-1 stable release. It is not affiliated with, endorsed by or supported by
+> CleverRaven or the Cataclysm: Dark Days Ahead development team.
+>
+> This fork changes content and gameplay in ways the official project has not adopted and may
+> never adopt. It currently offers no support channels beyond this repository, so please do not
+> direct bug reports or feedback about it to the official issue tracker, forums or Discord.
+> Problems introduced by these changes are this fork's responsibility alone.
+>
+> For the official game, releases and support, visit [cataclysmdda.org](https://cataclysmdda.org)
+> or the [official repository](https://github.com/CleverRaven/Cataclysm-DDA). Cataclysm: Dark
+> Days Ahead is licensed under [CC BY-SA 3.0](LICENSE.txt), and this fork is distributed under
+> the same licence.
+
 # Cataclysm: Dark Days Ahead
 
 Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalyptic world. While some have described it as a "zombie game", there is far more to Cataclysm than that. Struggle to survive in a harsh, persistent, procedurally generated world. Scavenge the remnants of a dead civilization for food, equipment, or, if you are lucky, a vehicle with a full tank of gas to get you the hell out of Dodge. Fight to defeat or escape from a wide variety of powerful monstrosities, from zombies to giant insects to killer robots and things far stranger and deadlier, and against the others like yourself, who want what you have...
@@ -6,86 +22,61 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
     <img src="./data/screenshots/ultica-showcase-sep-2021.png" alt="Tileset: Ultica">
 </p>
 
-## Downloads
+## Changes from 0.I
 
-**Releases** - [Stable](https://cataclysmdda.org/releases/) | [Experimental](https://cataclysmdda.org/experimental/)
+This fork is based on the 0.I stable branch (0.I-1). It carries forward the changes this fork made to 0.H, and differs from 0.I as follows.
 
-**Source** - The source can be downloaded as a [.zip archive](https://github.com/CleverRaven/Cataclysm-DDA/archive/master.zip), or cloned from our [GitHub repo](https://github.com/CleverRaven/Cataclysm-DDA/).
+**Core game**
 
-[![General build matrix](https://github.com/CleverRaven/Cataclysm-DDA/actions/workflows/matrix.yml/badge.svg)](https://github.com/CleverRaven/Cataclysm-DDA/actions/workflows/matrix.yml)
-[![Coverage Status](https://coveralls.io/repos/github/CleverRaven/Cataclysm-DDA/badge.svg?branch=master)](https://coveralls.io/github/CleverRaven/Cataclysm-DDA?branch=master)
-[![Open Source Helpers](https://www.codetriage.com/cleverraven/cataclysm-dda/badges/users.svg)](https://www.codetriage.com/cleverraven/cataclysm-dda)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/CleverRaven/Cataclysm-DDA)](https://github.com/CleverRaven/Cataclysm-DDA/graphs/contributors)
-[![Lines of Code](https://tokei.rs/b1/github/CleverRaven/Cataclysm-DDA?category=code)](https://github.com/XAMPPRocky/tokei)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/CleverRaven/Cataclysm-DDA)](https://www.tickgit.com/browse?repo=github.com/CleverRaven/Cataclysm-DDA)
+* **Classic CBM acquisition.** Bionics turn up in loot again and can be harvested from bionic zombies, as in 0.F, instead of coming from the Exodii. Doctor's offices have autodocs, some bionic basements and bunker basements have medical bays, and black-ops zombies carry the bio-operator implants.
+* **Exodii as a baseless scavenger faction.** Their castle, safehouse, warehouse, NPCs (including 0.I's weaponmaster and workers), trade, missions, warehouse search quest and castle scenario are gone. They appear only at rare crashed-pod sites in the wild.
+* **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu or by mod content that causes them on purpose.
+* **Skill rust off by default.** The world option removed after 0.G (vanilla, capped or off) is back, defaulting to off.
+* **Hidden world options shown.** Twelve world-generation options that 0.I hides from the options menu are visible and documented.
+* **Rivtech content restored.** Reverts upstream's removal of the RM120c, RM20, RM228, RM298, RM614, RM88, RM216 SPIW and RM232 IDW, the 5x50mm and 20x66mm ammunition and magazines, the 8x40mm drums and the 8mm variants, and its Rivtech gun nerfs.
+* **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
+* **Classic sci-fi content restored.** Robots (chicken walker and tank drone with JSON attacks in place of their removed hardcoded ones, copbot, riotbot, eyebot, laser turret, mininuke hack), the railgun, shock absorber and fusion blaster CBMs, the laser cannon, heavy rail rifle, mininuke launcher, plasma gun and rifle, RM99 revolver, advanced UPS, solar gear, matching vehicle turrets and the atomic sports car with its minireactor.
+* **Classic power armour.** The combat, field and heavy combat exoskeletons and their environmental helmets return beside 0.I's modular exoskeletons.
+* **Atomic cells and the trickle charger.** Light-minus, light and medium atomic cells return, sized to the same energy-density limits 0.I applies to its heavy atomic cell, as does the trickle charger CBM. The engine now applies trickle charging once per turn instead of once per installed CBM.
+* **Live missile silos and vault loot.** Missile silos are active, guarded sites again, and bank, industry and mall vaults hold their science and military loot.
+* **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
+* **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are core professions; old worlds drop the removed mod on load.
+* **Explicit lengths** for long items that lacked them.
 
-### Packaging status
+**Aftershock**
 
-#### Arch Linux
+* **This fork's Aftershock, not 0.I's.** 0.I marks Aftershock obsolete; this fork carries its own 0.H-based version over, converted to 0.I's data format, and keeps it active.
+* **Earth setting.** The Salus IV colony, exoplanet locations, Whately family and UPLIFT content are removed. Remaining items and lore are reassigned to organisations already in the game, such as Northrop, Rivtech, Shady Hills Corporation, Hub 01, FEMA and XEDRA.
+* **Fewer overrides of core content.** Aftershock no longer replaces core items, vehicles or mechanics, except the pressure tank, which its Rocket Jumper profession needs.
+* **Selected exoplanet content.** Guns, ammunition, clothing, armour, CBMs and tools from 0.I's Aftershock: Exoplanet that fit an Earth setting are imported and re-themed; that mod is marked obsolete.
+* **Data fixes.** Item weights, volumes and lengths, spawns, faction relations and mutation purification are corrected.
 
-Ncurses and tiles versions are available in the [community repos](https://www.archlinux.org/packages/?q=cataclysm-dda).
+**Other in-repo mods**
 
-```sh
-sudo pacman -S cataclysm-dda
-sudo pacman -S cataclysm-dda-tiles
-```
+* **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.
+* **Xedra Evolved.** Its roadside Jotunn encounter spawns.
+* **Data fixes for Xedra Evolved and Mind Over Matter.** Faction relations are made mutual, Xedra's lineage traits are non-purifiable as upstream later made them, Mind Over Matter's concentration and noetic traits can be purified, the core lab terrains Mind Over Matter disables are flagged as such, and impossible item weights and volumes are corrected.
+* **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
 
-#### Fedora
+## Getting the source
 
-Ncurses and tiles versions are available in the [official repos](https://src.fedoraproject.org/rpms/cataclysm-dda).
-
-```sh
-sudo dnf install cataclysm-dda
-```
-
-#### Debian / Ubuntu
-
-Ncurses and tiles versions are available in the [official repos](https://tracker.debian.org/pkg/cataclysm-dda).
-
-```sh
-sudo apt install cataclysm-dda-curses cataclysm-dda-sdl
-```
-
-#### Flatpak
-
-Download from [Flathub](https://flathub.org/apps/org.cataclysmdda.CataclysmDDA).
+This fork has no prebuilt releases. Clone this repository and check out the `0.I-custom` branch, then build it as described below. The previous, 0.H-based version of this fork is on the `0.H-custom` branch.
 
 ## Compile
 
-Please read [COMPILING.md](doc/c++/COMPILING.md) - it covers general information and more specific recipes for Linux, OS X, Windows and BSD. See [COMPILER_SUPPORT.md](doc/c++/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](https://github.com/CleverRaven/Cataclysm-DDA/tree/master/doc).
+Please read [COMPILING.md](doc/c++/COMPILING.md) - it covers general information and more specific recipes for Linux, OS X, Windows and BSD. See [COMPILER_SUPPORT.md](doc/c++/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](doc/).
 
 We also have the following build guides:
 * Building on Windows with `MSYS2` at [COMPILING-MSYS.md](doc/c++/COMPILING-MSYS.md)
 * Building on Windows with `vcpkg` at [COMPILING-VS-VCPKG.md](doc/c++/COMPILING-VS-VCPKG.md)
 * Building with `cmake` at [COMPILING-CMAKE.md](doc/c++/COMPILING-CMAKE.md)  (*unofficial guide*)
 
-## Contribute
+## Licence and credits
 
 Cataclysm: Dark Days Ahead is the result of contributions from over 1000 volunteers under the Creative Commons Attribution ShareAlike 3.0 license. The code and content of the game is free to use, modify, and redistribute for any purpose whatsoever. See https://creativecommons.org/licenses/by-sa/3.0/ for details.
 Some code distributed with the project is not part of the project and is released under different software licenses; the files covered by different software licenses have their own license notices.
 
-Please see [CONTRIBUTING.md](doc/CONTRIBUTING.md) for details.
-
-Special thanks to the contributors, including but not limited to, people below:
-<a href="https://github.com/cleverraven/cataclysm-dda/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=cleverraven/cataclysm-dda" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-## Community
-
-Forums:
-https://discourse.cataclysmdda.org
-
-GitHub repo:
-https://github.com/CleverRaven/Cataclysm-DDA
-
-IRC:
-`#CataclysmDDA` on [Libera Chat](https://libera.chat), https://web.libera.chat/#CataclysmDDA
-
-Official Discord:
-https://discord.gg/jFEc7Yp
+This fork exists only because of the work of those volunteers. Any changes made here are this fork's own and are not theirs.
 
 ## Frequently Asked Questions
 
@@ -101,10 +92,12 @@ Press the `?` key, followed by the `1` key to see the full list of key commands.
 
 **World** on the main menu will generate a fresh world for you. Select **Create World**.
 
-#### I've found a bug. What should I do?
+#### I've found a bug or have a suggestion. What should I do?
 
-Please submit an issue on [our GitHub page](https://github.com/CleverRaven/Cataclysm-DDA/issues/) using [bug report template](https://github.com/CleverRaven/Cataclysm-DDA/issues/new?template=bug_report.md). If you're not able to, send an email to `kevin.granade@gmail.com`.
+This fork currently offers no support channels beyond this repository. Please do not report problems with this fork to the official Cataclysm: Dark Days Ahead project: its developers have no involvement with it.
 
-#### I would like to make a suggestion. What should I do?
+#### Does this fork use AI-assisted development?
 
-Please submit an issue on [our GitHub page](https://github.com/CleverRaven/Cataclysm-DDA/issues/) using [feature request template](https://github.com/CleverRaven/Cataclysm-DDA/issues/new?template=feature_request.md).
+Yes. This fork is developed with extensive AI assistance, and that will continue. Some players object to AI-assisted development, and that is a reasonable position; if it is yours, this fork may not be for you.
+
+The official Cataclysm: Dark Days Ahead project takes the opposite approach: since March 2025 its contributing guidelines have stated that LLM-generated contributions are not acceptable for inclusion. Nothing in this fork reflects on the official project's work or policies.
