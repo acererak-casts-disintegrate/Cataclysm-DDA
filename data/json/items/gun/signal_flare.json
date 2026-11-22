@@ -10,6 +10,7 @@
     "ascii_picture": "flaregunb",
     "weight": "213 g",
     "volume": "500 ml",
+    "longest_side": "20 cm",
     "price": "50 USD",
     "price_postapoc": "5 USD",
     "material": [ "plastic", "steel" ],

@@ -81,6 +81,7 @@
     "ammo": [ "water" ],
     "weight": "24500 g",
     "volume": "12500 ml",
+    "longest_side": "150 cm",
     "price_postapoc": "5 USD",
     "to_hit": -5,
     "range": 10,
