@@ -13,7 +13,7 @@
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "components": [
       [ [ "chem_sulphuric_acid", 1 ] ],
-      [ [ "steel_chunk_any", 1, "LIST" ], [ "scrap", 1 ] ],
+      [ [ "steel_chunk", 1 ], [ "scrap", 1 ] ],
       [ [ "can_drink", 1 ], [ "can_food", 1 ], [ "canister_empty", 1 ] ]
     ]
   },
@@ -42,21 +42,6 @@
     ]
   },
   {
-    "result": "plut_cell",
-    "id_suffix": "from_slurry",
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
-    "category": "CC_ELECTRONIC",
-    "subcategory": "CSC_ELECTRONIC_COMPONENTS",
-    "skill_used": "mechanics",
-    "skills_required": [ "electronics", 4 ],
-    "difficulty": 8,
-    "time": "5 m",
-    "book_learn": [ [ "textbook_atomic_lab", 5 ] ],
-    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
-    "components": [ [ [ "canister_empty", 1 ] ], [ [ "plut_slurry", 10 ], [ "plut_slurry_dense", 5 ] ], [ [ "power_supply", 2 ] ] ]
-  },
-  {
     "result": "light_battery_cell",
     "id_suffix": "afs_plutonium_battery",
     "type": "recipe",
@@ -69,7 +54,7 @@
     "book_learn": [ [ "textbook_atomic_lab", 3 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 } ],
     "components": [
-      [ [ "steel_chunk_any", 1, "LIST" ], [ "scrap", 1 ] ],
+      [ [ "steel_chunk", 1 ], [ "scrap", 1 ] ],
       [ [ "can_drink", 1 ], [ "can_food", 1 ], [ "canister_empty", 1 ] ],
       [ [ "plut_cell", 1 ] ]
     ]
@@ -86,7 +71,7 @@
     "time": "5 m",
     "autolearn": true,
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "CUT", "level": 2 }, { "id": "SCREW", "level": 1 } ],
-    "components": [ [ [ "afs_power_cutter", 1 ] ], [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ] ],
+    "components": [ [ [ "afs_power_cutter", 1 ] ], [ [ "steel_chunk", 3 ], [ "scrap", 6 ] ] ],
     "byproducts": [ [ "plastic_chunk" ], [ "plastic_chunk" ] ]
   },
   {
@@ -176,7 +161,6 @@
   },
   {
     "result": "plut_cell",
-    "id_suffix": "from_fuel",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_ELECTRONIC",

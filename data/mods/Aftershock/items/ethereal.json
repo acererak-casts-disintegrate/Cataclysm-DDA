@@ -7,13 +7,12 @@
     "description": "A thick layer of something that smells worse than walrus fat.  But it keeps you warm.",
     "weight": "1g",
     "volume": "1ml",
-    "price": "36 USD 46 cent",
+    "price": "3646 cent",
     "symbol": "o",
     "warmth": 150,
     "color": "green",
     "material": [ "oil" ],
     "flags": [
-      "RAINPROOF",
       "AURA",
       "SEMITANGIBLE",
       "OVERSIZE",
@@ -24,13 +23,13 @@
       "UNBREAKABLE",
       "ALLOWS_NATURAL_ATTACKS"
     ],
-    "max_worn": 1,
+    "passive_effects": [ { "id": "ench_climate_control_warm" } ],
     "armor": [
       {
         "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r", "mouth", "eyes" ]
       }
     ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_warm" } ]
+    "max_worn": 1
   },
   {
     "id": "cold_res_cream_greater",
@@ -40,7 +39,7 @@
     "description": "The last word in cold snap protection designed to give short term protection in the event of a suit breach in vacuum.",
     "weight": "1g",
     "volume": "1ml",
-    "price": "36 USD 46 cent",
+    "price": "3646 cent",
     "symbol": "o",
     "warmth": 150,
     "color": "green",
@@ -56,12 +55,12 @@
       "UNBREAKABLE",
       "ALLOWS_NATURAL_ATTACKS"
     ],
-    "max_worn": 1,
+    "passive_effects": [ { "id": "ench_climate_control_warm" }, { "id": "ench_cold_armor" } ],
     "armor": [
       {
         "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r", "mouth", "eyes" ]
       }
     ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_warm" }, { "id": "ench_cold_armor" } ]
+    "max_worn": 1
   }
 ]

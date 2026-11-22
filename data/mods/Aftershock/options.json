@@ -1,11 +1,5 @@
 [
   {
-    "id": "anesthetic",
-    "type": "requirement",
-    "//": "Anesthetic cost removed in this mod, as autodocs do all the heavy lifting.",
-    "tools": [ [  ] ]
-  },
-  {
     "type": "EXTERNAL_OPTION",
     "name": "CBM_SLOTS_ENABLED",
     "stype": "bool",
@@ -13,14 +7,8 @@
   },
   {
     "type": "EXTERNAL_OPTION",
-    "name": "GAME_EMP",
+    "name": "EMP_DISABLE_ELECTRONICS",
     "stype": "bool",
-    "value": true
-  },
-  {
-    "type": "EXTERNAL_OPTION",
-    "name": "CAPITALISM",
-    "stype": "bool",
-    "value": true
+    "value": false
   }
 ]

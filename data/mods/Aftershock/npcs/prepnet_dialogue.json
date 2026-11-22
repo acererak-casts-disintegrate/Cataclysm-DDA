@@ -6,11 +6,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_PrepNet_gardener_1",
-    "dynamic_line": {
-      "compare_string": [ "yes", { "u_val": "general_meeting_u_met_prepnet_gardener" } ],
-      "yes": [ "Hey there.", "Hello.", "How are you?", "Welcome!", "How's the weather?" ],
-      "no": "Howdy!  You seem new, what brings you here?"
-    },
+    "dynamic_line": { "compare_string": [ "yes", { "u_val": "general_meeting_u_met_prepnet_gardener" } ] },
     "responses": [
       {
         "text": "Who are you?",

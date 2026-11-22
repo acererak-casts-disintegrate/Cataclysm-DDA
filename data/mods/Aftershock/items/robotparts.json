@@ -1,19 +1,6 @@
 [
   {
     "type": "ITEM",
-    "id": "spidery_legs_big",
-    "name": { "str": "set of spidery legs", "str_pl": "sets of spidery legs" },
-    "description": "A set of big pointy legs, like the ones found under a tripod.",
-    "symbol": "W",
-    "color": "light_gray",
-    "weight": "40000 g",
-    "volume": "20 L",
-    "price": "2 kUSD",
-    "material": [ "steel" ],
-    "category": "spare_parts"
-  },
-  {
-    "type": "ITEM",
     "id": "tripod_chassis",
     "name": { "str_sp": "tripod chassis" },
     "description": "What's left when you remove all moving parts and electronics.  It's the skeleton and armor of the tripod.",
@@ -21,7 +8,7 @@
     "color": "light_gray",
     "weight": "40000 g",
     "volume": "70000 ml",
-    "price": "2 kUSD",
+    "price": "200000 cent",
     "material": [ "steel" ],
     "category": "spare_parts"
   },
@@ -34,7 +21,7 @@
     "color": "light_gray",
     "weight": "60000 g",
     "volume": "80000 ml",
-    "price": "3 kUSD",
+    "price": "300000 cent",
     "material": [ "steel" ],
     "category": "spare_parts"
   },
@@ -47,7 +34,7 @@
     "color": "light_gray",
     "weight": "150000 g",
     "volume": "575000 ml",
-    "price": "10 kUSD",
+    "price": "1000000 cent",
     "material": [ "steel" ],
     "category": "spare_parts"
   },
@@ -60,7 +47,7 @@
     "color": "light_gray",
     "weight": "40000 g",
     "volume": "70000 ml",
-    "price": "2 kUSD",
+    "price": "200000 cent",
     "material": [ "steel" ],
     "category": "spare_parts"
   },
@@ -106,13 +93,21 @@
   },
   {
     "type": "ITEM",
+    "id": "defbot_shot_chassis",
+    "name": { "str_sp": "Aegis chassis" },
+    "description": "What's left when you remove all moving parts and electronics.  It's the skeleton and armor of the Aegis.",
+    "copy-from": "utilibot_chassis",
+    "color": "blue"
+  },
+  {
+    "type": "ITEM",
     "id": "milbot_base_chassis",
     "name": { "str_sp": "military robot chassis" },
     "description": "What's left when you remove all moving parts and electronics.  It's the skeleton and armor of the military robot.",
     "symbol": "c",
     "weight": "40000 g",
     "volume": "70000 ml",
-    "price": "2 kUSD",
+    "price": "200000 cent",
     "material": [ "steel" ],
     "category": "spare_parts",
     "color": "red_green"
@@ -125,7 +120,7 @@
     "symbol": "c",
     "weight": "40000 g",
     "volume": "70000 ml",
-    "price": "2 kUSD",
+    "price": "200000 cent",
     "material": [ "steel" ],
     "category": "spare_parts",
     "color": "red_green"
@@ -139,8 +134,8 @@
     "color": "light_gray",
     "weight": "60000 g",
     "volume": "20 L",
-    "price": "5 kUSD",
-    "price_postapoc": "2 USD 50 cent",
+    "price": "500000 cent",
+    "price_postapoc": "250 cent",
     "material": [ "steel" ],
     "category": "spare_parts"
   }

@@ -7,11 +7,12 @@
     "description": "A back mounted rocket pack, its well worn superalloy nozzles seem to suggest great age.  Units like this one are rarely used by elite military forces and by scavenger-explorers hoping to find high value salvage.  Not powerful enough to enable true flight within a gravity well, but it may still be used to perform short jumps and air-dashes.",
     "weight": "4350 g",
     "volume": "15 L",
-    "price": "50 kUSD",
-    "price_postapoc": "50 kUSD",
-    "material": [ "vacuum_carbide_hard" ],
+    "price": "3900 cent",
+    "price_postapoc": "500 cent",
+    "material": [ "steel", "superalloy" ],
     "symbol": "[",
     "looks_like": "rpg",
+    "tool_ammo": [ "ammonia_liquid" ],
     "use_action": { "type": "cast_spell", "spell_id": "spell_rocket_jump", "no_fail": true, "level": 1 },
     "pocket_data": [
       {
@@ -27,8 +28,7 @@
     "warmth": 6,
     "material_thickness": 5,
     "flags": [ "BELTED", "JETPACK" ],
-    "max_worn": 1,
     "armor": [ { "encumbrance": 10, "coverage": 60, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ],
-    "tool_ammo": [ "ammonia_liquid" ]
+    "max_worn": 1
   }
 ]

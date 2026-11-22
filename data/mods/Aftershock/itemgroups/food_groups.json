@@ -12,11 +12,6 @@
     ]
   },
   {
-    "type": "item_group",
-    "id": "afs_cheap_drinks",
-    "items": [ [ "afs_h2o", 90 ], [ "afs_calorie_water", 50 ], [ "afs_sundew", 50 ], [ "afs_caffex", 50 ] ]
-  },
-  {
     "id": "afs_spices",
     "type": "item_group",
     "//": "This group is for cupboard, drawer, or rack with spices.",
@@ -57,18 +52,6 @@
   },
   {
     "type": "item_group",
-    "id": "afs_cafe_rack",
-    "subtype": "collection",
-    "entries": [
-      { "item": "afs_caffex", "prob": 5 },
-      { "item": "instant_coffee", "prob": 50, "container-item": "afs_foil_bag" },
-      { "item": "sugar", "prob": 40, "container-item": "afs_foil_bag" },
-      { "item": "artificial_sweetener", "prob": 40, "container-item": "afs_foil_bag" },
-      { "item": "cinnamon", "prob": 20, "container-item": "afs_foil_bag" }
-    ]
-  },
-  {
-    "type": "item_group",
     "subtype": "distribution",
     "id": "afs_stored_meals",
     "//": "Meals that require little to no preparation before eating.",
@@ -104,10 +87,10 @@
     "subtype": "collection",
     "id": "afs_mealgrub_procesing",
     "entries": [
-      { "item": "afs_mealgrub_jelly", "count": [ 5, 20 ] },
-      { "prob": 15, "count": [ 5, 25 ], "group": "afs_mealgrubs_afs_foil_bag_5" },
-      { "prob": 5, "count": [ 5, 25 ], "group": "afs_mealgrubs_afs_foil_bag_5" },
-      { "item": "water", "prob": 10, "charges": [ 20, 40 ], "container-item": "jerrycan" }
+      { "item": "afs_mealgrub_jelly", "count-min": 5, "count-max": 20 },
+      { "prob": 15, "count-min": 5, "count-max": 25, "group": "afs_mealgrubs_wrapper_pr_5" },
+      { "prob": 5, "count-min": 5, "count-max": 25, "group": "afs_mealgrubs_wrapper_pr_5" },
+      { "item": "water", "prob": 10, "charges-min": 20, "charges-max": 40, "container-item": "jerrycan" }
     ]
   },
   {
@@ -115,9 +98,9 @@
     "subtype": "collection",
     "id": "afs_mealgrub_precursor",
     "entries": [
-      { "item": "afs_mealgrub_spores", "count": [ 1, 6 ] },
-      { "item": "afs_mealgrub_medium", "prob": 80, "count": [ 23, 6 ] },
-      { "item": "afs_mealgrub_medium", "prob": 33, "count": [ 2, 6 ] }
+      { "item": "afs_mealgrub_spores", "count-min": 1, "count-max": 6 },
+      { "item": "afs_mealgrub_medium", "prob": 80, "count-min": 23, "count-max": 6 },
+      { "item": "afs_mealgrub_medium", "prob": 33, "count-min": 2, "count-max": 6 }
     ]
   },
   {
@@ -154,10 +137,11 @@
   },
   {
     "type": "item_group",
-    "id": "afs_mealgrubs_afs_foil_bag_5",
+    "id": "afs_mealgrubs_wrapper_pr_5",
     "subtype": "collection",
     "//": "This group was created automatically and may contain errors.",
-    "container-item": "afs_foil_bag",
-    "entries": [ { "item": "afs_mealgrubs", "container-item": "null", "count": 5 } ]
+    "container-item": "wrapper_pr",
+    "entries": [ { "item": "afs_mealgrubs", "container-item": "null", "count": 5 } ],
+    "on_overflow": "spill"
   }
 ]

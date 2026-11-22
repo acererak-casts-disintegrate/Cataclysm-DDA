@@ -41,52 +41,6 @@
     ]
   },
   {
-    "id": "xl_jeans",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str_sp": "jeans" },
-    "weight": "900 g",
-    "volume": "3 L",
-    "copy-from": "jeans",
-    "pocket_data": [ { "pocket_type": "CONTAINER", "rigid": true, "max_contains_volume": "750 ml", "max_contains_weight": "1 kg" } ],
-    "material_thickness": 4,
-    "flags": [ "VARSIZE", "POCKETS", "OVERSIZE", "PREFIX_XL" ]
-  },
-  {
-    "id": "xl_technician_pants_gray",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "work pants", "str_pl": "pairs of work pants" },
-    "description": "A pair of gray work pants.",
-    "copy-from": "technician_pants_gray",
-    "weight": "770 g",
-    "volume": "3 L",
-    "pocket_data": [ { "pocket_type": "CONTAINER", "rigid": true, "max_contains_volume": "1700 ml", "max_contains_weight": "2 kg" } ],
-    "material_thickness": 2,
-    "snippet_category": [
-      { "id": "xl_technician_pants_blue", "text": "A pair of XL blue work pants." },
-      { "id": "xl_technician_pants_gray", "text": "A pair of XL gray work pants." },
-      { "id": "xl_technician_pants_lightblue", "text": "A pair of XL light-blue work pants." }
-    ],
-    "flags": [ "VARSIZE", "POCKETS", "OVERSIZE", "PREFIX_XL" ]
-  },
-  {
-    "id": "xl_technician_shirt_gray",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "work t-shirt" },
-    "description": "A gray work t-shirt with a small front pocket.",
-    "weight": "84 g",
-    "volume": "350 ml",
-    "copy-from": "technician_shirt_gray",
-    "snippet_category": [
-      { "id": "xl_technician_shirt_blue", "text": "An XL blue work t-shirt with a small front pocket." },
-      { "id": "xl_technician_shirt_gray", "text": "An XL gray work t-shirt with a small front pocket." },
-      { "id": "xl_technician_shirt_lightblue", "text": "An XL light-blue work t-shirt with a small front pocket." }
-    ],
-    "flags": [ "VARSIZE", "OVERSIZE", "PREFIX_XL" ]
-  },
-  {
     "id": "afs_hi_vis_vest",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -106,7 +60,7 @@
     "copy-from": "jacket_windbreaker",
     "looks_like": "jacket_windbreaker",
     "name": { "str": "company jacket" },
-    "description": "A synthetic jacket adorned with the logos and colors of some interstellar corporation.  Impermeable, but not very warm.",
+    "description": "A synthetic jacket adorned with the logos and colors of some defunct corporation.  Impermeable, but not very warm.",
     "color": "blue"
   },
   {
@@ -126,7 +80,7 @@
     "copy-from": "tie_skinny",
     "looks_like": "tie_skinny",
     "name": { "str": "worker's tie" },
-    "description": "Calling this thin strip of dark fabric a tie would do it a favor."
+    "description": "Calling this thin strip of dark fabric a tie would do it a favour."
   },
   {
     "id": "spacer_jumpsuit",
@@ -139,34 +93,6 @@
     "color": "brown"
   },
   {
-    "id": "afs_hazard_suit",
-    "copy-from": "robofac_enviro_suit",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "soft hazard suit" },
-    "description": "A brightly colored, standard-fab pattern environmental suit for use in industrial and medical settings.  Offers good protection from chemical and radioactive hazards, but is not insulated against heat or cold.  Requires a gasmask or sealed helmet for full protection.",
-    "use_action": {
-      "type": "transform",
-      "menu_text": "Wear casually",
-      "msg": "You slip out of the top of the suit and tie the sleeves around your waist.",
-      "target": "afs_hazard_suit_casual"
-    }
-  },
-  {
-    "id": "afs_hazard_suit_casual",
-    "copy-from": "robofac_enviro_suit_casual",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR" ],
-    "name": { "str": "soft hazard suit (casual)", "str_pl": "soft hazard suits (casual)" },
-    "description": "A brightly colored, standard-fab pattern environmental suit for use in industrial and medical settings.  The upper portion has been tied around the waist casually.",
-    "use_action": {
-      "type": "transform",
-      "menu_text": "Wear normally",
-      "msg": "You untie the sleeves and put back on the top of the suit.",
-      "target": "afs_hazard_suit"
-    }
-  },
-  {
     "id": "spacer_cap",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
@@ -175,7 +101,7 @@
     "looks_like": "powered_earmuffs",
     "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "PARTIAL_DEAF" ],
     "name": { "str": "communications cap" },
-    "description": "A padded cotton cap built around an augmented reality headset.  During normal operation it would provide visual information about a ship subsystems and a communications link with the rest of the crew, but severed from a spaceship, only their hearing protection function retains any utility.",
+    "description": "A padded cotton cap built around an augmented reality headset.  Space Time Inc issued these to launch crews; during normal operation it would provide telemetry and a communications link with the rest of the crew, but with the network gone, only its hearing protection retains any utility.",
     "armor": [
       { "covers": [ "eyes" ], "rigid_layer_only": true, "coverage": 33, "encumbrance": 0 },
       { "covers": [ "head" ], "coverage": 100, "encumbrance": 2 }
@@ -191,8 +117,8 @@
     "weight": "600 g",
     "volume": "10 L",
     "looks_like": "tacvest",
-    "price": "74 USD",
-    "price_postapoc": "50 USD",
+    "price": "7400 cent",
+    "price_postapoc": "5000 cent",
     "material": [ "steel", "plastic" ],
     "symbol": "[",
     "color": "dark_gray",
@@ -200,16 +126,17 @@
     "use_action": { "type": "holster", "holster_prompt": "Stash ammo", "holster_msg": "You stash your %s." },
     "pocket_data": [
       {
-        "max_contains_volume": "5 L",
+        "max_contains_volume": "2 L",
         "max_contains_weight": "6 kg",
         "max_item_length": "90 cm",
         "moves": 40,
         "flag_restriction": [ "BELT_CLIP" ],
+        "rigid": true,
         "holster": true,
         "transparent": true
       },
       {
-        "max_contains_volume": "5 L",
+        "max_contains_volume": "2 L",
         "max_contains_weight": "6 kg",
         "max_item_length": "90 cm",
         "moves": 40,
@@ -225,17 +152,17 @@
       {
         "pocket_type": "CONTAINER",
         "min_item_volume": "2 L",
-        "max_contains_volume": "10 L",
+        "max_contains_volume": "5 L",
         "max_contains_weight": "30 kg",
-        "flag_restriction": [ "MAG_BULKY", "HEAVY_TOOL" ],
+        "flag_restriction": [ "MAG_BULKY" ],
         "moves": 60
       },
       {
         "pocket_type": "CONTAINER",
         "min_item_volume": "2 L",
-        "max_contains_volume": "10 L",
+        "max_contains_volume": "5 L",
         "max_contains_weight": "30 kg",
-        "flag_restriction": [ "MAG_BULKY", "HEAVY_TOOL" ],
+        "flag_restriction": [ "MAG_BULKY" ],
         "moves": 60
       }
     ],

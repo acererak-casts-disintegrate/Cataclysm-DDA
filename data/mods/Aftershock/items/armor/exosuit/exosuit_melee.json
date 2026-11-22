@@ -7,7 +7,7 @@
     "name": "boarding axe",
     "ascii_picture": "halberd",
     "description": "This is a sturdy axe with a pick opposite the blade.  A composite titanium/Kevlar handle provides a sturdy grip that protects against electrical shocks and high temperatures.  Designed for use by soldiers wearing strength-enhancing exosuits, it's quite heavy.  Activate it to fold it into a compact module.",
-    "weight": "7500 g",
+    "weight": "3500 g",
     "volume": "2750 ml",
     "longest_side": "120 cm",
     "techniques": [ "WBLOCK_2", "BRUTAL", "SWEEP" ],
@@ -36,7 +36,7 @@
     "name": "makeshift boarding axe",
     "ascii_picture": "halberd",
     "description": "This is an oversized axe made from scraps of salvaged metal.  While not as versatile or durable as the boarding axe, it still packs a punch.",
-    "weight": "9250 g",
+    "weight": "4250 g",
     "volume": "2750 ml",
     "longest_side": "120 cm",
     "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
@@ -110,10 +110,10 @@
     "name": { "str_sp": "exosuit claws" },
     "description": "A pair of oversized and articulated hydraulic gauntlets with fingertips ending in cruel talons.",
     "weight": "3 kg",
-    "volume": "300 ml",
+    "volume": "1500 ml",
     "longest_side": "50 cm",
-    "price": "11 USD",
-    "price_postapoc": "2 USD 50 cent",
+    "price": "1100 cent",
+    "price_postapoc": "250 cent",
     "to_hit": { "grip": "weapon", "length": "hand", "surface": "any", "balance": "neutral" },
     "material": [ "qt_steel" ],
     "symbol": "[",
@@ -137,8 +137,8 @@
     "id": "exosuit_plasma_torch",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR" ],
-    "name": { "str": "392-UASTA plasma torch", "str_pl": "392-UASTA plasma torches" },
-    "description": "One of the many versions of UASTA certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  This is a larger, more powerful model meant to be used by an exosuit for heavy engineering tasks.  Heavy cables run from the module to a handheld trigger mechanism.",
+    "name": { "str": "392-Boeing plasma torch", "str_pl": "392-Boeing plasma torches" },
+    "description": "One of the many versions of Boeing certified plasma torches, essentially a civilian plasma railgun used to deliver focused waves of plasma for precision welding or metal cutting.  This is a larger, more powerful model meant to be used by an exosuit for heavy engineering tasks.  Heavy cables run from the module to a handheld trigger mechanism.",
     "weight": "8 kg",
     "volume": "6500 ml",
     "longest_side": "80 cm",
@@ -146,6 +146,7 @@
     "material": [ "qt_steel", "ceramic" ],
     "symbol": ";",
     "color": "red",
+    "tool_ammo": [ "afs_shydrogen" ],
     "charges_per_use": 1,
     "use_action": [ { "type": "cast_spell", "spell_id": "exo_plasmacut", "no_fail": true, "level": 20 }, "OXYTORCH" ],
     "qualities": [ [ "WELD", 3 ] ],
@@ -171,8 +172,7 @@
         "encumbrance": 15
       }
     ],
-    "melee_damage": { "bash": 50, "cut": 10 },
-    "tool_ammo": [ "afs_shydrogen" ]
+    "melee_damage": { "bash": 50, "cut": 10 }
   },
   {
     "id": "exosuit_power_cutter",
@@ -187,6 +187,7 @@
     "symbol": "/",
     "looks_like": "circsaw_off",
     "color": "light_red",
+    "tool_ammo": [ "gasoline", "diesel", "jp8", "avgas", "lamp_oil", "motor_oil", "propane", "conc_alcohol", "ammonia_liquid" ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
@@ -222,7 +223,7 @@
       }
     ],
     "melee_damage": { "bash": 10, "cut": 5 },
-    "tool_ammo": [ "gasoline", "diesel", "jp8", "avgas", "lamp_oil", "motor_oil", "propane", "conc_alcohol", "ammonia_liquid" ]
+    "longest_side": "90 cm"
   },
   {
     "id": "exosuit_power_cutter_on",
@@ -237,7 +238,6 @@
       "target": "exosuit_power_cutter",
       "msg": "Your power cutter falls quiet.",
       "menu_text": "Turn off",
-      "ammo_scale": 0,
       "type": "transform"
     },
     "qualities": [ [ "CUT", 3 ], [ "SAW_M", 20 ], [ "SAW_M_FINE", 1 ], [ "BUTCHER", -80 ] ],

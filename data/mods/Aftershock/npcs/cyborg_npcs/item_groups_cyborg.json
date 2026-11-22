@@ -16,7 +16,7 @@
   {
     "type": "item_group",
     "id": "NC_GANGER_carried",
-    "items": [ [ "ear_plugs", 100 ], { "group": "NC_GANGER_misc", "count": [ 3, 6 ] } ]
+    "items": [ [ "ear_plugs", 100 ], { "group": "NC_GANGER_misc", "count-min": 3, "count-max": 6 } ]
   },
   {
     "id": "NC_GANGER_melee",
@@ -55,7 +55,7 @@
       { "item": "soldering_iron", "prob": 60 },
       { "item": "soldering_iron_portable", "prob": 60, "charges": [ 0, 50 ] },
       [ "solder_wire", 60 ],
-      { "item": "inhaler", "prob": 5, "charges": [ 10, 100 ] },
+      { "item": "inhaler", "prob": 5, "charges-min": 10, "charges-max": 100 },
       [ "codeine", 15 ],
       [ "oxycodone", 4 ],
       [ "morphine", 4 ],
@@ -115,8 +115,8 @@
       [ "pocketwatch", 5 ],
       [ "sf_watch", 5 ],
       [ "file", 5 ],
-      [ "RPG", 1 ],
-      [ "RPG-7_ammo", 1 ],
+      [ "m3_carlgustav", 1 ],
+      [ "84x246mm_he", 1 ],
       [ "clown_suit", 2 ],
       [ "clownshoes", 2 ],
       [ "bondage_suit", 1 ],
@@ -145,7 +145,7 @@
       [ "recipe_augs", 4 ],
       [ "cable", 60 ],
       [ "vac_sealer", 10 ],
-      { "group": "civilian_phones", "prob": 50 },
+      [ "smart_phone", 50 ],
       [ "eink_tablet_pc", 15 ],
       [ "memory_card_unread", 40 ],
       [ "camera", 15 ],
@@ -155,7 +155,7 @@
       [ "radiocontrol", 15 ],
       [ "magnifying_glass", 4 ],
       [ "omnicamera", 2 ],
-      [ "l-stick", 1 ],
+      [ "flashlight", 1 ],
       [ "reading_light", 6 ]
     ]
   },
@@ -176,7 +176,7 @@
   {
     "type": "item_group",
     "id": "NC_CYBERNINJA_carried",
-    "items": [ [ "ear_plugs", 100 ], { "group": "NC_CYBERNINJA_misc", "count": [ 3, 6 ] } ]
+    "items": [ [ "ear_plugs", 100 ], { "group": "NC_CYBERNINJA_misc", "count-min": 3, "count-max": 6 } ]
   },
   {
     "id": "NC_CYBERNINJA_melee",
@@ -189,6 +189,7 @@
     "items": [
       { "group": "NC_CYBERNINJA_melee", "prob": 100 },
       { "group": "guns_smg_milspec", "prob": 40 },
+      { "group": "guns_pistol_common", "prob": 30 },
       { "group": "guns_rifle_milspec", "prob": 30 }
     ]
   },
@@ -263,14 +264,14 @@
       [ "radio", 20 ],
       [ "mess_kit", 5 ],
       [ "hotplate", 10 ],
-      { "group": "civilian_phones", "prob": 50 },
+      [ "smart_phone", 50 ],
       [ "eink_tablet_pc", 15 ],
       [ "memory_card_unread", 40 ],
       [ "camera", 15 ],
       [ "camera_pro", 5 ],
       [ "wristwatch", 15 ],
       [ "omnicamera", 2 ],
-      [ "l-stick", 1 ],
+      [ "flashlight", 1 ],
       [ "reading_light", 6 ]
     ]
   }

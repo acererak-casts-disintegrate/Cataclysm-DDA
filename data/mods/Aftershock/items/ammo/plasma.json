@@ -16,6 +16,6 @@
     "ammo_type": "afs_shydrogen",
     "range": 0,
     "count": 1,
-    "effects": [ "IGNITE" ]
+    "effects": [ "INCENDIARY" ]
   }
 ]

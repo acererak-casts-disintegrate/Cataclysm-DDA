@@ -4,7 +4,7 @@
     "copy-from": "mon_dog",
     "default_faction": "PrepNet",
     "type": "MONSTER",
-    "name": { "str": "Cyber Mastiff" },
+    "name": { "str": "Cyber Mastiff", "str_pl": "Cyber Mastifs" },
     "//": "Rare, location specific only",
     "description": "A mix of Great Pyrenees and Ovcharka breeds outfitted with bionic enhancements.  These hounds defend Prep Phyle lands from all comers undead and otherwise.",
     "volume": "57500 ml",
@@ -14,10 +14,9 @@
     "aggression": 0,
     "morale": 10,
     "aggro_character": false,
-    "melee_skill": 4,
-    "melee_dice": 3,
-    "melee_dice_sides": 3,
-    "melee_dice_ap": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 7 } ],
     "dodge": 3,
     "looks_like": "mon_dog_gpyrenees",
     "vision_day": 30,
@@ -28,7 +27,7 @@
     "//2": "1-7 puppies & 300-320 days per-litter for size medium canines",
     "flags": [ "ANIMAL", "PET_MOUNTABLE", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT" ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 8, "cut": 14, "bullet": 11 }
   },
   {
     "id": "afs_mon_cyber_mastiff_pup",
@@ -67,7 +66,6 @@
       "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
       "pet": "The %s happily wags its tail while you pat its head."
     },
-    "flags": [ "ANIMAL", "DOGFOOD", "CANPLAY", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "flags": [ "ANIMAL", "DOGFOOD", "CANPLAY", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   }
 ]

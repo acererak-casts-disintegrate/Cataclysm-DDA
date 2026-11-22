@@ -3,11 +3,12 @@
     "id": "afs_landfall_kit_2",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
-    "name": { "str": "Type II. landfall survival kit" },
-    "description": "This is a metal box containing survival supplies, often found within ships and their escape pods.  Its cyan highlights indicate that it's a simpler Type II kit, and that it would only be helpful in a planet whose atmosphere and gravity are within two deviations from Earth's.",
+    "name": { "str": "Type II FEMA survival kit" },
+    "description": "This is a metal box containing survival supplies, stockpiled by FEMA in shelters and evacuation centers.  Its cyan highlights indicate that it's a simpler Type II kit, meant for a few days of sheltering in place.",
     "weight": "1022 g",
     "volume": "22 L",
-    "price_postapoc": "30 USD",
+    "price_postapoc": "3000 cent",
+    "to_hit": -2,
     "symbol": ",",
     "color": "red",
     "pocket_data": [ { "max_contains_volume": "20 L", "max_contains_weight": "40 kg", "max_item_length": "133 cm", "rigid": true } ]
@@ -17,21 +18,14 @@
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "name": { "str": "cargo crate" },
-    "description": "A standard orbital cargo transfer container.  Its faceted corners are adorned with the livery of company you don't recognize.",
+    "description": "A standard intermodal cargo transfer container.  Its faceted corners are adorned with the livery of a company you don't recognize.",
     "weight": "2710 g",
     "volume": "30 L",
-    "price_postapoc": "30 USD",
+    "price_postapoc": "3000 cent",
+    "to_hit": -2,
     "symbol": "0",
     "color": "light_red",
     "pocket_data": [ { "max_contains_volume": "28 L", "max_contains_weight": "40 kg", "max_item_length": "170 cm", "rigid": true } ]
-  },
-  {
-    "id": "pressure_tank",
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
-    "copy-from": "pressure_tank",
-    "name": { "str": "pressurized tank" },
-    "flags": [ "NO_UNLOAD", "MAG_BULKY" ]
   },
   {
     "id": "afs_mre_package",
@@ -57,5 +51,14 @@
         "sealed_data": { "spoil_multiplier": 0.0 }
       }
     ]
+  },
+  {
+    "//": "MAG_BULKY lets the HERC rig's bulky-magazine pocket hold pressure tanks (Rocket Jumper's liquid ammonia).",
+    "id": "pressure_tank",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "copy-from": "pressure_tank",
+    "name": { "str": "pressurized tank" },
+    "flags": [ "NO_UNLOAD", "MAG_BULKY" ]
   }
 ]

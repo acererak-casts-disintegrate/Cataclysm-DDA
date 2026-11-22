@@ -3,7 +3,7 @@
     "id": "afs_mon_rabbit",
     "type": "MONSTER",
     "name": { "str": "labbit" },
-    "description": "A rabbit from Earth, genetically modified to eat the lichen of Salus IV.  Its fur is rust-colored and its ears are shortened to preserve warmth.",
+    "description": "A rabbit genetically modified by Shady Hills Corporation to thrive on lichen.  Its fur is rust colored and its ears are shortened to preserve warmth.",
     "default_faction": "small_animal",
     "bodytype": "pig",
     "categories": [ "WILDLIFE" ],
@@ -18,60 +18,12 @@
     "aggression": -99,
     "morale": -7,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
-    "special_attacks": [ [ "EAT_CROP", 60 ], [ "GRAZE", 50 ] ],
     "dodge": 6,
-    "reproduction": { "baby_type": { "baby_monster": "afs_mon_rabbit_kit" }, "baby_count": 3, "baby_timer": 55 },
+    "reproduction": { "baby_type": { "baby_monster": "afs_mon_rabbit" }, "baby_count": 3, "baby_timer": 55 },
     "harvest": "alien_small_fur",
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "ANIMAL",
-      "PATH_AVOID_DANGER",
-      "PET_WONT_FOLLOW",
-      "WARM",
-      "CAN_BE_CULLED",
-      "SMALL_HIDER",
-      "CANPLAY",
-      "EATS"
-    ],
-    "petfood": { "food": [ "ALIEN_LICHEN" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." }
-  },
-  {
-    "id": "afs_mon_rabbit_kit",
-    "type": "MONSTER",
-    "copy-from": "afs_mon_rabbit",
-    "name": { "str": "labbit kit" },
-    "description": "A tiny rabbit kit, spawned from a rabbit genetically modified to eat the lichen of Salus IV.  It's coat is a vibrant crimson that will turn a rust orange when it reaches adulthood.",
-    "volume": "150 ml",
-    "weight": "30 g",
-    "hp": 1,
-    "speed": 125,
-    "attack_cost": 125,
-    "dodge": 8,
-    "harvest": "alien_tiny",
-    "upgrades": { "age_grow": 20, "into": "afs_mon_rabbit" },
-    "extend": { "flags": [ "NO_BREED" ] }
-  },
-  {
-    "id": "afs_mon_rabbit_domestic",
-    "type": "MONSTER",
-    "copy-from": "afs_mon_rabbit",
-    "name": { "str": "labbit" },
-    "morale": 1,
-    "description": "A rabbit from Earth, genetically modified to eat the lichen of Salus IV.  Its fur is rust-colored and its ears are shortened to preserve warmth.  This one seems well-acclimated to the presence of nearby humans.",
-    "delete": { "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ] }
-  },
-  {
-    "id": "afs_mon_rabbit_kit_domestic",
-    "type": "MONSTER",
-    "copy-from": "afs_mon_rabbit_kit",
-    "name": { "str": "labbit kit" },
-    "morale": 1,
-    "description": "A tiny rabbit kit, spawned from a rabbit genetically modified to eat the lichen of Salus IV.  It's coat is a vibrant crimson that will turn a rust orange when it reaches adulthood.  This one seems well-acclimated to the presence of nearby humans.",
-    "upgrades": { "age_grow": 20, "into": "afs_mon_rabbit_domestic" },
-    "delete": { "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ] }
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER", "PET_WONT_FOLLOW", "WARM" ]
   },
   {
     "id": "afs_mon_garlander",
@@ -111,7 +63,7 @@
       }
     ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
-    "flags": [ "ANIMAL", "SEES", "HEARS", "SMELLS", "NOHEAD", "HARDTOSHOOT" ]
+    "flags": [ "ANIMAL", "SEES", "HEARS", "SMELLS", "NOHEAD", "HARDTOSHOOT", "SWIMS" ]
   },
   {
     "id": "afs_mon_boatman",
@@ -134,10 +86,9 @@
     "morale": 100,
     "melee_skill": 5,
     "melee_dice": 2,
-    "melee_dice_sides": 6,
-    "melee_dice_ap": 2,
+    "melee_dice_sides": 3,
     "attack_cost": 330,
-    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
     "dodge": 3,
     "bleed_rate": 40,
     "harvest": "alien_floater",
@@ -165,7 +116,7 @@
       "PUSH_MON",
       "PUSH_VEH"
     ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 15, "electric": 3 }
   },
   {
     "id": "afs_runner",
@@ -178,7 +129,7 @@
     "species": [ "MAMMAL" ],
     "volume": "386000 ml",
     "weight": "386 kg",
-    "hp": 40,
+    "hp": 120,
     "speed": 200,
     "material": [ "flesh" ],
     "symbol": "H",
@@ -192,7 +143,8 @@
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
     "harvest": "alien_large_leather",
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 8 },
-    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER", "WARM" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER", "WARM" ],
+    "armor": { "bash": 4, "cut": 1, "bullet": 1 }
   },
   {
     "id": "afs_grazer",
@@ -214,7 +166,7 @@
     "morale": 80,
     "melee_skill": 6,
     "melee_dice": 3,
-    "melee_dice_sides": 3,
+    "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 1,
     "vision_night": 7,
@@ -223,7 +175,8 @@
     "baby_flags": [ "AUTUMN" ],
     "harvest": "alien_large_leather",
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 8 },
-    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "ATTACKMON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "ATTACKMON" ],
+    "armor": { "bash": 4, "cut": 1, "bullet": 1 }
   },
   {
     "id": "afs_mon_hevel",
@@ -253,7 +206,7 @@
     "harvest": "alien_small_fur",
     "path_settings": { "max_dist": 10 },
     "anger_triggers": [ "PLAYER_WEAK", "FRIEND_ATTACKED", "FRIEND_DIED" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "ANIMAL", "PATH_AVOID_DANGER", "STUMBLES" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "SWIMS", "ANIMAL", "PATH_AVOID_DANGER", "STUMBLES" ]
   },
   {
     "id": "afs_venandi",
@@ -266,7 +219,7 @@
     "species": [ "MAMMAL" ],
     "volume": "26625 ml",
     "weight": "26625 g",
-    "hp": 300,
+    "hp": 100,
     "speed": 165,
     "material": [ "flesh" ],
     "symbol": "v",
@@ -282,7 +235,7 @@
     "path_settings": { "max_dist": 10 },
     "anger_triggers": [ "STALK", "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "KEENNOSE" ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 1 }
   },
   {
     "type": "MONSTER",
@@ -299,12 +252,12 @@
     "aggression": -10,
     "morale": 60,
     "speed": 150,
-    "melee_skill": 5,
-    "melee_dice": 6,
-    "melee_dice_sides": 4,
+    "melee_skill": 8,
+    "melee_dice": 1,
+    "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 2,
-    "hp": 150,
+    "hp": 60,
     "special_attacks": [ { "type": "leap", "cooldown": 5, "max_range": 5, "allow_no_target": true }, { "type": "bite", "cooldown": 10 } ],
     "description": "A tall bird with two long, muscular legs, a long neck, and a long sharp beak.",
     "flags": [ "SEES", "SMELLS", "HEARS", "ANIMAL", "PATH_AVOID_DANGER", "GRABS", "KEENNOSE", "WARM", "HIT_AND_RUN" ],
@@ -313,6 +266,6 @@
     "anger_triggers": [ "PLAYER_WEAK", "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
     "fear_triggers": [ "FIRE", "FRIEND_DIED" ],
     "categories": [ "WILDLIFE" ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 1, "cut": 1 }
   }
 ]

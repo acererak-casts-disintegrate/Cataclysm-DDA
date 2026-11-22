@@ -66,17 +66,15 @@
   {
     "id": "SUS_oven",
     "type": "item_group",
-    "subtype": "collection",
     "copy-from": "SUS_oven",
+    "subtype": "collection",
     "extend": { "items": [ [ "afs_atompot", 3 ] ] }
   },
   {
     "id": "newspaper",
     "type": "item_group",
     "copy-from": "newspaper",
-    "extend": {
-      "items": [ [ "afs_personal_card", 8 ], [ "afs_welcome1_book", 4 ], [ "afs_welcome2_book", 4 ], [ "afs_welcome3_book", 4 ] ]
-    }
+    "extend": { "items": [ [ "afs_personal_card", 8 ] ] }
   },
   {
     "id": "livingroom",
@@ -164,7 +162,7 @@
       { "item": "pants_cargo" },
       { "item": "kevlar" },
       { "item": "leather_pouch" },
-      { "item": "balclava", "variant": "black", "prob": 75 },
+      { "item": "balclava", "prob": 75 },
       { "item": "bootsheath" }
     ]
   },
@@ -185,8 +183,8 @@
     "id": "afs_gardener_misc",
     "subtype": "collection",
     "items": [
-      { "item": "RobofacCoin", "count": [ 5, 30 ], "prob": 30 },
-      { "group": "forage_spring", "count": [ 10, 30 ], "prob": 30 },
+      { "item": "RobofacCoin", "count-min": 5, "count-max": 30, "prob": 30 },
+      { "group": "forage_spring", "count-min": 10, "count-max": 30, "prob": 30 },
       { "group": "fresh_produce", "prob": 80, "count": [ 4, 8 ] },
       { "group": "tools_home", "prob": 80, "count": [ 1, 3 ] },
       { "group": "tools_construction", "prob": 30, "count": [ 1, 3 ] },
@@ -272,7 +270,7 @@
     "id": "broken_robots",
     "entries": [
       { "item": "scrap", "count": [ 2, 4 ] },
-      { "item": "ch_steel_chunk", "count": [ 0, 2 ] },
+      { "item": "steel_chunk", "count": [ 0, 2 ] },
       { "item": "glass_shard", "count": [ 0, 2 ] },
       { "item": "spring", "prob": 20 },
       { "item": "material_aluminium_ingot", "prob": 20 }
@@ -285,7 +283,8 @@
     "extend": {
       "items": [
         { "item": "xlswat_armor", "prob": 12 },
-        { "item": "afs_military_vestxl", "prob": 9 },
+        { "item": "xlballistic_vest_empty", "prob": 6 },
+        { "item": "xlballistic_vest_esapi", "prob": 3 },
         { "item": "xlboots_combat", "prob": 15 },
         { "item": "xlgloves_tactical", "prob": 10 },
         { "item": "tripaw_xlgloves_tactical", "prob": 8 }
@@ -298,7 +297,8 @@
     "copy-from": "mil_armor",
     "extend": {
       "items": [
-        { "item": "afs_military_vestxl", "prob": 9 },
+        { "item": "xlballistic_vest_empty", "prob": 6 },
+        { "item": "xlballistic_vest_esapi", "prob": 3 },
         { "item": "xlboots_combat", "prob": 15 },
         { "item": "xlgloves_tactical", "prob": 10 },
         { "item": "tripaw_xlgloves_tactical", "prob": 8 }
@@ -309,7 +309,12 @@
     "type": "item_group",
     "id": "guns_ganger",
     "//": "Guns commonly carried by gangers and underworld types.",
-    "items": [ { "group": "guns_pistol_common", "prob": 100 }, { "group": "guns_cop", "prob": 5 } ]
+    "items": [
+      { "group": "guns_pistol_common", "prob": 100 },
+      { "group": "guns_improvised", "prob": 20 },
+      { "group": "guns_cop", "prob": 5 },
+      { "group": "guns_pistol_common", "prob": 40 }
+    ]
   },
   {
     "id": "crate_sports",
@@ -332,7 +337,7 @@
       { "group": "exoticplants", "count": [ 1, 3 ], "prob": 30 },
       { "group": "science", "count": [ 1, 3 ], "prob": 30 },
       { "group": "afs_exo_basic_accessories", "count": 1, "prob": 15 },
-      { "item": "jumpsuit_pocketless", "variant": "orange" }
+      { "item": "jumpsuit_pocketless" }
     ]
   },
   {
@@ -368,19 +373,13 @@
     "//": "This group is for an area storing diving equipment.  SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
     "subtype": "collection",
     "copy-from": "SUS_scuba_gear",
-    "extend": {
-      "entries": [
-        { "item": "combat_wetsuit_cecalia", "prob": 20 },
-        { "item": "wetsuit_cecalia", "prob": 70 },
-        { "item": "trident", "prob": 70 }
-      ]
-    }
+    "extend": { "entries": [ { "item": "trident", "prob": 70 } ] }
   },
   {
     "id": "seabased_death_drop",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ [ "combat_wetsuit_cecalia", 20 ], [ "wetsuit_cecalia", 70 ], [ "trident", 70 ], [ "dive_bag", 100 ] ]
+    "items": [ [ "trident", 70 ], [ "dive_bag", 100 ] ]
   },
   {
     "id": "gear_afs_sidearm",
@@ -434,53 +433,180 @@
     "entries": [ { "item": "skull_human" } ]
   },
   {
-    "//": "Industrial amounts of mostly useless consumer goods",
-    "id": "afs_useless_cargo",
+    "id": "afs_exo_basic_power",
     "type": "item_group",
-    "subtype": "distribution",
-    "entries": [
-      { "item": "afs_glass_device", "count": [ 100, 200 ] },
-      { "item": "afs_glass_AR_device", "count": [ 100, 200 ] },
-      { "item": "afs_company_jacket", "count": [ 100, 200 ] },
-      { "item": "technician_pants_gray", "count": [ 100, 200 ] },
-      { "item": "boots_winter", "count": [ 100, 200 ] },
-      { "item": "instant_coffee", "count": [ 100, 200 ], "container-item": "afs_foil_bag" },
-      { "item": "artificial_sweetener", "count": [ 100, 200 ], "container-item": "afs_foil_bag" },
-      { "item": "instant_coffee", "count": [ 100, 200 ], "container-item": "afs_foil_bag" },
-      { "item": "syringe", "count": [ 100, 200 ] },
-      { "item": "pliers", "count": [ 100, 200 ] },
-      { "item": "goggles_welding", "count": [ 100, 200 ] },
-      { "item": "jumper_cable", "count": [ 100, 200 ] },
-      { "item": "magnifying_glass", "count": [ 100, 200 ] },
-      { "item": "shovel", "count": [ 100, 200 ] },
-      { "item": "chunk_rubber", "count": [ 100, 200 ] },
-      { "item": "nail", "count": [ 100, 200 ] },
-      { "item": "bubblewrap", "count": [ 100, 200 ] },
-      { "item": "soap", "count": [ 100, 200 ] },
-      { "item": "cu_pipe", "count": [ 100, 200 ] },
-      { "item": "stapler", "count": [ 100, 200 ] },
-      { "item": "canister_empty", "count": [ 100, 200 ] },
-      { "item": "spring", "count": [ 100, 200 ] },
-      { "item": "material_soil", "count": [ 100, 200 ] }
+    "items": [
+      { "item": "exo_back_battery_rechargable", "prob": 75, "charges": [ 200, 300 ] },
+      { "item": "exo_back_gasoline", "prob": 50, "charges": [ 200, 300 ] },
+      { "item": "exo_aux_power", "prob": 25, "charges": [ 50, 100 ] },
+      { "item": "exo_small_aux_power", "prob": 25, "charges": [ 50, 100 ] }
     ]
   },
   {
-    "id": "afs_consumer_vr",
+    "id": "afs_exo_advanced_power",
     "type": "item_group",
-    "subtype": "distribution",
-    "entries": [ { "item": "afs_glass_device" }, { "item": "afs_glass_AR_device" } ]
+    "items": [
+      { "item": "exo_back_battery_rechargable", "prob": 50, "charges": [ 200, 300 ] },
+      { "item": "exo_back_fuelcell", "prob": 75, "charges": [ 200, 300 ] },
+      { "item": "exo_asrg", "prob": 10 },
+      { "item": "exo_aux_power", "count": [ 0, 1 ], "prob": 25, "charges": [ 50, 100 ] },
+      { "item": "exo_small_aux_power", "prob": 25, "charges": [ 50, 100 ] }
+    ]
   },
   {
-    "id": "afs_police_evidence_locker",
+    "id": "afs_power_tools",
     "type": "item_group",
-    "subtype": "distribution",
-    "//": "Refers directly to the existing evidence group but we can add whatever we want to layer on top of that.",
-    "entries": [ { "group": "cop_evidence" } ]
+    "items": [
+      { "item": "heavy_drill", "prob": 50 },
+      { "item": "exosuit_plasma_torch", "prob": 75 },
+      { "item": "exosuit_power_cutter", "prob": 25 }
+    ]
   },
   {
-    "id": "afs_coffee_containers",
+    "id": "afs_exo_basic_accessories",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "exo_carry", "prob": 50 },
+      { "item": "exo_small_carry", "count": [ 0, 2 ], "prob": 75 },
+      { "item": "exo_flashlight", "prob": 75 },
+      { "item": "exo_imager", "prob": 25 }
+    ]
+  },
+  {
+    "id": "afs_exosuit_worker",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "modular_exosuit", "prob": 100 },
+      { "item": "afs_exo_standard_underlayer", "prob": 90 },
+      { "item": "exo_helmet_plastic", "prob": 90 },
+      { "item": "exo_torso_plastic", "prob": 90 },
+      { "item": "exo_arm_plastic", "prob": 90 },
+      { "item": "exo_leg_plastic", "prob": 90 },
+      { "group": "afs_exo_basic_power", "prob": 75 },
+      { "group": "afs_exo_basic_accessories", "prob": 75 },
+      { "group": "afs_exo_basic_accessories", "prob": 75 },
+      { "group": "afs_power_tools", "prob": 75 },
+      { "item": "afs_exo_eva_underlayer", "prob": 10 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_mining", "prob": 15 },
+      { "group": "afs_exo_service", "prob": 40 }
+    ]
+  },
+  {
+    "id": "afs_exosuit_security",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "afs_exo_combat_underlayer", "prob": 75 },
+      { "item": "afs_exo_standard_underlayer", "prob": 25 },
+      { "item": "afs_exo_hazard_underlayer", "prob": 10 },
+      { "item": "exo_helmet_steel", "prob": 90 },
+      { "item": "exo_torso_steel", "prob": 90 },
+      { "item": "exo_arm_steel", "prob": 90 },
+      { "item": "exo_leg_steel", "prob": 90 },
+      { "item": "exo_sonic_unit", "prob": 60 },
+      { "item": "exo_microwave_cannon", "prob": 60 },
+      { "item": "afs_cartridge", "count": [ 0, 4 ], "prob": 95, "charges": [ 50, 100 ] },
+      { "group": "afs_exo_basic_power", "prob": 25 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_advanced_modules", "prob": 30 },
+      { "group": "afs_exo_melee", "prob": 20 }
+    ]
+  },
+  {
+    "id": "afs_exosuit_military",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "modular_exosuit", "prob": 5 },
+      { "item": "afs_exo_combat_underlayer", "prob": 75 },
+      { "item": "afs_exo_hazard_underlayer", "prob": 25 },
+      { "item": "exo_helmet_vcc", "prob": 90 },
+      { "item": "exo_torso_vcc", "prob": 90 },
+      { "item": "exo_arm_vcc", "prob": 90 },
+      { "item": "exo_leg_vcc", "prob": 90 },
+      { "item": "exo_electrolaser", "prob": 15 },
+      { "item": "exo_flame_thrower", "prob": 50, "charges-min": 100, "charges-max": 1500 },
+      { "item": "afs_cartridge", "count": [ 2, 6 ], "prob": 95, "charges": [ 50, 100 ] },
+      { "group": "afs_exo_advanced_power", "prob": 25 },
+      { "group": "afs_exo_advanced_modules", "prob": 50 },
+      { "group": "afs_exo_storage", "prob": 50 },
+      { "group": "afs_exo_melee", "prob": 30 },
+      { "group": "afs_exo_service", "prob": 30 }
+    ]
+  },
+  {
+    "id": "afs_exo_advanced_modules",
     "type": "item_group",
     "subtype": "distribution",
-    "items": [ [ "ceramic_mug", 50 ], [ "thermos", 50 ] ]
+    "entries": [
+      { "item": "exo_AR_module", "prob": 20 },
+      { "item": "exo_bio_oxygen", "prob": 20 },
+      { "item": "exo_cartridge_charger", "prob": 20 },
+      { "item": "exo_climb", "prob": 20 },
+      { "item": "exo_forcefield", "prob": 5 },
+      { "item": "exo_jetpack", "prob": 10 },
+      { "item": "exo_lense_module", "prob": 20 },
+      { "item": "exo_recoil", "prob": 20 },
+      { "item": "exo_trickle_charger", "prob": 5 },
+      { "item": "exosuit_med_injector", "prob": 15 }
+    ]
+  },
+  {
+    "id": "afs_exo_storage",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "exo_small_storage", "prob": 30 },
+      { "item": "exo_medium_storage", "prob": 25 },
+      { "item": "exo_large_storage", "prob": 15 },
+      { "item": "exo_small_ammo_pouch", "prob": 20 },
+      { "item": "exo_large_ammo_pouch", "prob": 10 },
+      { "item": "exo_large_holster", "prob": 10 },
+      { "item": "exo_rifle_storage", "prob": 10 },
+      { "item": "exo_melee_storage", "prob": 10 },
+      { "item": "exo_sheath", "prob": 10 }
+    ]
+  },
+  {
+    "id": "afs_exo_melee",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "exosuit_claw", "prob": 50 }, { "item": "boarding_axe", "prob": 50 } ]
+  },
+  {
+    "id": "afs_exo_mining",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "exo_rod_launcher" }, { "item": "mining_rod", "count": [ 4, 10 ] } ]
+  },
+  {
+    "id": "afs_exo_service",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "exo_repair_kit", "prob": 60 },
+      { "item": "exosuit_maintenance", "prob": 40 },
+      { "item": "exo_connector", "prob": 70, "count": [ 2, 8 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wreckage",
+    "//": "0.H core group, removed in 0.I",
+    "items": [
+      [ "chain", 20 ],
+      [ "steel_chunk", 30 ],
+      [ "spring", 50 ],
+      [ "steel_lump", 30 ],
+      [ "frame", 20 ],
+      [ "hdframe", 20 ],
+      [ "cu_pipe", 25 ],
+      [ "scrap_copper", 62 ],
+      [ "rock", 40 ],
+      [ "survnote", 1 ]
+    ]
   }
 ]

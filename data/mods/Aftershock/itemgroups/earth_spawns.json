@@ -1,0 +1,252 @@
+[
+  {
+    "//": "Earth spawn points for Aftershock items whose only sources were removed with the exoplanet, Whately and UPLIFT content.",
+    "type": "item_group",
+    "id": "guns_shotgun_milspec",
+    "copy-from": "guns_shotgun_milspec",
+    "extend": {
+      "items": [
+        { "item": "afs_shotgun", "prob": 10 },
+        { "item": "afs_shotgun_magnastorm", "prob": 5 },
+        { "item": "afs_raketa_shotgun", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_pistol_milspec",
+    "copy-from": "guns_pistol_milspec",
+    "extend": { "items": [ { "item": "afs_marsec_4", "prob": 10 }, { "item": "afs_drotik_shotpistol", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_launcher_milspec",
+    "copy-from": "guns_launcher_milspec",
+    "extend": {
+      "items": [
+        { "item": "afs_25mm_goa", "prob": 5 },
+        { "collection": [ { "item": "afs_wa2519" }, { "item": "afs_25mm_smart", "count": [ 3, 8 ] } ], "prob": 2 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_milspec",
+    "copy-from": "ammo_milspec",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "afs_25mm_frag", "prob": 10 },
+        { "item": "afs_25mm_apfsds", "prob": 5 },
+        { "item": "afs_25mm_smart", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": { "items": [ { "item": "afs_military_vest", "prob": 10 }, { "item": "afs_military_cloak", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "energy_weapon_armory",
+    "copy-from": "energy_weapon_armory",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "item": "afs_heavy_tactical_laser", "prob": 5 },
+        { "item": "afs_magnadrive_230k", "prob": 3 },
+        { "item": "afs_pam-41", "prob": 3 },
+        { "group": "afs_explosive_pumped_laser_s", "prob": 5 },
+        { "item": "afs_82mm_flashbulb", "prob": 5, "count": [ 2, 6 ] },
+        { "item": "afs_a7", "prob": 3 },
+        { "item": "afs_xm34", "prob": 2 },
+        { "item": "afs_av22", "prob": 3 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "xedra_gun",
+    "copy-from": "xedra_gun",
+    "extend": {
+      "items": [
+        { "item": "afs_archeotech_laspistol", "prob": 1 },
+        {
+          "collection": [
+            { "item": "afs_electro_anomaly_rifle" },
+            { "item": "afs_voltaic_cartridge", "count": [ 1, 2 ], "ammo-item": "battery", "charges": [ 500, 1500 ] }
+          ],
+          "prob": 1
+        },
+        {
+          "collection": [
+            { "item": "afs_voltaic_pistol" },
+            { "item": "afs_voltaic_cartridge", "count": [ 1, 2 ], "ammo-item": "battery", "charges": [ 500, 1500 ] }
+          ],
+          "prob": 2
+        }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "cop_armory",
+    "copy-from": "cop_armory",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "xlpolice_belt", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_evac_shelter_supply_closet",
+    "copy-from": "SUS_evac_shelter_supply_closet",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "group": "afs_escape_pod_suppliesII", "prob": 15 },
+        { "item": "afs_landfall_kit_2_instructions", "prob": 10 },
+        { "item": "afs_escapepod_ration", "prob": 20 },
+        { "group": "afs_foamgun_kit", "prob": 3 },
+        { "group": "afs_foam_tank_full", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_evac_shelter_locker",
+    "copy-from": "SUS_evac_shelter_locker",
+    "subtype": "collection",
+    "extend": { "entries": [ { "item": "afs_landfall_gun", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "afs_foamgun_kit",
+    "subtype": "collection",
+    "//": "Foam gun with one or two charged tanks.",
+    "entries": [
+      { "item": "afs_foamgun" },
+      { "item": "afs_foam_tank", "count": [ 1, 2 ], "ammo-item": "afs_foamcrete", "charges": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "afs_foam_tank_full",
+    "subtype": "collection",
+    "entries": [ { "item": "afs_foam_tank", "ammo-item": "afs_foamcrete", "charges": 30 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "hardware",
+    "copy-from": "hardware",
+    "extend": { "items": [ { "group": "afs_foamgun_kit", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "hardware_bulk",
+    "copy-from": "hardware_bulk",
+    "extend": { "items": [ { "group": "afs_foam_tank_full", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "tools_construction",
+    "copy-from": "tools_construction",
+    "extend": { "items": [ { "group": "afs_foamgun_kit", "prob": 5 }, { "group": "afs_foam_tank_full", "prob": 10 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "mags_milspec",
+    "copy-from": "mags_milspec",
+    "extend": {
+      "items": [
+        { "item": "afs_marsec_14mag", "prob": 5 },
+        { "item": "afs_raketa30mag", "prob": 3 },
+        { "item": "afs_shot_speedloader8", "prob": 3 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "common_magazines_restricted_12",
+    "copy-from": "common_magazines_restricted_12",
+    "extend": { "items": [ { "item": "afs_raketa30mag", "prob": 10 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "mags_flamethrower_xedra",
+    "copy-from": "mags_flamethrower_xedra",
+    "extend": { "items": [ { "item": "afs_voltaic_cartridge", "prob": 5 } ] }
+  },
+  {
+    "//": "Re-homed: Earth-appropriate items left without any spawn source after the exoplanet removal.",
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": {
+      "items": [
+        { "item": "afs_jumpsuit_military", "prob": 10 },
+        { "item": "afs_combat_cryo", "prob": 3 },
+        { "item": "afs_military_vestxl", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mine_equipment",
+    "copy-from": "mine_equipment",
+    "extend": {
+      "items": [
+        { "item": "afs_oxygen_candle", "prob": 15, "count": [ 1, 3 ] },
+        { "item": "afs_demo_charge", "prob": 5 },
+        { "item": "afs_radiodetonator", "prob": 3 },
+        { "group": "afs_exosuit_worker", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": { "items": [ { "group": "afs_exosuit_military", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "military_standard_grenades",
+    "copy-from": "military_standard_grenades",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "afs_kaburaya_bomb", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "coats_unisex",
+    "copy-from": "coats_unisex",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "afs_transparent_coat", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "consumer_electronics",
+    "copy-from": "consumer_electronics",
+    "extend": { "items": [ { "item": "vr_laptop", "prob": 2 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "tools_electronics",
+    "copy-from": "tools_electronics",
+    "extend": { "items": [ { "item": "afs_bionic_power_mod", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "manuals",
+    "copy-from": "manuals",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "exosuit_maintenance", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_rivtech_misc",
+    "copy-from": "SUS_rivtech_misc",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "exosuit_maintenance", "prob": 20 } ] }
+  }
+]

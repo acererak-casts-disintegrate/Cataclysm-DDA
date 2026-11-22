@@ -6,7 +6,7 @@
     "copy-from": "jumpsuit",
     "looks_like": "robofac_enviro_suit",
     "name": { "str": "exosuit underlayer" },
-    "description": "A form-fitting suit meant to be worn by an exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  The suit is not designed for use outside of armor.  This standard model uses a scale mail of overlapping plastic disks for incidental protection.",
+    "description": "A form-fitting suit meant to be worn by the exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  The suit is not designed for use outside of armor.  This standard model uses a scale mail of overlapping plastic disks for incidental protection.",
     "weight": "610 g",
     "volume": "3500 ml",
     "color": "brown",
@@ -29,7 +29,7 @@
     ],
     "warmth": 10,
     "flags": [ "EXO_UNDERLAYER", "SKINTIGHT", "WATERPROOF", "POWERARMOR_COMPATIBLE", "SOFT" ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_1" } ]
+    "passive_effects": [ { "id": "ench_climate_control_exo_underlayer" } ]
   },
   {
     "id": "afs_exo_combat_underlayer",
@@ -38,7 +38,7 @@
     "copy-from": "jumpsuit",
     "looks_like": "robofac_enviro_suit",
     "name": { "str": "exosuit combat underlayer" },
-    "description": "A form-fitting suit meant to be worn by an exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  The suit is not designed for use outside of armor.  This model includes tough Kevlar to protect from spalling.",
+    "description": "A form-fitting suit meant to be worn by the exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  The suit is not designed for use outside of armor.  This model offers tough kevlar to protect from spalling.",
     "weight": "610 g",
     "volume": "3500 ml",
     "color": "brown",
@@ -69,7 +69,7 @@
     ],
     "warmth": 10,
     "flags": [ "EXO_UNDERLAYER", "SKINTIGHT", "WATERPROOF", "POWERARMOR_COMPATIBLE", "SOFT" ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_2" } ]
+    "passive_effects": [ { "id": "ench_climate_control_exo_underlayer" } ]
   },
   {
     "id": "afs_exo_eva_underlayer",
@@ -78,7 +78,7 @@
     "copy-from": "jumpsuit",
     "looks_like": "robofac_enviro_suit",
     "name": { "str": "exosuit EVA underlayer" },
-    "description": "A form-fitting suit meant to be worn by an exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  This model is designed for EVA operation, offering protection against breaches.",
+    "description": "A form-fitting suit meant to be worn by the exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  This model is designed for EVA operation, offering protection against breaches.",
     "weight": "610 g",
     "volume": "3500 ml",
     "color": "brown",
@@ -101,7 +101,7 @@
     ],
     "warmth": 10,
     "flags": [ "EXO_UNDERLAYER", "SKINTIGHT", "WATERPROOF", "POWERARMOR_COMPATIBLE", "SOFT", "GAS_PROOF", "RAD_RESIST", "RAINPROOF" ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_4" } ]
+    "passive_effects": [ { "id": "ench_climate_control_exo_underlayer" } ]
   },
   {
     "id": "afs_exo_hazard_underlayer",
@@ -110,7 +110,7 @@
     "copy-from": "jumpsuit",
     "looks_like": "robofac_enviro_suit",
     "name": { "str": "exosuit utility underlayer" },
-    "description": "A form-fitting suit meant to be worn by an exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  This model is designed for hazardous environments and sacrifices mobility for extra protection.",
+    "description": "A form-fitting suit meant to be worn by the exosuit pilot.  Although not a requirement for the operation of an exosuit, it features haptic feedback systems that offer improved performance and comfort while doing so.  This model is designed for hazardous environments and sacrifices mobility for extra protection.",
     "weight": "610 g",
     "volume": "3500 ml",
     "color": "brown",
@@ -141,6 +141,6 @@
     ],
     "warmth": 10,
     "flags": [ "EXO_UNDERLAYER", "SKINTIGHT", "WATERPROOF", "POWERARMOR_COMPATIBLE", "SOFT", "GAS_PROOF", "RAD_RESIST", "RAINPROOF" ],
-    "passive_effects": [ { "id": "afs_ench_climate_control_3" } ]
+    "passive_effects": [ { "id": "ench_climate_control_exo_underlayer" } ]
   }
 ]

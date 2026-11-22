@@ -96,10 +96,10 @@
     "id": "mon_zombie_oliphant",
     "type": "MONSTER",
     "name": { "str": "Ghoulodon" },
-    "description": "An undead Uplifted Elephant of ginormous size.  It still wears its assault grade armor.",
+    "description": "The towering corpse of a Killophant, a product of Shady Hills Corporation's mutagen program, risen as one of the undead.  It still wears its assault grade armor.",
     "default_faction": "zombie",
     "bodytype": "human",
-    "species": [ "ZOMBIE", "UPLIFT" ],
+    "species": [ "ZOMBIE" ],
     "diff": 7,
     "volume": "875000 ml",
     "weight": "200 kg",
@@ -116,7 +116,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "vision_day": 50,
     "vision_night": 4,
-    "harvest": "zombie_leather",
+    "harvest": "zombie",
     "special_attacks": [ [ "SMASH", 28 ] ],
     "death_drops": "xl_uplift_death_drop",
     "flags": [
@@ -168,6 +168,7 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
       "GROUP_BASH",
       "POISON",
@@ -198,12 +199,12 @@
     "morale": 100,
     "melee_skill": 6,
     "melee_dice": 2,
-    "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 4,
     "vision_day": 25,
     "regenerates": 10,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
@@ -213,6 +214,7 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
       "BASHES",
       "GROUP_BASH",
@@ -221,7 +223,8 @@
       "REVIVES",
       "PUSH_MON",
       "FILTHY"
-    ]
+    ],
+    "armor": { "bash": 3, "cut": 5, "bullet": 5 }
   },
   {
     "id": "mon_moxie_spartan",
@@ -242,14 +245,13 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
-    "melee_dice": 4,
-    "melee_dice_sides": 5,
-    "melee_dice_ap": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 4,
     "vision_day": 40,
-    "regenerates": 10,
-    "harvest": "frost_human",
+    "regenerates": 15,
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "grab_strength": 20,
     "special_attacks": [
@@ -269,6 +271,7 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
       "GRABS",
       "BASHES",
@@ -281,7 +284,7 @@
       "PUSH_VEH",
       "FILTHY"
     ],
-    "armor": { "bash": 15, "cut": 20, "bullet": 30, "afs_laser": 10 }
+    "armor": { "bash": 15, "cut": 20, "bullet": 30 }
   },
   {
     "id": "mon_moxie_regenerator",
@@ -302,13 +305,13 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 4,
-    "melee_dice": 4,
-    "melee_dice_sides": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 2,
     "vision_day": 40,
     "regenerates": 20,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
@@ -318,6 +321,7 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
       "BASHES",
       "GROUP_BASH",
@@ -327,7 +331,7 @@
       "PUSH_MON",
       "FILTHY"
     ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 10, "cut": 20, "bullet": 25 }
   },
   {
     "id": "mon_moxie_grabby",
@@ -348,20 +352,21 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 4,
-    "melee_dice": 4,
-    "melee_dice_sides": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "grab_strength": 100,
     "dodge": 2,
     "vision_day": 25,
     "regenerates": 5,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "special_attacks": [ { "id": "bite_humanoid", "cooldown": 5 }, { "id": "grab" } ],
     "flags": [
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
       "GRABS",
       "BASHES",
@@ -371,8 +376,7 @@
       "REVIVES",
       "PUSH_MON",
       "FILTHY"
-    ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    ]
   },
   {
     "id": "mon_human_biomachine",
@@ -385,7 +389,7 @@
     "diff": 5,
     "volume": "62500 ml",
     "weight": "81500 g",
-    "hp": 80,
+    "hp": 110,
     "speed": 100,
     "material": [ "flesh" ],
     "symbol": "X",
@@ -394,12 +398,12 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 2,
-    "melee_dice_sides": 3,
+    "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 2,
     "vision_day": 25,
     "regenerates": 5,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "death_drops": "default_moxie_human_death_drops",
     "death_function": { "effect": { "id": "death_guilt", "min_level": 2 } },
     "special_attacks": [ [ "PARROT", 0 ] ],
@@ -407,18 +411,16 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
+      "SWIMS",
       "WARM",
-      "HAS_MIND",
       "BASHES",
       "GROUP_BASH",
       "POISON",
       "NO_BREATHE",
       "REVIVES",
       "PUSH_MON",
-      "FILTHY",
-      "GUILT_OTHERS"
-    ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+      "FILTHY"
+    ]
   },
   {
     "id": "mon_moxie_elder",
@@ -439,9 +441,8 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
-    "melee_dice": 4,
-    "melee_dice_sides": 5,
-    "melee_dice_ap": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 4,
     "vision_day": 10,
@@ -466,6 +467,7 @@
       "HEARS",
       "GOODHEARING",
       "KEENNOSE",
+      "SWIMS",
       "WARM",
       "GRABS",
       "BASHES",
@@ -478,20 +480,20 @@
       "PUSH_VEH",
       "FILTHY"
     ],
-    "armor": { "bash": 10, "cut": 20, "bullet": 30, "afs_laser": 10 }
+    "armor": { "bash": 15, "cut": 20, "bullet": 30 }
   },
   {
     "id": "mon_moxie_bloodhound",
     "type": "MONSTER",
     "name": { "str": "MoxPhore Bloodhound" },
-    "description": "The remains of a long lost colonist, shaped and rebuilt into a twisted reflection of the insectoid and canid forms.  It scuttles across the ground, looking blankly with vestigial eyes as it sniffs the air.",
+    "description": "The remains of a long lost survivor, shaped and rebuilt into a twisted reflection of the insectoid and canid forms.  It scuttles across the ground, looking blankly with vestigial eyes as it sniffs the air.",
     "default_faction": "moxie",
     "bodytype": "dog",
     "species": [ "MOXIE" ],
     "diff": 10,
     "volume": "62500 ml",
     "weight": "81500 g",
-    "hp": 80,
+    "hp": 70,
     "speed": 120,
     "material": [ "flesh" ],
     "symbol": "Q",
@@ -500,13 +502,12 @@
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 2,
-    "melee_dice_sides": 3,
-    "melee_dice_ap": 2,
+    "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 2,
     "vision_day": 2,
     "regenerates": 7,
-    "harvest": "frost_human",
+    "harvest": "zombie_humanoid",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 6 } ] }
@@ -516,6 +517,7 @@
       "HEARS",
       "GOODHEARING",
       "KEENNOSE",
+      "SWIMS",
       "WARM",
       "BASHES",
       "GROUP_BASH",
@@ -524,12 +526,13 @@
       "REVIVES",
       "PUSH_MON",
       "FILTHY"
-    ]
+    ],
+    "armor": { "bash": 10, "cut": 10, "bullet": 20 }
   },
   {
     "id": "mon_moxphore_emetic",
     "type": "MONSTER",
-    "name": { "str": "MoxPhore Emetic" },
+    "name": { "str": "Moxphore Emetic" },
     "description": "Unidentifiable walking remains, hunched and wandering in apparent pain.  An alien plant peeks meekly from its open mouth, leaking green liquid as its host stumbles.",
     "default_faction": "moxie",
     "bodytype": "human",
@@ -537,7 +540,7 @@
     "diff": 10,
     "volume": "62500 ml",
     "weight": "81500 g",
-    "hp": 140,
+    "hp": 110,
     "speed": 85,
     "material": [ "flesh" ],
     "symbol": "Y",
@@ -545,8 +548,8 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 3,
-    "melee_dice": 4,
-    "melee_dice_sides": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 1,
     "vision_day": 15,
@@ -570,7 +573,7 @@
       "PUSH_MON",
       "FILTHY"
     ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    "armor": { "bash": 3, "cut": 5, "bullet": 18 }
   },
   {
     "id": "mon_zombie_brute_shocker",

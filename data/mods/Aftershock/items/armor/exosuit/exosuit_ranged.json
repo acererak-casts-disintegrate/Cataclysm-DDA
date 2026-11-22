@@ -14,9 +14,10 @@
     "color": "light_gray",
     "flags": [ "EXO_LARGE_GADGET", "CANT_WEAR" ],
     "charges_per_use": 30,
+    "tool_ammo": "flammable",
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "pressurized_tank", "pressurized_tank_modern" ] } ],
     "use_action": { "type": "cast_spell", "spell_id": "exo_flamethrower", "no_fail": true, "level": 1 },
-    "tool_ammo": "flammable"
+    "max_worn": 1
   },
   {
     "id": "exo_sonic_unit",
@@ -32,7 +33,7 @@
     "symbol": "f",
     "color": "light_gray",
     "flags": [ "EXO_LARGE_GADGET", "CANT_WEAR" ],
-    "max_worn": 1,
+    "tool_ammo": "battery",
     "charges_per_use": 80,
     "pocket_data": [
       {
@@ -42,7 +43,7 @@
       }
     ],
     "use_action": { "type": "cast_spell", "spell_id": "exo_sonic", "no_fail": true, "level": 1 },
-    "tool_ammo": "battery"
+    "max_worn": 1
   },
   {
     "id": "exo_microwave_cannon",
@@ -50,7 +51,7 @@
     "subtypes": [ "TOOL", "ARMOR" ],
     "category": "exosuit",
     "name": { "str": "exosuit microwave cannon" },
-    "description": "A 'less-lethal' weapon mounted on the shoulder of an exosuit.  Causes a painful burning sensation as water molecules are turned to high temperature vapor.  Infamous for it's use by UICA forces used it to break up protests, the effectiveness can be hard to predict due to variables like the moisture in the air and protective layers on the target.",
+    "description": "A 'less-lethal' weapon mounted on the shoulder of an exosuit.  Causes a painful burning sensation as water molecules are turned to high temperature vapor.  Infamous for its use by federal forces to break up protests, its effectiveness can be hard to predict due to variables like the moisture in the air and protective layers on the target.",
     "weight": "7500 g",
     "volume": "10 L",
     "longest_side": "100 cm",
@@ -58,7 +59,7 @@
     "symbol": "f",
     "color": "light_gray",
     "flags": [ "EXO_LARGE_GADGET", "CANT_WEAR" ],
-    "max_worn": 1,
+    "tool_ammo": "battery",
     "charges_per_use": 100,
     "pocket_data": [
       {
@@ -68,7 +69,7 @@
       }
     ],
     "use_action": { "type": "cast_spell", "spell_id": "exo_microwave", "no_fail": true, "level": 1 },
-    "tool_ammo": "battery"
+    "max_worn": 1
   },
   {
     "id": "exo_electrolaser",
@@ -84,12 +85,12 @@
     "symbol": "f",
     "color": "light_gray",
     "flags": [ "EXO_LARGE_GADGET", "CANT_WEAR" ],
-    "max_worn": 1,
     "charges_per_use": 1500,
+    "tool_ammo": "battery",
     "pocket_data": [
       { "pocket_type": "MAGAZINE_WELL", "holster": true, "item_restriction": [ "afs_cartridge", "afs_archeotech_cartridge" ] }
     ],
     "use_action": { "type": "cast_spell", "spell_id": "exosuit_electrolaser", "no_fail": true, "level": 1 },
-    "tool_ammo": "battery"
+    "max_worn": 1
   }
 ]

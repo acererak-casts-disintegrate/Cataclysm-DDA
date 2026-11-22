@@ -4,16 +4,16 @@
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": "nutriment",
-    "weight": "10 g",
+    "weight": "50 g",
     "color": "white",
     "comestible_type": "FOOD",
     "symbol": "%",
     "calories": 400,
     "healthy": 3,
     "quench": -5,
-    "description": "A crumbly white biscuit half the size of your thumb, packed with vitamins and calories.  Provides a whole meal's nutrition in portable form, but it's a little hard to keep down, thanks to the rancid taste and chalky texture.",
+    "description": "A crumbly white biscuit the size of a matchbox, packed with vitamins and calories.  Provides a whole meal's nutrition in portable form, but it's a little hard to keep down, thanks to the rancid taste and chalky texture.",
     "price": "20 USD",
-    "volume": "1 ml",
+    "volume": "50 ml",
     "looks_like": "vitamins",
     "fun": -8,
     "freezing_point": -9999,
@@ -30,7 +30,7 @@
     "calories": 400,
     "healthy": 3,
     "description": "Nutriment that has been dissolved in water to dilute its taste.  Unnervingly resembles spoiled milk.",
-    "price": "100 USD",
+    "price": "10000 cent",
     "looks_like": "bleach",
     "fun": -2,
     "vitamins": [ [ "calcium", 36 ], [ "iron", 36 ], [ "vitC", 36 ], [ "bad_food", 10 ] ]
@@ -40,7 +40,7 @@
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "Spite Soda" },
-    "weight": "10 g",
+    "weight": "125 g",
     "color": "yellow",
     "addiction_type": "alcohol",
     "use_action": {
@@ -55,8 +55,8 @@
     "quench": 6,
     "healthy": -6,
     "addiction_potential": 6,
-    "description": "Spite Soda, the only soda native to the Salus system.  'Stay Frosty, Drink Spite'.  Visitors to the Salus system who have drank Spite Soda have described it as the taste of transhumanist dialectical materialism.",
-    "price": "10 USD",
+    "description": "Spite Soda, a sharp citrus soda from a small New England bottler.  'Stay Frosty, Drink Spite'.  People who have drank Spite Soda have described it as the taste of a long winter and a short temper.",
+    "price": "1000 cent",
     "looks_like": "diesel",
     "container": "can_drink",
     "material": [ "alcohol" ],
@@ -83,7 +83,7 @@
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "food cubes" },
     "symbol": "f",
-    "container": "bag_plastic_small",
+    "container": "bag_plastic",
     "copy-from": "protein_bar_evac",
     "color": "white",
     "calories": 700,
@@ -92,14 +92,14 @@
     "fun": 2,
     "freezing_point": -9999,
     "vitamins": [ [ "calcium", 30 ], [ "iron", 30 ], [ "vitC", 30 ], [ "bad_food", 1 ] ],
-    "volume": "111 ml"
+    "volume": "170 ml"
   },
   {
     "id": "afs_food_to_go",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "Foodplace's Food-to-go™" },
-    "container": "bag_plastic_small",
+    "container": "bag_plastic",
     "symbol": "f",
     "copy-from": "protein_bar_evac",
     "color": "magenta",
@@ -108,14 +108,14 @@
     "description": "Foodplace™ easy-storage Food-to-go™ the choice Food™ for the contemporary Foodman™.",
     "fun": 2,
     "freezing_point": -9999,
-    "volume": "111 ml"
+    "volume": "170 ml"
   },
   {
     "id": "afs_loop_fruit",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str_sp": "loop 'fruit'" },
-    "container": "bag_plastic_small",
+    "container": "bag_plastic",
     "copy-from": "protein_bar_evac",
     "color": "white",
     "calories": 200,
@@ -139,8 +139,8 @@
     "description": "Smooth crackers colored grayish-green.  Used to be perfectly edible seaweed, or so the wrapper claims.",
     "fun": 2,
     "freezing_point": -9999,
-    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ], [ "veggy_allergen", 1 ] ],
-    "volume": "74 ml"
+    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
+    "volume": "170 ml"
   },
   {
     "id": "afs_beefsim",
@@ -156,8 +156,9 @@
     "description": "Soy or pureed rat?  Better not to know.\n(But its probably both.)",
     "fun": 0,
     "freezing_point": -9999,
-    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ], [ "meat_allergen", 1 ], [ "veggy_allergen", 1 ] ],
-    "volume": "111 ml"
+    "vitamins": [ [ "calcium", 5 ], [ "iron", 5 ], [ "vitC", 10 ], [ "bad_food", 1 ] ],
+    "volume": "111 ml",
+    "weight": "120 g"
   },
   {
     "id": "afs_soup_27",
@@ -173,24 +174,24 @@
     "description": "Yellow chunks float on creamy liquid, like flotsam on a filthy summer pond.  Branding implies at least 26 other flavors, but you have neither seen or heard about any of them.",
     "fun": 0,
     "freezing_point": -9999,
-    "vitamins": [ [ "calcium", 1 ], [ "iron", 10 ], [ "vitC", 5 ], [ "bad_food", 1 ], [ "meat_allergen", 1 ], [ "veggy_allergen", 1 ] ]
+    "vitamins": [ [ "calcium", 1 ], [ "iron", 10 ], [ "vitC", 5 ], [ "bad_food", 1 ] ]
   },
   {
     "id": "afs_escapepod_ration",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str_sp": "landfall survival rations" },
+    "name": { "str_sp": "lifeboat rations" },
     "symbol": "o",
-    "container": "bag_plastic_small",
+    "container": "bag_plastic",
     "copy-from": "protein_bar_evac",
     "color": "white",
     "calories": 500,
     "healthy": 3,
-    "description": "Sealed emergency rations invariably found within an escape pod's inventory.  This particular pack should provide around a day's worth of nutrition.  Required by regulation but rarely ever used, the design of these \"meals\" prioritizes a long shelf life and a very low bulk-cost.  Which lends them their disgusting taste of greased sawdust.",
+    "description": "A foil-sealed pack of compressed emergency food bars, the kind Coast Guard regulations require in every lifeboat and life raft on a commercial vessel.  This particular pack should provide around a day's worth of nutrition.  Required by regulation but rarely ever used, the design of these \"meals\" prioritizes a long shelf life and a very low bulk-cost.  Which lends them their disgusting taste of greased sawdust.",
     "fun": -2,
     "freezing_point": -9999,
     "vitamins": [ [ "vitC", 2 ], [ "bad_food", 1 ] ],
-    "volume": "55 ml"
+    "volume": "170 ml"
   },
   {
     "id": "afs_caffex",
@@ -216,7 +217,6 @@
     "volume": "100 ml",
     "weight": "50 g",
     "description": "Time and the elements have reverted this heavily processed meal to its original form.  Eating it isn't even worth thinking about.",
-    "material": [ "flesh", "veggy" ],
-    "vitamins": [ [ "meat_allergen", 1 ], [ "veggy_allergen", 1 ] ]
+    "material": [ "flesh", "veggy" ]
   }
 ]

@@ -17,6 +17,6 @@
     "color": "light_gray",
     "dispersion": 0,
     "effects": [ "NEVER_MISFIRES", "NON_FOULING", "SEISMIC_MAPPING" ],
-    "damage": { "damage_type": "bullet", "amount": 80, "armor_penetration": 40 }
+    "damage": { "damage_type": "bullet", "amount": 80, "armor_penetration": 30 }
   }
 ]

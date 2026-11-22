@@ -12,7 +12,7 @@
     "durability": 200,
     "description": "This is little more than a sheet metal basin welded to the bottom of the vehicle, extending below it.  Though it holds a lot of stuff, its shoddiness makes it fragile.",
     "size": 600,
-    "breaks_into": [ { "item": "lc_steel_lump", "count": [ 4, 6 ] }, { "item": "scrap", "count": [ 4, 6 ] } ]
+    "breaks_into": [ { "item": "steel_lump", "count": [ 4, 6 ] }, { "item": "scrap", "count": [ 4, 6 ] } ]
   },
   {
     "type": "vehicle_part",
@@ -32,41 +32,8 @@
       "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "flags": [ "ARMOR" ],
-    "breaks_into": [ { "item": "lc_steel_chunk", "count": [ 1, 2 ] }, { "item": "scrap", "count": [ 4, 6 ] } ],
+    "breaks_into": [ { "item": "steel_chunk", "count": [ 1, 2 ] }, { "item": "scrap", "count": [ 4, 6 ] } ],
     "damage_reduction": { "all": 4 },
-    "variants": [ { "symbols": ")", "symbols_broken": ")" } ]
-  },
-  {
-    "type": "vehicle_part",
-    "id": "plating_ship",
-    "name": { "str": "heavy ablative plating" },
-    "categories": [ "warfare" ],
-    "color": "dark_gray",
-    "broken_color": "light_gray",
-    "durability": 1600,
-    "item": "afs_mil_ship_plate",
-    "location": "armor",
-    "//": "300 cm weld to install",
-    "requirements": {
-      "install": {
-        "skills": [ [ "mechanics", 6 ] ],
-        "time": "60 m",
-        "using": [ [ "welding_standard", 300 ], [ "vehicle_bolt_install", 4 ] ]
-      },
-      "removal": {
-        "skills": [ [ "mechanics", 4 ] ],
-        "time": "30 m",
-        "using": [ [ "vehicle_weld_removal_cut_resistant", 1 ], [ "vehicle_wrench_2", 1 ] ]
-      }
-    },
-    "flags": [ "ARMOR", "NO_REPAIR" ],
-    "breaks_into": [
-      { "item": "afs_material_1", "count": [ 8, 10 ] },
-      { "item": "afs_material_2", "count": [ 4, 6 ] },
-      { "item": "afs_material_3", "count": [ 0, 2 ] },
-      { "item": "afs_material_4", "count": [ 0, 1 ] }
-    ],
-    "damage_reduction": { "all": 450 },
     "variants": [ { "symbols": ")", "symbols_broken": ")" } ]
   },
   {
@@ -100,8 +67,8 @@
       "ALARMCLOCK"
     ],
     "breaks_into": [
-      { "item": "lc_steel_lump", "count": [ 2, 4 ] },
-      { "item": "lc_steel_chunk", "count": [ 2, 4 ] },
+      { "item": "steel_lump", "count": [ 2, 4 ] },
+      { "item": "steel_chunk", "count": [ 2, 4 ] },
       { "item": "scrap", "count": [ 2, 4 ] },
       { "item": "cable", "charges": [ 5, 20 ] },
       { "item": "RAM", "count": [ 1, 4 ] },
@@ -148,71 +115,6 @@
   },
   {
     "type": "vehicle_part",
-    "id": "solar_panel_v3",
-    "categories": [ "energy" ],
-    "copy-from": "solar_panel",
-    "name": "quantum solar panel",
-    "looks_like": "solar_panel_v2",
-    "proportional": { "epower": 6.0 },
-    "item": "solar_panel_v3",
-    "durability": 40,
-    "description": "An extremely high-performance solar panel.  Will recharge the vehicle's electrical power when exposed to the sun.  Clouds will slow the recharge speed.  Extremely fragile and cannot be armored.",
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
-      "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] }
-    },
-    "extend": { "flags": [ "NO_REPAIR" ] },
-    "breaks_into": [
-      { "item": "lc_steel_lump", "count": [ 4, 4 ] },
-      { "item": "lc_steel_chunk", "count": [ 4, 4 ] },
-      { "item": "scrap", "count": [ 4, 4 ] },
-      { "item": "solar_cell", "count": [ 2, 8 ] }
-    ]
-  },
-  {
-    "type": "vehicle_part",
-    "id": "minireactor",
-    "name": { "str": "minireactor" },
-    "categories": [ "energy" ],
-    "color": "light_green",
-    "broken_color": "red",
-    "damage_modifier": 80,
-    "durability": 580,
-    "description": "A small nuclear reactor.  When loaded with plutonium cells and turned on, will generate a lot of electrical power.",
-    "power": "10000 W",
-    "//": "Here it is a multiplier on power efficiency - 1 unit of plutonium is 10000 kJ",
-    "epower": "149200 W",
-    "fuel_type": "plut_cell",
-    "item": "minireactor",
-    "location": "fuel_source",
-    "requirements": {
-      "install": {
-        "skills": [ [ "mechanics", 6 ] ],
-        "time": "30 m",
-        "using": [ [ "welding_standard", 5 ], [ "vehicle_bolt_install", 1 ] ]
-      },
-      "removal": {
-        "skills": [ [ "mechanics", 4 ] ],
-        "time": "30 m",
-        "using": [ [ "vehicle_weld_removal", 1 ], [ "vehicle_wrench_2", 1 ] ]
-      },
-      "repair": {
-        "skills": [ [ "mechanics", 7 ] ],
-        "time": "60 m",
-        "using": [ [ "repair_welding_standard", 5 ], [ "repair_welding_alloys", 2 ], [ "vehicle_wrench_2", 1 ], [ "vehicle_screw", 1 ] ]
-      }
-    },
-    "flags": [ "REACTOR" ],
-    "breaks_into": [
-      { "item": "mc_steel_lump", "count": [ 6, 11 ] },
-      { "item": "mc_steel_chunk", "count": [ 6, 11 ] },
-      { "item": "scrap", "charges": [ 6, 11 ] }
-    ],
-    "damage_reduction": { "all": 50 },
-    "variants": [ { "symbols": "O", "symbols_broken": "#" } ]
-  },
-  {
-    "type": "vehicle_part",
     "id": "robot_cargo",
     "name": "robot_carrier",
     "categories": [ "cargo", "passengers" ],
@@ -231,8 +133,8 @@
     },
     "flags": [ "BOARDABLE", "CARGO", "COVERED", "CAPTURE_MONSTER_VEH" ],
     "breaks_into": [
-      { "item": "mc_steel_lump", "count": [ 6, 8 ] },
-      { "item": "mc_steel_chunk", "count": [ 6, 8 ] },
+      { "item": "steel_lump", "count": [ 6, 8 ] },
+      { "item": "steel_chunk", "count": [ 6, 8 ] },
       { "item": "scrap", "count": [ 6, 8 ] }
     ],
     "variants": [ { "symbols": "=", "symbols_broken": "#" } ]
@@ -264,8 +166,8 @@
       { "id": "exo_repair_kit", "hotkey": "e" }
     ],
     "breaks_into": [
-      { "item": "mc_steel_lump", "count": [ 3, 6 ] },
-      { "item": "mc_steel_chunk", "count": [ 3, 6 ] },
+      { "item": "steel_lump", "count": [ 3, 6 ] },
+      { "item": "steel_chunk", "count": [ 3, 6 ] },
       { "item": "scrap", "count": [ 3, 6 ] },
       { "item": "welder", "prob": 50 }
     ],
@@ -275,7 +177,7 @@
     "id": "veh_tools_kitchen",
     "type": "vehicle_part",
     "copy-from": "veh_tools_kitchen",
-    "description": "A table rig with a faucet for water tank access, fume hood, drawers and fixtures for storing tools, low power electric connectors and valves for fuel tank connections.",
+    "description": "A table rig with a faucet for water tank access, fume hood, drawers and fixtures for storing tools, low power electric connectors and valves for for fuel tank connections.",
     "item": "veh_tools_kitchen",
     "looks_like": "kitchen_unit",
     "extend": { "allowed_tools": [ "afs_atompot" ] }

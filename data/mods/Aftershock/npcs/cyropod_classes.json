@@ -64,11 +64,7 @@
   {
     "id": "TALK_THAWED_1",
     "type": "talk_topic",
-    "dynamic_line": {
-      "compare_string": [ "yes", { "npc_val": "dialogue_thawed_thawed_has_talked" } ],
-      "no": "What year is it?  How long have I been asleep?",
-      "yes": "Anymore bad news?"
-    },
+    "dynamic_line": { "compare_string": [ "yes", { "npc_val": "dialogue_thawed_thawed_has_talked" } ] },
     "speaker_effect": { "effect": { "npc_add_var": "dialogue_thawed_thawed_has_talked", "value": "yes" } },
     "responses": [
       {

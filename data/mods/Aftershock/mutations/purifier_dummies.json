@@ -1,0 +1,26 @@
+[
+  {
+    "id": "HUMAN_VOICE",
+    "type": "mutation",
+    "copy-from": "HUMAN_VOICE",
+    "extend": { "cancels": [ "TRUMPET" ] }
+  },
+  {
+    "id": "HUMAN_STATS",
+    "type": "mutation",
+    "copy-from": "HUMAN_STATS",
+    "extend": { "cancels": [ "HAULER", "MIGO_RAD_ADAPTION" ] }
+  },
+  {
+    "id": "HUMAN_SKIN",
+    "type": "mutation",
+    "copy-from": "HUMAN_SKIN",
+    "extend": { "cancels": [ "MIGO_BREATHE" ] }
+  },
+  {
+    "id": "HUMAN_IMMUNITY",
+    "type": "mutation",
+    "copy-from": "HUMAN_IMMUNITY",
+    "extend": { "cancels": [ "MIGO_THRESH_RAD_FLUSH" ] }
+  }
+]

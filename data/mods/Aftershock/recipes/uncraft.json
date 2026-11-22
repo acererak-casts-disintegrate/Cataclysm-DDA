@@ -242,33 +242,6 @@
     ]
   },
   {
-    "result": "broken_utilibot_hostile",
-    "type": "uncraft",
-    "activity_level": "LIGHT_EXERCISE",
-    "time": "2 h",
-    "skill_used": "electronics",
-    "difficulty": 4,
-    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
-    "qualities": [ { "id": "SCREW_FINE", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
-    "components": [
-      [ [ "ai_module", 1 ] ],
-      [ [ "robot_controls", 1 ] ],
-      [ [ "sensor_module", 1 ] ],
-      [ [ "utilibot_const_chassis", 1 ] ],
-      [ [ "afs_circuitry_1", 6 ] ],
-      [ [ "afs_circuitry_2", 4 ] ],
-      [ [ "afs_circuitry_3", 2 ] ],
-      [ [ "afs_energy_storage_3", 2 ] ],
-      [ [ "afs_energy_storage_4", 1 ] ],
-      [ [ "afs_material_1", 12 ] ],
-      [ [ "afs_material_2", 4 ] ],
-      [ [ "targeting_module", 1 ] ],
-      [ [ "gun_module", 2 ] ],
-      [ [ "nailgun", 1 ] ],
-      [ [ "welder", 1 ] ]
-    ]
-  },
-  {
     "result": "broken_utilibot_fire",
     "type": "uncraft",
     "activity_level": "LIGHT_EXERCISE",
@@ -389,12 +362,64 @@
     ]
   },
   {
-    "result": "broken_imaginifer",
+    "result": "broken_defbot_shot",
     "type": "uncraft",
     "activity_level": "LIGHT_EXERCISE",
     "time": "2 h",
     "skill_used": "electronics",
     "difficulty": 4,
+    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "robot_controls", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "defbot_shot_chassis", 1 ] ],
+      [ [ "afs_circuitry_1", 6 ] ],
+      [ [ "afs_circuitry_2", 4 ] ],
+      [ [ "afs_circuitry_3", 2 ] ],
+      [ [ "afs_energy_storage_3", 2 ] ],
+      [ [ "afs_energy_storage_4", 1 ] ],
+      [ [ "afs_material_1", 12 ] ],
+      [ [ "afs_material_2", 4 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "gun_module", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_milbot_556",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "2 h",
+    "skill_used": "electronics",
+    "difficulty": 5,
+    "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "ai_module", 1 ] ],
+      [ [ "robot_controls", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "milbot_humaniform_chassis", 1 ] ],
+      [ [ "afs_circuitry_1", 6 ] ],
+      [ [ "afs_circuitry_2", 4 ] ],
+      [ [ "afs_circuitry_3", 2 ] ],
+      [ [ "afs_energy_storage_3", 2 ] ],
+      [ [ "afs_energy_storage_4", 1 ] ],
+      [ [ "afs_material_1", 12 ] ],
+      [ [ "afs_material_2", 4 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "gun_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "identification_module", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_milbot_needle",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "2 h",
+    "skill_used": "electronics",
+    "difficulty": 5,
     "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
     "qualities": [ { "id": "SCREW_FINE", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
@@ -443,26 +468,6 @@
     ]
   },
   {
-    "result": "afs_5x50dart",
-    "type": "uncraft",
-    "activity_level": "MODERATE_EXERCISE",
-    "skill_used": "gun",
-    "difficulty": 5,
-    "time": "5 s",
-    "qualities": [ { "id": "PULL", "level": 1 } ],
-    "components": [ [ [ "combatnail", 1 ] ], [ [ "5x50_hull", 1 ] ], [ [ "smrifle_primer", 1 ] ], [ [ "gunpowder_rifle", 30 ] ] ]
-  },
-  {
-    "result": "afs_5x50heavy",
-    "type": "uncraft",
-    "activity_level": "MODERATE_EXERCISE",
-    "skill_used": "gun",
-    "difficulty": 5,
-    "time": "5 s",
-    "qualities": [ { "id": "PULL", "level": 1 } ],
-    "components": [ [ [ "lead", 3 ] ], [ [ "5x50_hull", 1 ] ], [ [ "smrifle_primer", 1 ] ], [ [ "gunpowder_rifle", 30 ] ] ]
-  },
-  {
     "result": "reverse_jointed_legs",
     "type": "uncraft",
     "activity_level": "MODERATE_EXERCISE",
@@ -471,6 +476,6 @@
     "time": "6 h 40 m",
     "using": [ [ "soldering_standard", 5 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
-    "components": [ [ [ "motor_tiny", 6 ] ], [ [ "power_supply", 6 ] ], [ [ "cable", 12 ] ], [ [ "ch_steel_chunk", 6 ] ] ]
+    "components": [ [ [ "motor_tiny", 6 ] ], [ [ "power_supply", 6 ] ], [ [ "cable", 12 ] ], [ [ "steel_chunk", 6 ] ] ]
   }
 ]

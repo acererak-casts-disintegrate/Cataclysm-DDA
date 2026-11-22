@@ -39,12 +39,13 @@
         "l": { "items": [ { "item": "gear_soldier_sidearm", "chance": 33 } ] },
         "]": { "items": [ { "item": "book_military", "chance": 20 } ] },
         "t": { "items": [ { "item": "book_military", "chance": 10 } ] },
-        "d": { "items": [ { "item": "SUS_office_desk", "chance": 50 } ] },
+        "d": { "items": [ { "item": "office", "chance": 50 } ] },
         "r": {
           "items": [
-            { "item": "ammo_milspec", "chance": 40 },
-            { "item": "guns_milspec", "chance": 40 },
-            { "item": "afs_weapons_rare", "chance": 6 }
+            { "item": "mil_armor", "chance": 60 },
+            { "item": "ammo_milspec", "chance": 10 },
+            { "item": "guns_milspec", "chance": 10 },
+            { "item": "afs_weapons_rare", "chance": 5 }
           ]
         },
         "*": { "items": [ { "item": "casings", "chance": 10 } ] }

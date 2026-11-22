@@ -8,7 +8,7 @@
     "description": "Designed to attach to an exosuit's legs, these are sturdy plates of steel.",
     "weight": "13500 g",
     "volume": "6500 ml",
-    "material": [ "afs_steel" ],
+    "material": [ "qt_steel" ],
     "symbol": "L",
     "looks_like": "legguard_lightplate",
     "color": "light_gray",
@@ -16,7 +16,7 @@
     "non_functional": "damaged_exo_leg_steel",
     "armor": [
       {
-        "material": [ { "type": "afs_steel", "covered_by_mat": 100, "thickness": 2 } ],
+        "material": [ { "type": "qt_steel", "covered_by_mat": 100, "thickness": 6 } ],
         "covers": [ "leg_l", "leg_r", "foot_l", "foot_r" ],
         "coverage": 100,
         "encumbrance": 5
@@ -34,7 +34,7 @@
     "non_functional": "destroyed_exo_leg_steel",
     "armor": [
       {
-        "material": [ { "type": "afs_steel", "covered_by_mat": 100, "thickness": 1 } ],
+        "material": [ { "type": "qt_steel", "covered_by_mat": 100, "thickness": 3 } ],
         "covers": [ "leg_l", "leg_r", "foot_l", "foot_r" ],
         "coverage": 85,
         "encumbrance": 5
@@ -106,11 +106,11 @@
     "name": { "str": "carbide leg plate (exosuit)", "str_pl": "carbide leg plates (exosuit)" },
     "description": "Designed to attach to an exosuit's legs, these are sturdy plates of vacuum-cast carbide.",
     "weight": "20250 g",
-    "material": [ "vacuum_carbide_hard" ],
+    "material": [ "vacuum_carbide" ],
     "non_functional": "damaged_exo_leg_vcc",
     "armor": [
       {
-        "material": [ { "type": "vacuum_carbide", "covered_by_mat": 100, "thickness": 1 } ],
+        "material": [ { "type": "vacuum_carbide", "covered_by_mat": 100, "thickness": 4 } ],
         "covers": [ "leg_l", "leg_r", "foot_l", "foot_r" ],
         "coverage": 100,
         "encumbrance": 20
@@ -128,7 +128,7 @@
     "non_functional": "destroyed_exo_leg_vcc",
     "armor": [
       {
-        "material": [ { "type": "vacuum_carbide", "covered_by_mat": 100, "thickness": 1 } ],
+        "material": [ { "type": "vacuum_carbide", "covered_by_mat": 100, "thickness": 2 } ],
         "covers": [ "leg_l", "leg_r", "foot_l", "foot_r" ],
         "coverage": 85,
         "encumbrance": 5

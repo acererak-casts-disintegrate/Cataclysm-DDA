@@ -18,7 +18,7 @@
         "fake_skills": [ [ "gun", 1 ], [ "pistol", 1 ] ],
         "fake_dex": 3,
         "ranges": [ [ 0, 14, "DEFAULT" ] ],
-        "condition": { "test_eoc": "is_disarmed" },
+        "condition": { "and": [ { "not": { "u_has_effect": "maimed_arm" } }, { "not": { "u_has_effect": "disarmed" } } ] },
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false,
@@ -28,8 +28,7 @@
         "targeting_volume": 20,
         "no_ammo_sound": "a chk!"
       }
-    ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    ]
   },
   {
     "id": "afs_mon_reaver_rifle",
@@ -51,7 +50,7 @@
         "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
         "fake_dex": 3,
         "ranges": [ [ 0, 14, "DEFAULT" ] ],
-        "condition": { "test_eoc": "is_disarmed" },
+        "condition": { "and": [ { "not": { "u_has_effect": "maimed_arm" } }, { "not": { "u_has_effect": "disarmed" } } ] },
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false,
@@ -61,7 +60,6 @@
         "targeting_volume": 20,
         "no_ammo_sound": "a chk!"
       }
-    ],
-    "armor": { "bash": 8, "cut": 10, "bullet": 15 }
+    ]
   }
 ]

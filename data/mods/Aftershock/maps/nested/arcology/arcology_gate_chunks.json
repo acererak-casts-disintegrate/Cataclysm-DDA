@@ -19,7 +19,7 @@
       "palettes": [ "arcology_exterior" ],
       "computers": {
         "5": {
-          "name": "West Entrance Gate Controls",
+          "name": "Shady Hills Arcology West Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -27,7 +27,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -47,7 +48,8 @@
         ",,,,,,..",
         ",,,,%,||"
       ],
-      "palettes": [ "arcology_exterior" ]
+      "palettes": [ "arcology_exterior" ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -67,7 +69,8 @@
         ",,,,,,OO",
         ",,,,%,||"
       ],
-      "palettes": [ "arcology_exterior" ]
+      "palettes": [ "arcology_exterior" ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -90,7 +93,7 @@
       "palettes": [ "arcology_exterior" ],
       "computers": {
         "5": {
-          "name": "West Entrance Gate Controls",
+          "name": "Shady Hills Arcology West Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -98,7 +101,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -124,7 +128,8 @@
         "W": [ { "item": "collapsed_building_rubble", "chance": 80, "repeat": [ 1, 3 ] } ],
         "C": [ { "item": "wreckage", "chance": 100, "repeat": [ 1, 2 ] } ]
       },
-      "furniture": { "P": "f_ash" }
+      "furniture": { "P": "f_ash" },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -153,7 +158,7 @@
       "furniture": { "P": "f_ash" },
       "computers": {
         "5": {
-          "name": "West Entrance Gate Controls",
+          "name": "Shady Hills Arcology West Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -161,7 +166,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -186,7 +192,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "South Entrance Gate Controls",
+          "name": "Shady Hills Arcology South Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -194,7 +200,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -215,7 +222,8 @@
         ",,,,,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -236,7 +244,8 @@
         ",,,,,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -260,7 +269,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "South Entrance Gate Controls",
+          "name": "Shady Hills Arcology South Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -268,7 +277,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -295,7 +305,8 @@
         "C": [ { "item": "wreckage", "chance": 100, "repeat": [ 1, 2 ] } ]
       },
       "furniture": { "P": "f_ash" },
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -318,7 +329,7 @@
       "palettes": [ "arcology_exterior" ],
       "computers": {
         "5": {
-          "name": "South Entrance Gate Controls",
+          "name": "Shady Hills Arcology South Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -333,7 +344,8 @@
         "W": [ { "item": "collapsed_building_rubble", "chance": 80, "repeat": [ 1, 3 ] } ],
         "C": [ { "item": "wreckage", "chance": 100, "repeat": [ 1, 2 ] } ]
       },
-      "furniture": { "P": "f_ash" }
+      "furniture": { "P": "f_ash" },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -358,7 +370,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "East Entrance Gate Controls",
+          "name": "Shady Hills Arcology East Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -366,7 +378,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -387,7 +400,8 @@
         "_6||,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -408,7 +422,8 @@
         "_6||,,,,"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -432,7 +447,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "East Entrance Gate Controls",
+          "name": "Shady Hills Arcology East Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -440,7 +455,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -467,7 +483,8 @@
         "W": [ { "item": "collapsed_building_rubble", "chance": 80, "repeat": [ 1, 3 ] } ],
         "C": [ { "item": "wreckage", "chance": 100, "repeat": [ 1, 2 ] } ]
       },
-      "furniture": { "P": "f_ash" }
+      "furniture": { "P": "f_ash" },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -497,7 +514,7 @@
       "furniture": { "P": "f_ash" },
       "computers": {
         "5": {
-          "name": "East Entrance Gate Controls",
+          "name": "Shady Hills Arcology East Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -505,7 +522,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -530,7 +548,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "North Entrance Gate Controls",
+          "name": "Shady Hills Arcology North Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -538,7 +556,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -559,7 +578,8 @@
         "________"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -580,7 +600,8 @@
         "________"
       ],
       "palettes": [ "arcology_exterior" ],
-      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } }
+      "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -604,7 +625,7 @@
       "nested": { "6": { "chunks": [ [ "arcology_1x1_gate", 50 ], [ "arcology_1x1_gate_broken", 50 ] ] } },
       "computers": {
         "5": {
-          "name": "North Entrance Gate Controls",
+          "name": "Shady Hills Arcology North Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -612,7 +633,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -639,7 +661,8 @@
         "W": [ { "item": "collapsed_building_rubble", "chance": 80, "repeat": [ 1, 3 ] } ],
         "C": [ { "item": "wreckage", "chance": 100, "repeat": [ 1, 2 ] } ]
       },
-      "furniture": { "P": "f_ash" }
+      "furniture": { "P": "f_ash" },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -669,7 +692,7 @@
       "furniture": { "P": "f_ash" },
       "computers": {
         "5": {
-          "name": "North Entrance Gate Controls",
+          "name": "Shady Hills Arcology North Gate Controls",
           "security": 1,
           "options": [
             { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 3 },
@@ -677,7 +700,8 @@
           ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
@@ -695,13 +719,19 @@
           "options": [ { "name": "EMERGENCY OVERRIDE - OPEN GATES", "action": "open_gate", "security": 1 } ],
           "failures": [ { "action": "damage" }, { "action": "shutdown" } ]
         }
-      }
+      },
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "arcology_1x1_gate_broken",
     "//": "Broken Console",
-    "object": { "mapgensize": [ 1, 1 ], "rows": [ "%" ], "palettes": [ "arcology_exterior" ] }
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [ "%" ],
+      "palettes": [ "arcology_exterior" ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+    }
   }
 ]

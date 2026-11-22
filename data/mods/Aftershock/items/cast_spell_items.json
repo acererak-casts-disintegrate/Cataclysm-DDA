@@ -3,19 +3,19 @@
     "abstract": "afs_caster",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR" ],
-    "name": { "str": "caster", "//~": "NO_I18N" },
-    "description": { "str": "A generic techno doodad used to cast spells.", "//~": "NO_I18N" },
+    "name": { "str": "caster" },
+    "description": "A generic techno doodad used to cast spells.",
     "weight": "100 g",
     "volume": "250 ml",
-    "price": "50 USD",
+    "price": "5000 cent",
     "material": [ "superalloy" ],
     "symbol": "[",
     "color": "light_red",
     "charges_per_use": 1,
     "warmth": 0,
     "flags": [ "WATER_FRIENDLY", "ALLOWS_NATURAL_ATTACKS", "NO_UNLOAD", "NO_RELOAD" ],
-    "max_worn": 1,
-    "armor": [ { "coverage": 0, "covers": [ "torso" ] } ]
+    "armor": [ { "coverage": 0, "covers": [ "torso" ] } ],
+    "max_worn": 1
   },
   {
     "id": "afs_holo_transposition_caster",
@@ -67,7 +67,7 @@
     "subtypes": [ "TOOL", "ARMOR" ],
     "copy-from": "dimensional_anchor",
     "name": { "str": "recall rig" },
-    "description": "A complex antennae assembly worn around the upper torso that allows its user to teleport towards previously configured teleport pads.  Although relatively functional, it's much inferior to the translocation systems of old, and a successful teleport requires standing perfectly still for several minutes.",
+    "description": "A complex antennae assembly worn around the upper torso that allows its user to home and teleport towards previously configured teleport pads.  Although relatively functional, it's much inferior to the translocation systems of old, and a successful teleport requires standing perfectly still for several minutes.",
     "charges_per_use": 1000,
     "pocket_data": [
       {
@@ -85,10 +85,11 @@
     "subtypes": [ "TOOL", "ARMOR" ],
     "name": { "str": "translocator" },
     "copy-from": "afs_wrist_computer",
-    "description": "An arcane device from the late Hyperspace Era, vaguely resembling a wrist computer made from malleable glass.  It can be activated to quickly deploy a translocator buoy or to teleport to previously activated buoys.",
+    "description": "An arcane device recovered by XEDRA from a dimensional anomaly, vaguely resembling a wrist computer made from malleable glass.  Nobody on Earth knows how to build one.  It can be activated to quickly deploy a translocator buoy or to teleport to previously activated buoys.",
     "price": "100 kUSD",
     "charges_per_use": 1000,
     "material": [ "diamond" ],
+    "tool_ammo": [ "battery" ],
     "use_action": [
       {
         "type": "cast_spell",
@@ -108,7 +109,6 @@
         "magazine_well": "75 ml",
         "item_restriction": [ "afs_archeotech_cartridge" ]
       }
-    ],
-    "tool_ammo": [ "battery" ]
+    ]
   }
 ]
