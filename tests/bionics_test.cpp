@@ -39,6 +39,7 @@ static const bionic_id bio_fuel_wood( "bio_fuel_wood" );
 static const bionic_id bio_power_storage( "bio_power_storage" );
 // Change to some other weapon CBM if bio_surgical_razor is ever removed
 static const bionic_id bio_surgical_razor( "bio_surgical_razor" );
+static const bionic_id bio_trickle( "bio_trickle" );
 // Any item that can be wielded
 
 static const flag_id json_flag_PSEUDO( "PSEUDO" );
@@ -595,5 +596,32 @@ TEST_CASE( "fueled_bionics", "[bionics] [item]" )
         // Run out of fuel
         dummy.suffer();
         CHECK( units::to_joule( dummy.get_power_level() ) == 125000 );
+    }
+}
+
+TEST_CASE( "Trickle_charge_is_applied_once_per_turn", "[bionics] [power]" )
+{
+    avatar &dummy = get_avatar();
+    clear_avatar();
+    dummy.add_bionic( bio_power_storage );
+    dummy.add_bionic( bio_trickle );
+    dummy.set_power_level( 0_kJ );
+
+    WHEN( "a turn passes with the trickle charger as the only passive bionic" ) {
+        dummy.suffer();
+        THEN( "power rises by the trickle rate" ) {
+            CHECK( dummy.get_power_level() == 2_J );
+        }
+    }
+
+    WHEN( "a turn passes with several other passive bionics installed" ) {
+        dummy.add_bionic( bio_ears );
+        dummy.add_bionic( bio_blade );
+        REQUIRE( dummy.num_bionics() >= 5 );
+        dummy.set_power_level( 0_kJ );
+        dummy.suffer();
+        THEN( "power still rises by the trickle rate only once" ) {
+            CHECK( dummy.get_power_level() == 2_J );
+        }
     }
 }

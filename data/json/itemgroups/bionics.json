@@ -101,7 +101,8 @@
       [ "bio_taser", 10 ],
       [ "bio_railgun", 10 ],
       [ "bio_shock_absorber", 10 ],
-      [ "bio_blaster", 5 ]
+      [ "bio_blaster", 5 ],
+      [ "bio_trickle", 10 ]
     ]
   },
   {
@@ -128,7 +129,8 @@
       [ "bio_torsionratchet", 10 ],
       [ "bio_cable", 10 ],
       [ "bio_fitnessband", 10 ],
-      [ "bio_taser", 5 ]
+      [ "bio_taser", 5 ],
+      [ "bio_trickle", 10 ]
     ]
   },
   {

@@ -1745,6 +1745,16 @@
     ]
   },
   {
+    "id": "bio_trickle",
+    "type": "bionic",
+    "name": { "str": "Trickle Charger" },
+    "description": "You have been equipped with a CBM that slowly recharges your power reserves at all times.  Provides extremely low power but has no cost and will last several years.",
+    "occupied_bodyparts": [ [ "torso", 7 ] ],
+    "dupes_allowed": true,
+    "enchantments": [ { "values": [ { "value": "POWER_TRICKLE", "add": 2000 } ] } ],
+    "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+  },
+  {
     "id": "bio_jointservo",
     "type": "bionic",
     "name": { "str": "Joint Servo" },

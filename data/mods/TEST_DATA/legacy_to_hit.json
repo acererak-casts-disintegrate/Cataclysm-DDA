@@ -118,7 +118,15 @@
       "q_solarpack_on",
       "rm99_pistol",
       "plasma_gun",
-      "plasma_rifle"
+      "plasma_rifle",
+      "power_armor_basic",
+      "power_armor_frame",
+      "power_armor_generator",
+      "power_armor_heavy",
+      "power_armor_helmet_basic",
+      "power_armor_helmet_heavy",
+      "power_armor_helmet_light",
+      "power_armor_light"
     ]
   },
   {

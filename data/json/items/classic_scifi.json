@@ -13,6 +13,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ";",
     "color": "light_green",
+    "tool_ammo": [ "battery" ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",

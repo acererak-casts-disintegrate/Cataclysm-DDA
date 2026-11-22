@@ -1667,6 +1667,14 @@ void Character::suffer()
         }
     }
 
+    // POWER_TRICKLE is a per-second rate: apply it once per turn, not once per
+    // unpowered bionic.
+    const units::energy trickle = enchantment_cache->modify_value(
+                                      enchant_vals::mod::POWER_TRICKLE, 0_J );
+    if( trickle != 0_J ) {
+        mod_power_level( trickle );
+    }
+
     for( bionic &bio : *my_bionics ) {
         process_bionic( bio );
     }
