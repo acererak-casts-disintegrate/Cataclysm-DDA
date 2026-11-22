@@ -455,6 +455,7 @@
     "ugliness": 0,
     "description": "Upon gaining this ability the Sylph gains the ability to summon an air sprite.",
     "category": [ "SYLPH" ],
+    "purifiable": false,
     "spells_learned": [ [ "summon_air_sprite", 1 ] ]
   },
   {
