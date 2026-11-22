@@ -50,3 +50,15 @@ Only the five order-dependent failures (`monsters_spawn_*` ×4, `limit_mod_size_
 3. Find the test that leaves an id-less NPC in the overmap buffer before `mission_goal_condition_test` when Magiclysm or the bionic professions package is loaded.
 
 Left alone: the order-dependent `monsters_spawn_*` / `limit_mod_size_bonus` failures and Xedra's `nutrients_in_food`, all present on pure 0.I.
+
+## Follow-up fixes (e93240b09d)
+
+| Commit | Fix |
+|---|---|
+| 8b83f4ac01 | Xedra `air_sprite` non-purifiable and `floral_boat_hull` `BELTABLE`, from upstream master |
+| 32aef4d076 | Aftershock and the bionic professions package flag `basement_bionic_decoy` `SHOULD_NOT_SPAWN` |
+| e93240b09d | `overmapbuffer::find_npc` matches no NPC for an invalid id. The leak behind `mission_goal_condition_test`: tests such as `EOC_transform_line` leave id-less NPCs in the overmap buffer, and the giverless mission then found one and completed. In core, that pair alone reproduced the failure |
+
+Reruns on e93240b09d: magiclysm, package_bionic_professions and core each 1142 / 1147, failing only the five order-dependent tests shared with pure 0.I. Targeted reruns: Xedra purifier and beltable tests pass; overmap coverage passes with Aftershock and with the package; 143 NPC, EOC, mission and character test cases pass.
+
+Still left alone: the five order-dependent failures and Xedra's `nutrients_in_food`, all present on pure 0.I.
