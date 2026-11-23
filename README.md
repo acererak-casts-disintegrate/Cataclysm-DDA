@@ -31,7 +31,7 @@ This fork is based on the 0.H stable branch. As of now, it differs from 0.H as f
 * **Classic CBM acquisition.** Bionics turn up in loot again and can be harvested from bionic zombies, as in 0.F, instead of coming from the Exodii.
 * **Exodii as a baseless scavenger faction.** Their castle, safehouse, warehouse, NPCs, trade and missions are gone. They appear only at rare crashed-pod sites in the wild.
 * **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu.
-* **Skill rust off by default.** The world option removed after 0.G (vanilla, capped or off) is back, defaulting to off.
+* **Skill rust off by default.** The world option removed after 0.G (full, capped or off) is back, defaulting to off.
 * **Rivtech content restored.** Reverts upstream's removal of the RM216 SPIW, RM232 IDW, 5x50mm flechette ammunition, RM298 HMG and 8mm ammunition variants, and its Rivtech gun nerfs.
 * **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
 * **Classic sci-fi content restored.** Robots (chicken walker, tank drone, copbot, riotbot, eyebot, laser turret, mininuke hack), the railgun, shock absorber and fusion blaster CBMs, the laser cannon, heavy rail rifle, mininuke launcher, RM99 revolver, advanced UPS, solar gear, matching vehicle turrets and the atomic sports car.

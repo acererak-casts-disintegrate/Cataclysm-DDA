@@ -2838,9 +2838,9 @@ void options_manager::add_options_debug()
     add_empty_line();
 
     add( "SKILL_RUST", "debug", to_translation( "Skill rust" ),
-         to_translation( "Set the type of skill rust.  Vanilla: Skill rust can decrease levels.  - Capped: Skill rust cannot decrease levels.  - Off: None at all." ),
-         //~ plain, default, normal
-    {   { "vanilla", to_translation( "Vanilla" ) },
+         to_translation( "Set the type of skill rust.  Full: Skill rust can decrease levels.  - Capped: Skill rust cannot decrease levels.  - Off: None at all." ),
+         //~ skill rust at full strength, able to lower skill levels
+    {   { "vanilla", to_translation( "Full" ) },
         //~ capped at a value
         { "capped", to_translation( "Capped" ) },
         { "off", to_translation( "Off" ) }
