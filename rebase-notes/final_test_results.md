@@ -79,3 +79,7 @@ The five are `monsters_spawn_eggs`, `monsters_spawn_egg_itemgroups`, `monsters_s
 ## Note: the five order-dependent failures and CI ordering
 
 The five failures above come from Catch2's default declaration order, where `limit_mod_size_bonus` runs immediately before the `monsters_spawn_*` tests. CI runs with `--order lex` (`build-scripts/gha_test_only.sh`), which separates them. Run that way locally on `0.I-custom`, core's non-slow half (`"~[slow] ~[.],starting_items"`), which contains all five, passes all 1131 test cases. For CI-equivalent local results, use `--rng-seed time --order lex` and the same two-way split.
+
+## Note: e93240b09d superseded by 5a7cb9825a
+
+The `find_npc` guard in e93240b09d broke vehicle passenger lookups for id-less test NPCs (`vehicle::get_passenger` goes through `critter_by_id` and `find_npc`). After `NPC-rules-avoid-locks` boards such an NPC into a car, it could no longer be unboarded, and a later test logged `map::unboard_vehicle: vehicle not found`. Whether that happened depended on the random seed: CI on e9440d9183 failed on Linux (Magiclysm run) and Windows. 5a7cb9825a restores upstream's `find_npc` and guards only the giverless-mission lookup in `mission::is_complete`.
