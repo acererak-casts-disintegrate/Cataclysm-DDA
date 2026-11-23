@@ -32,9 +32,10 @@ on:
     types: [opened, reopened, synchronize, ready_for_review]
 
 # We only care about the latest revision of a PR, so cancel previous instances.
+# Allow branch builds to complete so they refresh the ccache and vcpkg caches.
 concurrency:
   group: msvc-build-${{ github.event.pull_request.number || github.ref_name }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   # Enable pretty backtraces
@@ -125,7 +126,8 @@ jobs:
         # double-dash after compiler is not a typo, it is to disambiguate between g++-<date> and g++-11-<date> for restore key prefix matching
         key: ccache-${{ github.ref_name }}-${{ runner.os }}-msvc--${{ steps.get-vars.outputs.datetime }}
         restore-keys: |
-          ccache-0.I-${{ runner.os }}-msvc--
+          ccache-${{ github.ref_name }}-${{ runner.os }}-msvc--
+          ccache-0.I-custom-${{ runner.os }}-msvc--
 
     - name: Configure ccache
       run: |
@@ -161,7 +163,7 @@ jobs:
         ${{ env.CDDA_CCACHE_PATH }}\ccache.exe -s -v
 
     - name: clear ccache on PRs
-      if: ${{ github.ref_name != '0.I-branch' }}
+      if: ${{ github.event_name == 'pull_request' }}
       run: |
         ${{ env.CDDA_CCACHE_PATH }}\ccache.exe -C
 
@@ -216,7 +218,7 @@ jobs:
       shell: bash
 
     - name: Don't upload vcpkg cache on failure or PRs
-      if: ${{ failure() || cancelled() || github.ref_name != '0.I-branch' }}
+      if: ${{ failure() || cancelled() || github.event_name == 'pull_request' }}
       run: |
         echo "RUNVCPKG_NO_CACHE=1" >> $GITHUB_ENV
       shell: bash
