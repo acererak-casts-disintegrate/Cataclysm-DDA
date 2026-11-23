@@ -31,7 +31,7 @@ This fork is based on the 0.I stable branch (0.I-1). It carries forward the chan
 * **Classic CBM acquisition.** Bionics turn up in loot again and can be harvested from bionic zombies, as in 0.F, instead of coming from the Exodii. Doctor's offices have autodocs, some bionic basements and bunker basements have medical bays, and black-ops zombies carry the bio-operator implants.
 * **Exodii as a baseless scavenger faction.** Their castle, safehouse, warehouse, NPCs (including 0.I's weaponmaster and workers), trade, missions, warehouse search quest and castle scenario are gone. They appear only at rare crashed-pod sites in the wild.
 * **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu or by mod content that causes them on purpose.
-* **Skill rust off by default.** The world option removed after 0.G (vanilla, capped or off) is back, defaulting to off.
+* **Skill rust off by default.** The world option removed after 0.G (full, capped or off) is back, defaulting to off.
 * **Hidden world options shown.** Twelve world-generation options that 0.I hides from the options menu are visible and documented.
 * **Rivtech content restored.** Reverts upstream's removal of the RM120c, RM20, RM228, RM298, RM614, RM88, RM216 SPIW and RM232 IDW, the 5x50mm and 20x66mm ammunition and magazines, the 8x40mm drums and the 8mm variants, and its Rivtech gun nerfs.
 * **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
