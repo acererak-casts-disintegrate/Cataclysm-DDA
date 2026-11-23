@@ -75,3 +75,7 @@ Still left alone: the five order-dependent failures and Xedra's `nutrients_in_fo
 | xedra_evolved | 1141 / 1147 | the five order-dependent tests and `nutrients_in_food` |
 
 The five are `monsters_spawn_eggs`, `monsters_spawn_egg_itemgroups`, `monsters_spawn_babies`, `monsters_spawn_baby_groups` and `limit_mod_size_bonus`. Every failure here also occurs on pure 0.I.
+
+## Note: the five order-dependent failures and CI ordering
+
+The five failures above come from Catch2's default declaration order, where `limit_mod_size_bonus` runs immediately before the `monsters_spawn_*` tests. CI runs with `--order lex` (`build-scripts/gha_test_only.sh`), which separates them. Run that way locally on `0.I-custom`, core's non-slow half (`"~[slow] ~[.],starting_items"`), which contains all five, passes all 1131 test cases. For CI-equivalent local results, use `--rng-seed time --order lex` and the same two-way split.
