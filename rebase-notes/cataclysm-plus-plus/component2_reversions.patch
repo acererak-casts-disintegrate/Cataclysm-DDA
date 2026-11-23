@@ -1,0 +1,199 @@
+diff -ruN cpp_raw/Cataclysm++/Npc/c_npc.json cpp_wt/data/mods/Cataclysm++/Npc/c_npc.json
+--- a/data/mods/Cataclysm++/Npc/c_npc.json	2026-11-23 02:15:23.921282887 +0000
++++ b/data/mods/Cataclysm++/Npc/c_npc.json	2026-11-23 01:59:22.075680596 +0000
+@@ -7,7 +7,7 @@
+     "gender": "male",
+     "class": "NC_SCAVENGER",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_BFF",
+     "faction": "preppers"
+   },
+@@ -18,7 +18,7 @@
+     "name_suffix": "Prepper",
+     "class": "NC_PREPPER",
+     "attitude": 0,
+-    "mission": "SHOPKEEP",
++    "mission": 3,
+     "chat": "TALK_STRANGER_NEUTRAL",
+     "faction": "preppers"
+   },
+@@ -29,7 +29,7 @@
+     "name_suffix": "Prepper",
+     "class": "NC_PREPPER",
+     "attitude": 1,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_STRANGER_NEUTRAL",
+     "faction": "preppers"
+   },
+@@ -42,7 +42,7 @@
+     "gender": "female",
+     "class": "NC_BIO_HUNTER_E",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_BHUNTER",
+     "faction": "super_soldiers",
+     "mission_offered": "MISSION_FIND_COMMAND_CENTER"
+@@ -56,7 +56,7 @@
+     "gender": "male",
+     "class": "NC_SCIENTIST_ROUTER",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_MSCI",
+     "faction": "commandeers",
+     "mission_offered": "MISSION_PROOF_APOPHIS_DEAD"
+@@ -70,7 +70,7 @@
+     "gender": "male",
+     "class": "NC_BIO_WEAPON_SIGMA",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_BIO_1",
+     "faction": "bio_weapons"
+   },
+@@ -83,7 +83,7 @@
+     "gender": "female",
+     "class": "NC_BIO_WEAPON_LAMBDA",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_BIO_2",
+     "faction": "bio_weapons"
+   },
+@@ -95,7 +95,7 @@
+     "gender": "female",
+     "class": "NC_SUPER_SOLDIER",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_CGUARD1",
+     "faction": "commandeers"
+   },
+@@ -107,7 +107,7 @@
+     "gender": "male",
+     "class": "NC_SUPER_SOLDIER",
+     "attitude": 0,
+-    "mission": "GUARD",
++    "mission": 7,
+     "chat": "TALK_CGUARD2",
+     "faction": "commandeers"
+   },
+@@ -118,7 +118,7 @@
+     "name_suffix": "Red Team Slave Fighter",
+     "class": "NC_SLAVE_FIGHTER_RED",
+     "attitude": 0,
+-    "mission": "GUARD_PATROL",
++    "mission": 8,
+     "chat": "TALK_DONE",
+     "faction": "slave_fighter"
+   },
+@@ -129,7 +129,7 @@
+     "name_suffix": "Blue Team Slave Fighter",
+     "class": "NC_SLAVE_FIGHTER_BLUE",
+     "attitude": 0,
+-    "mission": "GUARD_PATROL",
++    "mission": 8,
+     "chat": "TALK_GLADIATOR",
+     "faction": "slave_fighter_allied"
+   }
+diff -ruN cpp_raw/Cataclysm++/Surv_help/c_armor.json cpp_wt/data/mods/Cataclysm++/Surv_help/c_armor.json
+--- a/data/mods/Cataclysm++/Surv_help/c_armor.json	2026-11-23 02:15:23.921899289 +0000
++++ b/data/mods/Cataclysm++/Surv_help/c_armor.json	2026-11-23 01:59:22.078432515 +0000
+@@ -442,10 +442,9 @@
+     "color": "dark_gray",
+     "warmth": 10,
+     "material_thickness": 4,
+-    "light": 50,
+     "environmental_protection": 5,
+     "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "C_RADIOGENIC_GOGGLES" ] } ],
+-    "flags": [ "GNV_EFFECT", "WATERPROOF", "STURDY", "RADIOACTIVE", "PADDED" ],
++    "flags": [ "GNV_EFFECT", "WATERPROOF", "STURDY", "RADIOACTIVE", "LIGHT_25", "PADDED" ],
+     "armor": [ { "encumbrance": 30, "coverage": 100, "covers": [ "eyes" ] } ]
+   },
+   {
+diff -ruN cpp_raw/Cataclysm++/Surv_help/c_tools.json cpp_wt/data/mods/Cataclysm++/Surv_help/c_tools.json
+--- a/data/mods/Cataclysm++/Surv_help/c_tools.json	2026-11-23 02:15:23.922969054 +0000
++++ b/data/mods/Cataclysm++/Surv_help/c_tools.json	2026-11-23 01:59:22.077525703 +0000
+@@ -42,8 +42,7 @@
+     "price": "8 USD",
+     "price_postapoc": "2 USD",
+     "material": [ "plastic", "aluminum" ],
+-    "flags": [ "CHARGEDIM", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+-    "light": 450,
++    "flags": [ "LIGHT_450", "CHARGEDIM", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+     "weight": "400 g",
+     "volume": "500 ml",
+     "melee_damage": { "bash": 1 },
+@@ -113,8 +112,7 @@
+     "price": "8 USD",
+     "price_postapoc": "2 USD",
+     "material": [ "plastic", "aluminum" ],
+-    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "CHARGEDIM", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+-    "light": 450,
++    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "LIGHT_450", "CHARGEDIM", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+     "weight": "400 g",
+     "volume": "500 ml",
+     "melee_damage": { "bash": 1 },
+@@ -205,8 +203,7 @@
+     "name": { "str": "solar torch (lit)", "str_pl": "solar torches (lit)" },
+     "description": "A mysterious torch that uses the power of the sun (and blob goo) to light itself.  Somehow, the gasoline synthesized goo produces gasoline when in the sun continuously soaking the rag making it \"rechargeable\" in a sense.  It is burning, producing plenty of light until it runs out of fuel.",
+     "material": [ "wood" ],
+-    "flags": [ "FIRE", "CHARGEDIM", "FLAMING", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+-    "light": 310,
++    "flags": [ "FIRE", "LIGHT_310", "CHARGEDIM", "FLAMING", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
+     "weight": "942 g",
+     "volume": "1 L",
+     "melee_damage": { "bash": 8 },
+diff -ruN cpp_raw/Cataclysm++/Terrain/regional_overlay.json cpp_wt/data/mods/Cataclysm++/Terrain/regional_overlay.json
+--- a/data/mods/Cataclysm++/Terrain/regional_overlay.json	1970-01-01 00:00:00.000000000 +0000
++++ b/data/mods/Cataclysm++/Terrain/regional_overlay.json	2026-11-23 01:59:22.081103876 +0000
+@@ -0,0 +1,20 @@
++[
++   {
++      "type": "region_overlay",
++      "regions": [ "all" ],
++      "map_extras": {
++        "surv_encamp": {
++          "chance": 10,
++          "extras": {
++            "mx_crater": 25,
++            "mx_portal": 15,
++            "mx_portal_in": 10,
++            "mx_spider": 25,
++            "mx_jabberwock": 10,
++            "mx_supplydrop": 3,
++            "mx_helicopter": 2
++          }
++        }
++      }
++   }
++]
+diff -ruN cpp_raw/Cataclysm++/Terrain/sketchy_cabin.json cpp_wt/data/mods/Cataclysm++/Terrain/sketchy_cabin.json
+--- a/data/mods/Cataclysm++/Terrain/sketchy_cabin.json	2026-11-23 02:15:23.923728166 +0000
++++ b/data/mods/Cataclysm++/Terrain/sketchy_cabin.json	2026-11-23 01:59:22.076159523 +0000
+@@ -87,7 +87,7 @@
+         { "group": "bed", "x": [ 2, 3 ], "y": [ 20, 21 ], "chance": 80, "repeat": 5 },
+         { "group": "dresser", "x": 2, "y": 19, "chance": 90, "repeat": 4 },
+         { "group": "cannedfood", "x": 2, "y": [ 10, 12 ], "chance": 75, "repeat": 8 },
+-        { "group": "pasta_ingredients", "x": [ 4, 6 ], "y": 10, "chance": 75, "repeat": 4 },
++        { "group": "pasta", "x": [ 4, 6 ], "y": 10, "chance": 75, "repeat": 4 },
+         { "group": "SUS_oven", "x": 21, "y": 10, "chance": 75, "repeat": 3 },
+         { "group": "SUS_fridge", "x": 21, "y": 13, "chance": 50, "repeat": 6 },
+         { "group": "homebooks", "x": 13, "y": [ 11, 14 ], "chance": 50, "repeat": 6 },
+diff -ruN cpp_raw/Cataclysm++/Weapons/c_ammo_effect.json cpp_wt/data/mods/Cataclysm++/Weapons/c_ammo_effect.json
+--- a/data/mods/Cataclysm++/Weapons/c_ammo_effect.json	2026-11-23 02:15:23.924111783 +0000
++++ b/data/mods/Cataclysm++/Weapons/c_ammo_effect.json	2026-11-23 01:59:22.075889703 +0000
+@@ -2,7 +2,7 @@
+   {
+     "id": "C_DAZZLER_BURST",
+     "type": "ammo_effect",
+-    "trail": [ { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 1 } ],
+-    "aoe": [ { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 1, "radius": 1, "chance": 50 } ]
++    "trail": { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 1 },
++    "aoe": { "field_type": "fd_dazzling", "intensity_min": 1, "intensity_max": 1, "radius": 1, "chance": 50 }
+   }
+ ]

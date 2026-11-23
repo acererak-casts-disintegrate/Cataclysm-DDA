@@ -1,0 +1,111 @@
+total collisions 110  fork-restored (absent in pure 0.I): 4
+                  REDEFINE      item_group             antique_ammo                           cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/main.json
+                  REDEFINE      item_group             museum_guns                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  REDEFINE      item_group             on_hand_flintlock                      cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/nested_ammo.json
+                  REDEFINE      monstergroup           GROUP_CENTRAL_LAB                      cpp:Monsters/c_monstergroups.json  core:monstergroups/lab.json
+                  REDEFINE      monstergroup           GROUP_FUNGI                            cpp:Monsters/c_monstergroups.json  core:monstergroups/fungi.json
+                  REDEFINE      monstergroup           GROUP_FUNGI_FLOWERS                    cpp:Monsters/c_monstergroups.json  core:monstergroups/fungi.json
+                  REDEFINE      monstergroup           GROUP_FUNGI_TOWER                      cpp:Monsters/c_monstergroups.json  core:monstergroups/fungi.json
+                  REDEFINE      monstergroup           GROUP_HOSPITAL                         cpp:Monsters/c_monstergroups.json  core:monstergroups/zombies.json
+                  REDEFINE      monstergroup           GROUP_LAB                              cpp:Monsters/c_monstergroups.json  core:monstergroups/lab.json
+                  REDEFINE      monstergroup           GROUP_LAB_SECURITY                     cpp:Monsters/c_monstergroups.json  core:monstergroups/lab.json
+                  REDEFINE      monstergroup           GROUP_LAB_SURFACE                      cpp:Monsters/c_monstergroups.json  core:monstergroups/lab.json
+                  REDEFINE      monstergroup           GROUP_LARGE_STATION                    cpp:Monsters/c_monstergroups.json  core:monstergroups/zombies.json
+                  REDEFINE      monstergroup           GROUP_MAYBE_MIL                        cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_MICROLAB                         cpp:Monsters/c_monstergroups.json  core:monstergroups/lab.json
+                  REDEFINE      monstergroup           GROUP_MIL_BASE                         cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_MIL_BASE_CIVILIAN                cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_MIL_BASE_HOSPITAL                cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_MIL_STRONG                       cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_MIL_WEAK                         cpp:Monsters/c_monstergroups.json  core:monstergroups/military.json
+                  REDEFINE      monstergroup           GROUP_SMALL_STATION                    cpp:Monsters/c_monstergroups.json  core:monstergroups/zombies.json
+                  REDEFINE      monstergroup           GROUP_STEEL_MILL                       cpp:Monsters/c_monstergroups.json  core:monstergroups/zombies.json
+                  REDEFINE      monstergroup           GROUP_ZOMBIE                           cpp:Monsters/c_monstergroups.json  core:monstergroups/zombies.json
+                  REDEFINE      talk_topic             TALK_FRIEND_CONVERSATION               cpp:Npc/c_bgss.json  core:npcs/Backgrounds/backgrounds_table_of_contents.json
+                  REDEFINE      vehicle_group          city_vehicles                          cpp:Vehicles/c_vehicle_groups.json  core:vehicle_groups.json
+                  REDEFINE      vehicle_group          dirtlot                                cpp:Vehicles/c_vehicle_groups.json  core:vehicle_groups.json
+                  REDEFINE      vehicle_group          highway                                cpp:Vehicles/c_vehicle_groups.json  core:vehicle_groups.json
+                  REDEFINE      vehicle_group          parkinglot                             cpp:Vehicles/c_vehicle_groups.json  core:vehicle_groups.json
+                  copyfrom-self item_group             allclothes                             cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             allsporting                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/activities_hobbies.json
+                  copyfrom-self item_group             ambulance_equipment                    cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             bionics                                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/bionics.json
+                  copyfrom-self item_group             bionics_mil                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/bionics.json
+                  copyfrom-self item_group             book_gunref                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             book_martial                           cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             book_martial_rare                      cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             book_military                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             book_survival                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             bunker_basement_drugs                  cpp:Surv_help/c_item_groups_vanilla.json  core:mapgen/bunker.json
+                  copyfrom-self item_group             clothing_soldier_set                   cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             contraband                             cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             cop_evidence                           cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             cyborg_harvest                         cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Monsters_Animals_Lairs/monster_drops_advtech.json
+                  copyfrom-self item_group             doctors_books                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             drugdealer                             cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations_mapextras.json
+                  copyfrom-self item_group             female_underwear_bottom                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             gear_survival                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/gear.json
+                  copyfrom-self item_group             gunmod_common                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/gunmod.json
+                  copyfrom-self item_group             gunmod_rare                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/gunmod.json
+                  copyfrom-self item_group             guns_energy                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/guns.json
+                  copyfrom-self item_group             guns_milspec                           cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/guns.json
+                  copyfrom-self item_group             guns_rifle_improvised                  cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/guns.json
+                  copyfrom-self item_group             guns_smg_improvised                    cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Weapons_Mods_Ammo/guns.json
+                  copyfrom-self item_group             hardware_books                         cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             helicopter                             cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/military.json
+                  copyfrom-self item_group             homebooks                              cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             lab_bookshelves                        cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             lmoe_guns                              cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             mansion_bookcase                       cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/mansion.json
+                  copyfrom-self item_group             mansion_books                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             manuals                                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             metal_workshop                         cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/shops_trades.json
+                  copyfrom-self item_group             mil_accessories                        cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             mut_lab                                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/science_and_tech.json
+                  copyfrom-self item_group             pants                                  cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             pawn                                   cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations_commercial.json
+                  copyfrom-self item_group             science                                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/science_and_tech.json
+                  copyfrom-self item_group             sewage_plant                           cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             sewer                                  cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             shelter                                cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             sports                                 cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/activities_hobbies.json
+                  copyfrom-self item_group             survivor_cutting                       cpp:Surv_help/c_item_groups_vanilla.json  core:monsterdrops/zombie_survivor.json
+                  copyfrom-self item_group             survivorzed_extra                      cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             survivorzed_head                       cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             survivorzed_suits                      cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             swimmer_pants                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             swimmer_torso                          cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             tailorbooks                            cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             textbooks                              cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/books.json
+                  copyfrom-self item_group             toxic_dump_equipment                   cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self item_group             traveler                               cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/gear_civilian.json
+                  copyfrom-self item_group             underwear_womens                       cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Clothing_Gear/clothing.json
+                  copyfrom-self item_group             vault                                  cpp:Surv_help/c_item_groups_vanilla.json  core:itemgroups/Locations_MapExtras/locations.json
+                  copyfrom-self scenario               aircraft_carrier_start                 cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               alone                                  cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               ambushed                               cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               heli_crash                             cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               lab_cargo_staff_1                      cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               migo_prisoner                          cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               mutant                                 cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               overrun                                cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               summer_advanced_start                  cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               surrounded                             cpp:Char_creation/c_scenarios.json  core:scenarios.json
+                  copyfrom-self scenario               wilderness                             cpp:Char_creation/c_scenarios.json  core:scenarios.json
+         ovr-file copyfrom-self MONSTER                mon_crows_m240                         cpp:Monsters/c_monster_override.json  core:monsters/turrets.json
+         ovr-file copyfrom-self MONSTER                mon_dispatch_military                  cpp:Monsters/c_monster_override.json  core:monsters/defense_bot.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go                              cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go_guard                        cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go_myrmidon                     cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go_scout                        cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go_slaver                       cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_mi_go_surgeon                      cpp:Monsters/c_monster_override.json  core:monsters/mi-go.json
+         ovr-file copyfrom-self MONSTER                mon_secubot                            cpp:Monsters/c_monster_override.json  core:monsters/defense_bot.json
+         ovr-file copyfrom-self MONSTER                mon_talon_m202a1                       cpp:Monsters/c_monster_override.json  core:monsters/defense_bot.json
+         ovr-file copyfrom-self MONSTER                mon_turret_bmg                         cpp:Monsters/c_monster_override.json  core:monsters/turrets.json
+         ovr-file copyfrom-self MONSTER                mon_turret_rifle                       cpp:Monsters/c_monster_override.json  core:monsters/turrets.json
+         ovr-file copyfrom-self MONSTER                mon_turret_searchlight                 cpp:Monsters/c_monster_override.json  core:monsters/turrets.json
+RESTORED ovr-file REDEFINE      ITEM                   bot_laserturret                        cpp:Surv_help/c_override.json  core:items/classic_scifi.json
+RESTORED ovr-file REDEFINE      ITEM                   broken_laserturret                     cpp:Surv_help/c_override.json  core:items/classic_scifi.json
+RESTORED ovr-file REDEFINE      ITEM                   laser_cannon                           cpp:Weapons/c_ranged_override.json  core:items/classic_scifi.json
+RESTORED ovr-file REDEFINE      MONSTER                mon_laserturret                        cpp:Monsters/c_monster_override.json  core:monsters/classic_robots.json
