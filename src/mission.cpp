@@ -631,7 +631,9 @@ bool mission::is_complete( const character_id &_npc_id ) const
                 if( npc_id != _npc_id ) {
                     return false;
                 }
-                npc *n = g->find_npc( _npc_id );
+                // A mission with no giver has no NPC to talk to. Looking up the invalid id
+                // would match any NPC never given an id, such as a test dummy.
+                npc *n = _npc_id.is_valid() ? g->find_npc( _npc_id ) : nullptr;
                 if( n == nullptr ) {
                     return false;
                 }
