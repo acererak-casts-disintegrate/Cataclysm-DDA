@@ -110,7 +110,7 @@ jobs:
             pch: 1
             archive-success: basic-build
             dont_skip_data_only_changes: 1
-            mods: --mods=magiclysm
+            fanout_tests: true
             title: Basic Build and Test (Clang oldest supported, Ubuntu, Curses)
             ccache_limit: 4.5G
             ccache_key: linux-llvm-13
@@ -250,8 +250,23 @@ jobs:
       run: |
         ccache -C
     # TODO: post ccache here, however actions/cache@v2 does not support manual upload step
+    - name: bundle test artifacts
+      if: ${{ env.SKIP == 'false' && env.SKIP_TESTS == 'false' && matrix.fanout_tests }}
+      run: |
+        mkdir -p test-bundle/tests
+        strip --strip-debug -o test-bundle/tests/cata_test tests/cata_test
+        chmod +x test-bundle/tests/cata_test
+        tar -cf cata-test-bundle.tar -C test-bundle tests/cata_test -C .. lang/mo data/mods/TEST_DATA/lang/mo
+        rm -rf test-bundle
+    - name: upload test bundle
+      if: ${{ env.SKIP == 'false' && env.SKIP_TESTS == 'false' && matrix.fanout_tests }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: cata-test-bundle-${{ matrix.ccache_key }}
+        path: cata-test-bundle.tar
+        retention-days: 1
     - name: run tests
-      if: ${{ env.SKIP == 'false' && env.SKIP_TESTS == 'false' }}
+      if: ${{ env.SKIP == 'false' && env.SKIP_TESTS == 'false' && !matrix.fanout_tests }}
       run: bash ./build-scripts/gha_test_only.sh
     - run: |
         echo ${{ github.event.number }} > pull_request_id
@@ -279,6 +294,70 @@ jobs:
         path: tests/cata_test*
         if-no-files-found: ignore
         retention-days: 9
+
+  mod_tests:
+    needs: [ matrix-variables, varied_builds ]
+    if: ${{ fromJSON(needs.matrix-variables.outputs.skip_tests) == false }}
+    strategy:
+      fail-fast: ${{ fromJSON(needs.matrix-variables.outputs.fail_fast) }}
+      max-parallel: ${{ fromJSON(needs.matrix-variables.outputs.max_parallel) }}
+      matrix:
+        include:
+          - title: Core and all-mods load
+            run_core_tests: 1
+            mods: ''
+            test-stage: 1
+          - title: Magiclysm
+            run_core_tests: 0
+            mods: magiclysm
+            test-stage: ''
+          - title: Aftershock
+            run_core_tests: 0
+            mods: aftershock
+            test-stage: ''
+          - title: Xedra Evolved
+            run_core_tests: 0
+            mods: xedra_evolved
+            test-stage: ''
+          - title: Mind Over Matter
+            run_core_tests: 0
+            mods: mindovermatter
+            test-stage: ''
+          - title: Bionic Professions
+            run_core_tests: 0
+            mods: package_bionic_professions
+            test-stage: ''
+    name: Test (${{ matrix.title }})
+    runs-on: ubuntu-22.04
+    env:
+      RUN_CORE_TESTS: ${{ matrix.run_core_tests }}
+      MODS: ${{ matrix.mods }}
+      TEST_STAGE: ${{ matrix.test-stage }}
+      EXTRA_TEST_OPTS: --error-format=github-action
+      RELEASE: 1
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+    - name: install test dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libncursesw5-dev parallel
+        sudo locale-gen en_US.UTF-8 de_DE.UTF-8
+    - name: enable problem matchers
+      run: |
+        echo "::add-matcher::build-scripts/problem-matchers/catch2.json"
+        echo "::add-matcher::build-scripts/problem-matchers/debugmsg.json"
+    - name: download test bundle
+      uses: actions/download-artifact@v4
+      with:
+        name: cata-test-bundle-linux-llvm-13
+    - name: extract test bundle
+      run: |
+        tar -xf cata-test-bundle.tar
+        rm -f cata-test-bundle.tar
+    - name: run tests
+      run: bash ./build-scripts/gha_test_only.sh
+
   #emscripten:
   #  needs: [ skip-duplicates-code, varied_builds ]
   #  uses: ./.github/workflows/emscripten.yml

@@ -44,7 +44,6 @@ static const itype_id itype_candle_wax( "candle_wax" );
 static const itype_id itype_dress_shirt( "dress_shirt" );
 static const itype_id itype_face_shield( "face_shield" );
 static const itype_id itype_hat_hard( "hat_hard" );
-static const itype_id itype_icecream( "icecream" );
 static const itype_id itype_iodine( "iodine" );
 static const itype_id itype_match( "match" );
 static const itype_id itype_medium_battery_cell( "medium_battery_cell" );
@@ -90,6 +89,7 @@ static const itype_id itype_test_longshirt( "test_longshirt" );
 static const itype_id itype_test_matches( "test_matches" );
 static const itype_id itype_test_meower_armor( "test_meower_armor" );
 static const itype_id itype_test_nuclear_carafe( "test_nuclear_carafe" );
+static const itype_id itype_test_nutrient_info_item( "test_nutrient_info_item" );
 static const itype_id itype_test_pants_faux_fur( "test_pants_faux_fur" );
 static const itype_id itype_test_pine_nuts( "test_pine_nuts" );
 static const itype_id itype_test_pipe( "test_pipe" );
@@ -2126,36 +2126,31 @@ TEST_CASE( "nutrients_in_food", "[iteminfo][food]" )
 {
     clear_avatar();
 
-    item ice_cream( itype_icecream );
+    item test_item( itype_test_nutrient_info_item );
 
     SECTION( "fixed nutrient values in regular item" ) {
-        CHECK( item_info_str( ice_cream, { iteminfo_parts::FOOD_NUTRITION, iteminfo_parts::FOOD_QUENCH } )
+        CHECK( item_info_str( test_item, { iteminfo_parts::FOOD_NUTRITION } )
                ==
                "--\n"
-               "<color_c_white>Calories (kcal)</color>: <color_c_yellow>325</color>"
-               "  Quench: <color_c_yellow>0</color>\n" );
-        // Values end up rounded slightly
-        CHECK( item_info_str( ice_cream, { iteminfo_parts::FOOD_VITAMINS } ) ==
+               "<color_c_white>Calories (kcal)</color>: <color_c_yellow>100</color>" );
+        CHECK( item_info_str( test_item, { iteminfo_parts::FOOD_VITAMINS } ) ==
                "--\n"
-               "Vitamins (RDA): 83 mg Calcium (8%)\n" );
+               "Vitamins (RDA): 1 g Calcium (100%)\n" );
     }
 
     SECTION( "nutrient ranges for recipe exemplars", "[iteminfo]" ) {
-        ice_cream.set_var( "recipe_exemplar", "icecream" );
+        test_item.set_var( "recipe_exemplar", "test_nutrient_info_item" );
 
-        CHECK( item_info_str( ice_cream, { iteminfo_parts::FOOD_NUTRITION, iteminfo_parts::FOOD_QUENCH } )
+        CHECK( item_info_str( test_item, { iteminfo_parts::FOOD_NUTRITION } )
                ==
                "--\n"
                "Nutrition will <color_cyan>vary with chosen ingredients</color>.\n"
                "<color_c_white>Calories (kcal)</color>:"
-               " <color_c_yellow>53</color>-<color_c_yellow>470</color>"
-               "  Quench: <color_c_yellow>0</color>\n" );
-        // Values end up rounded slightly
-        CHECK( item_info_str( ice_cream, { iteminfo_parts::FOOD_VITAMINS } ) ==
+               " <color_c_yellow>100</color>-<color_c_yellow>200</color>" );
+        CHECK( item_info_str( test_item, { iteminfo_parts::FOOD_VITAMINS } ) ==
                "--\n"
                "Nutrition will <color_cyan>vary with chosen ingredients</color>.\n"
-               "Vitamins (RDA): 63-323 mg Calcium (6-32%), 0-20 mg Iron (0-109%),"
-               " and 0-45 mg Vitamin C (0-50%)\n" );
+               "Vitamins (RDA): 1-2 g Calcium (100-200%)\n" );
     }
 }
 

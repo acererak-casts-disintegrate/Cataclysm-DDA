@@ -1,0 +1,57 @@
+[
+  {
+    "id": "test_nutrient_info_item",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "FOOD",
+    "name": "nutrient test item",
+    "description": "Result of crafting from nutrient test components.",
+    "weight": "100 g",
+    "volume": "100 ml",
+    "symbol": "~",
+    "color": "white",
+    "calories": 100,
+    "material": [ "processed_food" ],
+    "vitamins": [ [ "calcium", 100 ] ]
+  },
+  {
+    "id": "test_nutrient_info_component1",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "FOOD",
+    "name": "nutrient test item component",
+    "description": "Result of crafting from nutrient test components.",
+    "weight": "100 g",
+    "volume": "100 ml",
+    "symbol": "~",
+    "color": "white",
+    "calories": 100,
+    "material": [ "processed_food" ],
+    "vitamins": [ [ "calcium", 100 ] ]
+  },
+  {
+    "id": "test_nutrient_info_component2",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "FOOD",
+    "name": "nutrient test item alternative component",
+    "description": "Result of crafting from nutrient test components.",
+    "weight": "100 g",
+    "volume": "100 ml",
+    "symbol": "~",
+    "color": "white",
+    "calories": 200,
+    "material": [ "processed_food" ],
+    "vitamins": [ [ "calcium", 200 ] ]
+  },
+  {
+    "result": "test_nutrient_info_item",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "components": [ [ [ "test_nutrient_info_component1", 1 ], [ "test_nutrient_info_component2", 1 ] ] ]
+  }
+]
