@@ -81,6 +81,10 @@ jobs:
           set -euo pipefail
           [ -f Makefile ] || cd "$GITHUB_WORKSPACE"
           ${{ inputs.setup }}
+          # Several tests call setlocale( LC_ALL, "" ) and expect UTF-8 text handling,
+          # as on the Linux runners (LANG=C.UTF-8). A VM session starts with no locale;
+          # set only the character type, so sorting and numbers stay as in "C".
+          export LC_CTYPE=en_US.UTF-8
           opts=(--min-duration 20 --rng-seed time --order lex --error-format=github-action)
           # The same two halves the Linux CI runs, in parallel, each line prefixed with its half.
           run_half() {

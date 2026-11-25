@@ -51,7 +51,10 @@ jobs:
             # pkg exits 4 when everything asked for is already installed.
             install: sudo pkg install developer/gcc14 developer/build/gnu-make developer/pkg-config library/ncurses || [ $? -eq 4 ]
             make_flags: CLANG=0 TILES=0 SOUND=0 LOCALIZE=0
-            setup: export PATH=/opt/gcc-14/bin:$PATH
+            # pkg-config's default path misses the 64-bit ncursesw.pc; point it there.
+            setup: |
+              export PATH=/opt/gcc-14/bin:$PATH
+              PKG_CONFIG_PATH=$(dirname "$(find /usr/lib -name ncursesw.pc -path '*64*' 2>/dev/null | head -n 1)") && export PKG_CONFIG_PATH
     uses: ./.github/workflows/vm-build-test.yml
     with:
       os: ${{ matrix.os }}
