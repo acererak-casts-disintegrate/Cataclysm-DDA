@@ -347,8 +347,10 @@ void main_menu::print_menu( const catacurses::window &w_open, int iSel, const po
     }
 
     iLine++;
+    // This fork is not the 0.I stable release, so show its own build version.
     center_print( w_open, iLine, c_light_blue,
-                  string_format( _( "Version: 0.I-1 (Ito-1) Stable Release" ),
+                  //~ %s is the build's version: a release tag and/or a git commit hash.
+                  string_format( _( "Version: %s (unofficial fork of 0.I-1)" ),
                                  getVersionString() ) );
 
     int menu_length = 0;

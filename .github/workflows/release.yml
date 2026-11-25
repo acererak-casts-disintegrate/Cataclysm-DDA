@@ -95,6 +95,9 @@ jobs:
       PACKAGE: cdda-${{ needs.release.outputs.tag_name }}-${{ matrix.artifact }}.${{ matrix.ext }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Check out the release tag itself, so the build's version string names it.
+          ref: ${{ needs.release.outputs.tag_name }}
       - name: Get soundpack
         if: matrix.sound == 1
         shell: bash
