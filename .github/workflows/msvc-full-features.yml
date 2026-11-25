@@ -30,6 +30,8 @@ on:
     - '!tools/format/**'
     - 'utilities/**'
     types: [opened, reopened, synchronize, ready_for_review]
+  # By hand, e.g. to repeat a run when GitHub will not re-run it.
+  workflow_dispatch:
 
 # We only care about the latest revision of a PR, so cancel previous instances.
 # Allow branch builds to complete so they refresh the ccache and vcpkg caches.
