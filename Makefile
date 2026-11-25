@@ -349,13 +349,17 @@ ifneq ($(findstring BSD,$(OS)),)
   BSD = 1
 endif
 
-# Enable building a thin archive by default, except on the BSDs, whose ar
-# (or, on DragonFly, older binutils ar) has no --thin
+# Enable building a thin archive by default where ar is GNU's or LLVM's, which
+# take --thin. BSD ar, illumos's ar and the older binutils ar on DragonFly BSD
+# do not.
 ifndef THIN_AR
+  AR_VERSION := $(shell $(CROSS)ar --version 2>/dev/null)
   ifeq ($(BSD), 1)
     THIN_AR = 0
-  else
+  else ifneq ($(findstring GNU,$(AR_VERSION))$(findstring LLVM,$(AR_VERSION)),)
     THIN_AR = 1
+  else
+    THIN_AR = 0
   endif
 endif
 
