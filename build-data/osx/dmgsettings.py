@@ -33,11 +33,12 @@ def icon_from_app(app_path):
 # Uncomment to override the output volume name
 # volume_name = 'Test'
 
-# Volume format (see hdiutil create -help)
-format = defines.get('format', 'UDBZ')
+# Volume format (see hdiutil create -help). Current dmgbuild no longer accepts
+# bzip2 (UDBZ); LZFSE (ULFO) needs macOS 10.11, and the game needs 10.15.
+format = defines.get('format', 'ULFO')
 
-# Volume size (must be large enough for your files)
-size = defines.get('size', '500M')
+# Volume size; None lets dmgbuild size it to fit (the sound builds exceed 500M)
+size = defines.get('size', None)
 
 # Files to include
 files = [application]
