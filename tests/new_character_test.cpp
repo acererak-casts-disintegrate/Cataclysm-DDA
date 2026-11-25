@@ -90,17 +90,13 @@ struct failure {
     std::vector<trait_id> mut;
     itype_id item_name;
     std::string reason;
-};
 
-namespace std
-{
-template<>
-struct less<failure> {
-    bool operator()( const failure &lhs, const failure &rhs ) const {
-        return lhs.prof < rhs.prof;
+    // An operator< rather than a std::less<failure> specialisation: newer libc++
+    // has std::set compare through its own comparator, which needs operator<.
+    bool operator<( const failure &rhs ) const {
+        return prof < rhs.prof;
     }
 };
-} // namespace std
 
 // TODO: According to profiling (interrupt, backtrace, wait a few seconds, repeat) with a sample
 // size of 20, 70% of the time is due to the call to Character::set_mutation in try_set_traits.
