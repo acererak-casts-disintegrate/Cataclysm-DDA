@@ -27,14 +27,16 @@ jobs:
           - name: DragonFly BSD 6.4.2 (GCC 13)
             os: dragonflybsd
             version: '6.4.2'
-            # The base GCC 8.3 is older than the oldest GCC CDDA supports (9.3).
-            install: sudo env ASSUME_ALWAYS_YES=yes pkg install -y gmake gcc13
+            # The base GCC 8.3 is older than the oldest GCC CDDA supports (9.3), and
+            # the base ncurses is private (no public headers), so both come from DPorts.
+            install: sudo env ASSUME_ALWAYS_YES=yes pkg install -y gmake gcc13 ncurses pkgconf
             make_flags: BSD=1 CLANG=0 COMPILER=g++13 TILES=0 SOUND=0 LOCALIZE=0
             setup: export LD_LIBRARY_PATH=/usr/local/lib/gcc13
           - name: MidnightBSD 4.0.4 (clang)
             os: midnightbsd
             version: '4.0.4'
-            install: sudo mport install gmake
+            # mport can exit non-zero after a successful install; check the result.
+            install: sudo mport install gmake || command -v gmake
             make_flags: BSD=1 CLANG=1 TILES=0 SOUND=0 LOCALIZE=0
           - name: Haiku R1/beta6 (GCC)
             os: haiku
