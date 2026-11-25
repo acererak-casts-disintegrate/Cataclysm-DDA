@@ -28,6 +28,7 @@
     "durability": 100,
     "item": "surv_station",
     "location": "center",
+    "categories": [ "utility" ],
     "flags": [ "OBSTACLE" ],
     "pseudo_tools": [
       { "id": "vac_sealer" },

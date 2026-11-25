@@ -86,7 +86,7 @@
     "name": { "str": "monster laser gatling" },
     "description": "Used to give Bio-Weapon Apophis a mockup of the laser gatling with a shorter burst size.  This is a bug if you find one of these!",
     "ammo_effects": [ "NEVER_MISFIRES", "LASER" ],
-    "flags": [ "NEVER_JAMS" ],
+    "flags": [ "NEVER_JAMS", "NO_TURRET" ],
     "skill": "rifle",
     "durability": 10,
     "range": 30,

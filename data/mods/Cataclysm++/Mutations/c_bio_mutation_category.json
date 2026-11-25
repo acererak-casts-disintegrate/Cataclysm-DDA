@@ -2,6 +2,8 @@
   {
     "type": "mutation_category",
     "id": "BIO-WEAPON",
+    "//": "Profession marker: no mutation belongs to this category, so the mutation category tests do not apply.",
+    "skip_test": true,
     "name": "Bio-Weapon",
     "threshold_mut": "THRESH_BIO-WEAPON",
     "mutagen_message": "This is a bug, report to Noctifer if you see this.",
@@ -20,6 +22,8 @@
   {
     "type": "mutation_category",
     "id": "SUPER_SOLDIER",
+    "//": "The threshold is granted by c_nano_mutagen_thresh_test, not by a breach roll, and its traits are not valid for random mutation, so the mutation category tests do not apply.",
+    "skip_test": true,
     "name": "Sentinel",
     "threshold_mut": "THRESH_SUPER_SOLDIER",
     "mutagen_message": "You're left reeling as the chemicals make your biology reach new heights.",

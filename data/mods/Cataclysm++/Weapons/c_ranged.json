@@ -1693,7 +1693,7 @@
     "durability": 7,
     "loudness": 10,
     "ammo_effects": [ "C_DAZZLER_BURST", "LARGE_BEANBAG", "BLINDS_EYES", "PARALYZEPOISON" ],
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "passive_effects": [
       {
         "has": "WIELD",
@@ -1740,7 +1740,7 @@
     "price": "8000 USD",
     "price_postapoc": "20 USD",
     "material": [ "steel", "plastic" ],
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "USE_UPS" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "USE_UPS", "NO_TURRET" ],
     "energy_drain": "25 kJ",
     "ammo_effects": [ "PLASMA", "EXPLOSIVE_TINY", "FLAME" ],
     "skill": "pistol",
