@@ -55,8 +55,9 @@ jobs:
             # include path; find its header and 64-bit library and pass them on.
             setup: |
               export PATH=/opt/gcc-14/bin:$PATH
-              nc_all=$( { find /usr/include /usr/lib /usr/gnu /opt \( -name ncurses.h -o -name 'libncursesw.so*' \) 2>/dev/null || true; } )
+              nc_all=$( { find /usr/include /usr/lib /usr/gnu /opt \( -name ncurses.h -o -name 'libncurses*' \) 2>/dev/null || true; } )
               printf 'ncurses files:\n%s\n' "$nc_all"
+              pkg contents -o path library/ncurses 2>/dev/null | grep -E 'lib.*ncurses|pkgconfig' | head -n 40 || true
               nc_h=$(printf '%s\n' "$nc_all" | grep '/ncurses\.h$' | head -n 1 || true)
               nc_lib=$(printf '%s\n' "$nc_all" | grep -E '/(amd64|64)/libncursesw\.so' | head -n 1 || true)
               echo "ncurses.h: ${nc_h:-not found}; libncursesw: ${nc_lib:-not found}"

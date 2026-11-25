@@ -67,6 +67,7 @@ jobs:
           ulimit -a
           df -h .
           locale -a 2>/dev/null | grep -i 'utf-*8' | head -n 8
+          env | grep -E '^(LANG|LC_[A-Z]+)=' || true
       - name: Build game and tests
         shell: cpa.sh {0} --sync-files none
         run: |
@@ -86,6 +87,10 @@ jobs:
           # as on the Linux runners (LANG=C.UTF-8). A VM session starts with no locale;
           # set only the character type, so sorting and numbers stay as in "C". Use
           # en_US.UTF-8, or another UTF-8 locale where that one is not installed.
+          # The runner's ssh may pass on its own LANG (C.UTF-8), which not every
+          # system has, so set LANG and clear LC_ALL as well.
+          unset LC_ALL
+          export LANG=C
           export LC_CTYPE=en_US.UTF-8
           if command -v locale >/dev/null 2>&1 && ! locale -a 2>/dev/null | grep -qx 'en_US.UTF-8'; then
             for l in C.UTF-8 en_US.utf8 C.utf8; do
