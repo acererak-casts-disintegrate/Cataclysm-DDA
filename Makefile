@@ -193,10 +193,6 @@ ifndef LINTJSON
   LINTJSON = 1
 endif
 
-# Enable building a thin archive by default
-ifndef THIN_AR
-  THIN_AR = 1
-endif
 
 # We don't want to have both 'check' and 'tests' as targets, because that will
 # result in make trying to build the tests twice in parallel, wasting time
@@ -342,6 +338,16 @@ endif
 # if $(OS) contains 'BSD'
 ifneq ($(findstring BSD,$(OS)),)
   BSD = 1
+endif
+
+# Enable building a thin archive by default, except on the BSDs, whose ar
+# (or, on DragonFly, older binutils ar) has no --thin
+ifndef THIN_AR
+  ifeq ($(BSD), 1)
+    THIN_AR = 0
+  else
+    THIN_AR = 1
+  endif
 endif
 
 ifeq ($(PCH), 1)
@@ -835,7 +841,8 @@ else
         ifneq ($(shell pkg-config --libs $(NCURSES_PREFIX) 2>/dev/null),)
           HAVE_PKGCONFIG = 1
         endif
-        ifneq ($(shell which $(NCURSES_PREFIX)5-config 2>/dev/null),)
+        # command -v, not which: illumos's which prints "no ... in ..." to stdout
+        ifneq ($(shell command -v $(NCURSES_PREFIX)5-config 2>/dev/null),)
           HAVE_NCURSES5CONFIG = 1
         endif
       endif
