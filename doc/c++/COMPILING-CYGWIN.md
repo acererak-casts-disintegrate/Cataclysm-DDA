@@ -1,6 +1,6 @@
 # Compilation guide for 64 bit Windows (using Cygwin)
 
-This guide contains instructions for compiling Cataclysm-DDA on Windows under Cygwin. **PLEASE NOTE:** These instructions *are not intended* to produce a redistributable copy of CDDA. Please download the official builds from the website or [cross-compile from Linux](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/COMPILING/COMPILING.md#cross-compile-to-windows-from-linux) if that is your intention.
+This guide contains instructions for compiling Cataclysm-DDA on Windows under Cygwin. **PLEASE NOTE:** These instructions *are not intended* to produce a redistributable copy of CDDA. Please download this fork's builds from its [Releases page](https://github.com/acererak-casts-disintegrate/Cataclysm-DDA/releases) or [cross-compile from Linux](COMPILING.md#cross-compile-to-windows-from-linux) if that is your intention.
 
 These instructions were written using 64-bit Windows 7 and the 64-bit version of Cygwin; the steps should be the same for other versions of Windows.
 
@@ -57,11 +57,11 @@ You will see messages saying packages are already installed, as well as Cygwin i
 
 **Note:** This will download the entire CDDA repository and all of its history (3GB). If you're just testing, you should probably add `--depth=1` (~350MB).
 
-**Note:** If you want to contribute to CDDA, see [example git workflow](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/CONTRIBUTING.md#example-workflow).
+**Note:** If you want to contribute, see the [example git workflow](../CONTRIBUTING.md#example-workflow).
 
 ```bash
 cd /cygdrive/c/dev
-git clone https://github.com/CleverRaven/Cataclysm-DDA.git
+git clone https://github.com/acererak-casts-disintegrate/Cataclysm-DDA.git
 cd Cataclysm-DDA
 ```
 

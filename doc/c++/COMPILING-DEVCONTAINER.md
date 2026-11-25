@@ -13,8 +13,8 @@ The devcontainer was introduced in [#65748](https://github.com/CleverRaven/Catac
 ## Installation:
 
 1. Install all prerequisites.
-2. Clone your fork of the CleverRaven/Cataclysm-DDA repo and create a branch
-3. Add CleverRaven as the remote upstream with git remote add upstream git@github.com:CleverRaven/Cataclysm-DDA.git
+2. Clone this repository (https://github.com/acererak-casts-disintegrate/Cataclysm-DDA), or your own fork of it, and create a branch
+3. If you cloned your own fork, add this repository as the remote upstream with git remote add upstream https://github.com/acererak-casts-disintegrate/Cataclysm-DDA.git
 4. Open the folder where you cloned your repository in Visual Studio Code via the UI or by navigating to the directory in a terminal and typing Code
 5. Visual Studio Code will show a pup-up in the bottom right with recommended extensions. Install those.
 6. If you don't plan to compile the object creator, open the Dockerfile in the VSCode file browser and scroll down to find this section:
@@ -119,7 +119,7 @@ These steps allow you to cross-compile the object creator from Linux to Windows
 
   ![Image showing prompt to rebuild the devcontainer](../img/Devcontainer-Enter-Build-Command-Object-Creator-Terminal.png)
 
-  Note: This will only work if you first build the windows version of cataclysm-tiles as described in [Cross-compiling from Linux to Windows](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/COMPILING/COMPILING-DEVCONTAINER.md#cross-compiling-from-linux-to-windows).
+  Note: This will only work if you first build the windows version of cataclysm-tiles as described in [Cross-compiling from Linux to Windows](#cross-compiling-from-linux-to-windows).
 
   Note 2: If you want to make a clean built, enter `make clean-object_creator` in the terminal before you run the build command.
 

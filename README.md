@@ -92,7 +92,7 @@ Clone this repository and check out the `0.I-custom` branch, then build it as de
 
 ## Compile
 
-Please read [COMPILING.md](doc/c++/COMPILING.md) - it covers general information and more specific recipes for Linux, OS X, Windows and BSD. See [COMPILER_SUPPORT.md](doc/c++/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](doc/).
+Please read [COMPILING.md](doc/c++/COMPILING.md) - it covers general information and more specific recipes for Linux, macOS, Windows and the BSDs (FreeBSD, OpenBSD and NetBSD are built and tested by CI). The Android recipe there is untested in this fork. See [COMPILER_SUPPORT.md](doc/c++/COMPILER_SUPPORT.md) for details on which compilers we support. And you can always dig for more information in [doc/](doc/).
 
 We also have the following build guides:
 * Building on Windows with `MSYS2` at [COMPILING-MSYS.md](doc/c++/COMPILING-MSYS.md)

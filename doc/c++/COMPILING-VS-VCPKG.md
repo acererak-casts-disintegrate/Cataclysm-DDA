@@ -52,13 +52,13 @@ If during the compilation you're getting a vcpkg error along the lines of `error
 1. Clone Cataclysm-DDA repository with following command line:
 
 ```cmd
-git clone https://github.com/CleverRaven/Cataclysm-DDA.git
+git clone https://github.com/acererak-casts-disintegrate/Cataclysm-DDA.git
 cd Cataclysm-DDA
 ```
 
 **Note:** This will download the entire CDDA repository; about three gigs of data. If you're just testing you should probably add `--depth=1`.
 
-**Note:** If you want to contribute to CDDA, see [example git workflow](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/CONTRIBUTING.md#example-workflow).
+**Note:** If you want to contribute, see the [example git workflow](../CONTRIBUTING.md#example-workflow).
 
 2. Open the provided solution (`msvc-full-features\Cataclysm-vcpkg-static.sln`) in `Visual Studio`.
 

@@ -13,18 +13,22 @@
   * [Linux (native) SDL builds](#linux-native-sdl-builds)
   * [Cross-compiling to linux 32-bit from linux 64-bit](#cross-compiling-to-linux-32-bit-from-linux-64-bit)
   * [Cross-compile to Windows from Linux](#cross-compile-to-windows-from-linux)
-  * [Cross-compile to Mac OS X from Linux](#cross-compile-to-mac-os-x-from-linux)
-  * [Cross-compile to Android from Linux](#cross-compile-to-android-from-linux)
-* [Mac OS X](#mac-os-x)
-  * [Simple build using Homebrew](#simple-build-using-homebrew)
+  * [Cross-compile to macOS from Linux](#cross-compile-to-macos-from-linux) (out of date)
+  * [Cross-compile to Android from Linux](#cross-compile-to-android-from-linux) (untested in this fork)
+* [macOS](#macos)
+  * [Building like the release packages](#building-like-the-release-packages)
   * [Advanced info for Developers](#advanced-info-for-developers)
-  * [Troubleshooting](#mac-os-x-troubleshooting)
+  * [Troubleshooting](#macos-troubleshooting)
 * [Windows](#windows)
   * [Building with Visual Studio](#building-with-visual-studio)
   * [Building with MSYS2](#building-with-msys2)
   * [Building with CYGWIN](#building-with-cygwin)
   * [Building with Clang and MinGW64](#building-with-clang-and-mingw64)
 * [BSDs](#bsds)
+  * [FreeBSD](#freebsd)
+  * [OpenBSD](#openbsd)
+  * [NetBSD](#netbsd)
+  * [Other systems](#other-systems)
 
 # General Linux Guide
 
@@ -81,9 +85,9 @@ Given you're building from source you have a number of choices to make:
   * `TILES=1` - with this you'll get the tiles version, without it the curses version
   * `SOUND=1` - if you want sound
   * `LOCALIZE=0` - this disables localizations so `gettext` is not needed
-  * `CLANG=1` - use Clang instead of GCC
+  * `CLANG=1` - use Clang instead of GCC (the default on macOS, FreeBSD, OpenBSD and MidnightBSD; `CLANG=0` overrides it)
   * `CCACHE=1` - use ccache
-  * `USE_LIBCXX=1` - use libc++ instead of libstdc++ with Clang (default on OS X)
+  * `USE_LIBCXX=1` - use libc++ instead of libstdc++ with Clang (the default on macOS and the BSDs)
   * `PREFIX=DIR` - causes `make install` to place binaries and data files to DIR (see note below)
 
 There is a couple of other possible options - feel free to read the [`Makefile`](../../Makefile).
@@ -263,7 +267,7 @@ Installation
 sudo apt install astyle autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libgdk-pixbuf2.0-dev libtool libltdl-dev libssl-dev libxml-parser-perl lzip make mingw-w64 openssl p7zip-full patch perl pkg-config python3 ruby scons sed unzip wget xz-utils g++-multilib libc6-dev-i386 libtool-bin
 mkdir -p ~/src/libbacktrace
 cd ~/src
-git clone https://github.com/CleverRaven/Cataclysm-DDA.git 
+git clone https://github.com/acererak-casts-disintegrate/Cataclysm-DDA.git
 git clone https://github.com/mxe/mxe.git
 cd mxe
 make -j$((`nproc`+0)) MXE_TARGETS='x86_64-w64-mingw32.static i686-w64-mingw32.static' MXE_PLUGIN_DIRS=plugins/gcc11 sdl2 sdl2_ttf sdl2_image sdl2_mixer gettext
@@ -301,7 +305,9 @@ make -j$((`nproc`+0)) CROSS="${PLATFORM_64}" TILES=1 SOUND=1 RELEASE=1 LOCALIZE=
 
 <!-- Building ncurses for Windows is a nonstarter, so the directions were removed. -->
 
-## Cross-compile to Mac OS X from Linux
+## Cross-compile to macOS from Linux
+
+**Out of date:** this section was written for a macOS 10.11 SDK, a 10.7 minimum and Ubuntu 14.04. The game now needs macOS 10.15 or later (see `-mmacosx-version-min` in the [`Makefile`](../../Makefile)), so these steps will not work as written, and nobody has tried them on this fork. To build for macOS, build on a Mac, or use the release workflow's macOS jobs.
 
 This procedure is very much similar to cross-compilation to Windows from Linux.
 It has ben tested on Ubuntu 14.04 LTS but it should work on other distros as well.
@@ -370,6 +376,8 @@ make dmgdist CROSS=x86_64-apple-darwin15- NATIVE=osx USE_HOME_DIR=1 CLANG=1 \
 Make sure that `x86_64-apple-darwin15-clang++` is in `PATH` environment variable.
 
 ## Cross-compile to Android from Linux
+
+**Untested in this fork:** this section is upstream's. This fork publishes no Android builds and its CI does not build the Android project, so expect to fix things along the way.
 
 The Android build uses [Gradle](https://gradle.org/) to compile the java and native C++ code, and is based heavily off SDL's [Android project template](https://hg.libsdl.org/SDL/file/f1084c419f33/android-project). See the official SDL documentation [README-android.md](https://hg.libsdl.org/SDL/file/f1084c419f33/docs/README-android.md) for further information.
 
@@ -451,42 +459,29 @@ To build a signed release APK (ie. one that can be installed on a device), [buil
 
 The app stores data files on the device in `/sdcard/Android/data/com.cleverraven/cataclysmdda/files`. The data is backwards compatible with the desktop version.
 
-# Mac OS X
+# macOS
 
-To build Cataclysm on Mac you'll need [Command Line Tools for Xcode](https://developer.apple.com/downloads/) and the [Homebrew](http://brew.sh) package manager. With Homebrew, you can easily install or build Cataclysm using the [cataclysm](https://formulae.brew.sh/formula/cataclysm) formula.
+Most players should download a prebuilt `.dmg` from this fork's [Releases page](https://github.com/acererak-casts-disintegrate/Cataclysm-DDA/releases); the README explains how to open it the first time. Homebrew's `cataclysm` formula builds upstream Cataclysm: Dark Days Ahead, not this fork.
 
-## Simple build using Homebrew
+To build this fork you need the [Command Line Tools for Xcode](https://developer.apple.com/downloads/) (or Xcode itself) and the libraries described below.
 
-A homebrew installation will come with tiles and sound support enabled.
+## Building like the release packages
 
-Once you have Homebrew installed, open Terminal and run one of the following commands.
+The release workflow ([`.github/workflows/release.yml`](../../.github/workflows/release.yml)) builds universal (`x86_64` and `arm64`) disk images on macOS 15 like this:
 
-For a stable tiles build:
+1. Put the SDL2, SDL2_image, SDL2_ttf and SDL2_mixer frameworks in `/Library/Frameworks` or `~/Library/Frameworks` (see [SDL](#sdl) below).
+2. Install the other tools with [Homebrew](https://brew.sh): `brew install gettext dylibbundler`.
+3. For the tiles build, install a universal FreeType with [MacPorts](https://www.macports.org): `sudo port install freetype +universal pkgconfig +universal`.
+4. Install `dmgbuild` (see [dmg distribution](#dmg-distribution)).
+5. Build and package:
 
-    brew install cataclysm
+       make -j$(sysctl -n hw.ncpu) RELEASE=1 TILES=1 SOUND=1 LOCALIZE=1 LANGUAGES=all BACKTRACE=0 PCH=0 USE_HOME_DIR=1 FRAMEWORK=1 UNIVERSAL_BINARY=1 dmgdist
 
-For an experimental tiles build built from the current HEAD of [master](https://github.com/CleverRaven/Cataclysm-DDA/tree/master/):
-
-    brew install cataclysm --HEAD
-
-Whichever build you choose, Homebrew will install the appropriate dependencies as needed. The installation will be in `/usr/local/Cellar/cataclysm` with a symlink named `cataclysm` in `/usr/local/bin`.
-
-To launch Cataclysm, just open Terminal and run `cataclysm`.
-
-To update a stable tiles build simply run:
-
-    brew upgrade cataclysm
-
-To update an experimental build, you must uninstall Cataclysm then reinstall with `--HEAD`, triggering a new build from source.
-
-```bash
-brew uninstall cataclysm
-brew install cataclysm --HEAD
-```
+   This leaves `Cataclysm.dmg` in the source folder. For the terminal-only build, use `TILES=0 SOUND=0`; it needs neither MacPorts nor FreeType. Leave out `UNIVERSAL_BINARY=1` to build for your own Mac's architecture only, and `dmgdist` to just build the game.
 
 ## Advanced info for Developers
 
-For most people, the simple Homebrew installation is enough. For developers, here are some more technical details on building Cataclysm on Mac OS X.
+For developers, here are some more technical details on building Cataclysm on macOS.
 
 ### SDL
 
@@ -542,26 +537,7 @@ hash -r
 
 ### gcc
 
-The version of gcc/g++ installed with the [Command Line Tools for Xcode](https://developer.apple.com/downloads/) is actually just a front end for the same Apple LLVM as clang.  This doesn't necessarily cause issues, but this version of gcc/g++ will have clang error messages and essentially produce the same results as if using clang. To compile with the "real" gcc/g++, install it with homebrew:
-
-    brew install gcc
-
-However, homebrew installs gcc as gcc-8 (where 6 is the version) to avoid conflicts. The simplest way to use the homebrew version at `/usr/local/bin/gcc-8` instead of the Apple LLVM version at `/usr/bin/gcc` is to symlink the necessary.
-
-```bash
-cd /usr/local/bin
-ln -s gcc-8 gcc
-ln -s g++-8 g++
-ln -s c++-8 c++
-```
-
-Or, to do this for everything in `/usr/local/bin/` ending with `-8`,
-
-    find /usr/local/bin -name "*-8" -exec sh -c 'ln -s "$1" $(echo "$1" | sed "s/..$//")' _ {} \;
-
-Also, you need to make sure that `/usr/local/bin` appears before `/usr/bin` in your `$PATH`, or else this will not work.
-
-Check that `gcc -v` shows the homebrew version you installed.
+The Makefile uses Apple's clang on macOS, and that is what the release packages are built with. The `gcc` and `g++` that come with the Command Line Tools are clang under another name. Building with Homebrew's GCC (`CLANG=0` with `CXX` set to its `g++-NN`) is untested; CDDA needs GCC 9.3 or later (see [COMPILER_SUPPORT.md](COMPILER_SUPPORT.md)).
 
 ### Compiling
 
@@ -569,17 +545,17 @@ The Cataclysm source is compiled using `make`.
 
 ### Make options
 
-* `NATIVE=osx` build for OS X. Required for all Mac builds. This is automatically set if compiling natively on macOS.
+* `NATIVE=osx` build for macOS. Required for all Mac builds. This is automatically set if compiling natively on macOS.
 * `UNIVERSAL_BINARY=1` build `x86_64` and `arm64` dual-architecture Universal Binary; omit to build for host architecture only.
 * `TILES=1` build the SDL version with graphical tiles (and graphical ASCII); omit to build with `ncurses`.
 * `SOUND=1` - if you want sound; this requires `TILES=1` and the additional dependencies mentioned above.
-* `FRAMEWORK=1` (tiles only) link to SDL libraries under the OS X Frameworks folders; omit to use SDL shared libraries from Homebrew or Macports.
+* `FRAMEWORK=1` (tiles only) link to SDL libraries under the macOS Frameworks folders; omit to use SDL shared libraries from Homebrew or Macports.
 * `LOCALIZE=0` disable localization (to get around possible `gettext` errors if it is not setup correctly); omit to use `gettext`.
 * `LANGUAGES="<lang_id_1>[lang_id_2][...]"` compile localization files for specified languages. e.g. `LANGUAGES="zh_CN zh_TW"`. You can also use `LANGUAGES=all` to compile all localization files.
 * `RELEASE=1` build an optimized release version; omit for debug build.
 * `CLANG=1` build with [Clang](http://clang.llvm.org/), the compiler that's included with the latest Command Line Tools for Xcode; omit to build using gcc/g++. This is enabled by default.
 * `MACPORTS=1` build against dependencies installed via Macports, currently only `gettext` and `ncurses`.
-* `USE_HOME_DIR=1` places user files (config, saves, graveyard, etc) in the user's home directory. For curses builds, this is `/Users/<user>/.cataclysm-dda`, for OSX builds it is `/Users/<user>/Library/Application Support/Cataclysm`.
+* `USE_HOME_DIR=1` places user files (config, saves, graveyard, etc) in the user's home directory. For curses builds, this is `/Users/<user>/.cataclysm-dda`, for tiles builds it is `/Users/<user>/Library/Application Support/Cataclysm`.
 * `DEBUG_SYMBOLS=1` retains debug symbols when building an optimized release binary, making it easy for developers to spot the crash site.
 
 In addition to the options above, there is an `app` make target which will package the tiles build into `Cataclysm.app`, a complete tiles build in a Mac application that can run without Terminal.
@@ -592,7 +568,7 @@ Build a release SDL version using Clang without gettext:
 
     make RELEASE=1 TILES=1 LOCALIZE=0
 
-Build a release SDL version using Clang, link to libraries in the OS X Frameworks folders, don't use `gettext`, and package it into `Cataclysm.app`:
+Build a release SDL version using Clang, link to libraries in the macOS Frameworks folders, don't use `gettext`, and package it into `Cataclysm.app`:
 
     make app RELEASE=1 TILES=1 FRAMEWORK=1 LOCALIZE=0
 
@@ -620,22 +596,21 @@ Pass the ``--help`` flag to list options.
 
 ### dmg distribution
 
-You can build a nice dmg distribution file with the `dmgdist` target. You will need a tool called [dmgbuild](https://pypi.python.org/pypi/dmgbuild). To install this tool, you may need to install Python first. You can download Python [on their official website](https://www.python.org/downloads/) or install it with homebrew `brew install python`. Once you have Python, you should be able to install `dmgbuild` by running:
+You can build a dmg disk image with the `dmgdist` target. It needs [dmgbuild](https://pypi.org/project/dmgbuild/), plus [biplist](https://pypi.org/project/biplist/), which `build-data/osx/dmgsettings.py` imports. Current Homebrew Python refuses `pip install` into the system environment, so install them in their own environment with [pipx](https://pipx.pypa.io):
 
 ```bash
-# This install pip. It might not be required if it is already installed.
-curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python
-# dmgbuild install
-sudo pip install dmgbuild pyobjc-framework-Quartz
+brew install pipx
+pipx install dmgbuild
+pipx inject dmgbuild biplist
 ```
 
-Once `dmgbuild` is installed, you will be able to use the `dmgdist` target like this. The use of `USE_HOME_DIR=1` is important here because it will allow for an easy upgrade of the game while keeping the user config and his saves in his home directory.
+Then build the image. `USE_HOME_DIR=1` matters here: it keeps the user's config and saves in their home folder, so the game can be upgraded by replacing the app.
 
-    make dmgdist NATIVE=osx RELEASE=1 TILES=1 FRAMEWORK=1 LOCALIZE=0 CLANG=1 USE_HOME_DIR=1
+    make dmgdist RELEASE=1 TILES=1 FRAMEWORK=1 USE_HOME_DIR=1
 
-You should see a `Cataclysm.dmg` file.
+You should see a `Cataclysm.dmg` file. The image uses LZFSE compression, which macOS has read since 10.11.
 
-## Mac OS X Troubleshooting
+## macOS Troubleshooting
 
 ### ISSUE: Colors don't show up correctly
 
@@ -670,89 +645,43 @@ Clang by default uses MSVC on Windows, but also supports the MinGW64 library. Si
 
 # BSDs
 
-There are reports of CDDA building fine on recent OpenBSD and FreeBSD machines (with appropriately recent compilers), and there is some work being done on making the [`Makefile`](../../Makefile) "just work", however we're far from that and BSDs support is mostly based on user contributions. Your mileage may vary. So far essentially all testing has been on amd64, but there is no (known) reason that other architectures shouldn't work, in principle.
+CI builds the game (tiles, sound and localization) and runs the core test suite on FreeBSD, OpenBSD and NetBSD for every push to `0.I-custom`; see [`.github/workflows/bsd.yml`](../../.github/workflows/bsd.yml). The recipes below are the ones it uses, on amd64. The Makefile recognises the BSDs by itself and uses each system's own compiler: clang on FreeBSD, OpenBSD and MidnightBSD, GCC on NetBSD and DragonFly BSD.
 
-### Building on FreeBSD/amd64 13.0 with the system compiler
+For a terminal-only build, leave out `TILES=1 SOUND=1` and the SDL packages. `LOCALIZE=0` removes the need for `gettext-tools`. Add `-jN` to build in parallel. CI builds with `BACKTRACE=0`; crash backtraces (the default) need `libexecinfo` and are untested on the BSDs.
 
-FreeBSD uses clang as the default compiler, which provides C++17 support out of the box since FreeBSD 12.0.
+## FreeBSD
 
-Install the following with pkg (or from Ports):
+Tested on FreeBSD 15.1 with the system clang:
 
-    pkg install gmake libiconv
+    pkg install gmake pkgconf gettext-tools sdl2 sdl2_image sdl2_mixer sdl2_ttf
+    gmake RELEASE=1 BACKTRACE=0 TILES=1 SOUND=1
 
-Tiles builds will also require SDL2:
+## OpenBSD
 
-    pkg install sdl20 sdl2_image sdl2_mixer sdl2_ttf
+Tested on OpenBSD 8.0 with the system clang:
 
-Then you should be able to build with something like this:
+    pkg_add gmake gettext-tools sdl2 sdl2-image sdl2-mixer sdl2-ttf
+    gmake RELEASE=1 BACKTRACE=0 TILES=1 SOUND=1
 
-```bash
-gmake RELEASE=1 # ncurses builds
-gmake RELEASE=1 TILES=1 # tiles builds
-```
-
-### Building on OpenBSD/amd64 7.1 with clang
-
-Install necessary dependencies:
-
-    pkg_add gmake libiconv
-
-If building with tiles also install:
-
-    pkg_add sdl2 sdl2-image sdl2-mixer sdl2-ttf
-
-Compiling:
-
-```bash
-gmake RELEASE=1 BSD=1 CLANG=1 TESTS=0 # ncurses build
-gmake RELEASE=1 BSD=1 CLANG=1 TESTS=0 TILES=1 # tiles build
-```
-
-You may get an out of memory error when compiling with an underprivileged user,
-you can simply fix this by running:
+You may get an out of memory error when compiling with an underprivileged user. You can fix this by running:
 
     usermod -L pbuild <user>
 
-This command sets your login class to `pbuild` thus the data ulimit is increased from
-1GB to 8GB.
+This sets the user's login class to `pbuild`, which raises the data size limit from 1GB to 8GB; it takes effect at the next login.
 
-**NOTE: don't run this command for your main user, as it is already a part
-of the `staff` login class**
-
-Instead, you need to increase `data` limit with:
+**Note:** don't run this command for your main user, as it is already part of the `staff` login class. Instead, increase the data limit with:
 
     ulimit -d 8000000
 
-### Building on OpenBSD/amd64 5.8 with GCC 4.9.2 from ports/packages
+OpenBSD's C library ignores the numeric and collation locale settings, so the game sorts lists byte by byte there, and the tests that check localized sorting and number parsing skip themselves.
 
-First, install g++, gmake, and libexecinfo from packages (g++ 4.8 or 4.9 should work; 4.9 has been tested):
+## NetBSD
 
-    pkg_add g++ gmake libexecinfo
+Tested on NetBSD 11.0 with the system GCC and packages from pkgsrc:
 
-Then you should  be able to build with something like:
+    pkgin install gmake pkgconf gettext-tools SDL2 SDL2_image SDL2_mixer SDL2_ttf
+    gmake RELEASE=1 BACKTRACE=0 TILES=1 SOUND=1
 
-    CXX=eg++ gmake
+## Other systems
 
-Only an ncurses build is possible on 5.8-release, as SDL2 is broken. On recent -current or snapshots, however, you can install the SDL2 packages:
-
-    pkg_add sdl2 sdl2-image sdl2-mixer sdl2-ttf
-
-and build with:
-
-    CXX=eg++ gmake TILES=1
-
-### Building on NetBSD/amd64 7.0RC1 with the system compiler
-
-NetBSD has (or will have) gcc 4.8.4 as of version 7.0, which is new enough to build cataclysm. You will need to install gmake and ncursesw:
-
-    pkgin install gmake ncursesw
-
-Then you should be able to build with something like this (LDFLAGS for ncurses builds are taken care of by the ncurses configuration script; you can of course set CXXFLAGS/LDFLAGS in your .profile or something):
-
-```bash
-export CXXFLAGS="-I/usr/pkg/include"
-gmake # ncurses builds
-LDFLAGS="-L/usr/pkg/lib" gmake TILES=1 # tiles builds
-```
-
-SDL builds currently compile, but did not run in my testing - not only do they segfault, but gdb segfaults when reading the debug symbols! Perhaps your mileage will vary.
+A weekly job, [`.github/workflows/other-os.yml`](../../.github/workflows/other-os.yml), also tries DragonFly BSD, MidnightBSD, Haiku and OmniOS (illumos), building the terminal-only version. These are experimental: that workflow lists the packages and flags each one uses, and its latest run shows whether it currently passes.

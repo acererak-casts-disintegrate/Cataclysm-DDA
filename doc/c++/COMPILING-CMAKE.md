@@ -62,7 +62,7 @@ You'll need to have these libraries and their development headers installed in o
 
 # Build Environment
 
-You can obtain the source code tarball for the latest version from [Github](https://github.com/CleverRaven/Cataclysm-DDA).
+You can obtain the source code from this fork's [GitHub repository](https://github.com/acererak-casts-disintegrate/Cataclysm-DDA); its default branch, `0.I-custom`, is the current version.
 
 
 ## UNIX Environment
@@ -117,7 +117,7 @@ $ cmake-gui ..
 
 ## CMake Build for MSYS2 (MinGW)
 
-1. Follow [`COMPILING-MSYS.md`](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/COMPILING/COMPILING-MSYS.md)
+1. Follow [`COMPILING-MSYS.md`](COMPILING-MSYS.md)
 
 2. Run
 ```
