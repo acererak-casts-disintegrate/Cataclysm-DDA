@@ -51,6 +51,13 @@ This fork is based on the 0.I stable branch (0.I-1). It carries forward the chan
 * **Selected exoplanet content.** Guns, ammunition, clothing, armour, CBMs and tools from 0.I's Aftershock: Exoplanet that fit an Earth setting are imported and re-themed; that mod is marked obsolete.
 * **Data fixes.** Item weights, volumes and lengths, spawns, faction relations and mutation purification are corrected.
 
+**Cataclysm++**
+
+* **Included as an in-repo mod.** [Cataclysm++](https://github.com/Noctifer-de-Mortem/nocts_cata_mod) by Noctifer and contributors (public domain, The Unlicense) is imported from its upstream commit `46982a6` and converted from 0.J's data format to 0.I's. [`UPSTREAM.md`](data/mods/Cataclysm++/UPSTREAM.md) records what was left out and how to take later versions.
+* **Fits this fork's restored content.** It no longer overrides the laser cannon or laser turret. It keeps the 0.I content upstream dropped for 0.J: its professions in the Lab Patient and Lab Staff challenge scenarios, the CVD machine in its lab and the atomic lamp on its survivor bus. Its CBMs drop from bionic zombies as well as turning up in loot.
+* **Works with Generic Guns.** Its black-powder cartridges become Generic Guns' black-powder balls, and the survivor cowboy hat's ammo band takes Generic Guns' ammunition types.
+* **Data fixes.** Item groups it extended lost their core contents and the survivor's flamethrower lost three flags, both through 0.I's handling of `extend`; the Prepper's Rambo knife did not fit its sheath; and item weights, volumes and text are corrected.
+
 **Other in-repo mods**
 
 * **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.

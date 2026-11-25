@@ -1,0 +1,31 @@
+[
+  {
+    "id": [ "36navy_makeshift_magnum", "44army_makeshift_magnum", "flintlock_ammo_mine" ],
+    "type": "MIGRATION",
+    "replace": "black_powder_ball"
+  },
+  {
+    "id": "cowboy_hat_surv",
+    "copy-from": "cowboy_hat_surv",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "//": "Generic Guns replaces real calibres with generic ammunition types; the hat's ammo band takes those instead.",
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "ammo_pistol_tiny": 12,
+          "ammo_pistol": 12,
+          "ammo_pistol_magnum": 12,
+          "ammo_rifle": 12,
+          "ammo_rifle_foreign": 12,
+          "ammo_rifle_huge": 12,
+          "ammo_shot": 12,
+          "ammo_black_powder": 12,
+          "signal_flare": 12,
+          "blunderbuss": 12
+        },
+        "moves": 30
+      }
+    ]
+  }
+]
