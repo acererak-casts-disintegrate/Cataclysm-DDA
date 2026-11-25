@@ -53,6 +53,19 @@ jobs:
           else
             echo "publish=false" >> $GITHUB_OUTPUT
           fi
+      - name: Check the branch has not moved on
+        # GitHub refuses to let this workflow's token create a tag at an older
+        # commit whose workflow files differ from the branch's (HTTP 403,
+        # "Resource not accessible by integration"), so fail early and say why.
+        if: steps.vars.outputs.publish == 'true' && github.ref_type == 'branch'
+        env:
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          head=$(git ls-remote origin "refs/heads/$REF_NAME" | cut -f1)
+          if [ "$head" != "$GITHUB_SHA" ]; then
+            echo "::error::$REF_NAME moved on to $head after this release started at $GITHUB_SHA. Start the release again from the branch head, or push a 0.I-custom-* tag at $GITHUB_SHA."
+            exit 1
+          fi
       - name: Write release notes
         env:
           tag: ${{ steps.vars.outputs.tag_name }}
