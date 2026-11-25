@@ -49,6 +49,9 @@ jobs:
             echo "Unofficial build of this fork of Cataclysm: Dark Days Ahead, based on the 0.I stable release."
             echo "It is not made or supported by CleverRaven; see the README for what differs from 0.I."
             echo
+            echo "Builds with sounds include the CC-Sounds soundpack (https://github.com/Fris0uman/CDDA-Soundpacks)."
+            echo "Music by CO.AG (https://www.youtube.com/channel/UCcavSftXHgxLBWwLDm_bNvA), used with their permission."
+            echo
             echo "Commit: https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
             if [ -n "$prev" ]; then
               echo "Changes since $prev: https://github.com/${{ github.repository }}/compare/$prev...$tag"

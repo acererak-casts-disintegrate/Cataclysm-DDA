@@ -79,6 +79,8 @@ Prebuilt packages are on the [Releases page](https://github.com/acererak-casts-d
 * **Windows x64**: `windows-with-graphics-and-sounds` includes the CC-Sounds soundpack; `windows-with-graphics` does not. Unzip anywhere and run `cataclysm-tiles.exe`.
 * **Linux x64**: `linux-with-graphics-and-sounds`, a tarball of the tiles build with CC-Sounds.
 
+The sound builds bundle [CC-Sounds](https://github.com/Fris0uman/CDDA-Soundpacks) by Fris0uman and contributors. **Music by CO.AG** ([YouTube](https://www.youtube.com/channel/UCcavSftXHgxLBWwLDm_bNvA), [Patreon](https://www.patreon.com/user?u=3550597)), used with their permission. Its sound effects come from [freesound.org](https://freesound.org/), credited in each sound folder's `credits.md`.
+
 There are no macOS or Android builds. Each release is built from a commit on the `0.I-custom` branch by `.github/workflows/release.yml`; its notes link the exact commit.
 
 ## Getting the source
