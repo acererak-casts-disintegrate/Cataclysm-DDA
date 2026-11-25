@@ -1,9 +1,8 @@
 [
   {
-    "type": "region_settings_city",
-    "id": "default",
-    "copy-from": "default",
-    "extend": { "houses": [ [ "house_arcana", 50 ], [ "house_arcana_2", 35 ] ] }
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "city": { "houses": { "house_arcana": 50, "house_arcana_2": 35 } }
   },
   {
     "type": "city_building",

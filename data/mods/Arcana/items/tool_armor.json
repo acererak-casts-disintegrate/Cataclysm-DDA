@@ -576,7 +576,6 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "light": 60,
     "extend": {
       "flags": [
         "NO_TAKEOFF",
@@ -593,7 +592,8 @@
         "UNBREAKABLE",
         "SPAWN_ACTIVE"
       ]
-    }
+    },
+    "flags": [ "LIGHT_60" ]
   },
   {
     "id": "hauberk_jade",

@@ -297,8 +297,16 @@
     ],
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
-    "light": 45,
-    "flags": [ "NEVER_JAMS", "UNBREAKABLE_MELEE", "FIRE", "FLAMING", "PRIMITIVE_RANGED_WEAPON", "TRADER_KEEP_EQUIPPED", "NO_TURRET" ]
+    "flags": [
+      "NEVER_JAMS",
+      "UNBREAKABLE_MELEE",
+      "FIRE",
+      "FLAMING",
+      "PRIMITIVE_RANGED_WEAPON",
+      "TRADER_KEEP_EQUIPPED",
+      "NO_TURRET",
+      "LIGHT_45"
+    ]
   },
   {
     "id": "scourge_staff",

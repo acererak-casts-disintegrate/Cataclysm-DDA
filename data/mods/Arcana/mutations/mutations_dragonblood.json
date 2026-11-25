@@ -431,12 +431,12 @@
     "ugliness": 2,
     "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit if you are wearing gloves.",
     "valid": false,
-    "provided_qualities": { "BUTCHER": 9 },
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
     "flags": [ "UNARMED_BONUS" ],
-    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "melee_damage_bonus": [ { "type": "cut", "add": 7 } ] } ]
+    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "melee_damage_bonus": [ { "type": "cut", "add": 7 } ] } ],
+    "butchering_quality": 9
   },
   {
     "type": "mutation",
