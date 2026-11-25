@@ -442,10 +442,9 @@
     "color": "dark_gray",
     "warmth": 10,
     "material_thickness": 4,
-    "light": 50,
     "environmental_protection": 5,
     "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "C_RADIOGENIC_GOGGLES" ] } ],
-    "flags": [ "GNV_EFFECT", "WATERPROOF", "STURDY", "RADIOACTIVE", "PADDED" ],
+    "flags": [ "GNV_EFFECT", "WATERPROOF", "STURDY", "RADIOACTIVE", "LIGHT_25", "PADDED" ],
     "armor": [ { "encumbrance": 30, "coverage": 100, "covers": [ "eyes" ] } ]
   },
   {
