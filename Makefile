@@ -281,6 +281,15 @@ ifneq ($(findstring Darwin,$(OS)),)
   endif
 endif
 
+# FreeBSD, OpenBSD and MidnightBSD have clang as the system compiler and no g++
+ifneq ($(filter FreeBSD OpenBSD MidnightBSD,$(OS)),)
+  ifeq ($(CROSS),)
+    ifndef CLANG
+      CLANG = 1
+    endif
+  endif
+endif
+
 # Default to disabling clang
 ifndef CLANG
   CLANG = 0
