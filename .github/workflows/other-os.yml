@@ -1,0 +1,60 @@
+name: Other OS build and test
+# Weekly check that the game and its test suite build and pass on less common
+# systems: DragonFly BSD, MidnightBSD, Haiku and OmniOS (illumos). Each runs in
+# a virtual machine on a Linux runner (see vm-build-test.yml). These are
+# experimental: CDDA's build docs do not cover them. They build the terminal
+# (curses) version without localisation, which needs the fewest packages; the
+# test suite is the same either way. The main BSDs are checked on every push by
+# bsd.yml.
+
+on:
+  schedule:
+    # Sundays at 04:23 UTC.
+    - cron: '23 4 * * 0'
+  workflow_dispatch:
+
+concurrency:
+  group: other-os-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  other-os:
+    name: ${{ matrix.name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: DragonFly BSD 6.4.2 (GCC 13)
+            os: dragonflybsd
+            version: '6.4.2'
+            # The base GCC 8.3 is older than the oldest GCC CDDA supports (9.3).
+            install: sudo env ASSUME_ALWAYS_YES=yes pkg install -y gmake gcc13
+            make_flags: BSD=1 CLANG=0 COMPILER=g++13 TILES=0 SOUND=0 LOCALIZE=0
+            setup: export LD_LIBRARY_PATH=/usr/local/lib/gcc13
+          - name: MidnightBSD 4.0.4 (clang)
+            os: midnightbsd
+            version: '4.0.4'
+            install: sudo mport install gmake
+            make_flags: BSD=1 CLANG=1 TILES=0 SOUND=0 LOCALIZE=0
+          - name: Haiku R1/beta6 (GCC)
+            os: haiku
+            version: 'r1beta6'
+            # Haiku is single-user: no sudo, and its make is GNU make.
+            install: pkgman install -y ncurses6_devel pkgconfig
+            make: make
+            make_flags: CLANG=0 TILES=0 SOUND=0 LOCALIZE=0
+          - name: OmniOS r151058 (GCC 14)
+            os: omnios
+            version: 'r151058'
+            # pkg exits 4 when everything asked for is already installed.
+            install: sudo pkg install developer/gcc14 developer/build/gnu-make developer/pkg-config library/ncurses || [ $? -eq 4 ]
+            make_flags: CLANG=0 TILES=0 SOUND=0 LOCALIZE=0
+            setup: export PATH=/opt/gcc-14/bin:$PATH
+    uses: ./.github/workflows/vm-build-test.yml
+    with:
+      os: ${{ matrix.os }}
+      version: ${{ matrix.version }}
+      install: ${{ matrix.install }}
+      make: ${{ matrix.make || 'gmake' }}
+      make_flags: ${{ matrix.make_flags }}
+      setup: ${{ matrix.setup || '' }}

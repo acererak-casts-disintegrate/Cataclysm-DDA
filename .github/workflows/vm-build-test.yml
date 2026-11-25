@@ -1,0 +1,97 @@
+name: Build and test in a VM
+# Reusable workflow: boots one operating system as a QEMU virtual machine on a
+# Linux runner (cross-platform-actions/action), builds the game and its test
+# suite there, and runs the core tests. Called by bsd.yml and other-os.yml,
+# once per operating system in their matrices. Nothing is packaged.
+
+on:
+  workflow_call:
+    inputs:
+      os:
+        description: 'operating_system for cross-platform-actions/action, e.g. freebsd'
+        required: true
+        type: string
+      version:
+        description: 'Version of that operating system, e.g. 15.1'
+        required: true
+        type: string
+      install:
+        description: 'Shell commands that install the build dependencies'
+        required: true
+        type: string
+      make:
+        description: 'GNU make command'
+        required: false
+        type: string
+        default: gmake
+      make_flags:
+        description: 'Flags for make besides RELEASE=1 and BACKTRACE=0, e.g. BSD=1 CLANG=1 TILES=1'
+        required: true
+        type: string
+      setup:
+        description: 'Shell commands run before building and before testing, e.g. PATH changes'
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  build-test:
+    name: Build and test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start virtual machine
+        uses: cross-platform-actions/action@v1.7.0
+        with:
+          operating_system: ${{ inputs.os }}
+          version: ${{ inputs.version }}
+          memory: 12G
+          cpu_count: 4
+          shell: bash
+          sync_files: runner-to-vm
+      - name: Install dependencies
+        shell: cpa.sh {0} --sync-files none
+        run: |
+          set -euxo pipefail
+          ${{ inputs.install }}
+      - name: Show build environment
+        shell: cpa.sh {0} --sync-files none
+        run: |
+          set -x
+          [ -f Makefile ] || cd "$GITHUB_WORKSPACE"
+          ${{ inputs.setup }}
+          pwd
+          uname -a
+          ${{ inputs.make }} --version | head -n 1
+          ulimit -a
+          df -h .
+      - name: Build game and tests
+        shell: cpa.sh {0} --sync-files none
+        run: |
+          set -euxo pipefail
+          [ -f Makefile ] || cd "$GITHUB_WORKSPACE"
+          ${{ inputs.setup }}
+          # OpenBSD: use the whole data-size allowance of the login class.
+          ulimit -d "$(ulimit -H -d)" || true
+          ${{ inputs.make }} -j4 RELEASE=1 BACKTRACE=0 ${{ inputs.make_flags }}
+      - name: Run core tests
+        shell: cpa.sh {0} --sync-files none
+        run: |
+          set -euo pipefail
+          [ -f Makefile ] || cd "$GITHUB_WORKSPACE"
+          ${{ inputs.setup }}
+          opts=(--min-duration 20 --rng-seed time --order lex --error-format=github-action)
+          # The same two halves the Linux CI runs, in parallel, each line prefixed with its half.
+          run_half() {
+            local tag=$1 user_dir=$2 filter=$3
+            set -o pipefail
+            ./tests/cata_test "${opts[@]}" --user-dir="$user_dir" "$filter" 2>&1 |
+              while IFS= read -r line; do printf '(%s)=> %s\n' "$tag" "$line"; done
+          }
+          run_half slow test_user_dir_1 '[slow] ~starting_items' & slow=$!
+          run_half other test_user_dir_2 '~[slow] ~[.],starting_items' & other=$!
+          rc=0
+          wait "$slow" || { echo "slow tests failed"; rc=1; }
+          wait "$other" || { echo "other tests failed"; rc=1; }
+          exit "$rc"

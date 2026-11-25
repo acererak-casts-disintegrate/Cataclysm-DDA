@@ -1,0 +1,50 @@
+name: BSD build and test
+# Builds the game (tiles, sound, localisation) and its test suite on FreeBSD,
+# OpenBSD and NetBSD, then runs the core tests. GitHub has no BSD runners, so
+# each BSD runs in a virtual machine on a Linux runner (see vm-build-test.yml).
+# Nothing is packaged: this only checks that the fork builds and passes its
+# tests on the BSDs. Other systems are checked weekly by other-os.yml.
+
+on:
+  push:
+    branches:
+      - 0.I-custom
+  workflow_dispatch:
+
+# Only the newest commit matters; a newer push cancels a run still in progress.
+concurrency:
+  group: bsd-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  bsd:
+    name: ${{ matrix.name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: FreeBSD 15.1 (clang)
+            os: freebsd
+            version: '15.1'
+            install: sudo env ASSUME_ALWAYS_YES=yes pkg install -y gmake pkgconf gettext-tools sdl2 sdl2_image sdl2_mixer sdl2_ttf
+            make_flags: BSD=1 CLANG=1 TILES=1 SOUND=1 LOCALIZE=1
+          - name: OpenBSD 8.0 (clang)
+            os: openbsd
+            version: '8.0'
+            # The default login class caps a process's data size well below what
+            # compiling the game needs; the pbuild class raises it.
+            install: |
+              sudo pkg_add -I gmake gettext-tools sdl2 sdl2-image sdl2-mixer sdl2-ttf
+              sudo usermod -L pbuild runner
+            make_flags: BSD=1 CLANG=1 TILES=1 SOUND=1 LOCALIZE=1
+          - name: NetBSD 11.0 (GCC)
+            os: netbsd
+            version: '11.0'
+            install: sudo pkgin -y install gmake pkgconf gettext-tools SDL2 SDL2_image SDL2_mixer SDL2_ttf
+            make_flags: BSD=1 CLANG=0 TILES=1 SOUND=1 LOCALIZE=1
+    uses: ./.github/workflows/vm-build-test.yml
+    with:
+      os: ${{ matrix.os }}
+      version: ${{ matrix.version }}
+      install: ${{ matrix.install }}
+      make_flags: ${{ matrix.make_flags }}
