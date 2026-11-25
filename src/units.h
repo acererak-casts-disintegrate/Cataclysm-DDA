@@ -1252,13 +1252,13 @@ T read_from_json_string_common( const std::string_view s,
         } else if( s[ i ] == '+' ) {
             ++i;
         }
-        if( i >= s.size() || !isdigit( s[ i ] ) ) {
+        if( i >= s.size() || !isdigit( static_cast<unsigned char>( s[ i ] ) ) ) {
             error( "invalid quantity string: number expected", i );
             // above always throws but lambdas cannot be marked [[noreturn]]
             throw std::string( "Exceptionally impossible" );
         }
         int value = 0;
-        for( ; i < s.size() && isdigit( s[ i ] ); ++i ) {
+        for( ; i < s.size() && isdigit( static_cast<unsigned char>( s[ i ] ) ); ++i ) {
             value = value * 10 + ( s[ i ] - '0' );
         }
         result += sign_value * value * get_unit();

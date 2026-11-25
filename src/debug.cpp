@@ -984,7 +984,7 @@ static std::optional<uintptr_t> debug_compute_load_offset(
         std::array<char, 1024> buf;
         while( fgets( buf.data(), buf.size(), nm ) ) {
             std::string line( buf.data() );
-            while( !line.empty() && isspace( line.end()[-1] ) ) {
+            while( !line.empty() && isspace( static_cast<unsigned char>( line.end()[-1] ) ) ) {
                 line.erase( line.end() - 1 );
             }
             if( string_ends_with( line, string_sought ) ) {

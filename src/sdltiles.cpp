@@ -2089,9 +2089,10 @@ int choose_best_key_for_action( const std::string &action, const std::string &ca
     int best_key = -1;
     for( const auto &events_event : events ) {
         if( events_event.type == input_event_t::keyboard_char && events_event.sequence.size() == 1 ) {
-            bool is_ascii_char = isprint( events_event.sequence.front() ) &&
-                                 events_event.sequence.front() < 0xFF;
-            bool is_best_ascii_char = best_key >= 0 && isprint( best_key ) && best_key < 0xFF;
+            bool is_ascii_char = events_event.sequence.front() >= 0 &&
+                                 events_event.sequence.front() < 0xFF &&
+                                 isprint( events_event.sequence.front() );
+            bool is_best_ascii_char = best_key >= 0 && best_key < 0xFF && isprint( best_key );
             if( best_key < 0 || ( is_ascii_char && !is_best_ascii_char ) ) {
                 best_key = events_event.sequence.front();
             }

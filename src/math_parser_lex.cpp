@@ -14,9 +14,20 @@
 
 namespace
 {
+// The <cctype> functions take an unsigned char value. A byte of a UTF-8
+// sequence is a negative char, which is undefined behaviour (and aborts on
+// NetBSD), so convert first.
 bool ispunct( char c )
 {
-    return c != '_' && std::ispunct( c ) != 0;
+    return c != '_' && std::ispunct( static_cast<unsigned char>( c ) ) != 0;
+}
+bool is_space( char c )
+{
+    return std::isspace( static_cast<unsigned char>( c ) ) != 0;
+}
+bool is_digit( char c )
+{
+    return std::isdigit( static_cast<unsigned char>( c ) ) != 0;
 }
 
 } // namespace
@@ -43,7 +54,7 @@ void lexer::read_number()
 
     while( len < str.size() ) {
         char const next = str[len];
-        if( std::isdigit( next ) != 0 ) {
+        if( is_digit( next ) ) {
             len++;
         } else if( next == '.' && !have_dot && !have_exp ) {
             have_dot = true;
@@ -86,7 +97,7 @@ void lexer::read_id()
     std::size_t len = 0;
     while( len < str.size() ) {
         char const next = str[len];
-        if( ispunct( next ) || std::isspace( next ) != 0 ) {
+        if( ispunct( next ) || is_space( next ) ) {
             break;
         }
         len++;
@@ -108,11 +119,11 @@ lexer::lexer( std::string_view str_ ) : str( str_ )
         if( str.size() == 2 && ( str == "++" || str == "--" ) ) {
             tokenize( token_t::oper, 2 );
 
-        } else if( std::isspace( next ) != 0 ) {
+        } else if( is_space( next ) ) {
             skip( 1 );
 
-        } else if( std::isdigit( next ) != 0 ||
-                   ( str.size() >= 2 && next == '.' && std::isdigit( str[1] ) != 0 ) ) {
+        } else if( is_digit( next ) ||
+                   ( str.size() >= 2 && next == '.' && is_digit( str[1] ) ) ) {
             read_number();
 
         } else if( next == '>' || next == '<' || next == '!' || next == '+' || next == '-' ||

@@ -198,9 +198,9 @@ Token TranslationPluralRulesEvaluator::GetNextToken( const char *&p )
     } else if( *p == ':' ) {
         ++p;
         return ExprToken( ExprTokenType::Branch, 0 );
-    } else if( std::isdigit( *p ) ) {
+    } else if( std::isdigit( static_cast<unsigned char>( *p ) ) ) {
         int value = 0;
-        while( std::isdigit( *p ) ) {
+        while( std::isdigit( static_cast<unsigned char>( *p ) ) ) {
             value = value * 10 + static_cast<int>( *p - '0' );
             ++p;
         }

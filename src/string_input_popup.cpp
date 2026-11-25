@@ -584,7 +584,7 @@ const std::string &string_input_popup::query_string( const bool loop, const bool
                     while( len > 0 ) {
                         const uint32_t ch = UTF8_getch( &str, &len );
                         // Use mk_wcwidth to filter out control characters
-                        if( _only_digits ? ch == '-' || isdigit( ch ) : mk_wcwidth( ch ) >= 0 ) {
+                        if( _only_digits ? ch == '-' || ( ch < 128 && isdigit( ch ) ) : mk_wcwidth( ch ) >= 0 ) {
                             const int newwidth = mk_wcwidth( ch );
                             if( _max_length <= 0 || width + newwidth <= _max_length ) {
                                 insertion.append( utf8_wrapper( utf32_to_utf8( ch ) ) );

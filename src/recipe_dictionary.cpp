@@ -310,7 +310,7 @@ std::vector<const recipe *> recipe_subset::search(
                 std::string range_end;
                 bool use_range = false;
                 for( const char &chr : txt ) {
-                    if( std::isdigit( chr ) ) {
+                    if( std::isdigit( static_cast<unsigned char>( chr ) ) ) {
                         if( use_range ) {
                             range_end += chr;
                         } else {

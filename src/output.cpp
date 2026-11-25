@@ -1505,7 +1505,7 @@ std::string trim_trailing( std::string_view s, Prep prep )
 
 std::string trim( std::string_view s )
 {
-    return trim( s, []( int c ) {
+    return trim( s, []( unsigned char c ) {
         return isspace( c );
     } );
 }
@@ -2507,7 +2507,7 @@ std::string rewrite_vsnprintf( const char *msg )
 
         // Parse possible number of positional argument
         int positional_arg = 0;
-        while( isdigit( *ptr ) ) {
+        while( isdigit( static_cast<unsigned char>( *ptr ) ) ) {
             positional_arg = positional_arg * 10 + *ptr - '0';
             ptr++;
         }
