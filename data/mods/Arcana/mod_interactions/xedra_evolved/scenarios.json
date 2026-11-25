@@ -1,8 +1,0 @@
-{
-  "type": "scenario",
-  "id": "arcane_urban",
-  "copy-from": "arcane_urban",
-  "extend": {
-    "professions": [ "archaeologist" ]
-  }
-}

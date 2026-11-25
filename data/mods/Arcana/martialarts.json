@@ -203,6 +203,7 @@
       "dao",
       "sword_bronze",
       "machete",
+      "survivor_machete",
       "survivor_machete_qt",
       "sword_metal",
       "bio_blade_weapon"
@@ -334,6 +335,7 @@
       "sword_bayonet",
       "makeshift_machete",
       "machete",
+      "survivor_machete",
       "survivor_machete_qt",
       "kukri",
       "khopesh",

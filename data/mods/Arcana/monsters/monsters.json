@@ -643,7 +643,7 @@
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "special_attacks": [ [ "PARROT", 900 ] ],
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY" ] },
-    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN" ] }
+    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
     "id": "mon_shadow_summoned_fake",

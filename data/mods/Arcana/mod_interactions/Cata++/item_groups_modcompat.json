@@ -69,11 +69,23 @@
     "extend": { "items": [ [ "bio_temporal_stimulation", 1 ] ] }
   },
   {
-    "id": "bionics_apophis",
-    "copy-from": "bionics_apophis",
-    "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
+    "id": "bionics_apophis_util",
+    "copy-from": "bionics_apophis_util",
     "type": "item_group",
-    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ], [ "bio_kinetic_amplifier", 1 ] ] }
+    "//": "Cataclysm++ splits its old bionics_apophis group into _off, _def and _util; weights follow its conventions for these groups.",
+    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ] ] }
+  },
+  {
+    "id": "bionics_apophis_def",
+    "copy-from": "bionics_apophis_def",
+    "type": "item_group",
+    "extend": { "items": [ [ "bio_life_sign_suppression", 1 ] ] }
+  },
+  {
+    "id": "bionics_apophis_off",
+    "copy-from": "bionics_apophis_off",
+    "type": "item_group",
+    "extend": { "items": [ [ "bio_kinetic_amplifier", 1 ] ] }
   },
   {
     "id": "lab_misc_anomalous_items",

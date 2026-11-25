@@ -17,22 +17,20 @@
   },
   {
     "type": "item_group",
-    "id": "skeltal_drops_override",
-    "copy-from": "skeltal_drops_override",
+    "id": "skeltal_drops",
     "subtype": "collection",
-    "extend": {
-      "entries": [
-        { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
-        {
-          "distribution": [
-            { "item": "gracken_knuckles", "prob": 50 },
-            { "item": "bone_twisted", "prob": 25 },
-            { "item": "monster_fang", "prob": 15 },
-            { "item": "graboid_fang", "prob": 10 }
-          ]
-        },
-        { "item": "essence_blood", "count": [ 6, 15 ] }
-      ]
-    }
+    "//": "Replaces CrazyCataclysm's skeltal_drops distribution: the milk or trumpet roll, plus a monster part and blood essence.",
+    "entries": [
+      { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
+      {
+        "distribution": [
+          { "item": "gracken_knuckles", "prob": 50 },
+          { "item": "bone_twisted", "prob": 25 },
+          { "item": "monster_fang", "prob": 15 },
+          { "item": "graboid_fang", "prob": 10 }
+        ]
+      },
+      { "item": "essence_blood", "count": [ 6, 15 ] }
+    ]
   }
 ]
