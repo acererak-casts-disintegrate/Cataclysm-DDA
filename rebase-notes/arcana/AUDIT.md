@@ -200,7 +200,7 @@ seen in Standing-Storm's copy.
 ### C6: interactions, CI and README
 
 - **Generic Guns:** add `mod_interactions/generic_guns/gg_ammo.json`
-  (`mod_interactions_generic_guns/gg_ammo.json` here). See Decision 2.
+  (`mod_interactions_generic_guns/gg_ammo.json` here). Decided: retype (Decision 2).
   - Generic Guns migrates `reloaded_shot_00` → `reloaded_shot_buck` and `flintlock_shot` →
     `black_powder_shot`, and these two Arcana items inherit from them:
     - `reloaded_shot_00_arcana` keeps the real `shot` type: three load errors in professions
@@ -284,13 +284,15 @@ revisited.
 
 ## Decisions
 
-| # | Decision | Recommendation |
+All five were decided by the owner on 25 November 2026, each as recommended.
+
+| # | Decision | Owner's decision |
 |---|---|---|
-| 1 | Which Arcana | **Decided: A**, chaosvolt `33bfbbe` |
-| 2 | Generic Guns: retype or migrate the two shells | Retype (draft included). Migrating, as Cataclysm++ did for its cartridges, would delete the blessed shells and their recipes under Generic Guns. |
-| 3 | Restore the `bionics_op*` CBM extensions | Yes, for parity with Cataclysm++ |
-| 4 | Drop the dead `strong_portal_storm` scenario extension | Yes |
-| 5 | CI job for Arcana | Yes, as for Cataclysm++ |
+| 1 | Which Arcana | **A**, chaosvolt `33bfbbe` |
+| 2 | Generic Guns: retype or migrate the two shells | **Retype**, using the included draft. Migrating, as Cataclysm++ did for its cartridges, would delete the blessed shells and their recipes under Generic Guns. |
+| 3 | Restore the `bionics_op*` CBM extensions | **Yes**, for parity with Cataclysm++ |
+| 4 | Drop the dead `strong_portal_storm` scenario extension | **Yes** |
+| 5 | CI job for Arcana | **Yes**, as for Cataclysm++ |
 
 ## Files in this folder
 
