@@ -1114,7 +1114,10 @@
     "id": "arcana_aftermath_eclipse_wonder_flaming_eye",
     "type": "SPELL",
     "name": { "str": "Eclipse Flaming Eye" },
-    "description": "Also an interloper, and probably the most !!FUN!! kind.",
+    "description": {
+      "str": "Also an interloper, and probably the most !!FUN!! kind.",
+      "//NOLINT(cata-text-style)": "!!FUN!! is a Dwarf Fortress reference"
+    },
     "valid_targets": [ "ground" ],
     "message": "",
     "flags": [ "NO_EXPLOSION_SFX", "PERMANENT", "RANDOM_TARGET", "HOSTILE_SUMMON" ],
