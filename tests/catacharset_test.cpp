@@ -73,6 +73,14 @@ TEST_CASE( "localized_compare", "[catacharset][nogame]" )
     }
     CAPTURE( setlocale( LC_ALL, nullptr ) );
     CAPTURE( std::locale().name() );
+    // Some C libraries (NetBSD's, OpenBSD's) accept the locale but still collate
+    // byte by byte, so "B" sorts before "a" and there is no localized ordering to
+    // test.
+    if( std::locale()( std::string( "B" ), std::string( "a" ) ) ) {
+        WARN( "This platform's en_US.UTF-8 locale does not collate by locale; skipping." );
+        std::locale::global( std::locale::classic() );
+        return;
+    }
     std::string a = "a";
     std::string b = "b";
     std::string c = "c";
