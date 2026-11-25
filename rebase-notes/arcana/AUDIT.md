@@ -5,6 +5,10 @@ Every number below comes from trial loads or test runs with that commit's `cata_
 ordering (`--rng-seed time --order lex`, split into `"[slow] ~starting_items"` and
 `"~[slow] ~[.],starting_items"`), unless stated otherwise.
 
+Revision 2 (25 November 2026) takes in Antigravity's review (`AUDIT_antigravity.md`): three of
+its four findings are confirmed and one is not. It adds three further fixes found while
+checking them. See "Review of Antigravity's revision".
+
 ## Summary
 
 - **Upstream is archived.** chaosvolt archived
@@ -24,6 +28,49 @@ ordering (`--rng-seed time --order lex`, split into `"[slow] ~starting_items"` a
   - The full suite fails 7 test cases, each with an identified cause and fix.
 - **Size of A:** about the same as Cataclysm++. The work is six commits (C1–C6), almost all
   JSON. The only non-mod files touched are test data, CI and the README.
+
+## Review of Antigravity's revision
+
+Each claim in `AUDIT_antigravity.md` was checked against the 0.I-custom source and data, the
+`33bfbbe` tree and, where behaviour was in question, a test run.
+
+| Antigravity's finding | Verdict | Evidence | Change here |
+|---|---|---|---|
+| 1. `portal_dependent` is also extended | **Confirmed** | `chargen/scenarios.json` extends it right after `strong_portal_storm`; this fork's `4d9e07a` removed both scenarios. | C4 #2 deletes both. |
+| 2. Retargeting `skeltal_drops_override` as a `distribution` breaks the drops | **Confirmed** | CrazyCataclysm's `skeltal_drops` is a `distribution` of milk 9 and trumpet 1. Arcana's three entries carry no `prob`, so they default to 100. Folded into that distribution, a skeltal would drop only one of: milk or trumpet (110 of 310), a monster part (100 of 310), or blood essence (100 of 310). Arcana's entries already repeat the milk/trumpet roll, so they are meant to be the whole drop list as a collection. | C4 #5 redefines `skeltal_drops` as a `collection` without `copy-from`. |
+| 3. `shrike_misericorde_folded` is unloadable under Generic Guns | **Not confirmed** | `Item_factory::finalize_pre` retypes every gun, mod guns included, whose ammo type's default ammo is migrated. It rewrites both `gun->ammo` and the MAGAZINE pocket's `ammo_restriction`. `flintlock`'s default ammo, `flintlock_ammo`, is migrated to `black_powder_ball`, so the misericorde becomes `ammo_black_powder` automatically. Test: with `--mods=Arcana,generic_guns`, the misericorde's auto-generated turret section of `vehicle_turret` loads its default ammo, reports ready and fires (10 of 10 assertions). | None. `gg_ammo.json` stays at two entries. |
+| 4. `stormbringer` is missing from the legacy `to_hit` list | **Confirmed** | My extraction from the test message dropped the last ID, which is `stormbringer`. Re-extracted, the test flags 42 IDs. The test also fails on unneeded entries ("should be removed from the blacklist"), so the list must match exactly. | `legacy_to_hit_ids.txt` now has 42 IDs. |
+| Magiclysm interaction groups use `extend` without `copy-from` | **Confirmed; harmless** | Magiclysm's `mon_owlbear`, `mon_krabgek`, `mon_stirge` and `mon_yulecat` have no `death_drops`. Arcana's interaction `monsters.json` points them at these four new groups, so nothing is wiped. My statement that no object uses `extend` without `copy-from` held only outside `mod_interactions`. | Findings corrected. The clean-up (plain `entries`) is in C4 #8. |
+| `nether`: also `delete` `slime` and `cult` from `neutral` | **Confirmed; clean-up only** | `monfaction::load` applies `neutral` before `friendly`, so `friendly` wins even without the delete. | Adopted in C4 #3 for clarity. |
+| `fbf61ec` dropped `archaeologist` and `survivor_machete`, which this fork still has | **Confirmed** | Both are core in 0.I-custom (`professions.json`; `swords_and_blades.json`). `fbf61ec` moved `archaeologist` from `arcane_urban` into a Xedra Evolved interaction because 0.J moved the profession to Xedra. It removed `survivor_machete` from two martial-art weapon lists. | Restored in C4 #6. The Xedra interaction file is deleted, so the profession is not listed twice when Xedra is loaded (0.I logs "Duplicate profession"). |
+| `Lab_arcana_warehouse` places the ground floor on z=1 | **Confirmed** | The special lists `arcana_warehouse_lab_north` at both `[0,0,0]` and `[0,0,1]`; `arcana_warehouse_lab_roof` is never used. | Fixed in C4 #7 (roof on z=1). The roof terrain keeps `SHOULD_NOT_SPAWN`. |
+| 187 JSON files without Youkai_Disco; `house_arcana` weights 50/35 | **Confirmed** | — | C1 wording updated; no change to weights. |
+
+Found while checking these:
+
+- **`mon_shadow_summoned` should delete `ELECTRIC`.** `fbf61ec` also removed flags from
+  monster `delete` lists because 0.J had dropped them from the parents. In this fork
+  `mon_shadow` still has `ELECTRIC`, so Arcana's summoned shadow would shock anything that hits
+  it. Restore the delete (C4 #6). The same commit's removal of `ATTACKMON` from
+  `mon_flying_polyp_summoned` has no effect here, because `mon_flying_polyp` lacks the flag.
+- **The rest of `fbf61ec` needs nothing.** Every other group it removed or renamed is absent
+  from this fork as well: `rare_martial_arts_books`, `hive_center`, `spider`, `rare`,
+  `flt_loot_rare`, `oa_ig_sb_rare`, `NC_ARSONIST_random`, and the `feral_*` drop groups. Its
+  Cataclysm++, Youkai Disco and CrazyCataclysm drop entries moved into interaction folders.
+  `edible_lard` and `edible_tallow` both exist here, so its switch between them is harmless.
+- **The overmap coverage list is not eight specials.** Of the 47 terrains:
+  - 42 come from the eight specials with `"occurrences": [ 0, 0 ]`;
+  - four (`new_anomaly_1`, `_2`, `_t`, `_w`) are placed directly by missions;
+  - one is the unused warehouse roof.
+
+The new and changed fixes were trial-loaded on the audited copy:
+
+- the `skeltal_drops` collection;
+- `archaeologist` back in `arcane_urban`, with the Xedra interaction file deleted;
+- the shadow's `ELECTRIC` delete;
+- the warehouse roof.
+
+`--mods=Arcana`, `Arcana,crazy_cataclysm` and `Arcana,xedra_evolved` each loaded with 0 errors.
 
 ## Sources
 
@@ -69,7 +116,7 @@ reproduces the audited copy exactly (checked with `diff -r`).
 ### C1: raw import
 
 - **Source:** `git archive 33bfbbe Arcana`, imported into `data/mods/Arcana/`.
-- **What it contains:** 188 JSON files, 3.5 MB, no `lang/` folder.
+- **What it contains:** 188 JSON files (187 without `Youkai_Disco`), 3.5 MB, no `lang/` folder.
 - **Exclude** `mod_interactions/Youkai_Disco/`. Youkai_Disco is not in this repository, and
   `build-scripts/get_all_mods.py` reads interaction folder names as mod IDs. The folder puts
   `Youkai_Disco` into CI's all-mods load list, which then fails with 9 missing-group errors
@@ -129,8 +176,9 @@ seen in Standing-Storm's copy.
    ```
 
 2. **Portal storms.**
-   - `chargen/scenarios.json` extends `strong_portal_storm`, a scenario this fork removed. 0.I
-     ignores the dangling `copy-from` silently, so delete the extension.
+   - `chargen/scenarios.json` extends `strong_portal_storm` and `portal_dependent`, two scenarios
+     this fork removed in `4d9e07a`. 0.I ignores a dangling scenario `copy-from` silently, so
+     delete both extensions.
    - The Veilblade's `arcana_veilblade_halt_portal_storms` effect stays. It only acts during a
      storm, which here happens only through the debug menu or mod content.
 3. **Monster factions** (`monsters/monster_factions.json`).
@@ -142,7 +190,10 @@ seen in Standing-Storm's copy.
      - `moruboru`, `archon` ↔ `nether`;
      - `moruboru` ↔ `triffid`;
      - `archon` ↔ `cult`;
-     - `nether` → `slime` and `nether` → `cult` friendly, where core has these as neutral.
+     - `nether` → `slime` and `nether` → `cult` friendly, where core has these as neutral. Add
+       `"delete": { "neutral": [ "slime", "cult" ] }` to `nether` as well. `friendly` already
+       wins, because `monfaction::load` applies it after `neutral`, but the faction then lists
+       each relation only once.
 4. **The Cataclysm++ interaction** extends `bionics_apophis`. Our Cataclysm++ (`46982a6`) splits
    that group into `bionics_apophis_off`, `bionics_apophis_def` and `bionics_apophis_util`.
    Spread the three Arcana CBMs over those groups:
@@ -150,8 +201,27 @@ seen in Standing-Storm's copy.
    - `bio_life_sign_suppression` → `_def`;
    - `bio_kinetic_amplifier` → `_off`.
 5. **The CrazyCataclysm interaction** extends `skeltal_drops_override`, which is
-   `skeltal_drops` in this repository. Retarget it and change its subtype from `collection` to
-   `distribution`, to match.
+   `skeltal_drops` (a `distribution` of milk 9, trumpet 1) in this repository.
+   - Arcana's three entries are already the whole drop list: the same milk/trumpet roll, a
+     monster part, and blood essence. Define `skeltal_drops` as a `collection` with those
+     entries and **without** `copy-from`. 0.I then replaces CrazyCataclysm's group (interactions
+     load after both mods), and a skeltal drops all three.
+   - Do not extend it as a `distribution`. The entries default to weight 100, so a skeltal would
+     drop only one of them.
+6. **Restore what `fbf61ec` removed for 0.J but this fork still has:**
+   - `archaeologist` in `arcane_urban`'s professions (`chargen/scenarios.json`). Delete
+     `mod_interactions/xedra_evolved/scenarios.json`, which only re-adds it.
+   - `survivor_machete` in the two martial-art weapon lists it was removed from
+     (`martialarts.json`).
+   - `ELECTRIC` in `mon_shadow_summoned`'s `delete` flags (`monsters/monsters.json`), since
+     `mon_shadow` still has it here.
+7. **Upstream bug:** `Lab_arcana_warehouse` (`overmap_specials.json`) places
+   `arcana_warehouse_lab_north` on z=1. Use `arcana_warehouse_lab_roof_north` there, the roof
+   terrain the mod defines but never places.
+8. **Clean-up:** in `mod_interactions/magiclysm/monster_drops.json`, the four new groups
+   `mon_owlbear_death_drops`, `mon_krabgek_death_drops`, `mon_stirge_death_drops` and
+   `mon_yulecat_death_drops` use `extend` without `copy-from`. That is harmless for new groups,
+   but plain `entries` says what is meant.
 
 ### C5: lints, test data and test fixes
 
@@ -161,8 +231,8 @@ seen in Standing-Storm's copy.
   - explicit plurals for `cyclopean mirror (on)` and `summoned vortex`.
 - **Overmap coverage:** flag 47 overmap terrains `SHOULD_NOT_SPAWN`
   (`should_not_spawn_oters.txt`).
-  - All belong to eight specials with `"occurrences": [ 0, 0 ]`; missions and scenarios place
-    them:
+  - 42 belong to eight specials with `"occurrences": [ 0, 0 ]`, which missions and scenarios
+    place:
     - `lab_arcane` (24 terrains)
     - `arcana_anomaly_resurgence`
     - `4x4_microlab_arcana`
@@ -171,6 +241,10 @@ seen in Standing-Storm's copy.
     - `Cave_arcana_caravan`
     - `Lab_arcana_warehouse`
     - `arcana_purifer_ambushed`
+  - Four more (`new_anomaly_1`, `new_anomaly_2`, `new_anomaly_t`, `new_anomaly_w`) are placed
+    directly by missions.
+  - The last is `arcana_warehouse_lab_roof`, unused until C4 #7 fixes the warehouse special. It
+    keeps the flag, as part of an `occurrences` 0 special.
   - The natural specials (Curious Structure, groves, temples, shrines, Hermit Cabin, rural
     church) were all covered.
 - **Mutation categories:** set `skip_test` on `VEIL` and `DRAGONBLOOD`.
@@ -194,8 +268,10 @@ seen in Standing-Storm's copy.
   - `flintlock_shot_arcana` inherits core's `flintlock_shot`, which is already in
     `known_bad_density.json`, so list it there too.
   - The full list was taken with a test binary whose 20-failure cap was raised.
-- **Legacy `to_hit`:** add 41 IDs (`legacy_to_hit_ids.txt`) as a `"//": "Arcana"` entry in
-  `data/mods/TEST_DATA/legacy_to_hit.json`.
+- **Legacy `to_hit`:** add 42 IDs (`legacy_to_hit_ids.txt`) as a `"//": "Arcana"` entry in
+  `data/mods/TEST_DATA/legacy_to_hit.json`. Revision 1 listed 41: my extraction dropped the last
+  ID, `stormbringer`. The test also fails on IDs listed but not needed, so the list must be
+  exact.
 
 ### C6: interactions, CI and README
 
@@ -248,14 +324,16 @@ seen in Standing-Storm's copy.
   - Arcana's same-ID `monstergroup`s (`"override": false`), `talk_topic`s and `requirement`s
     (`extend`) all add to what is there.
   - Magiclysm and Xedra Evolved extend the same requirements; extensions stack.
-  - No object uses `extend` without `copy-from`, the mistake that wiped Cataclysm++'s item
-    groups.
+  - No object wipes an existing group through `extend` without `copy-from`, the mistake that
+    wiped Cataclysm++'s item groups. Four groups in the Magiclysm interaction use that form,
+    but they are new groups (C4 #8).
 - **Fork content:**
   - Arcana's Exodii references (salvage loot and deconstruction recipes) resolve; this fork
     keeps the Exodii items.
   - References to the fork's restored sci-fi items are cosmetic: `looks_like: plasma_rifle`
     and text mentioning the mininuke.
-  - Nothing references removed content apart from `strong_portal_storm` (C4).
+  - Nothing references removed content apart from the `strong_portal_storm` and
+    `portal_dependent` scenarios (C4 #2).
 - **Tilesets:** they target `UltimateCataclysm` and `MshockXottoplus`, both shipped in `gfx/`,
   plus UndeadPeople, which simply goes unused here.
 
@@ -291,17 +369,19 @@ All five were decided by the owner on 25 November 2026, each as recommended.
 | 1 | Which Arcana | **A**, chaosvolt `33bfbbe` |
 | 2 | Generic Guns: retype or migrate the two shells | **Retype**, using the included draft. Migrating, as Cataclysm++ did for its cartridges, would delete the blessed shells and their recipes under Generic Guns. |
 | 3 | Restore the `bionics_op*` CBM extensions | **Yes**, for parity with Cataclysm++ |
-| 4 | Drop the dead `strong_portal_storm` scenario extension | **Yes** |
+| 4 | Drop the dead portal-storm scenario extensions | **Yes**; revision 2 found a second one, `portal_dependent`, covered by the same decision |
 | 5 | CI job for Arcana | **Yes**, as for Cataclysm++ |
 
 ## Files in this folder
 
 - `AUDIT.md`: this file.
+- `AUDIT_antigravity.md`: Antigravity's review of revision 1, kept as written. Its finding 3
+  (`shrike_misericorde_folded`) is not confirmed; see "Review of Antigravity's revision".
 - `c2_format.patch`, `c3_reversions.patch`, `c5_lints_plurals_butchering.patch`: option A
   patches, against `33bfbbe`.
 - `mod_interactions_generic_guns/gg_ammo.json`: the Generic Guns interaction draft.
 - `density_roots.txt`, `density_failures.tsv`: the density work list.
-- `legacy_to_hit_ids.txt`: 41 IDs.
+- `legacy_to_hit_ids.txt`: 42 IDs.
 - `should_not_spawn_oters.txt`: 47 terrains.
 - `standing_storm_0J_reversions_incl_audit_stubs.patch`, `standing_storm_0J_steps.txt`: the
   Standing-Storm working copy (not pursued).

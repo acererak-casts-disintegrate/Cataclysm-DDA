@@ -33,6 +33,7 @@ scourge_staff
 shrike_misericorde
 shrike_misericorde_folded
 spatial_displacer
+stormbringer
 stormbringer_on
 sun_sword
 transmutation_crucible
