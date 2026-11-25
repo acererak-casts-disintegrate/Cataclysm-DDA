@@ -108,6 +108,8 @@ WARNINGS = \
   -Wmissing-noreturn \
   -Wpedantic \
   -Wunused-macros
+# -Wno-c2y-extensions: newer clang (OpenBSD 8.0's, for one) counts Catch's use of
+# __COUNTER__ as a C2y extension under -Wpedantic.
 CXX_WARNINGS = \
   -Wnon-virtual-dtor \
   -Wold-style-cast \
@@ -116,7 +118,8 @@ CXX_WARNINGS = \
   -Wzero-as-null-pointer-constant \
   -Wno-unknown-warning-option \
   -Wno-dangling-reference \
-  -Wno-c++20-compat
+  -Wno-c++20-compat \
+  -Wno-c2y-extensions
 ifeq ($(NATIVE), emscripten)
   # The EM_ASM macro triggers this warning.
   WARNINGS += -Wno-gnu-zero-variadic-macro-arguments

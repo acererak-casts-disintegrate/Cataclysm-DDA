@@ -83,7 +83,7 @@ bool auto_note_settings::save( bool bCharacter )
         if( !( bCharacter ?  character_custom_symbols : global_custom_symbols ).empty() ) {
             jout.member( "custom_symbols" );
             jout.start_array();
-            for( const std::pair<const map_extra_id &, const auto_notes::custom_symbol &> symbol_entry :
+            for( const auto &symbol_entry :
                  bCharacter ?  character_custom_symbols : global_custom_symbols ) {
                 jout.start_object();
 
@@ -274,11 +274,11 @@ void auto_note_manager_gui::fill_custom_symbols_cache()
     const auto_note_settings &settings = get_auto_notes_settings();
     char_custom_symbol_cache.clear();
     global_custom_symbol_cache.clear();
-    for( const std::pair<const map_extra_id &, const auto_notes::custom_symbol &> symbol_entry :
+    for( const auto &symbol_entry :
          settings.character_custom_symbols ) {
         char_custom_symbol_cache.emplace( symbol_entry.first, symbol_entry.second );
     }
-    for( const std::pair<const map_extra_id &, const auto_notes::custom_symbol &> symbol_entry :
+    for( const auto &symbol_entry :
          settings.global_custom_symbols ) {
         global_custom_symbol_cache.emplace( symbol_entry.first, symbol_entry.second );
     }

@@ -2328,7 +2328,7 @@ TEST_CASE( "variant_crafting_recipes", "[crafting][slow]" )
             variant_counts[apron->itype_variant().id]++;
         }
         int variants_captured = 0;
-        for( const std::pair<std::string, int> var_count : variant_counts ) {
+        for( const auto &var_count : variant_counts ) {
             CHECK( var_count.second < max_iters );
             variants_captured++;
         }

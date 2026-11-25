@@ -2458,7 +2458,7 @@ static void fail_mutation_wounds( Character &guy, const bionic_id &bio, bool cat
     for( const std::pair<const bodypart_str_id, size_t> &bp : bio->occupied_bodyparts ) {
         main_bps.emplace( bp.first->main_part, 1 ).first->second += 1;
     }
-    for( const std::pair<const bodypart_str_id, int> bp : main_bps ) {
+    for( const auto &bp : main_bps ) {
         int intensity = catastrophic ? 3 : bp.second > 1 ? 2 : 1;
         guy.add_effect( effect_mutation_internal_damage, intensity * 7 * 1_hours, bp.first.id(), false,
                         intensity );

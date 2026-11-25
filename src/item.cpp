@@ -9096,7 +9096,7 @@ bool item::made_of_any_food_components( bool deep_search ) const
         return false;
     }
 
-    for( const std::pair<itype_id, std::vector<item>> pair : components ) {
+    for( const auto &pair : components ) {
         for( const item &it : pair.second ) {
             if( it.is_food() || ( deep_search && it.made_of_any_food_components( deep_search ) ) ) {
                 return true;
