@@ -24,53 +24,13 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
 
 ## Changes from 0.I
 
-This fork is based on the 0.I stable branch (0.I-1). It carries forward the changes this fork made to 0.H, and differs from 0.I as follows.
+This fork is based on the 0.I stable release (0.I-1) and carries forward the changes it made to 0.H. **[CHANGES.md](CHANGES.md) lists them in full.** In short:
 
-**Core game**
-
-* **Classic CBM acquisition.** Bionics turn up in loot again and can be harvested from bionic zombies, as in 0.F, instead of coming from the Exodii. Doctor's offices have autodocs, some bionic basements and bunker basements have medical bays, and black-ops zombies carry the bio-operator implants.
-* **Exodii as a baseless scavenger faction.** Their castle, safehouse, warehouse, NPCs (including 0.I's weaponmaster and workers), trade, missions, warehouse search quest and castle scenario are gone. They appear only at rare crashed-pod sites in the wild.
-* **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu or by mod content that causes them on purpose.
-* **Skill rust off by default.** The world option removed after 0.G (full, capped or off) is back, defaulting to off.
-* **Hidden world options shown.** Twelve world-generation options that 0.I hides from the options menu are visible and documented.
-* **Rivtech content restored.** Reverts upstream's removal of the RM120c, RM20, RM228, RM298, RM614, RM88, RM216 SPIW and RM232 IDW, the 5x50mm and 20x66mm ammunition and magazines, the 8x40mm drums and the 8mm variants, and its Rivtech gun nerfs.
-* **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
-* **Classic sci-fi content restored.** Robots (chicken walker and tank drone with JSON attacks in place of their removed hardcoded ones, copbot, riotbot, eyebot, laser turret, mininuke hack), the railgun, shock absorber and fusion blaster CBMs, the laser cannon, heavy rail rifle, mininuke launcher, plasma gun and rifle, RM99 revolver, advanced UPS, solar gear, matching vehicle turrets and the atomic sports car with its minireactor.
-* **Classic power armour.** The combat, field and heavy combat exoskeletons and their environmental helmets return beside 0.I's modular exoskeletons.
-* **Atomic cells and the trickle charger.** Light-minus, light and medium atomic cells return, sized to the same energy-density limits 0.I applies to its heavy atomic cell, as does the trickle charger CBM. The engine now applies trickle charging once per turn instead of once per installed CBM.
-* **Live missile silos and vault loot.** Missile silos are active, guarded sites again, and bank, industry and mall vaults hold their science and military loot.
-* **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
-* **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are core professions; old worlds drop the removed mod on load.
-* **Explicit lengths** for long items that lacked them.
-
-**Aftershock**
-
-* **This fork's Aftershock, not 0.I's.** 0.I marks Aftershock obsolete; this fork carries its own 0.H-based version over, converted to 0.I's data format, and keeps it active.
-* **Earth setting.** The Salus IV colony, exoplanet locations, Whately family and UPLIFT content are removed. Remaining items and lore are reassigned to organisations already in the game, such as Northrop, Rivtech, Shady Hills Corporation, Hub 01, FEMA and XEDRA.
-* **Fewer overrides of core content.** Aftershock no longer replaces core items, vehicles or mechanics, except the pressure tank, which its Rocket Jumper profession needs.
-* **Selected exoplanet content.** Guns, ammunition, clothing, armour, CBMs and tools from 0.I's Aftershock: Exoplanet that fit an Earth setting are imported and re-themed; that mod is marked obsolete.
-* **Data fixes.** Item weights, volumes and lengths, spawns, faction relations and mutation purification are corrected.
-
-**Cataclysm++**
-
-* **Included as an in-repo mod.** [Cataclysm++](https://github.com/Noctifer-de-Mortem/nocts_cata_mod) by Noctifer and contributors (public domain, The Unlicense) is imported from its upstream commit `46982a6` and converted from 0.J's data format to 0.I's. [`UPSTREAM.md`](data/mods/Cataclysm++/UPSTREAM.md) records what was left out and how to take later versions.
-* **Fits this fork's restored content.** It no longer overrides the laser cannon or laser turret. It keeps the 0.I content upstream dropped for 0.J: its professions in the Lab Patient and Lab Staff challenge scenarios, the CVD machine in its lab and the atomic lamp on its survivor bus. Its CBMs drop from bionic zombies as well as turning up in loot.
-* **Works with Generic Guns.** Its black-powder cartridges become Generic Guns' black-powder balls, and the survivor cowboy hat's ammo band takes Generic Guns' ammunition types.
-* **Data fixes.** Item groups it extended lost their core contents and the survivor's flamethrower lost three flags, both through 0.I's handling of `extend`; the Prepper's Rambo knife did not fit its sheath; and item weights, volumes and text are corrected.
-
-**Arcana and Magic Items**
-
-* **Included as an in-repo mod.** [Arcana and Magic Items](https://github.com/chaosvolt/cdda-arcana-mod) by Chaosvolt (CC BY-SA 3.0) is imported from the final Dark Days Ahead release in its now-archived repository (commit `33bfbbe`) and converted from DDA experimental's data format to 0.I's. [`UPSTREAM.md`](data/mods/Arcana/UPSTREAM.md) records the source and what was left out.
-* **Fits this fork.** Its CBMs drop from this fork's bionic zombies as well as from zomborgs, and its extensions of the portal-storm scenarios this fork removed are dropped. Content its last update removed for 0.J, which this fork still has, is back: the archaeologist profession in Urban Awakening, the survivor machete in two martial arts' weapon lists, and the summoned shadow's removal of its parent's electric shock.
-* **Works with other in-repo mods.** Its interactions with Cataclysm++ and CrazyCataclysm follow those mods' group names here, and under Generic Guns its blessed shells take Generic Guns' ammunition types.
-* **Data fixes.** It extends the core nether, cult and triffid monster factions instead of replacing them, its CrazyCataclysm skeltal drops all three of its items again, its warehouse lab gets its roof, and item weights, volumes and text are corrected.
-
-**Other in-repo mods**
-
-* **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.
-* **Xedra Evolved.** Its roadside Jotunn encounter spawns.
-* **Data fixes for Xedra Evolved and Mind Over Matter.** Faction relations are made mutual, Xedra's lineage traits are non-purifiable as upstream later made them, Mind Over Matter's concentration and noetic traits can be purified, the core lab terrains Mind Over Matter disables are flagged as such, and impossible item weights and volumes are corrected.
-* **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
+* **Core game:** classic bionic acquisition (loot and bionic zombies, not the Exodii), the Exodii reduced to a rare scavenger faction, no natural portal storms, skill rust off by default, and restored Rivtech, pneumatic, classic sci-fi, power armour and atomic-cell content.
+* **Aftershock:** this fork's own version, set on Earth, kept active and overriding much less of the core game.
+* **Cataclysm++** and **Arcana and Magic Items:** included as in-repo mods, converted to 0.I and fitted to this fork.
+* **Other in-repo mods:** Exodii removal and data fixes for Magiclysm, Mind Over Matter, Xedra Evolved and others.
+* **Builds:** prebuilt Windows, Linux and macOS packages; CI also builds and tests the game on FreeBSD, OpenBSD and NetBSD.
 
 ## Downloads
 

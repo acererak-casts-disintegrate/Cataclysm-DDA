@@ -73,7 +73,7 @@ jobs:
           prev=$(git tag --list '0.I-custom-*' --sort=-creatordate | grep -vxF "$tag" | head -n 1 || true)
           {
             echo "Unofficial build of this fork of Cataclysm: Dark Days Ahead, based on the 0.I stable release."
-            echo "It is not made or supported by CleverRaven; see the README for what differs from 0.I."
+            echo "It is not made or supported by CleverRaven. What differs from 0.I: https://github.com/${{ github.repository }}/blob/${{ github.sha }}/CHANGES.md"
             echo
             echo "Builds with sounds include the CC-Sounds soundpack (https://github.com/Fris0uman/CDDA-Soundpacks)."
             echo "Music by CO.AG (https://www.youtube.com/channel/UCcavSftXHgxLBWwLDm_bNvA), used with their permission."
