@@ -1,0 +1,32 @@
+# Density failures grouped by the object that sets weight/volume (chaosvolt 33bfbbe on 0.I-custom fff2ed74a1)
+# root	file	weight	volume	material	density/max	items
+scroll_magic_base	items/classes.json	415 g	250 ml	['paper']	1.66/1.2	30: scroll_artiface, scroll_destruction, scroll_moon, scroll_nature, scroll_spell_acidspray, scroll_spell_agile, scroll_spell_artiface, scroll_spell_clairvoyance, scroll_spell_clarity, scroll_spell_cleric, scroll_spell_confusion, scroll_spell_dark_lance, scroll_spell_destruction, scroll_spell_earthweaving, scroll_spell_elecresist, scroll_spell_flame_armor, scroll_spell_free_action, scroll_spell_heal, scroll_spell_insight, scroll_spell_invis, scroll_spell_lightning, scroll_spell_might, scroll_spell_moon, scroll_spell_nature, scroll_spell_phase_shield, scroll_spell_plants, scroll_spell_subversion, scroll_spell_sun, scroll_subversion, scroll_sun
+arcana_note_base	items/classes.json	3 g	1 ml	['paper']	3.0/1.2	21: arcane_purifier_intel_2, cf_purifier_project_data, cf_rep_trade_arrangement, cf_rep_trade_receipt, note_arcane_lab_finale, note_arcane_lab_sector_one, note_arcane_lab_sector_three, note_arcane_lab_sector_two, note_arcane_lab_surface, note_chalice, note_chalice_hint, note_chalice_tenet, note_flame, note_flame_hint, note_flame_tenet, note_grove, note_sanguine, note_sanguine_hint, note_sanguine_tenet, note_soa_mission, note_starry_missive
+blast_canister_arcana_air	items/tools.json	550 g	250 ml	clay	2.2/1.6	2: blast_canister_arcana_air, blast_canister_arcana_air_act
+blast_canister_arcana_earth	items/tools.json	550 g	250 ml	clay	2.2/1.6	2: blast_canister_arcana_earth, blast_canister_arcana_earth_act
+blast_canister_arcana_flame	items/tools.json	550 g	250 ml	clay	2.2/1.6	2: blast_canister_arcana_flame, blast_canister_arcana_flame_act
+blast_canister_arcana_water	items/tools.json	550 g	250 ml	clay	2.2/1.6	2: blast_canister_arcana_water, blast_canister_arcana_water_act
+air_talisman	items/comestibles.json	150 g	100 ml	['paper']	1.5/1.2	1: air_talisman
+arcana_mech_shem	items/books.json	10800 g	3 L	['superalloy', 'essencemat']	3.6/1.4	1: arcana_mech_shem
+arcana_radio_relay_beacon	items/melee.json	21000 g	2 L	['steel']	10.5/8.0	1: arcana_radio_relay_beacon
+arrow_arcana_air	items/ammo.json	30 g	125 ml	['wood', 'essencemat']	2.30769/0.925	1: arrow_arcana_air
+arrow_arcana_earth	items/ammo.json	30 g	125 ml	['wood', 'essencemat']	2.30769/0.925	1: arrow_arcana_earth
+arrow_arcana_flame	items/ammo.json	30 g	125 ml	['wood', 'essencemat']	2.30769/0.925	1: arrow_arcana_flame
+arrow_arcana_unpowered	items/ammo.json	30 g	125 ml	['wood']	2.30769/0.85	1: arrow_arcana_unpowered
+arrow_arcana_water	items/ammo.json	30 g	125 ml	['wood', 'essencemat']	2.30769/0.925	1: arrow_arcana_water
+blob_gem	items/melee.json	714 g	250 ml	['stone']	2.856/2.8	1: blob_gem
+bolt_arcana_air	items/ammo.json	27 g	125 ml	['wood', 'essencemat']	2.07692/0.925	1: bolt_arcana_air
+bolt_arcana_earth	items/ammo.json	27 g	125 ml	['wood', 'essencemat']	2.07692/0.925	1: bolt_arcana_earth
+bolt_arcana_flame	items/ammo.json	27 g	125 ml	['wood', 'essencemat']	2.07692/0.925	1: bolt_arcana_flame
+bolt_arcana_unpowered	items/ammo.json	27 g	125 ml	['wood']	2.07692/0.85	1: bolt_arcana_unpowered
+bolt_arcana_water	items/ammo.json	27 g	125 ml	['wood', 'essencemat']	2.07692/0.925	1: bolt_arcana_water
+dermatik_sting	items/melee.json	570 g	250 ml	['flesh']	2.28/1.1	1: dermatik_sting
+draconic_heart_mutator	items/tools.json	2500 g	1 L	['stone', 'essencemat']	2.5/1.9	1: draconic_heart_mutator
+earth_talisman	items/comestibles.json	150 g	100 ml	['paper']	1.5/1.2	1: earth_talisman
+flame_talisman	items/comestibles.json	150 g	100 ml	['paper']	1.5/1.2	1: flame_talisman
+flintlock_shot	core	40 g	10 ml	['lead', 'powder']	40.0/6.171	1: flintlock_shot_arcana
+integrated_draconicplating	items/integrated.json	4 kg	2000 ml	['leather', 'flesh', 'dragon_scale']	2.0/1.7	1: integrated_draconicplating
+mana_gem	items/armor.json	250 g	50 ml	['gold', 'essencemat']	5.0/4.98	1: mana_gem_dull
+recipe_lab_arcana	items/books.json	2000 g	500 ml	['paper']	4.0/1.2	1: recipe_lab_arcana
+scroll_blank	items/melee.json	415 g	250 ml	['paper']	1.66/1.2	1: scroll_blank
+water_talisman	items/comestibles.json	150 g	100 ml	['paper']	1.5/1.2	1: water_talisman

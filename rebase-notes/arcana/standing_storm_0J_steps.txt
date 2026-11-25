@@ -1,0 +1,10 @@
+072f8d0 R7 (decision): forest recharge -> periodic
+d2bbe8f AUDIT-ONLY: briar witchery energy NONE
+02728b5 R6: drop 0.J travel_cost_type values
+534a9c0 R5: drop effect_migration; innawood overlay in 0.I form
+f460229 R4: limb_types string -> limb_type
+07fbd00 R3: tools_robotics is a distribution in 0.I
+db0933a AUDIT-ONLY: strip BLEEDING_RATE
+9fd0ec9 R1+R2
+5e012ac formatter only
+2227b92 ss/0.J-Stable 10245742 raw

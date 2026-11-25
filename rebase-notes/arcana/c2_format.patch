@@ -1,0 +1,3155 @@
+diff --git a/data/mods/Arcana/ammo_effects.json b/data/mods/Arcana/ammo_effects.json
+index 49a2840..6cc3841 100644
+--- a/data/mods/Arcana/ammo_effects.json
++++ b/data/mods/Arcana/ammo_effects.json
+@@ -2,14 +2,16 @@
+   {
+     "id": "LIGHTNING_JUDGMENT",
+     "type": "ammo_effect",
+-    "aoe": [ {
+-      "field_type": "fd_electricity",
+-      "intensity_min": 1,
+-      "intensity_max": 3,
+-      "radius": 5,
+-      "chance": 25,
+-      "check_passable": true
+-    } ],
++    "aoe": [
++      {
++        "field_type": "fd_electricity",
++        "intensity_min": 1,
++        "intensity_max": 3,
++        "radius": 5,
++        "chance": 25,
++        "check_passable": true
++      }
++    ],
+     "do_emp_blast": true
+   },
+   {
+@@ -47,15 +49,17 @@
+     "id": "AMMO_ANOMALY_RAILGUN",
+     "type": "ammo_effect",
+     "trail": [ { "field_type": "fd_electricity", "intensity_min": 1, "intensity_max": 3, "chance": 75 } ],
+-    "aoe": [ {
+-      "field_type": "fd_electricity",
+-      "intensity_min": 1,
+-      "intensity_max": 3,
+-      "chance": 50,
+-      "radius": 1,
+-      "size": 1,
+-      "check_passable": true
+-    } ],
++    "aoe": [
++      {
++        "field_type": "fd_electricity",
++        "intensity_min": 1,
++        "intensity_max": 3,
++        "chance": 50,
++        "radius": 1,
++        "size": 1,
++        "check_passable": true
++      }
++    ],
+     "do_emp_blast": true
+   },
+   {
+@@ -67,15 +71,17 @@
+   {
+     "id": "AMMO_ANOMALY_NUKE",
+     "type": "ammo_effect",
+-    "aoe": [ {
+-      "field_type": "fd_nuke_gas",
+-      "intensity_min": 3,
+-      "intensity_max": 3,
+-      "chance": 50,
+-      "radius": 12,
+-      "size": 1,
+-      "check_passable": true
+-    } ],
++    "aoe": [
++      {
++        "field_type": "fd_nuke_gas",
++        "intensity_min": 3,
++        "intensity_max": 3,
++        "chance": 50,
++        "radius": 12,
++        "size": 1,
++        "check_passable": true
++      }
++    ],
+     "trail": [ { "field_type": "fd_fatigue", "intensity_min": 1, "intensity_max": 1, "chance": 5 } ],
+     "explosion": { "power": 750, "distance_factor": 0.6 },
+     "do_emp_blast": true
+diff --git a/data/mods/Arcana/chargen/professions.json b/data/mods/Arcana/chargen/professions.json
+index a6110f1..e6e316a 100644
+--- a/data/mods/Arcana/chargen/professions.json
++++ b/data/mods/Arcana/chargen/professions.json
+@@ -377,7 +377,14 @@
+       "male": [ "boxer_shorts", "dress_shirt", "pants" ],
+       "female": [ "bra", "panties", "dress" ]
+     },
+-    "traits": [ "PROF_SANGUINE", "ARCANA_SCALYPATCHES", "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL", "ARCANA_DRAGONCLAWS", "ARCANA_INNERHEAT" ],
++    "traits": [
++      "PROF_SANGUINE",
++      "ARCANA_SCALYPATCHES",
++      "ARCANA_SCALYWINGS",
++      "ARCANA_SCALYTAIL",
++      "ARCANA_DRAGONCLAWS",
++      "ARCANA_INNERHEAT"
++    ],
+     "flags": [ "SCEN_ONLY" ]
+   },
+   {
+diff --git a/data/mods/Arcana/items/armor.json b/data/mods/Arcana/items/armor.json
+index ed253a5..eaa7d91 100644
+--- a/data/mods/Arcana/items/armor.json
++++ b/data/mods/Arcana/items/armor.json
+@@ -81,7 +81,7 @@
+           }
+         ]
+       }
+-      ],
++    ],
+     "max_worn": 1,
+     "extend": { "flags": [ "NO_TAKEOFF" ] }
+   },
+@@ -106,13 +106,13 @@
+     "description": "A strange radiance permeating your body, obscuring your life force from the undead.  You will be invisible to them, but not to other creatures, and they will still be able to hear and smell you.",
+     "color": "white",
+     "passive_effects": [
+-        {
+-          "has": "WORN",
+-          "condition": "ALWAYS",
+-          "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
+-          "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
+-        }
+-      ],
++      {
++        "has": "WORN",
++        "condition": "ALWAYS",
++        "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
++        "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
++      }
++    ],
+     "max_worn": 1,
+     "extend": { "flags": [ "NO_TAKEOFF" ] }
+   },
+@@ -137,13 +137,13 @@
+     "description": "A strange radiance permeating your body, enhancing your movement and reflexes.",
+     "color": "white",
+     "passive_effects": [
+-        {
+-          "has": "WORN",
+-          "condition": "ALWAYS",
+-          "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
+-          "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+-        }
+-      ],
++      {
++        "has": "WORN",
++        "condition": "ALWAYS",
++        "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
++        "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
++      }
++    ],
+     "max_worn": 1,
+     "extend": { "flags": [ "NO_TAKEOFF" ] }
+   },
+@@ -301,18 +301,18 @@
+         "condition": "ALWAYS",
+         "hit_me_effect": [
+           {
+-              "id": "arcana_react_satchel_attention",
+-              "hit_self": true,
+-              "once_in": 50,
+-              "message": "You feel like something is watching you…",
+-              "npc_message": "A strange aura of malice seems to briefly surround %1$s."
++            "id": "arcana_react_satchel_attention",
++            "hit_self": true,
++            "once_in": 50,
++            "message": "You feel like something is watching you…",
++            "npc_message": "A strange aura of malice seems to briefly surround %1$s."
+           },
+           {
+-              "id": "arcana_react_satchel_teleport",
+-              "hit_self": true,
+-              "once_in": 50,
+-              "message": "You feel yanked in a non-existent direction!",
+-              "npc_message": "%1$s suddenly warps away!"
++            "id": "arcana_react_satchel_teleport",
++            "hit_self": true,
++            "once_in": 50,
++            "message": "You feel yanked in a non-existent direction!",
++            "npc_message": "%1$s suddenly warps away!"
+           }
+         ]
+       }
+diff --git a/data/mods/Arcana/items/vehiclepart_items.json b/data/mods/Arcana/items/vehiclepart_items.json
+index 6a3d759..36f297d 100644
+--- a/data/mods/Arcana/items/vehiclepart_items.json
++++ b/data/mods/Arcana/items/vehiclepart_items.json
+@@ -18,7 +18,7 @@
+   },
+   {
+     "type": "ITEM",
+-    "subtypes": [ "TOOL"],
++    "subtypes": [ "TOOL" ],
+     "id": "essence_surge_generator_item",
+     "copy-from": "essence_surge_generator_item_abstract",
+     "name": { "str": "essence surge generator" },
+diff --git a/data/mods/Arcana/mod_interactions/Cata++/melee.json b/data/mods/Arcana/mod_interactions/Cata++/melee.json
+index 60d5054..b756941 100644
+--- a/data/mods/Arcana/mod_interactions/Cata++/melee.json
++++ b/data/mods/Arcana/mod_interactions/Cata++/melee.json
+@@ -1,7 +1,7 @@
+ [
+   {
+     "type": "ITEM",
+-	"subtypes": [ "ARTIFACT" ],
++    "subtypes": [ "ARTIFACT" ],
+     "category": "weapons",
+     "id": "unbio_kinetic_amplifier_weapon",
+     "name": { "str_sp": "salvaged kinetic amplifier" },
+diff --git a/data/mods/Arcana/mod_interactions/Cata++/professions.json b/data/mods/Arcana/mod_interactions/Cata++/professions.json
+index e30d868..4f44fd9 100644
+--- a/data/mods/Arcana/mod_interactions/Cata++/professions.json
++++ b/data/mods/Arcana/mod_interactions/Cata++/professions.json
+@@ -42,7 +42,7 @@
+       "bio_power_storage_mkII"
+     ],
+     "items": {
+-       "both": {
++      "both": {
+         "entries": [ { "item": "badge_bio_weapon" }, { "item": "jumpsuit_pocketless", "variant": "orange" }, { "item": "footrags" } ]
+       },
+       "male": [ "briefs" ],
+diff --git a/data/mods/Arcana/mod_interactions/crazy_cataclysm/item_groups_modcompat.json b/data/mods/Arcana/mod_interactions/crazy_cataclysm/item_groups_modcompat.json
+index de2237e..136a162 100644
+--- a/data/mods/Arcana/mod_interactions/crazy_cataclysm/item_groups_modcompat.json
++++ b/data/mods/Arcana/mod_interactions/crazy_cataclysm/item_groups_modcompat.json
+@@ -1,38 +1,38 @@
+ [
+-    {
+-        "id": "jackson_drops",
+-        "copy-from": "jackson_drops",
+-        "type": "item_group",
+-        "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
+-        "subtype": "collection",
+-        "extend": {
+-        "entries": [
+-            { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
+-            { "group": "magic_consumables", "prob": 50 },
+-            { "group": "magic_books_postapoc", "prob": 75 },
+-            { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
+-            { "item": "essence_blood", "count": [ 7, 14 ] }
+-        ]
+-        }
+-    },
+-    {
+-        "type": "item_group",
+-        "id": "skeltal_drops_override",
+-        "copy-from": "skeltal_drops_override",
+-        "subtype": "collection",
+-        "extend": {
+-        "entries": [
+-            { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
+-            {
+-            "distribution": [
+-                { "item": "gracken_knuckles", "prob": 50 },
+-                { "item": "bone_twisted", "prob": 25 },
+-                { "item": "monster_fang", "prob": 15 },
+-                { "item": "graboid_fang", "prob": 10 }
+-            ]
+-            },
+-            { "item": "essence_blood", "count": [ 6, 15 ] }
+-        ]
+-        }
++  {
++    "id": "jackson_drops",
++    "copy-from": "jackson_drops",
++    "type": "item_group",
++    "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
++    "subtype": "collection",
++    "extend": {
++      "entries": [
++        { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
++        { "group": "magic_consumables", "prob": 50 },
++        { "group": "magic_books_postapoc", "prob": 75 },
++        { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
++        { "item": "essence_blood", "count": [ 7, 14 ] }
++      ]
+     }
+-]
+\ No newline at end of file
++  },
++  {
++    "type": "item_group",
++    "id": "skeltal_drops_override",
++    "copy-from": "skeltal_drops_override",
++    "subtype": "collection",
++    "extend": {
++      "entries": [
++        { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
++        {
++          "distribution": [
++            { "item": "gracken_knuckles", "prob": 50 },
++            { "item": "bone_twisted", "prob": 25 },
++            { "item": "monster_fang", "prob": 15 },
++            { "item": "graboid_fang", "prob": 10 }
++          ]
++        },
++        { "item": "essence_blood", "count": [ 6, 15 ] }
++      ]
++    }
++  }
++]
+diff --git a/data/mods/Arcana/mod_interactions/xedra_evolved/scenarios.json b/data/mods/Arcana/mod_interactions/xedra_evolved/scenarios.json
+index 524e2b4..1a9303b 100644
+--- a/data/mods/Arcana/mod_interactions/xedra_evolved/scenarios.json
++++ b/data/mods/Arcana/mod_interactions/xedra_evolved/scenarios.json
+@@ -1,10 +1,8 @@
+ {
+-    "type": "scenario",
+-    "id": "arcane_urban",
+-    "copy-from": "arcane_urban",
+-    "extend": {
+-        "professions": [
+-            "archaeologist"
+-        ]
+-    }
+-}
+\ No newline at end of file
++  "type": "scenario",
++  "id": "arcane_urban",
++  "copy-from": "arcane_urban",
++  "extend": {
++    "professions": [ "archaeologist" ]
++  }
++}
+diff --git a/data/mods/Arcana/monsters/monster_drops.json b/data/mods/Arcana/monsters/monster_drops.json
+index 084155b..b0691cf 100644
+--- a/data/mods/Arcana/monsters/monster_drops.json
++++ b/data/mods/Arcana/monsters/monster_drops.json
+@@ -2345,13 +2345,7 @@
+     "id": "mon_zombear_death_drops",
+     "subtype": "collection",
+     "entries": [
+-      {
+-        "distribution": [
+-          { "item": "monster_fang", "prob": 50 },
+-          { "item": "graboid_fang", "prob": 50 }
+-        ],
+-        "prob": 10
+-      },
++      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 10 },
+       { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
+     ]
+   },
+diff --git a/data/mods/Arcana/monsters/monster_overrides.json b/data/mods/Arcana/monsters/monster_overrides.json
+index b3b7f9b..48d0941 100644
+--- a/data/mods/Arcana/monsters/monster_overrides.json
++++ b/data/mods/Arcana/monsters/monster_overrides.json
+@@ -669,7 +669,7 @@
+     "dodge": 2,
+     "harvest": "zombie_humanoid",
+     "special_attacks": [
+-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "",  "cooldown": 20 },
++      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 20 },
+       { "type": "bite", "cooldown": 5 }
+     ],
+     "death_drops": "mon_flesh_angel_death_drops",
+diff --git a/data/mods/Arcana/mutations/mutations_other.json b/data/mods/Arcana/mutations/mutations_other.json
+index 0cd5902..ffa5cc2 100644
+--- a/data/mods/Arcana/mutations/mutations_other.json
++++ b/data/mods/Arcana/mutations/mutations_other.json
+@@ -430,7 +430,7 @@
+         "condition": "ALWAYS",
+         "values": [
+           { "value": "ATTACK_SPEED", "multiply": -0.2 },
+-          { "value": "BONUS_DODGE", "add": 3},
++          { "value": "BONUS_DODGE", "add": 3 },
+           { "value": "MENDING_MODIFIER", "multiply": 2499 }
+         ]
+       }
+diff --git a/data/mods/Arcana/mutations/mutations_paragon.json b/data/mods/Arcana/mutations/mutations_paragon.json
+index f882f47..aec689d 100644
+--- a/data/mods/Arcana/mutations/mutations_paragon.json
++++ b/data/mods/Arcana/mutations/mutations_paragon.json
+@@ -33,14 +33,7 @@
+     "purifiable": false,
+     "changes_to": [ "SPELL_LIGHT2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 100 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_ALTERATION" ]
+   },
+@@ -55,14 +48,7 @@
+     "prereqs": [ "SPELL_SMOKE" ],
+     "changes_to": [ "SPELL_LOCKPICK2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 200 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ], [ "arcana_blessing_conjure_lightburst", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_ALTERATION" ]
+   },
+@@ -78,14 +64,7 @@
+     "changes_to": [ "SPELL_TELEPORT" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 300 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_conjure_shadow_field", 1 ],
+       [ "arcana_blessing_conjure_lightburst", 1 ],
+@@ -106,14 +85,7 @@
+     "changes_to": [ "SPELL_PACIFY" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 400 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_conjure_shadow_field", 1 ],
+       [ "arcana_blessing_conjure_lightburst", 1 ],
+@@ -134,14 +106,7 @@
+     "changes_to": [ "SPELL_CONSECRATE" ],
+     "threshreq": [ "THRESH_VEIL" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 500 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_conjure_shadow_field", 1 ],
+       [ "arcana_blessing_conjure_lightburst", 1 ],
+@@ -162,14 +127,7 @@
+     "prereqs": [ "SPELL_PACIFY" ],
+     "threshreq": [ "THRESH_VEIL" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 600 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_conjure_shadow_field", 1 ],
+       [ "arcana_blessing_conjure_lightburst", 1 ],
+@@ -190,14 +148,7 @@
+     "purifiable": false,
+     "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 100 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_might", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_AUGMENTATION" ]
+   },
+@@ -212,14 +163,7 @@
+     "prereqs": [ "SPELL_STRENGTH2" ],
+     "changes_to": [ "SPELL_AGILE2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 200 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_AUGMENTATION" ]
+   },
+@@ -235,14 +179,7 @@
+     "changes_to": [ "SPELL_DAYLIGHT2" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 300 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
+     "flags": [ "explorer_of_the_veil" ]
+   },
+@@ -258,14 +195,7 @@
+     "changes_to": [ "SPELL_DRAINLIFE" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 400 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_might", 1 ],
+       [ "arcana_blessing_clairvoyance", 1 ],
+@@ -286,14 +216,7 @@
+     "changes_to": [ "SPELL_INVIS" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 500 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_might", 1 ],
+       [ "arcana_blessing_clairvoyance", 1 ],
+@@ -314,14 +237,7 @@
+     "prereqs": [ "SPELL_DRAINLIFE" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 600 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_might", 1 ],
+       [ "arcana_blessing_clairvoyance", 1 ],
+@@ -342,14 +258,7 @@
+     "purifiable": false,
+     "changes_to": [ "SPELL_CLOUD" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 100 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_DESTRUCTION" ]
+   },
+@@ -364,14 +273,7 @@
+     "prereqs": [ "SPELL_CONFUSE2" ],
+     "changes_to": [ "SPELL_LIGHTNING2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 200 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ], [ "arcana_blessing_conjure_miasma", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_DESTRUCTION" ]
+   },
+@@ -387,14 +289,7 @@
+     "changes_to": [ "SPELL_FIRE2" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 300 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_confuse_monster", 1 ],
+       [ "arcana_blessing_conjure_miasma", 1 ],
+@@ -414,14 +309,7 @@
+     "changes_to": [ "SPELL_LIGHTNINGFIELD" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 400 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_confuse_monster", 1 ],
+       [ "arcana_blessing_conjure_miasma", 1 ],
+@@ -442,14 +330,7 @@
+     "changes_to": [ "SPELL_PULSE" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 500 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_confuse_monster", 1 ],
+       [ "arcana_blessing_conjure_miasma", 1 ],
+@@ -470,14 +351,7 @@
+     "category": [ "VEIL" ],
+     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 600 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_confuse_monster", 1 ],
+       [ "arcana_blessing_conjure_miasma", 1 ],
+@@ -498,14 +372,7 @@
+     "purifiable": false,
+     "changes_to": [ "SPELL_POISONARMOR2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 100 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_PROTECTION" ]
+   },
+@@ -520,14 +387,7 @@
+     "prereqs": [ "SPELL_ACIDARMOR" ],
+     "changes_to": [ "SPELL_ELECRESIST2" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 200 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_PROTECTION" ]
+   },
+@@ -543,14 +403,7 @@
+     "changes_to": [ "SPELL_FLAMEARMOR2" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 300 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
+     "flags": [ "explorer_of_the_veil" ]
+   },
+@@ -566,14 +419,7 @@
+     "changes_to": [ "SPELL_FROSTARMOR" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 400 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_ward_acid", 1 ],
+       [ "arcana_blessing_ward_poison", 1 ],
+@@ -594,14 +440,7 @@
+     "changes_to": [ "SPELL_PSYSHIELD" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 500 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_ward_acid", 1 ],
+       [ "arcana_blessing_ward_poison", 1 ],
+@@ -622,14 +461,7 @@
+     "prereqs": [ "SPELL_FROSTARMOR" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 600 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_ward_acid", 1 ],
+       [ "arcana_blessing_ward_poison", 1 ],
+@@ -650,14 +482,7 @@
+     "purifiable": false,
+     "changes_to": [ "SPELL_SUMMONSKEL" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 100 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_SUMMONING" ]
+   },
+@@ -672,14 +497,7 @@
+     "prereqs": [ "SPELL_SUMMONDOG2" ],
+     "changes_to": [ "SPELL_SUMMONCULUS" ],
+     "category": [ "VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 200 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ], [ "arcana_blessing_summon_skeleton", 1 ] ],
+     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_SUMMONING" ]
+   },
+@@ -695,14 +513,7 @@
+     "changes_to": [ "SPELL_SUMMONTHING" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 300 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_summon_skeletal_dog", 1 ],
+       [ "arcana_blessing_summon_skeleton", 1 ],
+@@ -722,14 +533,7 @@
+     "changes_to": [ "SPELL_BUGS" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 400 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_summon_skeletal_dog", 1 ],
+       [ "arcana_blessing_summon_skeleton", 1 ],
+@@ -750,14 +554,7 @@
+     "changes_to": [ "SPELL_SUMMONVORTEX" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 500 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_summon_skeletal_dog", 1 ],
+       [ "arcana_blessing_summon_skeleton", 1 ],
+@@ -778,14 +575,7 @@
+     "prereqs": [ "SPELL_BUGS" ],
+     "category": [ "VEIL" ],
+     "threshreq": [ "THRESH_VEIL" ],
+-    "enchantments": [
+-      {
+-        "values": [
+-          { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 },
+-          { "value": "MAX_MANA", "add": 600 }
+-        ]
+-      }
+-    ],
++    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+     "spells_learned": [
+       [ "arcana_blessing_summon_skeletal_dog", 1 ],
+       [ "arcana_blessing_summon_skeleton", 1 ],
+diff --git a/data/mods/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json b/data/mods/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+index f27639f..27c0b94 100644
+--- a/data/mods/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
++++ b/data/mods/Arcana/npcs/TALK_BLOOD_MAGE_SHRIKE_SPLINTER.json
+@@ -78,14 +78,20 @@
+       {
+         "text": "Who are you?",
+         "condition": {
+-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
++          "and": [
++            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
++            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
++          ]
+         },
+         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
+       },
+       {
+         "text": "What can you tell me about this place?",
+         "condition": {
+-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
++          "and": [
++            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
++            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
++          ]
+         },
+         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
+       },
+diff --git a/data/mods/Arcana/npcs/TALK_CF_GM.json b/data/mods/Arcana/npcs/TALK_CF_GM.json
+index 0a2522b..6d7777d 100644
+--- a/data/mods/Arcana/npcs/TALK_CF_GM.json
++++ b/data/mods/Arcana/npcs/TALK_CF_GM.json
+@@ -36,7 +36,10 @@
+         "text": "[MISSION] Sofia asked that I recruit traders or other assistance at the center.  Any advice for that?",
+         "topic": "TALK_CF_GM_ADVICE_1",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       },
+       {
+diff --git a/data/mods/Arcana/npcs/TALK_CF_REP.json b/data/mods/Arcana/npcs/TALK_CF_REP.json
+index 12d5072..6b37da5 100644
+--- a/data/mods/Arcana/npcs/TALK_CF_REP.json
++++ b/data/mods/Arcana/npcs/TALK_CF_REP.json
+@@ -235,7 +235,12 @@
+       {
+         "text": "Can you teach me any spells?",
+         "topic": "TALK_CF_REP_SPELL_MENU",
+-        "condition": { "and": [ { "u_has_effect": "cf_mission_1" }, { "not": { "compare_string": [ "yes", { "u_val": "sofia_all_spells_known" } ] } } ] }
++        "condition": {
++          "and": [
++            { "u_has_effect": "cf_mission_1" },
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_all_spells_known" } ] } }
++          ]
++        }
+       },
+       {
+         "text": "Do you have anything to trade?",
+diff --git a/data/mods/Arcana/npcs/TALK_EVAC_HUNTER.json b/data/mods/Arcana/npcs/TALK_EVAC_HUNTER.json
+index 1b9a709..9e307c8 100644
+--- a/data/mods/Arcana/npcs/TALK_EVAC_HUNTER.json
++++ b/data/mods/Arcana/npcs/TALK_EVAC_HUNTER.json
+@@ -29,7 +29,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
+         "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_EVAC_MERCHANT.json b/data/mods/Arcana/npcs/TALK_EVAC_MERCHANT.json
+index ce64b3c..a746eae 100644
+--- a/data/mods/Arcana/npcs/TALK_EVAC_MERCHANT.json
++++ b/data/mods/Arcana/npcs/TALK_EVAC_MERCHANT.json
+@@ -7,7 +7,10 @@
+         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+         "topic": "TALK_EVAC_MERCHANT_NICHOLAS_1",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
++            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
++          ]
+         }
+       },
+       {
+@@ -62,7 +65,10 @@
+         "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone looking for work?",
+         "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json b/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
+index 5433fca..f54ccac 100644
+--- a/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
++++ b/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
+@@ -7,7 +7,10 @@
+         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+         "topic": "TALK_FREE_MERCHANTS_MERCHANT_Talk_NICHOLAS_1",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
++            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
++          ]
+         }
+       },
+       {
+@@ -70,7 +73,10 @@
+         "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone looking for work?",
+         "topic": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_FREE_MERCHANT_STOCKS.json b/data/mods/Arcana/npcs/TALK_FREE_MERCHANT_STOCKS.json
+index 1b7de3e..a7af3c1 100644
+--- a/data/mods/Arcana/npcs/TALK_FREE_MERCHANT_STOCKS.json
++++ b/data/mods/Arcana/npcs/TALK_FREE_MERCHANT_STOCKS.json
+@@ -7,7 +7,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
+         "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_HERMIT.json b/data/mods/Arcana/npcs/TALK_HERMIT.json
+index e775446..8ddb1e1 100644
+--- a/data/mods/Arcana/npcs/TALK_HERMIT.json
++++ b/data/mods/Arcana/npcs/TALK_HERMIT.json
+@@ -724,10 +724,7 @@
+       {
+         "text": "Do you have a copy of Oaths to The Chalice?",
+         "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
+-        "effect": [
+-          { "u_buy_item": "book_sacrifice" },
+-          { "u_add_var": "arcana_alex_gave_book", "value": "yes" }
+-        ],
++        "effect": [ { "u_buy_item": "book_sacrifice" }, { "u_add_var": "arcana_alex_gave_book", "value": "yes" } ],
+         "condition": {
+           "and": [
+             { "not": { "compare_string": [ "yes", { "npc_val": "arcana_alex_gave_book" } ] } },
+diff --git a/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json b/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+index 0d4f101..3c5c191 100644
+--- a/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
++++ b/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_COMMO.json
+@@ -1,2 +1,3 @@
+ [
++  
+ ]
+diff --git a/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json b/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json
+index 0d4f101..3c5c191 100644
+--- a/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json
++++ b/data/mods/Arcana/npcs/TALK_OLD_GUARD_NEC_CPT.json
+@@ -1,2 +1,3 @@
+ [
++  
+ ]
+diff --git a/data/mods/Arcana/npcs/TALK_OLD_GUARD_REP.json b/data/mods/Arcana/npcs/TALK_OLD_GUARD_REP.json
+index 347fe42..b2f2f1e 100644
+--- a/data/mods/Arcana/npcs/TALK_OLD_GUARD_REP.json
++++ b/data/mods/Arcana/npcs/TALK_OLD_GUARD_REP.json
+@@ -29,7 +29,10 @@
+       {
+         "text": "[MISSION] Would the Old Guard be willing to establish a presence in another community?",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         },
+         "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
+       }
+diff --git a/data/mods/Arcana/npcs/TALK_RANCH_CROP_OVERSEER.json b/data/mods/Arcana/npcs/TALK_RANCH_CROP_OVERSEER.json
+index b07fefa..ae9fb77 100644
+--- a/data/mods/Arcana/npcs/TALK_RANCH_CROP_OVERSEER.json
++++ b/data/mods/Arcana/npcs/TALK_RANCH_CROP_OVERSEER.json
+@@ -18,7 +18,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+         "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_RANCH_FOREMAN.json b/data/mods/Arcana/npcs/TALK_RANCH_FOREMAN.json
+index 4146173..ecef24f 100644
+--- a/data/mods/Arcana/npcs/TALK_RANCH_FOREMAN.json
++++ b/data/mods/Arcana/npcs/TALK_RANCH_FOREMAN.json
+@@ -7,7 +7,10 @@
+         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+         "topic": "TALK_RANCH_FOREMAN_NICHOLAS_1",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
++            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
++          ]
+         }
+       },
+       {
+@@ -25,7 +28,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+         "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_RANCH_SCAVENGER_1.json b/data/mods/Arcana/npcs/TALK_RANCH_SCAVENGER_1.json
+index 5db81cc..8b7bad5 100644
+--- a/data/mods/Arcana/npcs/TALK_RANCH_SCAVENGER_1.json
++++ b/data/mods/Arcana/npcs/TALK_RANCH_SCAVENGER_1.json
+@@ -18,7 +18,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+         "topic": "TALK_RANCH_SCAVENGER_1_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_ROBOFAC_FREE_MERCHANT.json b/data/mods/Arcana/npcs/TALK_ROBOFAC_FREE_MERCHANT.json
+index 92ed342..a94c91e 100644
+--- a/data/mods/Arcana/npcs/TALK_ROBOFAC_FREE_MERCHANT.json
++++ b/data/mods/Arcana/npcs/TALK_ROBOFAC_FREE_MERCHANT.json
+@@ -18,7 +18,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+         "topic": "TALK_ROBOFAC_FREE_MERCHANT_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_SCAVENGER_MERC.json b/data/mods/Arcana/npcs/TALK_SCAVENGER_MERC.json
+index c6fca92..23e1b67 100644
+--- a/data/mods/Arcana/npcs/TALK_SCAVENGER_MERC.json
++++ b/data/mods/Arcana/npcs/TALK_SCAVENGER_MERC.json
+@@ -18,7 +18,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
+         "topic": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/npcs/TALK_SCIENCE_REP.json b/data/mods/Arcana/npcs/TALK_SCIENCE_REP.json
+index 67db6eb..29c5a24 100644
+--- a/data/mods/Arcana/npcs/TALK_SCIENCE_REP.json
++++ b/data/mods/Arcana/npcs/TALK_SCIENCE_REP.json
+@@ -7,7 +7,10 @@
+         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
+         "topic": "TALK_SCIENCE_REP_NICHOLAS_1",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
++            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
++          ]
+         }
+       },
+       {
+@@ -25,7 +28,10 @@
+         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
+         "topic": "TALK_SCIENCE_REP_MISSION_4",
+         "condition": {
+-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
++          "and": [
++            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
++            { "u_has_mission": "MISSION_CF_REP_4" }
++          ]
+         }
+       }
+     ]
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_anomalies.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_anomalies.json
+index dd24c3d..586fc2d 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_anomalies.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_anomalies.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "new_anomaly_1" ],
+     "weight": 300,
+     "object": {
+@@ -38,7 +37,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "new_anomaly_2" ],
+     "weight": 300,
+     "object": {
+@@ -76,7 +74,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "new_anomaly_t" ],
+     "weight": 300,
+     "object": {
+@@ -114,7 +111,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "new_anomaly_w" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_basements.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_basements.json
+index 56739b2..97fe051 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_basements.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_basements.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcanist_basement" ],
+     "weight": 75,
+     "object": {
+@@ -58,7 +57,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcanist_basement_2" ],
+     "weight": 100,
+     "object": {
+@@ -110,7 +108,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcanist_basement_2" ],
+     "weight": 50,
+     "object": {
+@@ -173,7 +170,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcanist_basement" ],
+     "weight": 125,
+     "object": {
+@@ -227,7 +223,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "house_05_basement",
+     "weight": 300,
+     "//": "mostly empty basement, but hidden hint of some weirdness going on.",
+@@ -286,7 +281,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "house_prepper2_basement",
+     "weight": 500,
+     "object": {
+@@ -366,7 +360,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "house_fortified_basement",
+     "weight": 500,
+     "object": {
+@@ -447,7 +440,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "basement_survival" ],
+     "weight": 500,
+     "object": {
+@@ -575,7 +567,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "urban_18_1",
+     "type": "mapgen",
+     "weight": 500,
+@@ -639,7 +630,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cabin_strange_b" ],
+     "weight": 450,
+     "object": {
+@@ -693,7 +683,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cathedral_b_SE" ],
+     "weight": 375,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_chaliceimpact.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_chaliceimpact.json
+index 3b573c8..e221cf8 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_chaliceimpact.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_chaliceimpact.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_site" ],
+     "weight": 100,
+     "object": {
+@@ -39,7 +38,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_platforms_center" ],
+     "weight": 100,
+     "object": {
+@@ -71,14 +69,15 @@
+         " ____________           "
+       ],
+       "palettes": [ "arcana_palette" ],
+-      "traps": { "?": [ [ "tr_null", 5 ], "tr_archon_shadow_trap", "tr_archon_hallu_trap", "tr_archon_chill_trap", "tr_glow", "tr_drain" ] },
++      "traps": {
++        "?": [ [ "tr_null", 5 ], "tr_archon_shadow_trap", "tr_archon_hallu_trap", "tr_archon_chill_trap", "tr_glow", "tr_drain" ]
++      },
+       "terrain": { "?": "t_floor_blue", "_": "t_rock_floor_no_roof" },
+       "place_monster": [ { "group": "GROUP_ARCHON_TEMPLE", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 2, 4 ] } ]
+     }
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_platforms_left" ],
+     "weight": 100,
+     "object": {
+@@ -116,7 +115,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_platforms_right" ],
+     "weight": 100,
+     "object": {
+@@ -154,7 +152,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_temple_left" ],
+     "weight": 100,
+     "object": {
+@@ -201,7 +198,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_temple_right" ],
+     "weight": 100,
+     "object": {
+@@ -249,7 +245,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_temple_center" ],
+     "weight": 100,
+     "object": {
+@@ -302,7 +297,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_roof_left" ],
+     "weight": 100,
+     "//": "Only way to give temple a roof without changing layout",
+@@ -339,7 +333,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_roof_right" ],
+     "weight": 100,
+     "object": {
+@@ -375,7 +368,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "impact_roof_center" ],
+     "weight": 100,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_cleansingflame.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_cleansingflame.json
+index c02f3f4..b26dd4e 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_cleansingflame.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_cleansingflame.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_roof" ],
+     "weight": 300,
+     "object": {
+@@ -37,7 +36,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_roof_2" ],
+     "weight": 300,
+     "object": {
+@@ -73,7 +71,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure" ],
+     "weight": 300,
+     "object": {
+@@ -125,7 +122,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_2" ],
+     "weight": 300,
+     "object": {
+@@ -174,7 +170,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_b" ],
+     "weight": 300,
+     "object": {
+@@ -229,7 +224,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_b_2" ],
+     "weight": 300,
+     "object": {
+@@ -272,7 +266,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_b2" ],
+     "weight": 300,
+     "object": {
+@@ -316,7 +309,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "curious_structure_b2_2" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_grove.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_grove.json
+index 29541ac..044146d 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_grove.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_grove.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "strange_grove" ],
+     "weight": 300,
+     "object": {
+@@ -43,7 +42,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "strange_grove_2" ],
+     "weight": 300,
+     "object": {
+@@ -81,7 +79,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "grove_ruins" ],
+     "weight": 300,
+     "object": {
+@@ -134,7 +131,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "grove_ruins_2" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_hermitage.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_hermitage.json
+index aabe4e9..2c03fcf 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_hermitage.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_hermitage.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_hermitage_1" ],
+     "weight": 300,
+     "object": {
+@@ -69,7 +68,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_hermitage_2" ],
+     "weight": 300,
+     "object": {
+@@ -148,7 +146,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_hermitage_roof" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_lab_arcane.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_lab_arcane.json
+index 879043b..5746550 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_lab_arcane.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_lab_arcane.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ [ "lab_arcane_1_1", "lab_arcane_1_2", "lab_arcane_1_3" ], [ "lab_arcane_1_4", "lab_arcane_1_5", "lab_arcane_1_6" ] ],
+     "weight": 1000,
+     "object": {
+@@ -176,7 +175,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ [ "lab_arcane_2_1", "lab_arcane_2_2", "lab_arcane_2_3" ], [ "lab_arcane_2_4", "lab_arcane_2_5", "lab_arcane_2_6" ] ],
+     "weight": 1000,
+     "object": {
+@@ -379,7 +377,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ [ "lab_arcane_3_1", "lab_arcane_3_2", "lab_arcane_3_3" ], [ "lab_arcane_3_4", "lab_arcane_3_5", "lab_arcane_3_6" ] ],
+     "weight": 1000,
+     "object": {
+@@ -612,7 +609,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ [ "lab_arcane_4_1", "lab_arcane_4_2", "lab_arcane_4_3" ], [ "lab_arcane_4_4", "lab_arcane_4_5", "lab_arcane_4_6" ] ],
+     "weight": 1000,
+     "object": {
+@@ -801,7 +797,7 @@
+         "O": { "item": "lab_magitech_general", "chance": 50, "repeat": 3 },
+         "d": { "item": "SUS_office_supplies", "chance": 70, "repeat": 3 },
+         "o": { "item": "SUS_oven", "chance": 50, "repeat": 2 },
+-        "t": { "item": "SUS_trash_floor_light"},
++        "t": { "item": "SUS_trash_floor_light" },
+         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
+       },
+       "place_loot": [
+@@ -886,13 +882,11 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "lab_arcane_4_4_rads",
+     "object": { "mapgensize": [ 12, 12 ], "set": [ { "square": "radiation", "amount": 50, "x": 0, "y": 0, "x2": 0, "y2": 11 } ] }
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "lab_arcane_4_5_rads",
+     "object": {
+       "mapgensize": [ 12, 12 ],
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_purifer_ambushed.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_purifer_ambushed.json
+index 38bcce1..ff44d91 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_purifer_ambushed.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_purifer_ambushed.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_gas_arcana_bandit" ],
+     "weight": 200,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_rural_church.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_rural_church.json
+index e88f9d3..b22617d 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_rural_church.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_rural_church.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_1" ],
+     "weight": 300,
+     "object": {
+@@ -38,7 +37,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_2" ],
+     "weight": 300,
+     "object": {
+@@ -88,7 +86,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_3" ],
+     "weight": 300,
+     "object": {
+@@ -126,7 +123,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_4" ],
+     "weight": 300,
+     "//": "Gothic style, converted to fit being occupied by survivors.  Side room converted into a kitchen, altar replaced with a stone hörgr, chancel opened up a bit, and arcanist books stashed in a makeshift parochet.",
+@@ -193,7 +189,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_1_roof" ],
+     "weight": 300,
+     "object": {
+@@ -229,7 +224,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_2_roof" ],
+     "weight": 300,
+     "object": {
+@@ -265,7 +259,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_3_roof" ],
+     "weight": 300,
+     "object": {
+@@ -301,7 +294,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cf_church_4_roof" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine.json
+index 7db6b66..389d5b7 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine.json
+@@ -36,7 +36,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "island_temple_1" ],
+     "weight": 250,
+     "object": {
+@@ -74,7 +73,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "island_temple_b_1" ],
+     "weight": 250,
+     "object": {
+@@ -122,7 +120,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "island_temple_b_2" ],
+     "weight": 250,
+     "object": {
+@@ -171,7 +168,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "island_temple_b_3" ],
+     "weight": 250,
+     "object": {
+@@ -214,7 +210,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "island_temple_b_4" ],
+     "weight": 250,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine_holdout.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine_holdout.json
+index ad4a354..481a922 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine_holdout.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_sanguine_holdout.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "sanguine_holdout_1" ],
+     "weight": 100,
+     "object": {
+@@ -71,7 +70,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "sanguine_holdout_b1" ],
+     "weight": 100,
+     "object": {
+@@ -146,7 +144,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "sanguine_holdout_2" ],
+     "weight": 100,
+     "object": {
+@@ -230,7 +227,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "sanguine_holdout_roof" ],
+     "weight": 100,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_shrines.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_shrines.json
+index 5ee481b..70e3aed 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_shrines.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_shrines.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "shrine_anomaly" ],
+     "weight": 300,
+     "object": {
+@@ -52,7 +51,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "shrine_anomaly_2" ],
+     "weight": 300,
+     "object": {
+@@ -116,7 +114,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "shrine_anomaly_3" ],
+     "weight": 300,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_structure_anomalous.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_structure_anomalous.json
+index a4ed639..dfa5d62 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_structure_anomalous.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_structure_anomalous.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_field_anomalous_buffer" ],
+     "weight": 250,
+     "object": {
+@@ -47,7 +46,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_structure_anomalous_entrance" ],
+     "weight": 250,
+     "object": {
+@@ -98,7 +96,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_structure_anomalous_surface" ],
+     "weight": 250,
+     "object": {
+@@ -149,7 +146,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_structure_anomalous_underground" ],
+     "weight": 250,
+     "object": {
+@@ -216,7 +212,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_structure_anomalous_finale" ],
+     "weight": 250,
+     "object": {
+@@ -290,7 +285,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_structure_anomalous_roof" ],
+     "weight": 250,
+     "object": {
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_update.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_update.json
+index ac05448..48ae1db 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_update.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_update.json
+@@ -2,12 +2,10 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "arcana_dummy",
+-    
+     "object": { "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ] }
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_1_a",
+     "object": {
+       "mapgensize": [ 20, 20 ],
+@@ -38,7 +36,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_1_b",
+     "object": {
+       "mapgensize": [ 2, 2 ],
+@@ -52,7 +49,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_1_c",
+     "object": {
+       "set": [
+@@ -65,7 +61,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_1_d",
+     "object": {
+       "mapgensize": [ 20, 20 ],
+@@ -97,7 +92,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_2_a",
+     "object": {
+       "mapgensize": [ 20, 20 ],
+@@ -128,7 +122,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_2_b",
+     "object": {
+       "mapgensize": [ 20, 20 ],
+@@ -159,7 +152,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_2_c",
+     "object": {
+       "set": [ { "point": "terrain", "id": "t_covered_well", "x": 20, "y": 3 } ],
+@@ -168,7 +160,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_3_a",
+     "object": {
+       "mapgensize": [ 20, 20 ],
+@@ -211,7 +202,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_3_b",
+     "object": {
+       "set": [
+@@ -227,7 +217,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_3_c",
+     "object": {
+       "set": [
+@@ -246,7 +235,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_3_d",
+     "object": {
+       "set": [
+@@ -262,7 +250,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_a",
+     "object": {
+       "mapgensize": [ 12, 12 ],
+@@ -285,7 +272,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_b",
+     "object": {
+       "mapgensize": [ 17, 17 ],
+@@ -313,7 +299,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1",
+     "object": {
+       "set": [
+@@ -334,7 +319,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_2",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
+@@ -344,7 +328,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1b",
+     "object": {
+       "set": [
+@@ -365,7 +348,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_2b",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
+@@ -378,7 +360,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_old_guard_1",
+     "object": {
+       "set": [
+@@ -401,7 +382,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_old_guard_2",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
+@@ -414,7 +394,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_free_merchants_1",
+     "object": {
+       "set": [
+@@ -435,7 +414,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_free_merchants_2",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
+@@ -448,7 +426,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_tacoma_commune_1",
+     "object": {
+       "set": [
+@@ -472,7 +449,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_tacoma_commune_2",
+     "object": {
+       "set": [
+@@ -497,7 +473,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_tacoma_commune_1b",
+     "object": {
+       "set": [
+@@ -522,7 +497,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_tacoma_commune_2b",
+     "object": {
+       "set": [
+@@ -548,7 +522,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_roof_1",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_f" ], "x": 3, "y": 16 } ],
+@@ -557,7 +530,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_cf_4_roof_2",
+     "object": {
+       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_g" ], "x": 3, "y": 0 } ],
+@@ -566,7 +538,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_d",
+     "object": {
+       "mapgensize": [ 10, 10 ],
+@@ -588,7 +559,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_e",
+     "object": {
+       "mapgensize": [ 17, 17 ],
+@@ -617,7 +587,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_f",
+     "object": {
+       "mapgensize": [ 12, 12 ],
+@@ -641,7 +610,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_g",
+     "object": {
+       "mapgensize": [ 17, 17 ],
+@@ -670,7 +638,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_h",
+     "object": {
+       "mapgensize": [ 10, 10 ],
+@@ -697,7 +664,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_4_i",
+     "object": {
+       "mapgensize": [ 14, 14 ],
+@@ -749,7 +715,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_4_j",
+     "object": {
+       "set": [
+@@ -761,7 +726,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_a",
+     "object": {
+       "place_loot": [
+@@ -775,7 +739,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_b_1",
+     "object": {
+       "place_loot": [
+@@ -788,7 +751,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_b_2",
+     "object": {
+       "place_loot": [ { "group": "rural_church_hunter_haul", "x": [ 8, 9 ], "y": [ 12, 13 ], "chance": 75, "repeat": 5 } ],
+@@ -797,7 +759,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_c",
+     "object": {
+       "place_loot": [
+@@ -811,7 +772,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_d_1",
+     "object": {
+       "set": [ { "line": "terrain", "id": "t_shrub_blueberry_harvested", "x": 5, "x2": 12, "y": 15, "y2": 15 } ],
+@@ -820,7 +780,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_d_2",
+     "object": {
+       "set": [
+@@ -839,7 +798,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_e_1",
+     "object": {
+       "set": [
+@@ -852,7 +810,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_aux_e_2",
+     "object": {
+       "set": [
+@@ -869,7 +826,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_hermit_tablet_unlock",
+     "object": {
+       "set": [ { "point": "furniture", "id": "f_safe_o", "x": 11, "y": 9 } ],
+@@ -879,7 +835,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_hermit_spawn_npcs",
+     "object": {
+       "place_loot": [
+@@ -896,7 +851,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_5",
+     "object": {
+       "mapgensize": [ 19, 19 ],
+@@ -927,7 +881,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_6",
+     "object": {
+       "mapgensize": [ 19, 19 ],
+@@ -958,7 +911,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_7_a",
+     "object": {
+       "mapgensize": [ 18, 18 ],
+@@ -988,7 +940,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_7_b",
+     "object": {
+       "mapgensize": [ 19, 19 ],
+@@ -1019,7 +970,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_shrikes_unlock_safe",
+     "object": {
+       "set": [ { "point": "furniture", "id": "f_safe_o", "x": 7, "y": 5 } ],
+@@ -1029,7 +979,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_shrikes_send_ally",
+     "object": {
+       "set": [ { "line": "furniture", "id": "f_rack_wood", "x": 9, "x2": 10, "y": 4, "y2": 4 } ],
+@@ -1045,7 +994,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "cf_church_upgrade_8_a",
+     "object": {
+       "mapgensize": [ 12, 12 ],
+@@ -1087,7 +1035,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_8_b",
+     "object": {
+       "set": [ { "line": "furniture", "id": "f_chimney", "x": 11, "x2": 12, "y": 4, "y2": 4 } ],
+@@ -1096,7 +1043,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_9_a",
+     "object": {
+       "set": [
+@@ -1111,7 +1057,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_9_b",
+     "object": {
+       "set": [
+@@ -1133,7 +1078,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "arcana_radio_station",
+     "object": {
+       "set": [
+@@ -1201,7 +1145,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_10_a",
+     "object": {
+       "set": [
+@@ -1215,7 +1158,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_10_b",
+     "object": {
+       "set": [
+@@ -1241,7 +1183,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_1_a",
+     "object": {
+       "set": [
+@@ -1259,7 +1200,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_1_b",
+     "object": {
+       "set": [
+@@ -1277,7 +1217,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_1_c",
+     "object": {
+       "set": [
+@@ -1296,7 +1235,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_1_d",
+     "object": {
+       "set": [
+@@ -1314,7 +1252,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_2_a",
+     "object": {
+       "set": [
+@@ -1334,7 +1271,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_2_b",
+     "object": {
+       "set": [
+@@ -1354,7 +1290,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_2_c",
+     "object": {
+       "set": [
+@@ -1375,7 +1310,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_2_d",
+     "object": {
+       "set": [
+@@ -1395,7 +1329,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_3_a",
+     "object": {
+       "set": [
+@@ -1414,7 +1347,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_3_b",
+     "object": {
+       "set": [
+@@ -1432,7 +1364,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_3_c",
+     "object": {
+       "set": [
+@@ -1451,7 +1382,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_3_d",
+     "object": {
+       "set": [
+@@ -1472,7 +1402,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_prelude_a",
+     "object": {
+       "set": [
+@@ -1488,7 +1417,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_prelude_b",
+     "object": {
+       "set": [
+@@ -1504,7 +1432,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_prelude_c",
+     "object": {
+       "set": [
+@@ -1522,7 +1449,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_prelude_d",
+     "object": {
+       "set": [
+@@ -1538,7 +1464,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_a",
+     "object": {
+       "set": [
+@@ -1552,7 +1477,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_b",
+     "object": {
+       "set": [
+@@ -1566,7 +1490,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_c",
+     "object": {
+       "set": [
+@@ -1582,7 +1505,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_4_d",
+     "object": {
+       "set": [
+@@ -1596,7 +1518,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_5_a",
+     "object": {
+       "set": [
+@@ -1608,7 +1529,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_5_b",
+     "object": {
+       "set": [
+@@ -1620,7 +1540,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_5_c",
+     "object": {
+       "set": [
+@@ -1634,7 +1553,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "update_mapgen_id": "cf_church_upgrade_GM_5_d",
+     "object": {
+       "set": [
+@@ -1647,7 +1565,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "archon_maze_regen_1",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "archon_maze_regen_1" ], "x": 11, "y": 11 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1656,7 +1573,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "archon_maze_regen_2",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "archon_maze_regen_2" ], "x": 13, "y": 13 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1665,7 +1581,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "archon_hall_regen_1",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "archon_hall_regen_1" ], "x": 12, "y": 8 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1674,7 +1589,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "archon_hall_regen_2",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "archon_hall_regen_2" ], "x": 6, "y": 17 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1683,7 +1597,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "archon_maze_regen_finale",
+-    
+     "object": {
+       "set": [
+         { "line": "terrain", "id": "t_rock_floor", "x": 18, "x2": 18, "y": 5, "y2": 6 },
+@@ -1696,7 +1609,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "archon_maze_regen_1",
+     "object": {
+       "mapgensize": [ 13, 13 ],
+@@ -1721,7 +1633,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "archon_maze_regen_2",
+     "object": {
+       "mapgensize": [ 11, 11 ],
+@@ -1747,7 +1658,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "archon_hall_regen_1",
+     "object": {
+       "mapgensize": [ 8, 8 ],
+@@ -1767,7 +1677,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "archon_hall_regen_2",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -1787,7 +1696,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "arcane_lab_map_regen_1",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "arcane_lab_map_regen_1" ], "x": 9, "y": 0 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1795,7 +1703,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcane_lab_map_regen_1",
+     "object": {
+       "mapgensize": [ 14, 14 ],
+@@ -1822,7 +1729,6 @@
+   {
+     "type": "mapgen",
+     "update_mapgen_id": "arcane_lab_map_regen_2",
+-    
+     "object": {
+       "place_nested": [ { "chunks": [ "arcane_lab_map_regen_2" ], "x": 2, "y": 12 } ],
+       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+@@ -1830,7 +1736,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcane_lab_map_regen_2",
+     "object": {
+       "mapgensize": [ 21, 21 ],
+diff --git a/data/mods/Arcana/overmap_and_mapgen/mapgen_variants.json b/data/mods/Arcana/overmap_and_mapgen/mapgen_variants.json
+index 4b893e5..2477a76 100644
+--- a/data/mods/Arcana/overmap_and_mapgen/mapgen_variants.json
++++ b/data/mods/Arcana/overmap_and_mapgen/mapgen_variants.json
+@@ -1,7 +1,6 @@
+ [
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "evac_center_13",
+     "weight": 1000000,
+     "object": {
+@@ -48,7 +47,10 @@
+         "d": { "item": "dishes_dining", "chance": 80, "repeat": [ 2, 5 ] },
+         "k": { "item": "cubical_office", "chance": 20, "repeat": [ 1, 2 ] },
+         "r": { "item": "shower", "chance": 80, "repeat": [ 1, 3 ] },
+-        "u": [ { "item": "cannedfood", "chance": 80, "repeat": [ 1, 8 ] }, { "item": "pasta_ingredients", "chance": 70, "repeat": [ 1, 8 ] } ],
++        "u": [
++          { "item": "cannedfood", "chance": 80, "repeat": [ 1, 8 ] },
++          { "item": "pasta_ingredients", "chance": 70, "repeat": [ 1, 8 ] }
++        ],
+         "v": { "item": "shelter", "repeat": [ 1, 12 ] }
+       },
+       "place_npcs": [
+@@ -65,7 +67,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "church" ],
+     "weight": 200,
+     "object": {
+@@ -107,7 +108,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_church_ne_1",
+     "object": {
+       "mapgensize": [ 3, 3 ],
+@@ -121,7 +121,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_church_ne_2",
+     "object": {
+       "mapgensize": [ 3, 3 ],
+@@ -134,7 +133,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "church_1" ],
+     "weight": 300,
+     "object": {
+@@ -189,7 +187,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_church_goth_1",
+     "object": {
+       "mapgensize": [ 4, 4 ],
+@@ -203,7 +200,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_church_goth_2",
+     "object": {
+       "mapgensize": [ 4, 4 ],
+@@ -216,7 +212,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "church_3rdfloor_1",
+     "weight": 300,
+     "object": {
+@@ -293,7 +288,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_bookstore" ],
+     "weight": 250,
+     "object": {
+@@ -404,7 +398,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_bookstore_1" ],
+     "weight": 250,
+     "object": {
+@@ -499,7 +492,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_bookstore_2" ],
+     "weight": 1500,
+     "object": {
+@@ -623,7 +615,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "mortuary" ],
+     "weight": 80,
+     "object": {
+@@ -723,7 +714,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "abstorefront_1" ],
+     "object": {
+       "fill_ter": "t_floor",
+@@ -797,7 +787,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "abstorefront_1_spawns",
+     "object": {
+       "mapgensize": [ 24, 24 ],
+@@ -818,7 +807,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "house_arcana" ],
+     "weight": 300,
+     "object": {
+@@ -920,7 +908,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "house_arcana_roof" ],
+     "weight": 300,
+     "object": {
+@@ -957,7 +944,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "house_arcana_encounter_1",
+     "//": "Formerly inhabited by a non-faction arcanist, one way or another they never came back...",
+     "object": {
+@@ -967,7 +953,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "house_arcana_encounter_2",
+     "//": "Generic but not very friendly arcanists lived here.  This ended about as well as expected.",
+     "object": {
+@@ -999,7 +984,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "house_arcana_encounter_3",
+     "//": "Raid!  Similar layout as encounter number 2, but the Cleansing Flame got here first.  They didn't have time to clean up and finish looting, though.",
+     "object": {
+@@ -1055,7 +1039,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "house_arcana_2" ],
+     "weight": 300,
+     "object": {
+@@ -1158,7 +1141,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "house_arcana_roof_2" ],
+     "weight": 300,
+     "object": {
+@@ -1195,7 +1177,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "house_arcana_encounter_4",
+     "//": "A mage hunter trapped themselves after being followed by ...something.",
+     "object": {
+@@ -1225,7 +1206,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "microlab_sub_station" ],
+     "weight": 125,
+     "object": {
+@@ -1272,7 +1252,6 @@
+   {
+     "type": "mapgen",
+     "nested_mapgen_id": "microlab_generic_tile",
+-    
+     "object": {
+       "mapgensize": [ 24, 24 ],
+       "rows": [
+@@ -1323,7 +1302,6 @@
+   {
+     "//": "7x7 workstation with chance of magitech-related materials.",
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "lab_room_7x7_rare",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -1365,7 +1343,6 @@
+   {
+     "//": "9x9 workstation with sealed storage for magic stuff.",
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "lab_room_9x9_rare",
+     "object": {
+       "mapgensize": [ 9, 9 ],
+@@ -1422,7 +1399,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "roof_4x4_survivor",
+     "object": {
+       "mapgensize": [ 4, 4 ],
+@@ -1450,7 +1426,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "roof_6x6_survivor",
+     "object": {
+       "mapgensize": [ 6, 6 ],
+@@ -1493,7 +1468,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "urban_18_8",
+     "type": "mapgen",
+     "weight": 500,
+@@ -1541,7 +1515,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_antique" ],
+     "weight": 250,
+     "object": {
+@@ -1614,7 +1587,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "museum" ],
+     "weight": 500,
+     "object": {
+@@ -1713,7 +1685,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_electronics" ],
+     "weight": 75,
+     "object": {
+@@ -1825,7 +1796,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "lab_finale_1level" ],
+     "weight": 100,
+     "object": {
+@@ -1950,7 +1920,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_library" ],
+     "weight": 125,
+     "object": {
+@@ -2009,7 +1978,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_library_1" ],
+     "weight": 125,
+     "object": {
+@@ -2069,7 +2037,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "s_library_2" ],
+     "weight": 250,
+     "object": {
+@@ -2131,7 +2098,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "house_library" ],
+     "weight": 100,
+     "object": {
+@@ -2206,7 +2172,6 @@
+   {
+     "type": "mapgen",
+     "om_terrain": [ [ "microlab_arcana_surface" ] ],
+-    
+     "object": {
+       "fill_ter": "t_concrete",
+       "rows": [
+@@ -2257,7 +2222,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "microlab_arcana_rock_connector" ],
+     "weight": 1000,
+     "object": {
+@@ -2294,7 +2258,6 @@
+   {
+     "type": "mapgen",
+     "om_terrain": [ "microlab_arcana_surface_connector" ],
+-    
+     "object": {
+       "fill_ter": "t_strconc_floor",
+       "rows": [
+@@ -2340,7 +2303,6 @@
+   {
+     "type": "mapgen",
+     "om_terrain": [ [ "microlab_arcana_server_room" ] ],
+-    
+     "object": {
+       "fill_ter": "t_strconc_floor",
+       "rows": [
+@@ -2394,7 +2356,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_warehouse_lab" ],
+     "weight": 500,
+     "object": {
+@@ -2479,7 +2440,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": "arcana_warehouse_lab_roof",
+     "object": {
+       "fill_ter": "t_tar_flat_roof",
+@@ -2515,7 +2475,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_cave_caravan" ],
+     "weight": 1000,
+     "object": {
+@@ -2576,7 +2535,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "arcana_cave_caravan_underground" ],
+     "weight": 1000,
+     "object": {
+@@ -2636,7 +2594,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "pawn" ],
+     "weight": 100,
+     "object": {
+@@ -2721,7 +2678,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "pawn_1" ],
+     "weight": 100,
+     "object": {
+@@ -2812,7 +2768,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cave_underground" ],
+     "weight": 250,
+     "object": {
+@@ -2862,7 +2817,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_cave_underground_1",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -2889,7 +2843,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_cave_underground_2",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -2912,7 +2865,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_cave_underground_3",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -2940,7 +2892,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "nested_mapgen_id": "arcana_cave_underground_4",
+     "object": {
+       "mapgensize": [ 7, 7 ],
+@@ -2967,7 +2918,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "desolatebarn",
+     "type": "mapgen",
+     "weight": 100,
+@@ -3032,7 +2982,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cabin" ],
+     "weight": 200,
+     "object": {
+@@ -3080,7 +3029,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cabin_1" ],
+     "weight": 200,
+     "object": {
+@@ -3142,7 +3090,6 @@
+   },
+   {
+     "type": "mapgen",
+-    
+     "om_terrain": [ "cabin_2" ],
+     "weight": 125,
+     "object": {
+@@ -3191,7 +3138,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "cabin_3",
+     "type": "mapgen",
+     "weight": 150,
+@@ -3252,7 +3198,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "cabin_4",
+     "type": "mapgen",
+     "weight": 150,
+@@ -3316,7 +3261,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "cabin_5",
+     "type": "mapgen",
+     "weight": 150,
+@@ -3378,7 +3322,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "cabin_6",
+     "type": "mapgen",
+     "weight": 150,
+@@ -3437,7 +3380,6 @@
+     }
+   },
+   {
+-    
+     "om_terrain": "cabin_7",
+     "type": "mapgen",
+     "weight": 150,
+@@ -3504,7 +3446,6 @@
+   {
+     "type": "mapgen",
+     "om_terrain": "riverside_dwelling",
+-    
+     "weight": 100,
+     "object": {
+       "rows": [
+@@ -3566,7 +3507,6 @@
+   {
+     "type": "mapgen",
+     "om_terrain": "riverside_dwelling",
+-    
+     "weight": 75,
+     "object": {
+       "rows": [
+diff --git a/data/mods/Arcana/recipes/recipe_armor.json b/data/mods/Arcana/recipes/recipe_armor.json
+index 839b88c..017d6e1 100644
+--- a/data/mods/Arcana/recipes/recipe_armor.json
++++ b/data/mods/Arcana/recipes/recipe_armor.json
+@@ -409,10 +409,7 @@
+     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
+     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
+     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
+-    "proficiencies": [
+-      { "proficiency": "prof_leatherworking" },
+-      { "proficiency": "prof_metalworking" }
+-    ],
++    "proficiencies": [ { "proficiency": "prof_leatherworking" }, { "proficiency": "prof_metalworking" } ],
+     "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 40 ] ] ],
+     "flags": [ "SECRET" ]
+   },
+@@ -664,10 +661,7 @@
+     "book_learn": [ [ "book_hexenhammer", 10 ], [ "book_syncretism", 9 ] ],
+     "using": [ [ "sewing_standard", 120 ], [ "forging_standard", 6 ], [ "bronzesmithing_tools", 1 ] ],
+     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
+-    "proficiencies": [
+-      { "proficiency": "prof_metalworking" },
+-      { "proficiency": "prof_chain_armour" }
+-    ],
++    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_chain_armour" } ],
+     "components": [
+       [ [ "qt_chainmail_hauberk", 1 ] ],
+       [ [ "gilded_aegis", 1 ] ],
+diff --git a/data/mods/Arcana/recipes/recipe_magitech.json b/data/mods/Arcana/recipes/recipe_magitech.json
+index 30bd890..f9bc5f9 100644
+--- a/data/mods/Arcana/recipes/recipe_magitech.json
++++ b/data/mods/Arcana/recipes/recipe_magitech.json
+@@ -37,7 +37,12 @@
+     "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
+     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
+     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+-    "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ] ]
++    "components": [
++      [ [ "salt", 15 ] ],
++      [ [ "copper", 9 ] ],
++      [ [ "lye_powder", 6 ] ],
++      [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ]
++    ]
+   },
+   {
+     "type": "recipe",

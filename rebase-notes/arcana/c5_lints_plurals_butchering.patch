@@ -1,0 +1,1259 @@
+diff --git a/data/mods/Arcana/items/ammo.json b/data/mods/Arcana/items/ammo.json
+index 8aaa431..32bf715 100644
+--- a/data/mods/Arcana/items/ammo.json
++++ b/data/mods/Arcana/items/ammo.json
+@@ -3,7 +3,7 @@
+     "id": "essence",
+     "type": "ITEM",
+     "subtypes": [ "AMMO" ],
+-    "name": { "str": "essence", "str_pl": "essence" },
++    "name": { "str_sp": "essence" },
+     "description": "A strange glowing mote of wispy vapor.  It gives off a soothing warmth and feels surprisingly solid, almost alive even.",
+     "//": "Essence in general was fairly rare pre-cataclysm, though arcanists didn't really trade it around much.  Books were the most important focus of external contacts.",
+     "volume": "10 ml",
+@@ -22,7 +22,7 @@
+     "id": "essence_blood",
+     "type": "ITEM",
+     "subtypes": [ "AMMO" ],
+-    "name": { "str": "blood essence", "str_pl": "blood essence" },
++    "name": { "str_sp": "blood essence" },
+     "description": "A strange glowing mote of wispy vapor, drained from a living creature.",
+     "volume": "5 ml",
+     "weight": "1 mg",
+@@ -40,7 +40,7 @@
+     "id": "essence_dull",
+     "type": "ITEM",
+     "subtypes": [ "AMMO" ],
+-    "name": { "str": "dull essence", "str_pl": "dull essence" },
++    "name": { "str_sp": "dull essence" },
+     "description": "A dark, powdery bit of strange essence, formed from destructively \"consecrating\" a magic item.",
+     "volume": "1 ml",
+     "weight": "1 mg",
+@@ -58,7 +58,7 @@
+     "id": "essence_pure",
+     "type": "ITEM",
+     "subtypes": [ "AMMO" ],
+-    "name": { "str": "crystallized essence", "str_pl": "crystallized essence" },
++    "name": { "str_sp": "crystallized essence" },
+     "description": "A tiny sliver of brilliant crystal, formed from otherworldly essence to fuel extremely powerful magic.",
+     "//": "Extremely rare pre-cataclysm, and now still highly valuable due to being very high-energy.",
+     "volume": "15 ml",
+diff --git a/data/mods/Arcana/items/books.json b/data/mods/Arcana/items/books.json
+index 61dd398..bcb3e0b 100644
+--- a/data/mods/Arcana/items/books.json
++++ b/data/mods/Arcana/items/books.json
+@@ -406,7 +406,7 @@
+     "weight": "60 g",
+     "volume": "100 ml",
+     "price_postapoc": "270 cent",
+-    "description": "A mish-mash of papers filled with all manner of strange rituals seemingly from various contradictory sources. Whoever wrote this collection was a student of a well-traveled arcanist, filling their own research with essential information and reminders for the presumably well-learned author's benefit.  It can be used instead of A Story in Shadow for recipes that require the book as a reference tool."
++    "description": "A mish-mash of papers filled with all manner of strange rituals seemingly from various contradictory sources.  Whoever wrote this collection was a student of a well-traveled arcanist, filling their own research with essential information and reminders for the presumably well-learned author's benefit.  It can be used instead of A Story in Shadow for recipes that require the book as a reference tool."
+   },
+   {
+     "id": "index_summoning",
+diff --git a/data/mods/Arcana/items/comestibles.json b/data/mods/Arcana/items/comestibles.json
+index eda490d..ffb77c8 100644
+--- a/data/mods/Arcana/items/comestibles.json
++++ b/data/mods/Arcana/items/comestibles.json
+@@ -5,7 +5,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "black potion", "str_pl": "black potion" },
++    "name": { "str_sp": "black potion" },
+     "description": "A strange black liquid that smells like death itself.  The first step towards creating the elixir of life, allegedly.  Drinking this will rapidly recover pain, at the expense of temporary sluggishness.",
+     "weight": "150 g",
+     "volume": "250 ml",
+@@ -35,7 +35,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "white potion", "str_pl": "white potion" },
++    "name": { "str_sp": "white potion" },
+     "description": "A strange white liquid with a scent that makes your nose itch.  The second step towards creating the elixir of life, allegedly.  Drinking this will strengthen the body, lowering other attributes and draining fatigue for the duration.",
+     "weight": "150 g",
+     "volume": "250 ml",
+@@ -64,7 +64,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "yellow potion", "str_pl": "yellow potion" },
++    "name": { "str_sp": "yellow potion" },
+     "description": "A strange yellow liquid with an intoxicating smell to it.  The third step towards creating the elixir of life, allegedly.  Drinking this will enhance your speed, dexterity, and perception.  In exchange it will lower strength and intelligence, and intermittently drain stamina.",
+     "weight": "150 g",
+     "volume": "250 ml",
+@@ -93,7 +93,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "red potion", "str_pl": "red potion" },
++    "name": { "str_sp": "red potion" },
+     "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of ailments, and heal a bit of damage.  It can heal bleeding, stave off infection or poison, and purge some diseases including fungal infection.  It can't cure deep bites or spores unless they take hold as full-blown infections, however.",
+     "weight": "150 g",
+     "volume": "250 ml",
+@@ -118,7 +118,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "silver potion", "str_pl": "silver potion" },
++    "name": { "str_sp": "silver potion" },
+     "description": "A strange liquid that looks like mercury, albeit quite a bit less dense and significantly less toxic.  Drinking it will imbue you with magical energy.  Highly useful to someone who uses mana for spells, but worthless to someone limited to stamina-draining Magic Signs.\n\nEach dose will restore 750 mana.",
+     "weight": "150 g",
+     "volume": "250 ml",
+@@ -142,7 +142,7 @@
+     "comestible_type": "MED",
+     "category": "drugs",
+     "//": "Technically carmine is purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+-    "name": { "str": "carmine vulnerary", "str_pl": "carmine vulnerary" },
++    "name": { "str_sp": "carmine vulnerary" },
+     "description": "Patches of cloth steeped in an alchemical mixture, forming a poultice that refines and focuses its effects.  Its healing effect is focused on a single limb, and can purge infected wounds before they become septic.  However, it loses its effect on deeper ailments, only staving off blood loss and spores, while providing some painkilling effect.",
+     "weight": "50 g",
+     "volume": "25 ml",
+@@ -172,7 +172,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "citrine incense", "str_pl": "citrine incense" },
++    "name": { "str_sp": "citrine incense" },
+     "//": "Citrine isn't quite white-yellow either, but jasmine incense would imply the flower rather than the color.",
+     "description": "An alchemical mixture permeating a combustible base of charcoal or resin, resulting in a peculiar sort of incense.  Using it will invigorate the user with a focused effect similar to the potions originally used to make it.  Rather than affecting strength and speed, it will directly restore a large burst of stamina and fatigue.\n\nEach use will restore 30 fatigue, and 3000 stamina.",
+     "weight": "50 g",
+@@ -191,7 +191,7 @@
+     "subtypes": [ "COMESTIBLE" ],
+     "comestible_type": "MED",
+     "category": "drugs",
+-    "name": { "str": "blood effigy", "str_pl": "blood effigy" },
++    "name": { "str_sp": "blood effigy" },
+     "looks_like": "blood",
+     "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into something called the Dragonblood Sacrament, it can permanently change the body and mind.  Without the original source of this power however, it can only go so far.",
+     "weight": "250 g",
+@@ -574,7 +574,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+     "//": "Barter value is 50 baseline, plus 10 times the Spell Rank of the spell it teaches you.  Magic Seals have a value half that of its related pattern scroll.",
+     "price_postapoc": "120 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_phase_shield", "no_fail": true, "level": 0 }
+@@ -585,7 +585,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"Using this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.\"",
+     "price_postapoc": "90 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_earthweaving", "no_fail": true, "level": 0 }
+   },
+@@ -595,7 +595,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_dark_lance", "no_fail": true, "level": 0 }
+   },
+@@ -605,7 +605,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Consecrate)", "str_pl": "Pattern Scrolls (Consecrate)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
+     "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
+     "price_postapoc": "110 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
+@@ -616,7 +616,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Cold Ward)", "str_pl": "Pattern Scrolls (Cold Ward)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will protect against the cold, and all its side effects.\"",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
+   },
+@@ -626,7 +626,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Sundering Quake)", "str_pl": "Pattern Scrolls (Sundering Quake)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, damaging creatures caught in the blast.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will bring down structures and bury them in rubble, damaging creatures caught in the blast.\"",
+     "price_postapoc": "130 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
+   },
+@@ -636,7 +636,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
+     "price_postapoc": "120 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
+   },
+@@ -646,7 +646,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Summon Centipedes)", "str_pl": "Pattern Scrolls (Summon Centipedes)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
+     "price_postapoc": "110 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
+   },
+@@ -656,7 +656,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Eclipse)", "str_pl": "Pattern Scrolls (Eclipse)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a long-lasting adrenaline surge, life-draining ability, and night vision.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will bring forth monsters and darkness, in exchange for a long-lasting adrenaline surge, life-draining ability, and night vision.\"",
+     "price_postapoc": "140 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
+   },
+@@ -666,7 +666,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Agility)", "str_pl": "Pattern Scrolls (Agility)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
+     "//": "Unlike divine pattern scrolls, basic pattern scrolls were rare but at least existed pre-cataclysm.",
+     "price": "3000 USD",
+     "price_postapoc": "90 USD",
+@@ -678,7 +678,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Clairvoyance)", "str_pl": "Pattern Scrolls (Clairvoyance)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
+     "price": "3000 USD",
+     "price_postapoc": "110 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
+@@ -689,7 +689,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Clarity of Blood)", "str_pl": "Pattern Scrolls (Clarity of Blood)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant protection against parasites and the Mycus.\"",
+     "price": "3000 USD",
+     "price_postapoc": "90 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
+@@ -700,7 +700,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Confuse Monsters)", "str_pl": "Pattern Scrolls (Confuse Monsters)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will stun all hostiles in the area around you.\"",
+     "price": "3000 USD",
+     "price_postapoc": "80 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
+@@ -711,7 +711,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
+     "price": "3000 USD",
+     "price_postapoc": "90 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
+@@ -722,7 +722,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Free Action)", "str_pl": "Pattern Scrolls (Free Action)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances, along with briefly freezing time.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant protection against paralytic effects and other hindrances, along with briefly freezing time.\"",
+     "price": "3000 USD",
+     "price_postapoc": "80 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
+@@ -733,7 +733,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Healing)", "str_pl": "Pattern Scrolls (Healing)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
+     "price": "3000 USD",
+     "price_postapoc": "110 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
+@@ -744,7 +744,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Heat Ward)", "str_pl": "Pattern Scrolls (Heat Ward)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
+     "price": "3000 USD",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
+@@ -755,7 +755,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Insight)", "str_pl": "Pattern Scrolls (Insight)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception, and night vision.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant a temporary boost to perception, and night vision.\"",
+     "price": "3000 USD",
+     "price_postapoc": "80 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
+@@ -766,7 +766,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
+     "price": "3000 USD",
+     "price_postapoc": "90 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
+@@ -777,7 +777,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Might)", "str_pl": "Pattern Scrolls (Might)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant a temporary boost to strength.\"",
+     "price": "3000 USD",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
+@@ -788,7 +788,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Overgrowth)", "str_pl": "Pattern Scrolls (Overgrowth)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
+     "price": "3000 USD",
+     "price_postapoc": "80 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
+@@ -800,7 +800,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Shadowy Shield)", "str_pl": "Pattern Scrolls (Shadowy Shield)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
+     "price": "3000 USD",
+     "price_postapoc": "110 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
+@@ -811,7 +811,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
+     "price": "3000 USD",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
+@@ -822,7 +822,7 @@
+     "type": "ITEM",
+     "subtypes": [ "COMESTIBLE" ],
+     "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
+-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
++    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key!  ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
+     "price": "3000 USD",
+     "price_postapoc": "100 USD",
+     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
+diff --git a/data/mods/Arcana/items/melee.json b/data/mods/Arcana/items/melee.json
+index 1b81429..d53c39f 100644
+--- a/data/mods/Arcana/items/melee.json
++++ b/data/mods/Arcana/items/melee.json
+@@ -188,7 +188,7 @@
+     "id": "bone_twisted",
+     "category": "other",
+     "weapon_category": [ "KNIVES" ],
+-    "name": { "str": "twisted bones", "str_pl": "twisted bones" },
++    "name": { "str_sp": "twisted bones" },
+     "weight": "225 g",
+     "color": "white",
+     "symbol": "%",
+@@ -210,7 +210,7 @@
+     "looks_like": "bone_human",
+     "color": "white",
+     "//": "Be glad I didn't name it gracked knucklebones for pun value.",
+-    "name": { "str": "cracked knucklebones", "str_pl": "cracked knucklebones" },
++    "name": { "str_sp": "cracked knucklebones" },
+     "description": "A few splintered chunks of finger bones from some sort of monstrous creature, torn away and stripped of flesh from the force of its unnatural death throes.  It might be useful, or it could be made into a trophy of some sort.",
+     "flags": [ "NO_SALVAGE" ],
+     "price_postapoc": "5 USD",
+diff --git a/data/mods/Arcana/items/ranged.json b/data/mods/Arcana/items/ranged.json
+index 616fb84..4156c39 100644
+--- a/data/mods/Arcana/items/ranged.json
++++ b/data/mods/Arcana/items/ranged.json
+@@ -527,7 +527,7 @@
+     "id": "mut_dragonfire",
+     "type": "ITEM",
+     "subtypes": [ "GUN" ],
+-    "name": { "str": "dragonfire", "str_pl": "dragonfire" },
++    "name": { "str_sp": "dragonfire" },
+     "description": "Cited by dragonfire mutation, this is a pseudo item.",
+     "material": [ "essencemat" ],
+     "symbol": "(",
+diff --git a/data/mods/Arcana/items/tool_armor.json b/data/mods/Arcana/items/tool_armor.json
+index 0db336a..ecf79f7 100644
+--- a/data/mods/Arcana/items/tool_armor.json
++++ b/data/mods/Arcana/items/tool_armor.json
+@@ -293,7 +293,7 @@
+     "repairs_like": "revenant_crown",
+     "type": "ITEM",
+     "subtypes": [ "TOOL", "ARMOR" ],
+-    "name": { "str": "revenant crown (on)", "str_pl": "revenant crown (on)" },
++    "name": { "str_sp": "revenant crown (on)" },
+     "description": "A wicked-looking crown made of precious metal, decorated with scenes of skeletons in a \"danse macabre\" motif.  A single brilliant gem adorns it, seemingly aglow with a blood-red tinge.  While active it protects against food poisoning and parasites, in exchange for increased hunger.  It will not cure existing ailments, only prevent them.  Use it to turn it back off.",
+     "turns_per_charge": 900,
+     "revert_to": "revenant_crown",
+@@ -564,7 +564,7 @@
+     "copy-from": "cyclopean_mirror",
+     "type": "ITEM",
+     "subtypes": [ "TOOL", "ARMOR" ],
+-    "name": { "str": "cyclopean mirror (on)" },
++    "name": { "str": "cyclopean mirror (on)", "str_pl": "cyclopean mirrors (on)" },
+     "category": "armor",
+     "description": "An ornate round mirror in an archaic style.  It casts a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, increased physical resistance, and halved damage from other elemental damage.",
+     "turns_per_charge": 600,
+diff --git a/data/mods/Arcana/items/tools.json b/data/mods/Arcana/items/tools.json
+index 470711b..6688317 100644
+--- a/data/mods/Arcana/items/tools.json
++++ b/data/mods/Arcana/items/tools.json
+@@ -63,7 +63,7 @@
+     "type": "ITEM",
+     "subtypes": [ "TOOL" ],
+     "copy-from": "bone_flute",
+-    "name": { "str": "stinger flute", "str_pl": "stinger flutes" },
++    "name": { "str": "stinger flute" },
+     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Should be safe to put up to your mouth, probably.",
+     "material": [ "flesh" ],
+     "color": "light_gray",
+diff --git a/data/mods/Arcana/monsters/monsters.json b/data/mods/Arcana/monsters/monsters.json
+index 42cdba4..4894ce4 100644
+--- a/data/mods/Arcana/monsters/monsters.json
++++ b/data/mods/Arcana/monsters/monsters.json
+@@ -73,7 +73,7 @@
+   {
+     "id": "mon_moruboru",
+     "type": "MONSTER",
+-    "name": { "str": "moruboru", "str_pl": "moruboru" },
++    "name": { "str_sp": "moruboru" },
+     "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
+     "default_faction": "moruboru",
+     "categories": [ "CLASSIC" ],
+@@ -435,7 +435,7 @@
+     "id": "mon_vortex_summoned",
+     "copy-from": "mon_vortex",
+     "type": "MONSTER",
+-    "name": { "str": "summoned vortex" },
++    "name": { "str": "summoned vortex", "str_pl": "summoned vortices" },
+     "categories": [ "CLASSIC" ],
+     "species": [ "ARCANA_SUMMONED" ],
+     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+diff --git a/data/mods/Arcana/mutations/mutations_dragonblood.json b/data/mods/Arcana/mutations/mutations_dragonblood.json
+index 04644b6..c901e4d 100644
+--- a/data/mods/Arcana/mutations/mutations_dragonblood.json
++++ b/data/mods/Arcana/mutations/mutations_dragonblood.json
+@@ -55,7 +55,7 @@
+     "id": "SPELL_EMBERS_DRAGONBLOOD",
+     "name": { "str": "Mark of Embers" },
+     "points": 3,
+-    "description": "Inhuman power has granted you the ability to manipulate your elemental nature and your surroundings, from protection against flame to warping space.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you the ability to manipulate your elemental nature and your surroundings, from protection against flame to warping space.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "ARCANA_FIREAFFINITY" ],
+@@ -71,7 +71,7 @@
+     "id": "SPELL_SUMMONFIEND",
+     "name": { "str": "Mark of Hellfire" },
+     "points": 6,
+-    "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "ARCANA_DRAGONFIRE" ],
+@@ -90,7 +90,7 @@
+     "id": "SPELL_INSTINCT_DRAGONBLOOD",
+     "name": { "str": "Mark of Instinct" },
+     "points": 3,
+-    "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against fungus and other toxic hazards.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against fungus and other toxic hazards.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "ARCANA_TOXINIMMUNE_2" ],
+@@ -105,7 +105,7 @@
+     "id": "SPELL_HUNT_DRAGONBLOOD",
+     "name": { "str": "Mark of The Hunt" },
+     "points": 6,
+-    "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
+@@ -124,7 +124,7 @@
+     "id": "SPELL_SUMMONWYRM",
+     "name": { "str": "Mark of Abominations" },
+     "points": 3,
+-    "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "ARCANA_DRAGONCLAWS" ],
+@@ -139,7 +139,7 @@
+     "id": "SPELL_BEYOND_DRAGONBLOOD",
+     "name": { "str": "Mark of The Beyond" },
+     "points": 6,
+-    "description": "Inhuman power has granted you otherworldly abilities, exploiting your ties to the Beyond to inflict terrible afflictions upon your victims.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Inhuman power has granted you otherworldly abilities, exploiting your ties to the Beyond to inflict terrible afflictions upon your victims.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SUMMONWYRM" ],
+@@ -431,12 +431,12 @@
+     "ugliness": 2,
+     "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit if you are wearing gloves.",
+     "valid": false,
+-    "provided_qualities": { "BUTCHER": 9 },
+     "types": [ "CLAWS" ],
+     "category": [ "DRAGONBLOOD" ],
+     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
+     "flags": [ "UNARMED_BONUS" ],
+-    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "melee_damage_bonus": [ { "type": "cut", "add": 7 } ] } ]
++    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "melee_damage_bonus": [ { "type": "cut", "add": 7 } ] } ],
++    "butchering_quality": 9
+   },
+   {
+     "type": "mutation",
+@@ -637,7 +637,7 @@
+     "visibility": 10,
+     "ugliness": 3,
+     "mixed_effect": true,
+-    "description": "Your scales have become a lot more dense yet thinner, increasing your protection slightly and considerably reducing bulk. Reduces wet effects a bit.",
++    "description": "Your scales have become a lot more dense yet thinner, increasing your protection slightly and considerably reducing bulk.  Reduces wet effects a bit.",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "ARCANA_DRAGONSCALES" ],
+diff --git a/data/mods/Arcana/mutations/mutations_magic_signs.json b/data/mods/Arcana/mutations/mutations_magic_signs.json
+index 0d04481..8f70496 100644
+--- a/data/mods/Arcana/mutations/mutations_magic_signs.json
++++ b/data/mods/Arcana/mutations/mutations_magic_signs.json
+@@ -5,7 +5,7 @@
+     "name": { "str": "Magic Sign: Agility" },
+     "//": "Point costs for all Magic Sign mutations is equal to half its Spell Rank, rounded up where relevant.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you power, that can grant a temporary speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant a temporary speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -22,7 +22,7 @@
+     "name": { "str": "Magic Sign: Capacitance" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to channel stamina and fatigue into bionic energy, though doing so also stuns you on use.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to channel stamina and fatigue into bionic energy, though doing so also stuns you on use.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -33,7 +33,7 @@
+     "id": "SPELL_CLAIRVOYANCE",
+     "name": { "str": "Magic Sign: Clairvoyance" },
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, that can grant sight beyond sight temporarily.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant sight beyond sight temporarily.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -49,7 +49,7 @@
+     "id": "SPELL_CLARITY",
+     "name": { "str": "Magic Sign: Clarity of Blood" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you a power that can protect against parasites and the Mycus.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you a power that can protect against parasites and the Mycus.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -66,7 +66,7 @@
+     "name": { "str": "Magic Sign: Confuse Monster" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you a power that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you a power that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -82,7 +82,7 @@
+     "id": "SPELL_ACID",
+     "name": { "str": "Magic Sign: Conjure Acid" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to conjure sprays of acid.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to conjure sprays of acid.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -98,7 +98,7 @@
+     "id": "SPELL_CONSECRATELESSER",
+     "name": { "str": "Magic Sign: Consecrate" },
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -116,7 +116,7 @@
+     "name": { "str": "Magic Sign: Displacement" },
+     "//2": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to instantly swap places with a target, dazing them and anything near where you emerge.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to instantly swap places with a target, dazing them and anything near where you emerge.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -132,7 +132,7 @@
+     "id": "SPELL_FIRE",
+     "name": { "str": "Magic Sign: Conjure Flame" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -149,7 +149,7 @@
+     "name": { "str": "Magic Sign: Dark Lance" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to unleash beams of unearthly blinding power.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to unleash beams of unearthly blinding power.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -165,7 +165,7 @@
+     "id": "SPELL_EARTHWEAVING",
+     "name": { "str": "Magic Sign: Earthweaving" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to shape walls of earth and stone when targetting  the right terrain.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to shape walls of earth and stone when targetting  the right terrain.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -182,7 +182,7 @@
+     "name": { "str": "Magic Sign: Eclipse" },
+     "//": "Rounded up, Spell Rank 9.",
+     "points": 5,
+-    "description": "Study of the beyond has granted you the power to bring forth wicked omens, gaining a long-lasting adrenaline surge with night vision and life drain, in exchange for permanent scars upon the land.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to bring forth wicked omens, gaining a long-lasting adrenaline surge with night vision and life drain, in exchange for permanent scars upon the land.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -199,7 +199,7 @@
+     "name": { "str": "Magic Sign: Elemental Burst" },
+     "//": "Rounded up, Spell Rank 7.",
+     "points": 4,
+-    "description": "Study of the beyond has granted you the power to conjure chaotic magic, blasting foes with elemental force.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to conjure chaotic magic, blasting foes with elemental force.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -216,7 +216,7 @@
+     "name": { "str": "Magic Sign: Heat Ward" },
+     "//": "Rounded up, Spell Rank 35",
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -233,7 +233,7 @@
+     "name": { "str": "Magic Sign: Cold Ward" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -250,7 +250,7 @@
+     "name": { "str": "Magic Sign: Free Action" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you power, that can protect against paralytic effects and other hindrances.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can protect against paralytic effects and other hindrances.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -266,7 +266,7 @@
+     "id": "SPELL_HEAL",
+     "name": { "str": "Magic Sign: Healing" },
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to heal the body, though overuse may have consequences.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to heal the body, though overuse may have consequences.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -283,7 +283,7 @@
+     "name": { "str": "Magic Sign: Insight" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you power, that can grant a temporary boost to perception.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant a temporary boost to perception.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -299,7 +299,7 @@
+     "id": "SPELL_LIGHT",
+     "name": { "str": "Magic Sign: Light" },
+     "points": 1,
+-    "description": "Study of the beyond has granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -315,7 +315,7 @@
+     "id": "SPELL_ELECRESIST",
+     "name": { "str": "Magic Sign: Lightning Ward" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you power, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -332,7 +332,7 @@
+     "name": { "str": "Magic Sign: Might" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, that can provide a temporary strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can provide a temporary strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -348,7 +348,7 @@
+     "id": "SPELL_LOCKPICK",
+     "name": { "str": "Magic Sign: Opening" },
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to open locks and barricades of various sorts.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to open locks and barricades of various sorts.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -365,7 +365,7 @@
+     "name": { "str": "Magic Sign: Overgrowth" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to cause plants to spring up from nothingness.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to cause plants to spring up from nothingness.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -382,7 +382,7 @@
+     "name": { "str": "Magic Sign: Phase Shield" },
+     "//": "Rounded up, Spell Rank 7.",
+     "points": 4,
+-    "description": "Study of the beyond has granted you power, a defensive effect that will push nearby attackers away when you're struck.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, a defensive effect that will push nearby attackers away when you're struck.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -399,7 +399,7 @@
+     "name": { "str": "Magic Sign: Poison Armor" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -416,7 +416,7 @@
+     "//": "ID retained to avoid breaking saves.",
+     "name": { "str": "Magic Sign: Shadowy Shield" },
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, a defensive effect that will lash out at attackers with shadows.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, a defensive effect that will lash out at attackers with shadows.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -433,7 +433,7 @@
+     "name": { "str": "Magic Sign: Shockstorm" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to create a shockwave of lightning around you.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to create a shockwave of lightning around you.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -449,7 +449,7 @@
+     "id": "SPELL_BUGSLESSER",
+     "name": { "str": "Magic Sign: Summon Centipedes" },
+     "points": 3,
+-    "description": "Study of the beyond has granted you the power to summon scuttling abominations.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to summon scuttling abominations.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -466,7 +466,7 @@
+     "name": { "str": "Magic Sign: Summon Skeletal Dog" },
+     "//": "Rounded up, Spell Rank 3.",
+     "points": 2,
+-    "description": "Study of the beyond has granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -482,7 +482,7 @@
+     "id": "SPELL_SUNDERINGQUAKE",
+     "name": { "str": "Magic Sign: Sundering Quake" },
+     "points": 4,
+-    "description": "Study of the beyond has granted you the power to topple structures, sundering foes and burying them in rubble.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to topple structures, sundering foes and burying them in rubble.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -499,7 +499,7 @@
+     "//": "ID retained to avoid load errors.",
+     "name": { "str": "Magic Sign: Surge of Adrenaline" },
+     "points": 1,
+-    "description": "Study of the beyond has granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -515,7 +515,7 @@
+     "id": "SPELL_TRANSCENDENTAURA",
+     "name": { "str": "Magic Sign: Transcendent Aura" },
+     "points": 4,
+-    "description": "Study of the beyond has granted you the power to shroud your aura, making otherworldly creatures blind to your presence, in exchange for making it easier for other creatures to spot you.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you the power to shroud your aura, making otherworldly creatures blind to your presence, in exchange for making it easier for other creatures to spot you.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+@@ -527,7 +527,7 @@
+     "name": { "str": "Magic Sign: Ward Against Evil" },
+     "//": "Rounded up, Spell Rank 5.",
+     "points": 3,
+-    "description": "Study of the beyond has granted you power, that can offer temporary protection against various anomalous effects.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "Study of the beyond has granted you power, that can offer temporary protection against various anomalous effects.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "player_display": false,
+     "valid": false,
+     "purifiable": false,
+diff --git a/data/mods/Arcana/mutations/mutations_paragon.json b/data/mods/Arcana/mutations/mutations_paragon.json
+index aec689d..d1df6fe 100644
+--- a/data/mods/Arcana/mutations/mutations_paragon.json
++++ b/data/mods/Arcana/mutations/mutations_paragon.json
+@@ -28,7 +28,7 @@
+     "//": "IDs for Arcane Blessings are reused to reduce the amount of obsolete JSON.",
+     "name": { "str": "Sign of Alteration I" },
+     "points": 1,
+-    "description": "\"You must learn to shape your surroundings to serve your purpose.  In time, you will find your purpose as well.\"\nUnknowable forces have given you a gift, that can conjure a shroud of darkness to conceal you.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You must learn to shape your surroundings to serve your purpose.  In time, you will find your purpose as well.\"\nUnknowable forces have given you a gift, that can conjure a shroud of darkness to conceal you.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "changes_to": [ "SPELL_LIGHT2" ],
+@@ -42,7 +42,7 @@
+     "id": "SPELL_LIGHT2",
+     "name": { "str": "Sign of Alteration II" },
+     "points": 2,
+-    "description": "\"You will carry my torch, exert my influence to serve our mutual goals.\"\nUnknowable forces have given you a gift, that can conjure an aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will carry my torch, exert my influence to serve our mutual goals.\"\nUnknowable forces have given you a gift, that can conjure an aura of illumination.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SMOKE" ],
+@@ -57,7 +57,7 @@
+     "id": "SPELL_LOCKPICK2",
+     "name": { "str": "Sign of Alteration III" },
+     "points": 3,
+-    "description": "\"You will move unbidden, no artifice will obstruct one who follows my command.\"\nUnknowable forces have given you a third gift, that can open locks and barricades.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will move unbidden, no artifice will obstruct one who follows my command.\"\nUnknowable forces have given you a third gift, that can open locks and barricades.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_LIGHT2" ],
+@@ -78,7 +78,7 @@
+     "id": "SPELL_TELEPORT",
+     "name": { "str": "Sign of Alteration IV" },
+     "points": 4,
+-    "description": "\"If your enemy seeks escape or refuge, you will learn to halt them.\"\nUnknowable forces have given you a fourth gift, that can allow you to conjure barriers of light.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"If your enemy seeks escape or refuge, you will learn to halt them.\"\nUnknowable forces have given you a fourth gift, that can allow you to conjure barriers of light.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_LOCKPICK2" ],
+@@ -99,7 +99,7 @@
+     "id": "SPELL_PACIFY",
+     "name": { "str": "Sign of Alteration V" },
+     "points": 5,
+-    "description": "\"And if a foe would block your way, my messages can soothe what cannot be destroyed.\"\nUnknowable forces have given you a fifth gift, that can allow you to pacify monsters.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"And if a foe would block your way, my messages can soothe what cannot be destroyed.\"\nUnknowable forces have given you a fifth gift, that can allow you to pacify monsters.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_TELEPORT" ],
+@@ -121,7 +121,7 @@
+     "id": "SPELL_CONSECRATE",
+     "name": { "str": "Sign of Alteration VI" },
+     "points": 6,
+-    "description": "\"In time, you will play but one part in preserving this world, by driving off these intrusions.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can allow you to subvert otherworldly alterations afflicting the environment.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"In time, you will play but one part in preserving this world, by driving off these intrusions.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can allow you to subvert otherworldly alterations afflicting the environment.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_PACIFY" ],
+@@ -143,7 +143,7 @@
+     "id": "SPELL_STRENGTH2",
+     "name": { "str": "Sign of Augmentation I" },
+     "points": 1,
+-    "description": "\"You must be strong, not just in body but especially in spirit.  In time, you will be strong enough to face the end of all.\"\nUnknowable forces have given you a gift, that can grant a strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You must be strong, not just in body but especially in spirit.  In time, you will be strong enough to face the end of all.\"\nUnknowable forces have given you a gift, that can grant a strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
+@@ -157,7 +157,7 @@
+     "id": "SPELL_CLAIRVOYANCE2",
+     "name": { "str": "Sign of Augmentation II" },
+     "points": 2,
+-    "description": "\"You will face truths mortals are not meant to bear.\"\nUnknowable forces have given you a second gift, that can grant sight beyond sight.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will face truths mortals are not meant to bear.\"\nUnknowable forces have given you a second gift, that can grant sight beyond sight.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_STRENGTH2" ],
+@@ -172,7 +172,7 @@
+     "id": "SPELL_AGILE2",
+     "name": { "str": "Sign of Augmentation III" },
+     "points": 3,
+-    "description": "\"You will learn to act without hesitation, to do what is needed for the sake of this world.\"\nUnknowable forces have given you a third gift, that can grant a speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will learn to act without hesitation, to do what is needed for the sake of this world.\"\nUnknowable forces have given you a third gift, that can grant a speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_CLAIRVOYANCE2" ],
+@@ -188,7 +188,7 @@
+     "id": "SPELL_DAYLIGHT2",
+     "name": { "str": "Sign of Augmentation IV" },
+     "points": 4,
+-    "description": "\"Persevere and you shall carry my banner to the highest peaks of your realm, even through greatest hardship.\"\nUnknowable forces have given you a fourth gift, that can trigger an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"Persevere and you shall carry my banner to the highest peaks of your realm, even through greatest hardship.\"\nUnknowable forces have given you a fourth gift, that can trigger an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_AGILE2" ],
+@@ -209,7 +209,7 @@
+     "id": "SPELL_DRAINLIFE",
+     "name": { "str": "Sign of Augmentation V" },
+     "points": 5,
+-    "description": "\"Take no pleasure in what you must do, but always find purpose in each act.\"\nUnknowable forces have given you a fifth gift, that can grant a temporary life-draining effect.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"Take no pleasure in what you must do, but always find purpose in each act.\"\nUnknowable forces have given you a fifth gift, that can grant a temporary life-draining effect.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_DAYLIGHT2" ],
+@@ -231,7 +231,7 @@
+     "id": "SPELL_INVIS",
+     "name": { "str": "Sign of Augmentation VI" },
+     "points": 6,
+-    "description": "\"In time, you will be strong in spirit, and never need to hide from that which mortals fear.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can grant temporary invisibility.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"In time, you will be strong in spirit, and never need to hide from that which mortals fear.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can grant temporary invisibility.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_DRAINLIFE" ],
+@@ -253,7 +253,7 @@
+     "id": "SPELL_CONFUSE2",
+     "name": { "str": "Sign of Destruction I" },
+     "points": 1,
+-    "description": "\"You will face many threats.  In time, they will be made to kneel.\"\nUnknowable forces have given you a gift, that can stun monsters in an area around you.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will face many threats.  In time, they will be made to kneel.\"\nUnknowable forces have given you a gift, that can stun monsters in an area around you.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "changes_to": [ "SPELL_CLOUD" ],
+@@ -267,7 +267,7 @@
+     "id": "SPELL_CLOUD",
+     "name": { "str": "Sign of Destruction II" },
+     "points": 2,
+-    "description": "\"Your enemies will suffer all the same evils they have visited upon this realm.\"\nUnknowable forces have given you a second gift, that can conjure toxic gases at a desired location.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"Your enemies will suffer all the same evils they have visited upon this realm.\"\nUnknowable forces have given you a second gift, that can conjure toxic gases at a desired location.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_CONFUSE2" ],
+@@ -282,7 +282,7 @@
+     "id": "SPELL_LIGHTNING2",
+     "name": { "str": "Sign of Destruction III" },
+     "points": 3,
+-    "description": "\"You will use my gifts with caution, for each is a weapon to set right what has turned wrong.\"\nUnknowable forces have given you a third gift, that can invoke a storm of divine lightning.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will use my gifts with caution, for each is a weapon to set right what has turned wrong.\"\nUnknowable forces have given you a third gift, that can invoke a storm of divine lightning.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_CLOUD" ],
+@@ -302,7 +302,7 @@
+     "id": "SPELL_FIRE2",
+     "name": { "str": "Sign of Destruction IV" },
+     "points": 4,
+-    "description": "\"Bring judgment to our enemies, for they bring only suffering.\"\nUnknowable forces have given you a fourth gift, that can blast an area with divine flames.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"Bring judgment to our enemies, for they bring only suffering.\"\nUnknowable forces have given you a fourth gift, that can blast an area with divine flames.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_LIGHTNING2" ],
+@@ -323,7 +323,7 @@
+     "id": "SPELL_LIGHTNINGFIELD",
+     "name": { "str": "Sign of Destruction V" },
+     "points": 5,
+-    "description": "\"With a steady hand, you will strike true.\"\nUnknowable forces have given you a fifth gift, that can bathe your enemies in bolts of lightning.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"With a steady hand, you will strike true.\"\nUnknowable forces have given you a fifth gift, that can bathe your enemies in bolts of lightning.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_FIRE2" ],
+@@ -345,7 +345,7 @@
+     "id": "SPELL_PULSE",
+     "name": { "str": "Sign of Destruction VI" },
+     "points": 6,
+-    "description": "\"In time, you will play a part in avenging these evils.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can unleash a blast of destructive energy.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"In time, you will play a part in avenging these evils.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can unleash a blast of destructive energy.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "category": [ "VEIL" ],
+@@ -367,7 +367,7 @@
+     "id": "SPELL_ACIDARMOR",
+     "name": { "str": "Sign of Protection I" },
+     "points": 1,
+-    "description": "\"To serve me, you must learn to guard against many threats.  In time, you will have nothing to fear.\"\nUnknowable forces have given you a gift, that can grant temporary resistance to corrosive effects.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"To serve me, you must learn to guard against many threats.  In time, you will have nothing to fear.\"\nUnknowable forces have given you a gift, that can grant temporary resistance to corrosive effects.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "changes_to": [ "SPELL_POISONARMOR2" ],
+@@ -381,7 +381,7 @@
+     "id": "SPELL_POISONARMOR2",
+     "name": { "str": "Sign of Protection II" },
+     "points": 2,
+-    "description": "\"You will bear my mark of protection, for your body is a frail and transient thing.\"\nUnknowable forces have given you a second gift, that can grant temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will bear my mark of protection, for your body is a frail and transient thing.\"\nUnknowable forces have given you a second gift, that can grant temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_ACIDARMOR" ],
+@@ -396,7 +396,7 @@
+     "id": "SPELL_ELECRESIST2",
+     "name": { "str": "Sign of Protection III" },
+     "points": 3,
+-    "description": "\"You will face storms that would sweep away all you hold dear.\"\nUnknowable forces have given you a third gift, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will face storms that would sweep away all you hold dear.\"\nUnknowable forces have given you a third gift, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_POISONARMOR2" ],
+@@ -412,7 +412,7 @@
+     "id": "SPELL_FLAMEARMOR2",
+     "name": { "str": "Sign of Protection IV" },
+     "points": 4,
+-    "description": "\"But your spirit shall face these trials as stone faces the flame, unyielding to the inferno.\"\nUnknowable forces have given you a fourth gift, that can grant resistance to fire and smoke.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"But your spirit shall face these trials as stone faces the flame, unyielding to the inferno.\"\nUnknowable forces have given you a fourth gift, that can grant resistance to fire and smoke.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_ELECRESIST2" ],
+@@ -433,7 +433,7 @@
+     "id": "SPELL_FROSTARMOR",
+     "name": { "str": "Sign of Protection V" },
+     "points": 5,
+-    "description": "\"There will be no storm, no blizzard, nothing will deter you when you heed my call.\"\nUnknowable forces have given you a fifth gift, that can protect against cold.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"There will be no storm, no blizzard, nothing will deter you when you heed my call.\"\nUnknowable forces have given you a fifth gift, that can protect against cold.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_FLAMEARMOR2" ],
+@@ -455,7 +455,7 @@
+     "id": "SPELL_PSYSHIELD",
+     "name": { "str": "Sign of Protection VI" },
+     "points": 6,
+-    "description": "\"In time, your service to me will see you safely through death itself.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can project a powerful protective force.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"In time, your service to me will see you safely through death itself.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can project a powerful protective force.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_FROSTARMOR" ],
+@@ -477,7 +477,7 @@
+     "id": "SPELL_SUMMONDOG2",
+     "name": { "str": "Sign of Summoning I" },
+     "points": 1,
+-    "description": "\"This is a sign of the fate that awaits your world.  In time, you must learn what will help avert this omen.\"\nUnknowable forces have given you a gift, that can summon skeletal dogs.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"This is a sign of the fate that awaits your world.  In time, you must learn what will help avert this omen.\"\nUnknowable forces have given you a gift, that can summon skeletal dogs.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "changes_to": [ "SPELL_SUMMONSKEL" ],
+@@ -491,7 +491,7 @@
+     "id": "SPELL_SUMMONSKEL",
+     "name": { "str": "Sign of Summoning II" },
+     "points": 2,
+-    "description": "\"You will witness more dire omens, foretelling your fate.  Do not fear them.\"\nUnknowable forces have given you a second gift, that can summon a skeleton.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will witness more dire omens, foretelling your fate.  Do not fear them.\"\nUnknowable forces have given you a second gift, that can summon a skeleton.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SUMMONDOG2" ],
+@@ -506,7 +506,7 @@
+     "id": "SPELL_SUMMONCULUS",
+     "name": { "str": "Sign of Summoning III" },
+     "points": 3,
+-    "description": "\"You will witness other interlopers, promising different paths to your world's survival.  They are false omens.\"\nUnknowable forces have given you a third gift, that can summon a homunculus.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"You will witness other interlopers, promising different paths to your world's survival.  They are false omens.\"\nUnknowable forces have given you a third gift, that can summon a homunculus.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SUMMONSKEL" ],
+@@ -526,7 +526,7 @@
+     "id": "SPELL_SUMMONTHING",
+     "name": { "str": "Sign of Summoning IV" },
+     "points": 4,
+-    "description": "\"With caution you will learn to read these signs, and call forth beings to answer their false promises.\"\nUnknowable forces have given you a fourth gift, that can summon a horrifying thing.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"With caution you will learn to read these signs, and call forth beings to answer their false promises.\"\nUnknowable forces have given you a fourth gift, that can summon a horrifying thing.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SUMMONCULUS" ],
+@@ -547,7 +547,7 @@
+     "id": "SPELL_BUGS",
+     "name": { "str": "Sign of Summoning V" },
+     "points": 5,
+-    "description": "\"Your omens will avert theirs, and your signs will reveal our enemies for what they truly are.\"\nUnknowable forces have given you a fifth gift, that can summon giant centipedes.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"Your omens will avert theirs, and your signs will reveal our enemies for what they truly are.\"\nUnknowable forces have given you a fifth gift, that can summon giant centipedes.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_SUMMONTHING" ],
+@@ -569,7 +569,7 @@
+     "id": "SPELL_SUMMONVORTEX",
+     "name": { "str": "Sign of Summoning VI" },
+     "points": 6,
+-    "description": "\"In time, you will bear my messages, and call forth heralds to guide others.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can summon vortices.  (( Remember to bind the \"spellcasting\" key! ))",
++    "description": "\"In time, you will bear my messages, and call forth heralds to guide others.  It is my will.\"\nUnknowable forces have given you a sixth gift, that can summon vortices.  (( Remember to bind the \"spellcasting\" key!  ))",
+     "valid": false,
+     "purifiable": false,
+     "prereqs": [ "SPELL_BUGS" ],
+diff --git a/data/mods/Arcana/npcs/TALK_CF_AUX_MERC.json b/data/mods/Arcana/npcs/TALK_CF_AUX_MERC.json
+index b999db9..c421f2d 100644
+--- a/data/mods/Arcana/npcs/TALK_CF_AUX_MERC.json
++++ b/data/mods/Arcana/npcs/TALK_CF_AUX_MERC.json
+@@ -66,7 +66,7 @@
+     "type": "talk_topic",
+     "dynamic_line": {
+       "u_is_wearing": "badge_marshal",
+-      "yes": "Well now marshal, I'd be willing to serve as a deputy for half my going rate. 15 Golden Scales, the stuff they use here, should cover my expenses.  After that, lead and I'll follow.",
++      "yes": "Well now marshal, I'd be willing to serve as a deputy for half my going rate.  15 Golden Scales, the stuff they use here, should cover my expenses.  After that, lead and I'll follow.",
+       "no": "30 of the Golden Scales they use here will cover my expenses.  So long as there's places to explore and loot to find, should be fine by me."
+     },
+     "responses": [
+@@ -115,9 +115,9 @@
+     "type": "talk_topic",
+     "dynamic_line": [
+       "Kill what's threatening you first, then treat any casualties.  It's cold sure, but every person out of the fight makes it easier on the enemy, and it's hard to shoot back when your hands are busy tying up some poor guy's guts.",
+-      "A well-placed grenade, stick of dynamite, or better yet C4 is as handy a tool as it is a weapon. If you have the time to place it and back off, you're less likely to make a costly mistake than throwing it.",
+-      "Take good care of any vehicles you can get in working order. A few tons of metal at highway speeds is deer medicine, as much as a couple hundred grains of it going supersonic is.",
+-      "It's only a rout if it's too little, too late to call it a retreat. Better off keeping your distance or breaking contact if it'd be too much trouble to fight it out.",
++      "A well-placed grenade, stick of dynamite, or better yet C4 is as handy a tool as it is a weapon.  If you have the time to place it and back off, you're less likely to make a costly mistake than throwing it.",
++      "Take good care of any vehicles you can get in working order.  A few tons of metal at highway speeds is deer medicine, as much as a couple hundred grains of it going supersonic is.",
++      "It's only a rout if it's too little, too late to call it a retreat.  Better off keeping your distance or breaking contact if it'd be too much trouble to fight it out.",
+       "Don't bring what you don't need, but keep in mind you never know for sure what's necessary until you need it.  If you're still on the fence about a piece of gear and it won't hurt any to take it, you might as well bring it along.",
+       "Being unsubtle about a mission is only a disadvantage if you don't have enough ammo for everything that might show up.",
+       "Always bring a gun, preferably the biggest one you can afford to haul around.  Even if you're more the rip and tear type, it'll pay off eventually.",
+diff --git a/data/mods/Arcana/npcs/TALK_CF_SEEKER.json b/data/mods/Arcana/npcs/TALK_CF_SEEKER.json
+index 6581927..2f3494f 100644
+--- a/data/mods/Arcana/npcs/TALK_CF_SEEKER.json
++++ b/data/mods/Arcana/npcs/TALK_CF_SEEKER.json
+@@ -69,7 +69,7 @@
+     "type": "talk_topic",
+     "dynamic_line": {
+       "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+-      "yes": "\"Cast aside your schisms and strife. It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"  We are more than simply people of the book together with heathens, we are brethren.  Our duties demand it.",
++      "yes": "\"Cast aside your schisms and strife.  It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"  We are more than simply people of the book together with heathens, we are brethren.  Our duties demand it.",
+       "no": "Correct, but the circumstances that warranted our joining were quite severe.  Over the years, the others have worked hard to keep us focused on our goal of protecting others.  As one of our tenets states, \"we are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"  If that is what it takes in these trying times, so be it."
+     },
+     "responses": [ { "text": "Okay…", "topic": "TALK_CF_SEEKER" } ]
+diff --git a/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json b/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
+index f54ccac..5b4b353 100644
+--- a/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
++++ b/data/mods/Arcana/npcs/TALK_FREE_MERCHANTS_MERCHANT.json
+@@ -281,7 +281,7 @@
+   {
+     "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_NODEAL",
+     "type": "talk_topic",
+-    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended. I'm already taking their offer just about at face value.",
++    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended.  I'm already taking their offer just about at face value.",
+     "responses": [
+       {
+         "text": "Okay, here you go.",
+diff --git a/data/mods/Arcana/npcs/TALK_HERMIT.json b/data/mods/Arcana/npcs/TALK_HERMIT.json
+index 8ddb1e1..abc4e9e 100644
+--- a/data/mods/Arcana/npcs/TALK_HERMIT.json
++++ b/data/mods/Arcana/npcs/TALK_HERMIT.json
+@@ -608,7 +608,7 @@
+         "no": {
+           "npc_has_effect": "hermit_has_salt",
+           "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need essence to fuel it.  It must, specifically, be blood essence.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of blood shall fuel the ritual.",
+-          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
++          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp.  We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
+         }
+       }
+     },
+diff --git a/data/mods/Arcana/npcs/TALK_MAGE_HUNTER.json b/data/mods/Arcana/npcs/TALK_MAGE_HUNTER.json
+index 005ac4c..a830be8 100644
+--- a/data/mods/Arcana/npcs/TALK_MAGE_HUNTER.json
++++ b/data/mods/Arcana/npcs/TALK_MAGE_HUNTER.json
+@@ -221,7 +221,7 @@
+             "I sure hope Sofia knows what she's doing …right.  Talk to her if you're looking for work."
+           ],
+           "no": [
+-            "You?  A blood mage? Is this a trick of some kind?  If you're honest about it, speak with those in charge here.",
++            "You?  A blood mage?  Is this a trick of some kind?  If you're honest about it, speak with those in charge here.",
+             "Never thought I'd hear that from a blood mage.  Speak with Thane McKinnon.  If this is a trick of some kind, remember.  We.  Are.  Watching you.",
+             "I have nothing for you, sanguinist."
+           ]
+diff --git a/data/mods/Arcana/npcs/TALK_RANCH_BARKEEP.json b/data/mods/Arcana/npcs/TALK_RANCH_BARKEEP.json
+index 289e559..45cc69a 100644
+--- a/data/mods/Arcana/npcs/TALK_RANCH_BARKEEP.json
++++ b/data/mods/Arcana/npcs/TALK_RANCH_BARKEEP.json
+@@ -19,7 +19,7 @@
+   {
+     "id": "TALK_RANCH_BARKEEP_GM_PRELUDE",
+     "type": "talk_topic",
+-    "dynamic_line": "Just gotta keep pushing your luck, huh?  Well alright, if that's all you're after, I don't like dealing in rumors but this sounds like serious shit.  You hear stupid stories from drunk survivors all the time, only one I'd put stock in comes from one of the more experienced fellows, who said she had a run-in with a ghost or some shit. Out by the river.  Had a freezer burn on the back of her hand, couple hairline fractures too.  If she wasn't stone-cold sober, and one of the few scavengers I can trust not to bullshit me, I wouldn't have given her story a second thought.",
++    "dynamic_line": "Just gotta keep pushing your luck, huh?  Well alright, if that's all you're after, I don't like dealing in rumors but this sounds like serious shit.  You hear stupid stories from drunk survivors all the time, only one I'd put stock in comes from one of the more experienced fellows, who said she had a run-in with a ghost or some shit.  Out by the river.  Had a freezer burn on the back of her hand, couple hairline fractures too.  If she wasn't stone-cold sober, and one of the few scavengers I can trust not to bullshit me, I wouldn't have given her story a second thought.",
+     "responses": [  ]
+   }
+ ]
+diff --git a/data/mods/Arcana/npcs/TALK_SHRIKE_MERCHANT.json b/data/mods/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+index 36e717a..d35938b 100644
+--- a/data/mods/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
++++ b/data/mods/Arcana/npcs/TALK_SHRIKE_MERCHANT.json
+@@ -67,7 +67,7 @@
+   {
+     "id": "TALK_SHRIKE_MERCHANT_GM_3_SECT",
+     "type": "talk_topic",
+-    "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout. That might give them pause long enough to catch them off guard.",
++    "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout.  That might give them pause long enough to catch them off guard.",
+     "speaker_effect": { "effect": { "u_add_var": "horace_password_known", "value": "yes" } },
+     "responses": [
+       { "text": "Thanks.  One more thing before I go.", "topic": "TALK_SHRIKE_MERCHANT" },
+diff --git a/data/mods/Arcana/snippets.json b/data/mods/Arcana/snippets.json
+index 41752e7..1572dc6 100644
+--- a/data/mods/Arcana/snippets.json
++++ b/data/mods/Arcana/snippets.json
+@@ -189,7 +189,7 @@
+     "text": [
+       {
+         "id": "note_sanguine_tenet_arcana_1",
+-        "text": "\"Every day is a struggle, a constant fight to survive.  Or it can be a struggle to thrive. The weak and undeserving choose the former.  We choose the latter.  Always seek to gain, to improve, better yourself.\""
++        "text": "\"Every day is a struggle, a constant fight to survive.  Or it can be a struggle to thrive.  The weak and undeserving choose the former.  We choose the latter.  Always seek to gain, to improve, better yourself.\""
+       },
+       {
+         "id": "note_sanguine_tenet_arcana_2",
+@@ -249,7 +249,7 @@
+       },
+       {
+         "id": "note_flame_tenet_arcana_2",
+-        "text": "\"Cast aside your schisms and strife. It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\""
++        "text": "\"Cast aside your schisms and strife.  It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\""
+       },
+       {
+         "id": "note_flame_tenet_arcana_3",
+diff --git a/data/mods/Arcana/spells/spells_aftermath.json b/data/mods/Arcana/spells/spells_aftermath.json
+index bed38f9..53672c7 100644
+--- a/data/mods/Arcana/spells/spells_aftermath.json
++++ b/data/mods/Arcana/spells/spells_aftermath.json
+@@ -1114,7 +1114,7 @@
+     "id": "arcana_aftermath_eclipse_wonder_flaming_eye",
+     "type": "SPELL",
+     "name": { "str": "Eclipse Flaming Eye" },
+-    "description": "Also an interloper, and probably the most !!FUN!! kind.",
++    "description": "Also an interloper, and probably the most!!FUN!!  kind.",
+     "valid_targets": [ "ground" ],
+     "message": "",
+     "flags": [ "NO_EXPLOSION_SFX", "PERMANENT", "RANDOM_TARGET", "HOSTILE_SUMMON" ],
+diff --git a/data/mods/Arcana/spells/spells_item.json b/data/mods/Arcana/spells/spells_item.json
+index 6ba67ba..d515ed3 100644
+--- a/data/mods/Arcana/spells/spells_item.json
++++ b/data/mods/Arcana/spells/spells_item.json
+@@ -566,7 +566,7 @@
+     "id": "arcana_item_hammerzeit_attack",
+     "type": "SPELL",
+     "name": { "str": "Hammer Secondary Effect" },
+-    "description": "Mild damage and dazing for every vanilla monster with SUNDEATH/NIGHT_INVISIBILITY , and every summoned monster based off such creatures.",
++    "description": "Mild damage and dazing for every vanilla monster with SUNDEATH/NIGHT_INVISIBILITY, and every summoned monster based off such creatures.",
+     "message": "",
+     "effect": "attack",
+     "shape": "blast",
+diff --git a/data/mods/Arcana/spells/spells_pattern_scrolls.json b/data/mods/Arcana/spells/spells_pattern_scrolls.json
+index 4aa849c..d283b79 100644
+--- a/data/mods/Arcana/spells/spells_pattern_scrolls.json
++++ b/data/mods/Arcana/spells/spells_pattern_scrolls.json
+@@ -232,7 +232,7 @@
+     "shape": "blast",
+     "effect_str": "SPELL_ELECRESIST",
+     "description": "This grants a specific spell mutation.",
+-    "message": "You gaze deep into the strange patterns,  endless linear paths intersecting and bending in ways defying the laws of geometry…",
++    "message": "You gaze deep into the strange patterns, endless linear paths intersecting and bending in ways defying the laws of geometry…",
+     "min_damage": 10000,
+     "max_damage": 10000,
+     "flags": [ "NO_EXPLOSION_SFX", "SILENT", "MUTATE_TRAIT" ],

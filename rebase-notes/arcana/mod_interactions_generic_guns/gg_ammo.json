@@ -1,0 +1,18 @@
+[
+  {
+    "id": "reloaded_shot_00_arcana",
+    "copy-from": "reloaded_shot_00_arcana",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "//": "Generic Guns replaces real calibres with generic ammunition types; the blessed shells follow the shells they are made from.",
+    "ammo_type": "ammo_shot"
+  },
+  {
+    "id": "flintlock_shot_arcana",
+    "copy-from": "flintlock_shot_arcana",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "//": "Generic Guns replaces real calibres with generic ammunition types; the blessed shot follows the shot it is made from.",
+    "ammo_type": "ammo_black_powder"
+  }
+]
