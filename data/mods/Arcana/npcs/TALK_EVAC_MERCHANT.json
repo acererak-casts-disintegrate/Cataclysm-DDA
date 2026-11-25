@@ -7,7 +7,10 @@
         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
         "topic": "TALK_EVAC_MERCHANT_NICHOLAS_1",
         "condition": {
-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
+          "and": [
+            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
+            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
+          ]
         }
       },
       {
@@ -62,7 +65,10 @@
         "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone looking for work?",
         "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
         "condition": {
-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
         }
       }
     ]

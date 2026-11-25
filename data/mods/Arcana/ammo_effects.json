@@ -2,14 +2,16 @@
   {
     "id": "LIGHTNING_JUDGMENT",
     "type": "ammo_effect",
-    "aoe": [ {
-      "field_type": "fd_electricity",
-      "intensity_min": 1,
-      "intensity_max": 3,
-      "radius": 5,
-      "chance": 25,
-      "check_passable": true
-    } ],
+    "aoe": [
+      {
+        "field_type": "fd_electricity",
+        "intensity_min": 1,
+        "intensity_max": 3,
+        "radius": 5,
+        "chance": 25,
+        "check_passable": true
+      }
+    ],
     "do_emp_blast": true
   },
   {
@@ -47,15 +49,17 @@
     "id": "AMMO_ANOMALY_RAILGUN",
     "type": "ammo_effect",
     "trail": [ { "field_type": "fd_electricity", "intensity_min": 1, "intensity_max": 3, "chance": 75 } ],
-    "aoe": [ {
-      "field_type": "fd_electricity",
-      "intensity_min": 1,
-      "intensity_max": 3,
-      "chance": 50,
-      "radius": 1,
-      "size": 1,
-      "check_passable": true
-    } ],
+    "aoe": [
+      {
+        "field_type": "fd_electricity",
+        "intensity_min": 1,
+        "intensity_max": 3,
+        "chance": 50,
+        "radius": 1,
+        "size": 1,
+        "check_passable": true
+      }
+    ],
     "do_emp_blast": true
   },
   {
@@ -67,15 +71,17 @@
   {
     "id": "AMMO_ANOMALY_NUKE",
     "type": "ammo_effect",
-    "aoe": [ {
-      "field_type": "fd_nuke_gas",
-      "intensity_min": 3,
-      "intensity_max": 3,
-      "chance": 50,
-      "radius": 12,
-      "size": 1,
-      "check_passable": true
-    } ],
+    "aoe": [
+      {
+        "field_type": "fd_nuke_gas",
+        "intensity_min": 3,
+        "intensity_max": 3,
+        "chance": 50,
+        "radius": 12,
+        "size": 1,
+        "check_passable": true
+      }
+    ],
     "trail": [ { "field_type": "fd_fatigue", "intensity_min": 1, "intensity_max": 1, "chance": 5 } ],
     "explosion": { "power": 750, "distance_factor": 0.6 },
     "do_emp_blast": true

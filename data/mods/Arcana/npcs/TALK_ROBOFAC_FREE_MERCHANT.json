@@ -18,7 +18,10 @@
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
         "topic": "TALK_ROBOFAC_FREE_MERCHANT_CF_REP_MISSION_4",
         "condition": {
-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
         }
       }
     ]

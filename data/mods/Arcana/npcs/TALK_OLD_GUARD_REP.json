@@ -29,7 +29,10 @@
       {
         "text": "[MISSION] Would the Old Guard be willing to establish a presence in another community?",
         "condition": {
-          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
         },
         "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
       }

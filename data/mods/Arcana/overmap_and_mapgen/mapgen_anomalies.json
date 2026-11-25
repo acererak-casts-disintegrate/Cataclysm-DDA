@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "new_anomaly_1" ],
     "weight": 300,
     "object": {
@@ -38,7 +37,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "new_anomaly_2" ],
     "weight": 300,
     "object": {
@@ -76,7 +74,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "new_anomaly_t" ],
     "weight": 300,
     "object": {
@@ -114,7 +111,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "new_anomaly_w" ],
     "weight": 300,
     "object": {

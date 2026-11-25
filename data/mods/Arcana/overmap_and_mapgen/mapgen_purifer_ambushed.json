@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_gas_arcana_bandit" ],
     "weight": 200,
     "object": {

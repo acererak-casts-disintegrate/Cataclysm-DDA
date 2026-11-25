@@ -42,7 +42,7 @@
       "bio_power_storage_mkII"
     ],
     "items": {
-       "both": {
+      "both": {
         "entries": [ { "item": "badge_bio_weapon" }, { "item": "jumpsuit_pocketless", "variant": "orange" }, { "item": "footrags" } ]
       },
       "male": [ "briefs" ],

@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_field_anomalous_buffer" ],
     "weight": 250,
     "object": {
@@ -47,7 +46,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_structure_anomalous_entrance" ],
     "weight": 250,
     "object": {
@@ -98,7 +96,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_structure_anomalous_surface" ],
     "weight": 250,
     "object": {
@@ -149,7 +146,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_structure_anomalous_underground" ],
     "weight": 250,
     "object": {
@@ -216,7 +212,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_structure_anomalous_finale" ],
     "weight": 250,
     "object": {
@@ -290,7 +285,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_structure_anomalous_roof" ],
     "weight": 250,
     "object": {

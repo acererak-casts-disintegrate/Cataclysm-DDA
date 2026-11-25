@@ -235,7 +235,12 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_REP_SPELL_MENU",
-        "condition": { "and": [ { "u_has_effect": "cf_mission_1" }, { "not": { "compare_string": [ "yes", { "u_val": "sofia_all_spells_known" } ] } } ] }
+        "condition": {
+          "and": [
+            { "u_has_effect": "cf_mission_1" },
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_all_spells_known" } ] } }
+          ]
+        }
       },
       {
         "text": "Do you have anything to trade?",

@@ -37,7 +37,12 @@
     "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ] ]
+    "components": [
+      [ [ "salt", 15 ] ],
+      [ [ "copper", 9 ] ],
+      [ [ "lye_powder", 6 ] ],
+      [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ]
+    ]
   },
   {
     "type": "recipe",

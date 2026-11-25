@@ -78,14 +78,20 @@
       {
         "text": "Who are you?",
         "condition": {
-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
+          "and": [
+            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
+          ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
       },
       {
         "text": "What can you tell me about this place?",
         "condition": {
-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
+          "and": [
+            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
+          ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
       },

@@ -2345,13 +2345,7 @@
     "id": "mon_zombear_death_drops",
     "subtype": "collection",
     "entries": [
-      {
-        "distribution": [
-          { "item": "monster_fang", "prob": 50 },
-          { "item": "graboid_fang", "prob": 50 }
-        ],
-        "prob": 10
-      },
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 10 },
       { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
     ]
   },
