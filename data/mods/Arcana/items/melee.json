@@ -29,7 +29,7 @@
     "name": { "str": "blank scroll" },
     "description": "A simple sheet of paper, with wooden rollers to support it.  You feel as if it was meant to have ancient, eldritch text written on it.  But sadly, it's blank.",
     "weight": "415 g",
-    "volume": "250 ml",
+    "volume": "375 ml",
     "price": "20 USD",
     "price_postapoc": "2 USD",
     "material": [ "paper" ],
@@ -111,7 +111,7 @@
     "//": "ID retained for compatibility reasons",
     "name": { "str": "barbed stinger" },
     "description": "An eight-inch barbed stinger, from some manner of monstrous creature.  Makes a mediocre melee weapon, or could be made into a trophy of some sort.",
-    "weight": "570 g",
+    "weight": "250 g",
     "to_hit": -1,
     "color": "dark_gray",
     "symbol": ",",
@@ -151,7 +151,7 @@
     "material": [ "stone" ],
     "looks_like": "aquamarine",
     "weight": "714 g",
-    "volume": "250 ml"
+    "volume": "275 ml"
   },
   {
     "type": "ITEM",
@@ -346,7 +346,7 @@
     "description": "A rugged metal case containing a transceiver adapted from surplus military equipment, a set of connectors designed to hook up to a radio terminal, and a tracking device.  Somewhat makeshift in appearance, it seems to have been purpose-built for some specialized task.",
     "material": [ "steel" ],
     "weight": "21000 g",
-    "volume": "2 L",
+    "volume": "3 L",
     "melee_damage": { "bash": 4 },
     "to_hit": 1,
     "flags": [ "TRADER_AVOID", "MISSION_ITEM" ]

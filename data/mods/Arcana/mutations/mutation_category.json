@@ -1,6 +1,8 @@
 [
   {
     "id": "VEIL",
+    "//": "Its threshold is granted by an effect_on_condition, not a breach roll, and none of its traits is valid for random mutation, so the mutation category tests do not apply.",
+    "skip_test": true,
     "type": "mutation_category",
     "threshold_mut": "THRESH_VEIL",
     "name": "Explorer of The Veil",
@@ -10,6 +12,8 @@
   },
   {
     "id": "DRAGONBLOOD",
+    "//": "Its threshold is granted by an effect_on_condition, not a breach roll, and none of its traits is valid for random mutation, so the mutation category tests do not apply.",
+    "skip_test": true,
     "type": "mutation_category",
     "threshold_mut": "THRESH_DRAGONBLOOD",
     "name": "Acolyte of the Sacrament",

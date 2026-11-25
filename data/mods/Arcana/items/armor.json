@@ -265,7 +265,8 @@
     "material": [ "copper", "essencemat" ],
     "looks_like": "copper_locket",
     "color": "light_red",
-    "pocket_data": [ { "ammo_restriction": { "essence_dull_type": 6000 }, "moves": 10 } ]
+    "pocket_data": [ { "ammo_restriction": { "essence_dull_type": 6000 }, "moves": 10 } ],
+    "volume": "55 ml"
   },
   {
     "id": "mana_gem_pure",

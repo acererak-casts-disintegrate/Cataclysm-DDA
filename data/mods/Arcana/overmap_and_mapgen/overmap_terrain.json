@@ -283,7 +283,7 @@
     "color": "brown_magenta",
     "looks_like": "rift",
     "see_cost": "low",
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -293,7 +293,7 @@
     "color": "brown_magenta",
     "looks_like": "rift",
     "see_cost": "low",
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -303,7 +303,7 @@
     "color": "blue",
     "looks_like": "pond_field",
     "see_cost": "low",
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -313,7 +313,7 @@
     "color": "light_gray",
     "looks_like": "standing_stones",
     "see_cost": "low",
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -429,7 +429,8 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange_roof",
-    "see_cost": "high"
+    "see_cost": "high",
+    "flags": [ "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -438,7 +439,8 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange",
-    "see_cost": "high"
+    "see_cost": "high",
+    "flags": [ "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -447,7 +449,8 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange",
-    "see_cost": "high"
+    "see_cost": "high",
+    "flags": [ "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -456,7 +459,8 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange_b",
-    "see_cost": "high"
+    "see_cost": "high",
+    "flags": [ "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -497,7 +501,7 @@
     "color": "brown",
     "looks_like": "field",
     "see_cost": "low",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "arcana_structure_anomalous_roof",
@@ -506,7 +510,8 @@
     "sym": "T",
     "looks_like": "open_air",
     "color": "i_light_gray",
-    "see_cost": "high"
+    "see_cost": "high",
+    "flags": [ "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "arcana_structure_anomalous_surface",
@@ -516,7 +521,7 @@
     "color": "i_light_gray",
     "looks_like": "standing_stones",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "arcana_structure_anomalous_entrance",
@@ -526,7 +531,7 @@
     "color": "i_light_gray",
     "looks_like": "standing_stones",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "arcana_structure_anomalous_underground",
@@ -536,7 +541,7 @@
     "color": "i_light_gray",
     "looks_like": "cave_underground",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "id": "arcana_structure_anomalous_finale",
@@ -546,7 +551,7 @@
     "color": "i_light_gray",
     "looks_like": "cave_underground",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -555,7 +560,7 @@
     "name": "gas station",
     "color": "light_blue",
     "looks_like": "house_roof",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -563,17 +568,19 @@
     "copy-from": "microlab_generic_surface",
     "name": "science lab loading bay",
     "looks_like": "microlab_generic_surface",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
     "id": "microlab_arcana_rock_connector",
-    "copy-from": "microlab_generic_surface_connector"
+    "copy-from": "microlab_generic_surface_connector",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "microlab_arcana_surface_connector",
-    "copy-from": "microlab_generic_surface_connector"
+    "copy-from": "microlab_generic_surface_connector",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
@@ -583,17 +590,19 @@
     "color": "light_blue",
     "looks_like": "microlab_generic",
     "see_cost": "high",
-    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
     "id": "arcana_warehouse_lab",
-    "copy-from": "warehouse"
+    "copy-from": "warehouse",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "arcana_warehouse_lab_roof",
-    "copy-from": "warehouse_roof"
+    "copy-from": "warehouse_roof",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
@@ -603,7 +612,7 @@
     "color": "brown",
     "looks_like": "cave",
     "see_cost": "low",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -613,7 +622,7 @@
     "color": "brown",
     "looks_like": "cave_underground",
     "see_cost": "low",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
@@ -623,22 +632,25 @@
     "color": "dark_gray",
     "looks_like": "s_lot",
     "see_cost": "low",
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_1_2",
-    "copy-from": "lab_arcane_1_1"
+    "copy-from": "lab_arcane_1_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_1_3",
-    "copy-from": "lab_arcane_1_1"
+    "copy-from": "lab_arcane_1_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_1_4",
-    "copy-from": "lab_arcane_1_1"
+    "copy-from": "lab_arcane_1_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
@@ -649,105 +661,124 @@
     "looks_like": "lab",
     "see_cost": "high",
     "mondensity": 2,
-    "flags": [ "RISK_HIGH" ]
+    "flags": [ "RISK_HIGH", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_1_6",
     "copy-from": "lab_arcane_1_5",
-    "name": "science lab entrance"
+    "name": "science lab entrance",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_1",
     "copy-from": "lab_arcane_1_5",
-    "name": "science lab - Sector One"
+    "name": "science lab - Sector One",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_2",
-    "copy-from": "lab_arcane_2_1"
+    "copy-from": "lab_arcane_2_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_3",
-    "copy-from": "lab_arcane_2_1"
+    "copy-from": "lab_arcane_2_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_4",
-    "copy-from": "lab_arcane_2_1"
+    "copy-from": "lab_arcane_2_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_5",
-    "copy-from": "lab_arcane_2_1"
+    "copy-from": "lab_arcane_2_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_2_6",
-    "copy-from": "lab_arcane_2_1"
+    "copy-from": "lab_arcane_2_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_1",
     "copy-from": "lab_arcane_2_1",
-    "name": "science lab - Sector Two"
+    "name": "science lab - Sector Two",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_2",
-    "copy-from": "lab_arcane_3_1"
+    "copy-from": "lab_arcane_3_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_3",
-    "copy-from": "lab_arcane_3_1"
+    "copy-from": "lab_arcane_3_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_4",
-    "copy-from": "lab_arcane_3_1"
+    "copy-from": "lab_arcane_3_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_5",
-    "copy-from": "lab_arcane_3_1"
+    "copy-from": "lab_arcane_3_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_3_6",
-    "copy-from": "lab_arcane_3_1"
+    "copy-from": "lab_arcane_3_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_1",
     "copy-from": "lab_arcane_2_1",
-    "name": "science lab - Sector Three"
+    "name": "science lab - Sector Three",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_2",
-    "copy-from": "lab_arcane_4_1"
+    "copy-from": "lab_arcane_4_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_3",
-    "copy-from": "lab_arcane_4_1"
+    "copy-from": "lab_arcane_4_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_4",
-    "copy-from": "lab_arcane_4_1"
+    "copy-from": "lab_arcane_4_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_5",
-    "copy-from": "lab_arcane_4_1"
+    "copy-from": "lab_arcane_4_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   },
   {
     "type": "overmap_terrain",
     "id": "lab_arcane_4_6",
-    "copy-from": "lab_arcane_4_1"
+    "copy-from": "lab_arcane_4_1",
+    "extend": { "flags": [ "SHOULD_NOT_SPAWN" ] }
   }
 ]
