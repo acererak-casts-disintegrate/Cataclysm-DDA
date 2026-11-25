@@ -327,6 +327,77 @@
     }
   },
   {
+    "type": "item_group",
+    "id": "bionics_op",
+    "copy-from": "bionics_op",
+    "subtype": "distribution",
+    "//": "What the commandos get.",
+    "extend": {
+      "items": [
+        [ "bio_laser_armgun", 5 ],
+        [ "bio_sword", 5 ],
+        [ "bio_flamethrower", 5 ],
+        [ "bio_plasma_cell", 20 ],
+        [ "bio_atomic_battery", 5 ],
+        [ "bio_hazard_shield", 5 ],
+        [ "bio_animal_empathy", 10 ],
+        [ "bio_cutting_torch", 5 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op2_off",
+    "copy-from": "bionics_op2_off",
+    "subtype": "distribution",
+    "//": "Elite zombie bio-operator offense CBMs.",
+    "extend": { "items": [ [ "bio_laser_armgun", 5 ], [ "bio_sword", 5 ], [ "bio_flamethrower", 5 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op2_def",
+    "copy-from": "bionics_op2_def",
+    "subtype": "distribution",
+    "//": "Elite zombie bio-operator defense CBMs.",
+    "extend": { "items": [ [ "bio_hazard_shield", 5 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op2_utl",
+    "copy-from": "bionics_op2_utl",
+    "subtype": "distribution",
+    "//": "Elite zombie bio-operator utility CBMs.",
+    "extend": {
+      "items": [ [ "bio_plasma_cell", 10 ], [ "bio_atomic_battery", 5 ], [ "bio_animal_empathy", 5 ], [ "bio_cutting_torch", 5 ] ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_tech",
+    "copy-from": "bionics_tech",
+    "subtype": "distribution",
+    "//": "Bionics used by technicians.",
+    "extend": { "items": [ [ "bio_atomic_battery", 10 ], [ "bio_cutting_torch", 20 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_subs",
+    "copy-from": "bionics_subs",
+    "subtype": "distribution",
+    "//": "Bionics dropped by substation mini-boss.",
+    "extend": {
+      "items": [ [ "bio_atomic_battery", 5 ], [ "bio_plasma_cell", 5 ], [ "bio_hazard_shield", 5 ], [ "bio_cutting_torch", 10 ] ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_sci",
+    "copy-from": "bionics_sci",
+    "subtype": "distribution",
+    "//": "High-tech bionics for zombie scientists.",
+    "extend": { "items": [ [ "bio_atomic_battery", 5 ], [ "bio_hazard_shield", 5 ], [ "bio_animal_empathy", 5 ] ] }
+  },
+  {
     "id": "female_underwear_bottom",
     "copy-from": "female_underwear_bottom",
     "type": "item_group",
@@ -518,16 +589,19 @@
   },
   {
     "id": "museum_guns",
+    "copy-from": "museum_guns",
     "type": "item_group",
     "extend": { "items": [ [ "flintlock_ammo_mine", 20 ] ] }
   },
   {
     "id": "antique_ammo",
+    "copy-from": "antique_ammo",
     "type": "item_group",
     "extend": { "items": [ [ "flintlock_ammo_mine", 20 ] ] }
   },
   {
     "id": "on_hand_flintlock",
+    "copy-from": "on_hand_flintlock",
     "type": "item_group",
     "subtype": "distribution",
     "extend": { "entries": [ { "item": "flintlock_ammo_mine", "prob": 50, "charges": [ 15, 30 ] } ] }

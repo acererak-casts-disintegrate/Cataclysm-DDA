@@ -194,10 +194,16 @@
     }
   },
   {
-    "copy-from": "lab_cargo_mutant",
+    "copy-from": "lab_chal",
     "type": "scenario",
-    "id": "lab_cargo_mutant",
+    "id": "lab_chal",
     "extend": { "traits": [ "MARTIAL_ARTS_MUT_COM" ], "professions": [ "failed_weapon" ] }
+  },
+  {
+    "copy-from": "lab_staff",
+    "type": "scenario",
+    "id": "lab_staff",
+    "extend": { "professions": [ "bio_infantry", "bio_scout", "bio_knight", "bio_tool", "bionic_silencer" ] }
   },
   {
     "copy-from": "lab_cargo_staff_1",

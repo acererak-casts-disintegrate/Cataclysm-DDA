@@ -1631,7 +1631,7 @@
     "symbol": "(",
     "color": "light_gray",
     "ammo_effects": [ "FLARE" ],
-    "flags": [ "NEVER_JAMS", "FIRESTARTER", "BELTED", "PRIMITIVE_RANGED_WEAPON", "IS_ARMOR" ],
+    "flags": [ "NEVER_JAMS", "FIRESTARTER", "BELTED", "PRIMITIVE_RANGED_WEAPON", "IS_ARMOR", "FIRE_TWOHAND", "STR_RELOAD", "NON_FOULING" ],
     "faults": [  ],
     "use_action": { "type": "firestarter" },
     "pocket_data": [
@@ -1660,7 +1660,6 @@
       [ "sights mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-    "extend": { "flags": [ "FIRE_TWOHAND", "STR_RELOAD", "NON_FOULING" ] },
     "ammo_to_fire": 50
   },
   {
