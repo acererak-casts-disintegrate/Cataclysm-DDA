@@ -102,9 +102,9 @@ void try_parse_int_locale_parsing()
         }
         CAPTURE( setlocale( LC_ALL, nullptr ) );
         CAPTURE( std::locale().name() );
-        // Disabling on Apple; seems like their C library doesn't do localized integer
-        // parsing.
-#ifndef __APPLE__
+        // Disabling on Apple and OpenBSD; their C libraries don't do localized
+        // integer parsing (OpenBSD's ignores LC_NUMERIC altogether).
+#if !defined(__APPLE__) && !defined(__OpenBSD__)
         {
             ret_val<TestType> result = try_parse_integer<TestType>( "1.234", true );
             CHECK( result.success() );
@@ -127,7 +127,7 @@ void try_parse_int_locale_parsing()
         }
         CAPTURE( setlocale( LC_ALL, nullptr ) );
         CAPTURE( std::locale().name() );
-#ifndef __APPLE__
+#if !defined(__APPLE__) && !defined(__OpenBSD__)
         {
             ret_val<TestType> result = try_parse_integer<TestType>( "1,234", true );
             CHECK( result.success() );
