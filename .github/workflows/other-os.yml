@@ -51,10 +51,14 @@ jobs:
             # pkg exits 4 when everything asked for is already installed.
             install: sudo pkg install developer/gcc14 developer/build/gnu-make developer/pkg-config library/ncurses || [ $? -eq 4 ]
             make_flags: CLANG=0 TILES=0 SOUND=0 LOCALIZE=0
-            # pkg-config's default path misses the 64-bit ncursesw.pc; point it there.
+            # OmniOS's ncurses has no pkg-config file and sits outside the default
+            # include path; find its header and 64-bit library and pass them on.
             setup: |
               export PATH=/opt/gcc-14/bin:$PATH
-              PKG_CONFIG_PATH=$(dirname "$(find /usr/lib -name ncursesw.pc -path '*64*' 2>/dev/null | head -n 1)") && export PKG_CONFIG_PATH
+              nc_h=$( { find /usr/include /usr/gnu /opt -name ncurses.h 2>/dev/null || true; } | head -n 1)
+              nc_lib=$( { find /usr/lib /usr/gnu /opt -name 'libncursesw.so*' -path '*64*' 2>/dev/null || true; } | head -n 1)
+              echo "ncurses.h: ${nc_h:-not found}; libncursesw: ${nc_lib:-not found}"
+              export CXXFLAGS="-isystem $(dirname "${nc_h:-.}")" LDFLAGS="-L$(dirname "${nc_lib:-.}") -R$(dirname "${nc_lib:-.}")"
     uses: ./.github/workflows/vm-build-test.yml
     with:
       os: ${{ matrix.os }}

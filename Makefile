@@ -857,13 +857,16 @@ else
       endif
   endif
 
-  # Link to ncurses if we're using a non-tiles, Linux build
+  # Link to ncurses if we're using a non-tiles, Linux build. Its include
+  # directories are passed as system ones, so that warnings from ncurses'
+  # own macros (old-style casts in BUTTON4_PRESSED and co.) are not ours;
+  # this matters where ncurses lives outside /usr/include, as on DragonFly BSD.
   ifeq ($(HAVE_PKGCONFIG),1)
-    CXXFLAGS += $(shell $(PKG_CONFIG) --cflags $(NCURSES_PREFIX))
+    CXXFLAGS += $(patsubst -I%,-isystem%,$(shell $(PKG_CONFIG) --cflags $(NCURSES_PREFIX)))
     LDFLAGS += $(shell $(PKG_CONFIG) --libs $(NCURSES_PREFIX))
   else
     ifeq ($(HAVE_NCURSES5CONFIG),1)
-      CXXFLAGS += $(shell $(NCURSES_PREFIX)5-config --cflags)
+      CXXFLAGS += $(patsubst -I%,-isystem%,$(shell $(NCURSES_PREFIX)5-config --cflags))
       LDFLAGS += $(shell $(NCURSES_PREFIX)5-config --libs)
     else
       ifneq ($(TARGETSYSTEM),WINDOWS)
