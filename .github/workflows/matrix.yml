@@ -331,6 +331,10 @@ jobs:
             run_core_tests: 0
             mods: Cata++
             test-stage: ''
+          - title: Arcana
+            run_core_tests: 0
+            mods: Arcana
+            test-stage: ''
     name: Test (${{ matrix.title }})
     runs-on: ubuntu-22.04
     env:

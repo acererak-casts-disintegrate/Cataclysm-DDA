@@ -58,6 +58,13 @@ This fork is based on the 0.I stable branch (0.I-1). It carries forward the chan
 * **Works with Generic Guns.** Its black-powder cartridges become Generic Guns' black-powder balls, and the survivor cowboy hat's ammo band takes Generic Guns' ammunition types.
 * **Data fixes.** Item groups it extended lost their core contents and the survivor's flamethrower lost three flags, both through 0.I's handling of `extend`; the Prepper's Rambo knife did not fit its sheath; and item weights, volumes and text are corrected.
 
+**Arcana and Magic Items**
+
+* **Included as an in-repo mod.** [Arcana and Magic Items](https://github.com/chaosvolt/cdda-arcana-mod) by Chaosvolt (CC BY-SA 3.0) is imported from the final Dark Days Ahead release in its now-archived repository (commit `33bfbbe`) and converted from DDA experimental's data format to 0.I's. [`UPSTREAM.md`](data/mods/Arcana/UPSTREAM.md) records the source and what was left out.
+* **Fits this fork.** Its CBMs drop from this fork's bionic zombies as well as from zomborgs, and its extensions of the portal-storm scenarios this fork removed are dropped. Content its last update removed for 0.J, which this fork still has, is back: the archaeologist profession in Urban Awakening, the survivor machete in two martial arts' weapon lists, and the summoned shadow's removal of its parent's electric shock.
+* **Works with other in-repo mods.** Its interactions with Cataclysm++ and CrazyCataclysm follow those mods' group names here, and under Generic Guns its blessed shells take Generic Guns' ammunition types.
+* **Data fixes.** It extends the core nether, cult and triffid monster factions instead of replacing them, its CrazyCataclysm skeltal drops all three of its items again, its warehouse lab gets its roof, and item weights, volumes and text are corrected.
+
 **Other in-repo mods**
 
 * **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.
