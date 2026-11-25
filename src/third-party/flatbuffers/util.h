@@ -250,6 +250,20 @@ inline std::string IntToStringHex(int i, int xdigits) {
     #define __strtoll_impl(s, pe, b) strtoll(s, pe, b)
     #define __strtod_impl(s, pe) strtod(s, pe)
     #define __strtof_impl(s, pe) strtof(s, pe)
+  #elif defined(__HAIKU__) || defined(__sun)
+    // Haiku and illumos have no strto*_l either. Switch this thread to the
+    // C locale around the plain functions instead.
+    template<typename T, typename F>
+    inline T cata_in_classic_locale(F f) {
+      const locale_t previous = uselocale(ClassicLocale::Get());
+      const T result = f();
+      uselocale(previous);
+      return result;
+    }
+    #define __strtoull_impl(s, pe, b) cata_in_classic_locale<unsigned long long>([&] { return strtoull(s, pe, b); })
+    #define __strtoll_impl(s, pe, b) cata_in_classic_locale<long long>([&] { return strtoll(s, pe, b); })
+    #define __strtod_impl(s, pe) cata_in_classic_locale<double>([&] { return strtod(s, pe); })
+    #define __strtof_impl(s, pe) cata_in_classic_locale<float>([&] { return strtof(s, pe); })
   #else
     #define __strtoull_impl(s, pe, b) strtoull_l(s, pe, b, ClassicLocale::Get())
     #define __strtoll_impl(s, pe, b) strtoll_l(s, pe, b, ClassicLocale::Get())
