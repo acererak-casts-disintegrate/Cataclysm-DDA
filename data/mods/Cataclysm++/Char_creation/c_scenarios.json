@@ -16,7 +16,7 @@
   {
     "type": "scenario",
     "name": "Mycus B.W.M.D",
-    "description": "After mycus assimilation was successful, our local system was instructed to claim more territory for the mycus. Hostile organisms are near, proceed with caution.",
+    "description": "After mycus assimilation was successful, our local system was instructed to claim more territory for the mycus.  Hostile organisms are near, proceed with caution.",
     "flags": [ "LONE_START", "SUR_START" ],
     "start_of_game": { "season": "autumn" },
     "id": "mycus_bwmd",

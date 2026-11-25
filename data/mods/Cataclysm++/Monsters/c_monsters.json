@@ -97,7 +97,7 @@
   {
     "id": "hulk_weapon",
     "type": "MONSTER",
-    "name": { "str": "Bio-Weapon Apophis" },
+    "name": { "str_sp": "Bio-Weapon Apophis" },
     "description": "The ultimate bionic mutant.  Only God knows why it exists.  With incredible power, armor and bionics on its side, victory won't come easy.",
     "default_faction": "fbio_weapon",
     "species": [ "BIO-WEAPON" ],

@@ -39,7 +39,7 @@
       "your_followers": { "knows your voice": true },
       "hells_raiders": { "kill on sight": true }
     },
-    "description": "Members of the Command Center seeking refuge from ...something.  They have intel and some connections to the Old Guard."
+    "description": "Members of the Command Center seeking refuge from …something.  They have intel and some connections to the Old Guard."
   },
   {
     "type": "faction",
@@ -74,7 +74,7 @@
       "your_followers": { "knows your voice": true },
       "hells_raiders": { "kill on sight": true }
     },
-    "description": "Ragtag branch of the military that survived the initial cataclysm.   Allied to the command center, they seek leadership in this new world."
+    "description": "Ragtag branch of the military that survived the initial cataclysm.  Allied to the command center, they seek leadership in this new world."
   },
   {
     "type": "faction",
@@ -176,6 +176,6 @@
       "your_followers": { "kill on sight": true },
       "slave_fighter_allied": { "kill on sight": true }
     },
-    "description": "People who all their lives have seen nothing but fighting in a ring for the amusement of the rich. Devoid of reason they think the cataclysm is but another round, barely able to tell each other apart from the other team."
+    "description": "People who all their lives have seen nothing but fighting in a ring for the amusement of the rich.  Devoid of reason they think the cataclysm is but another round, barely able to tell each other apart from the other team."
   }
 ]

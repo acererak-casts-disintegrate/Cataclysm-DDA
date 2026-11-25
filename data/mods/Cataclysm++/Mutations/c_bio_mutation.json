@@ -378,7 +378,7 @@
     "id": "WEAK_BIOWEAPON",
     "name": { "str": "Vulnerable" },
     "points": 0,
-    "description": "Your body is much less resilient overall. Your maximum HP is 50% lower than normal, and you suffer increased phyiscal damage.",
+    "description": "Your body is much less resilient overall.  Your maximum HP is 50% lower than normal, and you suffer increased phyiscal damage.",
     "valid": false,
     "purifiable": false,
     "profession": true,

@@ -303,8 +303,6 @@
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE", "MAG_COMPACT" ]
   },
-
-
   {
     "id": "light_atomic_battery_cell_rechargeable",
     "//": "Can no longer streamline these with copy-from because DDA is not allowed to have nice things, they deleted the item this and medium cells used to inherit from.",
@@ -314,7 +312,7 @@
     "name": { "str": "light rechargeable plutonium cell" },
     "description": "This battery uses a thin plutonium-244 rod to stabilize multiple proprietary exotic compounds.  Designed by Omnitech for a military contract, this modified plutonium battery is rechargeable, but as it made for military purposes there is very little this is compatible with.",
     "weight": "160 g",
-    "volume": "35 ml",
+    "volume": "40 ml",
     "price": "500 USD",
     "price_postapoc": "4 USD",
     "material": [ "iron", "plastic" ],
@@ -332,7 +330,7 @@
     "type": "ITEM",
     "subtypes": [ "MAGAZINE" ],
     "category": "tool_magazine",
-    "name": { "str": "light rechargeable plutonium cell" },
+    "name": { "str": "medium rechargeable plutonium cell" },
     "description": "This battery uses a thin plutonium-244 rod to stabilize multiple proprietary exotic compounds.  Designed by Omnitech for a military contract, this modified plutonium battery is rechargeable, but as it made for military purposes there is very little this is compatible with.",
     "weight": "1000 g",
     "volume": "525 ml",

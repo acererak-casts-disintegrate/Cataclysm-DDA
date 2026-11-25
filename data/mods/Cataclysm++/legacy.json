@@ -120,7 +120,7 @@
     "copy-from": "acs_74_stealth_cloak_on",
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
-    "name": "obsolete stealth cloak (on)"
+    "name": { "str": "obsolete stealth cloak (on)", "str_pl": "obsolete stealth cloaks (on)" }
   },
   {
     "id": "flesh_blade_on",
@@ -532,7 +532,7 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "looks_like": "textbook_chemistry",
-    "name": { "str": "Rebuilding Civilization: Pistols", "str_pl": "Rebuilding Civilization: Pistols" },
+    "name": { "str_sp": "Rebuilding Civilization: Pistols" },
     "description": "The pistols volume of the Rebuilding Civilization encyclopedia.  This book contains everything from using zip pistols to laser pistols in fine detail.  This book is so technical, longwinded and dry that even bookworms and fast readers would find it hard to read.  Literally any other book on the subject would be a more efficient way to learn but if the books you have are missing specific information then this is a good substitute until you find something better.",
     "weight": "1800 g",
     "volume": "2000 ml",
@@ -1210,7 +1210,7 @@
     "looks_like": "field",
     "mondensity": 0,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "flags": [ "NO_ROTATE", "SHOULD_NOT_SPAWN" ]
   },
   {
     "type": "mapgen",
@@ -1271,7 +1271,7 @@
     "type": "ITEM",
     "subtypes": [ "ARMOR" ],
     "name": { "str_sp": "designer panties" },
-    "description": "A luxurious set of designer panties. Preserves your modesty and feels good on you."
+    "description": "A luxurious set of designer panties.  Preserves your modesty and feels good on you."
   },
   {
     "id": "fancy_briefs",

@@ -81,7 +81,7 @@
     "id": "BGSS_BHUNTER_STORYNOPE",
     "type": "talk_topic",
     "dynamic_line": "You just asked me earlier.  I'd rather not talk about it right now.",
-    "responses": [ { "text": "...", "topic": "BGSS_BHUNTER_STORY1" } ]
+    "responses": [ { "text": "…", "topic": "BGSS_BHUNTER_STORY1" } ]
   },
   {
     "id": "BGSS_BHUNTER_STORY2",
@@ -103,7 +103,7 @@
     "dynamic_line": {
       "u_has_effect": "evy_ousted",
       "yes": "I came here with one other person, just barely avoiding the crowds of undead in local hotspots.  Guy was from some unit assigned to this project as security, 9th something-or-other.  Lost contact with the rest of the military not long after we set out, so we decided to follow our lead and figure it out from there.",
-      "no": "I lived in a relatively small town, but it still wasn't long before things got hectic.  I decided to pack up what I could and follow what little evidence I had.  Picked up some gear along the way from a wreck, met up with a guy that went AWOL, eventually followed the trail of breadcrumbs.  And that's how I ended up at that lab..."
+      "no": "I lived in a relatively small town, but it still wasn't long before things got hectic.  I decided to pack up what I could and follow what little evidence I had.  Picked up some gear along the way from a wreck, met up with a guy that went AWOL, eventually followed the trail of breadcrumbs.  And that's how I ended up at that lab…"
     },
     "responses": [
       { "text": "Was it that hectic to begin with?", "topic": "BGSS_BHUNTER_STORY4" },
@@ -114,7 +114,7 @@
   {
     "id": "BGSS_BHUNTER_STORY4",
     "type": "talk_topic",
-    "dynamic_line": "No.  Place was fairly quiet initially, no sign of those things when we arrived.  We went in to make sure it was clear, then the guy I was traveling with kept watch outside.  Was maybe a day or two of turning the place inside-out when a group of them swarmed the area, tore the poor bastard apart.  I think he took a few with him, but even they aren't all immune to this zombie thing.  I holed up in the bunker once I realized I was alone...",
+    "dynamic_line": "No.  Place was fairly quiet initially, no sign of those things when we arrived.  We went in to make sure it was clear, then the guy I was traveling with kept watch outside.  Was maybe a day or two of turning the place inside-out when a group of them swarmed the area, tore the poor bastard apart.  I think he took a few with him, but even they aren't all immune to this zombie thing.  I holed up in the bunker once I realized I was alone…",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   }
 ]

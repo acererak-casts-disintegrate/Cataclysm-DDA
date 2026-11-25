@@ -40,12 +40,7 @@
         "switch": true,
         "topic": "TALK_MSCI_TIPS"
       },
-      {
-        "text": "Anything I can help with?",
-        "switch": true,
-        "default": true,
-        "topic": "TALK_MSCI_PROOF"
-      },
+      { "text": "Anything I can help with?", "switch": true, "default": true, "topic": "TALK_MSCI_PROOF" },
       { "text": "Can I stay here?", "topic": "TALK_MSCI_ASK_STAY" },
       { "text": "Farewell.", "topic": "TALK_DONE" }
     ]
@@ -136,13 +131,7 @@
     "type": "talk_topic",
     "//": "Sadly the wild goose chase will still be needed for players who started Evy's mission in saves predating the addition of this dialogue, but this idiotproofs it as best as I can.",
     "dynamic_line": "I see, so that means you already confirmed what I suspected, and made an attempt to lead her here.  Hope things turned out alright.  If you think you can handle yourself, I still have other missions for you.",
-    "responses": [
-      {
-        "text": "We'll see.",
-        "topic": "TALK_MSCI",
-        "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" }
-      }
-    ]
+    "responses": [ { "text": "We'll see.", "topic": "TALK_MSCI", "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" } } ]
   },
   {
     "id": "TALK_MSCI_PROOF_SCEN",
@@ -152,25 +141,13 @@
       "yes": "So that explains a lot, triggering the alarms probably caused a power failure in the systems keeping you locked up there.  I'm glad you made it out of there in one piece.  Come see me when you're ready.",
       "no": "I see, hadn't expected that since you weren't wearing the badge.  Triggering the alarms probably caused a power failure in the systems keeping you locked up there.  I'm glad you made it out of there in one piece.  Come see me when you're ready."
     },
-    "responses": [
-      {
-        "text": "Alright then.",
-        "topic": "TALK_MSCI",
-        "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" }
-      }
-    ]
+    "responses": [ { "text": "Alright then.", "topic": "TALK_MSCI", "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" } } ]
   },
   {
     "id": "TALK_MSCI_PROOF_ITEM",
     "type": "talk_topic",
     "dynamic_line": "How the hell… well that's good luck on our part I suppose.  You survived whatever was there at least, let me see.  So I was right, the Super Soldier project made it at least past Zero Day.  I hope there were other survivors there.  In any case, come see me when you're ready, there's much to be done.",
-    "responses": [
-      {
-        "text": "We'll see.",
-        "topic": "TALK_MSCI",
-        "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" }
-      }
-    ]
+    "responses": [ { "text": "We'll see.", "topic": "TALK_MSCI", "effect": { "u_add_var": "c_var_proven_worthy", "value": "yes" } } ]
   },
   {
     "id": "TALK_MSCI_PROOF_TRY_ACCEPT",
@@ -219,7 +196,7 @@
     "dynamic_line": {
       "npc_has_effect": "router_suggest",
       "yes": "Well, the main reason we were hiding here was Apophis…  It was a Bio-Weapon specifically designed to eliminate every other Bio-Weapon and Bio-Weapon scientist.  Now we can try to get things fixed up eventually, and work on research that might benefit others out there.",
-      "no": "Well, the main reason we are hiding here is Apophis…  It is a Bio-Weapon specifically designed to eliminate every other Bio-Weapon and Bio-Weapon scientist.  Currently we don't have anything that could stand a decent chance against it, so we're trying to create our own Bio-Weapon to counter Apophis. Sigma and Lambda have expressed interest in going after it, but they won't be able to take it out on their own."
+      "no": "Well, the main reason we are hiding here is Apophis…  It is a Bio-Weapon specifically designed to eliminate every other Bio-Weapon and Bio-Weapon scientist.  Currently we don't have anything that could stand a decent chance against it, so we're trying to create our own Bio-Weapon to counter Apophis.  Sigma and Lambda have expressed interest in going after it, but they won't be able to take it out on their own."
     },
     "responses": [
       { "text": "Oh, good luck, I suppose.", "topic": "TALK_MSCI" },

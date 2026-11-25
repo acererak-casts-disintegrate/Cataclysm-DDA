@@ -1,8 +1,8 @@
 [
   {
     "id": "unbio_bladed_weapon",
-	"type": "ITEM",
-	"subtypes": [ "GUNMOD" ],
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
     "name": { "str": "repurposed monomolecular knife" },
     "category": "weapons",
     "weapon_category": [ "KNIVES", "BIONIC_WEAPONRY", "BIONIC_SWORDS" ],
@@ -28,7 +28,7 @@
   },
   {
     "type": "ITEM",
-	"subtypes": [ "GUNMOD" ],
+    "subtypes": [ "GUNMOD" ],
     "id": "unbio_sword_weapon",
     "name": { "str": "repurposed monomolecular sword" },
     "category": "weapons",
@@ -75,7 +75,7 @@
   },
   {
     "type": "ITEM",
-	"subtypes": [ "ARTIFACT" ],
+    "subtypes": [ "ARTIFACT" ],
     "id": "flesh_knife",
     "category": "weapons",
     "weapon_category": [ "KNIVES", "BIONIC_WEAPONRY", "BIONIC_SWORDS" ],
@@ -113,7 +113,7 @@
   },
   {
     "type": "ITEM",
-	"subtypes": [ "ARTIFACT" ],
+    "subtypes": [ "ARTIFACT" ],
     "id": "flesh_blade",
     "category": "weapons",
     "name": { "str": "biological sword" },

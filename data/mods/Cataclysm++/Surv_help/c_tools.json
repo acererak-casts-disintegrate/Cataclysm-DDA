@@ -175,7 +175,7 @@
     "flags": [ "NO_UNLOAD", "NO_RELOAD" ],
     "material": [ "wood" ],
     "weight": "956 g",
-    "volume": "1 L",
+    "volume": "1250 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": 1,
     "tool_ammo": [ "gasoline" ],
@@ -205,7 +205,7 @@
     "material": [ "wood" ],
     "flags": [ "FIRE", "LIGHT_310", "CHARGEDIM", "FLAMING", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ],
     "weight": "942 g",
-    "volume": "1 L",
+    "volume": "1250 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": 1,
     "tool_ammo": [ "gasoline" ],
@@ -727,7 +727,7 @@
     "id": "recipe_surv",
     "name": { "str": "Survivor's Cookbook" },
     "description": "A notebook filed with ideas for lots of makeshift gadgets and gizmos.  Once the ideas of mad-man with too much free time, now invaluable knowledge.",
-    "weight": "1700 g",
+    "weight": "550 g",
     "volume": "500 ml",
     "price": "500 USD",
     "price_postapoc": "10 USD",
@@ -1131,12 +1131,12 @@
     "id": "c_mi_go_beam_broken",
     "symbol": ";",
     "color": "green",
-    "name": { "str": "biological lens" },
+    "name": { "str": "biological lens", "str_pl": "biological lenses" },
     "description": "A relatively small oblong object mostly made out of strange glassy resin.  One end has an opening covered by an almost perfectly clear surface of this material, while the other devolves into a tangled mess of severed tendons and tattered flesh.  A weapon of this sort might be useful, though the fleshy end of it seems ill-suited for human operation.",
     "category": "other",
     "material": [ "alien_resin", "flesh" ],
     "weight": "3 kg",
-    "volume": "2 L",
+    "volume": "2500 ml",
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
@@ -1149,7 +1149,7 @@
     "category": "other",
     "material": [ "alien_resin", "flesh" ],
     "weight": "7 kg",
-    "volume": "5 L",
+    "volume": "5500 ml",
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
@@ -1175,7 +1175,7 @@
     "category": "other",
     "material": [ "alien_resin", "flesh" ],
     "weight": "750 g",
-    "volume": "500 ml",
+    "volume": "600 ml",
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
@@ -1251,7 +1251,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "category": "tools",
-    "name": { "str": "survivor's crank rifle (charge mode)", "str_pl": "survivor's crank rifle (charge mode)" },
+    "name": { "str_sp": "survivor's crank rifle (charge mode)" },
     "description": "Further building on the developments that went into the UPS rifle, this integrates a hand crank and capacitors to charge a custom-made power cell.  Activate it to recharge a loaded capacitor bank, or to ready it for firing.",
     "color": "yellow",
     "symbol": "(",

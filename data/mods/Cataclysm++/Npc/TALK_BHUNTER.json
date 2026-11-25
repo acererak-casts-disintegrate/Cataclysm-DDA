@@ -115,7 +115,7 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "badge_bio_weapon",
-      "yes": "Well I'll be damned!  How do I know you didn't just find that somewhere?  Oh well, it doesn't really matter. The fact that you have it means you at least met one.  If you need anything, I can help you out.",
+      "yes": "Well I'll be damned!  How do I know you didn't just find that somewhere?  Oh well, it doesn't really matter.  The fact that you have it means you at least met one.  If you need anything, I can help you out.",
       "no": "Suuuure, right.  You don't even have the badge.  Try and be careful who you lie to next time."
     },
     "responses": [

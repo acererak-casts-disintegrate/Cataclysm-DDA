@@ -5,7 +5,7 @@
     "id": "gas_slime_scrap",
     "category": "other",
     "name": { "str": "gasoline synthesizing blob glob" },
-    "weight": "276 g",
+    "weight": "170 g",
     "color": "light_red",
     "addiction_type": "none",
     "use_action": "POISON",

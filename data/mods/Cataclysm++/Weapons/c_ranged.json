@@ -65,7 +65,7 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "skill": "pistol",
     "weight": "850 g",
-    "volume": "500 ml",
+    "volume": "600 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": -1,
     "ranged_damage": { "damage_type": "stab", "amount": 20, "armor_penetration": 2 },
@@ -73,7 +73,7 @@
     "dispersion": 250,
     "recoil": 25,
     "durability": 8,
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2-rd. burst", 2 ] ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2 rd.", 2 ] ],
     "valid_mod_locations": [ [ "accessories", 1 ], [ "sling", 1 ] ],
     "passive_effects": [
       {
@@ -101,7 +101,7 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "skill": "smg",
     "weight": "2850 g",
-    "volume": "1 L",
+    "volume": "2 L",
     "melee_damage": { "bash": 8 },
     "to_hit": -1,
     "ranged_damage": { "damage_type": "stab", "amount": 25, "armor_penetration": 5 },
@@ -144,7 +144,7 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "skill": "rifle",
     "weight": "3650 g",
-    "volume": "2 L",
+    "volume": "2750 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": -1,
     "ranged_damage": { "damage_type": "stab", "amount": 60, "armor_penetration": 10 },
@@ -189,7 +189,7 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "skill": "rifle",
     "weight": "4750 g",
-    "volume": "2 L",
+    "volume": "3500 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": -1,
     "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 5 },
@@ -244,7 +244,7 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_TURRET" ],
     "skill": "shotgun",
     "weight": "3850 g",
-    "volume": "2 L",
+    "volume": "2750 ml",
     "melee_damage": { "bash": 8 },
     "to_hit": -1,
     "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 2 },
@@ -253,7 +253,7 @@
     "dispersion": 300,
     "recoil": 300,
     "durability": 8,
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2-rd. burst", 2 ] ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2 rd.", 2 ] ],
     "valid_mod_locations": [ [ "accessories", 1 ], [ "sling", 1 ] ],
     "passive_effects": [
       {
@@ -1441,7 +1441,7 @@
     "dispersion": 300,
     "durability": 8,
     "built_in_mods": [ "rail_laser_sight" ],
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2-rd. burst", 2 ] ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2 rd.", 2 ] ],
     "reload": 250,
     "valid_mod_locations": [
       [ "accessories", 2 ],
@@ -1490,7 +1490,7 @@
     "dispersion": 300,
     "durability": 8,
     "built_in_mods": [ "rail_laser_sight" ],
-    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2-rd. burst", 2 ] ],
+    "modes": [ [ "DEFAULT", "semi", 1 ], [ "BURST", "2 rd.", 2 ] ],
     "energy_drain": "100 kJ",
     "valid_mod_locations": [
       [ "accessories", 2 ],
@@ -1631,7 +1631,16 @@
     "symbol": "(",
     "color": "light_gray",
     "ammo_effects": [ "FLARE" ],
-    "flags": [ "NEVER_JAMS", "FIRESTARTER", "BELTED", "PRIMITIVE_RANGED_WEAPON", "IS_ARMOR", "FIRE_TWOHAND", "STR_RELOAD", "NON_FOULING" ],
+    "flags": [
+      "NEVER_JAMS",
+      "FIRESTARTER",
+      "BELTED",
+      "PRIMITIVE_RANGED_WEAPON",
+      "IS_ARMOR",
+      "FIRE_TWOHAND",
+      "STR_RELOAD",
+      "NON_FOULING"
+    ],
     "faults": [  ],
     "use_action": { "type": "firestarter" },
     "pocket_data": [

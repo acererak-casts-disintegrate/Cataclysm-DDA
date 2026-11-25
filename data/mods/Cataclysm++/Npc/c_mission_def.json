@@ -6,10 +6,7 @@
     "description": "Explore a Bio-Weapon Lab that suffered a recent security breach.  Either find whoever accessed the location and speak with them, or retrieve the RFID access badge that was used and bring it back to Router.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
-      "or": [
-        { "u_has_item": "badge_bio_weapon_evy" },
-        { "compare_string": [ "yes", { "u_val": "c_searching_for_msci" } ] }
-      ]
+      "or": [ { "u_has_item": "badge_bio_weapon_evy" }, { "compare_string": [ "yes", { "u_val": "c_searching_for_msci" } ] } ]
     },
     "difficulty": 6,
     "value": 60000,
@@ -44,10 +41,7 @@
       "assign_mission_target": { "om_terrain": "Unknown_Lab_4", "om_special": "Unknown_Lab_s", "reveal_radius": 3, "z": 0 }
     },
     "end": {
-      "effect": [
-        { "u_add_var": "c_var_apophis_dead", "value": "yes" },
-        { "npc_add_var": "c_var_apophis_dead", "value": "yes" }
-      ]
+      "effect": [ { "u_add_var": "c_var_apophis_dead", "value": "yes" }, { "npc_add_var": "c_var_apophis_dead", "value": "yes" } ]
     },
     "count": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -74,12 +68,7 @@
     "destination": "makeshift_command_center_b",
     "start": {
       "effect": [ "follow", { "u_add_var": "c_searching_for_msci", "value": "yes" } ],
-      "assign_mission_target": {
-        "om_terrain": "makeshift_command_center_2",
-        "om_special": "makeshift_command_center_s",
-        "reveal_radius": 3,
-        "z": 0
-      }
+      "assign_mission_target": { "om_terrain": "makeshift_command_center_2", "om_special": "makeshift_command_center_s", "reveal_radius": 3, "z": 0 }
     },
     "end": { "effect": { "u_add_effect": "c_evy_assisted", "duration": "PERMANENT" } },
     "dialogue": {
