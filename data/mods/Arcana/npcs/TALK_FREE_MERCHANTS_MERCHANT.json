@@ -281,7 +281,7 @@
   {
     "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_MISSION_NODEAL",
     "type": "talk_topic",
-    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended. I'm already taking their offer just about at face value.",
+    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended.  I'm already taking their offer just about at face value.",
     "responses": [
       {
         "text": "Okay, here you go.",

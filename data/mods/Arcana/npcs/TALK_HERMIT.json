@@ -608,7 +608,7 @@
         "no": {
           "npc_has_effect": "hermit_has_salt",
           "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need essence to fuel it.  It must, specifically, be blood essence.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of blood shall fuel the ritual.",
-          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
+          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp.  We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
         }
       }
     },

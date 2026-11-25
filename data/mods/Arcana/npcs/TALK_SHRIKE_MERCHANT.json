@@ -67,7 +67,7 @@
   {
     "id": "TALK_SHRIKE_MERCHANT_GM_3_SECT",
     "type": "talk_topic",
-    "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout. That might give them pause long enough to catch them off guard.",
+    "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout.  That might give them pause long enough to catch them off guard.",
     "speaker_effect": { "effect": { "u_add_var": "horace_password_known", "value": "yes" } },
     "responses": [
       { "text": "Thanks.  One more thing before I go.", "topic": "TALK_SHRIKE_MERCHANT" },

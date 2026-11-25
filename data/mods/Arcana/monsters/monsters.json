@@ -73,7 +73,7 @@
   {
     "id": "mon_moruboru",
     "type": "MONSTER",
-    "name": { "str": "moruboru", "str_pl": "moruboru" },
+    "name": { "str_sp": "moruboru" },
     "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
     "default_faction": "moruboru",
     "categories": [ "CLASSIC" ],
@@ -435,7 +435,7 @@
     "id": "mon_vortex_summoned",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
-    "name": { "str": "summoned vortex" },
+    "name": { "str": "summoned vortex", "str_pl": "summoned vortices" },
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },

@@ -566,7 +566,7 @@
     "id": "arcana_item_hammerzeit_attack",
     "type": "SPELL",
     "name": { "str": "Hammer Secondary Effect" },
-    "description": "Mild damage and dazing for every vanilla monster with SUNDEATH/NIGHT_INVISIBILITY , and every summoned monster based off such creatures.",
+    "description": "Mild damage and dazing for every vanilla monster with SUNDEATH/NIGHT_INVISIBILITY, and every summoned monster based off such creatures.",
     "message": "",
     "effect": "attack",
     "shape": "blast",
