@@ -822,7 +822,7 @@ void mapgen_forest( mapgendata &dat )
                                                    static_cast<double>(
                                                            edge_length * ( ci - 1 ) ) / ( interediary_crit_point_count + 2 ), border_deviation ) ) ) ), 1,
                                                edge_length - 2 );
-            critical_point_depths[ci] = static_cast<int>( std::round( abs( normal_roll( average_depth,
+            critical_point_depths[ci] = static_cast<int>( std::round( std::abs( normal_roll( average_depth,
                                         depth_deviation ) ) ) );
             // Ensure order by swapping:
             if( critical_point_displacements[ci] < critical_point_displacements[ci - 1] ) {

@@ -269,7 +269,8 @@ ifneq (,$(findstring Windows_NT,$(OS)))
   endif
 else
   IS_WINDOWS_HOST = 0
-  OS = $(shell uname -o)
+  # OpenBSD's uname has no -o.
+  OS = $(shell uname -o 2>/dev/null || uname -s)
 endif
 
 ifneq ($(findstring Darwin,$(OS)),)

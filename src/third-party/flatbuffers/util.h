@@ -243,6 +243,13 @@ inline std::string IntToStringHex(int i, int xdigits) {
     #else
       #define __strtof_impl(s, pe) static_cast<float>(_strtod_l(s, pe, ClassicLocale::Get()))
     #endif
+  #elif defined(__OpenBSD__)
+    // OpenBSD has no strto*_l, but its C library ignores LC_NUMERIC (see
+    // setlocale(3)), so the plain functions are already locale independent.
+    #define __strtoull_impl(s, pe, b) strtoull(s, pe, b)
+    #define __strtoll_impl(s, pe, b) strtoll(s, pe, b)
+    #define __strtod_impl(s, pe) strtod(s, pe)
+    #define __strtof_impl(s, pe) strtof(s, pe)
   #else
     #define __strtoull_impl(s, pe, b) strtoull_l(s, pe, b, ClassicLocale::Get())
     #define __strtoll_impl(s, pe, b) strtoll_l(s, pe, b, ClassicLocale::Get())
