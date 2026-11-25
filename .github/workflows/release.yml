@@ -1,14 +1,20 @@
 name: "Release"
-# Builds Windows and Linux packages of this fork and publishes them as a GitHub release.
+# Builds Windows, Linux and macOS (tiles and terminal-only) packages of this fork and publishes them as a GitHub release.
 # Push a tag named 0.I-custom-* to release the tagged commit. Running the workflow by hand
 # also works once this file is on the repository's default branch; it tags the commit
-# it runs on as 0.I-custom-<timestamp>.
+# it runs on as 0.I-custom-<timestamp>. A manual run with "publish" unticked builds the
+# packages and keeps them as workflow artifacts, without tagging or releasing anything.
 concurrency: release
 on:
   push:
     tags:
       - '0.I-custom-*'
   workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Tag and publish a release (untick for a test build kept as workflow artifacts)'
+        type: boolean
+        default: true
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -23,6 +29,7 @@ jobs:
     outputs:
       timestamp: ${{ steps.vars.outputs.time }}
       tag_name: ${{ steps.vars.outputs.tag_name }}
+      publish: ${{ steps.vars.outputs.publish }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,6 +39,7 @@ jobs:
         env:
           REF_TYPE: ${{ github.ref_type }}
           REF_NAME: ${{ github.ref_name }}
+          PUBLISH_INPUT: ${{ inputs.publish }}
         run: |
           time=$(/bin/date -u "+%Y-%m-%d-%H%M")
           echo "time=$time" >> $GITHUB_OUTPUT
@@ -39,6 +47,11 @@ jobs:
             echo "tag_name=$REF_NAME" >> $GITHUB_OUTPUT
           else
             echo "tag_name=0.I-custom-$time" >> $GITHUB_OUTPUT
+          fi
+          if [ "$REF_TYPE" = tag ] || [ "$PUBLISH_INPUT" != false ]; then
+            echo "publish=true" >> $GITHUB_OUTPUT
+          else
+            echo "publish=false" >> $GITHUB_OUTPUT
           fi
       - name: Write release notes
         env:
@@ -58,6 +71,7 @@ jobs:
             fi
           } > notes.txt
       - name: Create release
+        if: steps.vars.outputs.publish == 'true'
         env:
           TAG: ${{ steps.vars.outputs.tag_name }}
         run: |
@@ -88,6 +102,18 @@ jobs:
             tiles: 1
             sound: 1
             libbacktrace: 1
+          - name: macOS Curses Universal (x64 and arm64)
+            artifact: osx-terminal-only-universal
+            os: macos-15
+            ext: dmg
+            tiles: 0
+            sound: 0
+          - name: macOS Tiles Sounds Universal (x64 and arm64)
+            artifact: osx-with-graphics-and-sounds-universal
+            os: macos-15
+            ext: dmg
+            tiles: 1
+            sound: 1
     name: ${{ matrix.name }}
     runs-on: ${{ matrix.os }}
     permissions:
@@ -97,10 +123,15 @@ jobs:
       TAG: ${{ needs.release.outputs.tag_name }}
       PACKAGE: cdda-${{ needs.release.outputs.tag_name }}-${{ matrix.artifact }}.${{ matrix.ext }}
     steps:
+      - name: Maximize build space (mac)
+        if: runner.os == 'macOS'
+        run: |
+          sudo rm -rf "$ANDROID_HOME"
       - uses: actions/checkout@v4
         with:
           # Check out the release tag itself, so the build's version string names it.
-          ref: ${{ needs.release.outputs.tag_name }}
+          # A test build has no tag and builds the commit the workflow ran on.
+          ref: ${{ needs.release.outputs.publish == 'true' && needs.release.outputs.tag_name || github.sha }}
       - name: Get soundpack
         if: matrix.sound == 1
         shell: bash
@@ -135,6 +166,27 @@ jobs:
           install: >-
             gettext
             make
+      - name: Install runtime dependencies (mac)
+        if: runner.os == 'macOS'
+        uses: BrettDong/setup-sdl2-frameworks@v2
+        with:
+          sdl2: 2.30.11
+          sdl2-ttf: 2.24.0
+          sdl2-image: 2.8.4
+          sdl2-mixer: 2.8.0
+      - name: Install build dependencies (mac)
+        if: runner.os == 'macOS'
+        run: |
+          HOMEBREW_NO_AUTO_UPDATE=yes HOMEBREW_NO_INSTALL_CLEANUP=yes brew install gettext ccache dylibbundler
+          pip3 install --break-system-packages dmgbuild biplist
+      - name: Install MacPorts (mac)
+        # Only the tiles build needs a universal FreeType; curses uses the system ncurses.
+        if: runner.os == 'macOS' && matrix.tiles == 1
+        uses: melusina-org/setup-macports@v1
+      - name: Install MacPorts packages (mac)
+        if: runner.os == 'macOS' && matrix.tiles == 1
+        run: |
+          sudo port install freetype +universal pkgconfig +universal
       - name: Install dependencies (Linux)
         if: runner.os == 'Linux'
         run: |
@@ -191,7 +243,20 @@ jobs:
           msbuild -m -p:Configuration=Release -p:Platform=${{ matrix.arch }} "-target:Cataclysm-vcpkg-static;JsonFormatter-vcpkg-static;zzip" msvc-full-features\Cataclysm-vcpkg-static.sln
           .\build-scripts\windist.ps1
           mv cataclysmdda-0.I.zip "$env:PACKAGE"
+      - name: Build CDDA (mac)
+        if: runner.os == 'macOS'
+        run: |
+          make -j$(sysctl -n hw.ncpu) TILES=${{ matrix.tiles }} SOUND=${{ matrix.sound }} RELEASE=1 LOCALIZE=1 LANGUAGES=all BACKTRACE=0 PCH=0 USE_HOME_DIR=1 FRAMEWORK=1 UNIVERSAL_BINARY=1 dmgdist
+          mv Cataclysm.dmg "$PACKAGE"
       - name: Upload package
+        if: needs.release.outputs.publish == 'true'
         shell: bash
         run: |
           gh release upload "$TAG" "$PACKAGE"
+      - name: Keep test build as workflow artifact
+        if: needs.release.outputs.publish != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PACKAGE }}
+          path: ${{ env.PACKAGE }}
+          retention-days: 7
