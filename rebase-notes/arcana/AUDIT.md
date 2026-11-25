@@ -17,12 +17,11 @@ ordering (`--rng-seed time --order lex`, split into `"[slow] ~starting_items"` a
   - **B. Standing-Storm's continuation**, branch `0.J-Stable` at `1024574` (23 October 2026):
     "Arcana: Strange Aeons". This is a maintained personal rebalance and redesign; see Decision 1.
   - Erin105's `0.I` branch is an older, trimmed copy of A and is not recommended (see Sources).
-- **Recommendation: A.** It needs only mechanical 0.J→0.I reversions and loses no features.
+- **Decision (owner, 25 November 2026): A.** It needs only mechanical 0.J→0.I reversions and
+  loses no features. Standing-Storm's version is not pursued for now.
   After the planned fixes, every known error and test failure has a concrete fix (listed below):
   - Before fixes it loads with 131 text lints, 1 ignored field, and no missing IDs.
   - The full suite fails 7 test cases, each with an identified cause and fix.
-  - B, by contrast, needs reversions of 0.J engine features, and some of its behaviour would be
-    lost or need engine backports.
 - **Size of A:** about the same as Cataclysm++. The work is six commits (C1–C6), almost all
   JSON. The only non-mod files touched are test data, CI and the README.
 
@@ -46,41 +45,14 @@ ordering (`--rng-seed time --order lex`, split into `"[slow] ~starting_items"` a
   Since then Standing-Storm has made 599 commits on `0.J-Stable` and chaosvolt 114 on `master`,
   most of them in `Arcana_BN/`.
 
-## Decision 1: which Arcana
+## Decision 1: which Arcana (decided)
 
-**A. chaosvolt's original (recommended).**
+The owner chose **A, chaosvolt's original Arcana and Magic Items**. It is the mod as its author
+designed it, loads on 0.I after mechanical reversions, loses no behaviour, and is frozen
+upstream, so future syncs cost nothing. The fork maintains it from here.
 
-- For:
-  - It is the mod as its author designed it.
-  - It loads on 0.I after small, purely mechanical reversions.
-  - It loses no behaviour.
-  - Upstream is frozen, so future syncs cost nothing.
-- Against:
-  - No upstream bug fixes from here on; the fork maintains it.
-  - Some of Standing-Storm's 599 commits are bug fixes that A lacks. They are mixed in with the
-    rebalance and not separable without review.
-
-**B. Standing-Storm's "Strange Aeons".** Its `Adjustments.md` lists the design changes:
-
-- an Incantation skill for casting;
-- spell failure chances;
-- pattern scrolls that can fail to teach;
-- essences that can no longer be converted into one another (renamed Essentia, Vitae,
-  Residuum, plus a new Gramina);
-- blood magic learnable by anyone, with sacrifice;
-- summoning as its own magic type;
-- harder healing and fewer book drops;
-- magitech moved out of the base mod (it needs Magiclysm or Bionic Professions);
-- briar witchery, a new magic type marked "heavily WIP".
-
-For and against B:
-
-- For: actively maintained, more content.
-- Against:
-  - It is a different game from A.
-  - It tracks 0.J, and `master` already uses post-0.J mechanics, so every sync repeats the
-    reversions.
-  - Several features need engine backports or are lost on 0.I (see Option B costs).
+Standing-Storm's "Arcana: Strange Aeons" is a maintained rebalance and redesign of Arcana that
+tracks 0.J. It is not pursued for now; see "Standing-Storm (not pursued)".
 
 ## Plan for option A
 
@@ -287,59 +259,38 @@ seen in Standing-Storm's copy.
 - **Tilesets:** they target `UltimateCataclysm` and `MshockXottoplus`, both shipped in `gfx/`,
   plus UndeadPeople, which simply goes unused here.
 
-## Option B costs (Standing-Storm `0.J-Stable`)
+## Standing-Storm (not pursued)
 
-Measured on a working copy, `standing_storm_0J_reversions_incl_audit_stubs.patch` (steps in
-`standing_storm_0J_steps.txt`).
+Measured before the decision, on a working copy of `0.J-Stable` at `1024574`. It needed:
 
-**Reversions (R1–R6):**
+- six reversion steps, in `standing_storm_0J_steps.txt` and
+  `standing_storm_0J_reversions_incl_audit_stubs.patch`;
+- three choices between dropping and backporting 0.J features:
+  - the `BLEEDING_RATE` enchantment value;
+  - briar witchery's vitamin-powered `energy_source`;
+  - the `forest` relic recharge type.
 
-- R1: the same mechanical set as A, but larger. 28 NPC `mission` names become 0.I enum
-  numbers: `GUARD` 7, `SHOPKEEP` 3, `GUARD_PATROL` 8.
-- R2: rewrite `region_overlay.json` from 0.J's `region_settings_city`, `forest_biome_mapgen`
-  and eight `map_extra_collection` extensions into one 0.I `region_overlay`.
-- R3: `tools_robotics` is a `distribution` in 0.I.
-- R4: 0.J's string `limb_types` becomes `limb_type` on four draconic body parts.
-- R5: drop three `effect_migration` entries. Rewrite the Innawood interaction's region file.
-- R6: remove 40 `travel_cost_type` values (`basement`, `roof`, `structure`) that 0.I lacks.
+After those it still lacked:
 
-**Decisions B would need:**
+- 0.J spell conditions and other fields;
+- five core flags;
+- a weak-point set;
+- the cabin cellar mapgen;
+- one item group.
 
-- `forest` relic recharge on two items: `periodic`, or backport 0.J's recharge types (R7 in
-  the working copy used `periodic`).
-- `BLEEDING_RATE` (5 uses): drop it, or backport the 0.J enchantment value (an enum entry and
-  two call sites).
-- Briar witchery's vitamin-powered `energy_source`: backport 0.J's object form of
-  `energy_source`, or rework it (the working copy stubbed it as `NONE`).
-
-**What 0.I would still ignore or miss after that:**
-
-- spell `caster_condition` and `target_condition`: 8, so the casting restrictions would vanish;
-- `similar_bodypart`: 6;
-- `requires_any_traits`, `provided_qualities` and `stamina`: 1 each;
-- `chargen_allow_npc`: 2;
-- cosmetic fields: `name` ×20, `light_color` ×4, `sun_sym` ×7;
-- missing core IDs:
-  - monster flags `LOCKS_ON`, `INFRARED_VISION`, `UNBREAKABLE_MORALE` and `PLANT_BLOOD`;
-  - item flag `LOCATION_PRECISE_CLOSEST_CITY`;
-  - weak-point set `wps_eyes`;
-  - nested mapgen `cabin_cellar_stairs` and palette `cabin_cellar` (used by `cabin_3` to
-    `cabin_6`);
-  - item group `esoteric_books`;
-- 101 lints.
-
-**Full suite:** see "Option B test results" below.
+Its slow test half also failed overmap coverage for 51 terrains, including naturally spawning
+locations. The other half was not completed. These files are kept in case the choice is
+revisited.
 
 ## Decisions
 
 | # | Decision | Recommendation |
 |---|---|---|
-| 1 | Which Arcana | A, chaosvolt `33bfbbe` |
+| 1 | Which Arcana | **Decided: A**, chaosvolt `33bfbbe` |
 | 2 | Generic Guns: retype or migrate the two shells | Retype (draft included). Migrating, as Cataclysm++ did for its cartridges, would delete the blessed shells and their recipes under Generic Guns. |
 | 3 | Restore the `bionics_op*` CBM extensions | Yes, for parity with Cataclysm++ |
 | 4 | Drop the dead `strong_portal_storm` scenario extension | Yes |
 | 5 | CI job for Arcana | Yes, as for Cataclysm++ |
-| 6 | Only if B: `BLEEDING_RATE`, briar witchery energy, `forest` recharge | Decide each between dropping and backporting |
 
 ## Files in this folder
 
@@ -351,7 +302,7 @@ Measured on a working copy, `standing_storm_0J_reversions_incl_audit_stubs.patch
 - `legacy_to_hit_ids.txt`: 41 IDs.
 - `should_not_spawn_oters.txt`: 47 terrains.
 - `standing_storm_0J_reversions_incl_audit_stubs.patch`, `standing_storm_0J_steps.txt`: the
-  option B working copy.
+  Standing-Storm working copy (not pursued).
 - `tools/`: `arc_revert.py` (mechanical reversions), `lintfix.py` (applies lint fixes from a
   `cata_test` log), `arc_strip.py` (audit-only enchantment stripping), and `aload.sh`,
   `awork.sh` and `arc_suite.sh` (trial-load and suite helpers; set `S` to the scratch
