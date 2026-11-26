@@ -1,0 +1,56 @@
+# American -> British vocabulary, one per line: american<TAB>british.
+# Whole words or phrases; longer phrases are applied first. Matching ignores case
+# and keeps the original's capitalisation. Only swaps whose British word has no
+# other meaning in the game are listed (no torch, vest, jumper, tin, rubber, flat,
+# pavement, silencer, paraffin, chemist, spirits, biscuit, boot or bonnet).
+pants	trousers
+suspenders	braces
+fanny pack	bum bag
+fanny packs	bum bags
+French fries	chips
+fries	chips
+potato chips	crisps
+gasoline	petrol
+gas station	petrol station
+gas stations	petrol stations
+gas can	petrol can
+gas cans	petrol cans
+gas pump	petrol pump
+gas pumps	petrol pumps
+parking lot	car park
+parking lots	car parks
+windshield	windscreen
+windshields	windscreens
+jumper cable	jump lead
+jumper cables	jump leads
+shopping cart	shopping trolley
+shopping carts	shopping trolleys
+zucchini	courgette
+zucchinis	courgettes
+eggplant	aubergine
+eggplants	aubergines
+cilantro	coriander
+canned	tinned
+diaper	nappy
+diapers	nappies
+stroller	pushchair
+strollers	pushchairs
+mailbox	postbox
+mailboxes	postboxes
+dumpster	skip
+dumpsters	skips
+sneakers	trainers
+license plate number	registration number
+license plate numbers	registration numbers
+license plate	number plate
+license plates	number plates
+# Sense-dependent spellings, as phrases
+to practice	to practise
+you practice	you practise
+get to practice	get to practise
+multi-story	multi-storey
+single-story	single-storey
+one-story	one-storey
+two-story	two-storey
+three-story	three-storey
+stories tall	storeys tall

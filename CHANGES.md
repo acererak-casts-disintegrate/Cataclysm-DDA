@@ -27,6 +27,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
 * **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are core professions; old worlds drop the removed mod on load.
 * **Explicit lengths** for long items that lacked them.
+* **British English.** A British English language option, generated from the game's text by [`lang/en_GB/`](lang/en_GB/README.md): common *-ise* spelling (armour, colour, centre, grey) and a short list of unambiguous vocabulary (trousers, petrol, car park, tinned). Words that would clash with another item stay American, so a flashlight is not a torch. "English" is now listed as "American English". With the language set to "System language", English set to the United Kingdom, Ireland, Australia or New Zealand picks British English.
 
 ## Aftershock
 
@@ -61,7 +62,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 
 * **Marked as a fork in game.** The main menu shows the build's version, with the release tag or commit, and says it is an unofficial fork of 0.I-1 in place of 0.I's fixed "Stable Release" line.
 * **Prebuilt packages.** Each release has Windows (graphics, and graphics with sound), Linux (graphics with sound) and universal macOS (graphics with sound, and terminal-only) packages, built by [`.github/workflows/release.yml`](.github/workflows/release.yml). The sound builds bundle [CC-Sounds](https://github.com/Fris0uman/CDDA-Soundpacks) by Fris0uman and contributors, with music by CO.AG used with their permission. The macOS packages are not signed by Apple; the README explains how to open them.
-* **Continuous integration.** Every push to `0.I-custom` builds the game on Linux and runs the full test suite for the core game and, separately, for Magiclysm, Aftershock, Xedra Evolved, Mind Over Matter, Bionic Professions, Cataclysm++ and Arcana, then checks that every mod loads, in groups of mods that work together. It also builds and tests on Windows (MSVC) and, in virtual machines, on FreeBSD, OpenBSD and NetBSD. A weekly job tries DragonFly BSD, MidnightBSD, Haiku and OmniOS.
+* **Continuous integration.** Every push to `0.I-custom` builds the game on Linux and runs the full test suite for the core game and, separately, for Magiclysm, Aftershock, Xedra Evolved, Mind Over Matter, Bionic Professions, Cataclysm++ and Arcana, then checks that every mod loads, in groups of mods that work together. It also builds and tests on Windows (MSVC) and, in virtual machines, on FreeBSD, OpenBSD and NetBSD. A weekly job tries DragonFly BSD, MidnightBSD, Haiku and OmniOS. A separate check warns when the British English catalogue no longer matches the game's text.
 * **Portability fixes.** Making the code build and pass its tests on those systems fixed bugs that affect every platform:
   * Several places passed bytes of UTF-8 text straight to `isspace`, `isdigit` and similar functions, which is undefined behaviour for non-ASCII characters (and aborted on NetBSD). They now convert to `unsigned char` first or check the range.
   * Unqualified `erf`, `erfc`, `sqrt` and `abs` calls could pick C's `double` or `int` versions instead of C++'s overloads; they now call the `std::` ones.

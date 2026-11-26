@@ -14,6 +14,9 @@ fi
 for f in lang/po/*.po
 do
     n=`basename ${f} .po`
+    # en_GB lists only the strings British English spells differently, so a
+    # "translated" percentage would mislead.
+    [ "${n}" = en_GB ] && continue
     o="lang/po/${n}.po"
     echo "getting stats for ${n}"
     num_translated=$( \

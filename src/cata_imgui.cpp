@@ -300,6 +300,8 @@ static void AddGlyphRangesFromCLDR( ImFontGlyphRangesBuilder *b, const std::stri
     // NOLINTBEGIN(bugprone-branch-clone)
     if( lang == "en" ) {
         AddGlyphRangesFromCLDRForEN( b );
+    } else if( lang == "en_GB" ) {
+        AddGlyphRangesFromCLDRForEN( b );
     } else if( lang == "ar" ) {
         AddGlyphRangesFromCLDRForAR( b );
     } else if( lang == "cs" ) {

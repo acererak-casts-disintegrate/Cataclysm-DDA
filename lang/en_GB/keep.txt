@@ -1,0 +1,28 @@
+# Text that the conversion leaves exactly as it is: one phrase per line, matched
+# whole and ignoring case, with its plural and possessive. Use it for American proper nouns, for idioms that
+# only work in American English, and for words whose other sense keeps the
+# American form (a pH meter, an EMP blast that fries a circuit).
+Department of Defense
+Gray Moose
+James Gray
+lux meter
+pH meter
+health meter
+encumbrance meter
+this meter
+panel fries
+Centers for Disease Control
+Defense Advanced Research Projects
+Bar Harbor
+Enrichment Center
+Springfield Armory
+Rock Island Armory
+Gibson Armory
+Northrop Armory
+Wraitheon Armory
+blast fries
+wheezing pants
+hot pants
+freedom fries
+dumpster fire
+canned intro

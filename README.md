@@ -26,7 +26,7 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
 
 This fork is based on the 0.I stable release (0.I-1) and carries forward the changes it made to 0.H. **[CHANGES.md](CHANGES.md) lists them in full.** In short:
 
-* **Core game:** classic bionic acquisition (loot and bionic zombies, not the Exodii), the Exodii reduced to a rare scavenger faction, no natural portal storms, skill rust off by default, and restored Rivtech, pneumatic, classic sci-fi, power armour and atomic-cell content.
+* **Core game:** classic bionic acquisition (loot and bionic zombies, not the Exodii), the Exodii reduced to a rare scavenger faction, no natural portal storms, skill rust off by default, restored Rivtech, pneumatic, classic sci-fi, power armour and atomic-cell content, and a British English language option.
 * **Aftershock:** this fork's own version, set on Earth, kept active and overriding much less of the core game.
 * **Cataclysm++** and **Arcana and Magic Items:** included as in-repo mods, converted to 0.I and fitted to this fork.
 * **Other in-repo mods:** Exodii removal and data fixes for Magiclysm, Mind Over Matter, Xedra Evolved and others.

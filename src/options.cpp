@@ -1341,11 +1341,14 @@ std::vector<options_manager::id_and_option> options_manager::get_lang_options()
         { "", to_translation( "System language" ) },
     };
 
-    constexpr std::array<std::pair<const char *, const char *>, 26> language_names = {{
+    constexpr std::array<std::pair<const char *, const char *>, 27> language_names = {{
             // Note: language names are in their own language and are *not* translated at all.
             // Note: Somewhere in Github PR was better link to msdn.microsoft.com with language names.
             // http://en.wikipedia.org/wiki/List_of_language_names
-            { "en", R"(English)" },
+            // "en" is the game's own text, which is American English; "en_GB" is
+            // generated from it by lang/en_GB/make_en_GB_po.py.
+            { "en", R"(American English)" },
+            { "en_GB", R"(British English)" },
             { "ar", R"(العربية)" },
             { "cs", R"(Český Jazyk)" },
             { "da", R"(Dansk)" },
@@ -4182,6 +4185,12 @@ void options_manager::update_global_locale()
     try {
         if( lang == "en" ) {
             std::locale::global( std::locale( "en_US.UTF-8" ) );
+        } else if( lang == "en_GB" ) {
+            try {
+                std::locale::global( std::locale( "en_GB.UTF-8" ) );
+            } catch( std::runtime_error & ) {
+                std::locale::global( std::locale( "en_US.UTF-8" ) );
+            }
         } else if( lang == "ar" ) {
             std::locale::global( std::locale( "ar_SA.UTF-8" ) );
         } else if( lang == "cs" ) {

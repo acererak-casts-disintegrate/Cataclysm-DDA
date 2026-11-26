@@ -1,5 +1,8 @@
 #include <cstring>
+#include <initializer_list>
 #include <set>
+#include <string>
+#include <string_view>
 #include <vector>
 
 #if defined(_WIN32)
@@ -25,19 +28,31 @@
 #ifndef _WIN32
 namespace
 {
-// Try to match language code to a supported game language by prefix
-// For example, "fr_CA.UTF-8" -> "fr"
+// Try to match language code to a supported game language by its longest prefix
+// For example, "fr_CA.UTF-8" -> "fr", "en_GB.UTF-8" -> "en_GB" rather than "en"
+// English as written in Australia, Ireland and New Zealand uses British English.
 // Returns std::nullopt if the language is not supported by the game
 std::optional<std::string> matchGameLanguage( std::string_view lang )
 {
-    const std::vector<options_manager::id_and_option> available_languages =
-        get_options().get_option( "USE_LANG" ).getItems();
-    for( const options_manager::id_and_option &available_language : available_languages ) {
-        if( !available_language.first.empty() && string_starts_with( lang, available_language.first ) ) {
-            return available_language.first;
+    std::string code( lang );
+    for( const std::string_view region : {
+             "en_AU", "en_IE", "en_NZ"
+         } ) {
+        if( string_starts_with( code, region ) ) {
+            code = "en_GB" + code.substr( region.size() );
+            break;
         }
     }
-    return std::nullopt;
+    const std::vector<options_manager::id_and_option> available_languages =
+        get_options().get_option( "USE_LANG" ).getItems();
+    std::optional<std::string> best;
+    for( const options_manager::id_and_option &available_language : available_languages ) {
+        const std::string &id = available_language.first;
+        if( !id.empty() && string_starts_with( code, id ) && ( !best || id.size() > best->size() ) ) {
+            best = id;
+        }
+    }
+    return best;
 }
 } // namespace
 #endif
@@ -54,7 +69,9 @@ std::optional<std::string> Language()
      *  https://msdn.microsoft.com/en-us/library/cc233965.aspx
      */
     static const std::map<std::string, std::set<int>> lang_lcid {
-        {"en", { 1033, 2057, 3081, 4105, 5129, 6153, 7177, 8201, 9225, 10249, 11273 }},
+        {"en", { 1033, 4105, 7177, 8201, 9225, 10249, 11273 }},
+        // United Kingdom, Australia, New Zealand, Ireland
+        {"en_GB", { 2057, 3081, 5129, 6153 }},
         {"ar", {{ 1025, 2049, 3073, 4097, 5121, 6145, 7169, 8193, 9217, 10241, 11265, 12289, 13313, 14337, 15361, 16385 }} },
         {"cs", { 1029 } },
         {"da", { 1030 } },

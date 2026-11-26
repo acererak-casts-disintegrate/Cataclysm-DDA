@@ -1,0 +1,55 @@
+name: British English
+# Checks that lang/po/en_GB.po, the British English catalogue, matches the
+# game's current text. A stale catalogue only leaves new or changed strings in
+# American English, so this warns instead of failing. To fix it, run
+# lang/update_en_GB.sh and commit lang/po/en_GB.po; the regenerated file is
+# also kept as this run's artifact. See lang/en_GB/README.md.
+on:
+  push:
+    branches:
+      - 0.I-custom
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - 'lang/en_GB/**'
+      - 'lang/po/en_GB.po'
+      - 'lang/update_en_GB.sh'
+      - 'lang/update_pot.sh'
+      - 'lang/extract_json_strings.py'
+      - 'lang/string_extractor/**'
+      - '.github/workflows/en_GB.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: en_GB-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check en_GB.po is up to date
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install gettext and polib
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gettext
+          pip install polib==1.2.0
+      - name: Build the translation template
+        run: lang/update_pot.sh
+      - name: Compare en_GB.po with the game's text
+        run: |
+          if lang/en_GB/make_en_GB_po.py --check; then
+            exit 0
+          fi
+          echo "::warning file=lang/po/en_GB.po::lang/po/en_GB.po is out of date with the game's text, so new or changed strings show in American English. Run lang/update_en_GB.sh and commit lang/po/en_GB.po, or take it from this run's en_GB.po artifact."
+          lang/en_GB/make_en_GB_po.py
+      - name: Keep the regenerated catalogue
+        uses: actions/upload-artifact@v4
+        with:
+          name: en_GB.po
+          path: lang/po/en_GB.po
+          retention-days: 7
