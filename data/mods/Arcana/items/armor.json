@@ -93,7 +93,9 @@
     "name": { "str": "horned halo" },
     "description": "A strange radiance permeating your body, granting you a life-draining touch.",
     "color": "dark_gray",
-    "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ],
+    "passive_effects": [
+      { "has": "WORN", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life", "hit_self": true } ] }
+    ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },

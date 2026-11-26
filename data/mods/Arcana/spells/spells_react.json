@@ -105,8 +105,7 @@
     "max_duration": 2000,
     "effect": "attack",
     "shape": "blast",
-    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
-    "extra_effects": [ { "id": "arcana_react_drain_life_improved_2", "hit_self": true } ]
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ]
   },
   {
     "id": "arcana_react_drain_life_improved_2",
@@ -196,8 +195,7 @@
     "max_duration": 300,
     "effect": "attack",
     "shape": "blast",
-    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
-    "extra_effects": [ { "id": "arcana_react_sanguine_staff_drain_2", "hit_self": true } ]
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ]
   },
   {
     "id": "arcana_react_sanguine_staff_drain_2",
