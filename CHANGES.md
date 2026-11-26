@@ -17,6 +17,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **No natural portal storms.** The storm-driven scenarios and the Hub 01 contract that needed a storm are removed. Storms can still be started from the debug weather menu or by mod content that causes them on purpose.
 * **Skill rust off by default.** The world option removed after 0.G (full, capped or off) is back, defaulting to off.
 * **Hidden world options shown.** Twelve world-generation options that 0.I hides from the options menu are visible and documented.
+* **Brand names on by default.** The "Show drug brand names" and "Show gun brand names" options default to on, so items show names such as "Adderall" and "m4a1" rather than "prescription stimulant" and "NATO assault rifle". Existing option settings are kept.
 * **Rivtech content restored.** Reverts upstream's removal of the RM120c, RM20, RM228, RM298, RM614, RM88, RM216 SPIW and RM232 IDW, the 5x50mm and 20x66mm ammunition and magazines, the 8x40mm drums and the 8mm variants, and its Rivtech gun nerfs.
 * **Pneumatic weapons restored.** The pneumatic assault rifle, bolt driver and shotgun, with shotcanister ammunition.
 * **Classic sci-fi content restored.** Robots (chicken walker and tank drone with JSON attacks in place of their removed hardcoded ones, copbot, riotbot, eyebot, laser turret, mininuke hack), the railgun, shock absorber and fusion blaster CBMs, the laser cannon, heavy rail rifle, mininuke launcher, plasma gun and rifle, RM99 revolver, advanced UPS, solar gear, matching vehicle turrets and the atomic sports car with its minireactor.
@@ -54,7 +55,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.
 * **Xedra Evolved.** Its roadside Jotunn encounter spawns.
 * **Data fixes for Xedra Evolved and Mind Over Matter.** Faction relations are made mutual, Xedra's lineage traits are non-purifiable as upstream later made them, Mind Over Matter's concentration and noetic traits can be purified, the core lab terrains Mind Over Matter disables are flagged as such, and impossible item weights and volumes are corrected.
-* **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
+* **Portal Storms Ignore NPCs** (`personal_portal_storms`) is marked obsolete and no longer in the default mod list for new worlds: it only changes how storm monsters treat NPCs, and natural storms no longer happen.
 
 ## Builds, platforms and code
 
