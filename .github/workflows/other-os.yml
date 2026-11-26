@@ -56,6 +56,13 @@ jobs:
             setup: |
               export PATH=/opt/gcc-14/bin:$PATH
               export PKG_CONFIG_PATH=/usr/lib/amd64/pkgconfig
+            # The tests corrupt the heap here (crashes in malloc and in libc's lfree,
+            # around math_parser_parsing). libumem's debugging allocator stops at the
+            # bad free or overwrite instead, so the backtrace shows the culprit.
+            test_setup: |
+              export LD_PRELOAD_64=libumem.so.1
+              export UMEM_DEBUG=default
+              export UMEM_LOGGING=transaction
     uses: ./.github/workflows/vm-build-test.yml
     with:
       os: ${{ matrix.os }}
@@ -64,3 +71,4 @@ jobs:
       make: ${{ matrix.make || 'gmake' }}
       make_flags: ${{ matrix.make_flags }}
       setup: ${{ matrix.setup || '' }}
+      test_setup: ${{ matrix.test_setup || '' }}

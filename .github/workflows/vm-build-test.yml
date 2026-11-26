@@ -33,6 +33,11 @@ on:
         required: false
         type: string
         default: ''
+      test_setup:
+        description: 'Shell commands run only before testing, e.g. a debugging allocator'
+        required: false
+        type: string
+        default: ''
 
 jobs:
   build-test:
@@ -98,6 +103,7 @@ jobs:
             done
           fi
           echo "LC_CTYPE=$LC_CTYPE"
+          ${{ inputs.test_setup }}
           opts=(--min-duration 20 --rng-seed time --order lex --error-format=github-action)
           # The same two halves the Linux CI runs, in parallel, each line prefixed with its half.
           run_half() {
@@ -128,6 +134,10 @@ jobs:
             echo "::group::Backtrace from $c"
             if command -v pstack >/dev/null 2>&1; then
               pstack "$c" 2>&1 | demangle | head -n 300
+              # With libumem's debugging (see other-os.yml), say what it caught.
+              if command -v mdb >/dev/null 2>&1; then
+                echo '::umem_status' | mdb tests/cata_test "$c" 2>&1 | demangle | head -n 60
+              fi
             elif command -v gdb >/dev/null 2>&1; then
               gdb -batch -ex 'thread apply all bt 40' tests/cata_test "$c" 2>&1 | head -n 400
             elif command -v lldb >/dev/null 2>&1; then
