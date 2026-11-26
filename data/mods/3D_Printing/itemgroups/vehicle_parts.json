@@ -3,6 +3,6 @@
     "type": "item_group",
     "id": "ig_vp_carbon",
     "subtype": "collection",
-    "entries": [ { "item": "carbon_fiber_filament", "count": [ 20, 40 ] } ]
+    "entries": [ { "item": "carbon_fiber_filament", "charges": [ 20, 40 ] } ]
   }
 ]

@@ -5,7 +5,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "plastic_chunk", "count": [ 5, 10 ] },
-      { "item": "carbon_fiber_filament", "prob": 50, "count": [ 50, 100 ] },
+      { "item": "carbon_fiber_filament", "prob": 50, "charges": [ 50, 100 ] },
       {
         "distribution": [ { "item": "rigid_plastic_sheet", "prob": 50 }, { "item": "plastic_sheet", "prob": 50 } ],
         "prob": 50
@@ -19,7 +19,7 @@
     "entries": [
       { "item": "3d_printer_basic", "prob": 5 },
       { "item": "3d_printer_advanced", "prob": 5 },
-      { "item": "carbon_fiber_filament", "prob": 90, "count": [ 25, 50 ] }
+      { "item": "carbon_fiber_filament", "prob": 90, "charges": [ 25, 50 ] }
     ]
   },
   {
@@ -69,21 +69,21 @@
     "copy-from": "science",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "charges": [ 25, 50 ] } ] }
   },
   {
     "id": "chem_school",
     "copy-from": "chem_school",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "charges": [ 25, 50 ] } ] }
   },
   {
     "id": "supplies_reagents_lab",
     "copy-from": "supplies_reagents_lab",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "charges": [ 25, 50 ] } ] }
   },
   {
     "id": "robofac_basic_trade",

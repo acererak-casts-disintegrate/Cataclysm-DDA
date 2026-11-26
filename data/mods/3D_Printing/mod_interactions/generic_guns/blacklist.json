@@ -1,0 +1,8 @@
+[
+  {
+    "type": "ITEM_BLACKLIST",
+    "//": "Generic Guns removes the AR-15 family and blacklists their receiver mods, so this one goes too.",
+    "whitelist": false,
+    "items": [ "carbon_receiver" ]
+  }
+]

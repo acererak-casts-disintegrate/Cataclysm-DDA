@@ -39,8 +39,9 @@ except where listed below; the JSON is written for this game's 0.I format, not c
 * **Mass:** every printed recipe uses at least as much material as the item weighs, checked by
   `printed_items_conserve_mass` in `tests/printing_3d_test.cpp`.
 * **Equivalents:** the katar and jamadhar become the punch dagger and knuckle katar.
-* **Generic Guns:** the carbon guns take generic ammunition and magazines, and the printed magazine
-  recipes print Generic Guns' magazines.
+* **Generic Guns:** the carbon guns take generic ammunition and magazines, the printed magazine
+  recipes print Generic Guns' magazines, and the carbon fiber lower receiver is blacklisted, as
+  Generic Guns does with the core AR-15 receiver mods.
 
 ## Not ported
 

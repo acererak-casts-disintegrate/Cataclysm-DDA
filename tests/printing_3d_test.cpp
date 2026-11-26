@@ -1,5 +1,7 @@
 #include <algorithm>
 #include <climits>
+#include <map>
+#include <set>
 #include <string>
 #include <vector>
 
@@ -9,8 +11,13 @@
 #include "cata_catch.h"
 #include "coordinates.h"
 #include "inventory.h"
+#include "item_factory.h"
+#include "item_group.h"
+#include "item_location.h"
 #include "item.h"
 #include "itype.h"
+#include "iuse_actor.h"
+#include "map_selector.h"
 #include "map.h"
 #include "map_helpers.h"
 #include "material.h"
@@ -22,6 +29,7 @@
 #include "requirements.h"
 #include "type_id.h"
 #include "units.h"
+#include "veh_type.h"
 #include "vehicle.h"
 #include "vpart_position.h"
 
@@ -32,6 +40,7 @@ static const activity_id ACT_REPAIR_ITEM( "ACT_REPAIR_ITEM" );
 static const itype_id itype_3d_printer_advanced( "3d_printer_advanced" );
 static const itype_id itype_3d_printer_basic( "3d_printer_basic" );
 static const itype_id itype_carbon_fiber_filament( "carbon_fiber_filament" );
+static const itype_id itype_knife_combat( "knife_combat" );
 
 static const material_id material_carbonfiber( "carbonfiber" );
 
@@ -49,11 +58,24 @@ static bool printing_mod_loaded()
     return itype_3d_printer_basic.is_valid();
 }
 
+static bool is_printer( const itype_id &type )
+{
+    return type == itype_3d_printer_basic || type == itype_3d_printer_advanced;
+}
+
+// Recipes that print with a printer, or build one into something
 static bool uses_printer( const recipe &r )
 {
     for( const std::vector<tool_comp> &alternatives : r.simple_requirements().get_tools() ) {
         for( const tool_comp &tool : alternatives ) {
-            if( tool.type == itype_3d_printer_basic || tool.type == itype_3d_printer_advanced ) {
+            if( is_printer( tool.type ) ) {
+                return true;
+            }
+        }
+    }
+    for( const std::vector<item_comp> &alternatives : r.simple_requirements().get_components() ) {
+        for( const item_comp &comp : alternatives ) {
+            if( is_printer( comp.type ) ) {
                 return true;
             }
         }
@@ -92,8 +114,7 @@ static units::mass output_mass( const recipe &r )
 }
 
 // A printer only shapes what it is fed, so nothing it prints may outweigh the lightest set of
-// components it can be printed from.  This also keeps salvaging a print from yielding more
-// filament or scrap than went into it.
+// components it can be printed from.  The same goes for the rigs a printer is built into.
 TEST_CASE( "printed_items_conserve_mass", "[recipe][3d_printing]" )
 {
     if( !printing_mod_loaded() ) {
@@ -183,4 +204,148 @@ TEST_CASE( "mounted_printers_craft_and_repair_from_vehicle_power", "[vehicle][3d
         CHECK( player.activity.str_values.back() == printer.str() );
         player.activity = player_activity();
     }
+}
+
+// Filament is counted by charges, so item groups must give it as "charges": a "count" would
+// spawn that many full 50-unit spools.
+TEST_CASE( "filament_spawns_in_sensible_amounts", "[item_group][3d_printing]" )
+{
+    if( !printing_mod_loaded() ) {
+        return;
+    }
+    for( const char *group : {
+             "3d_printing_raw_materials", "robofac_3d_printing", "science", "chem_school",
+             "supplies_reagents_lab", "ig_vp_carbon"
+         } ) {
+        CAPTURE( group );
+        Item_spawn_data *spawn = item_controller->get_group( item_group_id( group ) );
+        REQUIRE( spawn != nullptr );
+        const auto bounds = spawn->every_item_min_max();
+        const auto found = bounds.find( &*itype_carbon_fiber_filament );
+        REQUIRE( found != bounds.end() );
+        CHECK( found->second.second <= 100 );
+    }
+}
+
+static units::mass heaviest_debris( const item_group_id &group )
+{
+    units::mass total = 0_gram;
+    Item_spawn_data *spawn = item_controller->get_group( group );
+    if( spawn == nullptr ) {
+        return total;
+    }
+    for( const auto &[type, min_max] : spawn->every_item_min_max() ) {
+        total += type->weight * min_max.second;
+    }
+    return total;
+}
+
+// Wrecking a printer, rig or carbon fiber part must not leave more material than it was made of
+TEST_CASE( "printing_vehicle_parts_break_into_no_more_than_they_weigh", "[vehicle][3d_printing]" )
+{
+    if( !printing_mod_loaded() ) {
+        return;
+    }
+    for( const char *id : {
+             "3d_printer_basicrig", "3d_printer_advancedrig", "ap_3d_printer_basic", "ap_3d_printer_advanced",
+             "frame_carbon", "trunk_carbon", "trunk_floor_carbon", "cargo_space_carbon",
+             "cargo_space_carbon_external", "carbon_board", "carbon_halfboard", "carbon_stowboard",
+             "plating_carbon"
+         } ) {
+        const vpart_id part( id );
+        REQUIRE( part.is_valid() );
+        const units::mass debris = heaviest_debris( part->breaks_into_group );
+        const units::mass weight = part->base_item->weight;
+        CAPTURE( id, units::to_gram( debris ), units::to_gram( weight ) );
+        CHECK( debris <= weight );
+    }
+}
+
+// Filament in an item: what its cheapest printer recipe uses, counting printed components
+// such as the carbon fiber sheets in a floor trunk
+static int filament_in( const itype_id &type, std::map<itype_id, int> &memo, int depth = 0 )
+{
+    if( type == itype_carbon_fiber_filament ) {
+        return 1;
+    }
+    const auto known = memo.find( type );
+    if( known != memo.end() ) {
+        return known->second;
+    }
+    int cheapest = 0;
+    bool printed = false;
+    if( depth < 4 ) {
+        for( const auto &[id, r] : recipe_dict ) {
+            if( r.obsolete || r.is_blacklisted() || r.result() != type || !uses_printer( r ) ) {
+                continue;
+            }
+            int filament = 0;
+            for( const std::vector<item_comp> &alternatives : r.simple_requirements().get_components() ) {
+                int most = 0;
+                for( const item_comp &comp : alternatives ) {
+                    most = std::max( most, filament_in( comp.type, memo, depth + 1 ) * comp.count );
+                }
+                filament += most;
+            }
+            filament /= std::max( 1, r.makes_amount() );
+            cheapest = printed ? std::min( cheapest, filament ) : filament;
+            printed = true;
+        }
+    }
+    memo[type] = cheapest;
+    return cheapest;
+}
+
+static int filament_on_ground( map &here, const tripoint_bub_ms &center )
+{
+    int filament = 0;
+    for( const tripoint_bub_ms &p : here.points_in_radius( center, 1 ) ) {
+        for( const item &it : here.i_at( p ) ) {
+            if( it.typeId() == itype_carbon_fiber_filament ) {
+                filament += it.charges;
+            }
+        }
+    }
+    return filament;
+}
+
+// Salvaging a print, even one found in the world, gives back no more filament than printing it takes
+TEST_CASE( "salvaging_prints_returns_no_more_filament_than_they_take", "[salvage][3d_printing]" )
+{
+    if( !printing_mod_loaded() ) {
+        return;
+    }
+    std::set<itype_id> prints;
+    for( const auto &[id, r] : recipe_dict ) {
+        if( !r.obsolete && !r.is_blacklisted() && uses_printer( r ) ) {
+            prints.insert( r.result() );
+        }
+    }
+    std::map<itype_id, int> memo;
+
+    clear_map();
+    clear_avatar();
+    map &here = get_map();
+    avatar &player = get_avatar();
+    const tripoint_bub_ms spot = player.pos_bub();
+    const salvage_actor salvage;
+    item cutter( itype_knife_combat );
+    int checked = 0;
+    for( const itype_id &type : prints ) {
+        const int needed = filament_in( type, memo );
+        item print( type );
+        if( needed == 0 || !print.is_salvageable() || print.count_by_charges() ) {
+            continue;
+        }
+        ++checked;
+        CAPTURE( type.str(), needed );
+        for( const tripoint_bub_ms &p : here.points_in_radius( spot, 1 ) ) {
+            here.i_clear( p );
+        }
+        item &placed = here.add_item( spot, print );
+        item_location loc( map_cursor( spot ), &placed );
+        REQUIRE( salvage.try_to_cut_up( player, cutter, loc ) );
+        CHECK( filament_on_ground( here, spot ) <= needed );
+    }
+    CHECK( checked > 20 );
 }

@@ -4,13 +4,21 @@
     "copy-from": "vehicle_rig",
     "type": "ITEM",
     "name": { "str": "vehicle 3D printer" },
-    "description": "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them."
+    "description": "A 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them.",
+    "//": "The printer, a small steel bracket, a power supply and cable.",
+    "weight": "2350 g",
+    "volume": "2 L",
+    "material": [ { "type": "steel", "portion": 60 }, { "type": "plastic", "portion": 40 } ]
   },
   {
     "id": "3d_printer_advancedrig",
     "copy-from": "vehicle_rig",
     "type": "ITEM",
     "name": { "str": "vehicle advanced 3D printer" },
-    "description": "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike."
+    "description": "An advanced 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike.",
+    "//": "The printer, a small steel bracket, a power supply and cable.",
+    "weight": "4350 g",
+    "volume": "4 L",
+    "material": [ { "type": "steel", "portion": 60 }, { "type": "plastic", "portion": 40 } ]
   }
 ]

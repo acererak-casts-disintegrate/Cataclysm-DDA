@@ -1,63 +1,68 @@
 [
   {
     "type": "recipe",
-    "result": "glockmag",
-    "id_suffix": "printed",
+    "result": "carbon_receiver",
     "obsolete": true
+  },
+  {
+    "type": "recipe",
+    "result": "glockmag",
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "glockbigmag",
-    "id_suffix": "printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "glock40mag",
-    "id_suffix": "printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "glock40bigmag",
-    "id_suffix": "printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "saiga10mag",
-    "id_suffix": "printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "stanag30",
-    "id_suffix": "printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "printed"
   },
   {
     "type": "recipe",
     "result": "m9mag",
-    "id_suffix": "metal_printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "metal_printed"
   },
   {
     "type": "recipe",
     "result": "m1911mag",
-    "id_suffix": "metal_printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "metal_printed"
   },
   {
     "type": "recipe",
     "result": "mp5mag",
-    "id_suffix": "metal_printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "metal_printed"
   },
   {
     "type": "recipe",
     "result": "akmag30",
-    "id_suffix": "metal_printed",
-    "obsolete": true
+    "obsolete": true,
+    "id_suffix": "metal_printed"
   },
   {
     "type": "recipe",

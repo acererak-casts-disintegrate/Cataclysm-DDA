@@ -20919,11 +20919,11 @@ msgid_plural "carbon fiber filament"
 msgstr[0] "carbon fibre filament"
 msgstr[1] "carbon fibre filament"
 
-msgid "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them."
-msgstr "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fibre, and repair items made of them."
+msgid "A 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them."
+msgstr "A 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fibre, and repair items made of them."
 
-msgid "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike."
-msgstr "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fibre and sintered metal parts, makes carbon fibre filament, and repairs polymer and metal items alike."
+msgid "An advanced 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike."
+msgstr "An advanced 3D printer on a mounting bracket, wired to run off a vehicle's batteries.  It prints plastic, carbon fibre and sintered metal parts, makes carbon fibre filament, and repairs polymer and metal items alike."
 
 msgid "Although it's not nearly as fancy as the experimental nanofabricators, this civilian-grade 3D printer can produce almost any item out of plastic or carbon fiber…  so long as you can program it.  It's also useful for repairing items made out of plastic or carbon fiber.  It runs from a medium battery, or from a power outlet with its cord."
 msgstr "Although it's not nearly as fancy as the experimental nanofabricators, this civilian-grade 3D printer can produce almost any item out of plastic or carbon fibre…  so long as you can program it.  It's also useful for repairing items made out of plastic or carbon fibre.  It runs from a medium battery, or from a power outlet with its cord."
