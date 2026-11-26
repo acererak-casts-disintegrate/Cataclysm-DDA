@@ -36,6 +36,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Fewer overrides of core content.** Aftershock no longer replaces core items, vehicles or mechanics, except the pressure tank, which its Rocket Jumper profession needs.
 * **Selected exoplanet content.** Guns, ammunition, clothing, armour, CBMs and tools from 0.I's Aftershock: Exoplanet that fit an Earth setting are imported and re-themed; that mod is marked obsolete.
 * **Data fixes.** Item weights, volumes and lengths, spawns, faction relations and mutation purification are corrected.
+* **Electromagnetic compound bow.** A craftable compound bow with UPS-powered acceleration rails (20 kJ a shot). It fires any arrow whose shaft is metal, about two and a half times as hard as a high-draw compound bow, and is the only bow that takes the new ferromagnetic sabot arrows.
 
 ## Cataclysm++
 

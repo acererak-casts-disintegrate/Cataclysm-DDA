@@ -65,5 +65,23 @@
     "stack_size": 10,
     "critical_multiplier": 13,
     "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "afs_rail_arrow_sabot",
+    "copy-from": "arrow_metal",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "name": { "str": "ferromagnetic sabot arrow" },
+    "description": "A dense, fin-stabilized steel shaft wrapped in a conductive copper armature band, engineered to ride electromagnetic accelerator rails without buckling.  Only an electromagnetic compound bow can fire it, and the armature band rarely survives the shot intact.",
+    "//": "Best ammunition for the electromagnetic compound bow: 1.75x its damage (between aluminum broadheads and nano arrows) and 12 armor penetration. Its own ammunition type keeps it out of other bows.",
+    "price_postapoc": "2 USD",
+    "weight": "75 g",
+    "volume": "100 ml",
+    "material": [ { "type": "steel", "portion": 80 }, { "type": "copper", "portion": 20 } ],
+    "ammo_type": "afs_rail_arrow",
+    "damage": { "damage_type": "stab", "armor_penetration": 12, "constant_damage_multiplier": 1.75 },
+    "dispersion": 30,
+    "range": 6,
+    "recovery_chance": 60
   }
 ]

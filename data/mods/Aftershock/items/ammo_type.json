@@ -58,5 +58,11 @@
     "id": "afs_82mm_flashbulb",
     "name": "82x225mm flashbulb",
     "default": "afs_82mm_flashbulb"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "afs_rail_arrow",
+    "name": "rail arrow",
+    "default": "afs_rail_arrow_sabot"
   }
 ]

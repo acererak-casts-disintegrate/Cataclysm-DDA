@@ -14,5 +14,34 @@
     "qualities": [ { "id": "SCREW_FINE", "level": 1 } ],
     "using": [ [ "soldering_standard", 10 ], [ "electric_probing", 1 ] ],
     "components": [ [ [ "afs_plasma_torch", 1 ] ], [ [ "cable", 20 ] ], [ [ "afs_energy_storage_3", 1 ] ], [ [ "afs_material_1", 2 ] ] ]
+  },
+  {
+    "result": "afs_railbow",
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "fabrication", 7 ], [ "archery", 4 ] ],
+    "difficulty": 8,
+    "time": "16 h",
+    "autolearn": [ [ "electronics", 9 ], [ "fabrication", 8 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_elec_soldering", "time_multiplier": 1.5, "skill_penalty": 0.2 },
+      { "proficiency": "prof_electromagnetics", "time_multiplier": 1.5, "skill_penalty": 0.2 },
+      { "proficiency": "prof_bowyery", "time_multiplier": 1.5, "skill_penalty": 0.2 },
+      { "proficiency": "prof_metalworking", "time_multiplier": 1.25 }
+    ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 }, { "id": "SAW_M_FINE", "level": 1 } ],
+    "using": [ [ "soldering_standard", 30 ], [ "welding_standard", 6 ] ],
+    "components": [
+      [ [ "compbow_low", 1 ], [ "compbow", 1 ], [ "compbow_high", 1 ], [ "compgreatbow", 1 ] ],
+      [ [ "high_density_capacitor", 2 ] ],
+      [ [ "alloy_sheet", 1 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
+      [ [ "cable", 20 ] ],
+      [ [ "e_scrap", 10 ] ]
+    ]
   }
 ]

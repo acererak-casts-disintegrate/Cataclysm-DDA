@@ -75,5 +75,33 @@
     "time": "100 m",
     "autolearn": true,
     "using": [ [ "blacksmithing_standard", 16 ], [ "steel_standard", 4 ] ]
+  },
+  {
+    "result": "afs_rail_arrow_sabot",
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 3 ] ],
+    "difficulty": 6,
+    "charges": 5,
+    "time": "1 h",
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": [ [ "fabrication", 7 ], [ "archery", 4 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking", "time_multiplier": 1.5, "skill_penalty": 0.25 },
+      { "proficiency": "prof_redsmithing", "time_multiplier": 1.4, "skill_penalty": 0.2 },
+      { "proficiency": "prof_fletching", "time_multiplier": 1.25, "skill_penalty": 0.15 }
+    ],
+    "qualities": [
+      { "id": "ANVIL", "level": 3 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SAW_M", "level": 2 },
+      { "id": "FILE", "level": 1 }
+    ],
+    "using": [ [ "forging_standard", 2 ] ],
+    "tools": [ [ [ "metalworking_tongs_any", 1, "LIST" ] ] ],
+    "components": [ [ [ "steel_chunk_any", 2, "LIST" ], [ "scrap", 8 ] ], [ [ "copper_scrap_equivalent", 1, "LIST" ] ] ]
   }
 ]

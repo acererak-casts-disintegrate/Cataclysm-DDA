@@ -4,5 +4,10 @@
     "type": "ammo_effect",
     "//": "Applies foamcrete effect on hit.",
     "foamcrete_build": true
+  },
+  {
+    "id": "WHIP",
+    "type": "ammo_effect",
+    "//": "The base game checks for this id (src/ranged.cpp, src/monster.cpp) but never defines it. Defined here for the electromagnetic compound bow: its shots read \"Crack!\", and wildlife it hits has a 1 in 3 chance to flee for a few turns."
   }
 ]
