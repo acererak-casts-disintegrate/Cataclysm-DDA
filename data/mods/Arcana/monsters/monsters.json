@@ -31,7 +31,7 @@
     "special_attacks": [
       {
         "id": "slam",
-        "cooldown": 30,
+        "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "heat", "amount": 15, "armor_multiplier": 0.9 } ]
       },
       {
@@ -42,7 +42,7 @@
         "fake_str": 5,
         "fake_dex": 4,
         "fake_per": 6,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the spirit of fire!",
         "no_ammo_sound": "a distorted growl!"
@@ -105,7 +105,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_moruboru_fetid_exhalation" },
-        "cooldown": 50,
+        "cooldown": 10,
         "monster_message": "A strange vapor emanates from the moruboru."
       }
     ],
@@ -146,10 +146,10 @@
     "morale": 100,
     "melee_skill": 9,
     "melee_dice": 2,
-    "melee_dice_sides": 2,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 }, { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "stab", "amount": 10 }, { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
     "dodge": 3,
-    "armor": { "bash": 5, "cut": 5, "stab": 5, "bullet": 5, "acid": 5 },
+    "armor": { "bash": 6, "cut": 6, "stab": 4, "bullet": 6, "acid": 5 },
     "vision_night": 25,
     "harvest": "human",
     "starting_ammo": { "bot_vortex": 6 },
@@ -159,20 +159,20 @@
         "id": "arcana_monster_archon_stare_1",
         "spell_data": { "id": "stare" },
         "monster_message": "",
-        "cooldown": 50
+        "cooldown": 15
       },
       {
         "type": "spell",
         "id": "arcana_monster_archon_stare_2",
         "spell_data": { "id": "fear_paralyze" },
         "monster_message": "",
-        "cooldown": 40
+        "cooldown": 10
       },
-      [ "GRENADIER_ELITE", 15 ],
+      [ "GRENADIER_ELITE", 10 ],
       [ "PARROT", 25 ],
       {
         "type": "gun",
-        "cooldown": 15,
+        "cooldown": 10,
         "move_cost": 50,
         "gun_type": "monster_lightning_fake",
         "fake_str": 8,
@@ -241,7 +241,7 @@
     "special_attacks": [
       {
         "id": "scratch",
-        "cooldown": 30,
+        "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "cut", "amount": 25, "armor_multiplier": 0.75 } ],
         "body_parts": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "head", 3 ], [ "arm_l", 5 ], [ "arm_r", 5 ], [ "torso", 7 ] ],
         "effects": [ { "id": "downed", "duration": 3 } ],
@@ -263,7 +263,7 @@
         "fake_str": 9,
         "fake_dex": 3,
         "fake_per": 5,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the dracolich's mouth!",
         "no_ammo_sound": "a howl of feral anger!"
@@ -770,20 +770,20 @@
         "id": "arcana_monster_seraph_stare_1",
         "spell_data": { "id": "stare" },
         "monster_message": "",
-        "cooldown": 75
+        "cooldown": 15
       },
       {
         "type": "spell",
         "id": "arcana_monster_seraph_stare_2",
         "spell_data": { "id": "fear_paralyze" },
         "monster_message": "",
-        "cooldown": 50
+        "cooldown": 10
       },
-      [ "GRENADIER_ELITE", 20 ],
+      [ "GRENADIER_ELITE", 10 ],
       [ "PARROT", 40 ],
       {
         "type": "gun",
-        "cooldown": 25,
+        "cooldown": 10,
         "move_cost": 50,
         "gun_type": "monster_laser_fake",
         "fake_str": 8,
@@ -798,7 +798,7 @@
         "type": "spell",
         "id": "arcana_monster_seraph_stare_3",
         "spell_data": { "id": "arcana_monster_archon_gaze_improved" },
-        "cooldown": 25,
+        "cooldown": 10,
         "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
       }
     ],
@@ -852,16 +852,16 @@
         "id": "arcana_monster_seraph_stare_1",
         "spell_data": { "id": "stare" },
         "monster_message": "",
-        "cooldown": 250
+        "cooldown": 30
       },
+      [ "PARROT", 80 ],
       {
         "type": "spell",
-        "id": "arcana_monster_seraph_stare_2",
-        "spell_data": { "id": "fear_paralyze" },
-        "monster_message": "",
-        "cooldown": 100
-      },
-      [ "PARROT", 80 ]
+        "id": "arcana_monster_seraph_stare_3",
+        "spell_data": { "id": "arcana_monster_archon_gaze_improved" },
+        "cooldown": 20,
+        "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
+      }
     ],
     "death_function": { "message": "The %s's wavers and vanishes, dispelling the illusion.", "corpse_type": "NO_CORPSE" },
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
@@ -968,7 +968,7 @@
         "id": "arcana_monster_mech_stare_1",
         "spell_data": { "id": "stare" },
         "monster_message": "",
-        "cooldown": 100
+        "cooldown": 20
       },
       {
         "type": "gun",
@@ -987,7 +987,7 @@
         "type": "spell",
         "id": "arcana_monster_mech_flare",
         "spell_data": { "id": "arcana_monster_mech_flare" },
-        "cooldown": 50,
+        "cooldown": 25,
         "monster_message": "The Autonomous Anomaly Recon Mech launches a ghostly blue flare, illuminating %3$s with ethereal light!"
       }
     ],
@@ -1026,11 +1026,11 @@
     "color": "magenta",
     "aggression": -10,
     "morale": 100,
-    "melee_skill": 4,
+    "melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 3,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2 },
-    "dodge": 1,
+    "dodge": 3,
     "harvest": "human",
     "vision_day": 40,
     "vision_night": 20,
@@ -1041,7 +1041,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_summoner", "hit_self": true },
-        "cooldown": 15,
+        "cooldown": 5,
         "monster_message": "The air wavers as the maddened wanderer raises its talisman!"
       }
     ],
@@ -1058,12 +1058,13 @@
     "name": { "str": "maddened hunter" },
     "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it grasps a silver-decorated war hammer.",
     "aggression": 5,
-    "melee_skill": 6,
-    "melee_dice_sides": 8,
-    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
-    "armor": { "bash": 12, "cut": 12, "stab": 12, "bullet": 9 },
-    "dodge": 2,
-    "diff": 2,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "stab", "amount": 23 } ],
+    "armor": { "bash": 12, "cut": 12, "stab": 9, "bullet": 10 },
+    "dodge": 4,
+    "diff": 10,
     "special_attacks": [
       [ "PARROT_AT_DANGER", 5 ],
       {
@@ -1098,15 +1099,15 @@
     "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, it desperately clutches a golden talisman that crackles with electricity.",
     "aggression": -5,
     "melee_dice_sides": 4,
-    "melee_damage": [ { "damage_type": "stab", "amount": 6 } ],
-    "armor": { "bash": 4, "cut": 4, "stab": 4, "bullet": 3 },
-    "dodge": 3,
-    "diff": 3,
+    "melee_damage": [ { "damage_type": "stab", "amount": 10 }, { "damage_type": "electric", "amount": 5 } ],
+    "armor": { "bash": 6, "cut": 6, "stab": 4, "bullet": 6 },
+    "dodge": 4,
+    "diff": 10,
     "special_attacks": [
       [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
-        "cooldown": 5,
+        "cooldown": 10,
         "move_cost": 100,
         "gun_type": "monster_lightning_fake",
         "fake_str": 6,
@@ -1133,11 +1134,11 @@
     "name": { "str": "maddened sanguinist" },
     "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff it uses as a walking stick.",
     "aggression": 10,
-    "melee_skill": 6,
-    "melee_dice_sides": 8,
-    "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 7 },
-    "dodge": 2,
-    "diff": 3,
+    "melee_skill": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 7,
+    "armor": { "bash": 10, "cut": 10, "stab": 8, "bullet": 10 },
+    "diff": 15,
     "special_attacks": [
       [ "PARROT_AT_DANGER", 5 ],
       {
@@ -1148,7 +1149,7 @@
         "fake_str": 9,
         "fake_dex": 10,
         "fake_per": 7,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,

@@ -6,7 +6,7 @@
     "category": "weapons",
     "name": { "str": "symbol of judgment", "str_pl": "symbols of judgment" },
     "description": "A golden band decorated with a trident motif, and inlaid with silver.  Just small enough to grasp the band in your palm, prongs between the fingers.  Holding it gives you the vague sense that this is a holy symbol, dedicated to something not of this world.  Firing it calls forth lightning.",
-    "weight": "1100 g",
+    "weight": "900 g",
     "volume": "750 ml",
     "longest_side": "21 cm",
     "price": "1500 USD",
@@ -112,7 +112,7 @@
     "reload_noise_volume": 10,
     "name": { "str": "shrike's misericorde (pistol)", "str_pl": "shrike's misericordes (pistol)" },
     "description": "An ornate silver weapon combining two flintlock barrels with a thin blade.  It's folded into its more compact pistol form, allowing it to be loaded and fired.  Its shots are imbued with a deathly chill.  The damage it adds to shots can ignore mundane armor, but robots and certain otherworldly monsters will only suffer the bullet's regular damage.  Activate it to revert back to blade form, making it better suited for melee but preventing you from being able to load or fire it.",
-    "weight": "2 kg",
+    "weight": "1250 g",
     "volume": "500 ml",
     "longest_side": "36 cm",
     "price": "1000 USD",
@@ -468,11 +468,11 @@
     "flags": [ "NEVER_JAMS", "NO_TURRET" ],
     "skill": "pistol",
     "durability": 10,
-    "range": 7,
+    "range": 10,
     "dispersion": 7500,
     "sight_dispersion": 1000,
-    "//": "Roughly half the damage of closest weapon equivalent, rounded up.",
-    "ranged_damage": { "damage_type": "heat", "amount": 13, "armor_penetration": 5 }
+    "//": "Half the damage of a hellfire staff, and half the arpen rounded up.",
+    "ranged_damage": { "damage_type": "heat", "amount": 20, "armor_penetration": 2 }
   },
   {
     "id": "monster_lightning_fake",
@@ -480,7 +480,7 @@
     "subtypes": [ "GUN" ],
     "copy-from": "fake_item",
     "name": { "str": "monster lightning weapon" },
-    "description": "Used to give the Host of the Archon a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
+    "description": "Used to give the Host of the Archon a specific degree of inaccuracy, and to nerf his damage to not be an immediate instakill.  If you encounter one of these in the wild, it's a bug.",
     "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING" ],
     "flags": [ "NEVER_JAMS", "NO_TURRET" ],
     "skill": "pistol",
@@ -489,7 +489,7 @@
     "dispersion": 5000,
     "sight_dispersion": 1000,
     "loudness": 50,
-    "ranged_damage": { "damage_type": "electric", "amount": 38, "armor_penetration": 10 }
+    "ranged_damage": { "damage_type": "electric", "amount": 40, "armor_penetration": 5 }
   },
   {
     "id": "monster_hammer_fake",
