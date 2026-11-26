@@ -1723,6 +1723,16 @@
     "components": [ [ [ "scrap", 45 ] ], [ [ "e_scrap", 6 ] ], [ [ "copper", 30 ] ], [ [ "essence_dull", 340 ] ] ]
   },
   {
+    "result": "distortion_flow_rotor_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 60 ] ], [ [ "e_scrap", 6 ] ], [ [ "copper", 30 ] ], [ [ "essence_dull", 360 ] ] ]
+  },
+  {
     "result": "essence_surge_generator_item",
     "type": "uncraft",
     "skill_used": "magic",
