@@ -43,6 +43,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Fits this fork's restored content.** It no longer overrides the laser cannon or laser turret. It keeps the 0.I content upstream dropped for 0.J: its professions in the Lab Patient and Lab Staff challenge scenarios, the CVD machine in its lab and the atomic lamp on its survivor bus. Its CBMs drop from bionic zombies as well as turning up in loot.
 * **Works with Generic Guns.** Its black-powder cartridges become Generic Guns' black-powder balls, and the survivor cowboy hat's ammo band takes Generic Guns' ammunition types.
 * **Data fixes.** Item groups it extended lost their core contents and the survivor's flamethrower lost three flags, both through 0.I's handling of `extend`; the Prepper's Rambo knife did not fit its sheath; and item weights, volumes and text are corrected.
+* **The nano-mutagenic serum acts directly.** It used to apply a short marker effect that a background check looked for every second before mutating you; it now runs its mutation when injected, through 0.I's consumption effects. Saves made before the change load without side effects.
 
 ## Arcana and Magic Items
 
@@ -50,6 +51,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Fits this fork.** Its CBMs drop from this fork's bionic zombies as well as from zomborgs, and its extensions of the portal-storm scenarios this fork removed are dropped. Content its last update removed for 0.J, which this fork still has, is back: the archaeologist profession in Urban Awakening, the survivor machete in two martial arts' weapon lists, and the summoned shadow's removal of its parent's electric shock.
 * **Works with other in-repo mods.** Its interactions with Cataclysm++ and CrazyCataclysm follow those mods' group names here, and under Generic Guns its blessed shells take Generic Guns' ammunition types.
 * **Data fixes.** It extends the core nether, cult and triffid monster factions instead of replacing them, its CrazyCataclysm skeltal drops all three of its items again, its warehouse lab gets its roof, and item weights, volumes and text are corrected.
+* **Mutation items act directly.** The blood effigy, refined blood offering, sacramental heart and restored ritual blade used to apply a short marker effect that a background check looked for every second before mutating you. They now run their mutation directly, through 0.I's consumption effects and item actions, with the same messages, charge costs and one-turn use. Saves made before the change load without side effects.
 
 ## Other in-repo mods
 

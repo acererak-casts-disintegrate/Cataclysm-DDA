@@ -1,9 +1,8 @@
 [
   {
     "type": "effect_on_condition",
-    "id": "c_nano_mutagen_trigger",
-    "recurrence": [ "1 s", "1 s" ],
-    "condition": { "u_has_effect": "c_nano_mutagen_trigger" },
+    "id": "c_nano_mutagen_mutate",
+    "//": "Run by the nano-mutagenic serum when it is injected.",
     "effect": [
       {
         "u_message": "You feel your body being subtly altered, a rapid internal metamorphosis triggered by the nanites coursing through your system.",
@@ -11,8 +10,7 @@
       },
       { "run_eocs": [ "c_nano_mutagen_thresh_test" ] },
       { "u_mutate_category": "SUPER_SOLDIER", "use_vitamins": false },
-      { "run_eocs": [ "c_nano_mutagen_trigger_bonus" ] },
-      { "u_lose_effect": "c_nano_mutagen_trigger" }
+      { "run_eocs": [ "c_nano_mutagen_trigger_bonus" ] }
     ]
   },
   {

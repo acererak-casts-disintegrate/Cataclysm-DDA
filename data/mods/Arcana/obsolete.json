@@ -814,5 +814,20 @@
     "min_duration": 3000,
     "max_duration": 15000,
     "duration_increment": 600
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "arcana_dragonblood_blood_effigy_eoc",
+    "//": "Obsolete: was a recurring EoC that polled for an item's effect every second; the item now runs arcana_dragonblood_blood_effigy_mutate directly.  Kept empty so saves that still have it queued load cleanly and it runs once doing nothing."
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "arcana_dragonblood_sacramental_heart_eoc",
+    "//": "Obsolete: was a recurring EoC that polled for an item's effect every second; the item now runs arcana_dragonblood_sacramental_heart_mutate directly.  Kept empty so saves that still have it queued load cleanly and it runs once doing nothing."
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "arcana_paragon_veilblade_eoc",
+    "//": "Obsolete: was a recurring EoC that polled for an item's effect every second; the item now runs arcana_paragon_veilblade_mutate directly.  Kept empty so saves that still have it queued load cleanly and it runs once doing nothing."
   }
 ]

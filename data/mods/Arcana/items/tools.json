@@ -1643,9 +1643,19 @@
     "tool_ammo": "essence_pure_type",
     "use_action": [
       {
-        "type": "consume_drug",
-        "activation_message": "You channel a sliver of essence through the blade, as an offering to the Beyond…",
-        "effects": [ { "id": "arcana_paragon_veilblade_effect", "duration": 5 } ]
+        "type": "effect_on_conditions",
+        "menu_text": "Consume",
+        "description": "Channel essence through the blade as an offering to the Beyond, starting down a path you can't return from.",
+        "effect_on_conditions": [
+          {
+            "id": "arcana_paragon_veilblade_offering",
+            "effect": [
+              { "u_message": "You channel a sliver of essence through the blade, as an offering to the Beyond…" },
+              { "turn_cost": 1 },
+              { "run_eocs": "arcana_paragon_veilblade_mutate" }
+            ]
+          }
+        ]
       },
       {
         "type": "cast_spell",
@@ -1688,9 +1698,19 @@
     "charges_per_use": 5,
     "tool_ammo": "essence_blood_type",
     "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You fuel the heart with blood essence, and feel its power resonate through you…",
-      "effects": [ { "id": "arcana_dragonblood_sacramental_heart_effect", "duration": 5 } ]
+      "type": "effect_on_conditions",
+      "menu_text": "Consume",
+      "description": "Fuel the heart with blood essence, starting down a path you can't return from.",
+      "effect_on_conditions": [
+        {
+          "id": "arcana_dragonblood_sacramental_heart_offering",
+          "effect": [
+            { "u_message": "You fuel the heart with blood essence, and feel its power resonate through you…" },
+            { "turn_cost": 1 },
+            { "run_eocs": "arcana_dragonblood_sacramental_heart_mutate" }
+          ]
+        }
+      ]
     }
   },
   {

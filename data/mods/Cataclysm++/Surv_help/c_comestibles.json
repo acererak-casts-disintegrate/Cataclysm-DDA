@@ -34,8 +34,8 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You inject the nano-mutagenic serum.",
-      "tools_needed": { "syringe": -1 },
-      "effects": [ { "id": "c_nano_mutagen_trigger", "duration": 5 } ]
-    }
+      "tools_needed": { "syringe": -1 }
+    },
+    "consumption_effect_on_conditions": [ "c_nano_mutagen_mutate" ]
   }
 ]

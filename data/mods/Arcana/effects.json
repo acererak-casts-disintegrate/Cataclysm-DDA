@@ -1,33 +1,6 @@
 [
   {
     "type": "effect_type",
-    "id": "arcana_dragonblood_blood_effigy_effect",
-    "max_duration": "10 s",
-    "name": [ "Blood Effigy" ],
-    "desc": [
-      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
-    ]
-  },
-  {
-    "type": "effect_type",
-    "id": "arcana_dragonblood_sacramental_heart_effect",
-    "max_duration": "10 s",
-    "name": [ "Sacramental Heart" ],
-    "desc": [
-      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
-    ]
-  },
-  {
-    "type": "effect_type",
-    "id": "arcana_paragon_veilblade_effect",
-    "max_duration": "10 s",
-    "name": [ "Ritual Blade" ],
-    "desc": [
-      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
-    ]
-  },
-  {
-    "type": "effect_type",
     "id": "magic_sign_exertion",
     "name": [ "Magic Sign Exertion" ],
     "desc": [ "Overuse of Magic Signs increases fatigue gain." ],

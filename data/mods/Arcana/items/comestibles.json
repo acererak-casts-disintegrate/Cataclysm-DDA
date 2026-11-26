@@ -206,11 +206,8 @@
     "healthy": -6,
     "fun": -8,
     "freezing_point": -10,
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You drink the blood effigy.",
-      "effects": [ { "id": "arcana_dragonblood_blood_effigy_effect", "duration": 5 } ]
-    },
+    "use_action": { "type": "consume_drug", "activation_message": "You drink the blood effigy." },
+    "consumption_effect_on_conditions": [ "arcana_dragonblood_blood_effigy_mutate" ],
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
@@ -231,11 +228,8 @@
     "healthy": -6,
     "fun": -4,
     "freezing_point": -150,
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You take part in the Sanguine Sacrament…",
-      "effects": [ { "id": "arcana_dragonblood_sacramental_heart_effect", "duration": 5 } ]
-    },
+    "use_action": { "type": "consume_drug", "activation_message": "You take part in the Sanguine Sacrament…" },
+    "consumption_effect_on_conditions": [ "arcana_dragonblood_sacramental_heart_mutate" ],
     "flags": [ "NO_INGEST", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {

@@ -1,0 +1,7 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "c_nano_mutagen_trigger",
+    "//": "Obsolete: was a recurring EoC that polled for an item's effect every second; the item now runs c_nano_mutagen_mutate directly.  Kept empty so saves that still have it queued load cleanly and it runs once doing nothing."
+  }
+]
