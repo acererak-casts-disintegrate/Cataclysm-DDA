@@ -1626,7 +1626,8 @@ class FILEDeleter
  * @note The output buffer is limited to 512 characters.
  * @returns The result of the command (only stdout) or an empty string if there was a problem.
  */
-static std::string shell_exec( const std::string &command )
+// Unused on Unix systems with no version query below (illumos, for one).
+[[maybe_unused]] static std::string shell_exec( const std::string &command )
 {
     std::vector<char> buffer( 512 );
     std::string output;
