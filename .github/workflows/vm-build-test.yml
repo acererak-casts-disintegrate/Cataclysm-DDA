@@ -112,3 +112,29 @@ jobs:
           wait "$slow" || { echo "slow tests failed"; rc=1; }
           wait "$other" || { echo "other tests failed"; rc=1; }
           exit "$rc"
+      - name: Show crash backtraces
+        # A crash loses cata_test's buffered output, including the test name, so
+        # print the stack from any core file it left: pstack on illumos, else gdb
+        # or lldb. Cores are named core (illumos) or cata_test.core (BSDs).
+        if: failure()
+        shell: cpa.sh {0} --sync-files none
+        run: |
+          [ -f Makefile ] || cd "$GITHUB_WORKSPACE"
+          demangle() { if command -v c++filt >/dev/null 2>&1; then c++filt; else cat; fi; }
+          found=0
+          for c in core core.* *.core; do
+            [ -f "$c" ] || continue
+            found=1
+            echo "::group::Backtrace from $c"
+            if command -v pstack >/dev/null 2>&1; then
+              pstack "$c" 2>&1 | demangle | head -n 300
+            elif command -v gdb >/dev/null 2>&1; then
+              gdb -batch -ex 'thread apply all bt 40' tests/cata_test "$c" 2>&1 | head -n 400
+            elif command -v lldb >/dev/null 2>&1; then
+              lldb -b -c "$c" tests/cata_test -o 'bt all' 2>&1 | head -n 400
+            else
+              echo "No pstack, gdb or lldb to read $c."
+            fi
+            echo "::endgroup::"
+          done
+          [ "$found" = 1 ] || echo "No core files found."
