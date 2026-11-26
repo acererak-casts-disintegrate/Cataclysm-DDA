@@ -34,7 +34,7 @@ on:
         type: string
         default: ''
       test_setup:
-        description: 'Shell commands run only before testing, e.g. a debugging allocator'
+        description: 'Shell commands run only before testing, e.g. a library path or a debugging allocator'
         required: false
         type: string
         default: ''
@@ -134,7 +134,7 @@ jobs:
             echo "::group::Backtrace from $c"
             if command -v pstack >/dev/null 2>&1; then
               pstack "$c" 2>&1 | demangle | head -n 300
-              # With libumem's debugging (see other-os.yml), say what it caught.
+              # If test_setup preloaded libumem with UMEM_DEBUG, say what it caught.
               if command -v mdb >/dev/null 2>&1; then
                 echo '::umem_status' | mdb tests/cata_test "$c" 2>&1 | demangle | head -n 60
               fi
