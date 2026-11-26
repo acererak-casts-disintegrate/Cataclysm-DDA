@@ -802,7 +802,8 @@
     "type": "effect_type",
     "id": "arcana_aegis_mending",
     "removes_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
-    "rating": "good"
+    "rating": "good",
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "LUMINATION", "add": 5 } ] } ]
   },
   {
     "type": "effect_type",

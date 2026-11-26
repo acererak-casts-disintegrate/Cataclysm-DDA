@@ -187,7 +187,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 60 } } ],
     "clip_size": 60,
     "reload": 160,
-    "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
+    "ammo_effects": [ "WIDE", "ARCANA_WRAITHSLAYER_BEAM", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
     "ammo_to_fire": 15,
     "valid_mod_locations": [ [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
@@ -218,7 +218,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 40 } } ],
     "clip_size": 50,
     "reload": 50,
-    "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
+    "ammo_effects": [ "WIDE", "ARCANA_WRAITHSLAYER_BEAM", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
     "ammo_to_fire": 10,
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
@@ -250,7 +250,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 200 } } ],
     "clip_size": 90,
     "reload": 600,
-    "ammo_effects": [ "WIDE", "LASER", "LARGE_BEANBAG", "BLINDS_EYES" ],
+    "ammo_effects": [ "WIDE", "ARCANA_WRAITHSLAYER_BEAM_GREATER", "LARGE_BEANBAG", "BLINDS_EYES" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
     "ammo_to_fire": 50,
     "valid_mod_locations": [ [ "sling", 1 ] ]
