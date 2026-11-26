@@ -84,20 +84,14 @@ static const itype_id fuel_type_wind( "wind" );
 static const itype_id itype_battery( "battery" );
 static const itype_id itype_detergent( "detergent" );
 static const itype_id itype_fungal_seeds( "fungal_seeds" );
-static const itype_id itype_large_repairkit( "large_repairkit" );
 static const itype_id itype_marloss_seed( "marloss_seed" );
 static const itype_id itype_power_cord( "power_cord" );
 static const itype_id itype_pseudo_magazine( "pseudo_magazine" );
 static const itype_id itype_pseudo_magazine_mod( "pseudo_magazine_mod" );
-static const itype_id itype_small_repairkit( "small_repairkit" );
-static const itype_id itype_soldering_iron( "soldering_iron" );
 static const itype_id itype_water( "water" );
 static const itype_id itype_water_clean( "water_clean" );
 static const itype_id itype_water_faucet( "water_faucet" );
 static const itype_id itype_water_purifier( "water_purifier" );
-static const itype_id itype_welder( "welder" );
-static const itype_id itype_welder_crude( "welder_crude" );
-static const itype_id itype_welding_kit( "welding_kit" );
 
 static const quality_id qual_SCREW( "SCREW" );
 
@@ -1937,14 +1931,9 @@ bool vehicle::use_vehicle_tool( vehicle &veh, map *here, const tripoint_bub_ms &
 
     // HACK: Evil hack incoming
     player_activity &act = get_player_character().activity;
-    if( act.id() == ACT_REPAIR_ITEM &&
-        ( tool_type == itype_welder ||
-          tool_type == itype_welder_crude ||
-          tool_type == itype_welding_kit ||
-          tool_type == itype_soldering_iron ||
-          tool_type == itype_small_repairkit ||
-          tool_type == itype_large_repairkit
-        ) ) {
+    // The repair activity's first string is the repair action it runs, such as "repair_metal"
+    if( act.id() == ACT_REPAIR_ITEM && !act.str_values.empty() &&
+        tool.type->can_use( act.str_values.front() ) ) {
         act.index = INT_MIN; // tell activity the item doesn't really exist
         act.coords.push_back( here->get_abs( vp_pos ) ); // tell it to search for the tool on `pos`
         act.str_values.push_back( tool_type.str() ); // specific tool on the rig
