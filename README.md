@@ -29,6 +29,7 @@ This fork is based on the 0.I stable release (0.I-1) and carries forward the cha
 * **Core game:** classic bionic acquisition (loot and bionic zombies, not the Exodii), the Exodii reduced to a rare scavenger faction, no natural portal storms, skill rust off by default, restored Rivtech, pneumatic, classic sci-fi, power armour and atomic-cell content, and a British English language option.
 * **Aftershock:** this fork's own version, set on Earth, kept active and overriding much less of the core game.
 * **Cataclysm++** and **Arcana and Magic Items:** included as in-repo mods, converted to 0.I and fitted to this fork.
+* **3D Printing:** a new in-repo mod with Bright Nights' 3D printers and carbon fiber crafting, plus metal printing.
 * **Other in-repo mods:** Exodii removal and data fixes for Magiclysm, Mind Over Matter, Xedra Evolved and others.
 * **Builds:** prebuilt Windows, Linux and macOS packages; CI also builds and tests the game on FreeBSD, OpenBSD and NetBSD.
 

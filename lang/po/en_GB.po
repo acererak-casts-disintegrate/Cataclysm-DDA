@@ -20741,6 +20741,281 @@ msgstr "Six-Seated Motorised Draisine"
 msgid "Armored Car"
 msgstr "Armoured Car"
 
+msgid "3D printers and carbon fiber crafting, from Cataclysm: Bright Nights.  The 3D printer prints plastic and carbon fiber items and repairs them.  The advanced 3D printer also sinters metal parts, makes carbon fiber filament and repairs metal items.  Either can be carried, placed as an appliance, mounted on a vehicle or kept in a workshop rig."
+msgstr "3D printers and carbon fibre crafting, from Cataclysm: Bright Nights.  The 3D printer prints plastic and carbon fibre items and repairs them.  The advanced 3D printer also sinters metal parts, makes carbon fibre filament and repairs metal items.  Either can be carried, placed as an appliance, mounted on a vehicle or kept in a workshop rig."
+
+msgid "pair of carbon fiber arm guards"
+msgid_plural "pairs of carbon fiber arm guards"
+msgstr[0] "pair of carbon fibre arm guards"
+msgstr[1] "pairs of carbon fibre arm guards"
+
+msgid "Custom arm guards of layered carbon fiber made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "Custom arm guards of layered carbon fibre made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "pair of carbon fiber boots"
+msgid_plural "pairs of carbon fiber boots"
+msgstr[0] "pair of carbon fibre boots"
+msgstr[1] "pairs of carbon fibre boots"
+
+msgid "A custom pair of leather boots armored with layered carbon fiber made using a 3D printer.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "A custom pair of leather boots armoured with layered carbon fibre made using a 3D printer.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "pair of carbon fiber gauntlets"
+msgid_plural "pairs of carbon fiber gauntlets"
+msgstr[0] "pair of carbon fibre gauntlets"
+msgstr[1] "pairs of carbon fibre gauntlets"
+
+msgid "A custom pair of leather gauntlets armored with layered carbon fiber made using a 3D printer.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "A custom pair of leather gauntlets armoured with layered carbon fibre made using a 3D printer.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "carbon fiber helmet"
+msgid_plural "carbon fiber helmets"
+msgstr[0] "carbon fibre helmet"
+msgstr[1] "carbon fibre helmets"
+
+msgid "A custom helmet of layered carbon fiber made using a 3D printer, lined with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "A custom helmet of layered carbon fibre made using a 3D printer, lined with leather.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "pair of carbon fiber leg guards"
+msgid_plural "pairs of carbon fiber leg guards"
+msgstr[0] "pair of carbon fibre leg guards"
+msgstr[1] "pairs of carbon fibre leg guards"
+
+msgid "Custom leg guards of layered carbon fiber made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "Custom leg guards of layered carbon fibre made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "carbon fiber chestguard"
+msgid_plural "carbon fiber chestguards"
+msgstr[0] "carbon fibre chestguard"
+msgstr[1] "carbon fibre chestguards"
+
+msgid "A custom chestplate of layered carbon fiber made using a 3D printer, with leather straps.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight."
+msgstr "A custom chestplate of layered carbon fibre made using a 3D printer, with leather straps.  Its rigid plates are more comparable to plate armour than Kevlar, but it's very protective and lightweight."
+
+msgid "carbon fiber armor"
+msgid_plural "carbon fiber armors"
+msgstr[0] "carbon fibre armour"
+msgstr[1] "carbon fibre armours"
+
+msgid "A custom suit of layered carbon fiber plates over neoprene padding, made using a 3D printer.  Its rigid plates are more comparable to a suit of armor than Kevlar, but it's very protective and moves surprisingly well."
+msgstr "A custom suit of layered carbon fibre plates over neoprene padding, made using a 3D printer.  Its rigid plates are more comparable to a suit of armour than Kevlar, but it's very protective and moves surprisingly well."
+
+msgid "carbon fiber jerrycan"
+msgid_plural "carbon fiber jerrycans"
+msgstr[0] "carbon fibre jerrycan"
+msgstr[1] "carbon fibre jerrycans"
+
+msgid "A well-made carbon fiber jerrycan, meant to carry fuel, but it can carry other liquids in a pinch."
+msgstr "A well-made carbon fibre jerrycan, meant to carry fuel, but it can carry other liquids in a pinch."
+
+msgid "carbon fiber furniture"
+msgid_plural "sets of carbon fiber furniture"
+msgstr[0] "carbon fibre furniture"
+msgstr[1] "sets of carbon fibre furniture"
+
+msgid "A set of 3D-printed carbon fiber replacement grips and handguards.  Lighter than polymer furniture, at the cost of handling and melee effectiveness."
+msgstr "A set of 3D-printed carbon fibre replacement grips and handguards.  Lighter than polymer furniture, at the cost of handling and melee effectiveness."
+
+msgid "carbon fiber stock"
+msgid_plural "carbon fiber stocks"
+msgstr[0] "carbon fibre stock"
+msgstr[1] "carbon fibre stocks"
+
+msgid "A 3D-printed carbon fiber replacement stock.  Lighter than polymer or wood stocks, with a slight handling penalty from the reduced mass at the rear of the weapon."
+msgstr "A 3D-printed carbon fibre replacement stock.  Lighter than polymer or wood stocks, with a slight handling penalty from the reduced mass at the rear of the weapon."
+
+msgid "carbon fiber lower receiver"
+msgid_plural "carbon fiber lower receivers"
+msgstr[0] "carbon fibre lower receiver"
+msgstr[1] "carbon fibre lower receivers"
+
+msgid "A 3D-printed carbon fiber replacement lower receiver for AR-15 pattern rifles and pistols.  Significantly lighter than the original aluminum receiver, with no effect on accuracy or reliability."
+msgstr "A 3D-printed carbon fibre replacement lower receiver for AR-15 pattern rifles and pistols.  Significantly lighter than the original aluminium receiver, with no effect on accuracy or reliability."
+
+msgid "carbon fiber assault rifle"
+msgid_plural "carbon fiber assault rifles"
+msgstr[0] "carbon fibre assault rifle"
+msgstr[1] "carbon fibre assault rifles"
+
+msgid "carbon fiber machine pistol"
+msgid_plural "carbon fiber machine pistols"
+msgstr[0] "carbon fibre machine pistol"
+msgstr[1] "carbon fibre machine pistols"
+
+msgid "carbon fiber repeating crossbow"
+msgid_plural "carbon fiber repeating crossbows"
+msgstr[0] "carbon fibre repeating crossbow"
+msgstr[1] "carbon fibre repeating crossbows"
+
+msgid "A custom 3D-printed pump-action repeating crossbow made out of carbon fiber and synthetic cord.  This expensive hunting weapon is surprisingly lightweight thanks to its construction, but only a 3D printer can repair it."
+msgstr "A custom 3D-printed pump-action repeating crossbow made out of carbon fibre and synthetic cord.  This expensive hunting weapon is surprisingly lightweight thanks to its construction, but only a 3D printer can repair it."
+
+msgid "carbon fiber knife"
+msgid_plural "carbon fiber knifes"
+msgstr[0] "carbon fibre knife"
+msgstr[1] "carbon fibre knifes"
+
+msgid "A custom 3D-printed combat knife made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed combat knife made out of carbon fibre with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber spear"
+msgid_plural "carbon fiber spears"
+msgstr[0] "carbon fibre spear"
+msgstr[1] "carbon fibre spears"
+
+msgid "A custom 3D-printed spear made out of carbon fiber with a steel-edged spear tip.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed spear made out of carbon fibre with a steel-edged spear tip.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber katana"
+msgid_plural "carbon fiber katanas"
+msgstr[0] "carbon fibre katana"
+msgstr[1] "carbon fibre katanas"
+
+msgid "A custom 3D-printed single-edged sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed single-edged sword made out of carbon fibre with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber sword"
+msgid_plural "carbon fiber swords"
+msgstr[0] "carbon fibre sword"
+msgstr[1] "carbon fibre swords"
+
+msgid "A custom 3D-printed double-edged sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed double-edged sword made out of carbon fibre with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber nodachi"
+msgid_plural "carbon fiber nodachis"
+msgstr[0] "carbon fibre nodachi"
+msgstr[1] "carbon fibre nodachis"
+
+msgid "A custom 3D-printed single-edged two-handed sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed single-edged two-handed sword made out of carbon fibre with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber greatsword"
+msgid_plural "carbon fiber greatswords"
+msgstr[0] "carbon fibre greatsword"
+msgstr[1] "carbon fibre greatswords"
+
+msgid "A custom 3D-printed two-handed sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed two-handed sword made out of carbon fibre with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber punch dagger"
+msgid_plural "carbon fiber punch daggers"
+msgstr[0] "carbon fibre punch dagger"
+msgstr[1] "carbon fibre punch daggers"
+
+msgid "A custom 3D-printed punch dagger made out of carbon fiber with a steel-edged blade.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed punch dagger made out of carbon fibre with a steel-edged blade.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber knuckle katar"
+msgid_plural "carbon fiber knuckle katars"
+msgstr[0] "carbon fibre knuckle katar"
+msgstr[1] "carbon fibre knuckle katars"
+
+msgid "A custom 3D-printed knuckle katar made out of carbon fiber with steel-edged blades.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+msgstr "A custom 3D-printed knuckle katar made out of carbon fibre with steel-edged blades.  It is lighter than an all-steel weapon thanks to its method of manufacture."
+
+msgid "carbon fiber filament"
+msgid_plural "carbon fiber filament"
+msgstr[0] "carbon fibre filament"
+msgstr[1] "carbon fibre filament"
+
+msgid "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them."
+msgstr "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fibre, and repair items made of them."
+
+msgid "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike."
+msgstr "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fibre and sintered metal parts, makes carbon fibre filament, and repairs polymer and metal items alike."
+
+msgid "Although it's not nearly as fancy as the experimental nanofabricators, this civilian-grade 3D printer can produce almost any item out of plastic or carbon fiber…  so long as you can program it.  It's also useful for repairing items made out of plastic or carbon fiber.  It runs from a medium battery, or from a power outlet with its cord."
+msgstr "Although it's not nearly as fancy as the experimental nanofabricators, this civilian-grade 3D printer can produce almost any item out of plastic or carbon fibre…  so long as you can program it.  It's also useful for repairing items made out of plastic or carbon fibre.  It runs from a medium battery, or from a power outlet with its cord."
+
+msgid "Recent advances in 3D printing technology have resulted in the ability to quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly expensive, but sought out by collectors and preppers alike.  On top of faster polymer printing, it can sinter metal parts from scrap, make carbon fiber filament out of plastic, and repair polymer and metal items alike.  It runs from a medium battery, or from a power outlet with its cord."
+msgstr "Recent advances in 3D printing technology have resulted in the ability to quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly expensive, but sought out by collectors and preppers alike.  On top of faster polymer printing, it can sinter metal parts from scrap, make carbon fibre filament out of plastic, and repair polymer and metal items alike.  It runs from a medium battery, or from a power outlet with its cord."
+
+msgid "carbon fiber sheet"
+msgid_plural "carbon fiber sheets"
+msgstr[0] "carbon fibre sheet"
+msgstr[1] "carbon fibre sheets"
+
+msgid "A thin, rigid sheet of 3D-printed carbon fiber, for building lightweight vehicle walls."
+msgstr "A thin, rigid sheet of 3D-printed carbon fibre, for building lightweight vehicle walls."
+
+msgid "carbon fiber plating"
+msgid_plural "carbon fiber plating"
+msgstr[0] "carbon fibre plating"
+msgstr[1] "carbon fibre plating"
+
+msgid "A piece of vehicle armor plating made of layered carbon fiber.  Far lighter than steel plating, and nearly as tough."
+msgstr "A piece of vehicle armour plating made of layered carbon fibre.  Far lighter than steel plating, and nearly as tough."
+
+msgid "carbon fiber frame"
+msgid_plural "carbon fiber frames"
+msgstr[0] "carbon fibre frame"
+msgstr[1] "carbon fibre frames"
+
+msgid "A foldable frame made from 3D-printed carbon fiber tubing.  Useful for lightweight yet sturdy vehicles."
+msgstr "A foldable frame made from 3D-printed carbon fibre tubing.  Useful for lightweight yet sturdy vehicles."
+
+msgid "carbon fiber cargo carrier"
+msgid_plural "carbon fiber cargo carriers"
+msgstr[0] "carbon fibre cargo carrier"
+msgstr[1] "carbon fibre cargo carriers"
+
+msgid "A sturdy, yet lightweight carbon fiber structure outfitted with tie-downs and attachment points for carrying cargo."
+msgstr "A sturdy, yet lightweight carbon fibre structure outfitted with tie-downs and attachment points for carrying cargo."
+
+msgid "carbon fiber floor trunk"
+msgid_plural "carbon fiber floor trunks"
+msgstr[0] "carbon fibre floor trunk"
+msgstr[1] "carbon fibre floor trunks"
+
+msgid "A section of carbon fiber flooring with a cargo space beneath, and a hinged door for access."
+msgstr "A section of carbon fibre flooring with a cargo space beneath, and a hinged door for access."
+
+msgid "A carbon fiber framework, designed to fold.  Other vehicle components can be mounted on it.  If all the frames and components of a vehicle are foldable, the vehicle can be folded into a small package and picked up as a normal item."
+msgstr "A carbon fibre framework, designed to fold.  Other vehicle components can be mounted on it.  If all the frames and components of a vehicle are foldable, the vehicle can be folded into a small package and picked up as a normal item."
+
+msgid "carbon fiber trunk"
+msgstr "carbon fibre trunk"
+
+msgid "A lockable storage compartment built from carbon fiber."
+msgstr "A lockable storage compartment built from carbon fibre."
+
+msgid "carbon fiber cargo space"
+msgstr "carbon fibre cargo space"
+
+msgid "A big carbon fiber cargo carrier, with tie-downs and attachment points for storing items."
+msgstr "A big carbon fibre cargo carrier, with tie-downs and attachment points for storing items."
+
+msgid "external carbon fiber cargo rack"
+msgstr "external carbon fibre cargo rack"
+
+msgid "Carbon fiber storage space, mounted outside your vehicle's armor and vulnerable to damage."
+msgstr "Carbon fibre storage space, mounted outside your vehicle's armour and vulnerable to damage."
+
+msgid "carbon fiber board"
+msgstr "carbon fibre board"
+
+msgid "A carbon fiber wall.  Keeps zombies outside the vehicle and prevents people from seeing through it."
+msgstr "A carbon fibre wall.  Keeps zombies outside the vehicle and prevents people from seeing through it."
+
+msgid "carbon fiber quarterpanel"
+msgstr "carbon fibre quarterpanel"
+
+msgid "A half-height carbon fiber wall.  Keeps zombies outside the vehicle but allows people to see over it."
+msgstr "A half-height carbon fibre wall.  Keeps zombies outside the vehicle but allows people to see over it."
+
+msgid "carbon fiber stow board"
+msgstr "carbon fibre stow board"
+
+msgid "A carbon fiber wall with a storage locker.  Keeps zombies outside the vehicle and prevents people from seeing through it."
+msgstr "A carbon fibre wall with a storage locker.  Keeps zombies outside the vehicle and prevents people from seeing through it."
+
+msgid "An armor plate of layered carbon fiber.  Lighter than steel plating, softer against blunt impacts but tougher against cuts and bullets.  Protects other vehicle components on the same square."
+msgstr "An armour plate of layered carbon fibre.  Lighter than steel plating, softer against blunt impacts but tougher against cuts and bullets.  Protects other vehicle components on the same square."
+
+msgid "Carbon Fiber Bicycle"
+msgstr "Carbon Fibre Bicycle"
+
 msgid "Movement Optimization (1)"
 msgstr "Movement Optimisation (1)"
 

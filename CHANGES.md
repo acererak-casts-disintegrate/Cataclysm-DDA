@@ -6,6 +6,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * [Aftershock](#aftershock)
 * [Cataclysm++](#cataclysm)
 * [Arcana and Magic Items](#arcana-and-magic-items)
+* [3D Printing](#3d-printing)
 * [Other in-repo mods](#other-in-repo-mods)
 * [Builds, platforms and code](#builds-platforms-and-code)
 
@@ -27,6 +28,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Unlimited atomic coffeemaker.** It heats from its own power source again, as in 0.G.
 * **Military Professions mainlined.** Military Rifleman, Operator Recon and Operator CBRN are core professions; old worlds drop the removed mod on load.
 * **Explicit lengths** for long items that lacked them.
+* **Padding thin clothing works.** Clothing mods that scale with a garment's thickness, such as innawood's leather, Kevlar and steel padding and Arcana's bark weaves, gave nothing to garments under 1 mm thick, which is most clothing, and rounded thicker ones down to whole millimetres.
 * **British English.** A British English language option, generated from the game's text by [`lang/en_GB/`](lang/en_GB/README.md): common *-ise* spelling (armour, colour, centre, grey) and a short list of unambiguous vocabulary (trousers, petrol, car park, tinned). Words that would clash with another item stay American, so a flashlight is not a torch. "English" is now listed as "American English". With the language set to "System language", English set to the United Kingdom, Ireland, Australia or New Zealand picks British English.
 
 ## Aftershock
@@ -70,6 +72,16 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
   * Refreshed sprites for the DeadPeople-based tilesets.
   * Chaosvolt's later rebalancing of several Arcana monsters and of the gold and silver in some crafted items.
 
+## 3D Printing
+
+* **New in-repo mod.** The 3D printers and carbon fiber crafting of Cataclysm: Bright Nights, rewritten for 0.I. [`UPSTREAM.md`](data/mods/3D_Printing/UPSTREAM.md) lists what was ported, changed and left out.
+* **Printers.** The 3D printer prints plastic and carbon fiber items and repairs them. The advanced 3D printer also makes carbon fiber filament from plastic and repairs metal items. Either runs from a medium battery or a power cord, and can be placed as an appliance, mounted on a vehicle or kept in a workshop rig.
+* **Metal printing.** The advanced printer sinters metal arrows, bolt points, nails, bearings, hinges, pipe fittings, lockpicks, steel magazines and the edges of carbon fiber blades from scrap. Anything with a sharp edge or point also needs filing or grinding.
+* **Carbon fiber gear.** Armor, swords and other blades, a rifle, a machine pistol, a repeating crossbow, gunmods, a jerrycan, vehicle frames, walls, cargo space, plating and a bicycle, balanced against 0.I's steel equivalents. The core carbon fiber arrows, bolts, fishing spears and boat hull become printable.
+* **Loot and a shop.** A 3D printing shop in towns, and printers and filament in electronics, science, lab and pawn shop loot.
+* **Works with Generic Guns.** The carbon guns take generic ammunition and magazines, and the printers print Generic Guns' magazines.
+* **Mounted repair tools.** Any repair tool on a vehicle, appliance or workshop rig now repairs from vehicle or grid power; the engine used to allow this for six named tools only.
+
 ## Other in-repo mods
 
 * **Exodii removal** extends to Magiclysm (forge diviner mission, CBM store additions), Mind Over Matter (Rubik), Xedra Evolved, DinoMod and Translate Dialogue.
@@ -81,7 +93,7 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 
 * **Marked as a fork in game.** The main menu shows the build's version, with the release tag or commit, and says it is an unofficial fork of 0.I-1 in place of 0.I's fixed "Stable Release" line.
 * **Prebuilt packages.** Each release has Windows (graphics, and graphics with sound), Linux (graphics with sound) and universal macOS (graphics with sound, and terminal-only) packages, built by [`.github/workflows/release.yml`](.github/workflows/release.yml). The sound builds bundle [CC-Sounds](https://github.com/Fris0uman/CDDA-Soundpacks) by Fris0uman and contributors, with music by CO.AG used with their permission. The macOS packages are not signed by Apple; the README explains how to open them.
-* **Continuous integration.** Every push to `0.I-custom` builds the game on Linux and runs the full test suite for the core game and, separately, for Magiclysm, Aftershock, Xedra Evolved, Mind Over Matter, Bionic Professions, Cataclysm++ and Arcana, then checks that every mod loads, in groups of mods that work together. It also builds and tests on Windows (MSVC) and, in virtual machines, on FreeBSD, OpenBSD and NetBSD. A weekly job tries DragonFly BSD, MidnightBSD, Haiku and OmniOS. A separate check warns when the British English catalogue no longer matches the game's text.
+* **Continuous integration.** Every push to `0.I-custom` builds the game on Linux and runs the full test suite for the core game and, separately, for Magiclysm, Aftershock, Xedra Evolved, Mind Over Matter, Bionic Professions, Cataclysm++, Arcana and 3D Printing, then checks that every mod loads, in groups of mods that work together. It also builds and tests on Windows (MSVC) and, in virtual machines, on FreeBSD, OpenBSD and NetBSD. A weekly job tries DragonFly BSD, MidnightBSD, Haiku and OmniOS. A separate check warns when the British English catalogue no longer matches the game's text.
 * **Portability fixes.** Making the code build and pass its tests on those systems fixed bugs that affect every platform:
   * Several places passed bytes of UTF-8 text straight to `isspace`, `isdigit` and similar functions, which is undefined behaviour for non-ASCII characters (and aborted on NetBSD). They now convert to `unsigned char` first or check the range.
   * Unqualified `erf`, `erfc`, `sqrt` and `abs` calls could pick C's `double` or `int` versions instead of C++'s overloads; they now call the `std::` ones.
