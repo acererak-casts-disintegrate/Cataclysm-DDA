@@ -1,0 +1,21 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "id": "carbon_fiber_filament",
+    "category": "spare_parts",
+    "name": { "str_sp": "carbon fiber filament" },
+    "description": "A spool of fine carbon filament, used to make lightweight yet strong items.  Very useful if you can get your hands on a 3D printer; an advanced one can even make more of it.",
+    "weight": "5 g",
+    "volume": "10 ml",
+    "price": "1 USD",
+    "price_postapoc": "20 cent",
+    "material": [ "carbonfiber" ],
+    "symbol": "=",
+    "color": "dark_gray",
+    "looks_like": "solder_wire",
+    "ammo_type": "components",
+    "count": 50,
+    "flags": [ "NO_SALVAGE", "UNRECOVERABLE" ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "carbon_rifle",
+    "copy-from": "carbon_rifle",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "//": "Generic Guns replaces real calibers with generic ammunition types.",
+    "description": "This assault rifle was made using a 3D printer, with no metal parts except the barrel and bolt, resulting in a very lightweight weapon.  It takes standard rifle magazines.",
+    "ammo": [ "ammo_rifle" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "rigid": true,
+        "item_restriction": [ "rifle_mag", "rifle_sniper_mag" ]
+      }
+    ]
+  },
+  {
+    "id": "carbon_pistol",
+    "copy-from": "carbon_pistol",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "//": "Generic Guns replaces real calibers with generic ammunition types.",
+    "description": "This 3D-printed machine pistol is made without any metal parts except the barrel and slide internals.  As a result, it is very lightweight, if not very durable.  It takes pistol magazines.",
+    "ammo": [ "ammo_pistol" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "rigid": true,
+        "item_restriction": [ "pistol_mag", "pistol_smg_mag" ]
+      }
+    ]
+  }
+]

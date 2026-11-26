@@ -1,0 +1,171 @@
+[
+  {
+    "type": "item_group",
+    "id": "3d_printing_raw_materials",
+    "subtype": "collection",
+    "entries": [
+      { "item": "plastic_chunk", "count": [ 5, 10 ] },
+      { "item": "carbon_fiber_filament", "prob": 50, "count": [ 50, 100 ] },
+      {
+        "distribution": [ { "item": "rigid_plastic_sheet", "prob": 50 }, { "item": "plastic_sheet", "prob": 50 } ],
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "robofac_3d_printing",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "3d_printer_basic", "prob": 5 },
+      { "item": "3d_printer_advanced", "prob": 5 },
+      { "item": "carbon_fiber_filament", "prob": 90, "count": [ 25, 50 ] }
+    ]
+  },
+  {
+    "id": "pawn",
+    "copy-from": "pawn",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_basic", "prob": 5 } ] }
+  },
+  {
+    "id": "elecsto_homapl",
+    "copy-from": "elecsto_homapl",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_basic", "prob": 25 } ] }
+  },
+  {
+    "id": "ic_merch",
+    "copy-from": "ic_merch",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_basic", "prob": 10 } ] }
+  },
+  {
+    "id": "electronics",
+    "copy-from": "electronics",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_basic", "prob": 8 } ] }
+  },
+  {
+    "id": "consumer_electronics",
+    "copy-from": "consumer_electronics",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_basic", "prob": 8 } ] }
+  },
+  {
+    "id": "tools_science",
+    "copy-from": "tools_science",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "3d_printer_advanced", "prob": 3 } ] }
+  },
+  {
+    "id": "science",
+    "copy-from": "science",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+  },
+  {
+    "id": "chem_school",
+    "copy-from": "chem_school",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+  },
+  {
+    "id": "supplies_reagents_lab",
+    "copy-from": "supplies_reagents_lab",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_fiber_filament", "prob": 10, "count": [ 25, 50 ] } ] }
+  },
+  {
+    "id": "robofac_basic_trade",
+    "copy-from": "robofac_basic_trade",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "robofac_3d_printing", "prob": 100 } ] }
+  },
+  {
+    "id": "home_display_case",
+    "copy-from": "home_display_case",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "sword_carbon", "prob": 1 },
+        { "item": "broadsword_carbon", "prob": 1 },
+        { "item": "nodachi_carbon", "prob": 1 },
+        { "item": "greatsword_carbon", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "id": "weapons",
+    "copy-from": "weapons",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "sword_carbon", "prob": 2 },
+        { "item": "broadsword_carbon", "prob": 2 },
+        { "item": "nodachi_carbon", "prob": 2 },
+        { "item": "greatsword_carbon", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "survivorzed_tops",
+    "copy-from": "survivorzed_tops",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_chestguard", "prob": 1 } ] }
+  },
+  {
+    "id": "survivorzed_bottoms",
+    "copy-from": "survivorzed_bottoms",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_legguard", "prob": 1 } ] }
+  },
+  {
+    "id": "survivorzed_gloves",
+    "copy-from": "survivorzed_gloves",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_gloves", "prob": 1 } ] }
+  },
+  {
+    "id": "survivorzed_boots",
+    "copy-from": "survivorzed_boots",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_boots", "prob": 1 } ] }
+  },
+  {
+    "id": "survivorzed_head",
+    "copy-from": "survivorzed_head",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "carbon_helmet", "prob": 1 } ] }
+  },
+  {
+    "id": "gunmod_rare",
+    "copy-from": "gunmod_rare",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "carbon_grip", "prob": 30 },
+        { "item": "carbon_receiver", "prob": 15 },
+        { "item": "carbon_stock", "prob": 30 }
+      ]
+    }
+  }
+]

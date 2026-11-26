@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bicycle_carbon",
+    "type": "vehicle",
+    "name": "Carbon Fiber Bicycle",
+    "blueprint": [ "o#o" ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_carbon#vertical_2", "saddle#pedal", "horn_bicycle", "foot_pedals" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_carbon#vertical", "wheel_mount_light_steerable", "wheel_bicycle" ] },
+      {
+        "x": -1,
+        "y": 0,
+        "parts": [ "frame_carbon#vertical", "wheel_mount_light", "wheel_bicycle#rear", "basketsm#bike_rear" ]
+      }
+    ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "city_vehicles",
+    "vehicles": [ [ "bicycle_carbon", 40 ] ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "suburban_home",
+    "vehicles": [ [ "bicycle_carbon", 10 ] ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "parkinglot",
+    "vehicles": [ [ "bicycle_carbon", 50 ] ]
+  },
+  {
+    "type": "vehicle_group",
+    "id": "bikeshop",
+    "vehicles": [ [ "bicycle_carbon", 150 ] ]
+  }
+]

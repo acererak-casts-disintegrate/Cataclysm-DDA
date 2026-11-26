@@ -1,0 +1,56 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_3d_printer_basic",
+    "name": "3D printer",
+    "looks_like": "f_heavy_lathe",
+    "description": "A civilian-grade 3D printer, unplugged.  Examine it to set it up as an appliance you can plug in.",
+    "symbol": "=",
+    "color": "light_blue",
+    "move_cost_mod": -1,
+    "coverage": 40,
+    "required_str": 8,
+    "examine_action": { "type": "appliance_convert", "furn_set": "f_null", "item": "3d_printer_basic" },
+    "flags": [ "TRANSPARENT", "BLOCKSDOOR", "EASY_DECONSTRUCT" ],
+    "deconstruct": { "items": [ { "item": "3d_printer_basic", "count": 1 } ] },
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 1, 4 ] },
+        { "item": "plastic_chunk", "count": [ 2, 6 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "e_scrap", "count": [ 0, 2 ] }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_3d_printer_advanced",
+    "name": "advanced 3D printer",
+    "looks_like": "f_heavy_lathe",
+    "description": "An advanced 3D printer that can sinter metal as well as print polymers, unplugged.  Examine it to set it up as an appliance you can plug in.",
+    "symbol": "=",
+    "color": "light_blue",
+    "move_cost_mod": -1,
+    "coverage": 40,
+    "required_str": 8,
+    "examine_action": { "type": "appliance_convert", "furn_set": "f_null", "item": "3d_printer_advanced" },
+    "flags": [ "TRANSPARENT", "BLOCKSDOOR", "EASY_DECONSTRUCT" ],
+    "deconstruct": { "items": [ { "item": "3d_printer_advanced", "count": 1 } ] },
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 1, 4 ] },
+        { "item": "plastic_chunk", "count": [ 2, 6 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "e_scrap", "count": [ 0, 2 ] }
+      ]
+    }
+  }
+]

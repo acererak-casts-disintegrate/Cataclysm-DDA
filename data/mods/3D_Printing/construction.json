@@ -1,0 +1,36 @@
+[
+  {
+    "type": "construction",
+    "id": "ap_3d_printer_basic",
+    "group": "place_3d_printer_basic",
+    "category": "APPLIANCE",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "5 m",
+    "components": [ [ [ "3d_printer_basic", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_special": "done_appliance",
+    "activity_level": "LIGHT_EXERCISE"
+  },
+  {
+    "type": "construction",
+    "id": "ap_3d_printer_advanced",
+    "group": "place_3d_printer_advanced",
+    "category": "APPLIANCE",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "5 m",
+    "components": [ [ [ "3d_printer_advanced", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_special": "done_appliance",
+    "activity_level": "LIGHT_EXERCISE"
+  },
+  {
+    "type": "construction_group",
+    "id": "place_3d_printer_basic",
+    "name": "Place 3D Printer"
+  },
+  {
+    "type": "construction_group",
+    "id": "place_3d_printer_advanced",
+    "name": "Place Advanced 3D Printer"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "carbon_rifle",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "copy-from": "mp_15",
+    "looks_like": "mp_15",
+    "name": { "str": "carbon fiber assault rifle" },
+    "description": "This AR-pattern assault rifle was made using a 3D printer, with no metal parts except the barrel and bolt, resulting in a very lightweight weapon.  It takes STANAG magazines.",
+    "weight": "1590 g",
+    "price": "1 kUSD",
+    "price_postapoc": "40 USD",
+    "material": [ { "type": "carbonfiber", "portion": 80 }, { "type": "steel", "portion": 20 } ],
+    "durability": 6,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ]
+  },
+  {
+    "id": "carbon_pistol",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "copy-from": "glock_18c",
+    "looks_like": "glock_18c",
+    "name": { "str": "carbon fiber machine pistol" },
+    "description": "This 3D-printed machine pistol is made without any metal parts except the barrel and slide internals.  As a result, it is very lightweight, if not very durable.  It takes Glock 17 magazines.",
+    "weight": "370 g",
+    "price": "600 USD",
+    "price_postapoc": "20 USD",
+    "material": [ { "type": "carbonfiber", "portion": 80 }, { "type": "steel", "portion": 20 } ],
+    "durability": 4
+  },
+  {
+    "id": "crossbow_carbon",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "copy-from": "rep_crossbow",
+    "name": { "str": "carbon fiber repeating crossbow" },
+    "description": "A custom 3D-printed pump-action repeating crossbow made out of carbon fiber and synthetic cord.  This expensive hunting weapon is surprisingly lightweight thanks to its construction, but only a 3D printer can repair it.",
+    "material": [ "carbonfiber" ],
+    "proportional": { "weight": 0.7, "price": 2, "price_postapoc": 2 }
+  }
+]

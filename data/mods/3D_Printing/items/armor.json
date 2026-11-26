@@ -1,0 +1,168 @@
+[
+  {
+    "id": "carbon_armguard",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "armguard_lightplate",
+    "name": { "str": "pair of carbon fiber arm guards", "str_pl": "pairs of carbon fiber arm guards" },
+    "description": "Custom arm guards of layered carbon fiber made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "leather" ]
+  },
+  {
+    "id": "carbon_boots",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "boots_plate",
+    "name": { "str": "pair of carbon fiber boots", "str_pl": "pairs of carbon fiber boots" },
+    "description": "A custom pair of leather boots armored with layered carbon fiber made using a 3D printer.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "armor": [
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_toes_r",
+          "foot_toes_l",
+          "foot_heel_r",
+          "foot_heel_l",
+          "foot_arch_r",
+          "foot_arch_l",
+          "foot_sole_r",
+          "foot_sole_l"
+        ],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "carbonfiber", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "encumbrance": 28,
+        "coverage": 100
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_ankle_r", "foot_ankle_l" ],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "carbonfiber", "covered_by_mat": 50, "thickness": 2.0 }
+        ],
+        "coverage": 100
+      }
+    ]
+  },
+  {
+    "id": "carbon_gloves",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "gloves_plate",
+    "name": { "str": "pair of carbon fiber gauntlets", "str_pl": "pairs of carbon fiber gauntlets" },
+    "description": "A custom pair of leather gauntlets armored with layered carbon fiber made using a 3D printer.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "leather" ],
+    "armor": [
+      {
+        "encumbrance": 20,
+        "coverage": 100,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_back_l", "hand_back_r" ],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "carbonfiber", "covered_by_mat": 100, "thickness": 2.0 }
+        ]
+      },
+      {
+        "coverage": 100,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "carbonfiber", "covered_by_mat": 100, "thickness": 2.0 }
+        ]
+      },
+      {
+        "coverage": 100,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_palm_l", "hand_palm_r" ],
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ]
+      },
+      {
+        "coverage": 100,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "carbonfiber", "covered_by_mat": 80, "thickness": 2.0 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carbon_helmet",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "helmet_barbute",
+    "name": { "str": "carbon fiber helmet" },
+    "description": "A custom helmet of layered carbon fiber made using a 3D printer, lined with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "leather" ]
+  },
+  {
+    "id": "carbon_legguard",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "legguard_lightplate",
+    "name": { "str": "pair of carbon fiber leg guards", "str_pl": "pairs of carbon fiber leg guards" },
+    "description": "Custom leg guards of layered carbon fiber made using a 3D printer, strapped on with leather.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "leather" ]
+  },
+  {
+    "id": "carbon_chestguard",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "cuirass_lightplate",
+    "name": { "str": "carbon fiber chestguard" },
+    "description": "A custom chestplate of layered carbon fiber made using a 3D printer, with leather straps.  Its rigid plates are more comparable to plate armor than Kevlar, but it's very protective and lightweight.",
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "leather" ]
+  },
+  {
+    "id": "armor_carbonplate",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "copy-from": "armor_mc_lightplate",
+    "name": { "str": "carbon fiber armor" },
+    "description": "A custom suit of layered carbon fiber plates over neoprene padding, made using a 3D printer.  Its rigid plates are more comparable to a suit of armor than Kevlar, but it's very protective and moves surprisingly well.",
+    "weight": "5500 g",
+    "proportional": { "price": 2, "price_postapoc": 2 },
+    "material": [ "carbonfiber", "neoprene" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "carbonfiber", "covered_by_mat": 95, "thickness": 2.0 },
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "encumbrance": 15
+      },
+      {
+        "material": [
+          { "type": "carbonfiber", "covered_by_mat": 95, "thickness": 1.0 },
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      },
+      {
+        "material": [
+          { "type": "carbonfiber", "covered_by_mat": 95, "thickness": 1.0 },
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ],
+    "extend": { "flags": [ "ALLOWS_TAIL" ] }
+  }
+]

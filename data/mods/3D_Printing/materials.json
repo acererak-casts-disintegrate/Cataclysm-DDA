@@ -1,0 +1,14 @@
+[
+  {
+    "type": "material",
+    "id": "carbonfiber",
+    "copy-from": "carbonfiber",
+    "name": "Carbon Fiber Composite",
+    "//": "Bright Nights' carbon fiber.  Bullet resistance matches rigid Kevlar; the rest is the core composite's.",
+    "chip_resist": 14,
+    "repair_difficulty": 4,
+    "repaired_with": "carbon_fiber_filament",
+    "salvaged_into": "carbon_fiber_filament",
+    "resist": { "bash": 4, "cut": 5, "acid": 10, "heat": 6, "bullet": 5 }
+  }
+]

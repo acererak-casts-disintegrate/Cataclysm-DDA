@@ -1,0 +1,16 @@
+[
+  {
+    "id": "3d_printer_basicrig",
+    "copy-from": "vehicle_rig",
+    "type": "ITEM",
+    "name": { "str": "vehicle 3D printer" },
+    "description": "A 3D printer on a frame, wired to run off a vehicle's batteries.  It can produce almost any item out of plastic or carbon fiber, and repair items made of them."
+  },
+  {
+    "id": "3d_printer_advancedrig",
+    "copy-from": "vehicle_rig",
+    "type": "ITEM",
+    "name": { "str": "vehicle advanced 3D printer" },
+    "description": "An advanced 3D printer on a frame, wired to run off a vehicle's batteries.  It prints plastic, carbon fiber and sintered metal parts, makes carbon fiber filament, and repairs polymer and metal items alike."
+  }
+]

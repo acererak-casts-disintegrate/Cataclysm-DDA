@@ -1,0 +1,130 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "3d_printer_basicrig",
+    "name": { "str": "vehicle 3D printer" },
+    "description": "A 3D printer mounted in the vehicle, drawing power from the vehicle's batteries.  If you craft an item that needs a 3D printer, you can choose it as a tool, and you can use it to repair items.",
+    "categories": [ "utility" ],
+    "item": "3d_printer_basicrig",
+    "location": "center",
+    "looks_like": "f_heavy_lathe",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 24 },
+    "durability": 80,
+    "size": "50 L",
+    "flags": [ "CARGO", "OBSTACLE" ],
+    "pseudo_tools": [ { "id": "3d_printer_basic", "hotkey": "p" } ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 1, 2 ] },
+      { "item": "steel_chunk", "count": [ 1, 3 ] },
+      { "item": "scrap", "count": [ 2, 4 ] },
+      { "item": "plastic_chunk", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "3d_printer_basic", "prob": 50 }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ], [ "computer", 2 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "repair_welding_standard", 2 ], [ "soldering_standard", 15 ] ]
+      }
+    },
+    "variants": [ { "symbols": "=", "symbols_broken": "x" } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "3d_printer_advancedrig",
+    "name": { "str": "vehicle advanced 3D printer" },
+    "description": "An advanced 3D printer mounted in the vehicle, drawing power from the vehicle's batteries.  If you craft an item that needs a 3D printer, you can choose it as a tool, and you can use it to repair items.",
+    "categories": [ "utility" ],
+    "item": "3d_printer_advancedrig",
+    "location": "center",
+    "looks_like": "f_heavy_lathe",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 24 },
+    "durability": 80,
+    "size": "50 L",
+    "flags": [ "CARGO", "OBSTACLE" ],
+    "pseudo_tools": [ { "id": "3d_printer_advanced", "hotkey": "p" } ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 1, 2 ] },
+      { "item": "steel_chunk", "count": [ 1, 3 ] },
+      { "item": "scrap", "count": [ 2, 4 ] },
+      { "item": "plastic_chunk", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "3d_printer_advanced", "prob": 50 }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ], [ "computer", 5 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "repair_welding_standard", 2 ], [ "soldering_standard", 15 ] ]
+      }
+    },
+    "variants": [ { "symbols": "=", "symbols_broken": "x" } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "ap_3d_printer_basic",
+    "name": { "str": "3D printer" },
+    "description": "A 3D printer set up as an appliance, drawing power from the grid it's plugged into.  If you craft an item that needs a 3D printer, you can choose it as a tool, and you can use it to repair items.",
+    "categories": [ "utility" ],
+    "item": "3d_printer_basic",
+    "looks_like": "f_heavy_lathe",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 20 },
+    "durability": 60,
+    "flags": [ "OBSTACLE", "APPLIANCE" ],
+    "pseudo_tools": [ { "id": "3d_printer_basic", "hotkey": "p" } ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 1, 2 ] },
+      { "item": "steel_chunk", "count": [ 1, 3 ] },
+      { "item": "scrap", "count": [ 2, 4 ] },
+      { "item": "plastic_chunk", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "circuit", "count": [ 0, 2 ] }
+    ],
+    "variants": [ { "symbols": "=", "symbols_broken": "x" } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "ap_3d_printer_advanced",
+    "name": { "str": "advanced 3D printer" },
+    "description": "An advanced 3D printer set up as an appliance, drawing power from the grid it's plugged into.  If you craft an item that needs a 3D printer, you can choose it as a tool, and you can use it to repair items.",
+    "categories": [ "utility" ],
+    "item": "3d_printer_advanced",
+    "looks_like": "f_heavy_lathe",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 20 },
+    "durability": 60,
+    "flags": [ "OBSTACLE", "APPLIANCE" ],
+    "pseudo_tools": [ { "id": "3d_printer_advanced", "hotkey": "p" } ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 1, 2 ] },
+      { "item": "steel_chunk", "count": [ 1, 3 ] },
+      { "item": "scrap", "count": [ 2, 4 ] },
+      { "item": "plastic_chunk", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 4 ] },
+      { "item": "circuit", "count": [ 0, 2 ] }
+    ],
+    "variants": [ { "symbols": "=", "symbols_broken": "x" } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "veh_tools_workshop",
+    "copy-from": "veh_tools_workshop",
+    "extend": { "allowed_tools": [ "3d_printer_basic", "3d_printer_advanced" ] }
+  }
+]

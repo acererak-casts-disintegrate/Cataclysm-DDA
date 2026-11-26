@@ -1,0 +1,29 @@
+[
+  {
+    "id": "arrow_cf",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "copy-from": "arrow_cf",
+    "material": [ { "type": "carbonfiber", "portion": 81 }, { "type": "steel", "portion": 19 } ]
+  },
+  {
+    "id": "bolt_cf",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "copy-from": "bolt_cf",
+    "material": [ { "type": "carbonfiber", "portion": 81 }, { "type": "steel", "portion": 19 } ]
+  },
+  {
+    "id": "c_fishspear",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "copy-from": "c_fishspear",
+    "material": [ "carbonfiber" ]
+  },
+  {
+    "id": "carbonfiber_boat_hull",
+    "type": "ITEM",
+    "copy-from": "carbonfiber_boat_hull",
+    "material": [ "carbonfiber" ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "jerrycan_carbon",
+    "type": "ITEM",
+    "copy-from": "jerrycan",
+    "name": { "str": "carbon fiber jerrycan" },
+    "description": "A well-made carbon fiber jerrycan, meant to carry fuel, but it can carry other liquids in a pinch.",
+    "weight": "590 g",
+    "price": "12 USD 50 cent",
+    "price_postapoc": "50 cent",
+    "material": [ "carbonfiber" ],
+    "color": "dark_gray"
+  }
+]

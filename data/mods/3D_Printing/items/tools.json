@@ -1,0 +1,95 @@
+[
+  {
+    "id": "3d_printer_basic",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "tools",
+    "name": { "str": "3D printer" },
+    "description": "Although it's not nearly as fancy as the experimental nanofabricators, this civilian-grade 3D printer can produce almost any item out of plastic or carbon fiber…  so long as you can program it.  It's also useful for repairing items made out of plastic or carbon fiber.  It runs from a medium battery, or from a power outlet with its cord.",
+    "weight": "2 kg",
+    "volume": "1500 ml",
+    "longest_side": "30 cm",
+    "price": "400 USD",
+    "price_postapoc": "20 USD",
+    "material": [ { "type": "steel", "portion": 60 }, { "type": "plastic", "portion": 40 } ],
+    "symbol": "n",
+    "color": "white",
+    "looks_like": "f_heavy_lathe",
+    "to_hit": { "grip": "bad", "length": "short", "surface": "any", "balance": "clumsy" },
+    "melee_damage": { "bash": 5 },
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [ "plastic", "carbonfiber" ],
+        "skill": "computer",
+        "tool_quality": 1,
+        "cost_scaling": 0.1,
+        "move_cost": 800
+      },
+      { "type": "link_up", "cable_length": 3, "charge_rate": "500 W" }
+    ],
+    "flags": [ "ALLOWS_REMOTE_USE", "WATER_BREAK", "ELECTRONIC" ],
+    "faults": [ { "fault_group": "electronic_general" } ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_MEDIUM" ],
+        "default_magazine": "medium_battery_cell"
+      }
+    ],
+    "tool_ammo": [ "battery" ]
+  },
+  {
+    "id": "3d_printer_advanced",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "copy-from": "3d_printer_basic",
+    "name": { "str": "advanced 3D printer" },
+    "description": "Recent advances in 3D printing technology have resulted in the ability to quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly expensive, but sought out by collectors and preppers alike.  On top of faster polymer printing, it can sinter metal parts from scrap, make carbon fiber filament out of plastic, and repair polymer and metal items alike.  It runs from a medium battery, or from a power outlet with its cord.",
+    "weight": "4 kg",
+    "volume": "3 L",
+    "longest_side": "40 cm",
+    "price": "2 kUSD",
+    "price_postapoc": "50 USD",
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [
+          "iron",
+          "steel",
+          "budget_steel",
+          "lc_steel",
+          "mc_steel",
+          "hc_steel",
+          "ch_steel",
+          "lc_steel_chain",
+          "mc_steel_chain",
+          "hc_steel_chain",
+          "ch_steel_chain",
+          "aluminum",
+          "copper",
+          "bronze",
+          "fancy_bronze",
+          "silver",
+          "gold",
+          "platinum",
+          "superalloy",
+          "lead",
+          "tin",
+          "zinc",
+          "plastic",
+          "carbonfiber"
+        ],
+        "skill": "computer",
+        "tool_quality": 3,
+        "cost_scaling": 0.1,
+        "move_cost": 400
+      },
+      { "type": "link_up", "cable_length": 3, "charge_rate": "1000 W" }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "knife_carbon",
+    "type": "ITEM",
+    "copy-from": "knife_combat",
+    "name": { "str": "carbon fiber knife" },
+    "description": "A custom 3D-printed combat knife made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "spear_carbon",
+    "type": "ITEM",
+    "copy-from": "spear_steel",
+    "name": { "str": "carbon fiber spear" },
+    "description": "A custom 3D-printed spear made out of carbon fiber with a steel-edged spear tip.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "sword_carbon",
+    "type": "ITEM",
+    "copy-from": "katana",
+    "name": { "str": "carbon fiber katana" },
+    "description": "A custom 3D-printed single-edged sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "broadsword_carbon",
+    "type": "ITEM",
+    "copy-from": "broadsword",
+    "name": { "str": "carbon fiber sword" },
+    "description": "A custom 3D-printed double-edged sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "nodachi_carbon",
+    "type": "ITEM",
+    "copy-from": "nodachi",
+    "name": { "str": "carbon fiber nodachi" },
+    "description": "A custom 3D-printed single-edged two-handed sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "greatsword_carbon",
+    "type": "ITEM",
+    "copy-from": "zweihander",
+    "name": { "str": "carbon fiber greatsword" },
+    "description": "A custom 3D-printed two-handed sword made out of carbon fiber with a steel edge.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "punch_dagger_carbon",
+    "type": "ITEM",
+    "copy-from": "punch_dagger",
+    "name": { "str": "carbon fiber punch dagger" },
+    "description": "A custom 3D-printed punch dagger made out of carbon fiber with a steel-edged blade.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  },
+  {
+    "id": "knuckle_katar_carbon",
+    "type": "ITEM",
+    "copy-from": "knuckle_katar",
+    "name": { "str": "carbon fiber knuckle katar" },
+    "description": "A custom 3D-printed knuckle katar made out of carbon fiber with steel-edged blades.  It is lighter than an all-steel weapon thanks to its method of manufacture.",
+    "material": [ "carbonfiber", "steel" ],
+    "proportional": { "weight": 0.6, "price": 2, "price_postapoc": 2 }
+  }
+]

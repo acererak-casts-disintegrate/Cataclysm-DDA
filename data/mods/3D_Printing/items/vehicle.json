@@ -1,0 +1,68 @@
+[
+  {
+    "type": "ITEM",
+    "id": "sheet_carbon",
+    "name": { "str": "carbon fiber sheet" },
+    "description": "A thin, rigid sheet of 3D-printed carbon fiber, for building lightweight vehicle walls.",
+    "weight": "750 g",
+    "volume": "1 L",
+    "longest_side": "100 cm",
+    "to_hit": { "grip": "bad", "length": "long", "surface": "any", "balance": "clumsy" },
+    "color": "dark_gray",
+    "symbol": "]",
+    "material": [ "carbonfiber" ],
+    "category": "veh_parts",
+    "price": "40 USD",
+    "price_postapoc": "1 USD",
+    "melee_damage": { "bash": 4 }
+  },
+  {
+    "type": "ITEM",
+    "id": "carbon_plate",
+    "name": { "str_sp": "carbon fiber plating" },
+    "description": "A piece of vehicle armor plating made of layered carbon fiber.  Far lighter than steel plating, and nearly as tough.",
+    "weight": "2 kg",
+    "volume": "3 L",
+    "longest_side": "100 cm",
+    "to_hit": { "grip": "bad", "length": "long", "surface": "any", "balance": "clumsy" },
+    "color": "dark_gray",
+    "symbol": "]",
+    "material": [ "carbonfiber" ],
+    "category": "veh_parts",
+    "price": "200 USD",
+    "price_postapoc": "5 USD",
+    "melee_damage": { "bash": 5 }
+  },
+  {
+    "type": "ITEM",
+    "id": "frame_carbon",
+    "copy-from": "foldframe",
+    "name": { "str": "carbon fiber frame" },
+    "description": "A foldable frame made from 3D-printed carbon fiber tubing.  Useful for lightweight yet sturdy vehicles.",
+    "weight": "3 kg",
+    "material": [ "carbonfiber" ],
+    "color": "dark_gray",
+    "price": "200 USD",
+    "price_postapoc": "4 USD"
+  },
+  {
+    "type": "ITEM",
+    "id": "cargo_rack_carbon",
+    "copy-from": "cargo_rack",
+    "name": { "str": "carbon fiber cargo carrier" },
+    "description": "A sturdy, yet lightweight carbon fiber structure outfitted with tie-downs and attachment points for carrying cargo.",
+    "weight": "15 kg",
+    "material": [ "carbonfiber" ],
+    "color": "dark_gray"
+  },
+  {
+    "type": "ITEM",
+    "id": "cargo_aisle_carbon",
+    "copy-from": "cargo_aisle",
+    "name": { "str": "carbon fiber floor trunk" },
+    "description": "A section of carbon fiber flooring with a cargo space beneath, and a hinged door for access.",
+    "weight": "4 kg",
+    "material": [ "carbonfiber" ],
+    "color": "dark_gray"
+  }
+]

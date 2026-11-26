@@ -1,0 +1,35 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "craft_shop_4" ],
+    "copy-from": "generic_city_building",
+    "looks_like": "craft_shop",
+    "name": "3D printing shop",
+    "sym": "s",
+    "color": "cyan",
+    "extend": { "flags": [ "SOURCE_FABRICATION" ] }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "craft_shop_roof_4" ],
+    "copy-from": "generic_city_building_roof",
+    "looks_like": "craft_shop_roof",
+    "name": "3D printing shop roof",
+    "sym": "s",
+    "color": "cyan"
+  },
+  {
+    "type": "city_building",
+    "id": "craft_shop_4",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "craft_shop_4_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "craft_shop_roof_4_north" }
+    ]
+  },
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "city": { "shops": { "craft_shop_4": 200 } }
+  }
+]

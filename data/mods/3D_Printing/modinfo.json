@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "3d_printing",
+    "name": "3D Printing",
+    "authors": [ "Cataclysm: Bright Nights contributors" ],
+    "description": "3D printers and carbon fiber crafting, from Cataclysm: Bright Nights.  The 3D printer prints plastic and carbon fiber items and repairs them.  The advanced 3D printer also sinters metal parts, makes carbon fiber filament and repairs metal items.  Either can be carried, placed as an appliance, mounted on a vehicle or kept in a workshop rig.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

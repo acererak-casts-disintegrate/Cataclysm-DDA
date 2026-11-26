@@ -1,0 +1,191 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "frame_carbon",
+    "copy-from": "frame_abstract",
+    "item": "frame_carbon",
+    "name": { "str": "carbon fiber frame" },
+    "description": "A carbon fiber framework, designed to fold.  Other vehicle components can be mounted on it.  If all the frames and components of a vehicle are foldable, the vehicle can be folded into a small package and picked up as a normal item.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 2 ] ],
+        "time": "20 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 2 ] ] }
+    },
+    "durability": 300,
+    "damage_reduction": { "all": 16 },
+    "folded_volume": "2500 ml",
+    "flags": [ "MOUNTABLE", "INITIAL_PART" ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "trunk_carbon",
+    "copy-from": "trunk",
+    "item": "frame_carbon",
+    "name": { "str": "carbon fiber trunk" },
+    "description": "A lockable storage compartment built from carbon fiber.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "20 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "5 m", "using": [ [ "vehicle_repair_carbon", 3 ] ] }
+    }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "trunk_floor_carbon",
+    "copy-from": "trunk_floor",
+    "item": "cargo_aisle_carbon",
+    "name": { "str": "carbon fiber floor trunk" },
+    "description": "A section of carbon fiber flooring with a cargo space beneath, and a hinged door for access.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "30 m",
+        "using": [ [ "vehicle_bolt_install", 2 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 6 ] ] }
+    }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "cargo_space_carbon",
+    "copy-from": "cargo_space",
+    "item": "cargo_rack_carbon",
+    "name": { "str": "carbon fiber cargo space" },
+    "description": "A big carbon fiber cargo carrier, with tie-downs and attachment points for storing items.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "40 m",
+        "using": [ [ "vehicle_bolt_install", 4 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "20 m", "using": [ [ "vehicle_repair_carbon", 12 ] ] }
+    }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "cargo_space_carbon_external",
+    "copy-from": "cargo_space_external",
+    "item": "cargo_rack_carbon",
+    "name": { "str": "external carbon fiber cargo rack" },
+    "description": "Carbon fiber storage space, mounted outside your vehicle's armor and vulnerable to damage.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 3 ] ],
+        "time": "12 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "6 m", "using": [ [ "vehicle_repair_carbon", 5 ] ] }
+    }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "carbon_board",
+    "copy-from": "board",
+    "item": "sheet_carbon",
+    "name": { "str": "carbon fiber board" },
+    "description": "A carbon fiber wall.  Keeps zombies outside the vehicle and prevents people from seeing through it.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "40 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 5 ] ] }
+    },
+    "durability": 160
+  },
+  {
+    "type": "vehicle_part",
+    "id": "carbon_halfboard",
+    "copy-from": "halfboard",
+    "item": "sheet_carbon",
+    "name": { "str": "carbon fiber quarterpanel" },
+    "description": "A half-height carbon fiber wall.  Keeps zombies outside the vehicle but allows people to see over it.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "40 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 5 ] ] }
+    },
+    "durability": 160
+  },
+  {
+    "type": "vehicle_part",
+    "id": "carbon_stowboard",
+    "copy-from": "stowboard",
+    "item": "sheet_carbon",
+    "name": { "str": "carbon fiber stow board" },
+    "description": "A carbon fiber wall with a storage locker.  Keeps zombies outside the vehicle and prevents people from seeing through it.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 2 ] ],
+        "time": "100 m",
+        "using": [ [ "vehicle_bolt_install", 1 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 5 ] ] }
+    },
+    "durability": 120
+  },
+  {
+    "type": "vehicle_part",
+    "id": "plating_carbon",
+    "copy-from": "plating_steel",
+    "item": "carbon_plate",
+    "name": { "str": "carbon fiber plating" },
+    "description": "An armor plate of layered carbon fiber.  Lighter than steel plating, softer against blunt impacts but tougher against cuts and bullets.  Protects other vehicle components on the same square.",
+    "color": "dark_gray",
+    "broken_color": "dark_gray",
+    "breaks_into": "ig_vp_carbon",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 2 ] ],
+        "time": "50 m",
+        "using": [ [ "vehicle_bolt_install", 3 ], [ "vehicle_wrench_2", 1 ] ]
+      },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "10 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "10 m", "using": [ [ "vehicle_repair_carbon", 6 ] ] }
+    },
+    "durability": 660,
+    "damage_reduction": { "all": 45, "cut": 56, "stab": 56, "bullet": 65 }
+  }
+]

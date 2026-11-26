@@ -2722,10 +2722,17 @@ TEST_CASE( "repairable_and_with_what_tools", "[iteminfo][repair]" )
          );
 
     // FIXME: Use an item that can only be repaired by test tools
-    CHECK( item_info_str( hazmat, repaired ) ==
-           "--\n"
-           "<color_c_white>Repair</color> using integrated soldering iron, integrated welder, gunsmith repair kit, firearm repair kit, soldering iron, portable soldering iron, or TEST soldering iron.\n"
-           "<color_c_white>With</color> <color_c_cyan>Plastic</color>.\n" );
+    // Mods can add plastic repair tools of their own, so look for the core ones in the list
+    const std::string hazmat_info = item_info_str( hazmat, repaired );
+    CHECK_THAT( hazmat_info, Catch::StartsWith( "--\n<color_c_white>Repair</color> using " ) );
+    for( const char *tool : {
+             "integrated soldering iron", "integrated welder", "gunsmith repair kit", "firearm repair kit",
+             "soldering iron", "portable soldering iron", "or TEST soldering iron."
+         } ) {
+        CHECK_THAT( hazmat_info, Catch::Contains( tool ) );
+    }
+    CHECK_THAT( hazmat_info,
+                Catch::EndsWith( "<color_c_white>With</color> <color_c_cyan>Plastic</color>.\n" ) );
 
     CHECK( item_info_str( rock, repaired ) ==
            "--\n"
