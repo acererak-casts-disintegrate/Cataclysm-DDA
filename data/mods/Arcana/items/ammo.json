@@ -374,6 +374,21 @@
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
+    "id": "410shot_000_arcana",
+    "copy-from": "410shot_000",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "name": { "str": "purifying .410 000 shot" },
+    "description": "A handloaded .410 shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
+    "//": "Ported from Bright Nights Arcana. Scaled from 410shot_000 the way the purifying 00 shot is scaled from 00 shot.",
+    "price": "0 cent",
+    "price_postapoc": "9 USD",
+    "range": 36,
+    "damage": { "damage_type": "heat", "amount": 30, "armor_penetration": 10 },
+    "shot_damage": { "damage_type": "heat", "amount": 14, "armor_penetration": 10 },
+    "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
+  },
+  {
     "id": "flintlock_shot_arcana",
     "copy-from": "flintlock_shot",
     "type": "ITEM",

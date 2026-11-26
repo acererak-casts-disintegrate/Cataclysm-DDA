@@ -1501,7 +1501,7 @@
     "volume": "2 L",
     "price_postapoc": "150 USD",
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE", "BELT_CLIP" ],
     "techniques": [ "WHIP_DISARM" ],
     "melee_damage": { "bash": 3, "cut": 21 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],

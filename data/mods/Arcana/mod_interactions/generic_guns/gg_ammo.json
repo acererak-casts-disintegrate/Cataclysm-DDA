@@ -8,6 +8,14 @@
     "ammo_type": "ammo_shot"
   },
   {
+    "id": "410shot_000_arcana",
+    "copy-from": "410shot_000_arcana",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "//": "Generic Guns migrates .410 000 shot to buckshot, so the blessed shells follow it.",
+    "ammo_type": "ammo_shot"
+  },
+  {
     "id": "flintlock_shot_arcana",
     "copy-from": "flintlock_shot_arcana",
     "type": "ITEM",

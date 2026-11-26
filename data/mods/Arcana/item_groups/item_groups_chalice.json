@@ -111,6 +111,8 @@
       { "item": "chitin_piece", "prob": 5, "count": [ 1, 5 ] },
       { "item": "fur", "prob": 10, "count": [ 1, 5 ] },
       { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
+      [ "silver_glyph", 5 ],
+      [ "scroll_blank", 5 ],
       [ "bee_sting", 10 ],
       { "group": "arcana_hunt_random", "prob": 25 },
       { "item": "essence", "prob": 40, "count": [ 1, 3 ] },
