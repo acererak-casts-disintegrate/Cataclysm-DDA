@@ -52,6 +52,22 @@ This fork is based on the 0.I stable release (0.I-1). It carries forward the cha
 * **Works with other in-repo mods.** Its interactions with Cataclysm++ and CrazyCataclysm follow those mods' group names here, and under Generic Guns its blessed shells take Generic Guns' ammunition types.
 * **Data fixes.** It extends the core nether, cult and triffid monster factions instead of replacing them, its CrazyCataclysm skeltal drops all three of its items again, its warehouse lab gets its roof, and item weights, volumes and text are corrected.
 * **Mutation items act directly.** The blood effigy, refined blood offering, sacramental heart and restored ritual blade used to apply a short marker effect that a background check looked for every second before mutating you. They now run their mutation directly, through 0.I's consumption effects and item actions, with the same messages, charge costs and one-turn use. Saves made before the change load without side effects.
+* **Bug fixes from the Bright Nights version.** Fixes Chaosvolt made to Arcana in Cataclysm: Bright Nights that apply here too:
+  * The moruboru's stun works.
+  * The hermit's map updates find the rural church from any floor.
+  * The gilded aegis heals bleeding already under way.
+  * Drain-life effects heal on killing blows as well as other hits.
+  * Purifying shot's pellets do heat damage past point blank.
+* **Additions from the Bright Nights version.**
+  * Purifying .410 000 shot.
+  * Drops for skeletal masters and zombie liches.
+  * Silver glyphs and blank scrolls in cult crafting loot.
+  * A belt clip for the moonstone scourge.
+  * The distortion flow rotor, a roof-mounted motor and VTOL rotor in one. It is the only player-installable rotor, and flying still needs helicopter piloting.
+  * The essence focus cell, a UPS whose built-in battery is charged by channelling dull essence into it at 5 kJ per mote.
+  * Green light trails for wraithslayer bolts.
+  * Refreshed sprites for the DeadPeople-based tilesets.
+  * Chaosvolt's later rebalancing of several Arcana monsters and of the gold and silver in some crafted items.
 
 ## Other in-repo mods
 

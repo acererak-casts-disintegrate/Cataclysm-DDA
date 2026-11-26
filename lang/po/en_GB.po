@@ -21803,6 +21803,9 @@ msgstr[1] "crystallised essence"
 msgid "A handloaded shotgun shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow."
 msgstr "A handloaded shotgun shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armour, while leaving behind a dazzling glow."
 
+msgid "A handloaded .410 shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow."
+msgstr "A handloaded .410 shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armour, while leaving behind a dazzling glow."
+
 msgid "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow."
 msgstr "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armour, while leaving behind a dazzling glow."
 
@@ -22053,6 +22056,9 @@ msgstr "A device modified from an exotic compact reactor, inverting its original
 
 msgid "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects."
 msgstr "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallised essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects."
+
+msgid "A small copper chamber designed to convert dull essence into a steady supply of electrical current, stored in a built-in cell that powers items running off a Unified Power Supply, such as energy weapons or power armor.  Channel dull essence into it to charge it: each mote yields 5 kJ."
+msgstr "A small copper chamber designed to convert dull essence into a steady supply of electrical current, stored in a built-in cell that powers items running off a Unified Power Supply, such as energy weapons or power armour.  Channel dull essence into it to charge it: each mote yields 5 kJ."
 
 msgid "A hulking, yet unnaturally light, mass of parts running off anomalous technology, with an exotic laser weapon and advanced defensive tools.  With a completely bespoke power cell fueled by magical essence installed, use it to deploy and set up the mech for piloting, consuming a random amount of charges from its power cell to restore it to life."
 msgstr "A hulking, yet unnaturally light, mass of parts running off anomalous technology, with an exotic laser weapon and advanced defensive tools.  With a completely bespoke power cell fuelled by magical essence installed, use it to deploy and set up the mech for piloting, consuming a random amount of charges from its power cell to restore it to life."
