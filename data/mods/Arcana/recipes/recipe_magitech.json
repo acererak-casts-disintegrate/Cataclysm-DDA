@@ -308,6 +308,30 @@
     "flags": [ "SECRET" ]
   },
   {
+    "result": "dull_essence_UPS",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 6 ], [ "fabrication", 4 ] ],
+    "difficulty": 5,
+    "time": "45 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "recipe_lab_arcana", 5 ], [ "recipe_lab_elec", 6 ], [ "textbook_atomic_lab", 6 ] ],
+    "using": [ [ "soldering_standard", 5 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "canister_empty", 1 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "cable", 15 ] ],
+      [ [ "mana_gem_dull", 1 ] ],
+      [ [ "iron_thorn", 1 ] ],
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "result": "distortion_flow_rotor_item",
     "type": "recipe",
     "category": "CC_ARCANA",

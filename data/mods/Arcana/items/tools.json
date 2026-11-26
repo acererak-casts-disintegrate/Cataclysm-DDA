@@ -1417,6 +1417,58 @@
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ]
   },
   {
+    "id": "dull_essence_UPS",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "essence focus cell" },
+    "description": "A small copper chamber designed to convert dull essence into a steady supply of electrical current, stored in a built-in cell that powers items running off a Unified Power Supply, such as energy weapons or power armor.  Channel dull essence into it to charge it: each mote yields 5 kJ.",
+    "//": "Ported from Bright Nights Arcana, where it holds dull essence directly. Here the essence is converted into a built-in battery on use, at the 5 kJ per dull essence of arcana_fuel_essence_dull; the battery is sized like a medium atomic cell.",
+    "weight": "1 kg",
+    "volume": "2 L",
+    "price": "6000 USD",
+    "price_postapoc": "30 USD",
+    "melee_damage": { "bash": 10 },
+    "material": [ "copper", "steel" ],
+    "symbol": ";",
+    "color": "light_red",
+    "looks_like": "medium_atomic_battery_cell",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 2625 } } ],
+    "use_action": [
+      {
+        "type": "effect_on_conditions",
+        "menu_text": "Channel essence",
+        "description": "Channel dull essence from your inventory into the cell, 5 kJ of charge for each mote, until it is full or you run out.",
+        "effect_on_conditions": [
+          {
+            "id": "arcana_essence_focus_cell_channel",
+            "effect": [
+              { "math": [ "_need = ceil( ( n_val('power_max') - n_val('power') ) / 5 )" ] },
+              { "math": [ "_use = min( _need, u_charge_count('essence_dull') )" ] },
+              {
+                "if": { "math": [ "_use < 1" ] },
+                "then": {
+                  "if": { "math": [ "_need < 1" ] },
+                  "then": { "u_message": "The essence focus cell is already fully charged.", "type": "info" },
+                  "else": { "u_message": "You have no dull essence to channel into the cell.", "type": "info" }
+                },
+                "else": [
+                  { "u_consume_item": "essence_dull", "count": { "math": [ "_use" ] } },
+                  { "math": [ "n_val('power') += _use * 5" ] },
+                  { "turn_cost": 30 },
+                  {
+                    "u_message": "You channel the dull essence into the cell, and it hums with current.",
+                    "type": "good"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "flags": [ "IS_UPS", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
     "id": "bot_mech_arcana",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
