@@ -370,6 +370,7 @@
     "price_postapoc": "9 USD",
     "range": 27,
     "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
+    "shot_damage": { "damage_type": "heat", "amount": 15, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -383,6 +384,7 @@
     "price_postapoc": "15 USD",
     "range": 6,
     "damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 10 },
+    "shot_damage": { "damage_type": "heat", "amount": 8, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -396,6 +398,7 @@
     "price_postapoc": "1 USD",
     "range": 9,
     "damage": { "damage_type": "heat", "amount": 80, "armor_penetration": 10 },
+    "shot_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   }
 ]
