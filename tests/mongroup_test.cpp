@@ -279,10 +279,16 @@ TEST_CASE( "mongroup_sets_quantity_correctly", "[mongroup]" )
     mongroup_id mg = GENERATE( GROUP_PET_DOGS, GROUP_PETS );
     CAPTURE( mg );
 
+    // A group can hold entries that are not valid yet, such as Mind Over Matter's
+    // hellhounds in GROUP_PET_DOGS, which start on day 360. Their weight still counts
+    // in the roll, so a single roll can find no monster; retry until one does.
     int quantity = 10;
     bool found = false;
-    std::vector<MonsterGroupResult> res =
-        MonsterGroupManager::GetResultFromGroup( mg, &quantity, &found );
+    std::vector<MonsterGroupResult> res;
+    for( int attempt = 0; attempt < 20 && !found; attempt++ ) {
+        quantity = 10;
+        res = MonsterGroupManager::GetResultFromGroup( mg, &quantity, &found );
+    }
     CHECK( found );
     CHECK( 10 - quantity == static_cast<int>( res.size() ) );
 }
