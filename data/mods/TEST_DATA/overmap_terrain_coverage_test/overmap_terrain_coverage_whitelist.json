@@ -48,7 +48,8 @@
       "pottery_cottage_field_2nd",
       "pottery_cottage_field_roof",
       "pottery_cottage_field",
-      "pottery_cottage_basement"
+      "pottery_cottage_basement",
+      "riverside_dwelling\\d?(_roof)?"
     ]
   }
 ]
