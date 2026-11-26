@@ -801,7 +801,7 @@
   {
     "type": "effect_type",
     "id": "arcana_aegis_mending",
-    "blocks_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
+    "removes_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
     "rating": "good"
   },
   {
