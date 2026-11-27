@@ -1,0 +1,101 @@
+[
+  {
+    "id": "afs_fault_fused_coils_compact",
+    "type": "fault",
+    "fault_type": "gun_overheat_melting",
+    "name": { "str": "Fused coils" },
+    "description": "Overheating has fused the windings of this compact coilgun and burned out its driver boards.  The frame, feed and mounts survived, but the coils must be cut out, rewound and re-timed before it will fire again.",
+    "item_prefix": "ruined",
+    "flags": [ "RUINED_GUN" ]
+  },
+  {
+    "id": "afs_fault_fused_coils",
+    "type": "fault",
+    "fault_type": "gun_overheat_melting",
+    "name": { "str": "Fused coils" },
+    "description": "Overheating has fused the windings of this full-size coilgun and burned out its driver boards.  The frame, feed and mounts survived, but the coils must be cut out, rewound and re-timed before it will fire again.",
+    "item_prefix": "ruined",
+    "flags": [ "RUINED_GUN" ]
+  },
+  {
+    "id": "afs_fault_fused_coils_heavy",
+    "type": "fault",
+    "fault_type": "gun_overheat_melting",
+    "name": { "str": "Fused coils" },
+    "description": "Overheating has fused the windings of this heavy, two-stack coilgun and burned out its driver boards.  The frame, feed and mounts survived, but the coils must be cut out, rewound and re-timed before it will fire again.",
+    "item_prefix": "ruined",
+    "flags": [ "RUINED_GUN" ]
+  },
+  {
+    "type": "fault_fix",
+    "id": "afs_mend_fused_coils_compact",
+    "name": "Rewind and rebuild coils",
+    "success_msg": "You rewind the coils and replace the driver boards of your %s.",
+    "time": "2 h",
+    "faults_removed": [ "afs_fault_fused_coils_compact" ],
+    "skills": { "electronics": 5, "fabrication": 3 },
+    "requirements": [
+      [ "soldering_standard", 8 ],
+      {
+        "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+        "tools": [ [ [ "laptop", -1 ] ] ],
+        "components": [
+          [ [ "cable", 20 ] ],
+          [ [ "power_supply", 1 ] ],
+          [ [ "circuit", 1 ] ],
+          [ [ "e_scrap", 6 ] ],
+          [ [ "plastic_chunk", 1 ] ]
+        ]
+      }
+    ],
+    "time_save_profs": { "prof_elec_soldering": 0.8, "prof_electromagnetics": 0.8, "prof_gunsmithing_improv": 0.8 }
+  },
+  {
+    "type": "fault_fix",
+    "id": "afs_mend_fused_coils",
+    "name": "Rewind and rebuild coils",
+    "success_msg": "You rewind the coils and replace the driver boards of your %s.",
+    "time": "4 h",
+    "faults_removed": [ "afs_fault_fused_coils" ],
+    "skills": { "electronics": 5, "fabrication": 3 },
+    "requirements": [
+      [ "soldering_standard", 16 ],
+      {
+        "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+        "tools": [ [ [ "laptop", -1 ] ] ],
+        "components": [
+          [ [ "cable", 60 ] ],
+          [ [ "power_supply", 2 ] ],
+          [ [ "circuit", 2 ] ],
+          [ [ "e_scrap", 15 ] ],
+          [ [ "plastic_chunk", 2 ] ]
+        ]
+      }
+    ],
+    "time_save_profs": { "prof_elec_soldering": 0.8, "prof_electromagnetics": 0.8, "prof_gunsmithing_improv": 0.8 }
+  },
+  {
+    "type": "fault_fix",
+    "id": "afs_mend_fused_coils_heavy",
+    "name": "Rewind and rebuild coils",
+    "success_msg": "You rewind the coils and replace the driver boards of your %s.",
+    "time": "8 h",
+    "faults_removed": [ "afs_fault_fused_coils_heavy" ],
+    "skills": { "electronics": 5, "fabrication": 3 },
+    "requirements": [
+      [ "soldering_standard", 32 ],
+      {
+        "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+        "tools": [ [ [ "laptop", -1 ] ] ],
+        "components": [
+          [ [ "cable", 120 ] ],
+          [ [ "power_supply", 4 ] ],
+          [ [ "circuit", 4 ] ],
+          [ [ "e_scrap", 30 ] ],
+          [ [ "plastic_chunk", 4 ] ]
+        ]
+      }
+    ],
+    "time_save_profs": { "prof_elec_soldering": 0.8, "prof_electromagnetics": 0.8, "prof_gunsmithing_improv": 0.8 }
+  }
+]

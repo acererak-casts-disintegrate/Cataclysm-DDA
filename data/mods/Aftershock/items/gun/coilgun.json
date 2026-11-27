@@ -22,7 +22,6 @@
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ], [ "capacitor", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "ALLOWS_BODY_BLOCK" ],
-    "faults": [ { "fault": "fault_gun_dirt" }, { "fault": "fault_fail_to_feed" } ],
     "melee_damage": { "bash": 6 }
   },
   {
@@ -48,12 +47,7 @@
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ], [ "capacitor", 1 ], [ "cooling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "ALLOWS_BODY_BLOCK", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils_compact" } ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 6 ] ],
     "overheat_threshold": 48,
     "heat_per_shot": 3,
@@ -93,12 +87,7 @@
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "nailmag", "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils_compact" } ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ] ],
     "overheat_threshold": 115,
     "heat_per_shot": 3,
@@ -138,12 +127,7 @@
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_coilgun_hopper", "nailmag", "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils" } ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "5 rd.", 5 ], [ "AUTO", "auto", 10 ] ],
     "overheat_threshold": 100,
     "heat_per_shot": 2.5,
@@ -184,12 +168,7 @@
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils" } ],
     "overheat_threshold": 80,
     "heat_per_shot": 12,
     "cooling_value": 2,
@@ -235,12 +214,7 @@
       }
     ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "RELOAD_ONE", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils" } ],
     "overheat_threshold": 75,
     "heat_per_shot": 12,
     "cooling_value": 2,
@@ -280,12 +254,6 @@
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_scattercoiler_drum" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 5 ] ],
     "overheat_threshold": 95,
     "heat_per_shot": 15,
@@ -316,12 +284,7 @@
     "valid_mod_locations": [ [ "sights", 1 ], [ "rail", 1 ], [ "capacitor", 1 ], [ "cooling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_coilgun_hopper", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "MOUNTED_GUN", "OVERHEATS" ],
-    "faults": [
-      { "fault": "fault_gun_dirt" },
-      { "fault": "fault_fail_to_feed" },
-      { "fault": "fault_overheat_safety" },
-      { "fault": "fault_overheat_melting" }
-    ],
+    "faults": [ { "fault": "fault_overheat_safety" }, { "fault": "afs_fault_fused_coils_heavy" } ],
     "modes": [ [ "DEFAULT", "burst", 6 ], [ "AUTO", "high auto", 15 ] ],
     "overheat_threshold": 250,
     "heat_per_shot": 2.5,
@@ -330,9 +293,10 @@
   },
   {
     "id": "afs_coilgun_underbarrel",
-    "copy-from": "underbarrel_base",
     "type": "ITEM",
     "subtypes": [ "GUN", "GUNMOD" ],
+    "reload_noise_volume": 10,
+    "handling": 20,
     "looks_like": "u_shotgun",
     "name": { "str": "underbarrel coilgun" },
     "description": "A short coilgun with a ten-nail magazine, made to hang under a rifle, shotgun or crossbow and run off a UPS.  It takes steel or iron nails.",
@@ -371,10 +335,10 @@
   },
   {
     "id": "afs_xm730_carbine",
-    "copy-from": "gun_base",
     "type": "ITEM",
     "subtypes": [ "GUN" ],
     "looks_like": "coilgun",
+    "reload_noise_volume": 10,
     "name": { "str": "XM730 coilgun carbine" },
     "description": "A prototype military coilgun carbine for special operations, built around a superalloy barrel lined with cooled coils.  It fires purpose-made 7x30mm steel darts below the speed of sound, so almost the only sound it makes is the dart hitting.  It runs off a UPS.",
     "weight": "3100 g",
