@@ -412,7 +412,8 @@
     "autolearn": true,
     "tools": [ [ [ "coilgun", -1 ] ], [ [ "nail", -1 ], [ "combatnail", -1 ] ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
-    "components": [ [ [ "sheet_metal_small", 1 ] ], [ [ "spring", 1 ] ], [ [ "scrap", 1 ] ], [ [ "duct_tape", 20 ] ] ]
+    "//": "A magazine spring is a bent strip of scrap, not a 3 kg heavy-duty spring.",
+    "components": [ [ [ "sheet_metal_small", 1 ] ], [ [ "scrap", 2 ] ], [ [ "duct_tape", 20 ] ] ]
   },
   {
     "result": "stanag20_beowulf",

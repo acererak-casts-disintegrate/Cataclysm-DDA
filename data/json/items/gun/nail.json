@@ -48,11 +48,13 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "dispersion": 180,
     "durability": 5,
-    "loudness": 12,
+    "loudness": 9,
     "energy_drain": "2 kJ",
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail mount", 1 ], [ "underbarrel mount", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "nailmag" ] } ],
-    "flags": [ "USE_UPS" ],
+    "//2": "No powder, cartridge or chamber: nothing to foul, lubricate or eject.",
+    "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "faults": [ { "fault": "fault_gun_dirt" }, { "fault": "fault_fail_to_feed" } ],
     "melee_damage": { "bash": 10 }
   }
 ]
