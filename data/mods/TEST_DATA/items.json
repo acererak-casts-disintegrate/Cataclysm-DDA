@@ -5486,5 +5486,30 @@
     "flags": [ "SHEATH_SWORD", "NONCONDUCTIVE", "WATER_BREAK_ACTIVE" ],
     "melee_damage": { "bash": 2, "cut": 8 },
     "tool_ammo": [ "battery" ]
+  },
+  {
+    "id": "test_ups_underbarrel",
+    "copy-from": "underbarrel_base",
+    "type": "ITEM",
+    "subtypes": [ "GUN", "GUNMOD" ],
+    "name": { "str": "TEST UPS underbarrel gun" },
+    "description": "An underbarrel gun that draws on a UPS for every shot.",
+    "weight": "1 kg",
+    "volume": "750 ml",
+    "longest_side": "35 cm",
+    "price": "100 USD",
+    "material": [ "steel" ],
+    "location": "underbarrel",
+    "mod_targets": [ "rifle" ],
+    "install_time": "1 m",
+    "ammo": [ "nail" ],
+    "skill": "rifle",
+    "dispersion": 200,
+    "durability": 10,
+    "loudness": 5,
+    "energy_drain": "1 kJ",
+    "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "faults": [ { "fault": "fault_gun_dirt" } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nail": 10 } } ]
   }
 ]
