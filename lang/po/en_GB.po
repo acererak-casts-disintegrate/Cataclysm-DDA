@@ -21365,6 +21365,9 @@ msgstr "Standard issue US Army 25mm rounds, each concealing a finned tungsten-al
 msgid "High precision 25mm microjet darts.  These low velocity rounds can adjust mid-flight to exploit weaknesses in the target's defenses."
 msgstr "High precision 25mm microjet darts.  These low velocity rounds can adjust mid-flight to exploit weaknesses in the target's defences."
 
+msgid "A solid steel slug sized for a scattercoiler's wide bore.  It flies further and straighter than a canister of shot, and holds together against armor that shot pellets would scatter off, though a full load of shot does more harm up close.  It can often be dug out of a target and fired again."
+msgstr "A solid steel slug sized for a scattercoiler's wide bore.  It flies further and straighter than a canister of shot, and holds together against armour that shot pellets would scatter off, though a full load of shot does more harm up close.  It can often be dug out of a target and fired again."
+
 msgid "A molded plastic sabot with a steel armature cup at its base, packed with steel balls.  The coils pull on the cup and the sabot falls away at the muzzle, scattering the shot."
 msgstr "A moulded plastic sabot with a steel armature cup at its base, packed with steel balls.  The coils pull on the cup and the sabot falls away at the muzzle, scattering the shot."
 

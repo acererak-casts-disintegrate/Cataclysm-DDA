@@ -26,7 +26,7 @@
       [ [ "amplifier", 1 ] ],
       [ [ "e_scrap", 18 ] ],
       [ [ "scrap", 6 ] ],
-      [ [ "cable", 60 ] ]
+      [ [ "cable", 30 ] ]
     ],
     "reversible": true
   },
@@ -72,15 +72,8 @@
       { "proficiency": "prof_gunsmithing_improv" }
     ],
     "tools": [ [ [ "laptop", -1 ] ] ],
-    "components": [
-      [ [ "afs_coilgun_pistol", 1 ] ],
-      [ [ "power_supply", 1 ] ],
-      [ [ "circuit", 1 ] ],
-      [ [ "cable", 30 ] ],
-      [ [ "plastic_chunk", 2 ] ],
-      [ [ "scrap", 2 ] ]
-    ],
-    "reversible": true
+    "components": [ [ [ "afs_coilgun_pistol", 1 ] ], [ [ "power_supply", 1 ] ], [ [ "circuit", 1 ] ], [ [ "cable", 10 ] ] ],
+    "//": "Rebuilding a bigger gun into a smaller one cuts away parts, so this isn't reversible: taking it apart gives the parts listed in its uncraft recipe."
   },
   {
     "type": "recipe",
@@ -107,11 +100,11 @@
       [ [ "amplifier", 1 ] ],
       [ [ "circuit", 2 ] ],
       [ [ "lens_small", 1 ] ],
-      [ [ "cable", 60 ] ],
-      [ [ "plastic_chunk", 6 ] ],
-      [ [ "scrap", 6 ] ]
+      [ [ "cable", 30 ] ],
+      [ [ "plastic_chunk", 2 ] ],
+      [ [ "scrap", 2 ] ]
     ],
-    "reversible": true
+    "//": "Rebuilding a bigger gun into a smaller one cuts away parts, so this isn't reversible: taking it apart gives the parts listed in its uncraft recipe."
   },
   {
     "type": "recipe",
@@ -138,10 +131,10 @@
       [ [ "power_supply", 2 ] ],
       [ [ "amplifier", 1 ] ],
       [ [ "circuit", 2 ] ],
-      [ [ "cable", 120 ] ],
+      [ [ "cable", 40 ] ],
       [ [ "sheet_metal_small", 2 ] ],
-      [ [ "scrap", 8 ] ],
-      [ [ "plastic_chunk", 6 ] ]
+      [ [ "scrap", 4 ] ],
+      [ [ "plastic_chunk", 2 ] ]
     ],
     "reversible": true
   },
@@ -172,10 +165,10 @@
       [ [ "amplifier", 2 ] ],
       [ [ "processor", 1 ] ],
       [ [ "circuit", 3 ] ],
-      [ [ "cable", 200 ] ],
-      [ [ "e_scrap", 40 ] ],
-      [ [ "scrap", 8 ] ],
-      [ [ "plastic_chunk", 8 ] ]
+      [ [ "cable", 60 ] ],
+      [ [ "e_scrap", 15 ] ],
+      [ [ "scrap", 2 ] ],
+      [ [ "plastic_chunk", 2 ] ]
     ],
     "reversible": true
   },
@@ -200,14 +193,14 @@
     "tools": [ [ [ "laptop", -1 ] ] ],
     "components": [
       [ [ "coilgun", 1 ] ],
-      [ [ "pipe", 2 ] ],
+      [ [ "pipe", 1 ] ],
       [ [ "pipe_fittings", 1 ] ],
       [ [ "power_supply", 2 ] ],
       [ [ "amplifier", 1 ] ],
       [ [ "circuit", 2 ] ],
-      [ [ "cable", 150 ] ],
-      [ [ "e_scrap", 25 ] ],
-      [ [ "scrap", 10 ] ]
+      [ [ "cable", 40 ] ],
+      [ [ "e_scrap", 10 ] ],
+      [ [ "scrap", 2 ] ]
     ],
     "reversible": true
   },
@@ -233,14 +226,12 @@
     "components": [
       [ [ "afs_scattercoiler", 1 ] ],
       [ [ "motor_tiny", 1 ] ],
-      [ [ "fan", 1 ] ],
-      [ [ "power_supply", 3 ] ],
-      [ [ "amplifier", 2 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "amplifier", 1 ] ],
       [ [ "circuit", 2 ] ],
-      [ [ "cable", 150 ] ],
+      [ [ "cable", 40 ] ],
       [ [ "sheet_metal_small", 2 ] ],
-      [ [ "scrap", 10 ] ],
-      [ [ "plastic_chunk", 8 ] ]
+      [ [ "scrap", 2 ] ]
     ],
     "reversible": true
   },
@@ -265,15 +256,14 @@
     "tools": [ [ [ "laptop", -1 ] ] ],
     "components": [
       [ [ "coilgun", 2 ] ],
-      [ [ "motor_small", 1 ] ],
-      [ [ "fan", 1 ] ],
+      [ [ "motor_tiny", 1 ] ],
       [ [ "power_supply", 4 ] ],
       [ [ "amplifier", 2 ] ],
       [ [ "processor", 1 ] ],
       [ [ "circuit", 4 ] ],
       [ [ "cable", 200 ] ],
       [ [ "pipe", 2 ] ],
-      [ [ "sheet_metal", 1 ] ],
+      [ [ "sheet_metal_small", 4 ] ],
       [ [ "scrap", 15 ] ]
     ],
     "reversible": true
@@ -297,14 +287,8 @@
       { "proficiency": "prof_gunsmithing_improv" }
     ],
     "tools": [ [ [ "laptop", -1 ] ] ],
-    "components": [
-      [ [ "coilgun", 1 ] ],
-      [ [ "pipe_fittings", 1 ] ],
-      [ [ "scrap", 5 ] ],
-      [ [ "plastic_chunk", 4 ] ],
-      [ [ "duct_tape", 25 ] ]
-    ],
-    "reversible": true
+    "components": [ [ [ "coilgun", 1 ] ], [ [ "pipe_fittings", 1 ] ], [ [ "duct_tape", 25 ] ] ],
+    "//": "Rebuilding a bigger gun into a smaller one cuts away parts, so this isn't reversible: taking it apart gives the parts listed in its uncraft recipe."
   },
   {
     "type": "recipe",
@@ -330,28 +314,81 @@
     "components": [ [ [ "scrap", 2 ] ], [ [ "duct_tape", 10 ] ] ]
   },
   {
-    "type": "recipe",
-    "activity_level": "MODERATE_EXERCISE",
-    "result": "nailmag",
-    "id_suffix": "afs_coilguns",
-    "category": "CC_WEAPON",
-    "subcategory": "CSC_WEAPON_MAGAZINES",
-    "skill_used": "fabrication",
-    "difficulty": 1,
-    "time": "8 m",
-    "autolearn": true,
-    "tools": [
-      [
-        [ "afs_coilgun_pistol", -1 ],
-        [ "afs_coilgun_pdw", -1 ],
-        [ "afs_coilgun_lmg", -1 ],
-        [ "afs_coilgun_marksman", -1 ],
-        [ "afs_coilgun_turret", -1 ]
-      ],
-      [ [ "nail", -1 ], [ "combatnail", -1 ] ]
-    ],
-    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
-    "components": [ [ [ "sheet_metal_small", 1 ] ], [ [ "scrap", 2 ] ], [ [ "duct_tape", 20 ] ] ]
+    "id": "coilguns_nail",
+    "type": "requirement",
+    "//": "Aftershock's coilguns that feed from nail magazines, to size a magazine against.",
+    "extend": {
+      "tools": [
+        [
+          [ "afs_coilgun_pistol", -1 ],
+          [ "afs_coilgun_pdw", -1 ],
+          [ "afs_coilgun_lmg", -1 ],
+          [ "afs_coilgun_marksman", -1 ],
+          [ "afs_coilgun_turret", -1 ]
+        ]
+      ]
+    }
+  },
+  {
+    "result": "afs_coilgun_machine_pistol",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "1 h",
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [
+      [ [ "plastic_chunk", 4 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "circuit", 2 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "e_scrap", 12 ] ],
+      [ [ "scrap", 6 ] ],
+      [ [ "cable", 15 ] ]
+    ]
+  },
+  {
+    "result": "afs_coilgun_pdw",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "1 h 30 m",
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [
+      [ [ "plastic_chunk", 8 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "circuit", 3 ] ],
+      [ [ "power_supply", 3 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "lens_small", 1 ] ],
+      [ [ "e_scrap", 20 ] ],
+      [ [ "scrap", 12 ] ],
+      [ [ "cable", 45 ] ]
+    ]
+  },
+  {
+    "result": "afs_coilgun_underbarrel",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "1 h",
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [
+      [ [ "plastic_chunk", 3 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "e_scrap", 12 ] ],
+      [ [ "scrap", 8 ] ],
+      [ [ "cable", 20 ] ]
+    ]
   },
   {
     "type": "recipe",

@@ -16,7 +16,7 @@
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
     "name": { "str": "ferromagnetic coilgun slug" },
-    "description": "A solid steel slug sized for a scattercoiler's wide bore.  It flies further and hits harder than any canister of shot, and can often be dug out of a target and fired again.",
+    "description": "A solid steel slug sized for a scattercoiler's wide bore.  It flies further and straighter than a canister of shot, and holds together against armor that shot pellets would scatter off, though a full load of shot does more harm up close.  It can often be dug out of a target and fired again.",
     "looks_like": "shotcanister_scrap",
     "weight": "50 g",
     "volume": "250 ml",
@@ -59,7 +59,7 @@
     "dispersion": 60,
     "recoil": 240,
     "loudness": 0,
-    "effects": [ "NON_FOULING", "NEVER_MISFIRES" ]
+    "effects": [ "SHOT", "NON_FOULING", "NEVER_MISFIRES" ]
   },
   {
     "id": "afs_coil_canister_flechette",
@@ -79,13 +79,13 @@
     "ammo_type": "afs_coil_canister",
     "range": 9,
     "damage": { "damage_type": "bullet", "amount": 29, "armor_penetration": 3 },
-    "shot_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 2 },
+    "shot_damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 3 },
     "projectile_count": 6,
     "shot_spread": 190,
     "dispersion": 45,
     "recoil": 220,
     "loudness": 0,
-    "effects": [ "NON_FOULING", "NEVER_MISFIRES" ]
+    "effects": [ "SHOT", "NON_FOULING", "NEVER_MISFIRES" ]
   },
   {
     "id": "afs_coil_dart_std",

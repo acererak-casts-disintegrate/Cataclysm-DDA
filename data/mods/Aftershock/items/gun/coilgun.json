@@ -226,7 +226,7 @@
     "subtypes": [ "GUN" ],
     "looks_like": "coilgun",
     "name": { "str": "automatic scattercoiler" },
-    "description": "A heavier scattercoiler with a motor-driven feed, a cooling fan and a 12-round drum.  It can empty a drum in a few seconds, quietly, but a single long burst brings it close to its thermal cutoff.",
+    "description": "A heavier scattercoiler with a motor-driven feed, finned heatsinks and a 12-round drum.  It can empty a drum in a few seconds, quietly, but a single long burst brings it close to its thermal cutoff.",
     "weight": "5400 g",
     "volume": "5250 ml",
     "longest_side": "94 cm",
@@ -252,7 +252,8 @@
     "overheat_threshold": 95,
     "heat_per_shot": 15,
     "cooling_value": 2.5,
-    "melee_damage": { "bash": 12 }
+    "melee_damage": { "bash": 12 },
+    "reload": 100
   },
   {
     "id": "afs_coilgun_turret",
@@ -294,6 +295,7 @@
     "copy-from": "underbarrel_base",
     "type": "ITEM",
     "subtypes": [ "GUN", "GUNMOD" ],
+    "looks_like": "u_shotgun",
     "name": { "str": "underbarrel coilgun" },
     "description": "A short coilgun with a ten-nail magazine, made to hang under a rifle, shotgun or crossbow and run off a UPS.  It takes steel or iron nails.",
     "weight": "1150 g",
