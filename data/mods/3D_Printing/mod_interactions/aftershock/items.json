@@ -1,0 +1,16 @@
+[
+  {
+    "id": "afs_coil_dart_printed",
+    "copy-from": "afs_coil_dart_std",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "name": { "str": "7x30mm printed coilgun dart" },
+    "description": "A 7x30mm coilgun dart sintered from steel powder by an advanced 3D printer.  Its fins and body are close to the factory dart's, but sintered steel is porous and the surface is rough, so it flies less true and hits less hard.",
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
+    "range": 26,
+    "damage": { "damage_type": "bullet", "amount": 21, "armor_penetration": 3 },
+    "dispersion": 48,
+    "recovery_chance": 25
+  }
+]
