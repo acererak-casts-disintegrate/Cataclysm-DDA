@@ -12,5 +12,11 @@
         [ "huge_crossbow", -1 ]
       ]
     ]
+  },
+  {
+    "id": "coilguns_nail",
+    "type": "requirement",
+    "//": "Any coilgun that feeds from nail magazines, to size a magazine against.  Mods extend this with their own coilguns.",
+    "tools": [ [ [ "coilgun", -1 ] ] ]
   }
 ]
