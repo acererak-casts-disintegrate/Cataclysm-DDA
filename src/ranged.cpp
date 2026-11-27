@@ -150,7 +150,6 @@ static const fault_id fault_gun_blackpowder( "fault_gun_blackpowder" );
 static const fault_id fault_gun_chamber_spent( "fault_gun_chamber_spent" );
 static const fault_id fault_gun_dirt( "fault_gun_dirt" );
 static const fault_id fault_overheat_explosion( "fault_overheat_explosion" );
-static const fault_id fault_overheat_melting( "fault_overheat_melting" );
 static const fault_id fault_overheat_safety( "fault_overheat_safety" );
 static const fault_id fault_overheat_venting( "fault_overheat_venting" );
 
@@ -905,6 +904,10 @@ bool Character::handle_gun_damage( item &it )
     return true;
 }
 
+// Guns melt with whichever fault of this type they list, so a mod can give its guns a melting
+// fault that only its own repairs remove
+static const std::string fault_type_gun_overheat_melting( "gun_overheat_melting" );
+
 bool Character::handle_gun_overheat( item &it )
 {
     double overheat_modifier = 0;
@@ -944,13 +947,14 @@ bool Character::handle_gun_overheat( item &it )
                                it.tname() );
             add_msg_if_player( m_bad, _( "Your %s detonates!" ),
                                it.tname() );
-            it.set_fault( fault_overheat_melting );
+            it.set_random_fault_of_type( fault_type_gun_overheat_melting );
             explosion_handler::explosion( this, this->pos_bub(), 1200, 0.4 );
             return false;
-        } else if( it.faults_potential().count( fault_overheat_melting ) && fault_roll > 6 ) {
+        } else if( !it.faults_potential_of_type( fault_type_gun_overheat_melting ).empty() &&
+                   fault_roll > 6 ) {
             add_msg_if_player( m_bad, _( "Acrid smoke pours from your %s as its internals fuse together." ),
                                it.tname() );
-            it.set_fault( fault_overheat_melting );
+            it.set_random_fault_of_type( fault_type_gun_overheat_melting );
             return false;
         } else if( it.faults_potential().count( fault_overheat_venting ) && fault_roll > 2 ) {
             map &here = get_map();

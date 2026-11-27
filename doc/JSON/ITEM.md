@@ -791,7 +791,8 @@ Guns can be defined like this:
   { "fault_group": "handles" },                 // `fault_group` defines the fault group that would be applied to this item
   { "fault_group": "handles", "weight_override": 20 } // if weight_override is used, the weight of an entire fault group is assigned to this value, and original weight is deleted
   { "fault_group": "handles", "weight_add": -5, "weight_mult": 0.8 } // weight_add and weight_mult both modify the weight of each fault in fault group. Default add is 0, default mult is 1
-  ],                                            // Faults are applied from the code side
+  ],                                            // Faults are applied from the code side.  With "copy-from", these add to the inherited faults
+                                                // An overheating gun melts with a random fault of type `gun_overheat_melting` from this list, such as `fault_overheat_melting`
 "handling": 10             // handling of the weapon; better handling means less recoil
 "energy_drain": "2 kJ",    // Additionally to the normal ammo (if any), a gun can require some electric energy. Drains from battery in gun. Use flags "USE_UPS" and "USES_BIONIC_POWER" to drain other sources. This also works on mods. Attaching a mod with energy_drain will add/increase drain on the weapon.
 "heat_per_shot": 10,       // Each shot from this weapon adds this amount of heat

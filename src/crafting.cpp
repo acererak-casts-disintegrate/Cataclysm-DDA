@@ -2518,6 +2518,12 @@ ret_val<void> Character::can_disassemble( const item &obj, const read_only_visit
         return ret_val<void>::make_failure( _( "You cannot disassemble this." ) );
     }
 
+    // A gun whose internals have fused can't be taken apart into working parts
+    if( obj.has_fault_flag( "RUINED_GUN" ) ) {
+        return ret_val<void>::make_failure(
+                   _( "Its internals have fused together.  It can only be mended." ) );
+    }
+
     const recipe &r = recipe_dictionary::get_uncraft( ( obj.typeId() == itype_disassembly ) ?
                       obj.components.only_item().typeId() : obj.typeId() );
 

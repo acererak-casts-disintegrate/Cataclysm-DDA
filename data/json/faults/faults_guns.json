@@ -36,6 +36,8 @@
   {
     "id": "fault_overheat_melting",
     "type": "fault",
+    "//": "Overheating applies a random fault of this type from the gun's fault list.",
+    "fault_type": "gun_overheat_melting",
     "name": { "str": "Fused internals" },
     "description": "Excessive heat has rendered this weapon inoperable.",
     "item_prefix": "ruined",

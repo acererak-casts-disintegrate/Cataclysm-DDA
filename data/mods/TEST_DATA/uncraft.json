@@ -1,5 +1,13 @@
 [
   {
+    "result": "test_overheating_gun",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "scrap", 2 ] ] ]
+  },
+  {
     "result": "test_sheet_metal",
     "type": "uncraft",
     "activity_level": "MODERATE_EXERCISE",
