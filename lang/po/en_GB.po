@@ -21563,6 +21563,9 @@ msgstr "The standard issue combat shotgun of Marine Corps and military police un
 msgid "Northrop Armories' premier electrolaser personal defense weapon.  The W3100 Volt adjustable power settings make it adaptable to most conflict situations, lethal or otherwise, and make it a favorite among well-off security forces and law enforcement corps."
 msgstr "Northrop Armories' premier electrolaser personal defence weapon.  The W3100 Volt adjustable power settings make it adaptable to most conflict situations, lethal or otherwise, and make it a favourite among well-off security forces and law enforcement corps."
 
+msgid "A jacket of copper and aluminum fins clamped around a coilgun's coil stack.  The extra metal soaks up heat before the thermal cutoff trips, and the fins shed it faster between bursts."
+msgstr "A jacket of copper and aluminium fins clamped around a coilgun's coil stack.  The extra metal soaks up heat before the thermal cutoff trips, and the fins shed it faster between bursts."
+
 msgid "A standardized 30-round magazine compatible with most US Army issue rifles."
 msgstr "A standardised 30-round magazine compatible with most US Army issue rifles."
 

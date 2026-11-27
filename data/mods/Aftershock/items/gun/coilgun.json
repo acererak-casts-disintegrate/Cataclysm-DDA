@@ -19,7 +19,7 @@
     "loudness": 7,
     "energy_drain": "1 kJ",
     "handling": 12,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ] ],
+    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ], [ "capacitor", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "ALLOWS_BODY_BLOCK" ],
     "faults": [ { "fault": "fault_gun_dirt" }, { "fault": "fault_fail_to_feed" } ],
@@ -45,7 +45,7 @@
     "loudness": 8,
     "energy_drain": "1 kJ",
     "handling": 9,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ] ],
+    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "rail mount", 1 ], [ "stock mount", 1 ], [ "capacitor", 1 ], [ "cooling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "ALLOWS_BODY_BLOCK", "OVERHEATS" ],
     "faults": [
@@ -81,7 +81,16 @@
     "loudness": 8,
     "energy_drain": "3 kJ",
     "handling": 25,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ], [ "underbarrel mount", 1 ] ],
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel mount", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
+    ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "nailmag", "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
     "faults": [
@@ -117,7 +126,16 @@
     "loudness": 9,
     "energy_drain": "3 kJ",
     "handling": 24,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
+    ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_coilgun_hopper", "nailmag", "afs_nailmag_small" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
     "faults": [
@@ -160,7 +178,9 @@
       [ "stock", 1 ],
       [ "stock accessory", 1 ],
       [ "rail", 1 ],
-      [ "underbarrel", 1 ]
+      [ "underbarrel", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_nailmag_small", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
@@ -196,7 +216,16 @@
     "loudness": 10,
     "energy_drain": "10 kJ",
     "handling": 22,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail mount", 1 ], [ "underbarrel mount", 1 ] ],
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail mount", 1 ],
+      [ "underbarrel mount", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
+    ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
@@ -239,7 +268,16 @@
     "loudness": 11,
     "energy_drain": "12 kJ",
     "handling": 26,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "rail", 1 ],
+      [ "underbarrel", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
+    ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_scattercoiler_drum" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "OVERHEATS" ],
     "faults": [
@@ -275,7 +313,7 @@
     "loudness": 11,
     "energy_drain": "3 kJ",
     "handling": 30,
-    "valid_mod_locations": [ [ "sights", 1 ], [ "rail", 1 ] ],
+    "valid_mod_locations": [ [ "sights", 1 ], [ "rail", 1 ], [ "capacitor", 1 ], [ "cooling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "afs_coilgun_hopper", "nailmag" ] } ],
     "flags": [ "USE_UPS", "NON_FOULING", "NEEDS_NO_LUBE", "MOUNTED_GUN", "OVERHEATS" ],
     "faults": [
@@ -367,7 +405,9 @@
       [ "sling", 1 ],
       [ "stock", 1 ],
       [ "stock accessory", 1 ],
-      [ "underbarrel", 1 ]
+      [ "underbarrel", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
     ],
     "pocket_data": [
       {
@@ -403,7 +443,15 @@
     "overheat_threshold": 70,
     "heat_per_shot": 5,
     "cooling_value": 2,
-    "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock mount", 1 ], [ "underbarrel mount", 1 ] ],
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock mount", 1 ],
+      [ "underbarrel mount", 1 ],
+      [ "capacitor", 1 ],
+      [ "cooling", 1 ]
+    ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",

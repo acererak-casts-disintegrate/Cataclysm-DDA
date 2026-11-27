@@ -26,7 +26,12 @@
       "afs_coil_canister_flechette",
       "afs_coil_dart_std",
       "afs_coil_dart_ap",
-      "afs_coil_dart_improvised"
+      "afs_coil_dart_improvised",
+      "afs_coil_overdrive",
+      "afs_coil_regulator",
+      "afs_coil_pulse_shaper",
+      "afs_coil_heatsink",
+      "afs_coil_liquid_loop"
     ]
   }
 ]
