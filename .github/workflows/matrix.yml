@@ -337,7 +337,7 @@ jobs:
             test-stage: ''
           - title: 3D Printing
             run_core_tests: 0
-            mods: 3d_printing
+            mods: 3d_printing,aftershock
             test-stage: ''
     name: Test (${{ matrix.title }})
     runs-on: ubuntu-22.04

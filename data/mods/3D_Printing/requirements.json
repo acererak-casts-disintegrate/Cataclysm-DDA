@@ -14,7 +14,7 @@
   {
     "id": "3d_printed_edge",
     "type": "requirement",
-    "//": "A printer can't print a sharp edge or point, so printed metal blades and points are filed or ground after printing.",
+    "//": "A printer can't print a cutting edge, so printed metal blades and broadheads are filed or ground after printing.  Points that pierce without cutting are fine as printed.",
     "qualities": [ [ { "id": "FILE", "level": 2 }, { "id": "GRIND", "level": 2 } ] ]
   },
   {

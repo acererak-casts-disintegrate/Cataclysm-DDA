@@ -66,7 +66,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "pistol_mag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -82,7 +82,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "pistol_smg_mag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -98,7 +98,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "shot_mag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -114,7 +114,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "rifle_mag",
     "id_suffix": "metal_printed",
     "category": "CC_WEAPON",

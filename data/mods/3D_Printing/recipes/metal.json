@@ -35,7 +35,7 @@
     "charges": 10,
     "book_learn": [ [ "textbook_computer", 3 ], [ "advanced_electronics", 3 ], [ "reference_fabrication1", 3 ] ],
     "autolearn": false,
-    "using": [ [ "3d_printing_metal", 8 ], [ "3d_printed_edge", 1 ] ],
+    "using": [ [ "3d_printing_metal", 8 ] ],
     "components": [
       [ [ "scrap_aluminum", 6 ] ],
       [ [ "scrap", 2 ] ],
@@ -57,7 +57,7 @@
     "charges": 10,
     "book_learn": [ [ "textbook_computer", 3 ], [ "advanced_electronics", 3 ], [ "reference_fabrication1", 3 ] ],
     "autolearn": false,
-    "using": [ [ "3d_printing_metal", 8 ], [ "3d_printed_edge", 1 ] ],
+    "using": [ [ "3d_printing_metal", 8 ] ],
     "components": [
       [ [ "scrap_aluminum", 6 ] ],
       [ [ "scrap", 2 ] ],
@@ -102,7 +102,7 @@
     "charges": 10,
     "book_learn": [ [ "textbook_computer", 3 ], [ "advanced_electronics", 3 ], [ "reference_fabrication1", 3 ] ],
     "autolearn": false,
-    "using": [ [ "3d_printing_metal", 2 ], [ "3d_printed_edge", 1 ] ],
+    "using": [ [ "3d_printing_metal", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [
       [ [ "scrap_aluminum", 2 ] ],
@@ -125,7 +125,7 @@
     "charges": 10,
     "book_learn": [ [ "textbook_computer", 3 ], [ "advanced_electronics", 3 ], [ "reference_fabrication1", 3 ] ],
     "autolearn": false,
-    "using": [ [ "3d_printing_metal", 2 ], [ "3d_printed_edge", 1 ] ],
+    "using": [ [ "3d_printing_metal", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [
       [ [ "scrap_aluminum", 2 ] ],
@@ -136,7 +136,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "nail",
     "id_suffix": "metal_printed",
     "category": "CC_OTHER",
@@ -148,12 +148,12 @@
     "charges": 50,
     "book_learn": [ [ "textbook_computer", 2 ], [ "advanced_electronics", 2 ], [ "reference_fabrication1", 2 ] ],
     "autolearn": true,
-    "using": [ [ "3d_printing_metal", 4 ], [ "3d_printed_edge", 1 ] ],
+    "using": [ [ "3d_printing_metal", 4 ] ],
     "components": [ [ [ "scrap", 4 ] ] ]
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bearing",
     "id_suffix": "metal_printed",
     "category": "CC_OTHER",
@@ -170,7 +170,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "hinge",
     "id_suffix": "metal_printed",
     "category": "CC_OTHER",
@@ -186,7 +186,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "pipe_fittings",
     "id_suffix": "metal_printed",
     "category": "CC_OTHER",
@@ -219,7 +219,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "m9mag",
     "id_suffix": "metal_printed",
     "category": "CC_WEAPON",
@@ -235,7 +235,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "m1911mag",
     "id_suffix": "metal_printed",
     "category": "CC_WEAPON",
@@ -251,7 +251,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "mp5mag",
     "id_suffix": "metal_printed",
     "category": "CC_WEAPON",
@@ -267,7 +267,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "akmag30",
     "id_suffix": "metal_printed",
     "category": "CC_WEAPON",

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "afs_rail_arrow_sabot",
+    "id_suffix": "printed",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [ [ "archery", 3 ], [ "computer", 3 ] ],
+    "//": "The advanced printer sinters the five steel cores (300 g) from scrap; you wind each with raw copper wire and solder the turns into a solid armature band (75 g of copper).  The cores pierce without cutting, so they need no filing.",
+    "time": "45 m",
+    "charges": 5,
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": [ [ "fabrication", 7 ], [ "archery", 4 ], [ "computer", 3 ] ],
+    "proficiencies": [ { "proficiency": "prof_fletching", "time_multiplier": 1.25, "skill_penalty": 0.15 } ],
+    "using": [ [ "3d_printing_metal", 6 ], [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "VISE", "level": 1 }, { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "scrap", 6 ] ], [ [ "copper_wire", 16 ] ] ]
+  }
+]

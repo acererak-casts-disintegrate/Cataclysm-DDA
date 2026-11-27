@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bag_plastic",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -17,7 +17,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bag_zipper",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -33,7 +33,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bag_zipper_gallon",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -49,7 +49,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bottle_plastic",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -65,7 +65,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bottle_plastic_small",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -81,7 +81,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "bottle_twoliter",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -97,7 +97,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "jug_plastic",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -112,7 +112,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "jerrycan",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -127,7 +127,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "trashcan",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -142,7 +142,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "funnel",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -157,7 +157,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "hat_hard",
     "id_suffix": "printed",
     "category": "CC_ARMOR",
@@ -172,7 +172,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "tonfa",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -188,7 +188,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "plastic_sheet",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -203,7 +203,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "plastic_boat_hull",
     "id_suffix": "printed",
     "category": "CC_OTHER",
@@ -218,7 +218,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "glockmag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -234,7 +234,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "glockbigmag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -250,7 +250,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "glock40mag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -266,7 +266,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "glock40bigmag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -282,7 +282,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "saiga10mag",
     "id_suffix": "printed",
     "category": "CC_WEAPON",
@@ -298,7 +298,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "stanag30",
     "id_suffix": "printed",
     "category": "CC_WEAPON",

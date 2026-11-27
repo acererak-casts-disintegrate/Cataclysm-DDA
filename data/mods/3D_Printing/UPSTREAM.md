@@ -23,8 +23,14 @@ except where listed below; the JSON is written for this game's 0.I format, not c
 
 * **Metal printing**, which Bright Nights describes but never implemented.  The advanced printer
   sinters metal arrows, bolt points, nails, bearings, hinges, pipe fittings, lockpicks and steel
-  magazines from scrap, and the steel edges of the carbon fiber blades.  Anything with a sharp edge
-  or point also needs filing or grinding (`3d_printed_edge`), since a printer can't print one.
+  magazines from scrap, and the steel edges of the carbon fiber blades.  Blades and broadheads also
+  need filing or grinding (`3d_printed_edge`), since a printer can't print a cutting edge; field
+  points, small-game points and nails pierce without cutting and are fine as printed.  With
+  Aftershock, the advanced printer also sinters the steel cores of ferromagnetic sabot arrows, which
+  you wind with raw copper wire and solder into an armature band.
+* **Effort:** recipes that only print take no exercise, since you mostly wait for the printer.
+  Recipes with handwork as well, such as fletching, leatherwork, filing or winding wire, take light
+  exercise, and forging a blade's edge takes moderate exercise.
 * **Power:** Bright Nights' grid-only furniture and fake tools become 0.I appliances, vehicle rigs,
   workshop slots and charging cords.  The printing shop's printers are furniture that turns into an
   appliance when examined.

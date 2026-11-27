@@ -62,7 +62,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "activity_level": "NO_EXERCISE",
     "result": "carbon_fiber_filament",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
