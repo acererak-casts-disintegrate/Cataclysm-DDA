@@ -51,7 +51,7 @@
     "book_learn": [ [ "textbook_computer", 5 ], [ "advanced_electronics", 5 ], [ "reference_fabrication1", 5 ], [ "textbook_anarch", 5 ] ],
     "autolearn": false,
     "using": [ [ "3d_printing_metal", 2 ] ],
-    "tools": [ [ [ "afs_xm730_carbine", -1 ], [ "afs_xm730_pistol", -1 ] ] ],
+    "tools": [ [ [ "afs_xm730_pistol", -1 ] ] ],
     "components": [ [ [ "scrap", 2 ] ] ]
   },
   {
@@ -85,7 +85,7 @@
     "book_learn": [ [ "textbook_computer", 5 ], [ "advanced_electronics", 5 ], [ "reference_fabrication1", 5 ], [ "textbook_anarch", 5 ] ],
     "autolearn": false,
     "using": [ [ "3d_printing_metal", 6 ] ],
-    "tools": [ [ [ "afs_xm730_carbine", -1 ], [ "afs_xm730_pistol", -1 ] ] ],
+    "tools": [ [ [ "afs_xm730_carbine", -1 ] ] ],
     "components": [ [ [ "scrap", 6 ] ] ]
   },
   {
