@@ -21365,6 +21365,18 @@ msgstr "Standard issue US Army 25mm rounds, each concealing a finned tungsten-al
 msgid "High precision 25mm microjet darts.  These low velocity rounds can adjust mid-flight to exploit weaknesses in the target's defenses."
 msgstr "High precision 25mm microjet darts.  These low velocity rounds can adjust mid-flight to exploit weaknesses in the target's defences."
 
+msgid "A molded plastic sabot with a steel armature cup at its base, packed with steel balls.  The coils pull on the cup and the sabot falls away at the muzzle, scattering the shot."
+msgstr "A moulded plastic sabot with a steel armature cup at its base, packed with steel balls.  The coils pull on the cup and the sabot falls away at the muzzle, scattering the shot."
+
+msgid "A molded plastic sabot with a steel armature cup at its base, packed with hardened steel flechettes that spread less and pierce more than shot."
+msgstr "A moulded plastic sabot with a steel armature cup at its base, packed with hardened steel flechettes that spread less and pierce more than shot."
+
+msgid "A precision-machined, heat-treated steel dart with stabilizing fins, made for the XM730 coilguns.  It leaves the barrel below the speed of sound, so it makes almost no noise."
+msgstr "A precision-machined, heat-treated steel dart with stabilising fins, made for the XM730 coilguns.  It leaves the barrel below the speed of sound, so it makes almost no noise."
+
+msgid "A subsonic XM730 dart built around a hardened steel penetrator.  It does a little less damage than the standard dart but punches through armor far better."
+msgstr "A subsonic XM730 dart built around a hardened steel penetrator.  It does a little less damage than the standard dart but punches through armour far better."
+
 msgid "Pressurized and cryo-cooled rods of solidified hydrogen, used within plasma weapons or portable powerplants."
 msgstr "Pressurised and cryo-cooled rods of solidified hydrogen, used within plasma weapons or portable powerplants."
 
@@ -21520,6 +21532,9 @@ msgstr "Capable of withstanding extreme temperature gradients, fulleroclathrate 
 
 msgid "Manufactured by Gibson Armory, the S86 is a light-weight grenade launcher designed to take care of moderately armored opponents.  While the S86 firepower is nothing to truly gawk at, it still packs quite a punch both for the target and user and is usually mounted as it is impossible to fire with average strength."
 msgstr "Manufactured by Gibson Armory, the S86 is a light-weight grenade launcher designed to take care of moderately armoured opponents.  While the S86 firepower is nothing to truly gawk at, it still packs quite a punch both for the target and user and is usually mounted as it is impossible to fire with average strength."
+
+msgid "A compact coilgun carbine with extra acceleration stages and optical timing, a folding stock and a vented heatsink shroud.  It drives nails fast enough to punch light armor, and holds up to repeated controlled bursts while clearing a building."
+msgstr "A compact coilgun carbine with extra acceleration stages and optical timing, a folding stock and a vented heatsink shroud.  It drives nails fast enough to punch light armour, and holds up to repeated controlled bursts while clearing a building."
 
 msgid "A powerful tri-barreled laser weapon, still mounted to the robotic hand of the Northrop drone it originally belonged to.  Can still be fired when connected to an UPS."
 msgstr "A powerful tri-barrelled laser weapon, still mounted to the robotic hand of the Northrop drone it originally belonged to.  Can still be fired when connected to an UPS."
