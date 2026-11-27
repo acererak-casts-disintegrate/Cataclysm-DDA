@@ -1,0 +1,58 @@
+[
+  {
+    "type": "item_group",
+    "id": "on_hand_afs_coil_dart",
+    "subtype": "collection",
+    "//": "a collection of ammo that would be found with a loaded XM730.",
+    "entries": [
+      { "item": "afs_coil_dart_std", "charges": [ 20, 40 ] },
+      { "item": "afs_coil_dart_ap", "prob": 15, "charges": [ 10, 20 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "nested_afs_xm730_carbine",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "afs_xm730_carbine", "charges": [ 0, 20 ] },
+      { "item": "afs_xm730_mag_20" },
+      { "item": "afs_xm730_mag_20", "prob": 50 },
+      { "item": "afs_xm730_mag_40", "prob": 20 },
+      { "group": "on_hand_afs_coil_dart" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "nested_afs_xm730_pistol",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "afs_xm730_pistol", "charges": [ 0, 12 ] },
+      { "item": "afs_xm730_mag_12" },
+      { "item": "afs_xm730_mag_20", "prob": 30 },
+      { "group": "on_hand_afs_coil_dart" }
+    ]
+  },
+  {
+    "id": "guns_rifle_milspec",
+    "copy-from": "guns_rifle_milspec",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "nested_afs_xm730_carbine", "prob": 4 } ] }
+  },
+  {
+    "id": "guns_pistol_milspec",
+    "copy-from": "guns_pistol_milspec",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "nested_afs_xm730_pistol", "prob": 5 } ] }
+  },
+  {
+    "id": "guns_energy",
+    "copy-from": "guns_energy",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "nested_afs_xm730_carbine", "prob": 4 }, { "group": "nested_afs_xm730_pistol", "prob": 4 } ] }
+  }
+]

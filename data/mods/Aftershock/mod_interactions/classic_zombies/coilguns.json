@@ -1,0 +1,32 @@
+[
+  {
+    "type": "ITEM_BLACKLIST",
+    "//": "Classic Zombies blacklists the coilgun, so its relatives go too.",
+    "whitelist": false,
+    "items": [
+      "afs_coilgun_pistol",
+      "afs_coilgun_machine_pistol",
+      "afs_coilgun_pdw",
+      "afs_coilgun_lmg",
+      "afs_coilgun_marksman",
+      "afs_scattercoiler",
+      "afs_scattercoiler_auto",
+      "afs_coilgun_turret",
+      "afs_coilgun_underbarrel",
+      "afs_xm730_carbine",
+      "afs_xm730_pistol",
+      "afs_nailmag_small",
+      "afs_coilgun_hopper",
+      "afs_scattercoiler_drum",
+      "afs_xm730_mag_12",
+      "afs_xm730_mag_20",
+      "afs_xm730_mag_40",
+      "afs_coil_canister_slug",
+      "afs_coil_canister_shot",
+      "afs_coil_canister_flechette",
+      "afs_coil_dart_std",
+      "afs_coil_dart_ap",
+      "afs_coil_dart_improvised"
+    ]
+  }
+]

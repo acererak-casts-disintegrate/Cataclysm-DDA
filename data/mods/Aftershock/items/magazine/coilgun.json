@@ -1,0 +1,118 @@
+[
+  {
+    "id": "afs_nailmag_small",
+    "copy-from": "nailmag",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "name": { "str": "coilgun 15-round makeshift magazine" },
+    "description": "A short, quick-loading magazine for makeshift coilguns.  Like all coilgun magazines, it only feeds steel or iron nails.",
+    "weight": "30 g",
+    "volume": "100 ml",
+    "price": "10 USD",
+    "reload_time": 120,
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": { "nail": 15 },
+        "material_restriction": [ "steel", "iron", "budget_steel", "lc_steel", "mc_steel", "hc_steel", "ch_steel", "qt_steel" ]
+      }
+    ]
+  },
+  {
+    "id": "afs_coilgun_hopper",
+    "copy-from": "nailmag",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "name": { "str": "coilgun 200-round makeshift hopper" },
+    "description": "A bulky, bulk-loaded nail hopper for automatic coilguns.  It feeds steel or iron nails, and jams more often than a proper magazine.",
+    "weight": "340 g",
+    "volume": "1 L",
+    "price": "40 USD",
+    "reload_time": 150,
+    "flags": [ "MAG_BULKY" ],
+    "mag_jam_mult": 1.5,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": { "nail": 200 },
+        "material_restriction": [ "steel", "iron", "budget_steel", "lc_steel", "mc_steel", "hc_steel", "ch_steel", "qt_steel" ]
+      }
+    ]
+  },
+  {
+    "id": "afs_scattercoiler_drum",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "looks_like": "saiga30mag",
+    "name": { "str": "scattercoiler 12-round makeshift drum" },
+    "description": "A heavy, hand-built drum for the automatic scattercoiler.  It takes coilgun canisters or steel shot canisters, and jams more often than a proper magazine.",
+    "weight": "420 g",
+    "volume": "1200 ml",
+    "price": "50 USD",
+    "material": [ "steel" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ "afs_coil_canister", "shotcanister" ],
+    "reload_time": 180,
+    "flags": [ "MAG_BULKY" ],
+    "mag_jam_mult": 1.5,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": { "afs_coil_canister": 12, "shotcanister": 12 },
+        "material_restriction": [ "steel", "iron", "budget_steel", "lc_steel", "mc_steel", "hc_steel", "ch_steel", "qt_steel" ]
+      }
+    ]
+  },
+  {
+    "id": "afs_xm730_mag_12",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "looks_like": "glockmag",
+    "name": { "str": "XM730 12-round coilgun magazine" },
+    "description": "A flush-fitting 12-round magazine for the XM730 coilgun pistol.",
+    "weight": "95 g",
+    "volume": "120 ml",
+    "price": "80 USD",
+    "price_postapoc": "8 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": [ "afs_coil_dart" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "afs_coil_dart": 12 } } ]
+  },
+  {
+    "id": "afs_xm730_mag_20",
+    "copy-from": "afs_xm730_mag_12",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "looks_like": "stanag30",
+    "name": { "str": "XM730 20-round coilgun magazine" },
+    "description": "The standard 20-round magazine for the XM730 coilgun carbine.  It fits the pistol too.",
+    "weight": "140 g",
+    "volume": "200 ml",
+    "price": "100 USD",
+    "price_postapoc": "10 USD",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "afs_coil_dart": 20 } } ]
+  },
+  {
+    "id": "afs_xm730_mag_40",
+    "copy-from": "afs_xm730_mag_12",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "looks_like": "stanag30",
+    "name": { "str": "XM730 40-round coilgun magazine" },
+    "description": "An extended double-stack 40-round magazine for the XM730 coilgun carbine.",
+    "weight": "260 g",
+    "volume": "380 ml",
+    "price": "140 USD",
+    "price_postapoc": "14 USD",
+    "reload_time": 120,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "afs_coil_dart": 40 } } ]
+  }
+]
