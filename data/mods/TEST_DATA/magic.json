@@ -266,5 +266,15 @@
     "final_casting_time": 2,
     "casting_time_increment": 1,
     "learn_spells": { "test_fake_spell": 1 }
+  },
+  {
+    "id": "test_spell_trait_shared",
+    "type": "SPELL",
+    "name": "Shared Trait Spell",
+    "description": "Granted by several test traits at once, like the concentration spells every Mind Over Matter path grants.",
+    "valid_targets": [ "self" ],
+    "effect": "none",
+    "shape": "blast",
+    "max_level": 1
   }
 ]

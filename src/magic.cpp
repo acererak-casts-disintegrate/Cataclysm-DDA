@@ -3358,13 +3358,20 @@ void known_magic::on_mutation_gain( const trait_id &mid, Character &guy )
     }
 }
 
-void known_magic::on_mutation_loss( const trait_id &mid, Character &guy )
+void known_magic::on_mutation_loss( const trait_id &mid, Character & )
 {
     for( const std::pair<const spell_id, int> &sp : mid->spells_learned ) {
+        // Something else may have taken the spell away already
+        if( !knows_spell( sp.first ) ) {
+            continue;
+        }
         spell &temp_sp = get_spell( sp.first );
         int new_level = temp_sp.get_level() - sp.second;
         if( new_level > 0 ) {
-            temp_sp.set_level( guy, new_level );
+            // Gaining a trait adds its levels past max_level when other traits grant the same
+            // spell, and set_level stops at max_level, so it would also strip the levels of the
+            // traits that remain.  Setting the experience undoes exactly what the gain added.
+            temp_sp.set_exp( temp_sp.exp_for_level( new_level ) );
         } else {
             forget_spell( sp.first );
         }

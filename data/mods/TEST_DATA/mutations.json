@@ -456,5 +456,35 @@
     "description": "",
     "types": [ "LEGS", "FEET", "SOLES" ],
     "enchantments": [ { "values": [ { "value": "MOVE_COST", "multiply": -2.0 } ] } ]
+  },
+  {
+    "type": "mutation",
+    "id": "spell_source_test_1",
+    "name": { "str": "Spell Source 1" },
+    "points": 0,
+    "description": "Test trait granting a spell other test traits also grant.",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "test_spell_trait_shared", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "spell_source_test_2",
+    "name": { "str": "Spell Source 2" },
+    "points": 0,
+    "description": "Test trait granting a spell other test traits also grant.",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "test_spell_trait_shared", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "spell_source_test_3",
+    "name": { "str": "Spell Source 3" },
+    "points": 0,
+    "description": "Test trait granting a spell other test traits also grant.",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "test_spell_trait_shared", 1 ] ]
   }
 ]
